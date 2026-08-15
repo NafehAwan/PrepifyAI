@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#f5ead8;color:#201e1d;font-family:Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  input,textarea{font-family:inherit}
+  a{color:#8f4a20;text-decoration:none}
+  a:hover{color:#c67139}
+  ::selection{background:#f0cdb1}
+  *:focus-visible{outline:2px solid #c67139;outline-offset:2px}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#dfcfb2;border-radius:999px;border:3px solid #f5ead8}
+  @keyframes pf-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  @keyframes pf-pulse{0%,100%{opacity:.55}50%{opacity:1}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#f5ead8;font-size:15px;line-height:1.5">
+
+<!-- ============ ONBOARDING ============ -->
+<sc-if value="{{ isOnboard }}" hint-placeholder-val="{{ false }}">
+<div style="min-height:100vh;display:flex;flex-direction:column">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 32px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:34px;height:34px;border-radius:999px;background:#c67139;display:flex;align-items:center;justify-content:center;color:#fff;font-family:Caprasimo;font-size:18px">P</div>
+      <div style="font-family:Caprasimo;font-size:20px;letter-spacing:.2px">Prepify AI</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="font-size:12px;color:#7a6f5d;font-weight:600">Onboarding layout</div>
+      <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+        <button onClick="{{ setObA }}" style="{{ obTabA }}">A · Focused</button>
+        <button onClick="{{ setObB }}" style="{{ obTabB }}">B · Split</button>
+      </div>
+      <button onClick="{{ goHome }}" style="border-radius:999px;padding:8px 16px;background:#ebddc5;font-weight:600;font-size:13px">Skip to app</button>
+    </div>
+  </div>
+
+  <div style="flex:1;display:flex;justify-content:center;padding:8px 32px 48px">
+    <div style="width:100%;max-width:1040px;display:flex;gap:36px">
+
+      <!-- B: left rail -->
+      <sc-if value="{{ obIsB }}" hint-placeholder-val="{{ false }}">
+      <div style="width:290px;flex:none;padding-top:18px">
+        <div style="font-family:Caprasimo;font-size:34px;line-height:1.08;margin-bottom:10px">Let's set up<br>your board year.</div>
+        <div style="color:#7a6f5d;font-size:14px;margin-bottom:28px;max-width:250px">Five quick steps. We'll pull your exact FBISE textbooks and build a plan around your paper date.</div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ obSteps }}" as="s" hint-placeholder-count="5">
+            <div style="display:flex;align-items:center;gap:12px;padding:9px 12px;border-radius:14px;background:{{ s.railBg }}">
+              <div style="width:26px;height:26px;flex:none;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:{{ s.dotBg }};color:{{ s.dotFg }}">{{ s.n }}</div>
+              <div style="font-weight:600;font-size:14px;color:{{ s.labelFg }}">{{ s.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      </sc-if>
+
+      <div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center">
+        <!-- A: top progress rail -->
+        <sc-if value="{{ obIsA }}" hint-placeholder-val="{{ false }}">
+        <div style="width:100%;max-width:640px;margin:12px 0 26px">
+          <div style="display:flex;gap:6px;margin-bottom:10px">
+            <sc-for list="{{ obSteps }}" as="s" hint-placeholder-count="5">
+              <div style="height:6px;flex:1;border-radius:999px;background:{{ s.barBg }}"></div>
+            </sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:#7a6f5d;font-weight:600">
+            <div>Step {{ obStep }} of 5 · {{ obLabel }}</div>
+            <div>{{ obPct }}% done</div>
+          </div>
+        </div>
+        </sc-if>
+
+        <div style="width:100%;max-width:660px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:26px;padding:34px 34px 28px;box-shadow:0 10px 30px rgba(90,62,30,.07);animation:pf-in .3s ease">
+
+          <sc-if value="{{ ob1 }}" hint-placeholder-val="{{ false }}">
+            <div style="font-family:Caprasimo;font-size:30px;line-height:1.15;margin-bottom:6px">Which class are you in?</div>
+            <div style="color:#7a6f5d;margin-bottom:24px">We load the exact FBISE textbooks and past papers for that year.</div>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+              <sc-for list="{{ classes }}" as="c" hint-placeholder-count="4">
+                <button onClick="{{ c.pick }}" style="text-align:left;border-radius:18px;padding:18px 20px;background:{{ c.bg }};border:2px solid {{ c.bd }}">
+                  <div style="font-family:Caprasimo;font-size:22px;color:{{ c.fg }}">{{ c.name }}</div>
+                  <div style="font-size:13px;color:#7a6f5d;margin-top:2px">{{ c.sub }}</div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ ob2 }}" hint-placeholder-val="{{ false }}">
+            <div style="font-family:Caprasimo;font-size:30px;line-height:1.15;margin-bottom:6px">Pick your track</div>
+            <div style="color:#7a6f5d;margin-bottom:24px">This sets your compulsory subjects. You can still add or drop any subject next.</div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <sc-for list="{{ tracks }}" as="t" hint-placeholder-count="3">
+                <button onClick="{{ t.pick }}" style="display:flex;align-items:center;gap:16px;text-align:left;border-radius:18px;padding:16px 20px;background:{{ t.bg }};border:2px solid {{ t.bd }}">
+                  <div style="width:42px;height:42px;flex:none;border-radius:999px;background:{{ t.dot }}"></div>
+                  <div style="flex:1">
+                    <div style="font-weight:700;font-size:17px">{{ t.name }}</div>
+                    <div style="font-size:13px;color:#7a6f5d">{{ t.sub }}</div>
+                  </div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ ob3 }}" hint-placeholder-val="{{ false }}">
+            <div style="font-family:Caprasimo;font-size:30px;line-height:1.15;margin-bottom:6px">Confirm your subjects</div>
+            <div style="color:#7a6f5d;margin-bottom:20px">Schools differ — tap to add or remove. <span style="color:#8f4a20;font-weight:600">{{ subCount }} selected.</span></div>
+            <div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px">
+              <sc-for list="{{ allSubjects }}" as="s" hint-placeholder-count="9">
+                <button onClick="{{ s.toggle }}" style="border-radius:999px;padding:10px 16px;font-weight:600;font-size:14px;background:{{ s.bg }};color:{{ s.fg }};border:1.5px solid {{ s.bd }}">{{ s.mark }}{{ s.name }}</button>
+              </sc-for>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;background:#e6ead9;border-radius:16px;padding:14px 16px">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f5c36" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path></svg>
+              <div style="font-size:13.5px;color:#4f5c36;line-height:1.45">Prepify will fetch each subject's full FBISE textbook, chapter by chapter, plus the last 8 years of board papers — so the tutor answers from <em>your</em> book, not the internet.</div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ ob4 }}" hint-placeholder-val="{{ false }}">
+            <div style="font-family:Caprasimo;font-size:30px;line-height:1.15;margin-bottom:6px">When is your first paper?</div>
+            <div style="color:#7a6f5d;margin-bottom:24px">Everything — daily plan, revision spacing, mock timing — works backwards from this date.</div>
+            <div style="display:flex;gap:14px;align-items:center;margin-bottom:20px">
+              <input type="date" value="{{ examDate }}" onChange="{{ setDate }}" style="flex:1;border-radius:999px;border:1.5px solid #e0d0b4;background:#fff;padding:14px 20px;font-size:16px;font-weight:600;color:#201e1d">
+            </div>
+            <div style="display:flex;gap:14px">
+              <div style="flex:1;background:#f6e1d0;border-radius:18px;padding:18px 20px">
+                <div style="font-family:Caprasimo;font-size:36px;color:#8f4a20;line-height:1">{{ daysLeft }}</div>
+                <div style="font-size:13px;color:#8f4a20;font-weight:600">days to prepare</div>
+              </div>
+              <div style="flex:1;background:#e6ead9;border-radius:18px;padding:18px 20px">
+                <div style="font-family:Caprasimo;font-size:36px;color:#4f5c36;line-height:1">42<span style="font-size:20px">min</span></div>
+                <div style="font-size:13px;color:#4f5c36;font-weight:600">suggested daily study</div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ ob5 }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+              <div style="font-family:Caprasimo;font-size:30px;line-height:1.15">Quick placement check</div>
+              <div style="font-size:13px;font-weight:700;color:#8f4a20;background:#f6e1d0;border-radius:999px;padding:6px 14px">{{ dqPos }} of 6</div>
+            </div>
+            <div style="color:#7a6f5d;margin-bottom:22px">No grade, no pressure. Six questions so we know where to start you.</div>
+            <sc-if value="{{ dqOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="background:#f5ead8;border-radius:18px;padding:20px 22px;margin-bottom:18px">
+                <div style="font-size:12px;font-weight:700;color:#7a6f5d;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px">{{ dqSubject }}</div>
+                <div style="font-size:19px;font-weight:600;line-height:1.4">{{ dqText }}</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ dqOptions }}" as="o" hint-placeholder-count="4">
+                  <button onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:14px;text-align:left;border-radius:16px;padding:14px 18px;background:{{ o.bg }};border:1.5px solid {{ o.bd }}">
+                    <div style="width:28px;height:28px;flex:none;border-radius:999px;background:{{ o.keyBg }};color:{{ o.keyFg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">{{ o.key }}</div>
+                    <div style="font-weight:500">{{ o.text }}</div>
+                  </button>
+                </sc-for>
+              </div>
+              <button onClick="{{ dqSkip }}" style="margin-top:14px;font-size:13px;font-weight:600;color:#7a6f5d">Not covered yet — skip</button>
+            </sc-if>
+            <sc-if value="{{ dqDone }}" hint-placeholder-val="{{ false }}">
+              <div style="text-align:center;padding:14px 0 4px">
+                <div style="width:96px;height:96px;margin:0 auto 18px;border-radius:999px;background:#e6ead9;display:flex;align-items:center;justify-content:center">
+                  <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4f5c36" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <div style="font-family:Caprasimo;font-size:28px;margin-bottom:6px">You're at a solid starting point</div>
+                <div style="color:#7a6f5d;max-width:420px;margin:0 auto 22px">Estimated level: <strong style="color:#201e1d">Developing (C+ range)</strong>. Strongest in Biology, weakest in Physics numericals — your plan starts there.</div>
+                <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+                  <div style="background:#e6ead9;color:#4f5c36;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px">Biology · strong</div>
+                  <div style="background:#f6e1d0;color:#8f4a20;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px">Chemistry · mixed</div>
+                  <div style="background:#f6e1d0;color:#8f4a20;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px">Physics · needs work</div>
+                </div>
+              </div>
+            </sc-if>
+          </sc-if>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:28px;padding-top:20px;border-top:1px solid #ece0c8">
+            <button onClick="{{ obBack }}" style="font-weight:600;color:#7a6f5d;padding:10px 4px;font-size:14px">{{ backLabel }}</button>
+            <button onClick="{{ obNext }}" style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:13px 30px;font-size:15px;box-shadow:0 6px 16px rgba(198,113,57,.3)">{{ nextLabel }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ APP SHELL ============ -->
+<sc-if value="{{ inApp }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;min-height:100vh">
+
+  <!-- sidebar -->
+  <div style="width:246px;flex:none;background:#efe2ca;border-right:1px solid #e2d2b6;padding:20px 14px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh">
+    <div style="display:flex;align-items:center;gap:10px;padding:4px 10px 22px">
+      <div style="width:34px;height:34px;border-radius:999px;background:#c67139;display:flex;align-items:center;justify-content:center;color:#fff;font-family:Caprasimo;font-size:18px">P</div>
+      <div style="font-family:Caprasimo;font-size:19px">Prepify AI</div>
+    </div>
+    <sc-for list="{{ nav }}" as="n" hint-placeholder-count="8">
+      <button onClick="{{ n.go }}" style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;text-align:left;font-weight:600;font-size:14.5px;background:{{ n.bg }};color:{{ n.fg }}">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="{{ n.d }}"></path></svg>
+        <span style="flex:1">{{ n.label }}</span>
+        <sc-if value="{{ n.badge }}" hint-placeholder-val="{{ false }}">
+          <span style="background:#c67139;color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 7px">{{ n.badge }}</span>
+        </sc-if>
+      </button>
+    </sc-for>
+    <div style="flex:1"></div>
+    <button onClick="{{ goOnboard }}" style="text-align:left;padding:10px 12px;border-radius:14px;font-size:13px;font-weight:600;color:#7a6f5d">↻ Replay onboarding</button>
+    <div style="background:#e6ead9;border-radius:18px;padding:14px 16px;margin-top:6px">
+      <div style="font-size:12.5px;font-weight:700;color:#4f5c36;margin-bottom:4px">Data saver is on</div>
+      <div style="font-size:12px;color:#5d6b46;line-height:1.4">Chapters cached offline. Tutor replies use ~4 KB each.</div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column">
+
+    <!-- topbar -->
+    <div style="height:66px;flex:none;border-bottom:1px solid #e6d7bb;background:#faf1e0;display:flex;align-items:center;gap:10px;padding:0 26px;position:sticky;top:0;z-index:20">
+      <div style="font-family:Caprasimo;font-size:19px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ screenTitle }}</div>
+
+      <div style="flex:none;display:flex;align-items:center;gap:7px;background:#f6e1d0;border-radius:999px;padding:7px 14px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#c67139" stroke="none"><path d="M12 2c3 4 6 6 6 10a6 6 0 0 1-12 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3 1-6 2-9z"></path></svg>
+        <span style="font-weight:700;font-size:13.5px;color:#8f4a20;white-space:nowrap">17 day streak</span>
+      </div>
+      <div style="flex:none;display:flex;align-items:center;gap:7px;background:#e6ead9;border-radius:999px;padding:7px 14px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#7a8a5e" stroke="none"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg>
+        <span style="font-weight:700;font-size:13.5px;color:#4f5c36;white-space:nowrap">Lv 12 · 3,840 XP</span>
+      </div>
+      <div style="flex:none;display:flex;align-items:center;gap:7px;background:#ebddc5;border-radius:999px;padding:7px 14px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7a6f5d" stroke-width="2.6" stroke-linecap="round"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M12 7v5l3 2"></path></svg>
+        <span style="font-weight:700;font-size:13.5px;color:#5d5648;white-space:nowrap">{{ daysLeft }} days to boards</span>
+      </div>
+      <div style="flex:none;display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+        <button onClick="{{ setEN }}" style="{{ langEN }}">EN</button>
+        <button onClick="{{ setUR }}" style="{{ langUR }}">اردو</button>
+      </div>
+      <button onClick="{{ toggleDevice }}" title="Preview on phone" style="width:36px;height:36px;border-radius:999px;background:#ebddc5;display:flex;align-items:center;justify-content:center">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5d5648" stroke-width="2.5" stroke-linecap="round"><path d="M7 2h10v20H7zM11 18h2"></path></svg>
+      </button>
+      <div style="width:36px;height:36px;border-radius:999px;background:#7a8a5e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">AR</div>
+    </div>
+
+    <div style="flex:1;padding:26px;animation:pf-in .25s ease">
+
+      <!-- ---------- HOME ---------- -->
+      <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px">
+          <div>
+            <div style="font-family:Caprasimo;font-size:32px;line-height:1.1">Assalam-o-Alaikum, Areeba</div>
+            <div style="color:#7a6f5d;margin-top:4px">Class 11 · Pre-Medical · You're 3 topics ahead of your plan this week.</div>
+          </div>
+          <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+            <button onClick="{{ setHomeA }}" style="{{ homeTabA }}">A · Bento</button>
+            <button onClick="{{ setHomeB }}" style="{{ homeTabB }}">B · Focus rail</button>
+          </div>
+        </div>
+
+        <!-- Variant A: bento -->
+        <sc-if value="{{ homeIsA }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;align-items:start">
+          <div style="grid-column:span 2;background:#c67139;border-radius:24px;padding:26px 28px;color:#fff;display:flex;align-items:center;gap:24px;box-shadow:0 12px 28px rgba(198,113,57,.25)">
+            <div style="flex:1">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:8px">Continue where you left off</div>
+              <div style="font-family:Caprasimo;font-size:26px;line-height:1.15;margin-bottom:6px">Physics · Ch 5 — Circular Motion</div>
+              <div style="opacity:.9;font-size:14px">Topic 5.3 Centripetal Force · you stopped 4 min into the reading</div>
+              <div style="height:8px;background:rgba(255,255,255,.28);border-radius:999px;margin-top:16px;max-width:340px"><div style="height:8px;width:38%;background:#fff;border-radius:999px"></div></div>
+            </div>
+            <button onClick="{{ goTopic }}" style="border-radius:999px;background:#fff;color:#8f4a20;font-weight:700;padding:14px 26px;font-size:15px;flex:none">Resume →</button>
+          </div>
+
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div style="width:38px;height:38px;border-radius:999px;background:#f6e1d0;display:flex;align-items:center;justify-content:center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c67139" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a5 5 0 0 1 5-5h11M20 15a5 5 0 0 1-5 5H4M17 1l3 3-3 3M7 17l-3 3 3 3"></path></svg>
+              </div>
+              <div>
+                <div style="font-family:Caprasimo;font-size:30px;line-height:1">23</div>
+                <div style="font-size:13px;color:#7a6f5d;font-weight:600;margin-top:-2px">reviews due today</div>
+              </div>
+            </div>
+            <div style="font-size:13px;color:#7a6f5d;line-height:1.45">Spaced repetition keeps Ch 1–4 from slipping. About 9 minutes.</div>
+            <button onClick="{{ goReviews }}" style="border-radius:999px;background:#ebddc5;font-weight:700;font-size:14px;padding:11px 0;width:100%">Start review</button>
+          </div>
+
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px">
+            <div style="font-weight:700;font-size:15px;margin-bottom:4px">Today's Plan</div>
+            <div style="font-size:12.5px;color:#7a6f5d;margin-bottom:14px">3 of 5 done · 38 min left</div>
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <sc-for list="{{ tasks }}" as="t" hint-placeholder-count="5">
+                <div style="display:flex;align-items:center;gap:11px">
+                  <div style="width:22px;height:22px;flex:none;border-radius:999px;border:2px solid {{ t.ring }};background:{{ t.fill }};display:flex;align-items:center;justify-content:center">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{{ t.tick }}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                  </div>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-size:14px;font-weight:600;color:{{ t.fg }};text-decoration:{{ t.deco }}">{{ t.title }}</div>
+                    <div style="font-size:12px;color:#9a8d78">{{ t.meta }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="grid-column:span 2;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px 24px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px">
+              <div style="font-weight:700;font-size:15px">Predicted grade by subject</div>
+              <div style="font-size:12.5px;color:#7a6f5d">Based on 412 answered questions</div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+              <sc-for list="{{ gauges }}" as="g" hint-placeholder-count="4">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+                  <div style="position:relative;width:88px;height:88px">
+                    <svg width="88" height="88" viewBox="0 0 88 88">
+                      <circle cx="44" cy="44" r="38" fill="none" stroke="#ebddc5" stroke-width="9"></circle>
+                      <circle cx="44" cy="44" r="38" fill="none" stroke="{{ g.color }}" stroke-width="9" stroke-linecap="round" stroke-dasharray="{{ g.dash }}" transform="rotate(-90 44 44)"></circle>
+                    </svg>
+                    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                      <div style="font-family:Caprasimo;font-size:24px;line-height:1;color:{{ g.color }}">{{ g.grade }}</div>
+                      <div style="font-size:11px;color:#9a8d78;font-weight:600">{{ g.pct }}%</div>
+                    </div>
+                  </div>
+                  <div style="font-size:13.5px;font-weight:600">{{ g.name }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px">
+            <div style="font-weight:700;font-size:15px;margin-bottom:3px">Weak spots</div>
+            <div style="font-size:12.5px;color:#7a6f5d;margin-bottom:14px">Fix these three and your predicted average moves up a grade.</div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <sc-for list="{{ weak }}" as="w" hint-placeholder-count="3">
+                <button onClick="{{ goPractice }}" style="width:100%;text-align:left;display:flex;align-items:center;gap:12px;background:#f5ead8;border-radius:16px;padding:12px 14px">
+                  <div style="width:36px;height:36px;flex:none;border-radius:999px;background:{{ w.bg }};color:{{ w.fg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">{{ w.score }}</div>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ w.topic }}</div>
+                    <div style="font-size:12px;color:#9a8d78">{{ w.subject }}</div>
+                  </div>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+        <!-- Variant B: focus rail -->
+        <sc-if value="{{ homeIsB }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:420px;display:flex;flex-direction:column;gap:16px">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:26px 28px">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c67139;margin-bottom:14px">Your next 38 minutes</div>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ tasks }}" as="t" hint-placeholder-count="5">
+                  <div style="display:flex;align-items:center;gap:14px;background:{{ t.rowBg }};border-radius:18px;padding:14px 16px">
+                    <div style="width:26px;height:26px;flex:none;border-radius:999px;border:2px solid {{ t.ring }};background:{{ t.fill }};display:flex;align-items:center;justify-content:center">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="{{ t.tick }}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                    </div>
+                    <div style="flex:1;min-width:0">
+                      <div style="font-size:15px;font-weight:600;color:{{ t.fg }};text-decoration:{{ t.deco }}">{{ t.title }}</div>
+                      <div style="font-size:12.5px;color:#9a8d78">{{ t.meta }}</div>
+                    </div>
+                    <div style="font-size:12px;font-weight:700;color:{{ t.pillFg }};background:{{ t.pillBg }};border-radius:999px;padding:5px 12px">{{ t.pill }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <button onClick="{{ goTopic }}" style="margin-top:18px;border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:14px 28px;font-size:15px">Start with Centripetal Force →</button>
+            </div>
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px 24px">
+              <div style="font-weight:700;font-size:15px;margin-bottom:14px">Predicted grades</div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <sc-for list="{{ gauges }}" as="g" hint-placeholder-count="4">
+                  <div style="display:flex;align-items:center;gap:14px">
+                    <div style="width:120px;font-size:14px;font-weight:600">{{ g.name }}</div>
+                    <div style="flex:1;height:12px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:12px;width:{{ g.pct }}%;background:{{ g.color }};border-radius:999px"></div></div>
+                    <div style="width:44px;text-align:right;font-family:Caprasimo;font-size:19px;color:{{ g.color }}">{{ g.grade }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+          <div style="width:320px;flex:none;display:flex;flex-direction:column;gap:16px">
+            <div style="background:#c67139;color:#fff;border-radius:24px;padding:22px;box-shadow:0 12px 28px rgba(198,113,57,.25)">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:6px">Resume</div>
+              <div style="font-family:Caprasimo;font-size:21px;line-height:1.2;margin-bottom:12px">Ch 5 — Circular Motion</div>
+              <button onClick="{{ goTopic }}" style="border-radius:999px;background:#fff;color:#8f4a20;font-weight:700;padding:11px 22px;font-size:14px">Continue</button>
+            </div>
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:20px;text-align:center">
+              <div style="font-family:Caprasimo;font-size:40px;line-height:1;color:#c67139">23</div>
+              <div style="font-size:13px;color:#7a6f5d;font-weight:600;margin:2px 0 12px">reviews due</div>
+              <button onClick="{{ goReviews }}" style="border-radius:999px;background:#ebddc5;font-weight:700;font-size:14px;padding:10px 0;width:100%">Review now</button>
+            </div>
+            <div style="background:#e6ead9;border-radius:24px;padding:20px">
+              <div style="font-weight:700;font-size:14px;color:#4f5c36;margin-bottom:10px">Weak spots</div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <sc-for list="{{ weak }}" as="w" hint-placeholder-count="3">
+                  <button onClick="{{ goPractice }}" style="width:100%;text-align:left;font-size:13.5px;font-weight:600;color:#3f4a2b;display:flex;justify-content:space-between;gap:10px">
+                    <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ w.topic }}</span><span style="opacity:.7">{{ w.score }}</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+      </sc-if>
+
+      <!-- ---------- SUBJECTS ---------- -->
+      <sc-if value="{{ isSubjects }}" hint-placeholder-val="{{ false }}">
+        <div style="color:#7a6f5d;margin-bottom:20px;max-width:620px">Nine subjects enrolled. Textbooks fetched and indexed — tap a subject to open its chapter tree.</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+          <sc-for list="{{ subjects }}" as="s" hint-placeholder-count="9">
+            <button onClick="{{ s.open }}" style="text-align:left;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px">
+              <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px">
+                <div style="width:46px;height:46px;flex:none;border-radius:999px;background:{{ s.tint }};color:{{ s.fg }};display:flex;align-items:center;justify-content:center;font-family:Caprasimo;font-size:20px">{{ s.initial }}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-weight:700;font-size:16px">{{ s.name }}</div>
+                  <div style="font-size:12.5px;color:#9a8d78">{{ s.chCount }} chapters · {{ s.tCount }} topics</div>
+                </div>
+                <div style="font-family:Caprasimo;font-size:22px;color:{{ s.fg }}">{{ s.grade }}</div>
+              </div>
+              <div style="height:10px;background:#ebddc5;border-radius:999px;overflow:hidden;margin-bottom:8px"><div style="height:10px;width:{{ s.pct }}%;background:{{ s.fg }};border-radius:999px"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:12.5px;color:#7a6f5d;font-weight:600"><span>{{ s.pct }}% mastered</span><span>{{ s.due }} due</span></div>
+            </button>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ---------- CHAPTER TREE ---------- -->
+      <sc-if value="{{ isChapters }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px">
+          <div>
+            <button onClick="{{ goSubjects }}" style="font-size:13px;font-weight:600;color:#7a6f5d;margin-bottom:4px">← My Subjects</button>
+            <div style="font-family:Caprasimo;font-size:28px">Physics · Class 11</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="font-size:12.5px;color:#7a6f5d;font-weight:600">Study mode</div>
+            <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+              <button onClick="{{ setGuided }}" style="{{ modeG }}">Guided path</button>
+              <button onClick="{{ setFree }}" style="{{ modeF }}">Free roam</button>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:7px;font-size:12.5px;color:#7a6f5d;font-weight:600"><span style="width:11px;height:11px;border-radius:999px;background:#7a8a5e;display:inline-block"></span>Mastered 14</div>
+          <div style="display:flex;align-items:center;gap:7px;font-size:12.5px;color:#7a6f5d;font-weight:600;margin-left:12px"><span style="width:11px;height:11px;border-radius:999px;background:#c67139;display:inline-block"></span>In progress 5</div>
+          <div style="display:flex;align-items:center;gap:7px;font-size:12.5px;color:#7a6f5d;font-weight:600;margin-left:12px"><span style="width:11px;height:11px;border-radius:999px;background:#d8c8ab;display:inline-block"></span>Not started 29</div>
+          <div style="flex:1"></div>
+          <div style="font-size:12.5px;color:#7a6f5d">{{ modeHint }}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:900px">
+          <sc-for list="{{ chapters }}" as="c" hint-placeholder-count="6">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:22px;overflow:hidden">
+              <button onClick="{{ c.toggle }}" style="width:100%;display:flex;align-items:center;gap:14px;padding:16px 20px;text-align:left">
+                <div style="width:36px;height:36px;flex:none;border-radius:999px;background:{{ c.tint }};color:{{ c.fg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">{{ c.num }}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-weight:700;font-size:15.5px;color:{{ c.titleFg }}">{{ c.title }}</div>
+                  <div style="font-size:12.5px;color:#9a8d78">{{ c.meta }}</div>
+                </div>
+                <div style="width:120px;flex:none"><div style="height:8px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:8px;width:{{ c.pct }}%;background:{{ c.fg }};border-radius:999px"></div></div></div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9a8d78" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transform:rotate({{ c.rot }}deg)"><path d="m6 9 6 6 6-6"></path></svg>
+              </button>
+              <sc-if value="{{ c.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 20px 16px 70px;display:flex;flex-direction:column;gap:6px">
+                  <sc-for list="{{ c.topics }}" as="t" hint-placeholder-count="4">
+                    <button onClick="{{ t.go }}" style="width:100%;display:flex;align-items:center;gap:13px;padding:11px 14px;border-radius:14px;text-align:left;background:{{ t.rowBg }}">
+                      <div style="width:22px;height:22px;flex:none;border-radius:999px;background:{{ t.dotBg }};display:flex;align-items:center;justify-content:center">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="{{ t.iconFg }}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="{{ t.iconD }}"></path></svg>
+                      </div>
+                      <div style="flex:1;min-width:0;font-size:14px;font-weight:600;color:{{ t.fg }}">{{ t.title }}</div>
+                      <div style="font-size:11.5px;font-weight:700;border-radius:999px;padding:4px 11px;background:{{ t.chipBg }};color:{{ t.chipFg }}">{{ t.chip }}</div>
+                    </button>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ---------- TOPIC WORKSPACE ---------- -->
+      <sc-if value="{{ isTopic }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px">
+          <div>
+            <button onClick="{{ goChapters }}" style="font-size:13px;font-weight:600;color:#7a6f5d;margin-bottom:4px">← Physics · Ch 5 Rotational and Circular Motion</button>
+            <div style="font-family:Caprasimo;font-size:26px">5.3 Centripetal Force</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="font-size:12.5px;font-weight:700;color:#8f4a20;background:#f6e1d0;border-radius:999px;padding:7px 14px">In progress · pass the quiz to master</div>
+            <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+              <button onClick="{{ setTopicA }}" style="{{ topicTabA }}">A · 3 panes</button>
+              <button onClick="{{ setTopicB }}" style="{{ topicTabB }}">B · Reading + tabs</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:16px;align-items:stretch;flex-wrap:wrap;min-height:560px">
+          <!-- reading pane -->
+          <div style="flex:1;min-width:400px;height:660px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;display:flex;flex-direction:column;overflow:hidden">
+            <div style="padding:16px 22px;border-bottom:1px solid #ece0c8;display:flex;align-items:center;gap:10px">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#c67139" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4a2 2 0 0 1 2-2h13v18H6a2 2 0 0 0-2 2z"></path></svg>
+              <div style="font-weight:700;font-size:14px;flex:1">Textbook · FBISE Physics XI, p. 118</div>
+              <button style="font-size:12.5px;font-weight:700;color:#7a6f5d;background:#ebddc5;border-radius:999px;padding:6px 13px">Explain simply</button>
+            </div>
+            <div style="flex:1;overflow:auto;padding:24px 26px;font-size:15.5px;line-height:1.72;color:#332f2b">
+              <p style="margin:0 0 16px">When a body moves along a circular path with uniform speed, its direction of motion changes continuously. A change in direction is a change in velocity, so the body is accelerating even though its speed is constant. This acceleration is directed towards the centre of the circle and is called <strong>centripetal acceleration</strong>.</p>
+              <div style="background:#f6e1d0;border-radius:18px;padding:18px 22px;margin:20px 0">
+                <div style="font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8f4a20;margin-bottom:8px">Key relation</div>
+                <div style="font-family:Georgia,serif;font-size:22px;color:#201e1d">a<sub>c</sub> = v² / r &nbsp;&nbsp;→&nbsp;&nbsp; F<sub>c</sub> = m v² / r = m r ω²</div>
+              </div>
+              <p style="margin:0 0 16px">The force needed to produce this acceleration is the <strong>centripetal force</strong>. It is not a new kind of force — it is whatever real force happens to act towards the centre: tension in a string, friction between tyre and road, or gravitational pull on a satellite.</p>
+              <p style="margin:0 0 16px">A common board-exam error is to call the outward "centrifugal force" a real force. It is a fictitious force that appears only when you describe motion from a rotating frame of reference. In every FBISE marking scheme, marks are given for identifying the <em>real</em> inward force.</p>
+              <div style="border:1.5px dashed #d8c8ab;border-radius:18px;padding:26px;text-align:center;margin:22px 0;background:repeating-linear-gradient(45deg,#f5ead8,#f5ead8 8px,#f1e3cb 8px,#f1e3cb 16px)">
+                <div style="font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#7a6f5d">figure 5.7 — car on a banked road, force diagram</div>
+              </div>
+              <p style="margin:0 0 16px">For a car of mass <em>m</em> taking a bend of radius <em>r</em>, the maximum safe speed on a level road is limited by friction: v<sub>max</sub> = √(μ g r). Banking the road provides a horizontal component of the normal reaction, allowing a higher safe speed without relying on friction.</p>
+              <p style="margin:0">Worked example 5.4 in your textbook applies this to a 1000 kg car on a 50 m bend — work through it before attempting the quiz.</p>
+            </div>
+            <div style="padding:12px 22px;border-top:1px solid #ece0c8;display:flex;align-items:center;gap:10px">
+              <div style="flex:1;height:7px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:7px;width:64%;background:#c67139;border-radius:999px"></div></div>
+              <div style="font-size:12px;color:#9a8d78;font-weight:600">64% read</div>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <sc-if value="{{ topicIsA }}" hint-placeholder-val="{{ false }}">
+            <div style="width:340px;flex:1 1 300px;height:660px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;display:flex;flex-direction:column;overflow:hidden">
+              <div style="padding:16px 20px;border-bottom:1px solid #ece0c8;display:flex;align-items:center;gap:9px">
+                <div style="width:26px;height:26px;border-radius:999px;background:#7a8a5e;display:flex;align-items:center;justify-content:center">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path></svg>
+                </div>
+                <div style="font-weight:700;font-size:14px">AI Tutor</div>
+              </div>
+              <div style="flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:12px">
+                <sc-for list="{{ chat }}" as="m" hint-placeholder-count="3">
+                  <div style="align-self:{{ m.align }};max-width:88%;background:{{ m.bg }};color:{{ m.fg }};border-radius:{{ m.radius }};padding:12px 15px;font-size:14px;line-height:1.55">{{ m.text }}</div>
+                </sc-for>
+              </div>
+              <div style="padding:12px;border-top:1px solid #ece0c8">
+                <div style="display:flex;gap:8px;margin-bottom:9px;flex-wrap:wrap">
+                  <sc-for list="{{ chips }}" as="c" hint-placeholder-count="2">
+                    <button onClick="{{ c.ask }}" style="font-size:12px;font-weight:600;color:#5d5648;background:#f5ead8;border:1px solid #e6d7bb;border-radius:999px;padding:6px 12px">{{ c.text }}</button>
+                  </sc-for>
+                </div>
+                <div style="display:flex;gap:8px;align-items:center;background:#f5ead8;border-radius:999px;padding:5px 5px 5px 16px">
+                  <input value="{{ draft }}" onChange="{{ setDraft }}" onKeyDown="{{ onKey }}" placeholder="Ask about this topic…" style="flex:1;min-width:0;border:0;background:transparent;outline:none;font-size:14px;padding:8px 0">
+                  <button onClick="{{ send }}" style="width:36px;height:36px;flex:none;border-radius:999px;background:#c67139;display:flex;align-items:center;justify-content:center">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="m3 3 18 9-18 9 4-9z"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div style="width:330px;flex:1 1 300px;height:660px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;display:flex;flex-direction:column;overflow:hidden">
+              <div style="padding:16px 20px;border-bottom:1px solid #ece0c8;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-weight:700;font-size:14px">Mastery quiz</div>
+                <div style="font-size:12px;color:#9a8d78;font-weight:600">{{ quizMeta }}</div>
+              </div>
+              <div style="flex:1;overflow:auto;padding:20px">
+                <div style="font-size:15px;font-weight:600;line-height:1.45;margin-bottom:16px">A 0.5 kg stone is whirled on a 1 m string at 4 m s⁻¹. What is the tension in the string?</div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <sc-for list="{{ quizOpts }}" as="o" hint-placeholder-count="4">
+                    <button onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:12px;text-align:left;border-radius:14px;padding:12px 14px;background:{{ o.bg }};border:1.5px solid {{ o.bd }}">
+                      <div style="width:24px;height:24px;flex:none;border-radius:999px;background:{{ o.keyBg }};color:{{ o.keyFg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px">{{ o.key }}</div>
+                      <div style="font-size:14px;font-weight:500;flex:1">{{ o.text }}</div>
+                    </button>
+                  </sc-for>
+                </div>
+                <sc-if value="{{ quizDone }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin-top:16px;background:#e6ead9;border-radius:16px;padding:15px 16px">
+                    <div style="font-weight:700;color:#4f5c36;font-size:14px;margin-bottom:5px">Correct — F = mv²/r = 0.5 × 16 / 1</div>
+                    <div style="font-size:13px;color:#4f5c36;line-height:1.5">That's 3 of 4 right. One more and 5.3 is marked mastered, unlocking 5.4 Moment of Inertia.</div>
+                  </div>
+                </sc-if>
+              </div>
+              <div style="padding:14px 20px;border-top:1px solid #ece0c8">
+                <div style="display:flex;gap:5px;margin-bottom:10px">
+                  <div style="height:6px;flex:1;border-radius:999px;background:#7a8a5e"></div>
+                  <div style="height:6px;flex:1;border-radius:999px;background:#7a8a5e"></div>
+                  <div style="height:6px;flex:1;border-radius:999px;background:#c67139"></div>
+                  <div style="height:6px;flex:1;border-radius:999px;background:#ebddc5"></div>
+                </div>
+                <button onClick="{{ goPractice }}" style="width:100%;border-radius:999px;background:#ebddc5;font-weight:700;font-size:14px;padding:11px 0">Drill more questions</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ topicIsB }}" hint-placeholder-val="{{ false }}">
+            <div style="width:420px;flex:1 1 360px;height:660px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;display:flex;flex-direction:column;overflow:hidden">
+              <div style="padding:12px;border-bottom:1px solid #ece0c8">
+                <div style="display:flex;background:#f5ead8;border-radius:999px;padding:4px">
+                  <button onClick="{{ tabTutor }}" style="{{ tutorTab }}">AI Tutor</button>
+                  <button onClick="{{ tabQuiz }}" style="{{ quizTab }}">Mastery quiz · 3/4</button>
+                </div>
+              </div>
+              <sc-if value="{{ onTutor }}" hint-placeholder-val="{{ false }}">
+                <div style="flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:12px">
+                  <sc-for list="{{ chat }}" as="m" hint-placeholder-count="3">
+                    <div style="align-self:{{ m.align }};max-width:82%;background:{{ m.bg }};color:{{ m.fg }};border-radius:{{ m.radius }};padding:13px 16px;font-size:14.5px;line-height:1.55">{{ m.text }}</div>
+                  </sc-for>
+                </div>
+                <div style="padding:12px;border-top:1px solid #ece0c8">
+                  <div style="display:flex;gap:8px;margin-bottom:9px;flex-wrap:wrap">
+                    <sc-for list="{{ chips }}" as="c" hint-placeholder-count="2">
+                      <button onClick="{{ c.ask }}" style="font-size:12px;font-weight:600;color:#5d5648;background:#f5ead8;border:1px solid #e6d7bb;border-radius:999px;padding:6px 12px">{{ c.text }}</button>
+                    </sc-for>
+                  </div>
+                  <div style="display:flex;gap:8px;align-items:center;background:#f5ead8;border-radius:999px;padding:5px 5px 5px 16px">
+                    <input value="{{ draft }}" onChange="{{ setDraft }}" onKeyDown="{{ onKey }}" placeholder="Ask about this topic…" style="flex:1;min-width:0;border:0;background:transparent;outline:none;font-size:14px;padding:8px 0">
+                    <button onClick="{{ send }}" style="width:36px;height:36px;flex:none;border-radius:999px;background:#c67139;display:flex;align-items:center;justify-content:center">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" stroke="none"><path d="m3 3 18 9-18 9 4-9z"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ onQuiz }}" hint-placeholder-val="{{ false }}">
+                <div style="flex:1;overflow:auto;padding:22px">
+                  <div style="font-size:16px;font-weight:600;line-height:1.45;margin-bottom:18px">A 0.5 kg stone is whirled on a 1 m string at 4 m s⁻¹. What is the tension in the string?</div>
+                  <div style="display:flex;flex-direction:column;gap:10px">
+                    <sc-for list="{{ quizOpts }}" as="o" hint-placeholder-count="4">
+                      <button onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:12px;text-align:left;border-radius:16px;padding:14px 16px;background:{{ o.bg }};border:1.5px solid {{ o.bd }}">
+                        <div style="width:26px;height:26px;flex:none;border-radius:999px;background:{{ o.keyBg }};color:{{ o.keyFg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px">{{ o.key }}</div>
+                        <div style="font-size:14.5px;font-weight:500;flex:1">{{ o.text }}</div>
+                      </button>
+                    </sc-for>
+                  </div>
+                  <sc-if value="{{ quizDone }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:18px;background:#e6ead9;border-radius:16px;padding:16px">
+                      <div style="font-weight:700;color:#4f5c36;font-size:14.5px;margin-bottom:5px">Correct — F = mv²/r = 0.5 × 16 / 1 = 8 N</div>
+                      <div style="font-size:13.5px;color:#4f5c36;line-height:1.5">One more right answer marks 5.3 mastered and unlocks 5.4.</div>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <!-- ---------- PRACTICE & FEEDBACK ---------- -->
+      <sc-if value="{{ isPractice }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px">
+          <div>
+            <div style="font-family:Caprasimo;font-size:26px">Physics · Ch 5 drill</div>
+            <div style="color:#7a6f5d;font-size:14px;margin-top:2px">Question 4 of 12 · mixed MCQ, short and long · past papers 2018–2025</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="font-size:12.5px;color:#7a6f5d;font-weight:600">Feedback layout</div>
+            <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px">
+              <button onClick="{{ setFbA }}" style="{{ fbTabA }}">A · Side by side</button>
+              <button onClick="{{ setFbB }}" style="{{ fbTabB }}">B · Annotated</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:6px;margin-bottom:18px;max-width:1100px">
+          <sc-for list="{{ drillBar }}" as="b" hint-placeholder-count="12">
+            <div style="height:7px;flex:1;border-radius:999px;background:{{ b.bg }}"></div>
+          </sc-for>
+        </div>
+
+        <div style="max-width:1100px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:26px 28px;margin-bottom:16px">
+          <div style="display:flex;gap:10px;margin-bottom:14px">
+            <div style="font-size:11.5px;font-weight:700;background:#e6ead9;color:#4f5c36;border-radius:999px;padding:5px 12px">LONG QUESTION · 5 MARKS</div>
+            <div style="font-size:11.5px;font-weight:700;background:#ebddc5;color:#5d5648;border-radius:999px;padding:5px 12px">FBISE 2023 · Q17(b)</div>
+          </div>
+          <div style="font-size:19px;font-weight:600;line-height:1.5;margin-bottom:20px">Explain why a passenger in a car taking a sharp turn feels pushed outwards. Is any outward force acting on the passenger? Justify with reference to Newton's laws.</div>
+          <textarea value="{{ pAnswer }}" onChange="{{ setAnswer }}" placeholder="Write your answer as you would in the exam…" style="width:100%;min-height:120px;border:1.5px solid #e0d0b4;border-radius:18px;background:#fff;padding:16px 18px;font-size:15px;line-height:1.6;outline:none;resize:vertical"></textarea>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:14px">
+            <button onClick="{{ submitAnswer }}" style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:13px 28px;font-size:15px">{{ submitLabel }}</button>
+            <button style="border-radius:999px;background:#ebddc5;font-weight:700;padding:13px 22px;font-size:14px">Hint</button>
+            <div style="flex:1"></div>
+            <div style="font-size:12.5px;color:#9a8d78">Answer in Urdu is accepted — feedback follows your language setting.</div>
+          </div>
+        </div>
+
+        <sc-if value="{{ pShow }}" hint-placeholder-val="{{ false }}">
+          <!-- Variant A: side by side -->
+          <sc-if value="{{ fbIsA }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:1100px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;align-items:start;animation:pf-in .3s ease">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+                <div style="font-weight:700;font-size:15px">Your answer</div>
+                <div style="display:flex;align-items:baseline;gap:4px;background:#f6e1d0;border-radius:999px;padding:6px 15px">
+                  <span style="font-family:Caprasimo;font-size:20px;color:#8f4a20">3</span><span style="font-size:13px;font-weight:700;color:#8f4a20">/ 5 marks</span>
+                </div>
+              </div>
+              <div style="font-size:14.5px;line-height:1.65;color:#4a443c;background:#f5ead8;border-radius:16px;padding:16px 18px;margin-bottom:18px">The passenger feels pushed outwards because of centrifugal force acting away from the centre. The car turns but the passenger keeps going straight. So he moves outwards and hits the door.</div>
+              <div style="font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#4f5c36;margin-bottom:9px">What you got right</div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px">
+                <sc-for list="{{ fbGood }}" as="g" hint-placeholder-count="2">
+                  <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7a8a5e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:3px"><path d="M20 6 9 17l-5-5"></path></svg>
+                    <div>{{ g.text }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#8f4a20;margin-bottom:9px">Marks you missed</div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+                <sc-for list="{{ fbMiss }}" as="m" hint-placeholder-count="3">
+                  <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5">
+                    <div style="width:16px;height:16px;flex:none;border-radius:999px;border:2.5px solid #c67139;margin-top:2px"></div>
+                    <div><strong>{{ m.marks }}</strong> · {{ m.text }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#7a6f5d;margin-bottom:9px">Keywords the examiner looks for</div>
+              <div style="display:flex;flex-wrap:wrap;gap:7px">
+                <sc-for list="{{ fbKeys }}" as="k" hint-placeholder-count="6">
+                  <div style="font-size:12.5px;font-weight:600;border-radius:999px;padding:5px 12px;background:{{ k.bg }};color:{{ k.fg }}">{{ k.text }}</div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="background:#e6ead9;border-radius:24px;padding:24px">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+                <div style="font-weight:700;font-size:15px;color:#3f4a2b">Model full-marks answer</div>
+                <div style="background:#7a8a5e;color:#fff;border-radius:999px;padding:6px 15px;font-size:13px;font-weight:700">5 / 5</div>
+              </div>
+              <div style="font-size:14.5px;line-height:1.7;color:#3a4327">
+                <p style="margin:0 0 12px">No real outward force acts on the passenger. By Newton's first law, the passenger's body tends to continue moving in a <strong>straight line</strong> because of its <strong>inertia</strong>.</p>
+                <p style="margin:0 0 12px">The car, however, is being turned by a real <strong>centripetal force</strong> — the friction between the tyres and the road — directed towards the centre of the turn.</p>
+                <p style="margin:0 0 12px">Relative to the turning car, the passenger therefore appears to move outwards and presses against the door. The door then supplies the inward force that makes the passenger follow the circular path.</p>
+                <p style="margin:0">The apparent outward "centrifugal force" is a <strong>fictitious force</strong>, observed only in the rotating (non-inertial) frame of the car.</p>
+              </div>
+              <div style="margin-top:18px;padding-top:16px;border-top:1px solid #d3dbc1;display:flex;gap:10px">
+                <button onClick="{{ nextQ }}" style="border-radius:999px;background:#4f5c36;color:#fff;font-weight:700;padding:12px 24px;font-size:14px">Next question →</button>
+                <button style="border-radius:999px;background:rgba(255,255,255,.6);color:#3f4a2b;font-weight:700;padding:12px 20px;font-size:14px">Add to reviews</button>
+              </div>
+            </div>
+          </div>
+          </sc-if>
+
+          <!-- Variant B: annotated stacked -->
+          <sc-if value="{{ fbIsB }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:1100px;animation:pf-in .3s ease">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:26px 28px">
+              <div style="display:flex;align-items:center;gap:16px;margin-bottom:22px">
+                <div style="width:78px;height:78px;flex:none;position:relative">
+                  <svg width="78" height="78" viewBox="0 0 78 78">
+                    <circle cx="39" cy="39" r="33" fill="none" stroke="#ebddc5" stroke-width="9"></circle>
+                    <circle cx="39" cy="39" r="33" fill="none" stroke="#c67139" stroke-width="9" stroke-linecap="round" stroke-dasharray="124 999" transform="rotate(-90 39 39)"></circle>
+                  </svg>
+                  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:Caprasimo;font-size:22px;color:#8f4a20">3/5</div>
+                </div>
+                <div style="flex:1">
+                  <div style="font-family:Caprasimo;font-size:22px;margin-bottom:3px">Good instinct, incomplete physics</div>
+                  <div style="color:#7a6f5d;font-size:14px;line-height:1.5">You described the effect correctly but named the wrong cause. Two marks are sitting in the words <em>inertia</em> and <em>fictitious</em>.</div>
+                </div>
+                <button onClick="{{ nextQ }}" style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:12px 24px;font-size:14px;flex:none">Next question →</button>
+              </div>
+
+              <div style="font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#7a6f5d;margin-bottom:10px">Your answer, marked line by line</div>
+              <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:24px">
+                <sc-for list="{{ annotated }}" as="a" hint-placeholder-count="4">
+                  <div style="display:flex;gap:0;border-radius:16px;overflow:hidden;border:1px solid {{ a.bd }}">
+                    <div style="width:5px;flex:none;background:{{ a.bar }}"></div>
+                    <div style="flex:1;padding:13px 16px;background:{{ a.bg }}">
+                      <div style="font-size:14.5px;line-height:1.55;margin-bottom:6px">{{ a.text }}</div>
+                      <div style="font-size:13px;font-weight:600;color:{{ a.noteFg }}">{{ a.note }}</div>
+                    </div>
+                    <div style="flex:none;padding:13px 16px;font-size:12.5px;font-weight:700;color:{{ a.noteFg }};align-self:center">{{ a.mark }}</div>
+                  </div>
+                </sc-for>
+              </div>
+
+              <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px;align-items:center">
+                <div style="font-size:12.5px;font-weight:700;color:#7a6f5d;margin-right:4px">Keywords:</div>
+                <sc-for list="{{ fbKeys }}" as="k" hint-placeholder-count="6">
+                  <div style="font-size:12.5px;font-weight:600;border-radius:999px;padding:5px 12px;background:{{ k.bg }};color:{{ k.fg }}">{{ k.text }}</div>
+                </sc-for>
+              </div>
+
+              <div style="background:#e6ead9;border-radius:20px;padding:22px 24px">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+                  <div style="font-weight:700;font-size:15px;color:#3f4a2b">Model full-marks answer</div>
+                  <div style="background:#7a8a5e;color:#fff;border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:700">5 / 5</div>
+                </div>
+                <div style="font-size:14.5px;line-height:1.7;color:#3a4327">No real outward force acts. By Newton's first law the passenger continues in a <strong>straight line</strong> due to <strong>inertia</strong>, while the car is turned by a real <strong>centripetal force</strong> (tyre friction) towards the centre. The passenger presses on the door, and the door supplies the inward force that carries them round the bend. The apparent outward push is a <strong>fictitious force</strong> seen only in the car's rotating frame.</div>
+              </div>
+            </div>
+          </div>
+          </sc-if>
+        </sc-if>
+      </sc-if>
+
+      <!-- ---------- MOCK EXAM ---------- -->
+      <sc-if value="{{ isMock }}" hint-placeholder-val="{{ false }}">
+        <sc-if value="{{ mockIntro }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:700px">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:26px;padding:32px">
+              <div style="font-family:Caprasimo;font-size:28px;margin-bottom:6px">Physics XI · Full Paper Mock</div>
+              <div style="color:#7a6f5d;margin-bottom:24px">Built from the FBISE 2025 pattern. Sit it in one go — the timer does not pause.</div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px">
+                <div style="background:#f5ead8;border-radius:18px;padding:16px 18px"><div style="font-family:Caprasimo;font-size:26px">90</div><div style="font-size:13px;color:#7a6f5d;font-weight:600">minutes</div></div>
+                <div style="background:#f5ead8;border-radius:18px;padding:16px 18px"><div style="font-family:Caprasimo;font-size:26px">85</div><div style="font-size:13px;color:#7a6f5d;font-weight:600">total marks</div></div>
+                <div style="background:#f5ead8;border-radius:18px;padding:16px 18px"><div style="font-family:Caprasimo;font-size:26px">3</div><div style="font-size:13px;color:#7a6f5d;font-weight:600">sections</div></div>
+              </div>
+              <div style="display:flex;gap:10px">
+                <button onClick="{{ startMock }}" style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:14px 30px;font-size:15px">Start paper</button>
+                <button onClick="{{ showResults }}" style="border-radius:999px;background:#ebddc5;font-weight:700;padding:14px 24px;font-size:15px">See last result</button>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ mockRunning }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:960px;margin:0 auto">
+            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:22px;padding:14px 22px;margin-bottom:16px;position:sticky;top:66px;z-index:10">
+              <div style="font-family:Caprasimo;font-size:30px;color:{{ timerColor }};min-width:120px">{{ mockClock }}</div>
+              <div style="flex:1">
+                <div style="height:8px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:8px;width:{{ mockPct }}%;background:#c67139;border-radius:999px"></div></div>
+                <div style="font-size:12.5px;color:#7a6f5d;font-weight:600;margin-top:6px">Question 14 of 42 · Section B (short questions)</div>
+              </div>
+              <button onClick="{{ showResults }}" style="border-radius:999px;background:#ebddc5;font-weight:700;padding:11px 20px;font-size:14px">Submit paper</button>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
+              <div style="flex:1;min-width:380px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:28px">
+                <div style="font-size:11.5px;font-weight:700;letter-spacing:.07em;color:#8f4a20;margin-bottom:12px">SECTION B · Q14 · 3 MARKS</div>
+                <div style="font-size:19px;font-weight:600;line-height:1.5;margin-bottom:20px">Define moment of inertia. On what factors does the moment of inertia of a rigid body depend?</div>
+                <textarea placeholder="Write your answer…" style="width:100%;min-height:180px;border:1.5px solid #e0d0b4;border-radius:18px;background:#fff;padding:16px 18px;font-size:15px;line-height:1.6;outline:none;resize:vertical"></textarea>
+                <div style="display:flex;gap:10px;margin-top:16px">
+                  <button style="border-radius:999px;background:#ebddc5;font-weight:700;padding:12px 22px;font-size:14px">← Previous</button>
+                  <button style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:12px 26px;font-size:14px">Next →</button>
+                  <div style="flex:1"></div>
+                  <button style="border-radius:999px;background:transparent;border:1.5px solid #e0d0b4;font-weight:700;padding:12px 20px;font-size:14px;color:#7a6f5d">Flag for review</button>
+                </div>
+              </div>
+              <div style="width:230px;flex:none;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:20px">
+                <div style="font-weight:700;font-size:14px;margin-bottom:12px">Paper map</div>
+                <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:6px">
+                  <sc-for list="{{ paperMap }}" as="p" hint-placeholder-count="42">
+                    <div style="aspect-ratio:1;border-radius:8px;background:{{ p.bg }};color:{{ p.fg }};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">{{ p.n }}</div>
+                  </sc-for>
+                </div>
+                <div style="margin-top:14px;font-size:12px;color:#7a6f5d;line-height:1.6">
+                  <div>■ answered 13</div><div>■ current 1</div><div>■ untouched 28</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ mockDone }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:1000px">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:26px;padding:30px;margin-bottom:16px;display:flex;gap:32px;align-items:center;flex-wrap:wrap">
+              <div style="position:relative;width:150px;height:150px;flex:none">
+                <svg width="150" height="150" viewBox="0 0 150 150">
+                  <circle cx="75" cy="75" r="64" fill="none" stroke="#ebddc5" stroke-width="14"></circle>
+                  <circle cx="75" cy="75" r="64" fill="none" stroke="#c67139" stroke-width="14" stroke-linecap="round" stroke-dasharray="281 999" transform="rotate(-90 75 75)"></circle>
+                </svg>
+                <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                  <div style="font-family:Caprasimo;font-size:38px;line-height:1;color:#8f4a20">61</div>
+                  <div style="font-size:12px;color:#9a8d78;font-weight:600">of 85 marks</div>
+                </div>
+              </div>
+              <div style="flex:1">
+                <div style="font-family:Caprasimo;font-size:30px;line-height:1.15;margin-bottom:6px">That's a B+ — up two grades since June</div>
+                <div style="color:#7a6f5d;font-size:15px;margin-bottom:18px;max-width:520px">72% overall. You lost most marks in Section C long answers, where structure rather than knowledge was the problem. Fix that and an A is realistic before the boards.</div>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <div style="background:#e6ead9;color:#4f5c36;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px">Predicted grade · B+</div>
+                  <div style="background:#f6e1d0;color:#8f4a20;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px">+9 marks vs last mock</div>
+                  <div style="background:#ebddc5;color:#5d5648;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px">Finished 6 min early</div>
+                </div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+              <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px">
+                <div style="font-weight:700;font-size:15px;margin-bottom:16px">Section breakdown</div>
+                <div style="display:flex;flex-direction:column;gap:14px">
+                  <sc-for list="{{ sections }}" as="x" hint-placeholder-count="3">
+                    <div>
+                      <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;margin-bottom:6px"><span>{{ x.name }}</span><span style="color:{{ x.color }}">{{ x.got }} / {{ x.max }}</span></div>
+                      <div style="height:10px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:10px;width:{{ x.pct }}%;background:{{ x.color }};border-radius:999px"></div></div>
+                      <div style="font-size:12.5px;color:#9a8d78;margin-top:5px">{{ x.note }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px">
+                <div style="font-weight:700;font-size:15px;margin-bottom:4px">What to do next</div>
+                <div style="font-size:12.5px;color:#7a6f5d;margin-bottom:14px">Added to your study plan automatically.</div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <sc-for list="{{ mockNext }}" as="n" hint-placeholder-count="4">
+                    <div style="display:flex;gap:12px;align-items:center;background:#f5ead8;border-radius:16px;padding:13px 15px">
+                      <div style="width:32px;height:32px;flex:none;border-radius:999px;background:#f6e1d0;color:#8f4a20;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">{{ n.marks }}</div>
+                      <div style="flex:1;font-size:14px;font-weight:600">{{ n.text }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+                <button onClick="{{ goPlan }}" style="width:100%;margin-top:16px;border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:12px 0;font-size:14px">Open study plan</button>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </sc-if>
+
+      <!-- ---------- PROGRESS ---------- -->
+      <sc-if value="{{ isProgress }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
+          <div style="flex:1;min-width:560px;display:flex;flex-direction:column;gap:16px">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px;gap:12px;flex-wrap:wrap">
+                <div style="font-weight:700;font-size:16px">Syllabus coverage map</div>
+                <div style="font-size:12.5px;color:#7a6f5d">Every learning outcome in your 9 subjects · 486 total</div>
+              </div>
+              <div style="display:flex;gap:14px;margin:12px 0 20px;flex-wrap:wrap">
+                <sc-for list="{{ legend }}" as="l" hint-placeholder-count="4">
+                  <div style="display:flex;align-items:center;gap:7px;font-size:12.5px;color:#7a6f5d;font-weight:600"><span style="width:12px;height:12px;border-radius:4px;background:{{ l.bg }};display:inline-block"></span>{{ l.label }}</div>
+                </sc-for>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <sc-for list="{{ coverage }}" as="row" hint-placeholder-count="9">
+                  <div style="display:flex;align-items:center;gap:14px">
+                    <div style="width:124px;flex:none;font-size:13.5px;font-weight:600">{{ row.name }}</div>
+                    <div style="flex:1;min-width:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(15px,1fr));gap:4px">
+                      <sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="54">
+                        <div style="aspect-ratio:1;max-width:15px;border-radius:4px;background:{{ c.bg }}"></div>
+                      </sc-for>
+                    </div>
+                    <div style="width:38px;flex:none;text-align:right;font-family:Caprasimo;font-size:17px;color:{{ row.fg }}">{{ row.grade }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+              <div style="font-weight:700;font-size:16px;margin-bottom:4px">Weakest areas to fix</div>
+              <div style="font-size:12.5px;color:#7a6f5d;margin-bottom:16px">Ranked by marks at risk in the real paper.</div>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <sc-for list="{{ weakList }}" as="w" hint-placeholder-count="6">
+                  <button onClick="{{ goPractice }}" style="width:100%;display:flex;align-items:center;gap:14px;background:#f5ead8;border-radius:16px;padding:13px 16px;text-align:left">
+                    <div style="width:40px;flex:none;font-family:Caprasimo;font-size:18px;color:#8f4a20">{{ w.score }}</div>
+                    <div style="flex:1;min-width:0">
+                      <div style="font-size:14.5px;font-weight:600">{{ w.topic }}</div>
+                      <div style="font-size:12.5px;color:#9a8d78">{{ w.subject }} · {{ w.risk }} marks at risk</div>
+                    </div>
+                    <div style="width:140px;flex:none;height:8px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:8px;width:{{ w.pct }}%;background:#c67139;border-radius:999px"></div></div>
+                    <div style="font-size:13px;font-weight:700;color:#8f4a20;flex:none">Drill →</div>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+          <div style="width:300px;flex:none;display:flex;flex-direction:column;gap:16px">
+            <div style="background:#c67139;color:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 28px rgba(198,113,57,.25)">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:8px">Predicted aggregate</div>
+              <div style="font-family:Caprasimo;font-size:52px;line-height:1">B+</div>
+              <div style="font-size:14px;opacity:.9;margin-top:4px">712 / 1100 · 64.7%</div>
+              <div style="height:8px;background:rgba(255,255,255,.28);border-radius:999px;margin-top:16px"><div style="height:8px;width:65%;background:#fff;border-radius:999px"></div></div>
+              <div style="font-size:13px;opacity:.9;margin-top:10px">On your current pace you reach <strong>A (78%)</strong> by exam day.</div>
+            </div>
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:22px">
+              <div style="font-weight:700;font-size:15px;margin-bottom:14px">Predicted grades</div>
+              <div style="display:flex;flex-direction:column;gap:11px">
+                <sc-for list="{{ coverage }}" as="row" hint-placeholder-count="9">
+                  <div style="display:flex;align-items:center;justify-content:space-between;font-size:13.5px;font-weight:600">
+                    <span>{{ row.name }}</span>
+                    <span style="font-family:Caprasimo;font-size:17px;color:{{ row.fg }}">{{ row.grade }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="background:#e6ead9;border-radius:24px;padding:22px">
+              <div style="font-family:Caprasimo;font-size:32px;color:#4f5c36;line-height:1">17</div>
+              <div style="font-size:13px;font-weight:700;color:#4f5c36;margin-top:2px">day streak · Level 12</div>
+              <div style="font-size:13px;color:#5d6b46;line-height:1.5;margin-top:10px">Longest streak yet. 160 XP to Level 13.</div>
+              <div style="height:8px;background:rgba(255,255,255,.6);border-radius:999px;margin-top:12px"><div style="height:8px;width:78%;background:#7a8a5e;border-radius:999px"></div></div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ---------- STUDY PLAN ---------- -->
+      <sc-if value="{{ isPlan }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;max-width:1200px">
+          <div style="flex:1;min-width:440px;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px">
+              <div style="font-weight:700;font-size:16px">What to study next</div>
+              <div style="font-size:12.5px;color:#7a6f5d">Re-ranked every morning · {{ daysLeft }} days left</div>
+            </div>
+            <div style="font-size:13px;color:#7a6f5d;margin-bottom:18px">Ordered by how many board marks each topic is worth against how shaky you are on it.</div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <sc-for list="{{ planItems }}" as="p" hint-placeholder-count="6">
+                <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:{{ p.bg }};border:1px solid {{ p.bd }};border-radius:18px;padding:15px 18px">
+                  <div style="width:30px;flex:none;font-family:Caprasimo;font-size:20px;color:#c1b39a">{{ p.rank }}</div>
+                  <div style="flex:1;min-width:200px">
+                    <div style="font-size:15px;font-weight:600">{{ p.title }}</div>
+                    <div style="font-size:12.5px;color:#9a8d78">{{ p.meta }}</div>
+                  </div>
+                  <div style="font-size:11.5px;font-weight:700;border-radius:999px;padding:5px 12px;background:{{ p.chipBg }};color:{{ p.chipFg }};flex:none">{{ p.chip }}</div>
+                  <div style="font-size:12.5px;color:#7a6f5d;font-weight:600;width:52px;text-align:right;flex:none">{{ p.time }}</div>
+                  <button onClick="{{ goTopic }}" style="border-radius:999px;background:#ebddc5;font-weight:700;font-size:13px;padding:9px 16px;flex:none">Start</button>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="width:340px;flex:none;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px">
+            <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px">
+              <div style="width:40px;height:40px;border-radius:999px;background:#f6e1d0;display:flex;align-items:center;justify-content:center">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#c67139" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a5 5 0 0 1 5-5h11M20 15a5 5 0 0 1-5 5H4M17 1l3 3-3 3M7 17l-3 3 3 3"></path></svg>
+              </div>
+              <div>
+                <div style="font-weight:700;font-size:15px">Reviews due</div>
+                <div style="font-size:12.5px;color:#7a6f5d">23 cards · about 9 minutes</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+              <sc-for list="{{ reviewQueue }}" as="r" hint-placeholder-count="5">
+                <div style="display:flex;align-items:center;gap:11px;background:#f5ead8;border-radius:14px;padding:11px 14px">
+                  <div style="width:9px;height:9px;flex:none;border-radius:999px;background:{{ r.dot }}"></div>
+                  <div style="flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.topic }}</div>
+                  <div style="font-size:12px;color:#9a8d78;flex:none">{{ r.due }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <button onClick="{{ goReviews }}" style="width:100%;border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:13px 0;font-size:15px">Start review session</button>
+            <div style="margin-top:18px;padding-top:16px;border-top:1px solid #ece0c8;font-size:12.5px;color:#7a6f5d;line-height:1.6">Cards you get right come back in 4 days, then 10, then 25. Cards you miss come back tomorrow.</div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ---------- REVIEWS ---------- -->
+      <sc-if value="{{ isReviews }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:720px;margin:0 auto">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+            <div style="flex:1;height:8px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:8px;width:26%;background:#7a8a5e;border-radius:999px"></div></div>
+            <div style="font-size:13px;font-weight:700;color:#7a6f5d">6 / 23</div>
+          </div>
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:26px;padding:36px 34px;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center">
+            <div style="font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8f4a20;margin-bottom:16px">Chemistry · Ch 3 · last seen 10 days ago</div>
+            <div style="font-family:Caprasimo;font-size:28px;line-height:1.25;margin-bottom:22px">What is the oxidation number of chromium in K₂Cr₂O₇?</div>
+            <div style="font-size:15px;color:#7a6f5d">Say it out loud, then reveal.</div>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:16px">
+            <button style="flex:1;border-radius:999px;background:#ebddc5;font-weight:700;padding:14px 0;font-size:15px">Reveal answer</button>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:10px">
+            <button style="flex:1;border-radius:999px;background:#f6e1d0;color:#8f4a20;font-weight:700;padding:13px 0;font-size:14px">Again · tomorrow</button>
+            <button style="flex:1;border-radius:999px;background:#ebddc5;color:#5d5648;font-weight:700;padding:13px 0;font-size:14px">Hard · 3 days</button>
+            <button style="flex:1;border-radius:999px;background:#e6ead9;color:#4f5c36;font-weight:700;padding:13px 0;font-size:14px">Good · 10 days</button>
+            <button style="flex:1;border-radius:999px;background:#7a8a5e;color:#fff;font-weight:700;padding:13px 0;font-size:14px">Easy · 25 days</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ---------- SETTINGS ---------- -->
+      <sc-if value="{{ isSettings }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:820px;display:flex;flex-direction:column;gap:16px">
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+            <div style="display:flex;align-items:center;gap:16px">
+              <div style="width:64px;height:64px;flex:none;border-radius:999px;background:#7a8a5e;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Caprasimo;font-size:26px">AR</div>
+              <div style="flex:1">
+                <div style="font-family:Caprasimo;font-size:22px">Areeba Rehman</div>
+                <div style="color:#7a6f5d;font-size:14px">areeba.r@example.com · Islamabad Model College</div>
+              </div>
+              <button style="border-radius:999px;background:#ebddc5;font-weight:700;padding:11px 20px;font-size:14px">Edit profile</button>
+            </div>
+          </div>
+
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+            <div style="font-weight:700;font-size:16px;margin-bottom:18px">Class & subjects</div>
+            <div style="display:flex;gap:24px;margin-bottom:20px;flex-wrap:wrap">
+              <div>
+                <div style="font-size:12.5px;font-weight:700;color:#7a6f5d;margin-bottom:8px">Class</div>
+                <div style="display:flex;background:#f5ead8;border-radius:999px;padding:4px">
+                  <sc-for list="{{ classPills }}" as="c" hint-placeholder-count="4">
+                    <button onClick="{{ c.pick }}" style="{{ c.style }}">{{ c.name }}</button>
+                  </sc-for>
+                </div>
+              </div>
+              <div>
+                <div style="font-size:12.5px;font-weight:700;color:#7a6f5d;margin-bottom:8px">Exam date</div>
+                <input type="date" value="{{ examDate }}" onChange="{{ setDate }}" style="border-radius:999px;border:1.5px solid #e0d0b4;background:#fff;padding:10px 18px;font-size:14px;font-weight:600">
+              </div>
+            </div>
+            <div style="font-size:12.5px;font-weight:700;color:#7a6f5d;margin-bottom:9px">Enrolled subjects — tap to change</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ allSubjects }}" as="s" hint-placeholder-count="9">
+                <button onClick="{{ s.toggle }}" style="border-radius:999px;padding:9px 15px;font-weight:600;font-size:13.5px;background:{{ s.bg }};color:{{ s.fg }};border:1.5px solid {{ s.bd }}">{{ s.mark }}{{ s.name }}</button>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:24px;padding:24px 26px">
+            <div style="font-weight:700;font-size:16px;margin-bottom:18px">Study preferences</div>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;align-items:center;gap:20px">
+                <div style="flex:1">
+                  <div style="font-size:14.5px;font-weight:600">Study mode</div>
+                  <div style="font-size:12.5px;color:#9a8d78">Guided locks topics until mastered. Free roam opens everything.</div>
+                </div>
+                <div style="display:flex;background:#f5ead8;border-radius:999px;padding:4px;flex:none">
+                  <button onClick="{{ setGuided }}" style="{{ modeG }}">Guided</button>
+                  <button onClick="{{ setFree }}" style="{{ modeF }}">Free roam</button>
+                </div>
+              </div>
+              <div style="height:1px;background:#ece0c8"></div>
+              <div style="display:flex;align-items:center;gap:20px">
+                <div style="flex:1">
+                  <div style="font-size:14.5px;font-weight:600">Language</div>
+                  <div style="font-size:12.5px;color:#9a8d78">Tutor explanations and feedback follow this. Textbook stays in the board's language.</div>
+                </div>
+                <div style="display:flex;background:#f5ead8;border-radius:999px;padding:4px;flex:none">
+                  <button onClick="{{ setEN }}" style="{{ langEN }}">English</button>
+                  <button onClick="{{ setUR }}" style="{{ langUR }}">اردو</button>
+                </div>
+              </div>
+              <div style="height:1px;background:#ece0c8"></div>
+              <div style="display:flex;align-items:center;gap:20px">
+                <div style="flex:1">
+                  <div style="font-size:14.5px;font-weight:600">Data saver</div>
+                  <div style="font-size:12.5px;color:#9a8d78">Cache chapters overnight on Wi-Fi, skip images on mobile data.</div>
+                </div>
+                <button onClick="{{ toggleSaver }}" style="width:56px;height:32px;border-radius:999px;background:{{ saverBg }};position:relative;flex:none">
+                  <div style="position:absolute;top:4px;left:{{ saverX }};width:24px;height:24px;border-radius:999px;background:#fff;transition:left .18s ease"></div>
+                </button>
+              </div>
+              <div style="height:1px;background:#ece0c8"></div>
+              <div style="display:flex;align-items:center;gap:20px">
+                <div style="flex:1">
+                  <div style="font-size:14.5px;font-weight:600">Daily reminder</div>
+                  <div style="font-size:12.5px;color:#9a8d78">A nudge at 7:30 pm if you haven't studied.</div>
+                </div>
+                <button onClick="{{ toggleRemind }}" style="width:56px;height:32px;border-radius:999px;background:{{ remindBg }};position:relative;flex:none">
+                  <div style="position:absolute;top:4px;left:{{ remindX }};width:24px;height:24px;border-radius:999px;background:#fff;transition:left .18s ease"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<!-- ============ MOBILE PREVIEW ============ -->
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;inset:0;background:rgba(32,30,29,.55);z-index:60;display:flex;align-items:center;justify-content:center;gap:28px;padding:24px;overflow:auto">
+  <div style="width:392px;flex:none;height:812px;background:#f5ead8;border-radius:42px;border:9px solid #201e1d;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 70px rgba(0,0,0,.4)">
+    <div style="height:40px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 22px;font-size:12.5px;font-weight:700;background:#faf1e0">
+      <span>9:41</span><span>{{ daysLeft }}d to boards</span>
+    </div>
+    <div style="flex:none;padding:8px 18px 12px;background:#faf1e0;display:flex;align-items:center;gap:8px;border-bottom:1px solid #e6d7bb">
+      <div style="font-family:Caprasimo;font-size:18px;flex:1">{{ screenTitle }}</div>
+      <div style="display:flex;align-items:center;gap:5px;background:#f6e1d0;border-radius:999px;padding:5px 11px">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#c67139"><path d="M12 2c3 4 6 6 6 10a6 6 0 0 1-12 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3 1-6 2-9z"></path></svg>
+        <span style="font-weight:700;font-size:12px;color:#8f4a20">17</span>
+      </div>
+      <div style="display:flex;background:#ebddc5;border-radius:999px;padding:2px">
+        <button onClick="{{ setEN }}" style="{{ langENs }}">EN</button>
+        <button onClick="{{ setUR }}" style="{{ langURs }}">اردو</button>
+      </div>
+    </div>
+
+    <div style="flex:1;overflow:auto;padding:14px 16px 20px">
+      <sc-if value="{{ mHome }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#c67139;color:#fff;border-radius:22px;padding:18px 20px;margin-bottom:12px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-bottom:6px">Resume</div>
+          <div style="font-family:Caprasimo;font-size:19px;line-height:1.2;margin-bottom:4px">5.3 Centripetal Force</div>
+          <div style="font-size:12.5px;opacity:.9;margin-bottom:12px">Physics · Ch 5 · 4 min in</div>
+          <button onClick="{{ goTopic }}" style="border-radius:999px;background:#fff;color:#8f4a20;font-weight:700;padding:10px 22px;font-size:14px">Continue</button>
+        </div>
+        <div style="display:flex;gap:10px;margin-bottom:12px">
+          <button onClick="{{ goReviews }}" style="flex:1;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:20px;padding:14px;text-align:left">
+            <div style="font-family:Caprasimo;font-size:26px;color:#c67139;line-height:1">23</div>
+            <div style="font-size:12px;color:#7a6f5d;font-weight:600">reviews due</div>
+          </button>
+          <div style="flex:1;background:#e6ead9;border-radius:20px;padding:14px">
+            <div style="font-family:Caprasimo;font-size:26px;color:#4f5c36;line-height:1">Lv 12</div>
+            <div style="font-size:12px;color:#4f5c36;font-weight:600">3,840 XP</div>
+          </div>
+        </div>
+        <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:22px;padding:18px;margin-bottom:12px">
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:2px">Today's Plan</div>
+          <div style="font-size:12px;color:#7a6f5d;margin-bottom:12px">3 of 5 done · 38 min left</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ tasks }}" as="t" hint-placeholder-count="5">
+              <div style="display:flex;align-items:center;gap:11px">
+                <div style="width:21px;height:21px;flex:none;border-radius:999px;border:2px solid {{ t.ring }};background:{{ t.fill }};display:flex;align-items:center;justify-content:center">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="{{ t.tick }}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                </div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:13.5px;font-weight:600;color:{{ t.fg }};text-decoration:{{ t.deco }}">{{ t.title }}</div>
+                  <div style="font-size:11.5px;color:#9a8d78">{{ t.meta }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:22px;padding:18px">
+          <div style="font-weight:700;font-size:14.5px;margin-bottom:12px">Predicted grades</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ gauges }}" as="g" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:11px">
+                <div style="width:74px;flex:none;font-size:13px;font-weight:600">{{ g.name }}</div>
+                <div style="flex:1;height:9px;background:#ebddc5;border-radius:999px;overflow:hidden"><div style="height:9px;width:{{ g.pct }}%;background:{{ g.color }};border-radius:999px"></div></div>
+                <div style="width:30px;text-align:right;font-family:Caprasimo;font-size:16px;color:{{ g.color }}">{{ g.grade }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ mSubjects }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ subjects }}" as="s" hint-placeholder-count="9">
+            <button onClick="{{ s.open }}" style="width:100%;text-align:left;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:20px;padding:15px 16px;display:flex;align-items:center;gap:13px">
+              <div style="width:40px;height:40px;flex:none;border-radius:999px;background:{{ s.tint }};color:{{ s.fg }};display:flex;align-items:center;justify-content:center;font-family:Caprasimo;font-size:18px">{{ s.initial }}</div>
+              <div style="flex:1;min-width:0">
+                <div style="font-weight:700;font-size:14.5px">{{ s.name }}</div>
+                <div style="height:7px;background:#ebddc5;border-radius:999px;overflow:hidden;margin-top:7px"><div style="height:7px;width:{{ s.pct }}%;background:{{ s.fg }};border-radius:999px"></div></div>
+              </div>
+              <div style="font-family:Caprasimo;font-size:19px;color:{{ s.fg }};flex:none">{{ s.grade }}</div>
+            </button>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ mChapters }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px;margin-bottom:12px">
+          <button onClick="{{ setGuided }}" style="{{ modeGm }}">Guided path</button>
+          <button onClick="{{ setFree }}" style="{{ modeFm }}">Free roam</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <sc-for list="{{ chapters }}" as="c" hint-placeholder-count="8">
+            <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:20px;overflow:hidden">
+              <button onClick="{{ c.toggle }}" style="width:100%;display:flex;align-items:center;gap:12px;padding:14px 16px;text-align:left">
+                <div style="width:30px;height:30px;flex:none;border-radius:999px;background:{{ c.tint }};color:{{ c.fg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px">{{ c.num }}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.title }}</div>
+                  <div style="font-size:11.5px;color:#9a8d78">{{ c.meta }}</div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9a8d78" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transform:rotate({{ c.rot }}deg)"><path d="m6 9 6 6 6-6"></path></svg>
+              </button>
+              <sc-if value="{{ c.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 14px 12px 14px;display:flex;flex-direction:column;gap:5px">
+                  <sc-for list="{{ c.topics }}" as="t" hint-placeholder-count="4">
+                    <button onClick="{{ t.go }}" style="width:100%;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:13px;text-align:left;background:{{ t.rowBg }}">
+                      <div style="width:20px;height:20px;flex:none;border-radius:999px;background:{{ t.dotBg }};display:flex;align-items:center;justify-content:center">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="{{ t.iconFg }}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="{{ t.iconD }}"></path></svg>
+                      </div>
+                      <div style="flex:1;min-width:0;font-size:13px;font-weight:600;color:{{ t.fg }}">{{ t.title }}</div>
+                    </button>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ mTopic }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;background:#ebddc5;border-radius:999px;padding:3px;margin-bottom:12px">
+          <button onClick="{{ tabRead }}" style="{{ readTabM }}">Read</button>
+          <button onClick="{{ tabTutor }}" style="{{ tutorTabM }}">Tutor</button>
+          <button onClick="{{ tabQuiz }}" style="{{ quizTabM }}">Quiz</button>
+        </div>
+        <sc-if value="{{ onRead }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:20px;padding:18px;font-size:14.5px;line-height:1.7;color:#332f2b">
+            <div style="font-family:Caprasimo;font-size:19px;margin-bottom:10px">5.3 Centripetal Force</div>
+            <p style="margin:0 0 12px">When a body moves along a circular path with uniform speed its direction changes continuously, so it is accelerating towards the centre.</p>
+            <div style="background:#f6e1d0;border-radius:14px;padding:14px;margin:14px 0;font-family:Georgia,serif;font-size:18px">F<sub>c</sub> = m v² / r</div>
+            <p style="margin:0">Centripetal force is not a new force — it is whatever real force acts inward: tension, friction, or gravity.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ onTutor }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:12px">
+            <sc-for list="{{ chat }}" as="m" hint-placeholder-count="3">
+              <div style="align-self:{{ m.align }};max-width:86%;background:{{ m.bg }};color:{{ m.fg }};border-radius:{{ m.radius }};padding:12px 14px;font-size:14px;line-height:1.55">{{ m.text }}</div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;background:#fdf7ea;border:1px solid #e6d7bb;border-radius:999px;padding:5px 5px 5px 16px">
+            <input value="{{ draft }}" onChange="{{ setDraft }}" onKeyDown="{{ onKey }}" placeholder="Ask anything…" style="flex:1;min-width:0;border:0;background:transparent;outline:none;font-size:14px;padding:8px 0">
+            <button onClick="{{ send }}" style="width:36px;height:36px;flex:none;border-radius:999px;background:#c67139;display:flex;align-items:center;justify-content:center">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="m3 3 18 9-18 9 4-9z"></path></svg>
+            </button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ onQuiz }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:20px;padding:18px">
+            <div style="font-size:15px;font-weight:600;line-height:1.45;margin-bottom:14px">A 0.5 kg stone is whirled on a 1 m string at 4 m s⁻¹. Tension in the string?</div>
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <sc-for list="{{ quizOpts }}" as="o" hint-placeholder-count="4">
+                <button onClick="{{ o.pick }}" style="display:flex;align-items:center;gap:11px;text-align:left;border-radius:14px;padding:13px 14px;background:{{ o.bg }};border:1.5px solid {{ o.bd }}">
+                  <div style="width:24px;height:24px;flex:none;border-radius:999px;background:{{ o.keyBg }};color:{{ o.keyFg }};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px">{{ o.key }}</div>
+                  <div style="font-size:14px;font-weight:500">{{ o.text }}</div>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </sc-if>
+
+      <sc-if value="{{ mOther }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#fdf7ea;border:1px solid #e6d7bb;border-radius:22px;padding:22px;text-align:center">
+          <div style="font-family:Caprasimo;font-size:20px;margin-bottom:8px">{{ screenTitle }}</div>
+          <div style="font-size:13.5px;color:#7a6f5d;line-height:1.6">This screen is designed desktop-first. On phone it collapses to a single scrolling column — switch back to desktop to review the full layout.</div>
+        </div>
+      </sc-if>
+    </div>
+
+    <div style="flex:none;background:#faf1e0;border-top:1px solid #e6d7bb;display:flex;padding:8px 6px 14px">
+      <sc-for list="{{ mobileNav }}" as="n" hint-placeholder-count="5">
+        <button onClick="{{ n.go }}" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:5px 0;color:{{ n.fg }}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="{{ n.d }}"></path></svg>
+          <span style="font-size:10.5px;font-weight:700">{{ n.label }}</span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+  <div style="width:250px;flex:none;color:#f5ead8">
+    <div style="font-family:Caprasimo;font-size:22px;margin-bottom:8px">Phone preview</div>
+    <div style="font-size:14px;line-height:1.6;opacity:.8;margin-bottom:18px">Same data, one column, bottom tabs. Home, Subjects, Chapters and the Topic workspace have dedicated phone layouts.</div>
+    <button onClick="{{ toggleDevice }}" style="border-radius:999px;background:#c67139;color:#fff;font-weight:700;padding:12px 24px;font-size:14px">Back to desktop</button>
+  </div>
+</div>
+</sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:940},&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;onboarding&quot;,&quot;home&quot;,&quot;subjects&quot;,&quot;chapters&quot;,&quot;topic&quot;,&quot;practice&quot;,&quot;mock&quot;,&quot;progress&quot;,&quot;plan&quot;,&quot;reviews&quot;,&quot;settings&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Prototype&quot;},&quot;homeLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Layout variants&quot;},&quot;topicLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Layout variants&quot;},&quot;feedbackLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Layout variants&quot;},&quot;studyMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;guided&quot;,&quot;free&quot;],&quot;default&quot;:&quot;guided&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Behaviour&quot;}}">
+class Component extends DCLogic {
+  state = {
+    screen: this.props.startScreen || 'home', ob: 1, cls: '11th', track: 'Pre-Medical',
+    subs: ['Physics','Chemistry','Biology','Maths','English','Urdu','Islamiyat','Pak Studies','Computer Science'],
+    examDate: '2027-04-12', dq: 0, obVar: 'A',
+    homeVar: this.props.homeLayout || 'A',
+    topicVar: this.props.topicLayout || 'A',
+    fbVar: this.props.feedbackLayout || 'A',
+    lang: 'EN', device: 'desktop',
+    mode: this.props.studyMode || 'guided', open: ['ch5'],
+    topicTab: 'tutor', chat: [], draft: '', quizPick: null, quizDone: false,
+    pQ: 0, pShow: false, mockRunning: false, mockLeft: 5400, mockQ: 0, mockDone: false
+  };
+
+  C = { accent:'#c67139', accentD:'#8f4a20', tint:'#f6e1d0', sage:'#7a8a5e', sageD:'#4f5c36', sageT:'#e6ead9', muted:'#7a6f5d', line:'#e6d7bb', sand:'#ebddc5' };
+
+  NAV = [
+    ['home','Home','M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z'],
+    ['subjects','My Subjects','M4 4a2 2 0 0 1 2-2h13v18H6a2 2 0 0 0-2 2z'],
+    ['plan','Study Plan','M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM3 10h18M8 2v4M16 2v4'],
+    ['practice','Practice','M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8'],
+    ['mock','Mock Exams','M6 2h8l5 5v15H6zM14 2v5h5'],
+    ['progress','Progress','M4 20V10M10 20V4M16 20v-7M22 20H2'],
+    ['reviews','Reviews','M4 9a5 5 0 0 1 5-5h11M20 15a5 5 0 0 1-5 5H4M17 1l3 3-3 3M7 17l-3 3 3 3'],
+    ['settings','Settings','M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8M20.5 13l1.3-.8-1.7-3-1.5.6-1.7-1-.3-1.6h-3.4l-.3 1.6-1.7 1-1.5-.6-1.7 3 1.3.8v2l-1.3.8 1.7 3 1.5-.6 1.7 1 .3 1.6h3.4l.3-1.6 1.7-1 1.5.6 1.7-3-1.3-.8z']
+  ];
+
+  TITLES = { home:'Dashboard', subjects:'My Subjects', chapters:'Physics · Chapters', topic:'Topic Workspace', practice:'Practice & Feedback', mock:'Mock Exam', progress:'Progress', plan:'Study Plan', reviews:'Reviews Due', settings:'Settings' };
+
+  SUBJECTS = [
+    ['Physics', 62, 'B', 8], ['Chemistry', 71, 'B+', 5], ['Biology', 84, 'A', 2],
+    ['Maths', 48, 'C+', 11], ['Computer Science', 77, 'A-', 3], ['English', 66, 'B', 4],
+    ['Urdu', 58, 'B-', 6], ['Islamiyat', 90, 'A+', 1], ['Pak Studies', 73, 'B+', 3]
+  ];
+
+  CH = [
+    ['1','Measurements', ['Physical quantities & SI units','Errors and uncertainties','Significant figures','Dimensional analysis'], 'm'],
+    ['2','Vectors and Equilibrium', ['Vector addition by rectangular components','Product of two vectors','Torque','Equilibrium of forces'], 'm'],
+    ['3','Forces and Motion', ['Newton\u2019s laws revisited','Momentum and impulse','Elastic & inelastic collisions','Projectile motion'], 'm'],
+    ['4','Work and Energy', ['Work done by a variable force','Power and efficiency','Conservation of energy','Absolute PE'], 'p'],
+    ['5','Rotational and Circular Motion', ['Angular displacement & velocity','Relation between linear and angular','Centripetal force','Moment of inertia','Artificial satellites'], 'p'],
+    ['6','Fluid Dynamics', ['Viscosity and Stokes\u2019 law','Terminal velocity','Equation of continuity','Bernoulli\u2019s equation'], 'n'],
+    ['7','Oscillations', ['Simple harmonic motion','SHM and uniform circular motion','Simple pendulum','Damped oscillations'], 'n'],
+    ['8','Waves', ['Progressive waves','Stationary waves','Doppler effect','Beats'], 'n']
+  ];
+
+  TASKS = [
+    ['Review 23 flashcards', 'Ch 1–4 · spaced repetition', 1, '9 min'],
+    ['Read 5.3 Centripetal Force', 'Physics · textbook + tutor', 1, '12 min'],
+    ['Pass quiz 5.3', 'Need 70% to master', 1, '6 min'],
+    ['Drill 8 short questions', 'Chemistry · Ch 3 weak spot', 0, '15 min'],
+    ['Log tomorrow\u2019s plan', 'Optional', 0, '1 min']
+  ];
+
+  WEAK = [
+    ['Centripetal & centrifugal confusion', 'Physics · Ch 5', '31%'],
+    ['Balancing redox equations', 'Chemistry · Ch 3', '38%'],
+    ['Integration by substitution', 'Maths · Ch 9', '42%']
+  ];
+
+  DQ = [
+    ['Physics','A body moves in a circle of radius 2 m at constant speed. Which quantity stays constant?',['Velocity','Speed','Acceleration','Net force'],1],
+    ['Chemistry','Which of these is an example of a buffer solution?',['HCl + NaCl','CH3COOH + CH3COONa','NaOH + KOH','H2SO4 + water'],1],
+    ['Biology','The site of aerobic respiration in a eukaryotic cell is the',['Ribosome','Mitochondrion','Golgi body','Lysosome'],1],
+    ['Maths','The derivative of sin(2x) with respect to x is',['cos(2x)','2cos(2x)','-2cos(2x)','2sin(2x)'],1],
+    ['Physics','SI unit of torque is',['N','N m','N/m','J/s'],1],
+    ['Biology','Which vessel carries oxygenated blood to the body?',['Pulmonary artery','Vena cava','Aorta','Pulmonary vein'],2]
+  ];
+
+  daysLeft() {
+    const d = Math.round((new Date(this.state.examDate) - new Date('2026-08-15')) / 86400000);
+    return d > 0 ? d : 118;
+  }
+
+  set(k, v) { this.setState({ [k]: v }); }
+  go(s) { this.setState({ screen: s }); window.scrollTo(0, 0); }
+
+  pill(on) {
+    return 'border-radius:999px;padding:7px 15px;font-size:12.5px;font-weight:700;' +
+      (on ? 'background:#c67139;color:#fff;' : 'background:transparent;color:#7a6f5d;');
+  }
+
+  renderVals() {
+    const s = this.state, C = this.C;
+    const v = {
+      inApp: s.screen !== 'onboarding',
+      isOnboard: s.screen === 'onboarding',
+      isHome: s.screen === 'home', isSubjects: s.screen === 'subjects',
+      isChapters: s.screen === 'chapters', isTopic: s.screen === 'topic',
+      isPractice: s.screen === 'practice', isMock: s.screen === 'mock',
+      isProgress: s.screen === 'progress', isPlan: s.screen === 'plan',
+      isReviews: s.screen === 'reviews', isSettings: s.screen === 'settings',
+      screenTitle: this.TITLES[s.screen] || 'Prepify',
+      daysLeft: this.daysLeft(), examDate: s.examDate,
+      langEN: this.pill(s.lang === 'EN'), langUR: this.pill(s.lang === 'UR'),
+      setEN: () => this.set('lang', 'EN'), setUR: () => this.set('lang', 'UR'),
+      toggleDevice: () => this.set('device', s.device === 'desktop' ? 'mobile' : 'desktop'),
+      goHome: () => this.go('home'), goSubjects: () => this.go('subjects'),
+      goTopic: () => this.go('topic'), goPractice: () => this.go('practice'),
+      goReviews: () => this.go('reviews'), goOnboard: () => this.setState({ screen: 'onboarding', ob: 1 }),
+      homeIsA: s.homeVar === 'A', homeIsB: s.homeVar === 'B',
+      homeTabA: this.pill(s.homeVar === 'A'), homeTabB: this.pill(s.homeVar === 'B'),
+      setHomeA: () => this.set('homeVar', 'A'), setHomeB: () => this.set('homeVar', 'B'),
+      obIsA: s.obVar === 'A', obIsB: s.obVar === 'B',
+      obTabA: this.pill(s.obVar === 'A'), obTabB: this.pill(s.obVar === 'B'),
+      setObA: () => this.set('obVar', 'A'), setObB: () => this.set('obVar', 'B')
+    };
+
+    // nav
+    v.nav = this.NAV.map(([id, label, d]) => {
+      const active = s.screen === id || (id === 'subjects' && s.screen === 'chapters') || (id === 'subjects' && s.screen === 'topic');
+      return { id, label, d, bg: active ? '#c67139' : 'transparent', fg: active ? '#fff' : '#5d5648',
+        badge: id === 'reviews' ? '23' : '', go: () => this.go(id) };
+    });
+
+    // onboarding
+    const labels = ['Class', 'Track', 'Subjects', 'Exam date', 'Placement'];
+    v.obStep = s.ob; v.obLabel = labels[s.ob - 1]; v.obPct = Math.round((s.ob - 1) / 5 * 100);
+    v.obSteps = labels.map((label, i) => {
+      const n = i + 1, done = n < s.ob, cur = n === s.ob;
+      return { n, label,
+        barBg: n <= s.ob ? C.accent : C.sand,
+        railBg: cur ? '#fdf7ea' : 'transparent',
+        dotBg: done ? C.sage : cur ? C.accent : C.sand,
+        dotFg: (done || cur) ? '#fff' : '#9a8d78',
+        labelFg: cur ? '#201e1d' : '#7a6f5d' };
+    });
+    v.ob1 = s.ob === 1; v.ob2 = s.ob === 2; v.ob3 = s.ob === 3; v.ob4 = s.ob === 4; v.ob5 = s.ob === 5;
+    v.classes = [['9th','Matric part I'],['10th','Matric part II'],['11th','Intermediate part I'],['12th','Intermediate part II']]
+      .map(([name, sub]) => { const on = s.cls === name;
+        return { name, sub, bg: on ? C.tint : '#f5ead8', bd: on ? C.accent : 'transparent', fg: on ? C.accentD : '#201e1d', pick: () => this.set('cls', name) }; });
+    v.tracks = [['Pre-Medical','Biology, Chemistry, Physics'],['Pre-Engineering','Maths, Physics, Chemistry'],['ICS','Computer Science, Maths, Physics'],['General Science','Flexible combination']]
+      .map(([name, sub], i) => { const on = s.track === name;
+        return { name, sub, bg: on ? C.tint : '#f5ead8', bd: on ? C.accent : 'transparent', dot: [C.accent, C.sage, '#b58a4e', '#96725a'][i], pick: () => this.set('track', name) }; });
+    v.allSubjects = ['Physics','Chemistry','Biology','Maths','Computer Science','English','Urdu','Islamiyat','Pak Studies']
+      .map(name => { const on = s.subs.indexOf(name) >= 0;
+        return { name, mark: on ? '✓ ' : '+ ', bg: on ? C.accent : 'transparent', fg: on ? '#fff' : '#5d5648', bd: on ? C.accent : '#dfcfb2',
+          toggle: () => this.setState(st => ({ subs: on ? st.subs.filter(x => x !== name) : st.subs.concat(name) })) }; });
+    v.subCount = s.subs.length;
+    v.setDate = e => this.set('examDate', e.target.value);
+    const q = this.DQ[s.dq];
+    v.dqOpen = s.ob === 5 && s.dq < 6; v.dqDone = s.ob === 5 && s.dq >= 6;
+    v.dqPos = Math.min(s.dq + 1, 6);
+    v.dqSubject = q ? q[0] : ''; v.dqText = q ? q[1] : '';
+    v.dqOptions = q ? q[2].map((text, i) => ({ text, key: 'ABCD'[i], bg: '#f5ead8', bd: 'transparent', keyBg: C.sand, keyFg: '#5d5648',
+      pick: () => this.setState(st => ({ dq: st.dq + 1 })) })) : [];
+    v.dqSkip = () => this.setState(st => ({ dq: st.dq + 1 }));
+    v.backLabel = s.ob === 1 ? '' : '← Back';
+    v.nextLabel = s.ob === 5 ? (s.dq >= 6 ? 'Go to my dashboard →' : 'Skip diagnostic') : 'Continue →';
+    v.obBack = () => this.setState(st => ({ ob: Math.max(1, st.ob - 1) }));
+    v.obNext = () => { if (s.ob === 5) this.go('home'); else this.setState(st => ({ ob: st.ob + 1 })); };
+
+    // home data
+    v.tasks = this.TASKS.map(([title, meta, done, pill]) => ({
+      title, meta, pill,
+      ring: done ? C.sage : '#d8c8ab', fill: done ? C.sage : 'transparent',
+      tick: done ? '#fff' : 'transparent', fg: done ? '#9a8d78' : '#201e1d',
+      deco: done ? 'line-through' : 'none',
+      rowBg: done ? 'transparent' : '#f5ead8',
+      pillBg: done ? C.sageT : C.tint, pillFg: done ? C.sageD : C.accentD
+    }));
+    const gnames = [['Physics',62,'B'],['Chemistry',71,'B+'],['Biology',84,'A'],['Maths',48,'C+']];
+    v.gauges = gnames.map(([name, pct, grade]) => ({
+      name, pct, grade, color: pct >= 75 ? C.sage : pct >= 55 ? C.accent : '#b0603a',
+      dash: (2 * Math.PI * 38 * pct / 100).toFixed(1) + ' 999'
+    }));
+    v.weak = this.WEAK.map(([topic, subject, score]) => ({ topic, subject, score, bg: C.tint, fg: C.accentD }));
+
+    // subjects
+    v.subjects = this.SUBJECTS.map(([name, pct, grade, due]) => ({
+      name, pct, grade, due, initial: name[0], chCount: 11, tCount: 48,
+      tint: pct >= 75 ? C.sageT : C.tint, fg: pct >= 75 ? C.sageD : C.accentD,
+      open: () => this.go('chapters')
+    }));
+
+    // chapters
+    v.modeG = this.pill(s.mode === 'guided'); v.modeF = this.pill(s.mode === 'free');
+    v.setGuided = () => this.set('mode', 'guided'); v.setFree = () => this.set('mode', 'free');
+    v.modeHint = s.mode === 'guided' ? 'Guided: topics unlock as you master the one before.' : 'Free roam: every topic is open — jump anywhere.';
+    const CHECK = 'M20 6 9 17l-5-5', LOCK = 'M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4', DOT = 'M12 8v8';
+    let unlocked = true;
+    v.chapters = this.CH.map(([num, title, topics, st2], ci) => {
+      const id = 'ch' + num, open = s.open.indexOf(id) >= 0;
+      const pct = st2 === 'm' ? 100 : st2 === 'p' ? 45 : 0;
+      const done = st2 === 'm';
+      return {
+        num, title, pct, open, rot: open ? 180 : 0,
+        meta: topics.length + ' topics · ' + (st2 === 'm' ? 'mastered' : st2 === 'p' ? 'in progress' : 'not started'),
+        tint: done ? C.sageT : pct > 0 ? C.tint : C.sand,
+        fg: done ? C.sage : pct > 0 ? C.accent : '#b3a58c',
+        titleFg: '#201e1d',
+        toggle: () => this.setState(stt => ({ open: open ? stt.open.filter(x => x !== id) : stt.open.concat(id) })),
+        topics: topics.map((t, ti) => {
+          let state = 'not';
+          if (st2 === 'm') state = 'done';
+          else if (st2 === 'p') state = ti < 2 ? 'done' : ti === 2 ? 'now' : 'not';
+          const locked = s.mode === 'guided' && state === 'not' && !(st2 === 'p' && ti === 3);
+          return {
+            title: t,
+            rowBg: state === 'now' ? C.tint : 'transparent',
+            dotBg: state === 'done' ? C.sage : state === 'now' ? C.accent : locked ? C.sand : '#e3d5bb',
+            iconFg: state === 'not' ? '#a89a80' : '#fff',
+            iconD: state === 'done' ? CHECK : locked ? LOCK : DOT,
+            fg: locked ? '#a89a80' : '#201e1d',
+            chip: state === 'done' ? 'Mastered' : state === 'now' ? 'In progress' : locked ? 'Locked' : 'Not started',
+            chipBg: state === 'done' ? C.sageT : state === 'now' ? '#fff' : C.sand,
+            chipFg: state === 'done' ? C.sageD : state === 'now' ? C.accentD : '#8d8069',
+            go: () => this.go('topic')
+          };
+        })
+      };
+    });
+
+    // ---- topic workspace ----
+    v.goChapters = () => this.go('chapters');
+    v.goPlan = () => this.go('plan');
+    v.topicIsA = s.topicVar === 'A'; v.topicIsB = s.topicVar === 'B';
+    v.topicTabA = this.pill(s.topicVar === 'A'); v.topicTabB = this.pill(s.topicVar === 'B');
+    v.setTopicA = () => this.set('topicVar', 'A'); v.setTopicB = () => this.set('topicVar', 'B');
+    const seed = [
+      ['ai', 'Salam Areeba. You\u2019re on 5.3 — ask me anything from this page and I\u2019ll answer from your FBISE textbook.'],
+      ['me', 'why is centrifugal force not real?'],
+      ['ai', 'Because it only appears when you sit inside the turning car. In an outside (inertial) frame there is no outward push — the passenger is simply carrying on straight while the car curves away. Examiners award the mark for saying it is a fictitious force in a rotating frame.']
+    ];
+    const msgs = s.chat.length ? s.chat : seed;
+    v.chat = msgs.map(([who, text]) => who === 'me'
+      ? { text, align: 'flex-end', bg: '#c67139', fg: '#fff', radius: '16px 16px 4px 16px' }
+      : { text, align: 'flex-start', bg: '#f5ead8', fg: '#332f2b', radius: '16px 16px 16px 4px' });
+    v.chips = [
+      { text: 'Give me a worked example', ask: () => this.ask('Give me a worked example') },
+      { text: 'Explain in Urdu', ask: () => this.ask('Explain in Urdu') },
+      { text: 'What can they ask in the paper?', ask: () => this.ask('What can they ask in the paper?') }
+    ];
+    v.draft = s.draft;
+    v.setDraft = e => this.set('draft', e.target.value);
+    v.onKey = e => { if (e.key === 'Enter') { e.preventDefault(); this.ask(s.draft); } };
+    v.send = () => this.ask(s.draft);
+    v.quizOpts = ['2 N', '4 N', '8 N', '16 N'].map((text, i) => {
+      const picked = s.quizPick === i, right = i === 2;
+      return { text, key: 'ABCD'[i],
+        bg: picked ? (right ? C.sageT : C.tint) : '#f5ead8',
+        bd: picked ? (right ? C.sage : C.accent) : 'transparent',
+        keyBg: picked ? (right ? C.sage : C.accent) : C.sand,
+        keyFg: picked ? '#fff' : '#5d5648',
+        pick: () => this.setState({ quizPick: i, quizDone: right }) };
+    });
+    v.quizDone = s.quizDone;
+    v.quizMeta = '3 of 4 correct';
+    v.tabTutor = () => this.set('topicTab', 'tutor');
+    v.tabQuiz = () => this.set('topicTab', 'quiz');
+    v.tabRead = () => this.set('topicTab', 'read');
+    v.onTutor = s.topicTab === 'tutor'; v.onQuiz = s.topicTab === 'quiz'; v.onRead = s.topicTab === 'read';
+    const wide = on => 'flex:1;border-radius:999px;padding:9px 0;font-size:13px;font-weight:700;' + (on ? 'background:#c67139;color:#fff;' : 'background:transparent;color:#7a6f5d;');
+    v.tutorTab = wide(v.onTutor); v.quizTab = wide(v.onQuiz);
+    v.readTabM = wide(v.onRead); v.tutorTabM = wide(v.onTutor); v.quizTabM = wide(v.onQuiz);
+
+    // ---- practice ----
+    v.fbIsA = s.fbVar === 'A'; v.fbIsB = s.fbVar === 'B';
+    v.fbTabA = this.pill(s.fbVar === 'A'); v.fbTabB = this.pill(s.fbVar === 'B');
+    v.setFbA = () => this.set('fbVar', 'A'); v.setFbB = () => this.set('fbVar', 'B');
+    v.drillBar = Array.from({ length: 12 }, (_, i) => ({ bg: i < 3 ? C.sage : i === 3 ? C.accent : C.sand }));
+    v.pAnswer = s.pAnswer || '';
+    v.setAnswer = e => this.set('pAnswer', e.target.value);
+    v.pShow = s.pShow;
+    v.submitLabel = s.pShow ? 'Marked' : 'Submit for AI marking';
+    v.submitAnswer = () => this.set('pShow', true);
+    v.nextQ = () => this.setState({ pShow: false, pAnswer: '' });
+    v.fbGood = [
+      { text: 'Correctly described what the passenger experiences during the turn.' },
+      { text: 'Recognised that the passenger continues moving while the car changes direction — that is the inertia idea, just unnamed.' }
+    ];
+    v.fbMiss = [
+      { marks: '1 mark', text: 'Name Newton\u2019s first law / inertia explicitly.' },
+      { marks: '1 mark', text: 'Identify the real inward force — friction between tyres and road — as centripetal.' },
+      { marks: '\u00bd mark', text: 'State that centrifugal force is fictitious, seen only in a rotating frame. You asserted it as real.' }
+    ];
+    v.fbKeys = [
+      ['inertia', 0], ['Newton\u2019s first law', 0], ['centripetal force', 0], ['fictitious', 0],
+      ['straight line', 1], ['friction', 1]
+    ].map(([text, got]) => ({ text: got ? text : '✕ ' + text, bg: got ? C.sageT : C.tint, fg: got ? C.sageD : C.accentD }));
+    v.annotated = [
+      ['The passenger feels pushed outwards because of centrifugal force acting away from the centre.',
+       'Centrifugal force is fictitious — say so, or you lose the justification mark.', '0', 0],
+      ['The car turns but the passenger keeps going straight.',
+       'This is inertia / Newton\u2019s first law. Correct idea — name the law to bank the mark.', '+1', 1],
+      ['So he moves outwards and hits the door.',
+       'Right observation. Add that the door then supplies the inward force.', '+1', 1],
+      ['(no mention of the real inward force)',
+       'Missing: friction between tyres and road is the actual centripetal force.', '0', 0]
+    ].map(([text, note, mark, ok]) => ({ text, note, mark,
+      bar: ok ? C.sage : C.accent, bg: ok ? '#f2f5ea' : '#fdf1e6',
+      bd: ok ? '#dbe2cc' : '#f0d9c2', noteFg: ok ? C.sageD : C.accentD }));
+
+    // ---- mock ----
+    v.mockIntro = !s.mockRunning && !s.mockDone;
+    v.mockRunning = s.mockRunning; v.mockDone = s.mockDone;
+    v.startMock = () => this.setState({ mockRunning: true, mockDone: false, mockLeft: 5400 });
+    v.showResults = () => this.setState({ mockRunning: false, mockDone: true });
+    const mm = Math.floor(s.mockLeft / 60), ss = s.mockLeft % 60;
+    v.mockClock = mm + ':' + (ss < 10 ? '0' + ss : ss);
+    v.mockPct = Math.round((1 - s.mockLeft / 5400) * 100);
+    v.timerColor = s.mockLeft < 600 ? '#b0603a' : '#201e1d';
+    v.paperMap = Array.from({ length: 42 }, (_, i) => {
+      const n = i + 1, done = n < 14, cur = n === 14;
+      return { n, bg: cur ? C.accent : done ? C.sageT : '#f5ead8', fg: cur ? '#fff' : done ? C.sageD : '#b3a58c' };
+    });
+    v.sections = [
+      ['Section A · MCQs', 15, 17, 'Fast and accurate — no change needed.'],
+      ['Section B · Short questions', 28, 38, 'Definitions fine, derivations rushed.'],
+      ['Section C · Long questions', 18, 30, 'Structure, not knowledge. Use headings and state the law first.']
+    ].map(([name, got, max, note]) => {
+      const pct = Math.round(got / max * 100);
+      return { name, got, max, note, pct, color: pct >= 75 ? C.sage : pct >= 55 ? C.accent : '#b0603a' };
+    });
+    v.mockNext = [
+      { marks: '6', text: 'Rewrite Q19 with a proper structure' },
+      { marks: '4', text: 'Drill moment of inertia derivations' },
+      { marks: '3', text: 'Bernoulli numericals — units slip' },
+      { marks: '2', text: 'Revise Doppler effect formulas' }
+    ];
+
+    // ---- progress ----
+    v.legend = [
+      { label: 'Mastered', bg: C.sage }, { label: 'In progress', bg: C.accent },
+      { label: 'Shaky', bg: '#e0b48c' }, { label: 'Not started', bg: '#e3d5bb' }
+    ];
+    v.coverage = this.SUBJECTS.map(([name, pct, grade]) => {
+      const n = 54; let seedn = name.length * 7 + pct;
+      const cells = Array.from({ length: n }, (_, i) => {
+        seedn = (seedn * 1103515245 + 12345) & 0x7fffffff;
+        const r = (seedn % 100);
+        const bg = r < pct - 12 ? C.sage : r < pct + 8 ? C.accent : r < pct + 22 ? '#e0b48c' : '#e3d5bb';
+        return { bg };
+      });
+      return { name, grade, cells, fg: pct >= 75 ? C.sageD : C.accentD };
+    });
+    v.weakList = [
+      ['Centripetal & centrifugal confusion', 'Physics · Ch 5', '31%', 31, 9],
+      ['Balancing redox equations', 'Chemistry · Ch 3', '38%', 38, 8],
+      ['Integration by substitution', 'Maths · Ch 9', '42%', 42, 8],
+      ['Mendelian dihybrid crosses', 'Biology · Ch 16', '48%', 48, 6],
+      ['Essay structure — argumentative', 'English · Paper B', '51%', 51, 5],
+      ['Bernoulli numericals', 'Physics · Ch 6', '55%', 55, 4]
+    ].map(([topic, subject, score, pct, risk]) => ({ topic, subject, score, pct, risk }));
+
+    // ---- study plan ----
+    v.planItems = [
+      ['Centripetal force — finish quiz', 'Physics · Ch 5.3 · worth ~9 marks', 'Do now', '18 min'],
+      ['Balancing redox equations', 'Chemistry · Ch 3 · lowest score this month', 'Weak spot', '25 min'],
+      ['23 flashcards due', 'Mixed · spaced repetition', 'Review', '9 min'],
+      ['Integration by substitution', 'Maths · Ch 9 · appeared in 6 of last 8 papers', 'High yield', '30 min'],
+      ['Dihybrid crosses practice set', 'Biology · Ch 16', 'Weak spot', '20 min'],
+      ['Full Physics mock paper', 'Scheduled for Saturday', 'Scheduled', '90 min']
+    ].map(([title, meta, chip, time], i) => {
+      const hot = i === 0;
+      const map = { 'Do now': [C.accent, '#fff'], 'Weak spot': [C.tint, C.accentD], 'Review': [C.sageT, C.sageD], 'High yield': [C.sand, '#5d5648'], 'Scheduled': [C.sand, '#5d5648'] };
+      return { rank: i + 1, title, meta, chip, time,
+        bg: hot ? '#f6e1d0' : '#f5ead8', bd: hot ? '#eec9a7' : 'transparent',
+        chipBg: map[chip][0], chipFg: map[chip][1] };
+    });
+    v.reviewQueue = [
+      ['Oxidation numbers', 'today', 0], ['Vector components', 'today', 0],
+      ['Enzyme inhibition', 'today', 0], ['Projectile range formula', 'tomorrow', 1],
+      ['Ohm\u2019s law limitations', 'in 3 days', 1]
+    ].map(([topic, due, later]) => ({ topic, due, dot: later ? '#d8c8ab' : C.accent }));
+
+    // ---- settings ----
+    v.classPills = ['9th', '10th', '11th', '12th'].map(name => ({
+      name, style: this.pill(s.cls === name), pick: () => this.set('cls', name) }));
+    v.saverBg = s.saver === false ? '#d8c8ab' : C.sage;
+    v.saverX = s.saver === false ? '4px' : '28px';
+    v.remindBg = s.remind === false ? '#d8c8ab' : C.sage;
+    v.remindX = s.remind === false ? '4px' : '28px';
+    v.toggleSaver = () => this.setState(st => ({ saver: st.saver === false }));
+    v.toggleRemind = () => this.setState(st => ({ remind: st.remind === false }));
+
+    // ---- mobile ----
+    v.isMobile = s.device === 'mobile';
+    v.mHome = s.screen === 'home'; v.mSubjects = s.screen === 'subjects';
+    v.mChapters = s.screen === 'chapters'; v.mTopic = s.screen === 'topic';
+    v.mOther = ['home', 'subjects', 'chapters', 'topic'].indexOf(s.screen) < 0;
+    const spill = on => 'border-radius:999px;padding:4px 10px;font-size:11px;font-weight:700;' + (on ? 'background:#c67139;color:#fff;' : 'background:transparent;color:#7a6f5d;');
+    v.langENs = spill(s.lang === 'EN'); v.langURs = spill(s.lang === 'UR');
+    const mpill = on => 'flex:1;border-radius:999px;padding:8px 0;font-size:12.5px;font-weight:700;' + (on ? 'background:#c67139;color:#fff;' : 'background:transparent;color:#7a6f5d;');
+    v.modeGm = mpill(s.mode === 'guided'); v.modeFm = mpill(s.mode === 'free');
+    v.mobileNav = [['home', 'Home'], ['subjects', 'Subjects'], ['plan', 'Plan'], ['practice', 'Practice'], ['progress', 'Progress']]
+      .map(([id, label]) => {
+        const item = this.NAV.filter(n => n[0] === id)[0];
+        const active = s.screen === id || (id === 'subjects' && (s.screen === 'chapters' || s.screen === 'topic'));
+        return { label, d: item[2], fg: active ? '#c67139' : '#9a8d78', go: () => this.go(id) };
+      });
+
+    return v;
+  }
+
+  ask(text) {
+    const t = (text || '').trim();
+    if (!t) return;
+    const base = this.state.chat.length ? this.state.chat : [
+      ['ai', 'Salam Areeba. You\u2019re on 5.3 — ask me anything from this page and I\u2019ll answer from your FBISE textbook.'],
+      ['me', 'why is centrifugal force not real?'],
+      ['ai', 'Because it only appears when you sit inside the turning car. In an outside (inertial) frame there is no outward push — the passenger is simply carrying on straight while the car curves away. Examiners award the mark for saying it is a fictitious force in a rotating frame.']
+    ];
+    const reply = 'Here\u2019s the short version from your book: F\u1d04 = mv²/r. For a 1000 kg car at 20 m s\u207b¹ on a 50 m bend that\u2019s 8000 N of friction — more than dry tyres can usually give, which is exactly why the road is banked. Want me to set you two numericals on this?';
+    this.setState({ chat: base.concat([['me', t], ['ai', reply]]), draft: '' });
+  }
+
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      if (this.state.mockRunning && this.state.mockLeft > 0) this.setState(st => ({ mockLeft: st.mockLeft - 1 }));
+    }, 1000);
+  }
+
+  componentWillUnmount() { clearInterval(this.timer); }
+}
+</script>
+</body>
+</html>
