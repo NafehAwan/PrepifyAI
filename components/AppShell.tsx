@@ -4,6 +4,8 @@ import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { NAV, TITLES } from "@/lib/data";
 import { StrokeIcon, FillIcon, PATH } from "./Icon";
+import { initialsFromName } from "@/lib/mappings";
+import { signOut } from "@/app/login/actions";
 import type { Screen } from "@/lib/types";
 
 import { Home } from "./screens/Home";
@@ -47,6 +49,13 @@ export function AppShell() {
         <button onClick={() => patch({ screen: "onboarding", ob: 1 })} style={{ textAlign: "left", padding: "10px 12px", borderRadius: 14, fontSize: 13, fontWeight: 600, color: C.muted }}>
           ↻ Replay onboarding
         </button>
+        {s.authed && (
+          <form action={signOut}>
+            <button type="submit" style={{ width: "100%", textAlign: "left", padding: "10px 12px", borderRadius: 14, fontSize: 13, fontWeight: 600, color: C.muted }}>
+              ⎋ Sign out
+            </button>
+          </form>
+        )}
         <div style={{ background: C.sageT, borderRadius: 18, padding: "14px 16px", marginTop: 6 }}>
           <div style={{ fontSize: 12.5, fontWeight: 700, color: C.sageD, marginBottom: 4 }}>Data saver is on</div>
           <div style={{ fontSize: 12, color: "#5d6b46", lineHeight: 1.4 }}>Chapters cached offline. Tutor replies use ~4 KB each.</div>
@@ -80,7 +89,7 @@ export function AppShell() {
           <button onClick={() => set("device", s.device === "desktop" ? "mobile" : "desktop")} title="Preview on phone" style={{ width: 36, height: 36, borderRadius: 999, background: C.sand, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <StrokeIcon d={PATH.phone} size={17} stroke="#5d5648" width={2.5} />
           </button>
-          <div style={{ width: 36, height: 36, borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>AR</div>
+          <div style={{ width: 36, height: 36, borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{initialsFromName(s.userName)}</div>
         </div>
 
         <div style={{ flex: 1, padding: 26, animation: "pf-in .25s ease" }}>

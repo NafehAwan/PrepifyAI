@@ -1,6 +1,7 @@
 "use client";
 
 import { AppProvider, useApp } from "@/lib/store";
+import type { AppState } from "@/lib/types";
 import { Onboarding } from "./Onboarding";
 import { AppShell } from "./AppShell";
 import { MobilePreview } from "./MobilePreview";
@@ -15,9 +16,9 @@ function Root() {
   );
 }
 
-export function PrepifyApp() {
+export function PrepifyApp({ initial }: { initial?: Partial<AppState> }) {
   return (
-    <AppProvider>
+    <AppProvider initial={initial}>
       <Root />
     </AppProvider>
   );

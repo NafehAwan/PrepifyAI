@@ -358,7 +358,29 @@ create policy profiles_owner on profiles
   with check (auth.uid() = id);
 
 -- ---------------------------------------------------------------------------
--- 7. RAG retrieval helper — return the top-k chunks for the CURRENT topic only,
+-- 8. Auto-create a profile row whenever a new auth user signs up, so the app
+--    always has a profile to read/update (onboarding fills in the details).
+-- ---------------------------------------------------------------------------
+
+create or replace function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer set search_path = public
+as $$
+begin
+  insert into public.profiles (id, role) values (new.id, 'student')
+  on conflict (id) do nothing;
+  return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute function public.handle_new_user();
+
+-- ---------------------------------------------------------------------------
+-- 9. RAG retrieval helper — return the top-k chunks for the CURRENT topic only,
 --    so the tutor is grounded strictly in the syllabus scope it is teaching.
 -- ---------------------------------------------------------------------------
 

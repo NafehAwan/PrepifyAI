@@ -40,6 +40,10 @@ const INITIAL: AppState = {
   mockDone: false,
   saver: true,
   remind: true,
+  authed: false,
+  supabaseConfigured: false,
+  userName: "Areeba",
+  userEmail: "areeba.r@example.com",
 };
 
 const SEED_CHAT: ChatMsg[] = [
@@ -59,8 +63,14 @@ export interface AppStore {
 
 const Ctx = createContext<AppStore | null>(null);
 
-export function AppProvider({ children }: { children: React.ReactNode }) {
-  const [s, setState] = useState<AppState>(INITIAL);
+export function AppProvider({
+  children,
+  initial,
+}: {
+  children: React.ReactNode;
+  initial?: Partial<AppState>;
+}) {
+  const [s, setState] = useState<AppState>({ ...INITIAL, ...initial });
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const set = useCallback(<K extends keyof AppState>(key: K, value: AppState[K]) => {

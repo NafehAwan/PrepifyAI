@@ -5,14 +5,18 @@ import { C } from "@/lib/theme";
 import { SUBJECTS } from "@/lib/data";
 
 export function Subjects() {
-  const { go } = useApp();
+  const { s, go } = useApp();
+  // Show only the subjects the student is actually enrolled in. In demo mode
+  // `s.subs` holds the full set, so every card still appears.
+  const enrolled = SUBJECTS.filter(([name]) => s.subs.includes(name));
+  const list = enrolled.length > 0 ? enrolled : SUBJECTS;
   return (
     <>
       <div style={{ color: C.muted, marginBottom: 20, maxWidth: 620 }}>
-        Nine subjects enrolled. Textbooks fetched and indexed — tap a subject to open its chapter tree.
+        {list.length} subject{list.length === 1 ? "" : "s"} enrolled. Textbooks fetched and indexed — tap a subject to open its chapter tree.
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
-        {SUBJECTS.map(([name, pct, grade, due]) => {
+        {list.map(([name, pct, grade, due]) => {
           const strong = pct >= 75;
           const tint = strong ? C.sageT : C.tint;
           const fg = strong ? C.sageD : C.accentD;

@@ -47,4 +47,9 @@ export interface AppState {
   mockDone: boolean;
   saver: boolean;
   remind: boolean;
+  // Auth / real-data context (populated server-side when Supabase is configured).
+  authed: boolean;
+  supabaseConfigured: boolean;
+  userName: string;
+  userEmail: string;
 }

@@ -9,8 +9,11 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | Path | What it is |
 | --- | --- |
 | `app/`, `components/`, `lib/` | The dashboard app — every screen from the design, pixel-faithful, fully interactive |
-| `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes and a RAG retrieval helper (Part A of the spec) |
+| `lib/supabase/`, `middleware.ts` | Supabase auth (SSR clients, session middleware, query + persistence layer) |
+| `app/login/` | Email/password sign in / sign up UI + server actions |
+| `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
 | `content/physics-9.curriculum.json` | Curriculum JSON seed — Physics IX, 2 chapters, each with a complete chapter-test bank (Part B) |
+| `scripts/seed.mjs` | Loads the curriculum into Supabase (`npm run seed`) |
 | `Prepify AI.dc.html` | The original design prototype this app reproduces |
 
 ## Running it
@@ -20,12 +23,37 @@ npm install
 npm run dev        # http://localhost:3000
 ```
 
+With no configuration the app runs in **demo mode** — every screen works with sample data, no login required.
+
 Other scripts:
 
 ```bash
 npm run build      # production build
 npm run typecheck  # tsc --noEmit (strict, zero `any`)
+npm run seed       # load the curriculum into Supabase (needs env, see below)
 ```
+
+## Accounts + saved data (Supabase)
+
+The app has real email/password auth and persists your profile. To turn it on:
+
+1. Create a Supabase project.
+2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper).
+3. Copy `.env.local.example` → `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY`.
+4. `npm run seed` to load the Physics IX curriculum (also creates all nine subject rows so enrolments resolve).
+5. For the smoothest local dev, disable “Confirm email” in Supabase → Authentication → Providers → Email (otherwise new sign-ups must confirm before signing in).
+6. `npm run dev`.
+
+**What's real once configured:**
+
+- **Auth** — sign up / sign in / sign out with cookie-based sessions; middleware refreshes the session and redirects unauthenticated users to `/login`. A profile row is auto-created on sign-up.
+- **Onboarding → DB** — finishing (or skipping) onboarding writes class, track, exam date, study mode and subject enrolments to `profiles` + `enrollments` (owner-only under RLS).
+- **Settings → DB** — changing class, exam date, study mode, language or subjects persists immediately.
+- **Read-back** — on load, the dashboard hydrates from your real profile: greeting, top-bar avatar, class/track, exam-day countdown, study mode, and the Subjects grid reflect your saved data and enrolments.
+
+If Supabase isn't configured, all of the above degrade gracefully to the demo experience — the persistence calls are no-ops and `/` renders without a login gate.
+
+Still on demo data (pending the AI learning-loop backend): per-topic mastery, predicted grades, coverage heat-map, reviews and mock scoring.
 
 ## The dashboard
 
@@ -52,7 +80,7 @@ The colour system, typography (Caprasimo + Figtree) and every layout come straig
 - **Data** — the demo content lives in `lib/data.ts`; in production these tables come from Supabase (`supabase/schema.sql`).
 - **Screens** — one component per screen under `components/screens/`, composed by `components/AppShell.tsx`.
 
-The current build is the **UI + data foundation** (Phase 0–1 of the roadmap). The Supabase schema, RLS and curriculum seed are ready to wire in; the AI edge functions (`/ai/teach`, `/ai/topic-quiz`, `/ai/chapter-test`, `/ai/grade`, …) and RAG ingestion are the next phase.
+The dashboard UI plus **real Supabase auth and profile/onboarding/settings persistence** are done (Phase 0–1). Auth uses `@supabase/ssr` (`lib/supabase/{client,server,middleware}.ts`), the query layer lives in `lib/supabase/queries.ts`, and browser-side writes are in `lib/supabase/persist.ts`. The AI edge functions (`/ai/teach`, `/ai/topic-quiz`, `/ai/chapter-test`, `/ai/grade`, …), RAG chunk embedding, and DB-backed progress/analytics are the next phase.
 
 ## Database & grounding
 

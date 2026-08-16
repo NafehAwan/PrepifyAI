@@ -3,6 +3,7 @@
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { DQ } from "@/lib/data";
+import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
 
 const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
@@ -33,9 +34,15 @@ export function Onboarding() {
   const dqOpen = s.ob === 5 && s.dq < 6;
   const dqDone = s.ob === 5 && s.dq >= 6;
 
+  const finish = () => {
+    // Persist the collected profile + subject choices (no-op in demo mode).
+    void persistProfile(s);
+    void persistEnrollments(s);
+    go("home");
+  };
   const back = () => set("ob", Math.max(1, s.ob - 1));
   const next = () => {
-    if (s.ob === 5) go("home");
+    if (s.ob === 5) finish();
     else set("ob", s.ob + 1);
   };
   const advanceDq = () => set("dq", s.dq + 1);
@@ -56,7 +63,7 @@ export function Onboarding() {
             <button onClick={() => set("obVar", "A")} style={pill(isA)}>A · Focused</button>
             <button onClick={() => set("obVar", "B")} style={pill(isB)}>B · Split</button>
           </div>
-          <button onClick={() => go("home")} style={{ borderRadius: 999, padding: "8px 16px", background: C.sand, fontWeight: 600, fontSize: 13 }}>
+          <button onClick={finish} style={{ borderRadius: 999, padding: "8px 16px", background: C.sand, fontWeight: 600, fontSize: 13 }}>
             Skip to app
           </button>
         </div>
