@@ -1,0 +1,42 @@
+"use client";
+
+import { useApp } from "@/lib/store";
+import { C } from "@/lib/theme";
+import { SUBJECTS } from "@/lib/data";
+
+export function Subjects() {
+  const { go } = useApp();
+  return (
+    <>
+      <div style={{ color: C.muted, marginBottom: 20, maxWidth: 620 }}>
+        Nine subjects enrolled. Textbooks fetched and indexed — tap a subject to open its chapter tree.
+      </div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
+        {SUBJECTS.map(([name, pct, grade, due]) => {
+          const strong = pct >= 75;
+          const tint = strong ? C.sageT : C.tint;
+          const fg = strong ? C.sageD : C.accentD;
+          return (
+            <button key={name} onClick={() => go("chapters")} style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 13, marginBottom: 16 }}>
+                <div style={{ width: 46, height: 46, flex: "none", borderRadius: 999, background: tint, color: fg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 20 }}>{name[0]}</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontWeight: 700, fontSize: 16 }}>{name}</div>
+                  <div style={{ fontSize: 12.5, color: "#9a8d78" }}>11 chapters · 48 topics</div>
+                </div>
+                <div style={{ fontFamily: "Caprasimo", fontSize: 22, color: fg }}>{grade}</div>
+              </div>
+              <div style={{ height: 10, background: C.sand, borderRadius: 999, overflow: "hidden", marginBottom: 8 }}>
+                <div style={{ height: 10, width: `${pct}%`, background: fg, borderRadius: 999 }} />
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12.5, color: C.muted, fontWeight: 600 }}>
+                <span>{pct}% mastered</span>
+                <span>{due} due</span>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
+}
