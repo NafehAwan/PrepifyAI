@@ -1,7 +1,7 @@
 "use client";
 
 import { createClient } from "./client";
-import { CLASS_TO_LEVEL, TRACK_TO_CODE, toDbMode } from "@/lib/mappings";
+import { CLASS_TO_LEVEL, toDbMode } from "@/lib/mappings";
 import type { AppState } from "@/lib/types";
 
 // These run from the browser and rely on RLS (owner-only) to keep writes safe.
@@ -18,7 +18,6 @@ export async function persistProfile(s: AppState): Promise<void> {
   await supabase.from("profiles").upsert({
     id: user.id,
     class_level: CLASS_TO_LEVEL[s.cls] ?? null,
-    track: TRACK_TO_CODE[s.track] ?? null,
     exam_date: s.examDate,
     mode: toDbMode(s.mode),
     medium: s.lang === "UR" ? "urdu" : "english",

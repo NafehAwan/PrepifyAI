@@ -16,7 +16,6 @@ const INITIAL: AppState = {
   screen: "home",
   ob: 1,
   cls: "11th",
-  track: "Pre-Medical",
   subs: ["Physics", "Chemistry", "Biology", "Maths", "English", "Urdu", "Islamiyat", "Pak Studies", "Computer Science"],
   examDate: "2027-04-12",
   dq: 0,

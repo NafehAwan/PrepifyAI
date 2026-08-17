@@ -21,9 +21,8 @@ export type ChatMsg = readonly [ChatRole, string];
 
 export interface AppState {
   screen: Screen;
-  ob: number; // onboarding step 1..5
+  ob: number; // onboarding step 1..N
   cls: string;
-  track: string;
   subs: string[];
   examDate: string;
   dq: number; // placement diagnostic index
