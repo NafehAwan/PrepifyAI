@@ -53,6 +53,10 @@ The app has real email/password auth and persists your profile. To turn it on:
 
 If Supabase isn't configured, all of the above degrade gracefully to the demo experience — the persistence calls are no-ops and `/` renders without a login gate.
 
+### Supabase MCP (optional, for Claude Code)
+
+`.mcp.json` registers the [Supabase MCP server](https://supabase.com/docs/guides/getting-started/mcp) for this project so a local Claude Code session can apply migrations, run SQL, and manage the linked project directly (it authorises over OAuth on first use). Open the project in Claude Code and approve the `supabase` server when prompted.
+
 Still on demo data (pending the AI learning-loop backend): per-topic mastery, predicted grades, coverage heat-map, reviews and mock scoring.
 
 ## The dashboard
