@@ -69,6 +69,15 @@ Enable it by setting `ANTHROPIC_API_KEY` in `.env.local` (server-side only). Opt
 
 Without a key both routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
 
+## Live curriculum (DB-driven loop)
+
+When Supabase is configured, the core loop reads real content from the database (`lib/curriculum.ts`, browser client under public-read RLS):
+
+- **My Subjects → Chapters** — opening a subject loads its real chapter tree (chapters + topics) from the DB. Subjects without seeded content show a friendly "still ingesting" state; Physics IX is fully seeded.
+- **Topic workspace** — the reading pane renders the topic's real SLOs and textbook `content_md`, SLO by SLO. The **AI tutor is RAG-grounded on that topic's real content chunks** (the teach route receives the topic's SLO text as ground truth), and the **quiz is the topic's real MCQ bank** from `questions`, scored against a 70% pass bar.
+
+In demo mode (no Supabase) these screens fall back to the static Physics sample, so everything still runs with zero setup.
+
 Still on demo data (pending further build-out): per-topic mastery, predicted grades, coverage heat-map, reviews, mock scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
 
 ## The dashboard

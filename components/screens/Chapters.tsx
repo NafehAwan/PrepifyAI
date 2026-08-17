@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { CH } from "@/lib/data";
 import { StrokeIcon, PATH } from "../Icon";
+import { getChapters, type DBChapter } from "@/lib/curriculum";
 
 type TopicState = "done" | "now" | "not";
 
@@ -11,12 +13,47 @@ export function Chapters() {
   const { s, set, patch, go } = useApp();
   const guided = s.mode === "guided";
 
+  // Load the real chapter tree for the selected subject (if any).
+  const [dbChapters, setDbChapters] = useState<DBChapter[] | null>(null);
+  const [dbOpen, setDbOpen] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    let active = true;
+    setDbChapters(null);
+    if (s.selectedSubjectId) {
+      getChapters(s.selectedSubjectId).then((rows) => {
+        if (!active) return;
+        setDbChapters(rows);
+        setDbOpen(new Set(rows.length > 0 ? [rows[0].id] : []));
+      });
+    }
+    return () => {
+      active = false;
+    };
+  }, [s.selectedSubjectId]);
+
+  const openTopic = (topicId: string) => {
+    patch({ selectedTopicId: topicId });
+    go("topic");
+  };
+  const toggleDb = (id: string) =>
+    setDbOpen((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+
+  const subjectTitle = s.selectedSubjectName
+    ? `${s.selectedSubjectName} · Class ${s.cls.replace(/\D/g, "") || "9"}`
+    : "Physics · Class 11";
+  const hasReal = dbChapters !== null && dbChapters.length > 0;
+
   return (
     <>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 18 }}>
         <div>
           <button onClick={() => go("subjects")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>← My Subjects</button>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 28 }}>Physics · Class 11</div>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 28 }}>{subjectTitle}</div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>Study mode</div>
@@ -37,6 +74,50 @@ export function Chapters() {
         </div>
       </div>
 
+      {s.selectedSubjectId && dbChapters === null && (
+        <div style={{ color: C.muted, fontSize: 14 }}>Loading chapters…</div>
+      )}
+
+      {s.selectedSubjectId && dbChapters !== null && !hasReal && (
+        <div style={{ maxWidth: 900, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
+          We&apos;re still ingesting {s.selectedSubjectName}&apos;s FBISE textbook. Physics is fully seeded — open it to try the live teach-and-test loop.
+        </div>
+      )}
+
+      {hasReal && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 10, maxWidth: 900 }}>
+          {dbChapters!.map((c) => {
+            const open = dbOpen.has(c.id);
+            return (
+              <div key={c.id} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, overflow: "hidden" }}>
+                <button onClick={() => toggleDb(c.id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", textAlign: "left" }}>
+                  <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accent, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{c.seq}</div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 700, fontSize: 15.5, color: C.ink }}>{c.title}</div>
+                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{c.topics.length} topics</div>
+                  </div>
+                  <StrokeIcon d={PATH.chevronDown} size={18} stroke="#9a8d78" width={2.75} style={{ flex: "none", transform: `rotate(${open ? 180 : 0}deg)` }} />
+                </button>
+                {open && (
+                  <div style={{ padding: "0 20px 16px 70px", display: "flex", flexDirection: "column", gap: 6 }}>
+                    {c.topics.map((t) => (
+                      <button key={t.id} onClick={() => openTopic(t.id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 13, padding: "11px 14px", borderRadius: 14, textAlign: "left", background: "transparent" }}>
+                        <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: "#e3d5bb", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                          <StrokeIcon d={PATH.dot} size={12} stroke="#fff" width={3} />
+                        </div>
+                        <div style={{ flex: 1, minWidth: 0, fontSize: 14, fontWeight: 600, color: C.ink }}>{t.title}</div>
+                        <div style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sand, color: "#8d8069" }}>{t.estMinutes ? `${t.estMinutes} min` : "Start"}</div>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {!s.selectedSubjectId && (
       <div style={{ display: "flex", flexDirection: "column", gap: 10, maxWidth: 900 }}>
         {CH.map(([num, title, topics, st2]) => {
           const id = "ch" + num;
@@ -95,6 +176,7 @@ export function Chapters() {
           );
         })}
       </div>
+      )}
     </>
   );
 }

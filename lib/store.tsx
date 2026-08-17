@@ -9,7 +9,7 @@ import {
   useRef,
   useState,
 } from "react";
-import type { AppState, ChatMsg } from "./types";
+import type { AppState, ChatMsg, TeachContext } from "./types";
 import { daysUntil } from "./data";
 import { CANNED_TUTOR_REPLY, DEMO_TEACH } from "./ai/context";
 
@@ -44,6 +44,10 @@ const INITIAL: AppState = {
   supabaseConfigured: false,
   userName: "Areeba",
   userEmail: "areeba.r@example.com",
+  selectedSubjectId: null,
+  selectedSubjectName: null,
+  selectedTopicId: null,
+  teach: null,
 };
 
 const SEED_CHAT: ChatMsg[] = [
@@ -65,19 +69,20 @@ const Ctx = createContext<AppStore | null>(null);
 
 // Calls the grounded tutor route; falls back to a canned reply when the AI
 // backend isn't configured or the request fails, so the demo always answers.
-async function fetchTutorReply(history: ChatMsg[]): Promise<string> {
+async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null): Promise<string> {
+  const ctx = teach ?? DEMO_TEACH;
   try {
     const res = await fetch("/api/ai/teach", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         messages: history.map(([role, text]) => ({ role, text })),
-        subject: DEMO_TEACH.subject,
-        classLevel: DEMO_TEACH.classLevel,
-        medium: DEMO_TEACH.medium,
-        level: DEMO_TEACH.level,
-        sloList: DEMO_TEACH.sloList,
-        groundTruth: DEMO_TEACH.groundTruth,
+        subject: ctx.subject,
+        classLevel: ctx.classLevel,
+        medium: ctx.medium,
+        level: ctx.level,
+        sloList: ctx.sloList,
+        groundTruth: ctx.groundTruth,
       }),
     });
     if (res.ok) {
@@ -118,12 +123,14 @@ export function AppProvider({
     if (!t) return;
     // Optimistically add the student’s turn + a placeholder, then fill the reply.
     let history: ChatMsg[] = [];
+    let teach: TeachContext | null = null;
     setState((prev) => {
       const base = prev.chat.length ? prev.chat : SEED_CHAT;
       history = [...base, ["me", t]];
+      teach = prev.teach;
       return { ...prev, chat: [...history, ["ai", "…"]], draft: "" };
     });
-    const reply = await fetchTutorReply(history);
+    const reply = await fetchTutorReply(history, teach);
     setState((prev) => {
       const chat = prev.chat.slice();
       if (chat.length > 0) chat[chat.length - 1] = ["ai", reply];

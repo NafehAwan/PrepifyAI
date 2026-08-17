@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill, wideTab } from "@/lib/theme";
 import { CHAT_SEED } from "@/lib/store";
 import { StrokeIcon, FillIcon, PATH } from "../Icon";
+import { getTopicContent, toTeachContext, type DBTopicContent } from "@/lib/curriculum";
+import { MarkdownLite } from "../MarkdownLite";
 import type { ChatMsg } from "@/lib/types";
 
 const QUIZ_OPTS = ["2 N", "4 N", "8 N", "16 N"];
@@ -11,6 +14,12 @@ const RIGHT = 2;
 const CHIPS = ["Give me a worked example", "Explain in Urdu", "What can they ask in the paper?"];
 
 export function Topic() {
+  const { s } = useApp();
+  if (s.selectedTopicId) return <RealTopic topicId={s.selectedTopicId} />;
+  return <DemoTopic />;
+}
+
+function DemoTopic() {
   const { s, set, go } = useApp();
   return (
     <>
@@ -207,5 +216,201 @@ function DrillButton() {
   const { go } = useApp();
   return (
     <button onClick={() => go("practice")} style={{ width: "100%", borderRadius: 999, background: C.sand, fontWeight: 700, fontSize: 14, padding: "11px 0" }}>Drill more questions</button>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Live topic: real content from the DB, a tutor grounded on it, and the real
+// SLO-based MCQ quiz.
+// ---------------------------------------------------------------------------
+
+function RealTopic({ topicId }: { topicId: string }) {
+  const { patch, go } = useApp();
+  const [content, setContent] = useState<DBTopicContent | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [rightTab, setRightTab] = useState<"tutor" | "quiz">("tutor");
+
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    getTopicContent(topicId).then((c) => {
+      if (!active) return;
+      setContent(c);
+      setLoading(false);
+      // Ground the tutor on this topic and start a fresh chat.
+      if (c) patch({ teach: toTeachContext(c), chat: [] });
+    });
+    return () => {
+      active = false;
+    };
+  }, [topicId, patch]);
+
+  const back = () => {
+    patch({ selectedTopicId: null, teach: null, chat: [] });
+    go("chapters");
+  };
+
+  return (
+    <>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 16 }}>
+        <div>
+          <button onClick={back} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
+            ← {content ? `${content.subjectName} · ${content.chapterTitle}` : "Back to chapters"}
+          </button>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 26 }}>{content?.title ?? "Loading…"}</div>
+        </div>
+        <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "7px 14px" }}>Teach → test · from your textbook</div>
+      </div>
+
+      {loading && <div style={{ color: C.muted, fontSize: 14 }}>Loading topic…</div>}
+      {!loading && !content && (
+        <div style={{ color: C.muted, fontSize: 14 }}>Couldn&apos;t load this topic. <button onClick={back} style={{ color: C.accentD, fontWeight: 600 }}>Go back</button></div>
+      )}
+
+      {content && (
+        <div style={{ display: "flex", gap: 16, alignItems: "stretch", flexWrap: "wrap", minHeight: 560 }}>
+          {/* reading pane */}
+          <div style={{ flex: 1, minWidth: 400, height: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, display: "flex", flexDirection: "column", overflow: "hidden" }}>
+            <div style={{ padding: "16px 22px", borderBottom: "1px solid #ece0c8", display: "flex", alignItems: "center", gap: 10 }}>
+              <StrokeIcon d="M4 4a2 2 0 0 1 2-2h13v18H6a2 2 0 0 0-2 2z" size={17} stroke={C.accent} width={2.75} />
+              <div style={{ fontWeight: 700, fontSize: 14, flex: 1 }}>Textbook · FBISE {content.subjectName} {content.classLevel}</div>
+            </div>
+            <div style={{ flex: 1, overflow: "auto", padding: "22px 26px", fontSize: 15.5, lineHeight: 1.72, color: "#332f2b" }}>
+              {content.slos.map((slo) => (
+                <div key={slo.code} style={{ marginBottom: 22 }}>
+                  <div style={{ display: "inline-block", fontSize: 11.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "3px 10px", marginBottom: 8 }}>SLO {slo.code}</div>
+                  <div style={{ fontWeight: 700, fontSize: 15.5, marginBottom: 8 }}>{slo.statement}</div>
+                  <MarkdownLite md={slo.contentMd} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* right panel */}
+          <div style={{ width: 420, flex: "1 1 360px", height: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, display: "flex", flexDirection: "column", overflow: "hidden" }}>
+            <div style={{ padding: 12, borderBottom: "1px solid #ece0c8" }}>
+              <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
+                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>AI Tutor</button>
+                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>Quiz · {content.mcqs.length} Q</button>
+              </div>
+            </div>
+            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <RealQuiz mcqs={content.mcqs} />}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function RealTutor({ topicTitle }: { topicTitle: string }) {
+  const { s, set, ask } = useApp();
+  const msgs = s.chat;
+  return (
+    <>
+      <div style={{ flex: 1, overflow: "auto", padding: 18, display: "flex", flexDirection: "column", gap: 12 }}>
+        {msgs.length === 0 && (
+          <div style={{ alignSelf: "flex-start", maxWidth: "88%", background: C.bg, color: "#332f2b", borderRadius: "16px 16px 16px 4px", padding: "12px 15px", fontSize: 14, lineHeight: 1.55 }}>
+            Salam! Ask me anything about <strong>{topicTitle}</strong> and I&apos;ll answer only from your FBISE textbook, citing the SLO.
+          </div>
+        )}
+        {msgs.map(([who, text], i) => {
+          const me = who === "me";
+          return (
+            <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "88%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "16px 16px 4px 16px" : "16px 16px 16px 4px", padding: "12px 15px", fontSize: 14, lineHeight: 1.55, whiteSpace: "pre-wrap" }}>
+              {text}
+            </div>
+          );
+        })}
+      </div>
+      <div style={{ padding: 12, borderTop: "1px solid #ece0c8" }}>
+        <div style={{ display: "flex", gap: 8, marginBottom: 9, flexWrap: "wrap" }}>
+          {["Explain simpler", "Give me an example", "What can they ask in the paper?"].map((c) => (
+            <button key={c} onClick={() => ask(c)} style={{ fontSize: 12, fontWeight: 600, color: "#5d5648", background: C.bg, border: `1px solid ${C.line}`, borderRadius: 999, padding: "6px 12px" }}>{c}</button>
+          ))}
+        </div>
+        <div style={{ display: "flex", gap: 8, alignItems: "center", background: C.bg, borderRadius: 999, padding: "5px 5px 5px 16px" }}>
+          <input value={s.draft} onChange={(e) => set("draft", e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); ask(s.draft); } }} placeholder="Ask about this topic…" style={{ flex: 1, minWidth: 0, border: 0, background: "transparent", outline: "none", fontSize: 14, padding: "8px 0" }} />
+          <button onClick={() => ask(s.draft)} style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.accent, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <FillIcon d={PATH.send} fill="#fff" />
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function RealQuiz({ mcqs }: { mcqs: DBTopicContent["mcqs"] }) {
+  const [qi, setQi] = useState(0);
+  const [pick, setPick] = useState<number | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const [done, setDone] = useState(false);
+
+  if (mcqs.length === 0) {
+    return <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", color: C.muted, fontSize: 14, padding: 24, textAlign: "center" }}>No quiz questions seeded for this topic yet.</div>;
+  }
+
+  const q = mcqs[qi];
+  const total = mcqs.length;
+
+  if (done) {
+    const pct = Math.round((correct / total) * 100);
+    const passed = pct >= 70;
+    return (
+      <div style={{ flex: 1, overflow: "auto", padding: 22, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", gap: 10 }}>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 40, color: passed ? C.sage : C.accent }}>{pct}%</div>
+        <div style={{ fontWeight: 700, fontSize: 16 }}>{correct} of {total} correct</div>
+        <div style={{ fontSize: 13.5, color: C.muted, maxWidth: 300, lineHeight: 1.5 }}>
+          {passed ? "Passed — you've mastered this topic's SLOs (70% needed)." : "Below the 70% pass bar. Re-read the weak SLOs and try again."}
+        </div>
+        <button onClick={() => { setQi(0); setPick(null); setCorrect(0); setDone(false); }} style={{ marginTop: 8, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "11px 24px", fontSize: 14 }}>Retake quiz</button>
+      </div>
+    );
+  }
+
+  const choose = (i: number) => {
+    if (pick !== null) return;
+    setPick(i);
+    if (i === q.answer) setCorrect((c) => c + 1);
+  };
+  const next = () => {
+    if (qi + 1 >= total) setDone(true);
+    else { setQi(qi + 1); setPick(null); }
+  };
+
+  return (
+    <div style={{ flex: 1, overflow: "auto", padding: 20, display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", gap: 5, marginBottom: 14 }}>
+        {mcqs.map((_, i) => (
+          <div key={i} style={{ height: 6, flex: 1, borderRadius: 999, background: i < qi ? C.sage : i === qi ? C.accent : C.sand }} />
+        ))}
+      </div>
+      <div style={{ fontSize: 12, color: "#9a8d78", fontWeight: 600, marginBottom: 8 }}>Question {qi + 1} of {total}</div>
+      <div style={{ fontSize: 15, fontWeight: 600, lineHeight: 1.45, marginBottom: 16 }}>{q.stem}</div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
+        {q.options.map((opt, i) => {
+          const isPicked = pick === i;
+          const isAnswer = i === q.answer;
+          const reveal = pick !== null;
+          const bg = reveal && isAnswer ? C.sageT : isPicked ? C.tint : C.bg;
+          const bd = reveal && isAnswer ? C.sage : isPicked ? C.accent : "transparent";
+          return (
+            <button key={i} onClick={() => choose(i)} style={{ display: "flex", alignItems: "center", gap: 12, textAlign: "left", borderRadius: 14, padding: "12px 14px", background: bg, border: `1.5px solid ${bd}` }}>
+              <div style={{ width: 24, height: 24, flex: "none", borderRadius: 999, background: reveal && isAnswer ? C.sage : isPicked ? C.accent : C.sand, color: reveal && isAnswer ? "#fff" : isPicked ? "#fff" : "#5d5648", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 12 }}>{"ABCD"[i]}</div>
+              <div style={{ fontSize: 14, fontWeight: 500, flex: 1 }}>{opt}</div>
+            </button>
+          );
+        })}
+      </div>
+      {pick !== null && (
+        <div style={{ marginTop: 16, background: pick === q.answer ? C.sageT : C.tint, borderRadius: 16, padding: "13px 16px" }}>
+          <div style={{ fontWeight: 700, color: pick === q.answer ? C.sageD : C.accentD, fontSize: 14, marginBottom: 4 }}>
+            {pick === q.answer ? "Correct" : `Not quite — the answer is ${"ABCD"[q.answer]}`}
+          </div>
+          <button onClick={next} style={{ marginTop: 6, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 20px", fontSize: 13.5 }}>
+            {qi + 1 >= total ? "See result" : "Next question →"}
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

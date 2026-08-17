@@ -51,4 +51,19 @@ export interface AppState {
   supabaseConfigured: boolean;
   userName: string;
   userEmail: string;
+  // Live curriculum navigation (set when browsing real DB content).
+  selectedSubjectId: string | null;
+  selectedSubjectName: string | null;
+  selectedTopicId: string | null;
+  // Grounding context for the tutor, set by the topic screen from real content.
+  teach: TeachContext | null;
+}
+
+export interface TeachContext {
+  subject: string;
+  classLevel: number | string;
+  medium: string;
+  level: string;
+  sloList: string;
+  groundTruth: string;
 }
