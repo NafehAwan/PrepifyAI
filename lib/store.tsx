@@ -11,6 +11,7 @@ import {
 } from "react";
 import type { AppState, ChatMsg } from "./types";
 import { daysUntil } from "./data";
+import { CANNED_TUTOR_REPLY, DEMO_TEACH } from "./ai/context";
 
 const INITIAL: AppState = {
   screen: "home",
@@ -62,6 +63,33 @@ export interface AppStore {
 
 const Ctx = createContext<AppStore | null>(null);
 
+// Calls the grounded tutor route; falls back to a canned reply when the AI
+// backend isn't configured or the request fails, so the demo always answers.
+async function fetchTutorReply(history: ChatMsg[]): Promise<string> {
+  try {
+    const res = await fetch("/api/ai/teach", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        messages: history.map(([role, text]) => ({ role, text })),
+        subject: DEMO_TEACH.subject,
+        classLevel: DEMO_TEACH.classLevel,
+        medium: DEMO_TEACH.medium,
+        level: DEMO_TEACH.level,
+        sloList: DEMO_TEACH.sloList,
+        groundTruth: DEMO_TEACH.groundTruth,
+      }),
+    });
+    if (res.ok) {
+      const data = (await res.json()) as { reply?: string };
+      if (data.reply) return data.reply;
+    }
+  } catch {
+    // fall through to the canned reply
+  }
+  return CANNED_TUTOR_REPLY;
+}
+
 export function AppProvider({
   children,
   initial,
@@ -85,14 +113,21 @@ export function AppProvider({
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   }, []);
 
-  const ask = useCallback((text: string) => {
+  const ask = useCallback(async (text: string) => {
     const t = (text || "").trim();
     if (!t) return;
-    const reply =
-      "Here’s the short version from your book: Fᴄ = mv²/r. For a 1000 kg car at 20 m s⁻¹ on a 50 m bend that’s 8000 N of friction — more than dry tyres can usually give, which is exactly why the road is banked. Want me to set you two numericals on this?";
+    // Optimistically add the student’s turn + a placeholder, then fill the reply.
+    let history: ChatMsg[] = [];
     setState((prev) => {
       const base = prev.chat.length ? prev.chat : SEED_CHAT;
-      return { ...prev, chat: [...base, ["me", t], ["ai", reply]], draft: "" };
+      history = [...base, ["me", t]];
+      return { ...prev, chat: [...history, ["ai", "…"]], draft: "" };
+    });
+    const reply = await fetchTutorReply(history);
+    setState((prev) => {
+      const chat = prev.chat.slice();
+      if (chat.length > 0) chat[chat.length - 1] = ["ai", reply];
+      return { ...prev, chat };
     });
   }, []);
 

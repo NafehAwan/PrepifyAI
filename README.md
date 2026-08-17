@@ -11,6 +11,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/`, `components/`, `lib/` | The dashboard app — every screen from the design, pixel-faithful, fully interactive |
 | `lib/supabase/`, `middleware.ts` | Supabase auth (SSR clients, session middleware, query + persistence layer) |
 | `app/login/` | Email/password sign in / sign up UI + server actions |
+| `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
 | `content/physics-9.curriculum.json` | Curriculum JSON seed — Physics IX, 2 chapters, each with a complete chapter-test bank (Part B) |
 | `scripts/seed.mjs` | Loads the curriculum into Supabase (`npm run seed`) |
@@ -57,7 +58,18 @@ If Supabase isn't configured, all of the above degrade gracefully to the demo ex
 
 `.mcp.json` registers the [Supabase MCP server](https://supabase.com/docs/guides/getting-started/mcp) for this project so a local Claude Code session can apply migrations, run SQL, and manage the linked project directly (it authorises over OAuth on first use). Open the project in Claude Code and approve the `supabase` server when prompted.
 
-Still on demo data (pending the AI learning-loop backend): per-topic mastery, predicted grades, coverage heat-map, reviews and mock scoring.
+## AI backend — real tutor + examiner
+
+The tutor chat and the practice examiner call the **Claude API** through server-side Next.js route handlers (`app/api/ai/`), using the grounded teaching + strict-grading system prompts from the spec:
+
+- **`POST /api/ai/teach`** — the grounded tutor. Answers only from the supplied ground-truth chunks + SLOs and cites SLO codes. Powers the Topic-workspace chat.
+- **`POST /api/ai/grade`** — the brutally-honest examiner. Grades a written answer point-by-point against the marking scheme and returns structured JSON (`{awarded, outOf, hits[], missed[], keyword_gaps[], feedback_md, slo_code}`) via Claude's structured outputs. Powers the Practice screen's live feedback.
+
+Enable it by setting `ANTHROPIC_API_KEY` in `.env.local` (server-side only). Optionally set `PREPIFY_MODEL` — it defaults to `claude-opus-5`; use `claude-sonnet-5` or `claude-haiku-4-5` to trade quality for cost.
+
+Without a key both routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
+
+Still on demo data (pending further build-out): per-topic mastery, predicted grades, coverage heat-map, reviews, mock scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
 
 ## The dashboard
 
