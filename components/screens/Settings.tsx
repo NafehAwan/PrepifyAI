@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
+import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
 import type { AppState } from "@/lib/types";
 
@@ -37,6 +39,8 @@ export function Settings() {
           <button style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "11px 20px", fontSize: 14 }}>Edit profile</button>
         </div>
       </div>
+
+      <ConnectAI />
 
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Class &amp; subjects</div>
@@ -93,6 +97,117 @@ export function Settings() {
           </Row>
         </div>
       </div>
+    </div>
+  );
+}
+
+// "Bring your own key" card: paste a free Groq key, test it, and learn how to
+// get one. The key is stored only in this browser and powers the AI tutor +
+// examiner. Without it the app falls back to canned responses.
+function ConnectAI() {
+  const { s, setGroqKey } = useApp();
+  const [draft, setDraft] = useState(s.groqKey);
+  const [show, setShow] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [testing, setTesting] = useState(false);
+  const [result, setResult] = useState<{ ok: boolean; msg: string } | null>(null);
+
+  const connected = s.groqKey.length > 0;
+  const effectiveKey = (draft.trim() || s.groqKey).trim();
+
+  const save = () => {
+    setGroqKey(draft);
+    setSaved(true);
+    setResult(null);
+    setTimeout(() => setSaved(false), 2000);
+  };
+
+  const test = async () => {
+    setTesting(true);
+    setResult(null);
+    try {
+      const res = await fetch("/api/ai/ping", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...groqAuthHeaders(effectiveKey) },
+      });
+      const data = (await res.json()) as { ok?: boolean; model?: string; error?: string };
+      if (res.ok && data.ok) setResult({ ok: true, msg: `Connected — model ${data.model}.` });
+      else setResult({ ok: false, msg: data.error || "That key didn't work. Double-check and try again." });
+    } catch {
+      setResult({ ok: false, msg: "Couldn't reach the AI service. Check your connection." });
+    }
+    setTesting(false);
+  };
+
+  return (
+    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+        <div style={{ fontWeight: 700, fontSize: 16 }}>Connect your AI tutor</div>
+        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#8d8069" }}>
+          {connected ? "✓ Connected" : "Not connected"}
+        </span>
+      </div>
+      <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 18 }}>
+        Prepify uses your own free Groq API key to power the tutor and examiner. It&apos;s stored only in this browser — we never see or save it. It takes about a minute to set up.
+      </div>
+
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", marginBottom: 12 }}>
+        <div style={{ display: "flex", alignItems: "center", flex: "1 1 320px", minWidth: 240, border: "1.5px solid #e0d0b4", borderRadius: 14, background: "#fff", paddingRight: 6 }}>
+          <input
+            type={show ? "text" : "password"}
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            placeholder="Paste your Groq key (gsk_…)"
+            spellCheck={false}
+            autoComplete="off"
+            style={{ flex: 1, minWidth: 0, border: "none", outline: "none", background: "transparent", padding: "12px 14px", fontSize: 14, fontFamily: "monospace" }}
+          />
+          <button onClick={() => setShow((v) => !v)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, padding: "6px 10px" }}>
+            {show ? "Hide" : "Show"}
+          </button>
+        </div>
+        <button onClick={save} disabled={!draft.trim()} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "12px 22px", fontSize: 14, opacity: draft.trim() ? 1 : 0.5 }}>
+          {saved ? "Saved ✓" : "Save key"}
+        </button>
+        <button onClick={test} disabled={testing || !effectiveKey} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing || !effectiveKey ? 0.6 : 1 }}>
+          {testing ? "Testing…" : "Test connection"}
+        </button>
+        {connected && (
+          <button onClick={() => { setGroqKey(""); setDraft(""); setResult(null); }} style={{ borderRadius: 999, background: "transparent", color: C.muted, fontWeight: 700, padding: "12px 14px", fontSize: 13.5 }}>
+            Remove
+          </button>
+        )}
+      </div>
+
+      {result && (
+        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginBottom: 12, background: result.ok ? C.sageT : "#fdf1e6", color: result.ok ? C.sageD : C.accentD }}>
+          {result.ok ? "✓ " : "✕ "}{result.msg}
+        </div>
+      )}
+
+      <details style={{ borderTop: "1px solid #ece0c8", paddingTop: 14 }}>
+        <summary style={{ cursor: "pointer", fontSize: 14, fontWeight: 700, color: C.ink, listStyle: "none" }}>
+          How do I get a free Groq key? →
+        </summary>
+        <ol style={{ margin: "14px 0 4px", paddingLeft: 20, display: "flex", flexDirection: "column", gap: 10, fontSize: 13.5, color: "#4a443c", lineHeight: 1.55 }}>
+          <li>
+            Go to{" "}
+            <a href="https://console.groq.com/login" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com</a>{" "}
+            and sign in — it&apos;s free, and you can use Google or GitHub.
+          </li>
+          <li>
+            Open{" "}
+            <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>API Keys</a>{" "}
+            from the left menu.
+          </li>
+          <li>Click <strong>Create API Key</strong>, name it <em>Prepify</em>, and press Create.</li>
+          <li>Copy the key (it starts with <code style={{ background: C.bg, padding: "1px 5px", borderRadius: 5 }}>gsk_</code>) — you only see it once.</li>
+          <li>Paste it in the box above and hit <strong>Save key</strong>. Done!</li>
+        </ol>
+        <div style={{ fontSize: 12.5, color: C.muted, marginTop: 12, lineHeight: 1.5 }}>
+          Groq&apos;s free tier is generous — plenty for daily study. Your key never leaves your device except to talk to Groq directly.
+        </div>
+      </details>
     </div>
   );
 }

@@ -58,16 +58,19 @@ If Supabase isn't configured, all of the above degrade gracefully to the demo ex
 
 `.mcp.json` registers the [Supabase MCP server](https://supabase.com/docs/guides/getting-started/mcp) for this project so a local Claude Code session can apply migrations, run SQL, and manage the linked project directly (it authorises over OAuth on first use). Open the project in Claude Code and approve the `supabase` server when prompted.
 
-## AI backend — real tutor + examiner
+## AI backend — bring your own Groq key
 
-The tutor chat and the practice examiner call the **Claude API** through server-side Next.js route handlers (`app/api/ai/`), using the grounded teaching + strict-grading system prompts from the spec:
+The tutor chat and the practice examiner call **Groq** (OpenAI-compatible Chat Completions) through server-side Next.js route handlers (`app/api/ai/`), using the grounded teaching + strict-grading system prompts from the spec:
 
 - **`POST /api/ai/teach`** — the grounded tutor. Answers only from the supplied ground-truth chunks + SLOs and cites SLO codes. Powers the Topic-workspace chat.
-- **`POST /api/ai/grade`** — the brutally-honest examiner. Grades a written answer point-by-point against the marking scheme and returns structured JSON (`{awarded, outOf, hits[], missed[], keyword_gaps[], feedback_md, slo_code}`) via Claude's structured outputs. Powers the Practice screen's live feedback.
+- **`POST /api/ai/grade`** — the brutally-honest examiner. Grades a written answer point-by-point against the marking scheme and returns structured JSON (`{awarded, outOf, hits[], missed[], keyword_gaps[], feedback_md, slo_code}`) via Groq's JSON mode. Powers the Practice screen's live feedback.
+- **`POST /api/ai/ping`** — validates a key for the Settings "Test connection" button.
 
-Enable it by setting `ANTHROPIC_API_KEY` in `.env.local` (server-side only). Optionally set `PREPIFY_MODEL` — it defaults to `claude-opus-5`; use `claude-sonnet-5` or `claude-haiku-4-5` to trade quality for cost.
+**Each student brings their own free Groq key.** In the app, go to **Settings → Connect your AI**, follow the one-minute guide to create a free key at [console.groq.com](https://console.groq.com/keys), and paste it in. The key is stored **only in that browser** (localStorage) and sent per-request in the `x-groq-key` header straight to Groq — it is never written to our database or logged server-side.
 
-Without a key both routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
+For local dev you can instead set a shared fallback `GROQ_API_KEY` in `.env.local` (server-side only). Optionally set `PREPIFY_MODEL` — it defaults to `llama-3.3-70b-versatile`; use `llama-3.1-8b-instant` for faster/cheaper, or any current Groq model id.
+
+Without any key all routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
 
 ## Live curriculum (DB-driven loop)
 

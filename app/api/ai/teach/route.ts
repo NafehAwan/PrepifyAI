@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { isAiConfigured, PREPIFY_MODEL } from "@/lib/ai/config";
-import { createAnthropic } from "@/lib/ai/client";
+import { resolveGroqKey } from "@/lib/ai/config";
+import { groqChat, type GroqMessage } from "@/lib/ai/client";
 import { teachSystemPrompt } from "@/lib/ai/prompts";
 
 export const runtime = "nodejs";
@@ -11,9 +11,11 @@ interface InMsg {
 }
 
 // Grounded tutor pass. Answers the student's question using only the supplied
-// ground truth (RAG chunks + SLOs), citing SLO codes.
+// ground truth (RAG chunks + SLOs), citing SLO codes. Uses the student's own
+// Groq key from the request header (falls back to a server key if configured).
 export async function POST(req: Request) {
-  if (!isAiConfigured()) {
+  const key = resolveGroqKey(req);
+  if (!key) {
     return NextResponse.json({ configured: false }, { status: 503 });
   }
 
@@ -41,32 +43,25 @@ export async function POST(req: Request) {
     groundTruth: body.groundTruth ?? "",
   });
 
-  // Map to Anthropic roles and ensure the conversation starts with a user turn.
-  const mapped = (body.messages ?? []).map((m) => ({
+  // Map to OpenAI-style roles and ensure the conversation starts with a user turn.
+  const mapped: GroqMessage[] = (body.messages ?? []).map((m) => ({
     role: (m.role === "me" ? "user" : "assistant") as "user" | "assistant",
     content: m.text,
   }));
   let start = 0;
   while (start < mapped.length && mapped[start].role !== "user") start++;
-  const messages = mapped.slice(start);
-  if (messages.length === 0) {
+  const turns = mapped.slice(start);
+  if (turns.length === 0) {
     return NextResponse.json({ error: "No user message" }, { status: 400 });
   }
 
   try {
-    const anthropic = createAnthropic();
-    const res = await anthropic.messages.create({
-      model: PREPIFY_MODEL,
-      max_tokens: 4000,
-      system,
-      output_config: { effort: "low" },
-      messages,
+    const { text, model } = await groqChat({
+      key,
+      maxTokens: 1500,
+      messages: [{ role: "system", content: system }, ...turns],
     });
-    const reply = res.content
-      .map((b) => (b.type === "text" ? b.text : ""))
-      .join("")
-      .trim();
-    return NextResponse.json({ reply, model: res.model });
+    return NextResponse.json({ reply: text, model });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     return NextResponse.json({ error: message }, { status: 502 });

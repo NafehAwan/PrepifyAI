@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { DEMO_GRADE, type GradeResult } from "@/lib/ai/context";
+import { groqAuthHeaders } from "@/lib/ai/key";
 
 const FB_GOOD = [
   "Correctly described what the passenger experiences during the turn.",
@@ -40,7 +41,7 @@ export function Practice() {
     try {
       const res = await fetch("/api/ai/grade", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...groqAuthHeaders(s.groqKey) },
         body: JSON.stringify({
           question: DEMO_GRADE.question,
           marks: DEMO_GRADE.marks,

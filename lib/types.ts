@@ -57,6 +57,8 @@ export interface AppState {
   selectedTopicId: string | null;
   // Grounding context for the tutor, set by the topic screen from real content.
   teach: TeachContext | null;
+  // The student's own Groq API key (browser-only; hydrated from localStorage).
+  groqKey: string;
 }
 
 export interface TeachContext {

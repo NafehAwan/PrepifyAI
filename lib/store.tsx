@@ -12,6 +12,7 @@ import {
 import type { AppState, ChatMsg, TeachContext } from "./types";
 import { daysUntil } from "./data";
 import { CANNED_TUTOR_REPLY, DEMO_TEACH } from "./ai/context";
+import { getGroqKey, groqAuthHeaders, setGroqKey as persistGroqKey } from "./ai/key";
 
 const INITIAL: AppState = {
   screen: "home",
@@ -48,6 +49,7 @@ const INITIAL: AppState = {
   selectedSubjectName: null,
   selectedTopicId: null,
   teach: null,
+  groqKey: "",
 };
 
 const SEED_CHAT: ChatMsg[] = [
@@ -63,18 +65,19 @@ export interface AppStore {
   go: (screen: AppState["screen"]) => void;
   daysLeft: number;
   ask: (text: string) => void;
+  setGroqKey: (key: string) => void;
 }
 
 const Ctx = createContext<AppStore | null>(null);
 
 // Calls the grounded tutor route; falls back to a canned reply when the AI
 // backend isn't configured or the request fails, so the demo always answers.
-async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null): Promise<string> {
+async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null, groqKey: string): Promise<string> {
   const ctx = teach ?? DEMO_TEACH;
   try {
     const res = await fetch("/api/ai/teach", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...groqAuthHeaders(groqKey) },
       body: JSON.stringify({
         messages: history.map(([role, text]) => ({ role, text })),
         subject: ctx.subject,
@@ -124,18 +127,33 @@ export function AppProvider({
     // Optimistically add the student’s turn + a placeholder, then fill the reply.
     let history: ChatMsg[] = [];
     let teach: TeachContext | null = null;
+    let groqKey = "";
     setState((prev) => {
       const base = prev.chat.length ? prev.chat : SEED_CHAT;
       history = [...base, ["me", t]];
       teach = prev.teach;
+      groqKey = prev.groqKey;
       return { ...prev, chat: [...history, ["ai", "…"]], draft: "" };
     });
-    const reply = await fetchTutorReply(history, teach);
+    const reply = await fetchTutorReply(history, teach, groqKey);
     setState((prev) => {
       const chat = prev.chat.slice();
       if (chat.length > 0) chat[chat.length - 1] = ["ai", reply];
       return { ...prev, chat };
     });
+  }, []);
+
+  // Save + apply the student's own Groq key (persists to localStorage).
+  const setGroqKey = useCallback((key: string) => {
+    const trimmed = key.trim();
+    persistGroqKey(trimmed);
+    setState((prev) => ({ ...prev, groqKey: trimmed }));
+  }, []);
+
+  // On mount, hydrate the saved key from localStorage into state.
+  useEffect(() => {
+    const saved = getGroqKey();
+    if (saved) setState((prev) => ({ ...prev, groqKey: saved }));
   }, []);
 
   // Mock-exam countdown, mirrors the prototype's componentDidMount interval.
@@ -151,8 +169,8 @@ export function AppProvider({
   }, []);
 
   const value = useMemo<AppStore>(
-    () => ({ s, set, patch, go, daysLeft: daysUntil(s.examDate), ask }),
-    [s, set, patch, go, ask],
+    () => ({ s, set, patch, go, daysLeft: daysUntil(s.examDate), ask, setGroqKey }),
+    [s, set, patch, go, ask, setGroqKey],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
