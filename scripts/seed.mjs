@@ -6,7 +6,7 @@
 // or the environment). Uses the service role, so it bypasses RLS. Idempotent:
 // re-running replaces the subject's book tree.
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createClient } from "@supabase/supabase-js";
@@ -147,7 +147,12 @@ async function main() {
     await upsertSubjectByName(name, name === "Physics" ? "pre_eng" : null);
   }
 
-  await seedCurriculum("physics-9.curriculum.json");
+  // Seed every content/*.curriculum.json (Physics, Chemistry, and any book you
+  // ingest with scripts/ingest_docx.py).
+  const files = readdirSync(join(root, "content"))
+    .filter((f) => f.endsWith(".curriculum.json"))
+    .sort();
+  for (const file of files) await seedCurriculum(file);
   console.log("\nDone.");
 }
 
