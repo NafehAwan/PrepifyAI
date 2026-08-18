@@ -11,6 +11,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/`, `components/`, `lib/` | The dashboard app — every screen from the design, pixel-faithful, fully interactive |
 | `lib/supabase/`, `middleware.ts` | Supabase auth (SSR clients, session middleware, query + persistence layer) |
 | `app/login/` | Email/password sign in / sign up UI + server actions |
+| `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
 | `content/physics-9.curriculum.json` | Curriculum JSON seed — Physics IX, 2 chapters, each with a complete chapter-test bank (Part B) |
 | `scripts/seed.mjs` | Loads the curriculum into Supabase (`npm run seed`) |
@@ -53,7 +54,37 @@ The app has real email/password auth and persists your profile. To turn it on:
 
 If Supabase isn't configured, all of the above degrade gracefully to the demo experience — the persistence calls are no-ops and `/` renders without a login gate.
 
-Still on demo data (pending the AI learning-loop backend): per-topic mastery, predicted grades, coverage heat-map, reviews and mock scoring.
+### Supabase MCP (optional, for Claude Code)
+
+`.mcp.json` registers the [Supabase MCP server](https://supabase.com/docs/guides/getting-started/mcp) for this project so a local Claude Code session can apply migrations, run SQL, and manage the linked project directly (it authorises over OAuth on first use). Open the project in Claude Code and approve the `supabase` server when prompted.
+
+## AI backend — bring your own Groq key
+
+The tutor chat and the practice examiner call **Groq** (OpenAI-compatible Chat Completions) through server-side Next.js route handlers (`app/api/ai/`), using the grounded teaching + strict-grading system prompts from the spec:
+
+- **`POST /api/ai/teach`** — the grounded tutor. Answers only from the supplied ground-truth chunks + SLOs and cites SLO codes. Powers the Topic-workspace chat.
+- **`POST /api/ai/grade`** — the brutally-honest examiner. Grades a written answer point-by-point against the marking scheme and returns structured JSON (`{awarded, outOf, hits[], missed[], keyword_gaps[], feedback_md, slo_code}`) via Groq's JSON mode. Powers the Practice screen's live feedback.
+- **`POST /api/ai/ping`** — validates a key for the Settings "Test connection" button.
+
+**Each student brings their own free Groq key.** In the app, go to **Settings → Connect your AI**, follow the one-minute guide to create a free key at [console.groq.com](https://console.groq.com/keys), and paste it in. The key is stored **only in that browser** (localStorage) and sent per-request in the `x-groq-key` header straight to Groq — it is never written to our database or logged server-side.
+
+For local dev you can instead set a shared fallback `GROQ_API_KEY` in `.env.local` (server-side only). Optionally set `PREPIFY_MODEL` — it defaults to `llama-3.3-70b-versatile`; use `llama-3.1-8b-instant` for faster/cheaper, or any current Groq model id.
+
+Without any key all routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
+
+## Live curriculum (DB-driven loop)
+
+When Supabase is configured, the core loop reads real content from the database (`lib/curriculum.ts`, browser client under public-read RLS):
+
+- **My Subjects → Chapters** — opening a subject loads its real chapter tree (chapters + topics) from the DB. Subjects without seeded content show a friendly "still ingesting" state; Physics IX is fully seeded.
+- **Topic workspace** — the reading pane renders the topic's real SLOs and textbook `content_md`, SLO by SLO. The **AI tutor is RAG-grounded on that topic's real content chunks** (the teach route receives the topic's SLO text as ground truth), and the **quiz is the topic's real MCQ bank** from `questions`, scored against a 70% pass bar.
+- **Mastery persistence + unlocking** — passing a topic quiz writes to `topic_progress`. The chapter tree then shows real mastery states, and in guided mode a topic stays locked until every earlier topic is passed. (`lib/supabase/persist.ts`, `computeTopicStates`.)
+- **Live analytics** — for a signed-in student the My Subjects grid, Progress coverage heat-map + predicted grades, and Home gauges/weak-spots are computed from saved mastery (`lib/analytics.ts`), not hardcoded.
+- **Chapter tests** — each chapter's real FBISE-style paper (25 MCQ + 7 short + 2 long) is assembled from the question bank (`getChapterTest`). MCQs auto-mark; the written section is graded by the Groq examiner when a key is connected (otherwise the paper scores on its MCQ section and shows model answers for self-review). Results roll into `chapter_attempts` + `chapter_progress`, and the chapter tree shows a passed badge with your best score.
+
+In demo mode (no Supabase) these screens fall back to the static Physics sample, so everything still runs with zero setup. All persistence + analytics are gated on being signed in.
+
+Still on demo data (pending further build-out): spaced-repetition reviews, streak/XP, the study-plan queue, DB-backed mock-exam scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
 
 ## The dashboard
 

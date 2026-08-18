@@ -1,0 +1,69 @@
+import { NextResponse } from "next/server";
+import { resolveGroqKey } from "@/lib/ai/config";
+import { groqChat, type GroqMessage } from "@/lib/ai/client";
+import { teachSystemPrompt } from "@/lib/ai/prompts";
+
+export const runtime = "nodejs";
+
+interface InMsg {
+  role: "me" | "ai";
+  text: string;
+}
+
+// Grounded tutor pass. Answers the student's question using only the supplied
+// ground truth (RAG chunks + SLOs), citing SLO codes. Uses the student's own
+// Groq key from the request header (falls back to a server key if configured).
+export async function POST(req: Request) {
+  const key = resolveGroqKey(req);
+  if (!key) {
+    return NextResponse.json({ configured: false }, { status: 503 });
+  }
+
+  let body: {
+    messages?: InMsg[];
+    subject?: string;
+    classLevel?: number | string;
+    medium?: string;
+    level?: string;
+    sloList?: string;
+    groundTruth?: string;
+  };
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+  }
+
+  const system = teachSystemPrompt({
+    classLevel: body.classLevel ?? 11,
+    subject: body.subject ?? "Physics",
+    medium: body.medium ?? "English",
+    level: body.level ?? "Developing",
+    sloList: body.sloList ?? "",
+    groundTruth: body.groundTruth ?? "",
+  });
+
+  // Map to OpenAI-style roles and ensure the conversation starts with a user turn.
+  const mapped: GroqMessage[] = (body.messages ?? []).map((m) => ({
+    role: (m.role === "me" ? "user" : "assistant") as "user" | "assistant",
+    content: m.text,
+  }));
+  let start = 0;
+  while (start < mapped.length && mapped[start].role !== "user") start++;
+  const turns = mapped.slice(start);
+  if (turns.length === 0) {
+    return NextResponse.json({ error: "No user message" }, { status: 400 });
+  }
+
+  try {
+    const { text, model } = await groqChat({
+      key,
+      maxTokens: 1500,
+      messages: [{ role: "system", content: system }, ...turns],
+    });
+    return NextResponse.json({ reply: text, model });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    return NextResponse.json({ error: message }, { status: 502 });
+  }
+}

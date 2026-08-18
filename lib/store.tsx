@@ -9,14 +9,15 @@ import {
   useRef,
   useState,
 } from "react";
-import type { AppState, ChatMsg } from "./types";
+import type { AppState, ChatMsg, TeachContext } from "./types";
 import { daysUntil } from "./data";
+import { CANNED_TUTOR_REPLY, DEMO_TEACH } from "./ai/context";
+import { getGroqKey, groqAuthHeaders, setGroqKey as persistGroqKey } from "./ai/key";
 
 const INITIAL: AppState = {
   screen: "home",
   ob: 1,
   cls: "11th",
-  track: "Pre-Medical",
   subs: ["Physics", "Chemistry", "Biology", "Maths", "English", "Urdu", "Islamiyat", "Pak Studies", "Computer Science"],
   examDate: "2027-04-12",
   dq: 0,
@@ -44,6 +45,13 @@ const INITIAL: AppState = {
   supabaseConfigured: false,
   userName: "Areeba",
   userEmail: "areeba.r@example.com",
+  selectedSubjectId: null,
+  selectedSubjectName: null,
+  selectedTopicId: null,
+  testChapterId: null,
+  testChapterTitle: null,
+  teach: null,
+  groqKey: "",
 };
 
 const SEED_CHAT: ChatMsg[] = [
@@ -59,9 +67,38 @@ export interface AppStore {
   go: (screen: AppState["screen"]) => void;
   daysLeft: number;
   ask: (text: string) => void;
+  setGroqKey: (key: string) => void;
 }
 
 const Ctx = createContext<AppStore | null>(null);
+
+// Calls the grounded tutor route; falls back to a canned reply when the AI
+// backend isn't configured or the request fails, so the demo always answers.
+async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null, groqKey: string): Promise<string> {
+  const ctx = teach ?? DEMO_TEACH;
+  try {
+    const res = await fetch("/api/ai/teach", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...groqAuthHeaders(groqKey) },
+      body: JSON.stringify({
+        messages: history.map(([role, text]) => ({ role, text })),
+        subject: ctx.subject,
+        classLevel: ctx.classLevel,
+        medium: ctx.medium,
+        level: ctx.level,
+        sloList: ctx.sloList,
+        groundTruth: ctx.groundTruth,
+      }),
+    });
+    if (res.ok) {
+      const data = (await res.json()) as { reply?: string };
+      if (data.reply) return data.reply;
+    }
+  } catch {
+    // fall through to the canned reply
+  }
+  return CANNED_TUTOR_REPLY;
+}
 
 export function AppProvider({
   children,
@@ -86,15 +123,39 @@ export function AppProvider({
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   }, []);
 
-  const ask = useCallback((text: string) => {
+  const ask = useCallback(async (text: string) => {
     const t = (text || "").trim();
     if (!t) return;
-    const reply =
-      "Here’s the short version from your book: Fᴄ = mv²/r. For a 1000 kg car at 20 m s⁻¹ on a 50 m bend that’s 8000 N of friction — more than dry tyres can usually give, which is exactly why the road is banked. Want me to set you two numericals on this?";
+    // Optimistically add the student’s turn + a placeholder, then fill the reply.
+    let history: ChatMsg[] = [];
+    let teach: TeachContext | null = null;
+    let groqKey = "";
     setState((prev) => {
       const base = prev.chat.length ? prev.chat : SEED_CHAT;
-      return { ...prev, chat: [...base, ["me", t], ["ai", reply]], draft: "" };
+      history = [...base, ["me", t]];
+      teach = prev.teach;
+      groqKey = prev.groqKey;
+      return { ...prev, chat: [...history, ["ai", "…"]], draft: "" };
     });
+    const reply = await fetchTutorReply(history, teach, groqKey);
+    setState((prev) => {
+      const chat = prev.chat.slice();
+      if (chat.length > 0) chat[chat.length - 1] = ["ai", reply];
+      return { ...prev, chat };
+    });
+  }, []);
+
+  // Save + apply the student's own Groq key (persists to localStorage).
+  const setGroqKey = useCallback((key: string) => {
+    const trimmed = key.trim();
+    persistGroqKey(trimmed);
+    setState((prev) => ({ ...prev, groqKey: trimmed }));
+  }, []);
+
+  // On mount, hydrate the saved key from localStorage into state.
+  useEffect(() => {
+    const saved = getGroqKey();
+    if (saved) setState((prev) => ({ ...prev, groqKey: saved }));
   }, []);
 
   // Mock-exam countdown, mirrors the prototype's componentDidMount interval.
@@ -110,8 +171,8 @@ export function AppProvider({
   }, []);
 
   const value = useMemo<AppStore>(
-    () => ({ s, set, patch, go, daysLeft: daysUntil(s.examDate), ask }),
-    [s, set, patch, go, ask],
+    () => ({ s, set, patch, go, daysLeft: daysUntil(s.examDate), ask, setGroqKey }),
+    [s, set, patch, go, ask, setGroqKey],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

@@ -1,7 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
+import { DEMO_GRADE, type GradeResult } from "@/lib/ai/context";
+import { groqAuthHeaders } from "@/lib/ai/key";
 
 const FB_GOOD = [
   "Correctly described what the passenger experiences during the turn.",
@@ -27,6 +30,37 @@ const ANNOTATED: ReadonlyArray<readonly [string, string, string, 0 | 1]> = [
 
 export function Practice() {
   const { s, set } = useApp();
+  const [ai, setAi] = useState<GradeResult | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  // Send the typed answer to the brutally-honest examiner. Falls back to the
+  // static demo feedback when the AI backend isn't configured or errors.
+  const submit = async () => {
+    setBusy(true);
+    let result: GradeResult | null = null;
+    try {
+      const res = await fetch("/api/ai/grade", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...groqAuthHeaders(s.groqKey) },
+        body: JSON.stringify({
+          question: DEMO_GRADE.question,
+          marks: DEMO_GRADE.marks,
+          sloCode: DEMO_GRADE.sloCode,
+          markingScheme: DEMO_GRADE.markingScheme,
+          modelAnswer: DEMO_GRADE.modelAnswer,
+          studentAnswer: s.pAnswer,
+        }),
+      });
+      if (res.ok) result = (await res.json()) as GradeResult;
+    } catch {
+      // fall through to the static demo feedback
+    }
+    setAi(result);
+    set("pShow", true);
+    setBusy(false);
+  };
+  const submitLabel = busy ? "Marking…" : s.pShow ? "Re-mark" : "Submit for AI marking";
+
   return (
     <>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 18 }}>
@@ -59,15 +93,91 @@ export function Practice() {
         </div>
         <textarea value={s.pAnswer} onChange={(e) => set("pAnswer", e.target.value)} placeholder="Write your answer as you would in the exam…" style={{ width: "100%", minHeight: 120, border: "1.5px solid #e0d0b4", borderRadius: 18, background: "#fff", padding: "16px 18px", fontSize: 15, lineHeight: 1.6, outline: "none", resize: "vertical" }} />
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 14 }}>
-          <button onClick={() => set("pShow", true)} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 28px", fontSize: 15 }}>{s.pShow ? "Marked" : "Submit for AI marking"}</button>
+          <button onClick={submit} disabled={busy} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 28px", fontSize: 15, opacity: busy ? 0.7 : 1 }}>{submitLabel}</button>
           <button style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "13px 22px", fontSize: 14 }}>Hint</button>
           <div style={{ flex: 1 }} />
           <div style={{ fontSize: 12.5, color: "#9a8d78" }}>Answer in Urdu is accepted — feedback follows your language setting.</div>
         </div>
       </div>
 
-      {s.pShow && (s.fbVar === "A" ? <FeedbackA /> : <FeedbackB />)}
+      {s.pShow &&
+        (ai ? (
+          <RealFeedback ai={ai} answer={s.pAnswer} onNext={() => { setAi(null); set("pShow", false); set("pAnswer", ""); }} />
+        ) : s.fbVar === "A" ? (
+          <FeedbackA />
+        ) : (
+          <FeedbackB />
+        ))}
     </>
+  );
+}
+
+// Live examiner feedback rendered from the /api/ai/grade result.
+function RealFeedback({ ai, answer, onNext }: { ai: GradeResult; answer: string; onNext: () => void }) {
+  return (
+    <div style={{ maxWidth: 1100, display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))", gap: 16, alignItems: "start", animation: "pf-in .3s ease" }}>
+      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 24 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+          <div style={{ fontWeight: 700, fontSize: 15 }}>Your answer</div>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 4, background: C.tint, borderRadius: 999, padding: "6px 15px" }}>
+            <span style={{ fontFamily: "Caprasimo", fontSize: 20, color: C.accentD }}>{ai.awarded}</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: C.accentD }}>/ {ai.outOf} marks</span>
+          </div>
+        </div>
+        <div style={{ fontSize: 14.5, lineHeight: 1.65, color: "#4a443c", background: C.bg, borderRadius: 16, padding: "16px 18px", marginBottom: 18 }}>
+          {answer.trim() || "(left blank)"}
+        </div>
+        {ai.hits.length > 0 && (
+          <>
+            <Label color={C.sageD}>What you got right</Label>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 18 }}>
+              {ai.hits.map((text) => (
+                <div key={text} style={{ display: "flex", gap: 10, alignItems: "flex-start", fontSize: 14, lineHeight: 1.5 }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7a8a5e" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: "none", marginTop: 3 }}><path d="M20 6 9 17l-5-5" /></svg>
+                  <div>{text}</div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {ai.missed.length > 0 && (
+          <>
+            <Label color={C.accentD}>Marks you missed</Label>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 16 }}>
+              {ai.missed.map((text) => (
+                <div key={text} style={{ display: "flex", gap: 10, alignItems: "flex-start", fontSize: 14, lineHeight: 1.5 }}>
+                  <div style={{ width: 16, height: 16, flex: "none", borderRadius: 999, border: "2.5px solid #c67139", marginTop: 2 }} />
+                  <div>{text}</div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {ai.keyword_gaps.length > 0 && (
+          <>
+            <Label color={C.muted}>Keywords the examiner looked for</Label>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>
+              {ai.keyword_gaps.map((text) => (
+                <div key={text} style={{ fontSize: 12.5, fontWeight: 600, borderRadius: 999, padding: "5px 12px", background: C.tint, color: C.accentD }}>✕ {text}</div>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
+      <div style={{ background: C.sageT, borderRadius: 24, padding: 24 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+          <div style={{ fontWeight: 700, fontSize: 15, color: "#3f4a2b" }}>Examiner&apos;s verdict</div>
+          <div style={{ background: C.sage, color: "#fff", borderRadius: 999, padding: "6px 15px", fontSize: 13, fontWeight: 700 }}>{ai.slo_code || DEMO_GRADE.sloCode}</div>
+        </div>
+        <div style={{ fontSize: 14.5, lineHeight: 1.7, color: "#3a4327", marginBottom: 16 }}>{ai.feedback_md}</div>
+        <div style={{ fontWeight: 700, fontSize: 14, color: "#3f4a2b", marginBottom: 8 }}>Model full-marks answer</div>
+        <div style={{ fontSize: 14, lineHeight: 1.65, color: "#3a4327" }}>{DEMO_GRADE.modelAnswer}</div>
+        <div style={{ marginTop: 18, paddingTop: 16, borderTop: "1px solid #d3dbc1", display: "flex", gap: 10 }}>
+          <button onClick={onNext} style={{ borderRadius: 999, background: C.sageD, color: "#fff", fontWeight: 700, padding: "12px 24px", fontSize: 14 }}>Next question →</button>
+        </div>
+      </div>
+    </div>
   );
 }
 

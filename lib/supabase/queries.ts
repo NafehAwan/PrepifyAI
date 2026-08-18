@@ -2,7 +2,6 @@ import type { SupabaseClient, User } from "@supabase/supabase-js";
 import type { AppState } from "@/lib/types";
 import type { ProfileRow } from "@/lib/database.types";
 import {
-  CODE_TO_TRACK,
   LEVEL_TO_CLASS,
   displayNameFromEmail,
   fromDbMode,
@@ -29,7 +28,7 @@ export async function loadUserContext(
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("id, class_level, track, medium, exam_date, locale, mode")
+    .select("id, class_level, medium, exam_date, locale, mode")
     .eq("id", user.id)
     .maybeSingle<ProfileRow>();
 
@@ -59,7 +58,6 @@ export async function loadUserContext(
     ob: onboarded ? 5 : 1,
   };
   if (profile?.class_level) initial.cls = LEVEL_TO_CLASS[profile.class_level] ?? "11th";
-  if (profile?.track) initial.track = CODE_TO_TRACK[profile.track] ?? "Pre-Medical";
   if (profile?.exam_date) initial.examDate = profile.exam_date;
   if (profile?.mode) initial.mode = fromDbMode(profile.mode);
   if (subs.length > 0) initial.subs = subs;
