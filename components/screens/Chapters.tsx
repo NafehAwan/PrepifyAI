@@ -5,7 +5,7 @@ import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { CH } from "@/lib/data";
 import { StrokeIcon, PATH } from "../Icon";
-import { getChapters, type DBChapter } from "@/lib/curriculum";
+import { getChapters, getTopicProgress, computeTopicStates, type DBChapter, type DBTopicProgress, type TopicMastery } from "@/lib/curriculum";
 
 type TopicState = "done" | "now" | "not";
 
@@ -13,17 +13,23 @@ export function Chapters() {
   const { s, set, patch, go } = useApp();
   const guided = s.mode === "guided";
 
-  // Load the real chapter tree for the selected subject (if any).
+  // Load the real chapter tree for the selected subject (if any), plus the
+  // student's saved progress so topics show real mastery + guided locking.
   const [dbChapters, setDbChapters] = useState<DBChapter[] | null>(null);
+  const [dbProgress, setDbProgress] = useState<Record<string, DBTopicProgress>>({});
   const [dbOpen, setDbOpen] = useState<Set<string>>(new Set());
   useEffect(() => {
     let active = true;
     setDbChapters(null);
+    setDbProgress({});
     if (s.selectedSubjectId) {
-      getChapters(s.selectedSubjectId).then((rows) => {
+      getChapters(s.selectedSubjectId).then(async (rows) => {
         if (!active) return;
         setDbChapters(rows);
         setDbOpen(new Set(rows.length > 0 ? [rows[0].id] : []));
+        const topicIds = rows.flatMap((c) => c.topics.map((t) => t.id));
+        const progress = await getTopicProgress(topicIds);
+        if (active) setDbProgress(progress);
       });
     }
     return () => {
@@ -47,6 +53,8 @@ export function Chapters() {
     ? `${s.selectedSubjectName} · Class ${s.cls.replace(/\D/g, "") || "9"}`
     : "Physics · Class 11";
   const hasReal = dbChapters !== null && dbChapters.length > 0;
+  const mastery = hasReal ? computeTopicStates(dbChapters!, dbProgress, guided) : null;
+  const mc = mastery?.counts;
 
   return (
     <>
@@ -65,9 +73,9 @@ export function Chapters() {
       </div>
 
       <div style={{ display: "flex", gap: 10, marginBottom: 16, flexWrap: "wrap" }}>
-        <LegendDot color={C.sage} label="Mastered 14" />
-        <LegendDot color={C.accent} label="In progress 5" ml />
-        <LegendDot color="#d8c8ab" label="Not started 29" ml />
+        <LegendDot color={C.sage} label={`Mastered ${mc ? mc.mastered : 14}`} />
+        <LegendDot color={C.accent} label={`In progress ${mc ? mc.inProgress : 5}`} ml />
+        <LegendDot color="#d8c8ab" label={`Not started ${mc ? mc.notStarted : 29}`} ml />
         <div style={{ flex: 1 }} />
         <div style={{ fontSize: 12.5, color: C.muted }}>
           {guided ? "Guided: topics unlock as you master the one before." : "Free roam: every topic is open — jump anywhere."}
@@ -88,27 +96,50 @@ export function Chapters() {
         <div style={{ display: "flex", flexDirection: "column", gap: 10, maxWidth: 900 }}>
           {dbChapters!.map((c) => {
             const open = dbOpen.has(c.id);
+            const masteredHere = c.topics.filter((t) => mastery!.states[t.id] === "done").length;
+            const pct = c.topics.length > 0 ? Math.round((masteredHere / c.topics.length) * 100) : 0;
+            const chFg = masteredHere === c.topics.length && c.topics.length > 0 ? C.sage : masteredHere > 0 ? C.accent : "#b3a58c";
             return (
               <div key={c.id} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, overflow: "hidden" }}>
                 <button onClick={() => toggleDb(c.id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", textAlign: "left" }}>
                   <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accent, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{c.seq}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontWeight: 700, fontSize: 15.5, color: C.ink }}>{c.title}</div>
-                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{c.topics.length} topics</div>
+                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{c.topics.length} topics · {masteredHere} mastered</div>
+                  </div>
+                  <div style={{ width: 90, flex: "none" }}>
+                    <div style={{ height: 8, background: C.sand, borderRadius: 999, overflow: "hidden" }}>
+                      <div style={{ height: 8, width: `${pct}%`, background: chFg, borderRadius: 999 }} />
+                    </div>
                   </div>
                   <StrokeIcon d={PATH.chevronDown} size={18} stroke="#9a8d78" width={2.75} style={{ flex: "none", transform: `rotate(${open ? 180 : 0}deg)` }} />
                 </button>
                 {open && (
                   <div style={{ padding: "0 20px 16px 70px", display: "flex", flexDirection: "column", gap: 6 }}>
-                    {c.topics.map((t) => (
-                      <button key={t.id} onClick={() => openTopic(t.id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 13, padding: "11px 14px", borderRadius: 14, textAlign: "left", background: "transparent" }}>
-                        <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: "#e3d5bb", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                          <StrokeIcon d={PATH.dot} size={12} stroke="#fff" width={3} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0, fontSize: 14, fontWeight: 600, color: C.ink }}>{t.title}</div>
-                        <div style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sand, color: "#8d8069" }}>{t.estMinutes ? `${t.estMinutes} min` : "Start"}</div>
-                      </button>
-                    ))}
+                    {c.topics.map((t) => {
+                      const st: TopicMastery = mastery!.states[t.id] ?? "open";
+                      const locked = st === "locked";
+                      const dotBg = st === "done" ? C.sage : st === "now" ? C.accent : locked ? C.sand : "#e3d5bb";
+                      const iconFg = locked || st === "open" ? "#a89a80" : "#fff";
+                      const iconD = st === "done" ? PATH.check : locked ? PATH.lock : PATH.dot;
+                      const chip = st === "done" ? "Mastered" : st === "now" ? "In progress" : locked ? "Locked" : t.estMinutes ? `${t.estMinutes} min` : "Start";
+                      const chipBg = st === "done" ? C.sageT : st === "now" ? C.tint : C.sand;
+                      const chipFg = st === "done" ? C.sageD : st === "now" ? C.accentD : "#8d8069";
+                      return (
+                        <button
+                          key={t.id}
+                          onClick={() => !locked && openTopic(t.id)}
+                          disabled={locked}
+                          style={{ width: "100%", display: "flex", alignItems: "center", gap: 13, padding: "11px 14px", borderRadius: 14, textAlign: "left", background: st === "now" ? C.tint : "transparent", cursor: locked ? "not-allowed" : "pointer", opacity: locked ? 0.7 : 1 }}
+                        >
+                          <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: dotBg, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <StrokeIcon d={iconD} size={12} stroke={iconFg} width={3} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0, fontSize: 14, fontWeight: 600, color: locked ? "#a89a80" : C.ink }}>{t.title}</div>
+                          <div style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: chipBg, color: chipFg }}>{chip}</div>
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
               </div>

@@ -6,6 +6,7 @@ import { C, pill, wideTab } from "@/lib/theme";
 import { CHAT_SEED } from "@/lib/store";
 import { StrokeIcon, FillIcon, PATH } from "../Icon";
 import { getTopicContent, toTeachContext, type DBTopicContent } from "@/lib/curriculum";
+import { persistTopicProgress } from "@/lib/supabase/persist";
 import { MarkdownLite } from "../MarkdownLite";
 import type { ChatMsg } from "@/lib/types";
 
@@ -294,7 +295,7 @@ function RealTopic({ topicId }: { topicId: string }) {
                 <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>Quiz · {content.mcqs.length} Q</button>
               </div>
             </div>
-            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <RealQuiz mcqs={content.mcqs} />}
+            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <RealQuiz topicId={content.id} mcqs={content.mcqs} />}
           </div>
         </div>
       )}
@@ -339,22 +340,40 @@ function RealTutor({ topicTitle }: { topicTitle: string }) {
   );
 }
 
-function RealQuiz({ mcqs }: { mcqs: DBTopicContent["mcqs"] }) {
+function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mcqs"] }) {
+  const { patch, go } = useApp();
   const [qi, setQi] = useState(0);
   const [pick, setPick] = useState<number | null>(null);
   const [correct, setCorrect] = useState(0);
   const [done, setDone] = useState(false);
+  const [save, setSave] = useState<"idle" | "saving" | "saved" | "local">("idle");
+
+  const total = mcqs.length;
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const passed = pct >= 70;
+
+  // When the quiz finishes, record the result to the student's account (once).
+  useEffect(() => {
+    if (!done) return;
+    setSave("saving");
+    let active = true;
+    persistTopicProgress(topicId, { scorePct: pct, passed }).then((ok) => {
+      if (active) setSave(ok ? "saved" : "local");
+    });
+    return () => {
+      active = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [done]);
 
   if (mcqs.length === 0) {
     return <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", color: C.muted, fontSize: 14, padding: 24, textAlign: "center" }}>No quiz questions seeded for this topic yet.</div>;
   }
 
   const q = mcqs[qi];
-  const total = mcqs.length;
 
   if (done) {
-    const pct = Math.round((correct / total) * 100);
-    const passed = pct >= 70;
+    const backToMap = () => { patch({ selectedTopicId: null, teach: null, chat: [] }); go("chapters"); };
     return (
       <div style={{ flex: 1, overflow: "auto", padding: 22, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", gap: 10 }}>
         <div style={{ fontFamily: "Caprasimo", fontSize: 40, color: passed ? C.sage : C.accent }}>{pct}%</div>
@@ -362,7 +381,18 @@ function RealQuiz({ mcqs }: { mcqs: DBTopicContent["mcqs"] }) {
         <div style={{ fontSize: 13.5, color: C.muted, maxWidth: 300, lineHeight: 1.5 }}>
           {passed ? "Passed — you've mastered this topic's SLOs (70% needed)." : "Below the 70% pass bar. Re-read the weak SLOs and try again."}
         </div>
-        <button onClick={() => { setQi(0); setPick(null); setCorrect(0); setDone(false); }} style={{ marginTop: 8, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "11px 24px", fontSize: 14 }}>Retake quiz</button>
+        <div style={{ fontSize: 12.5, fontWeight: 600, borderRadius: 999, padding: "5px 13px", background: save === "saved" ? C.sageT : C.sand, color: save === "saved" ? C.sageD : "#8d8069" }}>
+          {save === "saving" && "Saving your progress…"}
+          {save === "saved" && "✓ Saved to your progress"}
+          {save === "local" && "Sign in to save this to your account"}
+          {save === "idle" && " "}
+        </div>
+        <div style={{ display: "flex", gap: 8, marginTop: 8, flexWrap: "wrap", justifyContent: "center" }}>
+          <button onClick={() => { setQi(0); setPick(null); setCorrect(0); setDone(false); setSave("idle"); }} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Retake quiz</button>
+          {passed && (
+            <button onClick={backToMap} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Back to chapter map →</button>
+          )}
+        </div>
       </div>
     );
   }

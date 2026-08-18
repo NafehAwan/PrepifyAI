@@ -187,6 +187,93 @@ export async function getTopicContent(topicId: string): Promise<DBTopicContent |
   }
 }
 
+// ---------------------------------------------------------------------------
+// Progress: the student's saved mastery per topic, and the derived per-topic
+// state used to render the chapter tree (mastered / current / locked).
+// ---------------------------------------------------------------------------
+
+export interface DBTopicProgress {
+  status: string; // locked | teaching | tested | completed
+  mcqPassed: boolean;
+  mcqScore: number | null;
+}
+
+// The signed-in student's saved progress for the given topics, keyed by topic id.
+// Empty in demo mode or when signed out, so the tree falls back to "not started".
+export async function getTopicProgress(topicIds: string[]): Promise<Record<string, DBTopicProgress>> {
+  if (!isSupabaseConfigured() || topicIds.length === 0) return {};
+  try {
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return {};
+
+    const { data } = await supabase
+      .from("topic_progress")
+      .select("topic_id, status, mcq_passed, mcq_score")
+      .eq("user_id", user.id)
+      .in("topic_id", topicIds);
+
+    const map: Record<string, DBTopicProgress> = {};
+    for (const r of (data ?? []) as Array<{ topic_id: string; status: string; mcq_passed: boolean; mcq_score: number | null }>) {
+      map[r.topic_id] = { status: r.status, mcqPassed: r.mcq_passed, mcqScore: r.mcq_score };
+    }
+    return map;
+  } catch {
+    return {};
+  }
+}
+
+export type TopicMastery = "done" | "now" | "open" | "locked";
+
+export interface MasteryResult {
+  states: Record<string, TopicMastery>;
+  counts: { mastered: number; inProgress: number; notStarted: number };
+}
+
+// Derive each topic's tree state from saved progress. In guided mode a topic is
+// locked until every topic before it (in chapter → topic order) is passed; in
+// free-roam every topic is open. Pure function so the UI can render directly.
+export function computeTopicStates(
+  chapters: DBChapter[],
+  progress: Record<string, DBTopicProgress>,
+  guided: boolean,
+): MasteryResult {
+  const states: Record<string, TopicMastery> = {};
+  let mastered = 0;
+  let inProgress = 0;
+  let notStarted = 0;
+  let gate = true; // true while every preceding topic has been passed
+
+  for (const c of chapters) {
+    for (const t of c.topics) {
+      const p = progress[t.id];
+      const passed = !!p?.mcqPassed;
+      const attempted = !!p && !passed;
+      const unlocked = guided ? gate : true;
+
+      let st: TopicMastery;
+      if (passed) {
+        st = "done";
+        mastered++;
+      } else if (!unlocked) {
+        st = "locked";
+        notStarted++;
+      } else if (attempted) {
+        st = "now";
+        inProgress++;
+      } else {
+        st = "open";
+        notStarted++;
+      }
+      states[t.id] = st;
+      gate = gate && passed;
+    }
+  }
+  return { states, counts: { mastered, inProgress, notStarted } };
+}
+
 // Build the RAG ground-truth string + SLO list the tutor route expects.
 export function toTeachContext(content: DBTopicContent) {
   const groundTruth = content.slos

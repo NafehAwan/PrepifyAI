@@ -1,6 +1,7 @@
 "use client";
 
 import { createClient } from "./client";
+import { isSupabaseConfigured } from "./config";
 import { CLASS_TO_LEVEL, toDbMode } from "@/lib/mappings";
 import type { AppState } from "@/lib/types";
 
@@ -40,4 +41,44 @@ export async function persistEnrollments(s: AppState): Promise<void> {
 
   await supabase.from("enrollments").delete().eq("user_id", user.id);
   if (rows.length > 0) await supabase.from("enrollments").insert(rows);
+}
+
+// Records the outcome of a topic's mastery quiz. Returns true when the result
+// was saved to the user's account, false when it stayed local (demo mode or not
+// signed in) — the caller uses that to tell the student whether it persisted.
+export async function persistTopicProgress(
+  topicId: string,
+  result: { scorePct: number; passed: boolean },
+): Promise<boolean> {
+  if (!isSupabaseConfigured() || !topicId) return false;
+  const supabase = createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return false;
+
+  // Bump the attempt counter off the current value (no RPC needed).
+  const { data: existing } = await supabase
+    .from("topic_progress")
+    .select("attempts")
+    .eq("user_id", user.id)
+    .eq("topic_id", topicId)
+    .maybeSingle();
+  const attempts = ((existing as { attempts: number } | null)?.attempts ?? 0) + 1;
+
+  const now = new Date().toISOString();
+  const { error } = await supabase.from("topic_progress").upsert(
+    {
+      user_id: user.id,
+      topic_id: topicId,
+      status: result.passed ? "completed" : "tested",
+      mcq_score: result.scorePct,
+      mcq_passed: result.passed,
+      attempts,
+      taught_at: now,
+      updated_at: now,
+    },
+    { onConflict: "user_id,topic_id" },
+  );
+  return !error;
 }
