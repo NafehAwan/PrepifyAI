@@ -12,6 +12,7 @@ import { Home } from "./screens/Home";
 import { Subjects } from "./screens/Subjects";
 import { Chapters } from "./screens/Chapters";
 import { Topic } from "./screens/Topic";
+import { ChapterTest } from "./screens/ChapterTest";
 import { Practice } from "./screens/Practice";
 import { Mock } from "./screens/Mock";
 import { Progress } from "./screens/Progress";
@@ -23,7 +24,7 @@ export function AppShell() {
   const { s, go, set, patch, daysLeft } = useApp();
 
   const isSubjectsActive = (id: string) =>
-    s.screen === id || (id === "subjects" && (s.screen === "chapters" || s.screen === "topic"));
+    s.screen === id || (id === "subjects" && (s.screen === "chapters" || s.screen === "topic" || s.screen === "test"));
 
   return (
     <div style={{ display: "flex", minHeight: "100vh" }}>
@@ -106,6 +107,7 @@ function ScreenBody({ screen }: { screen: Screen }) {
     case "subjects": return <Subjects />;
     case "chapters": return <Chapters />;
     case "topic": return <Topic />;
+    case "test": return <ChapterTest />;
     case "practice": return <Practice />;
     case "mock": return <Mock />;
     case "progress": return <Progress />;

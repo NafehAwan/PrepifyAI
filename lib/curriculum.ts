@@ -274,6 +274,117 @@ export function computeTopicStates(
   return { states, counts: { mastered, inProgress, notStarted } };
 }
 
+// ---------------------------------------------------------------------------
+// Chapter tests: the full FBISE-style paper (MCQ + short + long) assembled from
+// the DB question bank, and the student's saved chapter results.
+// ---------------------------------------------------------------------------
+
+export interface DBWrittenQ {
+  id: string;
+  type: "short" | "long";
+  stem: string;
+  marks: number;
+  markingScheme: string[];
+  modelAnswer: string;
+  sloCode: string | null;
+}
+
+export interface DBChapterTest {
+  chapterId: string;
+  chapterTitle: string;
+  mcqs: DBMcq[];
+  written: DBWrittenQ[];
+}
+
+// Assemble a chapter's test paper from the question bank: all MCQs (auto-scored)
+// plus short/long questions with their marking schemes + model answers.
+export async function getChapterTest(chapterId: string): Promise<DBChapterTest | null> {
+  if (!isSupabaseConfigured() || !chapterId) return null;
+  try {
+    const supabase = createClient();
+
+    const { data: ch } = await supabase.from("chapters").select("title").eq("id", chapterId).maybeSingle();
+    const chapterTitle = (ch as { title: string } | null)?.title ?? "";
+
+    const { data: qRows } = await supabase
+      .from("questions")
+      .select("id, type, stem_md, options_json, answer_key_md, marking_scheme_json, marks, slo_id")
+      .eq("chapter_id", chapterId);
+    const rows = (qRows ?? []) as Array<{
+      id: string; type: string; stem_md: string; options_json: string[] | null;
+      answer_key_md: string | null; marking_scheme_json: string[] | null; marks: number; slo_id: string | null;
+    }>;
+
+    const mcqs: DBMcq[] = rows
+      .filter((r) => r.type === "mcq")
+      .map((r) => ({ id: r.id, stem: r.stem_md, options: r.options_json ?? [], answer: letterToIndex(r.answer_key_md) }));
+
+    const writtenRows = rows.filter((r) => r.type === "short" || r.type === "long");
+    const ids = writtenRows.map((r) => r.id);
+
+    const modelById = new Map<string, string>();
+    if (ids.length > 0) {
+      const { data: ma } = await supabase.from("model_answers").select("question_id, exemplar_md").in("question_id", ids);
+      for (const m of (ma ?? []) as Array<{ question_id: string; exemplar_md: string }>) modelById.set(m.question_id, m.exemplar_md);
+    }
+
+    const sloIds = [...new Set(writtenRows.map((r) => r.slo_id).filter((x): x is string => !!x))];
+    const codeById = new Map<string, string>();
+    if (sloIds.length > 0) {
+      const { data: slos } = await supabase.from("slos").select("id, code").in("id", sloIds);
+      for (const sl of (slos ?? []) as Array<{ id: string; code: string }>) codeById.set(sl.id, sl.code);
+    }
+
+    const written: DBWrittenQ[] = writtenRows
+      .map((r) => ({
+        id: r.id,
+        type: r.type === "long" ? ("long" as const) : ("short" as const),
+        stem: r.stem_md,
+        marks: r.marks,
+        markingScheme: r.marking_scheme_json ?? [],
+        modelAnswer: modelById.get(r.id) ?? "",
+        sloCode: r.slo_id ? codeById.get(r.slo_id) ?? null : null,
+      }))
+      .sort((a, b) => (a.type === b.type ? 0 : a.type === "short" ? -1 : 1));
+
+    if (mcqs.length === 0 && written.length === 0) return null;
+    return { chapterId, chapterTitle, mcqs, written };
+  } catch {
+    return null;
+  }
+}
+
+export interface DBChapterProgress {
+  passed: boolean;
+  bestPct: number;
+}
+
+// The signed-in student's saved chapter-test results, keyed by chapter id.
+export async function getChapterProgress(chapterIds: string[]): Promise<Record<string, DBChapterProgress>> {
+  if (!isSupabaseConfigured() || chapterIds.length === 0) return {};
+  try {
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return {};
+
+    const { data } = await supabase
+      .from("chapter_progress")
+      .select("chapter_id, passed, best_score_pct")
+      .eq("user_id", user.id)
+      .in("chapter_id", chapterIds);
+
+    const map: Record<string, DBChapterProgress> = {};
+    for (const r of (data ?? []) as Array<{ chapter_id: string; passed: boolean; best_score_pct: number | null }>) {
+      map[r.chapter_id] = { passed: r.passed, bestPct: Math.round(r.best_score_pct ?? 0) };
+    }
+    return map;
+  } catch {
+    return {};
+  }
+}
+
 // Build the RAG ground-truth string + SLO list the tutor route expects.
 export function toTeachContext(content: DBTopicContent) {
   const groundTruth = content.slos

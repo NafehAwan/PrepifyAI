@@ -4,6 +4,7 @@ export type Screen =
   | "subjects"
   | "chapters"
   | "topic"
+  | "test"
   | "practice"
   | "mock"
   | "progress"
@@ -55,6 +56,9 @@ export interface AppState {
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;
   selectedTopicId: string | null;
+  // The chapter whose test is being taken (set from the chapter tree).
+  testChapterId: string | null;
+  testChapterTitle: string | null;
   // Grounding context for the tutor, set by the topic screen from real content.
   teach: TeachContext | null;
   // The student's own Groq API key (browser-only; hydrated from localStorage).

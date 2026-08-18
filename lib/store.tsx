@@ -48,6 +48,8 @@ const INITIAL: AppState = {
   selectedSubjectId: null,
   selectedSubjectName: null,
   selectedTopicId: null,
+  testChapterId: null,
+  testChapterTitle: null,
   teach: null,
   groqKey: "",
 };

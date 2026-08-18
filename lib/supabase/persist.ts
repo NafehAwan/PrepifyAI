@@ -82,3 +82,54 @@ export async function persistTopicProgress(
   );
   return !error;
 }
+
+export interface ChapterReport {
+  mcq: { awarded: number; total: number };
+  written: { awarded: number; total: number } | null; // null when only MCQ was scored
+  pct: number;
+  passed: boolean;
+}
+
+// Records a chapter-test attempt and rolls it into chapter_progress (keeping the
+// best score, and passed once passed). Returns whether it saved to the account.
+export async function persistChapterAttempt(
+  chapterId: string,
+  r: { scorePct: number; passed: boolean; report: ChapterReport },
+): Promise<boolean> {
+  if (!isSupabaseConfigured() || !chapterId) return false;
+  const supabase = createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return false;
+
+  await supabase.from("chapter_attempts").insert({
+    user_id: user.id,
+    chapter_id: chapterId,
+    score_pct: r.scorePct,
+    passed: r.passed,
+    report_json: r.report,
+  });
+
+  const { data: existing } = await supabase
+    .from("chapter_progress")
+    .select("best_score_pct, passed")
+    .eq("user_id", user.id)
+    .eq("chapter_id", chapterId)
+    .maybeSingle();
+  const prev = existing as { best_score_pct: number | null; passed: boolean } | null;
+  const best = Math.max(prev?.best_score_pct ?? 0, r.scorePct);
+
+  const { error } = await supabase.from("chapter_progress").upsert(
+    {
+      user_id: user.id,
+      chapter_id: chapterId,
+      status: r.passed ? "passed" : "failed",
+      best_score_pct: best,
+      passed: (prev?.passed ?? false) || r.passed,
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "user_id,chapter_id" },
+  );
+  return !error;
+}

@@ -5,7 +5,7 @@ import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { CH } from "@/lib/data";
 import { StrokeIcon, PATH } from "../Icon";
-import { getChapters, getTopicProgress, computeTopicStates, type DBChapter, type DBTopicProgress, type TopicMastery } from "@/lib/curriculum";
+import { getChapters, getTopicProgress, getChapterProgress, computeTopicStates, type DBChapter, type DBTopicProgress, type DBChapterProgress, type TopicMastery } from "@/lib/curriculum";
 
 type TopicState = "done" | "now" | "not";
 
@@ -17,25 +17,37 @@ export function Chapters() {
   // student's saved progress so topics show real mastery + guided locking.
   const [dbChapters, setDbChapters] = useState<DBChapter[] | null>(null);
   const [dbProgress, setDbProgress] = useState<Record<string, DBTopicProgress>>({});
+  const [chapterProg, setChapterProg] = useState<Record<string, DBChapterProgress>>({});
   const [dbOpen, setDbOpen] = useState<Set<string>>(new Set());
   useEffect(() => {
     let active = true;
     setDbChapters(null);
     setDbProgress({});
+    setChapterProg({});
     if (s.selectedSubjectId) {
       getChapters(s.selectedSubjectId).then(async (rows) => {
         if (!active) return;
         setDbChapters(rows);
         setDbOpen(new Set(rows.length > 0 ? [rows[0].id] : []));
         const topicIds = rows.flatMap((c) => c.topics.map((t) => t.id));
-        const progress = await getTopicProgress(topicIds);
-        if (active) setDbProgress(progress);
+        const [progress, chProg] = await Promise.all([
+          getTopicProgress(topicIds),
+          getChapterProgress(rows.map((c) => c.id)),
+        ]);
+        if (!active) return;
+        setDbProgress(progress);
+        setChapterProg(chProg);
       });
     }
     return () => {
       active = false;
     };
   }, [s.selectedSubjectId]);
+
+  const startTest = (chapterId: string, chapterTitle: string) => {
+    patch({ testChapterId: chapterId, testChapterTitle: chapterTitle });
+    go("test");
+  };
 
   const openTopic = (topicId: string) => {
     patch({ selectedTopicId: topicId });
@@ -101,19 +113,27 @@ export function Chapters() {
             const chFg = masteredHere === c.topics.length && c.topics.length > 0 ? C.sage : masteredHere > 0 ? C.accent : "#b3a58c";
             return (
               <div key={c.id} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, overflow: "hidden" }}>
-                <button onClick={() => toggleDb(c.id)} style={{ width: "100%", display: "flex", alignItems: "center", gap: 14, padding: "16px 20px", textAlign: "left" }}>
-                  <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accent, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{c.seq}</div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontWeight: 700, fontSize: 15.5, color: C.ink }}>{c.title}</div>
-                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{c.topics.length} topics · {masteredHere} mastered</div>
-                  </div>
-                  <div style={{ width: 90, flex: "none" }}>
-                    <div style={{ height: 8, background: C.sand, borderRadius: 999, overflow: "hidden" }}>
-                      <div style={{ height: 8, width: `${pct}%`, background: chFg, borderRadius: 999 }} />
+                <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 18px" }}>
+                  <button onClick={() => toggleDb(c.id)} style={{ flex: 1, minWidth: 0, display: "flex", alignItems: "center", gap: 14, textAlign: "left" }}>
+                    <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accent, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{c.seq}</div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{ fontWeight: 700, fontSize: 15.5, color: C.ink }}>{c.title}</div>
+                      <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{c.topics.length} topics · {masteredHere} mastered</div>
                     </div>
-                  </div>
-                  <StrokeIcon d={PATH.chevronDown} size={18} stroke="#9a8d78" width={2.75} style={{ flex: "none", transform: `rotate(${open ? 180 : 0}deg)` }} />
-                </button>
+                    <div style={{ width: 80, flex: "none" }}>
+                      <div style={{ height: 8, background: C.sand, borderRadius: 999, overflow: "hidden" }}>
+                        <div style={{ height: 8, width: `${pct}%`, background: chFg, borderRadius: 999 }} />
+                      </div>
+                    </div>
+                    <StrokeIcon d={PATH.chevronDown} size={18} stroke="#9a8d78" width={2.75} style={{ flex: "none", transform: `rotate(${open ? 180 : 0}deg)` }} />
+                  </button>
+                  {chapterProg[c.id]?.passed && (
+                    <span style={{ flex: "none", fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "5px 11px", background: C.sageT, color: C.sageD }}>Test ✓ {chapterProg[c.id]?.bestPct}%</span>
+                  )}
+                  <button onClick={() => startTest(c.id, c.title)} style={{ flex: "none", fontSize: 12.5, fontWeight: 700, borderRadius: 999, padding: "9px 16px", background: chapterProg[c.id] ? C.sand : C.accent, color: chapterProg[c.id] ? "#5d5648" : "#fff" }}>
+                    {chapterProg[c.id] ? "Retake test" : "Take test"}
+                  </button>
+                </div>
                 {open && (
                   <div style={{ padding: "0 20px 16px 70px", display: "flex", flexDirection: "column", gap: 6 }}>
                     {c.topics.map((t) => {

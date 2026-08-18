@@ -22,6 +22,7 @@ export const TITLES: Record<string, string> = {
   subjects: "My Subjects",
   chapters: "Physics · Chapters",
   topic: "Topic Workspace",
+  test: "Chapter Test",
   practice: "Practice & Feedback",
   mock: "Mock Exam",
   progress: "Progress",

@@ -78,10 +78,13 @@ When Supabase is configured, the core loop reads real content from the database 
 
 - **My Subjects → Chapters** — opening a subject loads its real chapter tree (chapters + topics) from the DB. Subjects without seeded content show a friendly "still ingesting" state; Physics IX is fully seeded.
 - **Topic workspace** — the reading pane renders the topic's real SLOs and textbook `content_md`, SLO by SLO. The **AI tutor is RAG-grounded on that topic's real content chunks** (the teach route receives the topic's SLO text as ground truth), and the **quiz is the topic's real MCQ bank** from `questions`, scored against a 70% pass bar.
+- **Mastery persistence + unlocking** — passing a topic quiz writes to `topic_progress`. The chapter tree then shows real mastery states, and in guided mode a topic stays locked until every earlier topic is passed. (`lib/supabase/persist.ts`, `computeTopicStates`.)
+- **Live analytics** — for a signed-in student the My Subjects grid, Progress coverage heat-map + predicted grades, and Home gauges/weak-spots are computed from saved mastery (`lib/analytics.ts`), not hardcoded.
+- **Chapter tests** — each chapter's real FBISE-style paper (25 MCQ + 7 short + 2 long) is assembled from the question bank (`getChapterTest`). MCQs auto-mark; the written section is graded by the Groq examiner when a key is connected (otherwise the paper scores on its MCQ section and shows model answers for self-review). Results roll into `chapter_attempts` + `chapter_progress`, and the chapter tree shows a passed badge with your best score.
 
-In demo mode (no Supabase) these screens fall back to the static Physics sample, so everything still runs with zero setup.
+In demo mode (no Supabase) these screens fall back to the static Physics sample, so everything still runs with zero setup. All persistence + analytics are gated on being signed in.
 
-Still on demo data (pending further build-out): per-topic mastery, predicted grades, coverage heat-map, reviews, mock scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
+Still on demo data (pending further build-out): spaced-repetition reviews, streak/XP, the study-plan queue, DB-backed mock-exam scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
 
 ## The dashboard
 
