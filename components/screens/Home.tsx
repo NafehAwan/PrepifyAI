@@ -1,16 +1,45 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { TASKS, WEAK, GAUGES } from "@/lib/data";
+import { getSubjectMastery, weakSpotsFrom, type SubjectMastery } from "@/lib/analytics";
 import { StrokeIcon, PATH } from "../Icon";
+
+type Mastery = Record<string, SubjectMastery>;
 
 function gaugeColor(pct: number): string {
   return pct >= 75 ? C.sage : pct >= 55 ? C.accent : C.danger;
 }
 
+// Predicted-grade gauges: real per-subject mastery when available, else demo.
+function gaugeRows(mastery: Mastery): Array<{ name: string; pct: number; grade: string }> {
+  return GAUGES.map(([name, demoPct, demoGrade]) => {
+    const m = mastery[name];
+    return { name, pct: m ? m.pct : demoPct, grade: m ? m.grade : demoGrade };
+  });
+}
+
+// Weak spots: real attempted-not-passed topics when available, else demo.
+function weakRows(mastery: Mastery): Array<{ topic: string; subject: string; score: string }> {
+  const rw = weakSpotsFrom(mastery, 3);
+  if (rw.length > 0) return rw.map((w) => ({ topic: w.title, subject: `${w.subject} · ${w.chapter}`, score: `${w.scorePct}%` }));
+  return WEAK.map(([topic, subject, score]) => ({ topic, subject, score }));
+}
+
 export function Home() {
   const { s, set } = useApp();
+  const [mastery, setMastery] = useState<Mastery>({});
+  useEffect(() => {
+    let active = true;
+    getSubjectMastery(s.subs).then((m) => {
+      if (active) setMastery(m);
+    });
+    return () => {
+      active = false;
+    };
+  }, [s.subs]);
   return (
     <>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
@@ -23,13 +52,15 @@ export function Home() {
           <button onClick={() => set("homeVar", "B")} style={pill(s.homeVar === "B")}>B · Focus rail</button>
         </div>
       </div>
-      {s.homeVar === "A" ? <BentoHome /> : <FocusHome />}
+      {s.homeVar === "A" ? <BentoHome mastery={mastery} /> : <FocusHome mastery={mastery} />}
     </>
   );
 }
 
-function BentoHome() {
+function BentoHome({ mastery }: { mastery: Mastery }) {
   const { go } = useApp();
+  const gauges = gaugeRows(mastery);
+  const weak = weakRows(mastery);
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 16, alignItems: "start" }}>
       {/* resume */}
@@ -84,7 +115,7 @@ function BentoHome() {
           <div style={{ fontSize: 12.5, color: C.muted }}>Based on 412 answered questions</div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 14 }}>
-          {GAUGES.map(([name, pct, grade]) => {
+          {gauges.map(({ name, pct, grade }) => {
             const color = gaugeColor(pct);
             const dash = `${((2 * Math.PI * 38 * pct) / 100).toFixed(1)} 999`;
             return (
@@ -111,7 +142,7 @@ function BentoHome() {
         <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Weak spots</div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>Fix these three and your predicted average moves up a grade.</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {WEAK.map(([topic, subject, score]) => (
+          {weak.map(({ topic, subject, score }) => (
             <button key={topic} onClick={() => go("practice")} style={{ width: "100%", textAlign: "left", display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "12px 14px" }}>
               <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 13 }}>{score}</div>
               <div style={{ flex: 1, minWidth: 0 }}>
@@ -126,8 +157,10 @@ function BentoHome() {
   );
 }
 
-function FocusHome() {
+function FocusHome({ mastery }: { mastery: Mastery }) {
   const { go } = useApp();
+  const gauges = gaugeRows(mastery);
+  const weak = weakRows(mastery);
   return (
     <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
       <div style={{ flex: 1, minWidth: 420, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -150,7 +183,7 @@ function FocusHome() {
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
           <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 14 }}>Predicted grades</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {GAUGES.map(([name, pct, grade]) => {
+            {gauges.map(({ name, pct, grade }) => {
               const color = gaugeColor(pct);
               return (
                 <div key={name} style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -179,7 +212,7 @@ function FocusHome() {
         <div style={{ background: C.sageT, borderRadius: 24, padding: 20 }}>
           <div style={{ fontWeight: 700, fontSize: 14, color: C.sageD, marginBottom: 10 }}>Weak spots</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {WEAK.map(([topic, , score]) => (
+            {weak.map(({ topic, score }) => (
               <button key={topic} onClick={() => go("practice")} style={{ width: "100%", textAlign: "left", fontSize: 13.5, fontWeight: 600, color: "#3f4a2b", display: "flex", justifyContent: "space-between", gap: 10 }}>
                 <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{topic}</span>
                 <span style={{ opacity: 0.7 }}>{score}</span>
