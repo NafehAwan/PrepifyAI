@@ -1,9 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { buildDiagnostic } from "@/lib/data";
-import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
+import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
 
 const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
@@ -16,14 +17,17 @@ const ALL_SUBJECTS = [
   "Physics", "Chemistry", "Biology", "Maths", "Computer Science", "English", "Urdu", "Islamiyat", "Pak Studies",
 ];
 
-const STEP_LABELS = ["Class", "Subjects", "Exam date", "Placement"];
-const LAST = STEP_LABELS.length; // 4
+const STEP_LABELS = ["Name", "Class", "Subjects", "Exam date", "Connect AI", "Placement"];
+const LAST = STEP_LABELS.length; // 6
+const AI_STEP = 5;
 
 export function Onboarding() {
-  const { s, set, patch, go, daysLeft } = useApp();
+  const { s, set, patch, go, daysLeft, setGroqKey } = useApp();
   const isA = s.obVar === "A";
   const isB = s.obVar === "B";
   const pct = Math.round(((s.ob - 1) / STEP_LABELS.length) * 100);
+  const [keyDraft, setKeyDraft] = useState(s.groqKey);
+  const [showKey, setShowKey] = useState(false);
 
   const diag = buildDiagnostic(s.subs);
   const q = diag[s.dq];
@@ -31,20 +35,25 @@ export function Onboarding() {
   const dqDone = s.ob === LAST && s.dq >= diag.length;
 
   const finish = () => {
-    // Persist the collected profile + subject choices (no-op in demo mode).
+    // Persist the collected profile + name + subject choices (no-op in demo mode).
+    void persistName(s.userName);
     void persistProfile(s);
     void persistEnrollments(s);
     go("home");
   };
   const back = () => set("ob", Math.max(1, s.ob - 1));
   const next = () => {
+    if (s.ob === AI_STEP && keyDraft.trim()) setGroqKey(keyDraft);
     if (s.ob === LAST) finish();
     else set("ob", s.ob + 1);
   };
   const advanceDq = () => set("dq", s.dq + 1);
 
   const backLabel = s.ob === 1 ? "" : "← Back";
-  const nextDisabled = s.ob === 2 && s.subs.length === 0;
+  const nextDisabled =
+    (s.ob === 1 && s.userName.trim().length === 0) ||
+    (s.ob === 3 && s.subs.length === 0) ||
+    (s.ob === AI_STEP && keyDraft.trim().length === 0 && s.groqKey.length === 0);
   const nextLabel = s.ob === LAST ? (s.dq >= diag.length ? "Go to my dashboard →" : "Skip diagnostic") : "Continue →";
 
   return (
@@ -74,7 +83,7 @@ export function Onboarding() {
                 Let&apos;s set up<br />your board year.
               </div>
               <div style={{ color: C.muted, fontSize: 14, marginBottom: 28, maxWidth: 250 }}>
-                Four quick steps. We&apos;ll pull the exact FBISE textbooks for your subjects and build a plan around your paper date.
+                A few quick steps. We&apos;ll pull the exact FBISE textbooks for your subjects and build a plan around your paper date.
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {STEP_LABELS.map((label, i) => {
@@ -112,6 +121,21 @@ export function Onboarding() {
             <div style={{ width: "100%", maxWidth: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 26, padding: "34px 34px 28px", boxShadow: "0 10px 30px rgba(90,62,30,.07)", animation: "pf-in .3s ease" }}>
               {s.ob === 1 && (
                 <>
+                  <H>What should we call you?</H>
+                  <Sub>Your name shows on your dashboard and keeps your progress yours.</Sub>
+                  <input
+                    autoFocus
+                    value={s.userName === "Areeba" ? "" : s.userName}
+                    onChange={(e) => set("userName", e.target.value)}
+                    onKeyDown={(e) => { if (e.key === "Enter" && s.userName.trim()) next(); }}
+                    placeholder="Your name"
+                    style={{ width: "100%", borderRadius: 16, border: "1.5px solid #e0d0b4", background: "#fff", padding: "16px 20px", fontSize: 18, fontWeight: 600, color: C.ink, outline: "none" }}
+                  />
+                </>
+              )}
+
+              {s.ob === 2 && (
+                <>
                   <H>Which class are you in?</H>
                   <Sub>We load the exact FBISE textbooks and past papers for that year.</Sub>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
@@ -128,7 +152,7 @@ export function Onboarding() {
                 </>
               )}
 
-              {s.ob === 2 && (
+              {s.ob === 3 && (
                 <>
                   <H>Choose your subjects</H>
                   <Sub>
@@ -160,7 +184,7 @@ export function Onboarding() {
                 </>
               )}
 
-              {s.ob === 3 && (
+              {s.ob === 4 && (
                 <>
                   <H>When is your first paper?</H>
                   <Sub>Everything — daily plan, revision spacing, mock timing — works backwards from this date.</Sub>
@@ -176,6 +200,36 @@ export function Onboarding() {
                       <div style={{ fontFamily: "Caprasimo", fontSize: 36, color: C.sageD, lineHeight: 1 }}>42<span style={{ fontSize: 20 }}>min</span></div>
                       <div style={{ fontSize: 13, color: C.sageD, fontWeight: 600 }}>suggested daily study</div>
                     </div>
+                  </div>
+                </>
+              )}
+
+              {s.ob === AI_STEP && (
+                <>
+                  <H>Connect your AI tutor</H>
+                  <Sub>Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it&apos;s required to set up.</Sub>
+                  <div style={{ display: "flex", alignItems: "center", border: "1.5px solid #e0d0b4", borderRadius: 14, background: "#fff", paddingRight: 6, marginBottom: 14 }}>
+                    <input
+                      type={showKey ? "text" : "password"}
+                      value={keyDraft}
+                      onChange={(e) => setKeyDraft(e.target.value)}
+                      placeholder="Paste your Groq key (gsk_…)"
+                      spellCheck={false}
+                      autoComplete="off"
+                      style={{ flex: 1, minWidth: 0, border: "none", outline: "none", background: "transparent", padding: "14px 16px", fontSize: 15, fontFamily: "monospace" }}
+                    />
+                    <button onClick={() => setShowKey((v) => !v)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, padding: "6px 10px" }}>{showKey ? "Hide" : "Show"}</button>
+                  </div>
+                  {s.groqKey && !keyDraft && (
+                    <div style={{ fontSize: 12.5, color: C.sageD, fontWeight: 600, marginBottom: 12 }}>✓ A key is already connected on this device.</div>
+                  )}
+                  <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
+                    <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>Get a free key in about a minute</div>
+                    <ol style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#3a4327", lineHeight: 1.5 }}>
+                      <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com/keys</a> and sign in (free — Google or GitHub).</li>
+                      <li>Click <strong>Create API Key</strong>, name it <em>Prepify</em>.</li>
+                      <li>Copy the <code style={{ background: "rgba(255,255,255,.6)", padding: "1px 5px", borderRadius: 5 }}>gsk_…</code> key and paste it above.</li>
+                    </ol>
                   </div>
                 </>
               )}

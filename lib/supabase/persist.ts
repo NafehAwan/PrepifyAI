@@ -8,6 +8,19 @@ import type { AppState } from "@/lib/types";
 // These run from the browser and rely on RLS (owner-only) to keep writes safe.
 // All are no-ops when Supabase isn't configured, so the demo is unaffected.
 
+// Saves the student's display name to their auth metadata (read back on load
+// as userName). No profiles-table column needed, so no migration.
+export async function persistName(name: string): Promise<void> {
+  const trimmed = name.trim();
+  if (!isSupabaseConfigured() || !trimmed) return;
+  const supabase = createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return;
+  await supabase.auth.updateUser({ data: { full_name: trimmed } });
+}
+
 export async function persistProfile(s: AppState): Promise<void> {
   if (!s.supabaseConfigured) return;
   const supabase = createClient();

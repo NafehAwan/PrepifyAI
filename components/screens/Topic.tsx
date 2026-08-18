@@ -292,8 +292,8 @@ function RealTopic({ topicId }: { topicId: string }) {
           <div style={{ width: 420, flex: "1 1 360px", height: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, display: "flex", flexDirection: "column", overflow: "hidden" }}>
             <div style={{ padding: 12, borderBottom: "1px solid #ece0c8" }}>
               <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
-                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>AI Tutor</button>
-                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>Quiz · {content.mcqs.length} Q</button>
+                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>① Learn</button>
+                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>② Test</button>
               </div>
             </div>
             {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <QuizPanel content={content} />}
