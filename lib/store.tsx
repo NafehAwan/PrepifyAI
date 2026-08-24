@@ -17,8 +17,8 @@ import { getGroqKey, groqAuthHeaders, setGroqKey as persistGroqKey } from "./ai/
 const INITIAL: AppState = {
   screen: "home",
   ob: 1,
-  cls: "11th",
-  subs: ["Physics", "Chemistry", "Biology", "Maths", "English", "Urdu", "Islamiyat", "Pak Studies", "Computer Science"],
+  cls: "9th",
+  subs: ["Physics", "Chemistry", "Computer Science", "English"],
   examDate: "2027-04-12",
   dq: 0,
   obVar: "B",

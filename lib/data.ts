@@ -31,17 +31,15 @@ export const TITLES: Record<string, string> = {
   settings: "Settings",
 };
 
+// The subjects Prepify offers right now (Class 9 only).
+export const OFFERED_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"] as const;
+
 // [name, mastery %, predicted grade, reviews due]
 export const SUBJECTS: ReadonlyArray<readonly [string, number, string, number]> = [
   ["Physics", 62, "B", 8],
   ["Chemistry", 71, "B+", 5],
-  ["Biology", 84, "A", 2],
-  ["Maths", 48, "C+", 11],
   ["Computer Science", 77, "A-", 3],
   ["English", 66, "B", 4],
-  ["Urdu", 58, "B-", 6],
-  ["Islamiyat", 90, "A+", 1],
-  ["Pak Studies", 73, "B+", 3],
 ];
 
 // [num, title, topics[], status: m|p|n (mastered/progress/not-started)]
@@ -157,8 +155,8 @@ export function buildDiagnostic(subs: string[]): DiagQ[] {
 export const GAUGES: ReadonlyArray<readonly [string, number, string]> = [
   ["Physics", 62, "B"],
   ["Chemistry", 71, "B+"],
-  ["Biology", 84, "A"],
-  ["Maths", 48, "C+"],
+  ["Computer Science", 77, "A-"],
+  ["English", 66, "B"],
 ];
 
 export const REFERENCE_TODAY = "2026-08-15";

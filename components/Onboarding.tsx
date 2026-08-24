@@ -8,14 +8,9 @@ import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/
 
 const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
-  ["10th", "Matric part II"],
-  ["11th", "Intermediate part I"],
-  ["12th", "Intermediate part II"],
 ];
 
-const ALL_SUBJECTS = [
-  "Physics", "Chemistry", "Biology", "Maths", "Computer Science", "English", "Urdu", "Islamiyat", "Pak Studies",
-];
+const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
 
 const STEP_LABELS = ["Name", "Class", "Subjects", "Exam date", "Connect AI", "Placement"];
 const LAST = STEP_LABELS.length; // 6
