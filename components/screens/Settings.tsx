@@ -8,9 +8,7 @@ import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
 import type { AppState } from "@/lib/types";
 
-const ALL_SUBJECTS = [
-  "Physics", "Chemistry", "Biology", "Maths", "Computer Science", "English", "Urdu", "Islamiyat", "Pak Studies",
-];
+const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
 
 export function Settings() {
   const { s, set, patch } = useApp();
@@ -48,7 +46,7 @@ export function Settings() {
           <div>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Class</div>
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
-              {["9th", "10th", "11th", "12th"].map((name) => (
+              {["9th"].map((name) => (
                 <button key={name} onClick={() => saveProfile({ cls: name })} style={pill(s.cls === name)}>{name}</button>
               ))}
             </div>

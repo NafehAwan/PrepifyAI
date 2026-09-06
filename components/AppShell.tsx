@@ -40,7 +40,7 @@ export function AppShell() {
             <button key={id} onClick={() => go(id as Screen)} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 14, textAlign: "left", fontWeight: 600, fontSize: 14.5, background: active ? C.accent : "transparent", color: active ? "#fff" : "#5d5648" }}>
               <StrokeIcon d={d} style={{ flex: "none" }} />
               <span style={{ flex: 1 }}>{label}</span>
-              {id === "reviews" && (
+              {id === "reviews" && !s.authed && (
                 <span style={{ background: C.accent, color: "#fff", fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "2px 7px" }}>23</span>
               )}
             </button>
@@ -71,14 +71,19 @@ export function AppShell() {
             {TITLES[s.screen] || "Prepify"}
           </div>
 
-          <Chip bg={C.tint}>
-            <FillIcon d={PATH.flame} fill={C.accent} />
-            <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
-          </Chip>
-          <Chip bg={C.sageT}>
-            <FillIcon d={PATH.bolt} size={15} fill="#7a8a5e" />
-            <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
-          </Chip>
+          {/* Streak + XP are demo-only chrome until real tracking exists. */}
+          {!s.authed && (
+            <>
+              <Chip bg={C.tint}>
+                <FillIcon d={PATH.flame} fill={C.accent} />
+                <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
+              </Chip>
+              <Chip bg={C.sageT}>
+                <FillIcon d={PATH.bolt} size={15} fill="#7a8a5e" />
+                <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
+              </Chip>
+            </>
+          )}
           <Chip bg={C.sand}>
             <StrokeIcon d={PATH.clock} size={15} stroke={C.muted} width={2.6} />
             <span style={{ fontWeight: 700, fontSize: 13.5, color: "#5d5648", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>

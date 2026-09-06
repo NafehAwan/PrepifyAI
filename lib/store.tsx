@@ -17,11 +17,11 @@ import { getGroqKey, groqAuthHeaders, setGroqKey as persistGroqKey } from "./ai/
 const INITIAL: AppState = {
   screen: "home",
   ob: 1,
-  cls: "11th",
-  subs: ["Physics", "Chemistry", "Biology", "Maths", "English", "Urdu", "Islamiyat", "Pak Studies", "Computer Science"],
+  cls: "9th",
+  subs: ["Physics", "Chemistry", "Computer Science", "English"],
   examDate: "2027-04-12",
   dq: 0,
-  obVar: "A",
+  obVar: "B",
   homeVar: "A",
   topicVar: "A",
   fbVar: "A",
@@ -74,7 +74,7 @@ const Ctx = createContext<AppStore | null>(null);
 
 // Calls the grounded tutor route; falls back to a canned reply when the AI
 // backend isn't configured or the request fails, so the demo always answers.
-async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null, groqKey: string): Promise<string> {
+async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null, groqKey: string, lang: "EN" | "UR"): Promise<string> {
   const ctx = teach ?? DEMO_TEACH;
   try {
     const res = await fetch("/api/ai/teach", {
@@ -84,7 +84,8 @@ async function fetchTutorReply(history: ChatMsg[], teach: TeachContext | null, g
         messages: history.map(([role, text]) => ({ role, text })),
         subject: ctx.subject,
         classLevel: ctx.classLevel,
-        medium: ctx.medium,
+        // The language toggle drives the tutor's reply language.
+        medium: lang === "UR" ? "Urdu" : "English",
         level: ctx.level,
         sloList: ctx.sloList,
         groundTruth: ctx.groundTruth,
@@ -130,14 +131,16 @@ export function AppProvider({
     let history: ChatMsg[] = [];
     let teach: TeachContext | null = null;
     let groqKey = "";
+    let lang: "EN" | "UR" = "EN";
     setState((prev) => {
       const base = prev.chat.length ? prev.chat : SEED_CHAT;
       history = [...base, ["me", t]];
       teach = prev.teach;
       groqKey = prev.groqKey;
+      lang = prev.lang;
       return { ...prev, chat: [...history, ["ai", "…"]], draft: "" };
     });
-    const reply = await fetchTutorReply(history, teach, groqKey);
+    const reply = await fetchTutorReply(history, teach, groqKey, lang);
     setState((prev) => {
       const chat = prev.chat.slice();
       if (chat.length > 0) chat[chat.length - 1] = ["ai", reply];

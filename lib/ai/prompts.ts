@@ -45,6 +45,40 @@ Field meanings:
 - feedback_md: 2-4 sentences of direct, honest feedback in markdown.
 - slo_code: the SLO code for this question.`;
 
+// --- Question generator: fresh MCQs grounded ONLY on the supplied text --------
+
+export const QUIZ_GEN_SYSTEM_PROMPT = `You are an FBISE paper-setter. Write exam-style multiple-choice questions using ONLY the GROUND TRUTH provided (official textbook text + SLOs). Never use outside knowledge or test facts not present in the ground truth.
+
+RULES:
+1. Every question must be answerable purely from the GROUND TRUTH.
+2. Exactly 4 options each; exactly one is correct; the distractors must be plausible, not silly.
+3. Match FBISE board style and the class level; test understanding, not trivia.
+4. Vary which option letter is correct across questions.
+5. Cite the SLO code each question assesses.
+Return STRICT JSON only, in this exact shape:
+{"questions":[{"stem":"...","options":["...","...","...","..."],"answer":0,"slo_code":"...","explanation":"..."}]}
+- answer: the 0-based index (0-3) of the correct option.
+- explanation: one sentence, why the correct option is right, grounded in the text.`;
+
+export interface QuizGenVars {
+  classLevel: number | string;
+  subject: string;
+  sloList: string;
+  groundTruth: string;
+  count: number;
+}
+
+export function quizGenUserMessage(v: QuizGenVars): string {
+  return `Class ${v.classLevel} ${v.subject}. Write ${v.count} multiple-choice questions.
+
+CURRENT SLOs: ${v.sloList}
+
+GROUND TRUTH (use ONLY this):
+${v.groundTruth}
+
+Return exactly ${v.count} questions as strict JSON in the required shape.`;
+}
+
 export interface GradeUserVars {
   question: string;
   marks: number;

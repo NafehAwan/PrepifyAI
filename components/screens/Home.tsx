@@ -40,6 +40,8 @@ export function Home() {
       active = false;
     };
   }, [s.subs]);
+  const signedIn = Object.keys(mastery).length > 0;
+  const reviewsDue = signedIn ? weakSpotsFrom(mastery, 99).length : 23;
   return (
     <>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
@@ -52,12 +54,12 @@ export function Home() {
           <button onClick={() => set("homeVar", "B")} style={pill(s.homeVar === "B")}>B · Focus rail</button>
         </div>
       </div>
-      {s.homeVar === "A" ? <BentoHome mastery={mastery} /> : <FocusHome mastery={mastery} />}
+      {s.homeVar === "A" ? <BentoHome mastery={mastery} reviewsDue={reviewsDue} /> : <FocusHome mastery={mastery} reviewsDue={reviewsDue} />}
     </>
   );
 }
 
-function BentoHome({ mastery }: { mastery: Mastery }) {
+function BentoHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: number }) {
   const { go } = useApp();
   const gauges = gaugeRows(mastery);
   const weak = weakRows(mastery);
@@ -83,11 +85,11 @@ function BentoHome({ mastery }: { mastery: Mastery }) {
             <StrokeIcon d={PATH.refresh} size={18} stroke={C.accent} width={2.75} />
           </div>
           <div>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1 }}>23</div>
+            <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1 }}>{reviewsDue}</div>
             <div style={{ fontSize: 13, color: C.muted, fontWeight: 600, marginTop: -2 }}>reviews due today</div>
           </div>
         </div>
-        <div style={{ fontSize: 13, color: C.muted, lineHeight: 1.45 }}>Spaced repetition keeps Ch 1–4 from slipping. About 9 minutes.</div>
+        <div style={{ fontSize: 13, color: C.muted, lineHeight: 1.45 }}>{reviewsDue === 0 ? "You're all caught up — nothing to revisit right now." : "Topics you haven't mastered yet — revisit before they slip."}</div>
         <button onClick={() => go("reviews")} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, fontSize: 14, padding: "11px 0", width: "100%" }}>Start review</button>
       </div>
 
@@ -157,7 +159,7 @@ function BentoHome({ mastery }: { mastery: Mastery }) {
   );
 }
 
-function FocusHome({ mastery }: { mastery: Mastery }) {
+function FocusHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: number }) {
   const { go } = useApp();
   const gauges = gaugeRows(mastery);
   const weak = weakRows(mastery);
@@ -205,7 +207,7 @@ function FocusHome({ mastery }: { mastery: Mastery }) {
           <button onClick={() => go("topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Continue</button>
         </div>
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 20, textAlign: "center" }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 40, lineHeight: 1, color: C.accent }}>23</div>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 40, lineHeight: 1, color: C.accent }}>{reviewsDue}</div>
           <div style={{ fontSize: 13, color: C.muted, fontWeight: 600, margin: "2px 0 12px" }}>reviews due</div>
           <button onClick={() => go("reviews")} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, fontSize: 14, padding: "10px 0", width: "100%" }}>Review now</button>
         </div>

@@ -5,8 +5,9 @@ import { useApp } from "@/lib/store";
 import { C, pill, wideTab } from "@/lib/theme";
 import { CHAT_SEED } from "@/lib/store";
 import { StrokeIcon, FillIcon, PATH } from "../Icon";
-import { getTopicContent, toTeachContext, type DBTopicContent } from "@/lib/curriculum";
+import { getTopicContent, toTeachContext, type DBTopicContent, type DBMcq } from "@/lib/curriculum";
 import { persistTopicProgress } from "@/lib/supabase/persist";
+import { generateQuiz } from "@/lib/ai/generate";
 import { MarkdownLite } from "../MarkdownLite";
 import type { ChatMsg } from "@/lib/types";
 
@@ -291,11 +292,11 @@ function RealTopic({ topicId }: { topicId: string }) {
           <div style={{ width: 420, flex: "1 1 360px", height: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, display: "flex", flexDirection: "column", overflow: "hidden" }}>
             <div style={{ padding: 12, borderBottom: "1px solid #ece0c8" }}>
               <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
-                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>AI Tutor</button>
-                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>Quiz · {content.mcqs.length} Q</button>
+                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>① Learn</button>
+                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>② Test</button>
               </div>
             </div>
-            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <RealQuiz topicId={content.id} mcqs={content.mcqs} />}
+            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <QuizPanel content={content} />}
           </div>
         </div>
       )}
@@ -337,6 +338,54 @@ function RealTutor({ topicTitle }: { topicTitle: string }) {
         </div>
       </div>
     </>
+  );
+}
+
+// Wraps the quiz with a "Generate AI quiz" control. Fresh questions are created
+// on demand from this topic's real text (grounded), so a quiz exists even when
+// no bank was pre-seeded, and the student can always get a new set.
+function QuizPanel({ content }: { content: DBTopicContent }) {
+  const { s } = useApp();
+  const [gen, setGen] = useState<DBMcq[] | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState("");
+  const [nonce, setNonce] = useState(0);
+
+  const mcqs = gen ?? content.mcqs;
+
+  const generate = async () => {
+    if (!s.teach) return;
+    setBusy(true);
+    setNote("");
+    const q = await generateQuiz(s.teach, 5, s.groqKey);
+    setBusy(false);
+    if (q) {
+      setGen(q);
+      setNonce((n) => n + 1);
+    } else {
+      setNote("Couldn't generate — connect your Groq key in Settings, then try again.");
+    }
+  };
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", minHeight: 0, flex: 1 }}>
+      <div style={{ padding: "10px 14px", borderBottom: "1px solid #ece0c8", display: "flex", alignItems: "center", gap: 8 }}>
+        <div style={{ fontSize: 12, color: C.muted, fontWeight: 600, flex: 1, minWidth: 0 }}>
+          {gen ? "AI-generated from this topic" : mcqs.length > 0 ? "From your textbook bank" : "No pre-seeded questions"}
+        </div>
+        <button onClick={generate} disabled={busy} style={{ fontSize: 12, fontWeight: 700, borderRadius: 999, padding: "7px 14px", background: C.accent, color: "#fff", opacity: busy ? 0.7 : 1, flex: "none" }}>
+          {busy ? "Generating…" : gen || mcqs.length > 0 ? "✨ New AI quiz" : "✨ Generate AI quiz"}
+        </button>
+      </div>
+      {note && <div style={{ margin: "10px 14px 0", fontSize: 12.5, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px", lineHeight: 1.45 }}>{note}</div>}
+      {mcqs.length > 0 ? (
+        <RealQuiz key={nonce} topicId={content.id} mcqs={mcqs} />
+      ) : (
+        <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", color: C.muted, fontSize: 13.5, padding: 24, textAlign: "center", lineHeight: 1.5 }}>
+          No bank seeded yet — tap <strong>&nbsp;Generate AI quiz&nbsp;</strong> to create one from this topic&apos;s text.
+        </div>
+      )}
+    </div>
   );
 }
 
