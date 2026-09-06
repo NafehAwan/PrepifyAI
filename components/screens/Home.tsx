@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C, pill } from "@/lib/theme";
+import { C } from "@/lib/theme";
 import { TASKS, WEAK, GAUGES } from "@/lib/data";
 import { getSubjectMastery, weakSpotsFrom, type SubjectMastery } from "@/lib/analytics";
 import { StrokeIcon, PATH } from "../Icon";
@@ -33,7 +33,7 @@ function weakRows(mastery: Mastery, authed: boolean): Array<{ topic: string; sub
 }
 
 export function Home() {
-  const { s, set } = useApp();
+  const { s } = useApp();
   const [mastery, setMastery] = useState<Mastery>({});
   useEffect(() => {
     let active = true;
@@ -55,12 +55,8 @@ export function Home() {
           <div style={{ fontFamily: "Caprasimo", fontSize: 32, lineHeight: 1.1 }}>Assalam-o-Alaikum, {s.userName.split(" ")[0]}</div>
           <div style={{ color: C.muted, marginTop: 4 }}>Class {s.cls.replace(/\D/g, "")} · {s.subs.length} subject{s.subs.length === 1 ? "" : "s"}{s.authed ? "" : " · You're 3 topics ahead of your plan this week."}</div>
         </div>
-        <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3 }}>
-          <button onClick={() => set("homeVar", "A")} style={pill(s.homeVar === "A")}>A · Bento</button>
-          <button onClick={() => set("homeVar", "B")} style={pill(s.homeVar === "B")}>B · Focus rail</button>
-        </div>
       </div>
-      {s.homeVar === "A" ? <BentoHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} /> : <FocusHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} />}
+      <BentoHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} />
     </>
   );
 }
@@ -165,77 +161,6 @@ function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak:
               </div>
             </button>
           ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FocusHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak: Weak[]; reviewsDue: number; fresh: boolean }) {
-  const { s, go } = useApp();
-  return (
-    <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
-      <div style={{ flex: 1, minWidth: 420, display: "flex", flexDirection: "column", gap: 16 }}>
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "26px 28px" }}>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>{s.authed ? "Get started" : "Your next 38 minutes"}</div>
-          {s.authed ? (
-            <div style={{ fontSize: 14, color: C.muted, lineHeight: 1.55 }}>Your daily study plan is coming soon. For now, open a subject, read a topic, then take its quiz to master it.</div>
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {TASKS.map(([title, meta, done, time]) => (
-                <div key={title} style={{ display: "flex", alignItems: "center", gap: 14, background: done ? "transparent" : C.bg, borderRadius: 18, padding: "14px 16px" }}>
-                  <Checkbox done={done === 1} size={26} />
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontSize: 15, fontWeight: 600, color: done ? "#9a8d78" : C.ink, textDecoration: done ? "line-through" : "none" }}>{title}</div>
-                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{meta}</div>
-                  </div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: done ? C.sageD : C.accentD, background: done ? C.sageT : C.tint, borderRadius: 999, padding: "5px 12px" }}>{time}</div>
-                </div>
-              ))}
-            </div>
-          )}
-          <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ marginTop: 18, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15 }}>{fresh ? "Browse subjects →" : "Start with Centripetal Force →"}</button>
-        </div>
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 14 }}>Predicted grades</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {gauges.map(({ name, pct, grade }) => {
-              const color = gaugeColor(pct);
-              return (
-                <div key={name} style={{ display: "flex", alignItems: "center", gap: 14 }}>
-                  <div style={{ width: 120, fontSize: 14, fontWeight: 600 }}>{name}</div>
-                  <div style={{ flex: 1, height: 12, background: C.sand, borderRadius: 999, overflow: "hidden" }}>
-                    <div style={{ height: 12, width: `${pct}%`, background: color, borderRadius: 999 }} />
-                  </div>
-                  <div style={{ width: 44, textAlign: "right", fontFamily: "Caprasimo", fontSize: 19, color }}>{grade}</div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      <div style={{ width: 320, flex: "none", display: "flex", flexDirection: "column", gap: 16 }}>
-        <div style={{ background: C.accent, color: "#fff", borderRadius: 24, padding: 22, boxShadow: "0 12px 28px rgba(198,113,57,.25)" }}>
-          <Kicker light>{fresh ? "Get started" : "Resume"}</Kicker>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 21, lineHeight: 1.2, marginBottom: 12 }}>{fresh ? "Open your first subject" : "Ch 5 — Circular Motion"}</div>
-          <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>{fresh ? "Browse" : "Continue"}</button>
-        </div>
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 20, textAlign: "center" }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 40, lineHeight: 1, color: C.accent }}>{reviewsDue}</div>
-          <div style={{ fontSize: 13, color: C.muted, fontWeight: 600, margin: "2px 0 12px" }}>reviews due</div>
-          <button onClick={() => go("reviews")} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, fontSize: 14, padding: "10px 0", width: "100%" }}>Review now</button>
-        </div>
-        <div style={{ background: C.sageT, borderRadius: 24, padding: 20 }}>
-          <div style={{ fontWeight: 700, fontSize: 14, color: C.sageD, marginBottom: 10 }}>Weak spots</div>
-          {weak.length === 0 && <div style={{ fontSize: 12.5, color: "#5d6b46", lineHeight: 1.4 }}>None yet — take a topic quiz to find them.</div>}
-          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-            {weak.map(({ topic, score }) => (
-              <button key={topic} onClick={() => go("practice")} style={{ width: "100%", textAlign: "left", fontSize: 13.5, fontWeight: 600, color: "#3f4a2b", display: "flex", justifyContent: "space-between", gap: 10 }}>
-                <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{topic}</span>
-                <span style={{ opacity: 0.7 }}>{score}</span>
-              </button>
-            ))}
-          </div>
         </div>
       </div>
     </div>
