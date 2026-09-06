@@ -181,6 +181,9 @@ function Runner({ mcqs, onDone }: { mcqs: DBMcq[]; onDone: () => void }) {
             <div style={{ fontWeight: 700, color: pick === q.answer ? C.sageD : C.accentD, fontSize: 14, marginBottom: 6 }}>
               {pick === q.answer ? "Correct" : `Not quite — the answer is ${"ABCD"[q.answer]}`}
             </div>
+            {q.explanation && (
+              <div style={{ fontSize: 13, color: "#4a443c", lineHeight: 1.5, marginBottom: 8 }}>{q.explanation}</div>
+            )}
             <button onClick={next} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 20px", fontSize: 13.5 }}>
               {qi + 1 >= total ? "See result" : "Next →"}
             </button>

@@ -37,6 +37,7 @@ export interface DBMcq {
   stem: string;
   options: string[];
   answer: number; // index of the correct option
+  explanation?: string; // present on AI-generated questions
 }
 
 export interface DBTopicContent {

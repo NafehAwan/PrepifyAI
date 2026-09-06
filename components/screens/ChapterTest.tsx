@@ -192,6 +192,9 @@ function Results({ title, mcqs, result, picks, onBack, onRetake }: { title: stri
                     {pick !== undefined && !right && <span style={{ color: C.accentD }}> · you chose {"ABCD"[pick]}</span>}
                     {pick === undefined && <span style={{ color: C.muted }}> · you left this blank</span>}
                   </div>
+                  {q.explanation && (
+                    <div style={{ fontSize: 12.5, color: "#7a6f5d", lineHeight: 1.5, marginTop: 4 }}>{q.explanation}</div>
+                  )}
                 </div>
               );
             })}
