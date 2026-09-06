@@ -13,10 +13,18 @@ html, body {
   line-height: 1.5;
 }
 
-button { font-family: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
-input, textarea { font-family: inherit; }
-a { color: #8f4a20; text-decoration: none; }
+button {
+  font-family: inherit; cursor: pointer; border: 0; background: none; color: inherit;
+  transition: transform .12s ease, opacity .15s ease, background-color .15s ease, box-shadow .18s ease, border-color .15s ease, filter .15s ease;
+}
+button:hover:not(:disabled) { filter: brightness(1.03); }
+button:active:not(:disabled) { transform: translateY(1px) scale(.99); }
+button:disabled { cursor: default; }
+input, textarea { font-family: inherit; transition: border-color .15s ease, box-shadow .15s ease; }
+input:focus, textarea:focus { border-color: #c67139 !important; }
+a { color: #8f4a20; text-decoration: none; transition: color .15s ease; }
 a:hover { color: #c67139; }
+html { scroll-behavior: smooth; }
 
 ::selection { background: #f0cdb1; }
 *:focus-visible { outline: 2px solid #c67139; outline-offset: 2px; }
@@ -26,3 +34,16 @@ a:hover { color: #c67139; }
 
 @keyframes pf-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @keyframes pf-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+@keyframes pf-pop { from { opacity: 0; transform: scale(.94) translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes pf-slide-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes pf-spin { to { transform: rotate(360deg); } }
+@keyframes pf-bounce-in { 0% { opacity: 0; transform: scale(.6); } 60% { transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
+
+/* subtle lift for cards/tappable tiles that opt in */
+.pf-lift { transition: transform .16s ease, box-shadow .18s ease; }
+.pf-lift:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(90,62,30,.12); }
+
+/* honor reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}

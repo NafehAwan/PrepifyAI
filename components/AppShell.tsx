@@ -5,6 +5,7 @@ import { C, pill } from "@/lib/theme";
 import { NAV, TITLES } from "@/lib/data";
 import { StrokeIcon, FillIcon, PATH } from "./Icon";
 import { LogoMark } from "./Logo";
+import { ChatWidget } from "./ChatWidget";
 import { initialsFromName } from "@/lib/mappings";
 import { signOut } from "@/app/login/actions";
 import type { Screen } from "@/lib/types";
@@ -103,6 +104,7 @@ export function AppShell() {
           <ScreenBody screen={s.screen} />
         </div>
       </div>
+      <ChatWidget />
     </div>
   );
 }
