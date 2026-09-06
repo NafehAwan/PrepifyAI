@@ -5,6 +5,7 @@ import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { getChapterTest, getChapterGrounding, type DBMcq } from "@/lib/curriculum";
 import { generateQuiz } from "@/lib/ai/generate";
+import { shuffleMcqs } from "@/lib/quizUtil";
 import { persistChapterAttempt, type ChapterReport } from "@/lib/supabase/persist";
 
 const PASS_BAR = 50; // FBISE pass mark
@@ -65,7 +66,9 @@ export function ChapterTest() {
         }
       }
       if (qs.length === 0) qs = t?.mcqs ?? []; // fall back to the seeded bank
-      setMcqs(qs);
+      // Shuffle question + option order so a retake is always different, even
+      // when we're reusing a fixed bank (no AI key).
+      setMcqs(shuffleMcqs(qs));
       setSource(src);
       setLoading(false);
     })().catch(() => active && setLoading(false));
