@@ -1,5 +1,6 @@
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { LoginForm } from "./LoginForm";
+import { LogoMark } from "@/components/Logo";
 import { C } from "@/lib/theme";
 import Link from "next/link";
 
@@ -8,8 +9,8 @@ export default function LoginPage({ searchParams }: { searchParams?: { error?: s
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 24, background: C.bg }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 26 }}>
-        <div style={{ width: 40, height: 40, borderRadius: 999, background: C.accent, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: "Caprasimo", fontSize: 21 }}>P</div>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 24 }}>Prepify AI</div>
+        <LogoMark size={40} />
+        <div style={{ fontFamily: "Caprasimo", fontSize: 24 }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
       </div>
 
       {configured ? (

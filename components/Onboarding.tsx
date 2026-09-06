@@ -5,6 +5,7 @@ import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { buildDiagnostic } from "@/lib/data";
 import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
+import { LogoMark } from "./Logo";
 
 const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
@@ -56,7 +57,7 @@ export function Onboarding() {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 32px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Logo />
-          <div style={{ fontFamily: "Caprasimo", fontSize: 20, letterSpacing: ".2px" }}>Prepify AI</div>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 20, letterSpacing: ".2px" }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>Onboarding layout</div>
@@ -287,9 +288,7 @@ export function Onboarding() {
 }
 
 function Logo() {
-  return (
-    <div style={{ width: 34, height: 34, borderRadius: 999, background: C.accent, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: "Caprasimo", fontSize: 18 }}>P</div>
-  );
+  return <LogoMark size={34} />;
 }
 
 function H({ children }: { children: React.ReactNode }) {
