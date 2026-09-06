@@ -1,8 +1,19 @@
 "use client";
 
+import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
+import { ComingSoon } from "../ComingSoon";
 
 export function Reviews() {
+  const { s } = useApp();
+  if (s.authed)
+    return (
+      <ComingSoon
+        title="Spaced-repetition reviews are coming"
+        desc="Topics you've studied will resurface here on a spaced schedule so they don't slip before the boards. We're wiring the review queue to your real progress — for now, retake a topic quiz to refresh a weak area."
+        cta={{ label: "Go to My Subjects", to: "subjects" }}
+      />
+    );
   return (
     <div style={{ maxWidth: 720, margin: "0 auto" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>

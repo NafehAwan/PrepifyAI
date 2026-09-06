@@ -3,6 +3,7 @@
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { StrokeIcon, PATH } from "../Icon";
+import { ComingSoon } from "../ComingSoon";
 
 type ChipKind = "Do now" | "Weak spot" | "Review" | "High yield" | "Scheduled";
 
@@ -32,7 +33,15 @@ const REVIEW_QUEUE: ReadonlyArray<readonly [string, string, number]> = [
 ];
 
 export function Plan() {
-  const { go, daysLeft } = useApp();
+  const { s, go, daysLeft } = useApp();
+  if (s.authed)
+    return (
+      <ComingSoon
+        title="Your study plan is coming"
+        desc="A daily queue ranked by how many board marks each topic is worth against how shaky you are on it — built from your real quiz and test results. Until it's live, open a subject and work through the topics in order."
+        cta={{ label: "Go to My Subjects", to: "subjects" }}
+      />
+    );
   return (
     <div style={{ display: "flex", gap: 16, alignItems: "flex-start", flexWrap: "wrap", maxWidth: 1200 }}>
       <div style={{ flex: 1, minWidth: 440, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
