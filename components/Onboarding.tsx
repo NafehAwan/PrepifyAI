@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useApp } from "@/lib/store";
-import { C, pill } from "@/lib/theme";
+import { C } from "@/lib/theme";
 import { buildDiagnostic } from "@/lib/data";
 import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
 import { LogoMark } from "./Logo";
@@ -19,8 +19,9 @@ const AI_STEP = 5;
 
 export function Onboarding() {
   const { s, set, patch, go, daysLeft, setGroqKey } = useApp();
-  const isA = s.obVar === "A";
-  const isB = s.obVar === "B";
+  // Single clean (Focused) layout — the A/B toggle was removed.
+  const isA = true;
+  const isB = false;
   const pct = Math.round(((s.ob - 1) / STEP_LABELS.length) * 100);
   const [keyDraft, setKeyDraft] = useState(s.groqKey);
   const [showKey, setShowKey] = useState(false);
@@ -59,16 +60,9 @@ export function Onboarding() {
           <Logo />
           <div style={{ fontFamily: "Caprasimo", fontSize: 20, letterSpacing: ".2px" }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>Onboarding layout</div>
-          <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3 }}>
-            <button onClick={() => set("obVar", "A")} style={pill(isA)}>A · Focused</button>
-            <button onClick={() => set("obVar", "B")} style={pill(isB)}>B · Split</button>
-          </div>
-          <button onClick={finish} style={{ borderRadius: 999, padding: "8px 16px", background: C.sand, fontWeight: 600, fontSize: 13 }}>
-            Skip to app
-          </button>
-        </div>
+        <button onClick={finish} style={{ borderRadius: 999, padding: "8px 16px", background: C.sand, fontWeight: 600, fontSize: 13 }}>
+          Skip to app
+        </button>
       </div>
 
       <div style={{ flex: 1, display: "flex", justifyContent: "center", padding: "8px 32px 48px" }}>
