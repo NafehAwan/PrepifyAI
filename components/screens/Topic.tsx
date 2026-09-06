@@ -8,6 +8,7 @@ import { StrokeIcon, FillIcon, PATH } from "../Icon";
 import { getTopicContent, toTeachContext, type DBTopicContent, type DBMcq } from "@/lib/curriculum";
 import { persistTopicProgress } from "@/lib/supabase/persist";
 import { generateQuiz } from "@/lib/ai/generate";
+import { shuffleMcqs } from "@/lib/quizUtil";
 import { MarkdownLite } from "../MarkdownLite";
 import type { ChatMsg } from "@/lib/types";
 
@@ -396,8 +397,10 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
   const [correct, setCorrect] = useState(0);
   const [done, setDone] = useState(false);
   const [save, setSave] = useState<"idle" | "saving" | "saved" | "local">("idle");
+  // Shuffled working set — reshuffled on retake so it's never the same order.
+  const [deck, setDeck] = useState<DBMcq[]>(() => shuffleMcqs(mcqs));
 
-  const total = mcqs.length;
+  const total = deck.length;
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
   const passed = pct >= 70;
 
@@ -415,11 +418,11 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
 
-  if (mcqs.length === 0) {
+  if (deck.length === 0) {
     return <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", color: C.muted, fontSize: 14, padding: 24, textAlign: "center" }}>No quiz questions seeded for this topic yet.</div>;
   }
 
-  const q = mcqs[qi];
+  const q = deck[qi];
 
   if (done) {
     const backToMap = () => { patch({ selectedTopicId: null, teach: null, chat: [] }); go("chapters"); };
@@ -437,7 +440,7 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
           {save === "idle" && " "}
         </div>
         <div style={{ display: "flex", gap: 8, marginTop: 8, flexWrap: "wrap", justifyContent: "center" }}>
-          <button onClick={() => { setQi(0); setPick(null); setCorrect(0); setDone(false); setSave("idle"); }} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Retake quiz</button>
+          <button onClick={() => { setDeck(shuffleMcqs(mcqs)); setQi(0); setPick(null); setCorrect(0); setDone(false); setSave("idle"); }} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Retake quiz</button>
           {passed && (
             <button onClick={backToMap} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Back to chapter map →</button>
           )}
@@ -459,7 +462,7 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
   return (
     <div style={{ flex: 1, overflow: "auto", padding: 20, display: "flex", flexDirection: "column" }}>
       <div style={{ display: "flex", gap: 5, marginBottom: 14 }}>
-        {mcqs.map((_, i) => (
+        {deck.map((_, i) => (
           <div key={i} style={{ height: 6, flex: 1, borderRadius: 999, background: i < qi ? C.sage : i === qi ? C.accent : C.sand }} />
         ))}
       </div>
