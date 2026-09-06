@@ -79,15 +79,28 @@ export interface QuizGenVars {
   sloList: string;
   groundTruth: string;
   count: number;
+  mix?: boolean; // true for a full chapter test: scenario + straightforward blend
+  variant?: number; // bump to force a fresh, different set on retake
 }
 
 export function quizGenUserMessage(v: QuizGenVars): string {
+  const mixSpec = v.mix
+    ? `Make a deliberate MIX of difficulty:
+- About 60% SCENARIO / APPLICATION questions: give a short real situation or worked case and make the student APPLY the concept to answer. Each must map to one of the SLOs above (higher-order thinking).
+- The remaining ~40% STRAIGHTFORWARD recall/understanding questions (direct, single-step).
+Order them with the straightforward ones first and the scenario ones after.`
+    : `Keep them clear and direct (recall/understanding level).`;
+
   return `Class ${v.classLevel} ${v.subject}. Write ${v.count} multiple-choice questions.
 
 CURRENT SLOs: ${v.sloList}
 
 GROUND TRUTH (use ONLY this):
 ${v.groundTruth}
+
+${mixSpec}
+Vary which option letter is correct across questions.
+This is set variant #${v.variant ?? 1} — write a FRESH set of questions; do not reuse phrasings from any earlier set.
 
 Return exactly ${v.count} questions as strict JSON in the required shape.`;
 }

@@ -54,8 +54,9 @@ export function ChapterTest() {
       if (grounding && s.groqKey) {
         const gen = await generateQuiz(
           { subject: grounding.subject, classLevel: grounding.classLevel, medium: "English", level: "Developing", sloList: grounding.sloList, groundTruth: grounding.groundTruth },
-          10,
+          25,
           s.groqKey,
+          { mix: true }, // scenario/SLO-based + straightforward blend
         );
         if (!active) return;
         if (gen && gen.length > 0) {
@@ -106,7 +107,9 @@ export function ChapterTest() {
   }
 
   if (phase === "results" && result) {
-    return <Results title={title} mcqs={mcqs} result={result} picks={picks} onBack={back} onRetake={() => { setPicks({}); setResult(null); setPhase("taking"); }} />;
+    // Retake builds a brand-new test from the book (bumping nonce re-runs the
+    // generator), so the questions differ every time.
+    return <Results title={title} mcqs={mcqs} result={result} picks={picks} onBack={back} onRetake={() => setNonce((n) => n + 1)} />;
   }
 
   const grading = phase === "grading";

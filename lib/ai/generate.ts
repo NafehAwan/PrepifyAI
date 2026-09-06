@@ -8,7 +8,12 @@ import { groqAuthHeaders } from "./key";
 import type { DBMcq } from "../curriculum";
 import type { TeachContext } from "../types";
 
-export async function generateQuiz(teach: TeachContext, count: number, key: string): Promise<DBMcq[] | null> {
+export async function generateQuiz(
+  teach: TeachContext,
+  count: number,
+  key: string,
+  opts?: { mix?: boolean },
+): Promise<DBMcq[] | null> {
   try {
     const res = await fetch("/api/ai/quiz", {
       method: "POST",
@@ -19,6 +24,9 @@ export async function generateQuiz(teach: TeachContext, count: number, key: stri
         sloList: teach.sloList,
         groundTruth: teach.groundTruth,
         count,
+        mix: opts?.mix ?? false,
+        // a fresh random variant each call → different questions on every retake
+        variant: Math.floor(Math.random() * 1e6),
       }),
     });
     if (!res.ok) return null;
