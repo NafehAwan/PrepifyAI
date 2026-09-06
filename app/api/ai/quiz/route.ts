@@ -26,7 +26,7 @@ export async function POST(req: Request) {
   const key = resolveGroqKey(req);
   if (!key) return NextResponse.json({ configured: false }, { status: 503 });
 
-  let body: { subject?: string; classLevel?: number | string; sloList?: string; groundTruth?: string; count?: number };
+  let body: { subject?: string; classLevel?: number | string; sloList?: string; groundTruth?: string; count?: number; mix?: boolean; variant?: number };
   try {
     body = await req.json();
   } catch {
@@ -37,20 +37,23 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "No ground truth to generate from" }, { status: 400 });
   }
 
-  const count = Math.min(Math.max(Number(body.count) || 5, 1), 10);
+  const count = Math.min(Math.max(Number(body.count) || 5, 1), 30);
   const userMessage = quizGenUserMessage({
     subject: body.subject ?? "Physics",
     classLevel: body.classLevel ?? 9,
     sloList: body.sloList ?? "",
     groundTruth: body.groundTruth,
     count,
+    mix: !!body.mix,
+    variant: Number(body.variant) || 1,
   });
 
   try {
     const { text } = await groqChat({
       key,
-      maxTokens: 2500,
-      temperature: 0.5,
+      // scale output room with the number of questions
+      maxTokens: Math.min(7000, 900 + count * 240),
+      temperature: body.mix ? 0.8 : 0.5, // more variety for full tests / retakes
       jsonMode: true,
       messages: [
         { role: "system", content: QUIZ_GEN_SYSTEM_PROMPT },
