@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 
@@ -36,12 +37,30 @@ export async function signup(_prev: AuthState, formData: FormData): Promise<Auth
   const { data, error } = await supabase.auth.signUp({ email, password });
   if (error) return { error: error.message };
 
-  // If email confirmation is disabled, a session is returned immediately.
+  // With email confirmation disabled (recommended), a session is returned
+  // immediately and the student goes straight into onboarding.
   if (data.session) {
     revalidatePath("/", "layout");
     redirect("/");
   }
-  return { message: "Account created. Check your email to confirm, then sign in." };
+  return { message: "Account created — you can sign in now." };
+}
+
+// Starts the Google OAuth flow. Redirects the browser to Google; the returned
+// code is exchanged for a session in /auth/callback.
+export async function signInWithGoogle(): Promise<void> {
+  if (!isSupabaseConfigured()) redirect("/login?error=not-configured");
+
+  const h = headers();
+  const origin = h.get("origin") ?? `https://${h.get("host") ?? ""}`;
+
+  const supabase = createClient();
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: { redirectTo: `${origin}/auth/callback` },
+  });
+  if (error || !data?.url) redirect("/login?error=oauth");
+  redirect(data.url);
 }
 
 export async function signOut(): Promise<void> {
