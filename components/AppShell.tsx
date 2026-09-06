@@ -4,6 +4,7 @@ import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
 import { NAV, TITLES } from "@/lib/data";
 import { StrokeIcon, FillIcon, PATH } from "./Icon";
+import { LogoMark } from "./Logo";
 import { initialsFromName } from "@/lib/mappings";
 import { signOut } from "@/app/login/actions";
 import type { Screen } from "@/lib/types";
@@ -31,8 +32,8 @@ export function AppShell() {
       {/* sidebar */}
       <div style={{ width: 246, flex: "none", background: C.sidebar, borderRight: `1px solid ${C.sidebarLine}`, padding: "20px 14px", display: "flex", flexDirection: "column", gap: 4, position: "sticky", top: 0, height: "100vh" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "4px 10px 22px" }}>
-          <div style={{ width: 34, height: 34, borderRadius: 999, background: C.accent, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: "Caprasimo", fontSize: 18 }}>P</div>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>Prepify AI</div>
+          <LogoMark size={34} />
+          <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
         </div>
         {NAV.map(([id, label, d]) => {
           const active = isSubjectsActive(id);
