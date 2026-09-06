@@ -22,20 +22,13 @@
               "code": "PHY-9-1.1.1",
               "bloom_level": "understand",
               "statement": "Define physics and identify its main branches.",
-              "content_md": "## What is Physics?\n\n**Physics** is the branch of science that studies matter, energy and their mutual interactions. It explains how the physical world behaves — from the fall of an apple to the orbit of a satellite.\n\nMain branches include **mechanics** (motion and forces), **heat/thermodynamics**, **sound**, **light/optics**, **electricity and magnetism**, **atomic physics** and **nuclear physics**.\n\n**Examiner keyword:** the mark is awarded for *matter, energy and their interactions* — a vague 'study of nature' loses it.",
-              "topic_mcqs": [
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "Physics is the study of", "options": ["living organisms", "matter, energy and their interactions", "chemical reactions only", "the human body"], "answer": "B", "explanation": "Physics deals with matter, energy and how they interact." },
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "The branch of physics dealing with motion and forces is", "options": ["optics", "mechanics", "thermodynamics", "acoustics"], "answer": "B", "explanation": "Mechanics is the study of motion and the forces that cause it." }
-              ]
+              "content_md": "## What is Physics?\n\n**Physics** is the branch of science that studies matter, energy and their mutual interactions. It explains how the physical world behaves — from the fall of an apple to the orbit of a satellite.\n\nMain branches include **mechanics** (motion and forces), **heat/thermodynamics**, **sound**, **light/optics**, **electricity and magnetism**, **atomic physics** and **nuclear physics**.\n\n**Examiner keyword:** the mark is awarded for *matter, energy and their interactions* — a vague 'study of nature' loses it."
             },
             {
               "code": "PHY-9-1.1.2",
               "bloom_level": "understand",
               "statement": "Explain the role of physics in science, technology and society.",
-              "content_md": "## Why Physics Matters\n\nPhysics underpins engineering, medicine (X-rays, MRI), communication (fibre optics, mobile phones) and energy production. Advances in physics drive new technology, which in turn changes society.\n\n**Examiner keyword:** give a *specific application* (e.g. MRI, fibre optics) rather than 'it is useful'.",
-              "topic_mcqs": [
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "MRI used in hospitals is an application of", "options": ["biology", "physics", "geography", "history"], "answer": "B", "explanation": "MRI relies on magnetism and radio waves — a physics application." }
-              ]
+              "content_md": "## Why Physics Matters\n\nPhysics underpins engineering, medicine (X-rays, MRI), communication (fibre optics, mobile phones) and energy production. Advances in physics drive new technology, which in turn changes society.\n\n**Examiner keyword:** give a *specific application* (e.g. MRI, fibre optics) rather than 'it is useful'."
             }
           ]
         },
@@ -48,21 +41,13 @@
               "code": "PHY-9-1.2.1",
               "bloom_level": "understand",
               "statement": "Differentiate between base and derived physical quantities.",
-              "content_md": "## Base vs Derived Quantities\n\nA **physical quantity** is one that can be measured. **Base quantities** are seven fundamental quantities that are not defined in terms of others: length (m), mass (kg), time (s), electric current (A), temperature (K), amount of substance (mol) and luminous intensity (cd).\n\n**Derived quantities** are obtained by combining base quantities — e.g. speed (m s⁻¹), force (kg m s⁻²), area (m²).\n\n**Examiner keyword:** name a base quantity *with its SI unit* to secure the mark.",
-              "topic_mcqs": [
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "Which of the following is a base quantity?", "options": ["Force", "Area", "Time", "Speed"], "answer": "C", "explanation": "Time is one of the seven base quantities; the others listed are derived." },
-                { "bloom": "apply", "marks": 1, "difficulty": 2, "stem": "The SI unit of force expressed in base units is", "options": ["kg m s⁻¹", "kg m s⁻²", "kg m² s⁻²", "kg s⁻²"], "answer": "B", "explanation": "F = ma, so the newton is kg·m·s⁻²." }
-              ]
+              "content_md": "## Base vs Derived Quantities\n\nA **physical quantity** is one that can be measured. **Base quantities** are seven fundamental quantities that are not defined in terms of others: length (m), mass (kg), time (s), electric current (A), temperature (K), amount of substance (mol) and luminous intensity (cd).\n\n**Derived quantities** are obtained by combining base quantities — e.g. speed (m s⁻¹), force (kg m s⁻²), area (m²).\n\n**Examiner keyword:** name a base quantity *with its SI unit* to secure the mark."
             },
             {
               "code": "PHY-9-1.2.2",
               "bloom_level": "understand",
               "statement": "Express quantities using prefixes and scientific (standard) notation.",
-              "content_md": "## Prefixes and Standard Form\n\nVery large or small numbers are written in **standard form** a × 10ⁿ where 1 ≤ a < 10. SI **prefixes** scale units: kilo (10³), centi (10⁻²), milli (10⁻³), micro (10⁻⁶), nano (10⁻⁹), mega (10⁶), giga (10⁹).\n\nExample: 3 000 000 m = 3 × 10⁶ m = 3 Mm.\n\n**Examiner keyword:** the coefficient must satisfy 1 ≤ a < 10, or the standard-form mark is lost.",
-              "topic_mcqs": [
-                { "bloom": "apply", "marks": 1, "difficulty": 2, "stem": "0.00045 m written in standard form is", "options": ["4.5 × 10⁻⁴ m", "45 × 10⁻⁵ m", "4.5 × 10⁴ m", "0.45 × 10⁻³ m"], "answer": "A", "explanation": "Move the point 4 places: 4.5 × 10⁻⁴ m, with 1 ≤ 4.5 < 10." },
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "The prefix 'micro' represents", "options": ["10⁻³", "10⁻⁶", "10⁻⁹", "10⁶"], "answer": "B", "explanation": "Micro = 10⁻⁶." }
-              ]
+              "content_md": "## Prefixes and Standard Form\n\nVery large or small numbers are written in **standard form** a × 10ⁿ where 1 ≤ a < 10. SI **prefixes** scale units: kilo (10³), centi (10⁻²), milli (10⁻³), micro (10⁻⁶), nano (10⁻⁹), mega (10⁶), giga (10⁹).\n\nExample: 3 000 000 m = 3 × 10⁶ m = 3 Mm.\n\n**Examiner keyword:** the coefficient must satisfy 1 ≤ a < 10, or the standard-form mark is lost."
             }
           ]
         },
@@ -75,11 +60,7 @@
               "code": "PHY-9-1.3.1",
               "bloom_level": "apply",
               "statement": "Use a vernier callipers and a screw gauge, and state their least counts.",
-              "content_md": "## Vernier Callipers and Screw Gauge\n\nThe **least count** is the smallest measurement an instrument can read.\n\n* Vernier callipers: least count = 1 main-scale division ÷ number of vernier divisions = 1 mm ÷ 10 = **0.1 mm (0.01 cm)**.\n* Screw gauge: least count = pitch ÷ number of circular-scale divisions = 1 mm ÷ 100 = **0.01 mm**.\n\nReading = main-scale reading + (vernier/circular division coinciding × least count).\n\n**Examiner keyword:** always quote the least count *with units* and show the addition.",
-              "topic_mcqs": [
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "The least count of a standard vernier callipers is", "options": ["1 mm", "0.1 mm", "0.01 mm", "0.5 mm"], "answer": "B", "explanation": "1 mm / 10 vernier divisions = 0.1 mm." },
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "A screw gauge is more precise than vernier callipers because it has a smaller", "options": ["pitch only", "main scale", "least count", "thimble"], "answer": "C", "explanation": "Its least count (0.01 mm) is smaller, so it is more precise." }
-              ]
+              "content_md": "## Vernier Callipers and Screw Gauge\n\nThe **least count** is the smallest measurement an instrument can read.\n\n* Vernier callipers: least count = 1 main-scale division ÷ number of vernier divisions = 1 mm ÷ 10 = **0.1 mm (0.01 cm)**.\n* Screw gauge: least count = pitch ÷ number of circular-scale divisions = 1 mm ÷ 100 = **0.01 mm**.\n\nReading = main-scale reading + (vernier/circular division coinciding × least count).\n\n**Examiner keyword:** always quote the least count *with units* and show the addition."
             }
           ]
         },
@@ -92,56 +73,11 @@
               "code": "PHY-9-1.4.1",
               "bloom_level": "apply",
               "statement": "Identify and apply the rules of significant figures in measurements and calculations.",
-              "content_md": "## Significant Figures\n\n**Significant figures** are the digits in a measurement that carry meaning. Rules: all non-zero digits are significant; zeros between non-zero digits are significant; leading zeros are not; trailing zeros after a decimal point are significant.\n\nIn multiplication/division the answer keeps the *fewest* significant figures of the data; in addition/subtraction it keeps the fewest decimal places.\n\n**Examiner keyword:** round *only at the end*, and state the number of significant figures kept.",
-              "topic_mcqs": [
-                { "bloom": "apply", "marks": 1, "difficulty": 2, "stem": "How many significant figures are in 0.00340?", "options": ["2", "3", "5", "6"], "answer": "B", "explanation": "3, 4 and the trailing 0 count; leading zeros do not — three sig figs." }
-              ]
+              "content_md": "## Significant Figures\n\n**Significant figures** are the digits in a measurement that carry meaning. Rules: all non-zero digits are significant; zeros between non-zero digits are significant; leading zeros are not; trailing zeros after a decimal point are significant.\n\nIn multiplication/division the answer keeps the *fewest* significant figures of the data; in addition/subtraction it keeps the fewest decimal places.\n\n**Examiner keyword:** round *only at the end*, and state the number of significant figures kept."
             }
           ]
         }
-      ],
-      "chapter_test": {
-        "mcqs": [
-          { "slo": "PHY-9-1.1.1", "marks": 1, "stem": "Physics is best described as the study of", "options": ["living things", "matter, energy and their interactions", "rocks and minerals", "the economy"], "answer": "B" },
-          { "slo": "PHY-9-1.1.1", "marks": 1, "stem": "The study of heat and its transformations is", "options": ["optics", "thermodynamics", "mechanics", "acoustics"], "answer": "B" },
-          { "slo": "PHY-9-1.1.2", "marks": 1, "stem": "Fibre-optic communication is an application of", "options": ["chemistry", "physics", "botany", "geology"], "answer": "B" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "How many base quantities are there in SI?", "options": ["5", "6", "7", "9"], "answer": "C" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "Which is a derived quantity?", "options": ["Mass", "Length", "Density", "Time"], "answer": "C" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "The SI unit of electric current is the", "options": ["volt", "ampere", "ohm", "coulomb"], "answer": "B" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "The SI base unit of temperature is the", "options": ["celsius", "fahrenheit", "kelvin", "joule"], "answer": "C" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "The unit of area in base units is", "options": ["m", "m²", "m³", "m s⁻¹"], "answer": "B" },
-          { "slo": "PHY-9-1.2.2", "marks": 1, "stem": "5 500 000 W equals", "options": ["5.5 MW", "5.5 kW", "5.5 GW", "5.5 mW"], "answer": "A" },
-          { "slo": "PHY-9-1.2.2", "marks": 1, "stem": "The prefix 'nano' means", "options": ["10⁻³", "10⁻⁶", "10⁻⁹", "10⁻¹²"], "answer": "C" },
-          { "slo": "PHY-9-1.2.2", "marks": 1, "stem": "0.0067 in standard form is", "options": ["6.7 × 10⁻³", "67 × 10⁻⁴", "6.7 × 10³", "0.67 × 10⁻²"], "answer": "A" },
-          { "slo": "PHY-9-1.2.2", "marks": 1, "stem": "1 gigametre equals", "options": ["10⁶ m", "10⁹ m", "10³ m", "10⁻⁹ m"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "The least count of a screw gauge is normally", "options": ["0.1 mm", "0.01 mm", "1 mm", "0.5 mm"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "Vernier callipers least count = main-scale division ÷", "options": ["pitch", "number of vernier divisions", "thimble", "zero error"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "A positive zero error in a screw gauge means the reading must be", "options": ["added", "subtracted", "ignored", "doubled"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "The distance moved by the screw in one complete rotation is its", "options": ["least count", "pitch", "zero error", "range"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "To measure the thickness of a wire most precisely you would use a", "options": ["metre rule", "vernier callipers", "screw gauge", "measuring tape"], "answer": "C" },
-          { "slo": "PHY-9-1.4.1", "marks": 1, "stem": "Significant figures in 4500 (no decimal) taken as measured to the nearest hundred", "options": ["2", "3", "4", "5"], "answer": "A" },
-          { "slo": "PHY-9-1.4.1", "marks": 1, "stem": "Significant figures in 30.06 are", "options": ["2", "3", "4", "5"], "answer": "C" },
-          { "slo": "PHY-9-1.4.1", "marks": 1, "stem": "In 2.5 × 3.42, the result should be reported to", "options": ["1 sig fig", "2 sig figs", "3 sig figs", "4 sig figs"], "answer": "B" },
-          { "slo": "PHY-9-1.4.1", "marks": 1, "stem": "Leading zeros in 0.0025 are", "options": ["significant", "not significant", "sometimes significant", "always two"], "answer": "B" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "Luminous intensity is measured in", "options": ["mole", "candela", "kelvin", "ampere"], "answer": "B" },
-          { "slo": "PHY-9-1.2.1", "marks": 1, "stem": "The amount of substance has the SI unit", "options": ["gram", "mole", "litre", "newton"], "answer": "B" },
-          { "slo": "PHY-9-1.3.1", "marks": 1, "stem": "If 6th vernier division coincides, the vernier reading is (LC 0.1 mm)", "options": ["0.6 mm", "6 mm", "0.06 mm", "0.16 mm"], "answer": "A" },
-          { "slo": "PHY-9-1.2.2", "marks": 1, "stem": "The prefix 'mega' represents", "options": ["10³", "10⁶", "10⁹", "10⁻⁶"], "answer": "B" }
-        ],
-        "short_questions": [
-          { "category": "concept", "slo": "PHY-9-1.2.1", "marks": 2, "stem": "Differentiate between base and derived quantities with one example each.", "marking_scheme": ["base quantity not defined in terms of others + example e.g. length (1)", "derived quantity formed by combining base quantities + example e.g. speed (1)"], "model_answer": "A base quantity is a fundamental quantity not defined in terms of any other, e.g. length (metre). A derived quantity is obtained by combining base quantities, e.g. speed (metre per second), which is length divided by time." },
-          { "category": "concept", "slo": "PHY-9-1.4.1", "marks": 2, "stem": "State any two rules for counting significant figures.", "marking_scheme": ["all non-zero digits are significant (1)", "zeros between non-zero digits are significant / leading zeros are not (1)"], "model_answer": "1) All non-zero digits are significant. 2) Zeros between two non-zero digits are significant, while leading (left-hand) zeros are not significant." },
-          { "category": "concept", "slo": "PHY-9-1.2.2", "marks": 2, "stem": "Why do scientists use standard (scientific) notation? Give one example.", "marking_scheme": ["compactly writes very large/small numbers (1)", "correct example in form a × 10ⁿ, 1 ≤ a < 10 (1)"], "model_answer": "Standard notation writes very large or very small numbers compactly and reduces errors. Example: the speed of light 300 000 000 m s⁻¹ = 3 × 10⁸ m s⁻¹." },
-          { "category": "concept", "slo": "PHY-9-1.3.1", "marks": 2, "stem": "Define least count and give the least count of a vernier callipers.", "marking_scheme": ["least count = smallest measurement an instrument can read (1)", "vernier least count = 0.1 mm / 0.01 cm (1)"], "model_answer": "Least count is the smallest measurement that an instrument can read accurately. For a vernier callipers it is 1 mm ÷ 10 = 0.1 mm (0.01 cm)." },
-          { "category": "exercise", "slo": "PHY-9-1.3.1", "marks": 3, "stem": "The main scale of a screw gauge reads 3 mm and the 45th circular division coincides. If the least count is 0.01 mm and there is no zero error, find the reading.", "marking_scheme": ["circular contribution = 45 × 0.01 = 0.45 mm (1)", "reading = 3 + 0.45 (1)", "= 3.45 mm with unit (1)"], "model_answer": "Circular-scale contribution = 45 × 0.01 mm = 0.45 mm. Total reading = main-scale + circular = 3 mm + 0.45 mm = 3.45 mm." },
-          { "category": "exercise", "slo": "PHY-9-1.2.2", "marks": 3, "stem": "Express (a) 62 000 000 m and (b) 0.000021 s in standard notation, and (c) write 5 kW in watts.", "marking_scheme": ["(a) 6.2 × 10⁷ m (1)", "(b) 2.1 × 10⁻⁵ s (1)", "(c) 5 × 10³ W = 5000 W (1)"], "model_answer": "(a) 6.2 × 10⁷ m. (b) 2.1 × 10⁻⁵ s. (c) 5 kW = 5 × 10³ W = 5000 W." },
-          { "category": "exercise", "slo": "PHY-9-1.4.1", "marks": 3, "stem": "Round the result of 12.6 × 0.25 to the correct number of significant figures and justify.", "marking_scheme": ["product = 3.15 (1)", "least sig figs in data = 2 (0.25) (1)", "answer reported as 3.2 (2 sf) (1)"], "model_answer": "12.6 × 0.25 = 3.15. The data with the fewest significant figures is 0.25 (2 s.f.), so the answer must have 2 s.f.: 3.2." }
-        ],
-        "long_questions": [
-          { "category": "concept", "slo": "PHY-9-1.2.1", "marks": 5, "stem": "Define a physical quantity. Distinguish between base and derived quantities, list any three base quantities with their SI units, and show how the unit of force is derived.", "marking_scheme": ["physical quantity = something that can be measured (1)", "base = fundamental, not defined in terms of others; derived = combination of base (1)", "any three base quantities with correct units e.g. length-m, mass-kg, time-s (1)", "F = ma stated (1)", "unit of force = kg × m s⁻² = kg m s⁻² = newton (1)"], "model_answer": "A physical quantity is any quantity that can be measured and expressed with a number and a unit. Base quantities are fundamental and not defined in terms of any other quantity; derived quantities are formed by combining base quantities. Three base quantities: length (metre, m), mass (kilogram, kg), time (second, s). Force is derived from Newton's second law F = ma; its unit is kg × m s⁻² = kg m s⁻², called the newton (N)." },
-          { "category": "exercise", "slo": "PHY-9-1.3.1", "marks": 5, "stem": "Describe how you would measure the diameter of a thin wire using a screw gauge. Include least count, zero error correction, and how the final reading is obtained.", "marking_scheme": ["least count = pitch ÷ circular divisions = 0.01 mm (1)", "check and note zero error before measuring (1)", "grip wire gently between studs using the ratchet (1)", "reading = main-scale + (coinciding circular division × LC) (1)", "apply zero-error correction to get true diameter (1)"], "model_answer": "First find the least count: pitch ÷ number of circular divisions = 1 mm ÷ 100 = 0.01 mm. Before measuring, close the gauge and note any zero error. Place the wire between the studs and turn the ratchet until it clicks so the wire is gripped gently. Take the reading = main-scale reading + (circular division coinciding with the reference line × least count). Finally apply the zero-error correction (subtract a positive error, add a negative error) to obtain the true diameter of the wire." }
-        ]
-      }
+      ]
     },
     {
       "seq": 2,
@@ -157,19 +93,13 @@
               "code": "PHY-9-2.1.1",
               "bloom_level": "understand",
               "statement": "Define rest and motion and explain that they are relative.",
-              "content_md": "## Rest and Motion\n\nA body is at **rest** if it does not change its position with respect to its surroundings, and in **motion** if it changes its position with respect to its surroundings, with time.\n\nRest and motion are **relative** — a passenger sitting in a moving bus is at rest relative to the bus but in motion relative to the road.\n\n**Examiner keyword:** the phrase *with respect to its surroundings (reference)* must appear.",
-              "topic_mcqs": [
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "A passenger in a moving train is at rest relative to", "options": ["the platform", "the trees", "another passenger in the train", "the rails"], "answer": "C", "explanation": "Relative to a fellow seated passenger, positions do not change." }
-              ]
+              "content_md": "## Rest and Motion\n\nA body is at **rest** if it does not change its position with respect to its surroundings, and in **motion** if it changes its position with respect to its surroundings, with time.\n\nRest and motion are **relative** — a passenger sitting in a moving bus is at rest relative to the bus but in motion relative to the road.\n\n**Examiner keyword:** the phrase *with respect to its surroundings (reference)* must appear."
             },
             {
               "code": "PHY-9-2.1.2",
               "bloom_level": "understand",
               "statement": "Distinguish between translatory, rotatory and vibratory motion.",
-              "content_md": "## Types of Motion\n\n* **Translatory** — every particle moves along parallel paths (linear, circular or random). Example: a car on a road.\n* **Rotatory** — a body spins about a fixed axis. Example: a spinning wheel.\n* **Vibratory** — a body moves to and fro about a mean position. Example: a pendulum.\n\n**Examiner keyword:** attach a *correct example* to each type.",
-              "topic_mcqs": [
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "The motion of a swinging pendulum is", "options": ["translatory", "rotatory", "vibratory", "random"], "answer": "C", "explanation": "To-and-fro motion about a mean position is vibratory." }
-              ]
+              "content_md": "## Types of Motion\n\n* **Translatory** — every particle moves along parallel paths (linear, circular or random). Example: a car on a road.\n* **Rotatory** — a body spins about a fixed axis. Example: a spinning wheel.\n* **Vibratory** — a body moves to and fro about a mean position. Example: a pendulum.\n\n**Examiner keyword:** attach a *correct example* to each type."
             }
           ]
         },
@@ -182,11 +112,7 @@
               "code": "PHY-9-2.2.1",
               "bloom_level": "understand",
               "statement": "Differentiate between scalar and vector quantities and between distance and displacement.",
-              "content_md": "## Scalars and Vectors\n\nA **scalar** has magnitude only (e.g. distance, speed, mass). A **vector** has both magnitude and direction (e.g. displacement, velocity, force).\n\n**Distance** is the total path length (scalar); **displacement** is the shortest straight-line distance from start to finish with direction (vector).\n\n**Examiner keyword:** displacement needs *direction* and *shortest path* to earn full marks.",
-              "topic_mcqs": [
-                { "bloom": "remember", "marks": 1, "difficulty": 1, "stem": "Which is a vector quantity?", "options": ["Distance", "Speed", "Velocity", "Mass"], "answer": "C", "explanation": "Velocity has magnitude and direction." },
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "A boy walks 4 m east then 3 m west. His displacement is", "options": ["7 m", "1 m east", "1 m west", "0 m"], "answer": "B", "explanation": "Net = 4 − 3 = 1 m towards east." }
-              ]
+              "content_md": "## Scalars and Vectors\n\nA **scalar** has magnitude only (e.g. distance, speed, mass). A **vector** has both magnitude and direction (e.g. displacement, velocity, force).\n\n**Distance** is the total path length (scalar); **displacement** is the shortest straight-line distance from start to finish with direction (vector).\n\n**Examiner keyword:** displacement needs *direction* and *shortest path* to earn full marks."
             }
           ]
         },
@@ -199,11 +125,7 @@
               "code": "PHY-9-2.3.1",
               "bloom_level": "apply",
               "statement": "Apply the three equations of uniformly accelerated motion to solve problems.",
-              "content_md": "## Equations of Motion\n\nFor uniform acceleration a:\n\n* v = v₍i₎ + a t\n* S = v₍i₎ t + ½ a t²\n* 2 a S = v₍f₎² − v₍i₎²\n\nwhere v₍i₎ is initial velocity, v₍f₎ final velocity, S displacement, t time.\n\n**Examiner keyword:** always write the formula, substitute with units, then evaluate — method marks are awarded even if the final number slips.",
-              "topic_mcqs": [
-                { "bloom": "apply", "marks": 1, "difficulty": 2, "stem": "A car starts from rest and accelerates at 2 m s⁻² for 5 s. Its final velocity is", "options": ["5 m s⁻¹", "10 m s⁻¹", "2 m s⁻¹", "20 m s⁻¹"], "answer": "B", "explanation": "v = 0 + 2×5 = 10 m s⁻¹." },
-                { "bloom": "apply", "marks": 1, "difficulty": 3, "stem": "Using 2aS = vf² − vi², a body from rest reaching 6 m s⁻¹ over 9 m has acceleration", "options": ["1 m s⁻²", "2 m s⁻²", "3 m s⁻²", "4 m s⁻²"], "answer": "B", "explanation": "2·a·9 = 36 ⇒ a = 2 m s⁻²." }
-              ]
+              "content_md": "## Equations of Motion\n\nFor uniform acceleration a:\n\n* v = v₍i₎ + a t\n* S = v₍i₎ t + ½ a t²\n* 2 a S = v₍f₎² − v₍i₎²\n\nwhere v₍i₎ is initial velocity, v₍f₎ final velocity, S displacement, t time.\n\n**Examiner keyword:** always write the formula, substitute with units, then evaluate — method marks are awarded even if the final number slips."
             }
           ]
         },
@@ -216,56 +138,11 @@
               "code": "PHY-9-2.4.1",
               "bloom_level": "understand",
               "statement": "Interpret distance–time and speed–time graphs, and apply equations to motion under gravity.",
-              "content_md": "## Graphs and Free Fall\n\nOn a **distance–time graph** the slope gives speed. On a **speed–time graph** the slope gives acceleration and the area under the line gives distance.\n\nFor a body falling freely, a = g ≈ 10 m s⁻² (near Earth). Use the equations of motion with a = g (downward positive) or a = −g (upward positive).\n\n**Examiner keyword:** state that *area under a speed–time graph = distance* — a common lost mark.",
-              "topic_mcqs": [
-                { "bloom": "understand", "marks": 1, "difficulty": 2, "stem": "The area under a speed–time graph gives", "options": ["acceleration", "distance", "speed", "force"], "answer": "B", "explanation": "Area under speed–time = distance travelled." }
-              ]
+              "content_md": "## Graphs and Free Fall\n\nOn a **distance–time graph** the slope gives speed. On a **speed–time graph** the slope gives acceleration and the area under the line gives distance.\n\nFor a body falling freely, a = g ≈ 10 m s⁻² (near Earth). Use the equations of motion with a = g (downward positive) or a = −g (upward positive).\n\n**Examiner keyword:** state that *area under a speed–time graph = distance* — a common lost mark."
             }
           ]
         }
-      ],
-      "chapter_test": {
-        "mcqs": [
-          { "slo": "PHY-9-2.1.1", "marks": 1, "stem": "Rest and motion are", "options": ["absolute", "relative", "always equal", "independent of a reference"], "answer": "B" },
-          { "slo": "PHY-9-2.1.1", "marks": 1, "stem": "A body changing its position with respect to its surroundings is said to be", "options": ["at rest", "in motion", "in equilibrium", "stationary"], "answer": "B" },
-          { "slo": "PHY-9-2.1.2", "marks": 1, "stem": "The spinning of a wheel about its axle is", "options": ["translatory", "rotatory", "vibratory", "random"], "answer": "B" },
-          { "slo": "PHY-9-2.1.2", "marks": 1, "stem": "Motion of a car on a straight road is", "options": ["vibratory", "rotatory", "translatory", "circular only"], "answer": "C" },
-          { "slo": "PHY-9-2.1.2", "marks": 1, "stem": "A vibrating guitar string shows", "options": ["rotatory motion", "vibratory motion", "translatory motion", "no motion"], "answer": "B" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "Which is a scalar quantity?", "options": ["Velocity", "Displacement", "Speed", "Force"], "answer": "C" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "Displacement is the shortest distance with", "options": ["no direction", "direction", "only magnitude", "two directions"], "answer": "B" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "A car travels 3 m north and 4 m east. Its displacement magnitude is", "options": ["7 m", "5 m", "1 m", "12 m"], "answer": "B" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "The rate of change of displacement is", "options": ["speed", "velocity", "acceleration", "distance"], "answer": "B" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "SI unit of acceleration is", "options": ["m s⁻¹", "m s⁻²", "m² s⁻¹", "m s"], "answer": "B" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "Which equation does NOT contain time?", "options": ["v = vi + at", "S = vi t + ½at²", "2aS = vf² − vi²", "S = vt"], "answer": "C" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "A body from rest with a = 4 m s⁻² after 3 s has velocity", "options": ["7 m s⁻¹", "12 m s⁻¹", "1.3 m s⁻¹", "4 m s⁻¹"], "answer": "B" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "Distance in 2 s by a body from rest at a = 5 m s⁻² is", "options": ["5 m", "10 m", "20 m", "2 m"], "answer": "B" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "If vi = 10, a = 0, then after time t the velocity is", "options": ["0", "10 m s⁻¹", "increases", "decreases"], "answer": "B" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "For uniform velocity, acceleration is", "options": ["positive", "negative", "zero", "increasing"], "answer": "C" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "The slope of a distance–time graph gives", "options": ["distance", "speed", "acceleration", "time"], "answer": "B" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "The slope of a speed–time graph gives", "options": ["distance", "speed", "acceleration", "force"], "answer": "C" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "The area under a speed–time graph gives", "options": ["acceleration", "distance", "speed", "mass"], "answer": "B" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "The value of g near Earth's surface is about", "options": ["10 m s⁻¹", "10 m s⁻²", "9.8 m s⁻¹", "1 m s⁻²"], "answer": "B" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "A stone dropped from rest falls for 2 s. Its velocity (g = 10) is", "options": ["10 m s⁻¹", "20 m s⁻¹", "5 m s⁻¹", "40 m s⁻¹"], "answer": "B" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "For a body thrown straight up, at the highest point its velocity is", "options": ["maximum", "zero", "equal to g", "negative"], "answer": "B" },
-          { "slo": "PHY-9-2.2.1", "marks": 1, "stem": "Speed is the magnitude of", "options": ["displacement", "velocity", "acceleration", "force"], "answer": "B" },
-          { "slo": "PHY-9-2.1.1", "marks": 1, "stem": "A driver sees a tree 'move backward'. This is because motion is", "options": ["absolute", "relative", "impossible", "vibratory"], "answer": "B" },
-          { "slo": "PHY-9-2.3.1", "marks": 1, "stem": "A body decelerating has acceleration that is", "options": ["zero", "positive", "negative", "constant positive"], "answer": "C" },
-          { "slo": "PHY-9-2.4.1", "marks": 1, "stem": "A horizontal line on a distance–time graph means the body is", "options": ["speeding up", "at rest", "accelerating", "falling"], "answer": "B" }
-        ],
-        "short_questions": [
-          { "category": "concept", "slo": "PHY-9-2.2.1", "marks": 2, "stem": "Differentiate between distance and displacement.", "marking_scheme": ["distance = total path length, scalar (1)", "displacement = shortest straight-line distance with direction, vector (1)"], "model_answer": "Distance is the total length of the path travelled and is a scalar. Displacement is the shortest straight-line distance from the initial to the final position, in a specified direction, and is a vector." },
-          { "category": "concept", "slo": "PHY-9-2.1.2", "marks": 2, "stem": "Name the three types of motion with one example each.", "marking_scheme": ["translatory + example (1)", "rotatory and vibratory + examples (1)"], "model_answer": "Translatory (a car on a road), rotatory (a spinning wheel) and vibratory (a swinging pendulum)." },
-          { "category": "concept", "slo": "PHY-9-2.1.1", "marks": 2, "stem": "Explain, with an example, why rest and motion are relative.", "marking_scheme": ["a body may be at rest w.r.t one reference and in motion w.r.t another (1)", "correct example, e.g. passenger in a bus (1)"], "model_answer": "A body can be at rest with respect to one observer and in motion with respect to another. A passenger seated in a moving bus is at rest relative to the bus but in motion relative to the road, so rest and motion are relative." },
-          { "category": "concept", "slo": "PHY-9-2.4.1", "marks": 2, "stem": "What does the slope and the area of a speed–time graph represent?", "marking_scheme": ["slope = acceleration (1)", "area under graph = distance travelled (1)"], "model_answer": "The slope of a speed–time graph represents acceleration, and the area under the graph represents the distance travelled." },
-          { "category": "exercise", "slo": "PHY-9-2.3.1", "marks": 3, "stem": "A car starting from rest reaches 20 m s⁻¹ in 8 s. Find its acceleration and the distance covered.", "marking_scheme": ["a = (v − vi)/t = 20/8 = 2.5 m s⁻² (1)", "S = vi t + ½at² = 0 + ½·2.5·64 (1)", "S = 80 m (1)"], "model_answer": "a = (v − vi)/t = (20 − 0)/8 = 2.5 m s⁻². S = vi t + ½ a t² = 0 + ½ × 2.5 × 8² = ½ × 2.5 × 64 = 80 m." },
-          { "category": "exercise", "slo": "PHY-9-2.4.1", "marks": 3, "stem": "A stone is dropped from rest from a height. Find its velocity and the distance fallen after 3 s (g = 10 m s⁻²).", "marking_scheme": ["v = gt = 10 × 3 = 30 m s⁻¹ (1)", "S = ½ g t² = ½ × 10 × 9 (1)", "S = 45 m (1)"], "model_answer": "v = g t = 10 × 3 = 30 m s⁻¹. S = ½ g t² = ½ × 10 × 3² = ½ × 10 × 9 = 45 m." },
-          { "category": "exercise", "slo": "PHY-9-2.3.1", "marks": 3, "stem": "A train moving at 30 m s⁻¹ is brought to rest in 10 s. Find its retardation and stopping distance.", "marking_scheme": ["a = (0 − 30)/10 = −3 m s⁻² (retardation 3 m s⁻²) (1)", "use 2aS = vf² − vi²: 2(−3)S = 0 − 900 (1)", "S = 150 m (1)"], "model_answer": "a = (vf − vi)/t = (0 − 30)/10 = −3 m s⁻², i.e. retardation of 3 m s⁻². Using 2aS = vf² − vi²: 2(−3)S = 0 − 30² ⇒ −6S = −900 ⇒ S = 150 m." }
-        ],
-        "long_questions": [
-          { "category": "concept", "slo": "PHY-9-2.3.1", "marks": 5, "stem": "Derive the equation of motion S = vi t + ½ a t² using a speed–time graph.", "marking_scheme": ["draw/describe speed–time graph from vi to vf over time t (1)", "distance = area under graph (1)", "area = rectangle (vi·t) + triangle (½·t·(vf−vi)) (1)", "substitute vf − vi = at (1)", "S = vi t + ½ a t² obtained (1)"], "model_answer": "Consider a body whose speed increases uniformly from vi to vf in time t. On a speed–time graph this is a straight line. Distance travelled = area under the graph = area of rectangle + area of triangle = (vi × t) + ½ × t × (vf − vi). Since acceleration a = (vf − vi)/t, we have vf − vi = a t. Substituting: S = vi t + ½ × t × (a t) = vi t + ½ a t²." },
-          { "category": "exercise", "slo": "PHY-9-2.4.1", "marks": 5, "stem": "A ball is thrown vertically upward with a velocity of 20 m s⁻¹ (g = 10 m s⁻²). Find (a) the maximum height, (b) the time to reach the top, and (c) the total time of flight.", "marking_scheme": ["at top vf = 0; use 2aS = vf² − vi² with a = −g (1)", "(a) S = 400/20 = 20 m (1)", "(b) t = (vf − vi)/a = 20/10 = 2 s (1)", "(c) total time = 2 × 2 = 4 s (1)", "correct units throughout (1)"], "model_answer": "Take upward positive, a = −g = −10 m s⁻². (a) At the highest point vf = 0. Using 2aS = vf² − vi²: 2(−10)S = 0 − 20² ⇒ −20S = −400 ⇒ S = 20 m. (b) t = (vf − vi)/a = (0 − 20)/(−10) = 2 s. (c) By symmetry the time down equals the time up, so total time of flight = 2 + 2 = 4 s." }
-        ]
-      }
+      ]
     }
   ]
 }
