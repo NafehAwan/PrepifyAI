@@ -53,7 +53,7 @@ export function Home() {
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
         <div>
           <div style={{ fontFamily: "Caprasimo", fontSize: 32, lineHeight: 1.1 }}>Assalam-o-Alaikum, {s.userName.split(" ")[0]}</div>
-          <div style={{ color: C.muted, marginTop: 4 }}>Class {s.cls.replace(/\D/g, "")} · {s.subs.length} subject{s.subs.length === 1 ? "" : "s"} · You&apos;re 3 topics ahead of your plan this week.</div>
+          <div style={{ color: C.muted, marginTop: 4 }}>Class {s.cls.replace(/\D/g, "")} · {s.subs.length} subject{s.subs.length === 1 ? "" : "s"}{s.authed ? "" : " · You're 3 topics ahead of your plan this week."}</div>
         </div>
         <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3 }}>
           <button onClick={() => set("homeVar", "A")} style={pill(s.homeVar === "A")}>A · Bento</button>

@@ -159,11 +159,9 @@ export const GAUGES: ReadonlyArray<readonly [string, number, string]> = [
   ["English", 66, "B"],
 ];
 
-export const REFERENCE_TODAY = "2026-08-15";
-
+// Real days from today until the exam date. 0 once the date has passed.
 export function daysUntil(examDate: string): number {
-  const d = Math.round(
-    (new Date(examDate).getTime() - new Date(REFERENCE_TODAY).getTime()) / 86400000,
-  );
-  return d > 0 ? d : 118;
+  if (!examDate) return 0;
+  const d = Math.round((new Date(examDate).getTime() - Date.now()) / 86400000);
+  return d > 0 ? d : 0;
 }
