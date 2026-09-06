@@ -46,12 +46,14 @@ export function Subjects() {
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
         {list.map(([name, demoPct, demoGrade, due]) => {
           const m = mastery[name];
-          const pct = m ? m.pct : demoPct;
-          const grade = m ? m.grade : demoGrade;
+          // Signed in → show real numbers (0 when nothing done). Demo mode only
+          // shows the sample figures.
+          const pct = m ? m.pct : s.authed ? 0 : demoPct;
+          const grade = m ? m.grade : s.authed ? "—" : demoGrade;
           const strong = pct >= 75;
           const tint = strong ? C.sageT : C.tint;
           const fg = strong ? C.sageD : C.accentD;
-          const meta = m ? `${m.total} topics · live` : "11 chapters · 48 topics";
+          const meta = m ? `${m.total} topics · live` : s.authed ? "Not started yet" : "11 chapters · 48 topics";
           return (
             <button key={name} onClick={() => openSubject(name)} style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 13, marginBottom: 16 }}>
@@ -67,7 +69,7 @@ export function Subjects() {
               </div>
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12.5, color: C.muted, fontWeight: 600 }}>
                 <span>{pct}% mastered</span>
-                <span>{m ? `${m.mastered}/${m.total} topics` : `${due} due`}</span>
+                <span>{m ? `${m.mastered}/${m.total} topics` : s.authed ? "0 done" : `${due} due`}</span>
               </div>
             </button>
           );

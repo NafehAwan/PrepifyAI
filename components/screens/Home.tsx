@@ -8,24 +8,28 @@ import { getSubjectMastery, weakSpotsFrom, type SubjectMastery } from "@/lib/ana
 import { StrokeIcon, PATH } from "../Icon";
 
 type Mastery = Record<string, SubjectMastery>;
+type Gauge = { name: string; pct: number; grade: string };
+type Weak = { topic: string; subject: string; score: string };
 
 function gaugeColor(pct: number): string {
   return pct >= 75 ? C.sage : pct >= 55 ? C.accent : C.danger;
 }
 
-// Predicted-grade gauges: real per-subject mastery when available, else demo.
-function gaugeRows(mastery: Mastery): Array<{ name: string; pct: number; grade: string }> {
+// Predicted-grade gauges. Signed in → real (0 when nothing done); demo mode
+// shows the sample figures.
+function gaugeRows(mastery: Mastery, authed: boolean): Array<{ name: string; pct: number; grade: string }> {
   return GAUGES.map(([name, demoPct, demoGrade]) => {
     const m = mastery[name];
-    return { name, pct: m ? m.pct : demoPct, grade: m ? m.grade : demoGrade };
+    return { name, pct: m ? m.pct : authed ? 0 : demoPct, grade: m ? m.grade : authed ? "—" : demoGrade };
   });
 }
 
-// Weak spots: real attempted-not-passed topics when available, else demo.
-function weakRows(mastery: Mastery): Array<{ topic: string; subject: string; score: string }> {
-  const rw = weakSpotsFrom(mastery, 3);
-  if (rw.length > 0) return rw.map((w) => ({ topic: w.title, subject: `${w.subject} · ${w.chapter}`, score: `${w.scorePct}%` }));
-  return WEAK.map(([topic, subject, score]) => ({ topic, subject, score }));
+// Weak spots. Signed in → real attempted-not-passed topics (may be empty);
+// demo mode shows the sample list.
+function weakRows(mastery: Mastery, authed: boolean): Array<{ topic: string; subject: string; score: string }> {
+  const rw = weakSpotsFrom(mastery, 3).map((w) => ({ topic: w.title, subject: `${w.subject} · ${w.chapter}`, score: `${w.scorePct}%` }));
+  if (authed) return rw;
+  return rw.length > 0 ? rw : WEAK.map(([topic, subject, score]) => ({ topic, subject, score }));
 }
 
 export function Home() {
@@ -40,8 +44,10 @@ export function Home() {
       active = false;
     };
   }, [s.subs]);
-  const signedIn = Object.keys(mastery).length > 0;
-  const reviewsDue = signedIn ? weakSpotsFrom(mastery, 99).length : 23;
+  const reviewsDue = s.authed ? weakSpotsFrom(mastery, 99).length : 23;
+  const gauges = gaugeRows(mastery, s.authed);
+  const weak = weakRows(mastery, s.authed);
+  const fresh = s.authed && gauges.every((g) => g.pct === 0); // signed in, nothing done yet
   return (
     <>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
@@ -54,28 +60,28 @@ export function Home() {
           <button onClick={() => set("homeVar", "B")} style={pill(s.homeVar === "B")}>B · Focus rail</button>
         </div>
       </div>
-      {s.homeVar === "A" ? <BentoHome mastery={mastery} reviewsDue={reviewsDue} /> : <FocusHome mastery={mastery} reviewsDue={reviewsDue} />}
+      {s.homeVar === "A" ? <BentoHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} /> : <FocusHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} />}
     </>
   );
 }
 
-function BentoHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: number }) {
+function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak: Weak[]; reviewsDue: number; fresh: boolean }) {
   const { go } = useApp();
-  const gauges = gaugeRows(mastery);
-  const weak = weakRows(mastery);
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 16, alignItems: "start" }}>
       {/* resume */}
       <div style={{ gridColumn: "span 2", background: C.accent, borderRadius: 24, padding: "26px 28px", color: "#fff", display: "flex", alignItems: "center", gap: 24, boxShadow: "0 12px 28px rgba(198,113,57,.25)" }}>
         <div style={{ flex: 1 }}>
-          <Kicker light>Continue where you left off</Kicker>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 26, lineHeight: 1.15, marginBottom: 6 }}>Physics · Ch 5 — Circular Motion</div>
-          <div style={{ opacity: 0.9, fontSize: 14 }}>Topic 5.3 Centripetal Force · you stopped 4 min into the reading</div>
-          <div style={{ height: 8, background: "rgba(255,255,255,.28)", borderRadius: 999, marginTop: 16, maxWidth: 340 }}>
-            <div style={{ height: 8, width: "38%", background: "#fff", borderRadius: 999 }} />
-          </div>
+          <Kicker light>{fresh ? "Start learning" : "Continue where you left off"}</Kicker>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 26, lineHeight: 1.15, marginBottom: 6 }}>{fresh ? "Open your first subject" : "Physics · Ch 5 — Circular Motion"}</div>
+          <div style={{ opacity: 0.9, fontSize: 14 }}>{fresh ? "Pick a subject, read the topic, then take the quiz to master it." : "Topic 5.3 Centripetal Force · you stopped 4 min into the reading"}</div>
+          {!fresh && (
+            <div style={{ height: 8, background: "rgba(255,255,255,.28)", borderRadius: 999, marginTop: 16, maxWidth: 340 }}>
+              <div style={{ height: 8, width: "38%", background: "#fff", borderRadius: 999 }} />
+            </div>
+          )}
         </div>
-        <button onClick={() => go("topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "14px 26px", fontSize: 15, flex: "none" }}>Resume →</button>
+        <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "14px 26px", fontSize: 15, flex: "none" }}>{fresh ? "Browse subjects →" : "Resume →"}</button>
       </div>
 
       {/* reviews */}
@@ -114,7 +120,7 @@ function BentoHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
       <div style={{ gridColumn: "span 2", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
         <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 16 }}>
           <div style={{ fontWeight: 700, fontSize: 15 }}>Predicted grade by subject</div>
-          <div style={{ fontSize: 12.5, color: C.muted }}>Based on 412 answered questions</div>
+          <div style={{ fontSize: 12.5, color: C.muted }}>{fresh ? "Pass topic quizzes to build these" : "Based on your quiz results"}</div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 14 }}>
           {gauges.map(({ name, pct, grade }) => {
@@ -142,7 +148,7 @@ function BentoHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
       {/* weak spots */}
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
         <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Weak spots</div>
-        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>Fix these three and your predicted average moves up a grade.</div>
+        <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>{weak.length === 0 ? "No weak spots yet — take a topic quiz and they'll show up here." : "Fix these and your predicted average moves up a grade."}</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {weak.map(({ topic, subject, score }) => (
             <button key={topic} onClick={() => go("practice")} style={{ width: "100%", textAlign: "left", display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "12px 14px" }}>
@@ -159,10 +165,8 @@ function BentoHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
   );
 }
 
-function FocusHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: number }) {
+function FocusHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak: Weak[]; reviewsDue: number; fresh: boolean }) {
   const { go } = useApp();
-  const gauges = gaugeRows(mastery);
-  const weak = weakRows(mastery);
   return (
     <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
       <div style={{ flex: 1, minWidth: 420, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -180,7 +184,7 @@ function FocusHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
               </div>
             ))}
           </div>
-          <button onClick={() => go("topic")} style={{ marginTop: 18, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15 }}>Start with Centripetal Force →</button>
+          <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ marginTop: 18, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15 }}>{fresh ? "Browse subjects →" : "Start with Centripetal Force →"}</button>
         </div>
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
           <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 14 }}>Predicted grades</div>
@@ -202,9 +206,9 @@ function FocusHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
       </div>
       <div style={{ width: 320, flex: "none", display: "flex", flexDirection: "column", gap: 16 }}>
         <div style={{ background: C.accent, color: "#fff", borderRadius: 24, padding: 22, boxShadow: "0 12px 28px rgba(198,113,57,.25)" }}>
-          <Kicker light>Resume</Kicker>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 21, lineHeight: 1.2, marginBottom: 12 }}>Ch 5 — Circular Motion</div>
-          <button onClick={() => go("topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>Continue</button>
+          <Kicker light>{fresh ? "Get started" : "Resume"}</Kicker>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 21, lineHeight: 1.2, marginBottom: 12 }}>{fresh ? "Open your first subject" : "Ch 5 — Circular Motion"}</div>
+          <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>{fresh ? "Browse" : "Continue"}</button>
         </div>
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 20, textAlign: "center" }}>
           <div style={{ fontFamily: "Caprasimo", fontSize: 40, lineHeight: 1, color: C.accent }}>{reviewsDue}</div>
@@ -213,6 +217,7 @@ function FocusHome({ mastery, reviewsDue }: { mastery: Mastery; reviewsDue: numb
         </div>
         <div style={{ background: C.sageT, borderRadius: 24, padding: 20 }}>
           <div style={{ fontWeight: 700, fontSize: 14, color: C.sageD, marginBottom: 10 }}>Weak spots</div>
+          {weak.length === 0 && <div style={{ fontSize: 12.5, color: "#5d6b46", lineHeight: 1.4 }}>None yet — take a topic quiz to find them.</div>}
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {weak.map(({ topic, score }) => (
               <button key={topic} onClick={() => go("practice")} style={{ width: "100%", textAlign: "left", fontSize: 13.5, fontWeight: 600, color: "#3f4a2b", display: "flex", justifyContent: "space-between", gap: 10 }}>

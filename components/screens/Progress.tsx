@@ -60,9 +60,10 @@ export function Progress() {
   // Blend real mastery over the demo baseline so the aggregate + heat-map stay
   // populated for subjects that aren't seeded yet.
   const realWeak = weakSpotsFrom(mastery);
-  const aggPcts = SUBJECTS.map(([name, demoPct]) => mastery[name]?.pct ?? demoPct);
+  // Signed in → real numbers (0 when nothing done); demo mode shows samples.
+  const aggPcts = SUBJECTS.map(([name, demoPct]) => mastery[name]?.pct ?? (s.authed ? 0 : demoPct));
   const aggPct = Math.round(aggPcts.reduce((a, b) => a + b, 0) / aggPcts.length);
-  const aggGrade = pctToGrade(aggPct);
+  const aggGrade = s.authed && aggPct === 0 ? "—" : pctToGrade(aggPct);
   const aggMarks = Math.round((aggPct / 100) * 1100);
 
   return (
@@ -71,7 +72,7 @@ export function Progress() {
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 6, gap: 12, flexWrap: "wrap" }}>
             <div style={{ fontWeight: 700, fontSize: 16 }}>Syllabus coverage map</div>
-            <div style={{ fontSize: 12.5, color: C.muted }}>Every learning outcome in your 9 subjects · 486 total</div>
+            <div style={{ fontSize: 12.5, color: C.muted }}>Each square is a topic — it fills in as you master it</div>
           </div>
           <div style={{ display: "flex", gap: 14, margin: "12px 0 20px", flexWrap: "wrap" }}>
             {LEGEND.map(([label, bg]) => (
@@ -84,9 +85,9 @@ export function Progress() {
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {SUBJECTS.map(([name, demoPct, demoGrade]) => {
               const m = mastery[name];
-              const pct = m ? m.pct : demoPct;
-              const grade = m ? m.grade : demoGrade;
-              const cells = m ? realCells(m) : coverageCells(name, demoPct);
+              const pct = m ? m.pct : s.authed ? 0 : demoPct;
+              const grade = m ? m.grade : s.authed ? "—" : demoGrade;
+              const cells = m ? realCells(m) : s.authed ? Array(24).fill("#e3d5bb") : coverageCells(name, demoPct);
               const fg = pct >= 75 ? C.sageD : C.accentD;
               return (
                 <div key={name} style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -106,17 +107,19 @@ export function Progress() {
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
           <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Weakest areas to fix</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 16 }}>
-            {realWeak.length > 0 ? "Topics you attempted but haven't passed — weakest first." : "Ranked by marks at risk in the real paper."}
+            {realWeak.length > 0 ? "Topics you attempted but haven't passed — weakest first." : s.authed ? "Take topic quizzes to reveal your weak areas." : "Ranked by marks at risk in the real paper."}
           </div>
-          {realWeak.length === 0 && Object.keys(mastery).length > 0 && (
+          {realWeak.length === 0 && s.authed && (
             <div style={{ fontSize: 13, color: C.sageD, background: C.sageT, borderRadius: 14, padding: "12px 14px", marginBottom: 12 }}>
-              No failed topics in your live subjects — keep it up.
+              No weak spots yet — take a topic quiz and any you miss will show here.
             </div>
           )}
           <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
             {(realWeak.length > 0
               ? realWeak.map((w) => ({ topic: w.title, sub: `${w.subject} · ${w.chapter}`, score: `${w.scorePct}%`, pct: w.scorePct }))
-              : WEAK_LIST.map(([topic, subject, score, pct, risk]) => ({ topic, sub: `${subject} · ${risk} marks at risk`, score, pct }))
+              : s.authed
+                ? []
+                : WEAK_LIST.map(([topic, subject, score, pct, risk]) => ({ topic, sub: `${subject} · ${risk} marks at risk`, score, pct }))
             ).map(({ topic, sub, score, pct }) => (
               <button key={topic} onClick={() => go("practice")} style={{ width: "100%", display: "flex", alignItems: "center", gap: 14, background: C.bg, borderRadius: 16, padding: "13px 16px", textAlign: "left" }}>
                 <div style={{ width: 40, flex: "none", fontFamily: "Caprasimo", fontSize: 18, color: C.accentD }}>{score}</div>
@@ -151,8 +154,8 @@ export function Progress() {
           <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
             {SUBJECTS.map(([name, demoPct, demoGrade]) => {
               const m = mastery[name];
-              const pct = m ? m.pct : demoPct;
-              const grade = m ? m.grade : demoGrade;
+              const pct = m ? m.pct : s.authed ? 0 : demoPct;
+              const grade = m ? m.grade : s.authed ? "—" : demoGrade;
               return (
                 <div key={name} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 13.5, fontWeight: 600 }}>
                   <span>{name}{m && <span style={{ fontSize: 10, color: C.sageD, fontWeight: 700, marginLeft: 6 }}>LIVE</span>}</span>
@@ -162,14 +165,16 @@ export function Progress() {
             })}
           </div>
         </div>
-        <div style={{ background: C.sageT, borderRadius: 24, padding: 22 }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 32, color: C.sageD, lineHeight: 1 }}>17</div>
-          <div style={{ fontSize: 13, fontWeight: 700, color: C.sageD, marginTop: 2 }}>day streak · Level 12</div>
-          <div style={{ fontSize: 13, color: "#5d6b46", lineHeight: 1.5, marginTop: 10 }}>Longest streak yet. 160 XP to Level 13.</div>
-          <div style={{ height: 8, background: "rgba(255,255,255,.6)", borderRadius: 999, marginTop: 12 }}>
-            <div style={{ height: 8, width: "78%", background: C.sage, borderRadius: 999 }} />
+        {!s.authed && (
+          <div style={{ background: C.sageT, borderRadius: 24, padding: 22 }}>
+            <div style={{ fontFamily: "Caprasimo", fontSize: 32, color: C.sageD, lineHeight: 1 }}>17</div>
+            <div style={{ fontSize: 13, fontWeight: 700, color: C.sageD, marginTop: 2 }}>day streak · Level 12</div>
+            <div style={{ fontSize: 13, color: "#5d6b46", lineHeight: 1.5, marginTop: 10 }}>Longest streak yet. 160 XP to Level 13.</div>
+            <div style={{ height: 8, background: "rgba(255,255,255,.6)", borderRadius: 999, marginTop: 12 }}>
+              <div style={{ height: 8, width: "78%", background: C.sage, borderRadius: 999 }} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
