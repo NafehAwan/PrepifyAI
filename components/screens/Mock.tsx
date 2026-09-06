@@ -2,6 +2,7 @@
 
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
+import { ComingSoon } from "../ComingSoon";
 
 const SECTIONS: ReadonlyArray<readonly [string, number, number, string]> = [
   ["Section A · MCQs", 15, 17, "Fast and accurate — no change needed."],
@@ -22,6 +23,14 @@ function sectionColor(pct: number): string {
 
 export function Mock() {
   const { s } = useApp();
+  if (s.authed)
+    return (
+      <ComingSoon
+        title="Mock exams are coming"
+        desc="Timed full-paper mocks assembled from your board's pattern, with a live paper map and marks breakdown. We're wiring them to your real question bank — for now, drill a chapter in Practice."
+        cta={{ label: "Go to Practice", to: "practice" }}
+      />
+    );
   if (s.mockRunning) return <MockRunning />;
   if (s.mockDone) return <MockDone />;
   return <MockIntro />;

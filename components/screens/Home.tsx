@@ -66,7 +66,7 @@ export function Home() {
 }
 
 function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak: Weak[]; reviewsDue: number; fresh: boolean }) {
-  const { go } = useApp();
+  const { s, go } = useApp();
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 16, alignItems: "start" }}>
       {/* resume */}
@@ -102,6 +102,10 @@ function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak:
       {/* today's plan */}
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
         <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 4 }}>Today&apos;s Plan</div>
+        {s.authed ? (
+          <div style={{ fontSize: 13, color: C.muted, lineHeight: 1.5, marginTop: 6 }}>Your daily plan is coming soon. For now, open a subject and work through its topics in order.</div>
+        ) : (
+          <>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>3 of 5 done · 38 min left</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
           {TASKS.map(([title, meta, done]) => (
@@ -114,6 +118,8 @@ function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak:
             </div>
           ))}
         </div>
+          </>
+        )}
       </div>
 
       {/* gauges */}
@@ -166,24 +172,28 @@ function BentoHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak:
 }
 
 function FocusHome({ gauges, weak, reviewsDue, fresh }: { gauges: Gauge[]; weak: Weak[]; reviewsDue: number; fresh: boolean }) {
-  const { go } = useApp();
+  const { s, go } = useApp();
   return (
     <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
       <div style={{ flex: 1, minWidth: 420, display: "flex", flexDirection: "column", gap: 16 }}>
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "26px 28px" }}>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>Your next 38 minutes</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-            {TASKS.map(([title, meta, done, time]) => (
-              <div key={title} style={{ display: "flex", alignItems: "center", gap: 14, background: done ? "transparent" : C.bg, borderRadius: 18, padding: "14px 16px" }}>
-                <Checkbox done={done === 1} size={26} />
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: 15, fontWeight: 600, color: done ? "#9a8d78" : C.ink, textDecoration: done ? "line-through" : "none" }}>{title}</div>
-                  <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{meta}</div>
+          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>{s.authed ? "Get started" : "Your next 38 minutes"}</div>
+          {s.authed ? (
+            <div style={{ fontSize: 14, color: C.muted, lineHeight: 1.55 }}>Your daily study plan is coming soon. For now, open a subject, read a topic, then take its quiz to master it.</div>
+          ) : (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {TASKS.map(([title, meta, done, time]) => (
+                <div key={title} style={{ display: "flex", alignItems: "center", gap: 14, background: done ? "transparent" : C.bg, borderRadius: 18, padding: "14px 16px" }}>
+                  <Checkbox done={done === 1} size={26} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: 15, fontWeight: 600, color: done ? "#9a8d78" : C.ink, textDecoration: done ? "line-through" : "none" }}>{title}</div>
+                    <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{meta}</div>
+                  </div>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: done ? C.sageD : C.accentD, background: done ? C.sageT : C.tint, borderRadius: 999, padding: "5px 12px" }}>{time}</div>
                 </div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: done ? C.sageD : C.accentD, background: done ? C.sageT : C.tint, borderRadius: 999, padding: "5px 12px" }}>{time}</div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           <button onClick={() => go(fresh ? "subjects" : "topic")} style={{ marginTop: 18, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15 }}>{fresh ? "Browse subjects →" : "Start with Centripetal Force →"}</button>
         </div>
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
