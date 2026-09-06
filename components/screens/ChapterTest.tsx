@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { getChapterTest, type DBChapterTest } from "@/lib/curriculum";
+import { getChapterTest, getChapterGrounding, type DBMcq } from "@/lib/curriculum";
+import { generateQuiz } from "@/lib/ai/generate";
 import { persistChapterAttempt, type ChapterReport } from "@/lib/supabase/persist";
 
 const PASS_BAR = 50; // FBISE pass mark
@@ -22,28 +23,55 @@ export function ChapterTest() {
   const { s, patch, go } = useApp();
   const chapterId = s.testChapterId;
 
-  const [test, setTest] = useState<DBChapterTest | null>(null);
+  const [title, setTitle] = useState(s.testChapterTitle || "Chapter");
+  const [mcqs, setMcqs] = useState<DBMcq[]>([]);
+  const [source, setSource] = useState<"book" | "bank">("bank");
   const [loading, setLoading] = useState(true);
   const [picks, setPicks] = useState<Record<string, number>>({});
   const [phase, setPhase] = useState<"taking" | "grading" | "results">("taking");
   const [result, setResult] = useState<Result | null>(null);
+  const [nonce, setNonce] = useState(0);
 
+  // Build the test. Prefer a fresh AI-generated set from the chapter's book
+  // text (needs the student's key); fall back to any seeded MCQ bank.
   useEffect(() => {
     let active = true;
-    setLoading(true);
     if (!chapterId) {
       setLoading(false);
       return;
     }
-    getChapterTest(chapterId).then((t) => {
+    setLoading(true);
+    setResult(null);
+    setPicks({});
+    setPhase("taking");
+    (async () => {
+      const [t, grounding] = await Promise.all([getChapterTest(chapterId), getChapterGrounding(chapterId)]);
       if (!active) return;
-      setTest(t);
+      if (t?.chapterTitle) setTitle(t.chapterTitle);
+
+      let qs: DBMcq[] = [];
+      let src: "book" | "bank" = "bank";
+      if (grounding && s.groqKey) {
+        const gen = await generateQuiz(
+          { subject: grounding.subject, classLevel: grounding.classLevel, medium: "English", level: "Developing", sloList: grounding.sloList, groundTruth: grounding.groundTruth },
+          10,
+          s.groqKey,
+        );
+        if (!active) return;
+        if (gen && gen.length > 0) {
+          qs = gen;
+          src = "book";
+        }
+      }
+      if (qs.length === 0) qs = t?.mcqs ?? []; // fall back to the seeded bank
+      setMcqs(qs);
+      setSource(src);
       setLoading(false);
-    });
+    })().catch(() => active && setLoading(false));
     return () => {
       active = false;
     };
-  }, [chapterId]);
+  }, [chapterId, nonce, s.groqKey]);
 
   const back = () => {
     patch({ testChapterId: null, testChapterTitle: null });
@@ -51,10 +79,10 @@ export function ChapterTest() {
   };
 
   const submit = async () => {
-    if (!test || !chapterId) return;
+    if (!chapterId) return;
     setPhase("grading");
-    const total = test.mcqs.length;
-    const correct = test.mcqs.reduce((n, q) => n + (picks[q.id] === q.answer ? 1 : 0), 0);
+    const total = mcqs.length;
+    const correct = mcqs.reduce((n, q) => n + (picks[q.id] === q.answer ? 1 : 0), 0);
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
     const passed = pct >= PASS_BAR;
 
@@ -66,21 +94,19 @@ export function ChapterTest() {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
 
-  const title = test?.chapterTitle || s.testChapterTitle || "Chapter";
-
-  if (loading) return <Frame title={title} back={back}><div style={{ color: C.muted, fontSize: 14 }}>Loading the chapter test…</div></Frame>;
-  if (!test || test.mcqs.length === 0) {
+  if (loading) return <Frame title={title} back={back}><div style={{ color: C.muted, fontSize: 14 }}>{s.groqKey ? "Building your test from the book…" : "Loading the chapter test…"}</div></Frame>;
+  if (mcqs.length === 0) {
     return (
       <Frame title={title} back={back}>
         <div style={{ maxWidth: 620, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
-          No MCQs are loaded for this chapter yet. The conceptual MCQ bank will appear here once it&apos;s added.
+          Couldn&apos;t build a test for this chapter yet. Connect your AI key (Settings) so questions can be generated from the book, or add a question bank.
         </div>
       </Frame>
     );
   }
 
   if (phase === "results" && result) {
-    return <Results title={title} test={test} result={result} picks={picks} onBack={back} onRetake={() => { setPicks({}); setResult(null); setPhase("taking"); }} />;
+    return <Results title={title} mcqs={mcqs} result={result} picks={picks} onBack={back} onRetake={() => { setPicks({}); setResult(null); setPhase("taking"); }} />;
   }
 
   const grading = phase === "grading";
@@ -89,14 +115,17 @@ export function ChapterTest() {
   return (
     <Frame title={title} back={back}>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 18, alignItems: "center" }}>
-        <Tag>{test.mcqs.length} MCQ</Tag>
-        <Tag>1 mark each</Tag>
+        <Tag>{mcqs.length} MCQ</Tag>
+        <Tag>{source === "book" ? "Generated from the book" : "From the question bank"}</Tag>
+        {source === "book" && (
+          <button onClick={() => setNonce((n) => n + 1)} style={{ fontSize: 12, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "5px 12px" }}>🔄 New test</button>
+        )}
         <div style={{ flex: 1 }} />
-        <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>{answered}/{test.mcqs.length} answered · pass ≥ {PASS_BAR}%</div>
+        <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>{answered}/{mcqs.length} answered · pass ≥ {PASS_BAR}%</div>
       </div>
 
       <div style={{ maxWidth: 900, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px", marginBottom: 16 }}>
-        {test.mcqs.map((q, qi) => (
+        {mcqs.map((q, qi) => (
           <div key={q.id} style={{ marginBottom: 18 }}>
             <div style={{ fontSize: 14.5, fontWeight: 600, lineHeight: 1.45, marginBottom: 10 }}>{qi + 1}. {q.stem}</div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 8 }}>
@@ -124,7 +153,7 @@ export function ChapterTest() {
   );
 }
 
-function Results({ title, test, result, picks, onBack, onRetake }: { title: string; test: DBChapterTest; result: Result; picks: Record<string, number>; onBack: () => void; onRetake: () => void }) {
+function Results({ title, mcqs, result, picks, onBack, onRetake }: { title: string; mcqs: DBMcq[]; result: Result; picks: Record<string, number>; onBack: () => void; onRetake: () => void }) {
   const { pct, passed, correct, total, saved } = result;
   return (
     <Frame title={title} back={onBack}>
@@ -149,7 +178,7 @@ function Results({ title, test, result, picks, onBack, onRetake }: { title: stri
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
           <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Answer review</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-            {test.mcqs.map((q, qi) => {
+            {mcqs.map((q, qi) => {
               const pick = picks[q.id];
               const right = pick === q.answer;
               return (
