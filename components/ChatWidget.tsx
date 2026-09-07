@@ -36,7 +36,10 @@ export function ChatWidget() {
       });
       if (res.status === 503) reply = "Connect your free AI key in Settings → Connect your AI, then I can help you learn anything.";
       else if (res.ok) reply = ((await res.json()) as { reply?: string }).reply ?? "Sorry, I couldn't answer that — try again.";
-      else reply = "Something went wrong. Please try again in a moment.";
+      else {
+        const err = ((await res.json().catch(() => ({}))) as { error?: string }).error;
+        reply = err ? `Couldn't answer: ${err}` : "Something went wrong. Please try again in a moment.";
+      }
     } catch {
       reply = "I couldn't reach the AI service. Check your connection and try again.";
     }
