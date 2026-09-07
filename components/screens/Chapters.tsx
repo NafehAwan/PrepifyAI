@@ -111,6 +111,9 @@ export function Chapters() {
             const masteredHere = c.topics.filter((t) => mastery!.states[t.id] === "done").length;
             const pct = c.topics.length > 0 ? Math.round((masteredHere / c.topics.length) * 100) : 0;
             const chFg = masteredHere === c.topics.length && c.topics.length > 0 ? C.sage : masteredHere > 0 ? C.accent : "#b3a58c";
+            const allDone = c.topics.length > 0 && masteredHere === c.topics.length;
+            // Guided path: the whole-chapter test is locked until every topic is passed.
+            const testLocked = guided && !allDone;
             return (
               <div key={c.id} style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, overflow: "hidden" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 18px" }}>
@@ -130,9 +133,15 @@ export function Chapters() {
                   {chapterProg[c.id]?.passed && (
                     <span style={{ flex: "none", fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "5px 11px", background: C.sageT, color: C.sageD }}>Test ✓ {chapterProg[c.id]?.bestPct}%</span>
                   )}
-                  <button onClick={() => startTest(c.id, c.title)} style={{ flex: "none", fontSize: 12.5, fontWeight: 700, borderRadius: 999, padding: "9px 16px", background: chapterProg[c.id] ? C.sand : C.accent, color: chapterProg[c.id] ? "#5d5648" : "#fff" }}>
-                    {chapterProg[c.id] ? "Retake test" : "Take test"}
-                  </button>
+                  {testLocked ? (
+                    <span title="Pass every topic in this chapter to unlock the full chapter test" style={{ flex: "none", fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "9px 14px", background: C.sand, color: "#a89a80", display: "flex", alignItems: "center", gap: 5 }}>
+                      <StrokeIcon d={PATH.lock} size={12} stroke="#a89a80" width={2.6} /> Test locked
+                    </span>
+                  ) : (
+                    <button onClick={() => startTest(c.id, c.title)} style={{ flex: "none", fontSize: 12.5, fontWeight: 700, borderRadius: 999, padding: "9px 16px", background: chapterProg[c.id] ? C.sand : C.accent, color: chapterProg[c.id] ? "#5d5648" : "#fff" }}>
+                      {chapterProg[c.id] ? "Retake test" : "Take test"}
+                    </button>
+                  )}
                 </div>
                 {open && (
                   <div style={{ padding: "0 20px 16px 70px", display: "flex", flexDirection: "column", gap: 6 }}>

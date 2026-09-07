@@ -36,6 +36,8 @@ export function clearGroqKey(): void {
 // storage). Returns an empty object when there's no key so the route 503s and
 // the UI falls back to canned content.
 export function groqAuthHeaders(key?: string): Record<string, string> {
-  const k = (key ?? getGroqKey()).trim();
+  // Fall back to the stored key when the passed value is empty/undefined (e.g.
+  // the store hasn't hydrated yet), so a valid key in localStorage is still used.
+  const k = ((key && key.trim()) || getGroqKey()).trim();
   return k ? { [GROQ_KEY_HEADER]: k } : {};
 }
