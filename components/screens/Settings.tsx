@@ -6,12 +6,14 @@ import { C, pill } from "@/lib/theme";
 import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
 import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
+import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
 import type { AppState } from "@/lib/types";
 
 const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
 
 export function Settings() {
   const { s, set, patch } = useApp();
+  const muted = useMuted();
 
   // Apply a change locally and persist it (persist is a no-op in demo mode).
   const saveProfile = (partial: Partial<AppState>) => {
@@ -92,6 +94,10 @@ export function Settings() {
           <Divider />
           <Row title="Daily reminder" desc="A nudge at 7:30 pm if you haven't studied.">
             <Toggle on={s.remind} onClick={() => set("remind", !s.remind)} />
+          </Row>
+          <Divider />
+          <Row title="Sound effects" desc="Little chimes when you answer questions and pass a quiz.">
+            <Toggle on={!muted} onClick={() => { const nextMuted = !muted; setMuted(nextMuted); if (!nextMuted) sfxCorrect(); }} />
           </Row>
         </div>
       </div>

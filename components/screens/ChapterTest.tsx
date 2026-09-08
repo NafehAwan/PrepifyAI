@@ -7,6 +7,8 @@ import { getChapterTest, getChapterGrounding, type DBMcq } from "@/lib/curriculu
 import { generateQuiz } from "@/lib/ai/generate";
 import { shuffleMcqs } from "@/lib/quizUtil";
 import { persistChapterAttempt, type ChapterReport } from "@/lib/supabase/persist";
+import { Mascot } from "../Mascot";
+import { sfxWin, sfxTryAgain } from "@/lib/sfx";
 
 const PASS_BAR = 50; // FBISE pass mark
 
@@ -95,6 +97,7 @@ export function ChapterTest() {
 
     setResult({ pct, passed, correct, total, saved: ok ? "saved" : "local" });
     setPhase("results");
+    (passed ? sfxWin : sfxTryAgain)();
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
 
@@ -165,6 +168,7 @@ function Results({ title, mcqs, result, picks, onBack, onRetake }: { title: stri
     <Frame title={title} back={onBack}>
       <div style={{ maxWidth: 900, display: "flex", flexDirection: "column", gap: 16 }}>
         <div style={{ background: passed ? C.sageT : C.tint, borderRadius: 24, padding: "26px 28px", display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
+          <Mascot mood={passed ? "celebrate" : "sad"} size={84} />
           <div style={{ fontFamily: "Caprasimo", fontSize: 56, lineHeight: 1, color: passed ? C.sageD : C.accentD }}>{pct}%</div>
           <div style={{ flex: 1, minWidth: 220 }}>
             <div style={{ fontFamily: "Caprasimo", fontSize: 22, marginBottom: 4 }}>{passed ? "Chapter passed" : "Not passed yet"}</div>

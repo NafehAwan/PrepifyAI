@@ -45,6 +45,16 @@ html { scroll-behavior: smooth; }
 @keyframes pf-spin { to { transform: rotate(360deg); } }
 @keyframes pf-bounce-in { 0% { opacity: 0; transform: scale(.6); } 60% { transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
 
+/* mascot ("Prepi") motion */
+@keyframes pf-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes pf-blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+@keyframes pf-celebrate { 0% { transform: translateY(0) rotate(0); } 25% { transform: translateY(-7px) rotate(-6deg); } 50% { transform: translateY(0) rotate(0); } 75% { transform: translateY(-4px) rotate(6deg); } 100% { transform: translateY(0) rotate(0); } }
+@keyframes pf-droop { 0%, 100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(2px) rotate(-3deg); } }
+.pf-bob { animation: pf-bob 3.2s ease-in-out infinite; }
+.pf-blink { transform-box: fill-box; transform-origin: center; animation: pf-blink 4.6s ease-in-out infinite; }
+.pf-celebrate { animation: pf-celebrate .9s ease-in-out infinite; }
+.pf-droop { animation: pf-droop 3s ease-in-out infinite; }
+
 /* subtle lift for cards/tappable tiles that opt in */
 .pf-lift { transition: transform .16s ease, box-shadow .18s ease; }
 .pf-lift:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(90,62,30,.12); }
