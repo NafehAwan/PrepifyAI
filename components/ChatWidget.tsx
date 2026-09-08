@@ -7,6 +7,7 @@ import { groqAuthHeaders } from "@/lib/ai/key";
 import type { ChatMsg } from "@/lib/types";
 import { ChatSession, deleteChat, deriveTitle, loadChats, newChatId, saveChat } from "@/lib/ai/chatStore";
 import { Mascot } from "./Mascot";
+import { ChatMarkdown, plainLength } from "./ChatMarkdown";
 import { sfxTap } from "@/lib/sfx";
 
 // Floating "Ask Prepify" helper, available on every dashboard screen. A general
@@ -22,6 +23,9 @@ export function ChatWidget() {
   const [chatId, setChatId] = useState<string>(() => newChatId());
   const [chats, setChats] = useState<ChatSession[]>([]);
   const [showHistory, setShowHistory] = useState(false);
+  // Typewriter: which message index is currently revealing, and how many chars.
+  const [typeIdx, setTypeIdx] = useState<number | null>(null);
+  const [typeShown, setTypeShown] = useState(0);
   const scroller = useRef<HTMLDivElement | null>(null);
   const createdAt = useRef<number>(Date.now());
 
@@ -32,7 +36,19 @@ export function ChatWidget() {
 
   useEffect(() => {
     scroller.current?.scrollTo({ top: scroller.current.scrollHeight, behavior: "smooth" });
-  }, [msgs, open]);
+  }, [msgs, open, typeShown]);
+
+  // Drive the typewriter reveal of the newest AI reply.
+  useEffect(() => {
+    if (typeIdx === null) return;
+    const msg = msgs[typeIdx];
+    if (!msg) { setTypeIdx(null); return; }
+    const full = plainLength(msg[1]);
+    if (typeShown >= full) { setTypeIdx(null); return; }
+    const step = Math.max(2, Math.round(full / 90)); // ~1.5s regardless of length
+    const id = setTimeout(() => setTypeShown((n) => Math.min(full, n + step)), 18);
+    return () => clearTimeout(id);
+  }, [typeIdx, typeShown, msgs]);
 
   // Persist the current conversation whenever it has real messages.
   const persist = (next: ChatMsg[]) => {
@@ -54,6 +70,7 @@ export function ChatWidget() {
     setChatId(newChatId());
     createdAt.current = Date.now();
     setShowHistory(false);
+    setTypeIdx(null);
   };
 
   const openChat = (c: ChatSession) => {
@@ -61,6 +78,7 @@ export function ChatWidget() {
     setChatId(c.id);
     createdAt.current = c.createdAt;
     setShowHistory(false);
+    setTypeIdx(null); // old chats render fully, no re-typing
   };
 
   const removeChat = (id: string) => {
@@ -72,6 +90,7 @@ export function ChatWidget() {
   const send = async (text: string) => {
     const t = text.trim();
     if (!t || busy) return;
+    sfxTap();
     const history: ChatMsg[] = [...msgs, ["me", t]];
     setMsgs([...history, ["ai", "…"]]);
     setDraft("");
@@ -96,6 +115,9 @@ export function ChatWidget() {
     setMsgs(settled);
     persist(settled);
     setBusy(false);
+    // reveal the reply with a typewriter effect
+    setTypeIdx(settled.length - 1);
+    setTypeShown(0);
   };
 
   const chips = ["Explain photosynthesis simply", "How do I study for the board?", "Give me an example of Newton's first law"];
@@ -134,7 +156,7 @@ export function ChatWidget() {
           }}
         >
           <div style={{ padding: "12px 14px", background: C.accent, color: "#fff", display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,.25)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden" }}><Mascot mood="happy" size={30} /></div>
+            <div style={{ width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,.25)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden" }}><Mascot mood={busy ? "thinking" : "happy"} size={30} /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ fontWeight: 700, fontSize: 14.5 }}>Ask Prepify</div>
               <div style={{ fontSize: 11.5, opacity: 0.9, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
@@ -177,15 +199,20 @@ export function ChatWidget() {
             <>
               <div ref={scroller} style={{ flex: 1, overflow: "auto", padding: 16, display: "flex", flexDirection: "column", gap: 10 }}>
                 {msgs.length === 0 && (
-                  <div style={{ alignSelf: "flex-start", maxWidth: "90%", background: C.bg, borderRadius: "14px 14px 14px 4px", padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b" }}>
-                    Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
+                    <Mascot mood="wave" size={72} />
+                    <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
+                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
+                    </div>
                   </div>
                 )}
                 {msgs.map(([who, text], i) => {
                   const me = who === "me";
+                  const thinking = !me && text === "…";
+                  const limit = i === typeIdx ? typeShown : undefined;
                   return (
-                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: "pre-wrap", animation: "pf-in .2s ease" }}>
-                      {text}
+                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: me ? "pre-wrap" : "normal", animation: "pf-in .2s ease" }}>
+                      {me ? text : thinking ? <TypingDots /> : <ChatMarkdown text={text} limit={limit} />}
                     </div>
                   );
                 })}
@@ -222,6 +249,17 @@ export function ChatWidget() {
         </div>
       )}
     </>
+  );
+}
+
+// Three little bouncing dots shown while Prepi is thinking.
+function TypingDots() {
+  return (
+    <span style={{ display: "inline-flex", gap: 4, alignItems: "center", padding: "2px 0" }}>
+      {[0, 1, 2].map((i) => (
+        <span key={i} style={{ width: 7, height: 7, borderRadius: 999, background: C.accent, display: "inline-block", animation: "pf-typing 1s ease-in-out infinite", animationDelay: `${i * 0.16}s` }} />
+      ))}
+    </span>
   );
 }
 

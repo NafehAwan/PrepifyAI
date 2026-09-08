@@ -50,10 +50,21 @@ html { scroll-behavior: smooth; }
 @keyframes pf-blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
 @keyframes pf-celebrate { 0% { transform: translateY(0) rotate(0); } 25% { transform: translateY(-7px) rotate(-6deg); } 50% { transform: translateY(0) rotate(0); } 75% { transform: translateY(-4px) rotate(6deg); } 100% { transform: translateY(0) rotate(0); } }
 @keyframes pf-droop { 0%, 100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(2px) rotate(-3deg); } }
+@keyframes pf-tilt { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(3deg); } }
+@keyframes pf-hop { 0%, 100% { transform: translateY(0); } 30% { transform: translateY(-8px); } 45% { transform: translateY(0); } }
+@keyframes pf-wave-wing { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-24deg); } 75% { transform: rotate(10deg); } }
+@keyframes pf-sway { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes pf-sparkle { 0%, 100% { opacity: .3; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.1); } }
+@keyframes pf-typing { 0%, 100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(-5px); opacity: 1; } }
 .pf-bob { animation: pf-bob 3.2s ease-in-out infinite; }
 .pf-blink { transform-box: fill-box; transform-origin: center; animation: pf-blink 4.6s ease-in-out infinite; }
 .pf-celebrate { animation: pf-celebrate .9s ease-in-out infinite; }
 .pf-droop { animation: pf-droop 3s ease-in-out infinite; }
+.pf-tilt { transform-box: fill-box; transform-origin: 50% 80%; animation: pf-tilt 2.6s ease-in-out infinite; }
+.pf-hop { animation: pf-hop 1.4s ease-in-out infinite; }
+.pf-sway { transform-box: fill-box; transform-origin: 50% 90%; animation: pf-sway 2.4s ease-in-out infinite; }
+.pf-wing-wave { transform-box: fill-box; transform-origin: 85% 30%; animation: pf-wave-wing 1s ease-in-out infinite; }
+.pf-sparkle { transform-box: fill-box; transform-origin: center; animation: pf-sparkle 1.3s ease-in-out infinite; }
 
 /* subtle lift for cards/tappable tiles that opt in */
 .pf-lift { transition: transform .16s ease, box-shadow .18s ease; }
