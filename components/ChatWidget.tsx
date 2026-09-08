@@ -6,6 +6,8 @@ import { C } from "@/lib/theme";
 import { groqAuthHeaders } from "@/lib/ai/key";
 import type { ChatMsg } from "@/lib/types";
 import { ChatSession, deleteChat, deriveTitle, loadChats, newChatId, saveChat } from "@/lib/ai/chatStore";
+import { Mascot } from "./Mascot";
+import { sfxTap } from "@/lib/sfx";
 
 // Floating "Ask Prepify" helper, available on every dashboard screen. A general
 // study buddy (not topic-grounded) so a student can ask anything and learn.
@@ -105,20 +107,21 @@ export function ChatWidget() {
 
   return (
     <>
-      {/* launcher */}
+      {/* launcher — Prepi the mascot waves you over */}
       <button
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => { sfxTap(); setOpen((v) => !v); }}
         aria-label="Ask Prepify"
         style={{
-          position: "fixed", right: 22, bottom: 22, zIndex: 60, width: 58, height: 58, borderRadius: 999,
-          background: C.accent, color: "#fff", boxShadow: "0 10px 26px rgba(198,113,57,.4)",
-          display: "flex", alignItems: "center", justifyContent: "center", animation: "pf-bounce-in .4s ease",
+          position: "fixed", right: 22, bottom: 22, zIndex: 60, width: 62, height: 62, borderRadius: 999,
+          background: open ? C.accent : C.card, border: `2px solid ${C.accent}`,
+          boxShadow: "0 10px 26px rgba(198,113,57,.4)",
+          display: "flex", alignItems: "center", justifyContent: "center", animation: "pf-bounce-in .4s ease", overflow: "hidden",
         }}
       >
         {open ? (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
         ) : (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.9-.9L3 21l1.9-5.6A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z" /></svg>
+          <Mascot mood="idle" size={50} />
         )}
       </button>
 
@@ -131,7 +134,7 @@ export function ChatWidget() {
           }}
         >
           <div style={{ padding: "12px 14px", background: C.accent, color: "#fff", display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ width: 30, height: 30, borderRadius: 999, background: "rgba(255,255,255,.2)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 15, flex: "none" }}>P</div>
+            <div style={{ width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,.25)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden" }}><Mascot mood="happy" size={30} /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <div style={{ fontWeight: 700, fontSize: 14.5 }}>Ask Prepify</div>
               <div style={{ fontSize: 11.5, opacity: 0.9, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>

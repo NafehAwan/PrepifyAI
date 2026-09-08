@@ -10,6 +10,8 @@ import { persistTopicProgress } from "@/lib/supabase/persist";
 import { generateQuiz } from "@/lib/ai/generate";
 import { shuffleMcqs } from "@/lib/quizUtil";
 import { MarkdownLite } from "../MarkdownLite";
+import { Mascot } from "../Mascot";
+import { sfxCorrect, sfxWrong, sfxWin, sfxTryAgain } from "@/lib/sfx";
 import type { ChatMsg } from "@/lib/types";
 
 const QUIZ_OPTS = ["2 N", "4 N", "8 N", "16 N"];
@@ -365,6 +367,7 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
   // When the quiz finishes, record the result to the student's account (once).
   useEffect(() => {
     if (!done) return;
+    (passed ? sfxWin : sfxTryAgain)();
     setSave("saving");
     let active = true;
     persistTopicProgress(topicId, { scorePct: pct, passed }).then((ok) => {
@@ -386,6 +389,7 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
     const backToMap = () => { patch({ selectedTopicId: null, teach: null, chat: [] }); go("chapters"); };
     return (
       <div style={{ flex: 1, overflow: "auto", padding: 22, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", gap: 10 }}>
+        <Mascot mood={passed ? "celebrate" : "sad"} size={92} />
         <div style={{ fontFamily: "Caprasimo", fontSize: 40, color: passed ? C.sage : C.accent }}>{pct}%</div>
         <div style={{ fontWeight: 700, fontSize: 16 }}>{correct} of {total} correct</div>
         <div style={{ fontSize: 13.5, color: C.muted, maxWidth: 300, lineHeight: 1.5 }}>
@@ -410,7 +414,12 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
   const choose = (i: number) => {
     if (pick !== null) return;
     setPick(i);
-    if (i === q.answer) setCorrect((c) => c + 1);
+    if (i === q.answer) {
+      setCorrect((c) => c + 1);
+      sfxCorrect();
+    } else {
+      sfxWrong();
+    }
   };
   const next = () => {
     if (qi + 1 >= total) setDone(true);
@@ -442,7 +451,9 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
         })}
       </div>
       {pick !== null && (
-        <div style={{ marginTop: 16, background: pick === q.answer ? C.sageT : C.tint, borderRadius: 16, padding: "13px 16px" }}>
+        <div style={{ marginTop: 16, background: pick === q.answer ? C.sageT : C.tint, borderRadius: 16, padding: "13px 16px", display: "flex", gap: 12, alignItems: "flex-start" }}>
+          <Mascot mood={pick === q.answer ? "happy" : "sad"} size={40} className="pf-in" />
+          <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 700, color: pick === q.answer ? C.sageD : C.accentD, fontSize: 14, marginBottom: 4 }}>
             {pick === q.answer ? "Correct" : `Not quite — the answer is ${"ABCD"[q.answer]}`}
           </div>
@@ -452,6 +463,7 @@ function RealQuiz({ topicId, mcqs }: { topicId: string; mcqs: DBTopicContent["mc
           <button onClick={next} style={{ marginTop: 6, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 20px", fontSize: 13.5 }}>
             {qi + 1 >= total ? "See result" : "Next question →"}
           </button>
+          </div>
         </div>
       )}
     </div>
