@@ -10,10 +10,13 @@
 
 export const GROQ_BASE_URL = process.env.GROQ_BASE_URL ?? "https://api.groq.com/openai/v1";
 
-// Groq serves open models with a generous free tier. Default to their best
-// general-purpose chat model; override with PREPIFY_MODEL (e.g.
-// `llama-3.1-8b-instant` for faster/cheaper, or any current Groq model id).
-export const GROQ_MODEL = process.env.PREPIFY_MODEL ?? "llama-3.3-70b-versatile";
+// Fallback model id used only if live model discovery fails. Groq retires
+// model ids over time, so at runtime we query the account's available models
+// (see pickModel in client.ts) and choose one that actually works.
+export const GROQ_MODEL = process.env.PREPIFY_MODEL || "llama-3.1-8b-instant";
+
+// When PREPIFY_MODEL is explicitly set, pin to it and skip auto-discovery.
+export const GROQ_MODEL_PINNED = !!process.env.PREPIFY_MODEL;
 
 // Optional server-side fallback key (developer convenience for local testing).
 // Real users bring their own key from the browser instead.

@@ -1,4 +1,43 @@
-import { GROQ_BASE_URL, GROQ_MODEL } from "./config";
+import { GROQ_BASE_URL, GROQ_MODEL, GROQ_MODEL_PINNED } from "./config";
+
+// Cache the chosen model across requests (Groq retires ids, so we resolve a
+// real one from the account's /models list once).
+let cachedModel: string | null = null;
+
+// Prefer a capable general chat model, then progressively fall back.
+const MODEL_PREFERENCE: RegExp[] = [
+  /llama-3\.3-70b/i,
+  /70b.*(versatile|instruct)/i,
+  /llama.*70b/i,
+  /llama-3\.1-8b-instant/i,
+  /8b.*instant/i,
+  /gpt-oss/i,
+  /llama/i,
+];
+
+export async function pickModel(key: string): Promise<string> {
+  if (GROQ_MODEL_PINNED) return GROQ_MODEL; // developer pinned via PREPIFY_MODEL
+  if (cachedModel) return cachedModel;
+  try {
+    const res = await fetch(`${GROQ_BASE_URL}/models`, { headers: { Authorization: `Bearer ${key}` } });
+    if (res.ok) {
+      const data = (await res.json()) as { data?: Array<{ id: string; active?: boolean }> };
+      const ids = (data.data ?? [])
+        .filter((m) => m.active !== false)
+        .map((m) => m.id)
+        // drop non-text models (audio / moderation / embeddings)
+        .filter((id) => !/whisper|tts|guard|embed|distil|prompt-guard/i.test(id));
+      for (const re of MODEL_PREFERENCE) {
+        const hit = ids.find((id) => re.test(id));
+        if (hit) return (cachedModel = hit);
+      }
+      if (ids.length) return (cachedModel = ids[0]);
+    }
+  } catch {
+    // fall through to the static fallback
+  }
+  return GROQ_MODEL;
+}
 
 // Minimal Groq chat client over the OpenAI-compatible Chat Completions API.
 // We use plain fetch (no SDK) so the student's key can be passed per-request and
@@ -37,7 +76,7 @@ export interface GroqChatResult {
 // failure (invalid key, rate limit, bad model, network) so callers can surface
 // it or fall back to canned content.
 export async function groqChat(opts: GroqChatOptions): Promise<GroqChatResult> {
-  const model = opts.model ?? GROQ_MODEL;
+  const model = opts.model ?? (await pickModel(opts.key));
   const res = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
     method: "POST",
     headers: {

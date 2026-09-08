@@ -231,7 +231,6 @@ function RealTopic({ topicId }: { topicId: string }) {
   const { patch, go } = useApp();
   const [content, setContent] = useState<DBTopicContent | null>(null);
   const [loading, setLoading] = useState(true);
-  const [rightTab, setRightTab] = useState<"tutor" | "quiz">("tutor");
 
   useEffect(() => {
     let active = true;
@@ -289,55 +288,14 @@ function RealTopic({ topicId }: { topicId: string }) {
             </div>
           </div>
 
-          {/* right panel */}
+          {/* right panel — read the textbook on the left, test yourself here.
+              Questions are handled by the floating "Ask Prepify" chatbot. */}
           <div style={{ width: 420, flex: "1 1 360px", height: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, display: "flex", flexDirection: "column", overflow: "hidden" }}>
-            <div style={{ padding: 12, borderBottom: "1px solid #ece0c8" }}>
-              <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
-                <button onClick={() => setRightTab("tutor")} style={wideTab(rightTab === "tutor")}>① Learn</button>
-                <button onClick={() => setRightTab("quiz")} style={wideTab(rightTab === "quiz")}>② Test</button>
-              </div>
-            </div>
-            {rightTab === "tutor" ? <RealTutor topicTitle={content.title} /> : <QuizPanel content={content} />}
+            <div style={{ padding: "14px 18px", borderBottom: "1px solid #ece0c8", fontWeight: 700, fontSize: 14 }}>Test yourself</div>
+            <QuizPanel content={content} />
           </div>
         </div>
       )}
-    </>
-  );
-}
-
-function RealTutor({ topicTitle }: { topicTitle: string }) {
-  const { s, set, ask } = useApp();
-  const msgs = s.chat;
-  return (
-    <>
-      <div style={{ flex: 1, overflow: "auto", padding: 18, display: "flex", flexDirection: "column", gap: 12 }}>
-        {msgs.length === 0 && (
-          <div style={{ alignSelf: "flex-start", maxWidth: "88%", background: C.bg, color: "#332f2b", borderRadius: "16px 16px 16px 4px", padding: "12px 15px", fontSize: 14, lineHeight: 1.55 }}>
-            Salam! Ask me anything about <strong>{topicTitle}</strong> and I&apos;ll answer only from your FBISE textbook, citing the SLO.
-          </div>
-        )}
-        {msgs.map(([who, text], i) => {
-          const me = who === "me";
-          return (
-            <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "88%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "16px 16px 4px 16px" : "16px 16px 16px 4px", padding: "12px 15px", fontSize: 14, lineHeight: 1.55, whiteSpace: "pre-wrap" }}>
-              {text}
-            </div>
-          );
-        })}
-      </div>
-      <div style={{ padding: 12, borderTop: "1px solid #ece0c8" }}>
-        <div style={{ display: "flex", gap: 8, marginBottom: 9, flexWrap: "wrap" }}>
-          {["Explain simpler", "Give me an example", "What can they ask in the paper?"].map((c) => (
-            <button key={c} onClick={() => ask(c)} style={{ fontSize: 12, fontWeight: 600, color: "#5d5648", background: C.bg, border: `1px solid ${C.line}`, borderRadius: 999, padding: "6px 12px" }}>{c}</button>
-          ))}
-        </div>
-        <div style={{ display: "flex", gap: 8, alignItems: "center", background: C.bg, borderRadius: 999, padding: "5px 5px 5px 16px" }}>
-          <input value={s.draft} onChange={(e) => set("draft", e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); ask(s.draft); } }} placeholder="Ask about this topic…" style={{ flex: 1, minWidth: 0, border: 0, background: "transparent", outline: "none", fontSize: 14, padding: "8px 0" }} />
-          <button onClick={() => ask(s.draft)} style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.accent, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <FillIcon d={PATH.send} fill="#fff" />
-          </button>
-        </div>
-      </div>
     </>
   );
 }
