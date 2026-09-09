@@ -200,7 +200,7 @@ export function ChatWidget() {
               <div ref={scroller} style={{ flex: 1, overflow: "auto", padding: 16, display: "flex", flexDirection: "column", gap: 10 }}>
                 {msgs.length === 0 && (
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
-                    <Mascot mood="wave" size={72} />
+                    <Mascot mood="book" size={78} />
                     <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
                       Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
                     </div>
