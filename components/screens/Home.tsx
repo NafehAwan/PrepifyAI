@@ -6,6 +6,7 @@ import { C } from "@/lib/theme";
 import { TASKS, WEAK, GAUGES } from "@/lib/data";
 import { getSubjectMastery, weakSpotsFrom, type SubjectMastery } from "@/lib/analytics";
 import { StrokeIcon, PATH } from "../Icon";
+import { Mascot, type Mood } from "../Mascot";
 
 type Mastery = Record<string, SubjectMastery>;
 type Gauge = { name: string; pct: number; grade: string };
@@ -48,6 +49,7 @@ export function Home() {
   const gauges = gaugeRows(mastery, s.authed);
   const weak = weakRows(mastery, s.authed);
   const fresh = s.authed && gauges.every((g) => g.pct === 0); // signed in, nothing done yet
+  const greet = pickGreeting({ fresh, reviewsDue, weakCount: weak.length, name: s.userName.split(" ")[0] });
   return (
     <>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
@@ -55,9 +57,33 @@ export function Home() {
           <div style={{ fontFamily: "Caprasimo", fontSize: 32, lineHeight: 1.1 }}>Assalam-o-Alaikum, {s.userName.split(" ")[0]}</div>
           <div style={{ color: C.muted, marginTop: 4 }}>Class {s.cls.replace(/\D/g, "")} · {s.subs.length} subject{s.subs.length === 1 ? "" : "s"}{s.authed ? "" : " · You're 3 topics ahead of your plan this week."}</div>
         </div>
+        <HomeGreeter mood={greet.mood} text={greet.text} />
       </div>
       <BentoHome gauges={gauges} weak={weak} reviewsDue={reviewsDue} fresh={fresh} />
     </>
+  );
+}
+
+// Prepi greets the student on the dashboard, reacting to their progress and the
+// time of day with a short, warm message in a speech bubble.
+function pickGreeting({ fresh, reviewsDue, weakCount }: { fresh: boolean; reviewsDue: number; weakCount: number; name: string }): { mood: Mood; text: string } {
+  const hour = new Date().getHours();
+  if (hour >= 23 || hour < 5) return { mood: "sleepy", text: "Studying late? Do one more topic, then rest — a fresh brain scores better." };
+  if (fresh) return { mood: "wave", text: "Salam! Ready to begin? Pick a subject and I'll quiz you once you've read a topic." };
+  if (weakCount > 0) return { mood: "thinking", text: `You've got ${weakCount} weak spot${weakCount > 1 ? "s" : ""} to polish. Want to knock one out today?` };
+  if (reviewsDue === 0) return { mood: "proud", text: "All caught up — mashallah! Keep the momentum going." };
+  return { mood: "happy", text: "Let's learn something today. Tap a subject to get started." };
+}
+
+function HomeGreeter({ mood, text }: { mood: Mood; text: string }) {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 12, maxWidth: "100%" }}>
+      <div style={{ position: "relative", background: C.card, border: `1px solid ${C.line}`, borderRadius: 18, padding: "11px 15px", maxWidth: 250, fontSize: 13.5, lineHeight: 1.5, color: "#4a443c", boxShadow: "0 6px 18px rgba(90,62,30,.08)", animation: "pf-pop .3s ease" }}>
+        {text}
+        <div style={{ position: "absolute", right: -7, top: "50%", transform: "translateY(-50%) rotate(45deg)", width: 13, height: 13, background: C.card, borderRight: `1px solid ${C.line}`, borderTop: `1px solid ${C.line}` }} />
+      </div>
+      <Mascot mood={mood} size={92} className="pf-lift" />
+    </div>
   );
 }
 
