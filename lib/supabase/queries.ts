@@ -6,6 +6,7 @@ import {
   displayNameFromEmail,
   fromDbMode,
 } from "@/lib/mappings";
+import { isAiConfigured } from "@/lib/ai/config";
 
 export interface UserContext {
   authed: boolean;
@@ -52,6 +53,7 @@ export async function loadUserContext(
   const initial: Partial<AppState> = {
     authed: true,
     supabaseConfigured: true,
+    aiConfigured: isAiConfigured(), // shared server key set → no per-user key needed
     userName,
     userEmail,
     screen: onboarded ? "home" : "onboarding",

@@ -36,7 +36,7 @@ export function Practice() {
   }, [subjectId]);
 
   const start = async (chapterId: string) => {
-    if (!s.groqKey) {
+    if (!s.groqKey && !s.aiConfigured) {
       setNote("Connect your Groq key in Settings to generate practice questions.");
       return;
     }

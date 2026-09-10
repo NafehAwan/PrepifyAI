@@ -16,6 +16,9 @@ import { sfxTap } from "@/lib/sfx";
 // return to old ones.
 export function ChatWidget() {
   const { s, go } = useApp();
+  // AI works when the student connected their own key OR the owner set a shared
+  // server key — either way, no per-student setup is needed to chat.
+  const aiReady = !!s.groqKey || s.aiConfigured;
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<ChatMsg[]>([]);
   const [draft, setDraft] = useState("");
@@ -202,7 +205,7 @@ export function ChatWidget() {
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
                     <Mascot mood="book" size={78} />
                     <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
-                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
+                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {aiReady ? "" : "First connect your free AI key in Settings."}
                     </div>
                   </div>
                 )}
@@ -226,7 +229,7 @@ export function ChatWidget() {
                     ))}
                   </div>
                 )}
-                {!s.groqKey && (
+                {!aiReady && (
                   <button onClick={() => { setOpen(false); go("settings"); }} style={{ width: "100%", marginBottom: 9, fontSize: 12.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px" }}>
                     Connect your free AI key →
                   </button>
