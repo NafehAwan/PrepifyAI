@@ -146,13 +146,15 @@ function ConnectAI() {
   return (
     <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-        <div style={{ fontWeight: 700, fontSize: 16 }}>Connect your AI tutor</div>
-        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#8d8069" }}>
-          {connected ? "✓ Connected" : "Not connected"}
+        <div style={{ fontWeight: 700, fontSize: 16 }}>{s.aiConfigured ? "Your AI tutor" : "Connect your AI tutor"}</div>
+        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected || s.aiConfigured ? C.sageT : C.sand, color: connected || s.aiConfigured ? C.sageD : "#8d8069" }}>
+          {connected ? "✓ Your key" : s.aiConfigured ? "✓ Ready" : "Not connected"}
         </span>
       </div>
       <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 18 }}>
-        Prepify uses your own free Groq API key to power the tutor and examiner. It&apos;s stored only in this browser — we never see or save it. It takes about a minute to set up.
+        {s.aiConfigured
+          ? "The AI tutor and examiner are already set up for everyone — you don't need to do anything. Optionally, add your own free Groq key below for higher personal usage limits; it's stored only in this browser."
+          : "Prepify uses your own free Groq API key to power the tutor and examiner. It's stored only in this browser — we never see or save it. It takes about a minute to set up."}
       </div>
 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", marginBottom: 12 }}>

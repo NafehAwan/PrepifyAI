@@ -324,7 +324,7 @@ function QuizPanel({ content }: { content: DBTopicContent }) {
       setGen(q);
       setNonce((n) => n + 1);
     } else {
-      setNote("Couldn't generate — connect your Groq key in Settings, then try again.");
+      setNote(s.groqKey || s.aiConfigured ? "Couldn't generate — please try again in a moment." : "Couldn't generate — connect your Groq key in Settings, then try again.");
     }
   };
 

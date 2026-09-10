@@ -43,6 +43,7 @@ const INITIAL: AppState = {
   remind: true,
   authed: false,
   supabaseConfigured: false,
+  aiConfigured: false,
   userName: "Areeba",
   userEmail: "areeba.r@example.com",
   selectedSubjectId: null,
