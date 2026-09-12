@@ -6,12 +6,14 @@ import { C, pill } from "@/lib/theme";
 import { CH } from "@/lib/data";
 import { StrokeIcon, PATH } from "../Icon";
 import { getChapters, getTopicProgress, getChapterProgress, computeTopicStates, type DBChapter, type DBTopicProgress, type DBChapterProgress, type TopicMastery } from "@/lib/curriculum";
+import { LearningPath, type PathSection, type NodeState } from "./LearningPath";
 
 type TopicState = "done" | "now" | "not";
 
 export function Chapters() {
   const { s, set, patch, go } = useApp();
   const guided = s.mode === "guided";
+  const [view, setView] = useState<"path" | "list">("path");
 
   // Load the real chapter tree for the selected subject (if any), plus the
   // student's saved progress so topics show real mastery + guided locking.
@@ -68,6 +70,36 @@ export function Chapters() {
   const mastery = hasReal ? computeTopicStates(dbChapters!, dbProgress, guided) : null;
   const mc = mastery?.counts;
 
+  // Winding-path sections built from whatever data we have (real DB, else the
+  // sample chapters when no subject is selected).
+  const isDemoPath = !hasReal && !s.selectedSubjectId;
+  const pathSections: PathSection[] | null = (() => {
+    if (hasReal && mastery) {
+      return dbChapters!.map((c) => {
+        const topics = c.topics.map((t) => ({ id: t.id, title: t.title, state: (mastery.states[t.id] ?? "open") as NodeState }));
+        const allDone = c.topics.length > 0 && c.topics.every((t) => mastery.states[t.id] === "done");
+        const cp = chapterProg[c.id];
+        const testState: NodeState = cp?.passed ? "done" : guided && !allDone ? "locked" : "open";
+        return { id: c.id, title: c.title, seq: c.seq, topics, test: { state: testState, pct: cp?.bestPct } };
+      });
+    }
+    if (isDemoPath) {
+      return CH.map(([num, title, topics, st2]) => {
+        const tps = topics.map((t, ti) => {
+          let state: NodeState;
+          if (st2 === "m") state = "done";
+          else if (st2 === "p") state = ti < 2 ? "done" : ti === 2 ? "now" : guided ? "locked" : "open";
+          else state = guided ? "locked" : "open";
+          return { id: `ch${num}-t${ti}`, title: t, state };
+        });
+        return { id: `ch${num}`, title, seq: num, topics: tps, test: null };
+      });
+    }
+    return null;
+  })();
+
+  const showPath = view === "path" && pathSections !== null;
+
   return (
     <>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 18 }}>
@@ -75,10 +107,13 @@ export function Chapters() {
           <button onClick={() => go("subjects")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>← My Subjects</button>
           <div style={{ fontFamily: "Caprasimo", fontSize: 28 }}>{subjectTitle}</div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>Study mode</div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
           <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3 }}>
-            <button onClick={() => set("mode", "guided")} style={pill(guided)}>Guided path</button>
+            <button onClick={() => setView("path")} style={pill(view === "path")}>🗺️ Path</button>
+            <button onClick={() => setView("list")} style={pill(view === "list")}>☰ List</button>
+          </div>
+          <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3 }}>
+            <button onClick={() => set("mode", "guided")} style={pill(guided)}>Guided</button>
             <button onClick={() => set("mode", "free")} style={pill(!guided)}>Free roam</button>
           </div>
         </div>
@@ -104,7 +139,15 @@ export function Chapters() {
         </div>
       )}
 
-      {hasReal && (
+      {showPath && pathSections && (
+        <LearningPath
+          sections={pathSections}
+          onTopic={(id) => (isDemoPath ? go("topic") : openTopic(id))}
+          onTest={(id, title) => (isDemoPath ? undefined : startTest(id, title))}
+        />
+      )}
+
+      {!showPath && hasReal && (
         <div style={{ display: "flex", flexDirection: "column", gap: 10, maxWidth: 900 }}>
           {dbChapters!.map((c) => {
             const open = dbOpen.has(c.id);
@@ -177,7 +220,7 @@ export function Chapters() {
         </div>
       )}
 
-      {!s.selectedSubjectId && (
+      {!showPath && !s.selectedSubjectId && (
       <div style={{ display: "flex", flexDirection: "column", gap: 10, maxWidth: 900 }}>
         {CH.map(([num, title, topics, st2]) => {
           const id = "ch" + num;

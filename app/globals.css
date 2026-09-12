@@ -56,6 +56,7 @@ html { scroll-behavior: smooth; }
 @keyframes pf-sway { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
 @keyframes pf-sparkle { 0%, 100% { opacity: .3; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.1); } }
 @keyframes pf-typing { 0%, 100% { transform: translateY(0); opacity: .45; } 50% { transform: translateY(-5px); opacity: 1; } }
+@keyframes pf-ring { 0% { transform: scale(1); opacity: .55; } 100% { transform: scale(1.55); opacity: 0; } }
 .pf-bob { animation: pf-bob 3.2s ease-in-out infinite; }
 .pf-blink { transform-box: fill-box; transform-origin: center; animation: pf-blink 4.6s ease-in-out infinite; }
 .pf-celebrate { animation: pf-celebrate .9s ease-in-out infinite; }
