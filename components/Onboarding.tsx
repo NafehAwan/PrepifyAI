@@ -50,7 +50,7 @@ export function Onboarding() {
   const nextDisabled =
     (s.ob === 1 && s.userName.trim().length === 0) ||
     (s.ob === 3 && s.subs.length === 0) ||
-    (s.ob === AI_STEP && !s.aiConfigured && keyDraft.trim().length === 0 && s.groqKey.length === 0);
+    (s.ob === AI_STEP && keyDraft.trim().length === 0 && s.groqKey.length === 0);
   const nextLabel = s.ob === LAST ? (s.dq >= diag.length ? "Go to my dashboard →" : "Skip diagnostic") : "Continue →";
 
   return (
@@ -196,15 +196,8 @@ export function Onboarding() {
 
               {s.ob === AI_STEP && (
                 <>
-                  <H>{s.aiConfigured ? "Your AI tutor is ready" : "Connect your AI tutor"}</H>
-                  <Sub>
-                    {s.aiConfigured
-                      ? "Prepify's AI tutor and examiner are already set up for you — just tap Continue. (Optional: paste your own free Groq key below for higher personal limits.)"
-                      : "Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it's required to set up."}
-                  </Sub>
-                  {s.aiConfigured && (
-                    <div style={{ fontSize: 12.5, color: C.sageD, fontWeight: 700, marginBottom: 12 }}>✓ AI is set up — no key needed.</div>
-                  )}
+                  <H>Connect your AI tutor</H>
+                  <Sub>Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it&apos;s required to set up.</Sub>
                   <div style={{ display: "flex", alignItems: "center", border: "1.5px solid #e0d0b4", borderRadius: 14, background: "#fff", paddingRight: 6, marginBottom: 14 }}>
                     <input
                       type={showKey ? "text" : "password"}
