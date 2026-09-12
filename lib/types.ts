@@ -50,9 +50,6 @@ export interface AppState {
   // Auth / real-data context (populated server-side when Supabase is configured).
   authed: boolean;
   supabaseConfigured: boolean;
-  // True when the owner has set a shared server-side AI key (GROQ_API_KEY), so
-  // every student can use the tutor/chatbot without connecting their own key.
-  aiConfigured: boolean;
   userName: string;
   userEmail: string;
   // Live curriculum navigation (set when browsing real DB content).

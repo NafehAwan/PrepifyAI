@@ -54,7 +54,7 @@ export function ChapterTest() {
 
       let qs: DBMcq[] = [];
       let src: "book" | "bank" = "bank";
-      if (grounding && (s.groqKey || s.aiConfigured)) {
+      if (grounding && s.groqKey) {
         const gen = await generateQuiz(
           { subject: grounding.subject, classLevel: grounding.classLevel, medium: "English", level: "Developing", sloList: grounding.sloList, groundTruth: grounding.groundTruth },
           25,
@@ -101,14 +101,12 @@ export function ChapterTest() {
     if (typeof window !== "undefined") window.scrollTo(0, 0);
   };
 
-  if (loading) return <Frame title={title} back={back}><div style={{ color: C.muted, fontSize: 14 }}>{s.groqKey || s.aiConfigured ? "Building your test from the book…" : "Loading the chapter test…"}</div></Frame>;
+  if (loading) return <Frame title={title} back={back}><div style={{ color: C.muted, fontSize: 14 }}>{s.groqKey ? "Building your test from the book…" : "Loading the chapter test…"}</div></Frame>;
   if (mcqs.length === 0) {
     return (
       <Frame title={title} back={back}>
         <div style={{ maxWidth: 620, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
-          {s.groqKey || s.aiConfigured
-            ? "Couldn't build a test for this chapter yet — its book content may not be loaded. Try again shortly."
-            : "Couldn't build a test for this chapter yet. Connect your AI key (Settings) so questions can be generated from the book, or add a question bank."}
+          Couldn&apos;t build a test for this chapter yet. Connect your AI key (Settings) so questions can be generated from the book, or add a question bank.
         </div>
       </Frame>
     );
