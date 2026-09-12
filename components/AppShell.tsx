@@ -132,7 +132,7 @@ export function AppShell() {
           <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{initialsFromName(s.userName)}</div>
         </div>
 
-        <div style={{ flex: 1, padding: isMobile ? "16px 14px" : 26, animation: "pf-in .25s ease" }}>
+        <div style={{ flex: 1, padding: isMobile ? "16px 14px" : 26, animation: "pf-in .5s var(--ease-out) both" }}>
           <ScreenBody screen={s.screen} />
         </div>
       </div>

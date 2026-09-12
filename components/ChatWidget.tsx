@@ -137,7 +137,7 @@ export function ChatWidget() {
           position: "fixed", right: 22, bottom: 22, zIndex: 60, width: 62, height: 62, borderRadius: 999,
           background: open ? C.accent : C.card, border: `2px solid ${C.accent}`,
           boxShadow: "0 10px 26px rgba(198,113,57,.4)",
-          display: "flex", alignItems: "center", justifyContent: "center", animation: "pf-bounce-in .4s ease", overflow: "hidden",
+          display: "flex", alignItems: "center", justifyContent: "center", animation: "pf-bounce-in .55s var(--ease-soft) both", overflow: "hidden",
         }}
       >
         {open ? (
@@ -152,7 +152,7 @@ export function ChatWidget() {
           style={{
             position: "fixed", right: 22, bottom: 92, zIndex: 60, width: "min(380px, calc(100vw - 44px))", height: "min(560px, calc(100vh - 130px))",
             background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, boxShadow: "0 18px 48px rgba(90,62,30,.24)",
-            display: "flex", flexDirection: "column", overflow: "hidden", animation: "pf-pop .22s ease",
+            display: "flex", flexDirection: "column", overflow: "hidden", animation: "pf-pop .42s var(--ease-soft) both",
           }}
         >
           <div style={{ padding: "12px 14px", background: C.accent, color: "#fff", display: "flex", alignItems: "center", gap: 10 }}>
@@ -211,7 +211,7 @@ export function ChatWidget() {
                   const thinking = !me && text === "…";
                   const limit = i === typeIdx ? typeShown : undefined;
                   return (
-                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: me ? "pre-wrap" : "normal", animation: "pf-in .2s ease" }}>
+                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: me ? "pre-wrap" : "normal", animation: "pf-in .4s var(--ease-out) both" }}>
                       {me ? text : thinking ? <TypingDots /> : <ChatMarkdown text={text} limit={limit} />}
                     </div>
                   );
@@ -257,7 +257,7 @@ function TypingDots() {
   return (
     <span style={{ display: "inline-flex", gap: 4, alignItems: "center", padding: "2px 0" }}>
       {[0, 1, 2].map((i) => (
-        <span key={i} style={{ width: 7, height: 7, borderRadius: 999, background: C.accent, display: "inline-block", animation: "pf-typing 1s ease-in-out infinite", animationDelay: `${i * 0.16}s` }} />
+        <span key={i} style={{ width: 7, height: 7, borderRadius: 999, background: C.accent, display: "inline-block", animation: "pf-typing 1.2s var(--ease-io) infinite", animationDelay: `${i * 0.16}s` }} />
       ))}
     </span>
   );
