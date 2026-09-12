@@ -63,7 +63,7 @@ function Node({
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
       {highlight && (
-        <div style={{ background: "#fff", border: `2px solid ${C.accent}`, color: C.accentD, fontWeight: 800, fontSize: 11.5, letterSpacing: ".05em", borderRadius: 10, padding: "4px 10px", boxShadow: "0 4px 10px rgba(198,113,57,.22)", animation: "pf-bob 2.4s ease-in-out infinite" }}>
+        <div style={{ background: "#fff", border: `2px solid ${C.accent}`, color: C.accentD, fontWeight: 800, fontSize: 11.5, letterSpacing: ".05em", borderRadius: 10, padding: "4px 10px", boxShadow: "0 4px 10px rgba(198,113,57,.22)", animation: "pf-bob 2.8s var(--ease-io) infinite" }}>
           START
         </div>
       )}
@@ -79,7 +79,7 @@ function Node({
         }}
       >
         {/* pulse ring on the current node */}
-        {highlight && <span style={{ position: "absolute", inset: -6, borderRadius: "50%", border: `3px solid ${C.accent}`, opacity: 0.5, animation: "pf-ring 1.6s ease-out infinite" }} />}
+        {highlight && <span style={{ position: "absolute", inset: -6, borderRadius: "50%", border: `3px solid ${C.accent}`, opacity: 0.5, animation: "pf-ring 1.9s var(--ease-out) infinite" }} />}
         {isTest && !locked && state !== "done" ? (
           <span style={{ fontSize: 30, lineHeight: 1 }}>🏆</span>
         ) : isTest && state === "done" ? (
@@ -136,7 +136,7 @@ export function LearningPath({
                 idx++;
                 const isCurrent = currentKey === `${sec.id}:${t.id}`;
                 return (
-                  <div key={t.id} style={{ position: "relative", transform: `translateX(${offset}px)`, transition: "transform .2s ease" }}>
+                  <div key={t.id} style={{ position: "relative", transform: `translateX(${offset}px)`, transition: "transform .3s var(--ease-out)" }}>
                     {isCurrent && (
                       <div style={{ position: "absolute", top: 2, left: offset >= 0 ? -78 : "auto", right: offset >= 0 ? "auto" : -78 }}>
                         <Mascot mood="happy" size={64} />
@@ -152,7 +152,7 @@ export function LearningPath({
                 const offset = SWAY[idx % SWAY.length];
                 idx++;
                 return (
-                  <div style={{ transform: `translateX(${offset}px)`, transition: "transform .2s ease" }}>
+                  <div style={{ transform: `translateX(${offset}px)`, transition: "transform .3s var(--ease-out)" }}>
                     <Node
                       state={sec.test.state}
                       isTest

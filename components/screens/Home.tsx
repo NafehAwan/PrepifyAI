@@ -78,7 +78,7 @@ function pickGreeting({ fresh, reviewsDue, weakCount }: { fresh: boolean; review
 function HomeGreeter({ mood, text }: { mood: Mood; text: string }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 12, maxWidth: "100%" }}>
-      <div style={{ position: "relative", background: C.card, border: `1px solid ${C.line}`, borderRadius: 18, padding: "11px 15px", maxWidth: 250, fontSize: 13.5, lineHeight: 1.5, color: "#4a443c", boxShadow: "0 6px 18px rgba(90,62,30,.08)", animation: "pf-pop .3s ease" }}>
+      <div style={{ position: "relative", background: C.card, border: `1px solid ${C.line}`, borderRadius: 18, padding: "11px 15px", maxWidth: 250, fontSize: 13.5, lineHeight: 1.5, color: "#4a443c", boxShadow: "0 6px 18px rgba(90,62,30,.08)", animation: "pf-pop .5s var(--ease-soft) both" }}>
         {text}
         <div style={{ position: "absolute", right: -7, top: "50%", transform: "translateY(-50%) rotate(45deg)", width: 13, height: 13, background: C.card, borderRight: `1px solid ${C.line}`, borderTop: `1px solid ${C.line}` }} />
       </div>

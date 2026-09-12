@@ -108,7 +108,7 @@ export function Onboarding() {
               </div>
             )}
 
-            <div style={{ width: "100%", maxWidth: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 26, padding: "34px 34px 28px", boxShadow: "0 10px 30px rgba(90,62,30,.07)", animation: "pf-in .3s ease" }}>
+            <div style={{ width: "100%", maxWidth: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 26, padding: "34px 34px 28px", boxShadow: "0 10px 30px rgba(90,62,30,.07)", animation: "pf-in .5s var(--ease-out) both" }}>
               {s.ob === 1 && (
                 <>
                   <H>What should we call you?</H>
