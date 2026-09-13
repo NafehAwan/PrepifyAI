@@ -2,6 +2,7 @@
 
 import { C } from "@/lib/theme";
 import { Mascot } from "../Mascot";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 // Duolingo-style visual learning path: a winding trail of lesson nodes that
 // unlock as the student masters each one, with a chapter-test "trophy" at the
@@ -25,6 +26,8 @@ export interface PathSection {
 
 // Gentle S-curve horizontal offsets (in px) as we walk down the trail.
 const SWAY = [0, 74, 100, 74, 0, -74, -100, -74];
+// Tighter sway on phones so nodes never run off the edge.
+const SWAY_M = [0, 40, 56, 40, 0, -40, -56, -40];
 
 const ICON = {
   check: "M20 6 9 17l-5-5",
@@ -113,6 +116,9 @@ export function LearningPath({
     if (t) { currentKey = `${sec.id}:${t.id}`; break; }
   }
 
+  const isMobile = useIsMobile();
+  const sway = isMobile ? SWAY_M : SWAY;
+
   let idx = 0; // global node index for the S-curve
   return (
     <div style={{ maxWidth: 640, margin: "0 auto", paddingBottom: 40 }}>
@@ -132,12 +138,14 @@ export function LearningPath({
             {/* nodes */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 20, padding: "10px 0" }}>
               {sec.topics.map((t) => {
-                const offset = SWAY[idx % SWAY.length];
+                const offset = sway[idx % sway.length];
                 idx++;
                 const isCurrent = currentKey === `${sec.id}:${t.id}`;
                 return (
                   <div key={t.id} style={{ position: "relative", transform: `translateX(${offset}px)`, transition: "transform .3s var(--ease-out)" }}>
-                    {isCurrent && (
+                    {/* Prepi stands beside the current node on wider screens; on
+                        phones we skip it so nothing clips off the edge. */}
+                    {isCurrent && !isMobile && (
                       <div style={{ position: "absolute", top: 2, left: offset >= 0 ? -78 : "auto", right: offset >= 0 ? "auto" : -78 }}>
                         <Mascot mood="happy" size={64} />
                       </div>
@@ -149,7 +157,7 @@ export function LearningPath({
 
               {/* chapter test trophy */}
               {sec.test && (() => {
-                const offset = SWAY[idx % SWAY.length];
+                const offset = sway[idx % sway.length];
                 idx++;
                 return (
                   <div style={{ transform: `translateX(${offset}px)`, transition: "transform .3s var(--ease-out)" }}>

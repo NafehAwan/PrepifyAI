@@ -43,8 +43,9 @@ export function Mascot({ mood = "idle", size = 96, className }: { mood?: Mood; s
         width={size}
         height={size}
         draggable={false}
+        decoding="async"
         className={ANIM[mood]}
-        style={{ width: size, height: size, objectFit: "contain", display: "block" }}
+        style={{ width: size, height: size, objectFit: "contain", display: "block", backfaceVisibility: "hidden" }}
       />
     </div>
   );
