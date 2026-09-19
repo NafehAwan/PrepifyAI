@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepifyAI — Brag</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Caprasimo"; font-style: normal; font-weight: 400; src: url("assets/fonts/400-normal-c7380214e4ba.woff2") format("woff2"); }
+      @font-face { font-family: "Figtree"; font-style: normal; font-weight: 400; src: url("assets/fonts/400-normal-dbde27e3ba6b.woff2") format("woff2"); }
+      @font-face { font-family: "Figtree"; font-style: normal; font-weight: 600; src: url("assets/fonts/600-normal-dbde27e3ba6b.woff2") format("woff2"); }
+      @font-face { font-family: "Figtree"; font-style: normal; font-weight: 700; src: url("assets/fonts/700-normal-dbde27e3ba6b.woff2") format("woff2"); }
+      @font-face { font-family: "Figtree"; font-style: normal; font-weight: 800; src: url("assets/fonts/800-normal-dbde27e3ba6b.woff2") format("woff2"); }
+      :root {
+        --bg: #f5ead8;
+        --card: #fdf7ea;
+        --accent: #c67139;
+        --accentD: #8f4a20;
+        --sage: #7a8a5e;
+        --sageD: #4f5c36;
+        --sageT: #e6ead9;
+        --tint: #f6e1d0;
+        --ink: #201e1d;
+        --muted: #7a6f5d;
+        --line: #e6d7bb;
+        --sand: #ebddc5;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+        background-color: var(--bg); color: var(--ink);
+        font-family: "Figtree", system-ui, sans-serif;
+      }
+      #main-composition { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); }
+      .display { font-family: "Caprasimo", Georgia, serif; font-weight: 400; }
+
+      /* soft warm vignette + glow, baked (no external texture) */
+      .bg-wash {
+        position: absolute; inset: 0; pointer-events: none; z-index: 0;
+        background:
+          radial-gradient(1100px 700px at 50% 38%, #fbf3e4 0%, rgba(251,243,228,0) 60%),
+          radial-gradient(1400px 900px at 50% 120%, rgba(198,113,57,0.10) 0%, rgba(198,113,57,0) 55%);
+      }
+
+      .scene {
+        position: absolute; inset: 0; z-index: 2;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        opacity: 0; will-change: transform, opacity;
+      }
+      .cap {
+        font-weight: 700; color: var(--accentD); background: var(--tint);
+        border-radius: 999px; padding: 12px 26px; font-size: 30px; letter-spacing: .2px;
+      }
+      .prepi { display: block; image-rendering: auto; }
+
+      /* Scene 1 */
+      #s1 .word { font-size: 168px; color: var(--accentD); line-height: 1; margin: 0; }
+      #s1 .sub { font-size: 46px; color: var(--muted); font-weight: 600; margin-top: 6px; }
+
+      /* card */
+      .card {
+        background: var(--card); border: 1px solid var(--line); border-radius: 30px;
+        box-shadow: 0 26px 60px rgba(90,62,30,0.16);
+      }
+
+      /* Scene 2 textbook */
+      #s2 .book {
+        width: 1180px; padding: 40px 48px; text-align: left;
+      }
+      #s2 .book-head { display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #ece0c8; padding-bottom: 18px; margin-bottom: 22px; }
+      #s2 .dot { width: 40px; height: 40px; border-radius: 999px; background: var(--tint); display: flex; align-items: center; justify-content: center; }
+      #s2 .book-title { font-weight: 800; font-size: 30px; color: var(--ink); }
+      #s2 .slo { display: inline-block; font-weight: 800; font-size: 24px; color: var(--accentD); background: var(--tint); border-radius: 999px; padding: 8px 20px; margin: 0 10px 18px 0; opacity: 0; }
+      #s2 .h { font-weight: 800; font-size: 40px; margin: 6px 0 14px; }
+      #s2 .p { font-size: 31px; line-height: 1.6; color: #443c31; max-width: 1000px; }
+
+      /* Scene 3 path */
+      #s3 .path { position: relative; width: 1180px; height: 360px; }
+      #s3 .node { position: absolute; width: 130px; height: 130px; border-radius: 50%; display: flex; align-items: center; justify-content: center; opacity: 0; }
+      #s3 .n-done { background: var(--sage); box-shadow: 0 10px 0 var(--sageD); left: 90px; top: 180px; }
+      #s3 .n-now  { background: var(--accent); box-shadow: 0 10px 0 var(--accentD); left: 470px; top: 60px; }
+      #s3 .n-lock { background: #dbccb0; box-shadow: 0 10px 0 #c3b291; left: 850px; top: 190px; }
+      #s3 .node svg { width: 56px; height: 56px; }
+      #s3 .ring { position: absolute; left: 456px; top: 46px; width: 158px; height: 158px; border-radius: 50%; border: 5px solid var(--accent); opacity: 0; }
+      #s3 .lbl { position: absolute; font-weight: 800; font-size: 24px; color: var(--muted); width: 220px; text-align: center; }
+
+      /* Scene 4 quiz */
+      #s4 .quiz { width: 980px; padding: 40px 44px; text-align: left; }
+      #s4 .q { font-weight: 800; font-size: 38px; margin-bottom: 26px; }
+      #s4 .opt { display: flex; align-items: center; gap: 18px; border: 2px solid transparent; background: var(--bg); border-radius: 18px; padding: 20px 22px; margin-bottom: 16px; font-size: 30px; font-weight: 600; }
+      #s4 .opt .k { width: 44px; height: 44px; border-radius: 999px; background: var(--sand); color: #5d5648; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+      #s4 .opt.right { background: var(--sageT); border-color: var(--sage); }
+      #s4 .opt.right .k { background: var(--sage); color: #fff; }
+      #s4 .scorewrap { position: absolute; right: 250px; top: 300px; width: 220px; height: 220px; opacity: 0; }
+      #s4 .score { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: "Caprasimo", Georgia, serif; font-size: 64px; color: var(--sageD); }
+      .confetti { position: absolute; width: 18px; height: 18px; border-radius: 4px; opacity: 0; }
+
+      /* Scene 5 outro */
+      #s5 .word { font-size: 150px; color: var(--accentD); line-height: 1; margin: 0; }
+      #s5 .tag { font-size: 52px; color: var(--muted); font-weight: 700; margin-top: 10px; letter-spacing: 1px; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="main-composition"
+      data-composition-id="main-video"
+      data-width="1920"
+      data-height="1080"
+      data-start="0"
+      data-duration="19.2"
+    >
+      <div class="bg-wash"></div>
+
+      <!-- music -->
+      <audio
+        id="bgm-music"
+        src="assets/music/track.mp3"
+        data-start="0"
+        data-duration="19.2"
+        data-volume="0.6"
+        data-timeline-role="music"
+      ></audio>
+
+      <!-- ============ Scene 1 — Hook ============ -->
+      <div id="s1" class="scene">
+        <img class="prepi" id="s1-prepi" src="assets/img/prepi-book.png" width="360" height="360" alt="" />
+        <h1 class="display word" id="s1-word">PrepifyAI</h1>
+        <div class="sub" id="s1-sub">Your FBISE study buddy</div>
+      </div>
+
+      <!-- ============ Scene 2 — Real textbook ============ -->
+      <div id="s2" class="scene">
+        <div class="cap" id="s2-cap" style="margin-bottom: 26px;">Learn from the real FBISE book</div>
+        <div class="card book" id="s2-card">
+          <div class="book-head">
+            <div class="dot">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c67139" stroke-width="2.6"><path d="M4 4a2 2 0 0 1 2-2h13v18H6a2 2 0 0 0-2 2z"/></svg>
+            </div>
+            <div class="book-title">Textbook · FBISE Physics 9</div>
+          </div>
+          <span class="slo" id="s2-slo1">SLO PHY-9-1.1</span>
+          <span class="slo" id="s2-slo2">Physical Quantities</span>
+          <div class="h">Base &amp; derived quantities</div>
+          <div class="p">A physical quantity has a numerical value and a unit. The seven SI base quantities — like length (metre) and time (second) — combine to form every derived quantity you'll meet in the paper.</div>
+        </div>
+      </div>
+
+      <!-- ============ Scene 3 — Learning path ============ -->
+      <div id="s3" class="scene">
+        <div class="cap" id="s3-cap" style="margin-bottom: 30px;">Master every topic, step by step</div>
+        <div class="path">
+          <div class="node n-done" id="s3-n1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="ring" id="s3-ring"></div>
+          <div class="node n-now" id="s3-n2">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="node n-lock" id="s3-n3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a89a80" stroke-width="2.6"><path d="M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </div>
+          <img class="prepi" id="s3-prepi" src="assets/img/prepi-happy.png" width="150" height="150" style="position:absolute; left:352px; top:36px;" alt="" />
+        </div>
+      </div>
+
+      <!-- ============ Scene 4 — Quiz + celebrate ============ -->
+      <div id="s4" class="scene">
+        <div class="cap" id="s4-cap" style="margin-bottom: 26px;">Beat the quiz. Level up.</div>
+        <div class="card quiz" id="s4-card">
+          <div class="q">Which is the SI unit of force?</div>
+          <div class="opt" id="s4-o1"><div class="k">A</div><div>Joule</div></div>
+          <div class="opt right" id="s4-o2" style="opacity:.999;"><div class="k">B</div><div>Newton</div></div>
+          <div class="opt" id="s4-o3"><div class="k">C</div><div>Watt</div></div>
+        </div>
+        <div class="scorewrap" id="s4-scorewrap">
+          <svg width="220" height="220" viewBox="0 0 220 220">
+            <circle cx="110" cy="110" r="96" fill="#fdf7ea" stroke="#ebddc5" stroke-width="16"/>
+            <circle id="s4-arc" cx="110" cy="110" r="96" fill="none" stroke="#7a8a5e" stroke-width="16" stroke-linecap="round"
+              stroke-dasharray="603" stroke-dashoffset="603" transform="rotate(-90 110 110)"/>
+          </svg>
+          <div class="score" id="s4-score">92%</div>
+        </div>
+        <img class="prepi" id="s4-prepi" src="assets/img/prepi-celebrate.png" width="200" height="200" style="position:absolute; left:250px; top:300px; opacity:0;" alt="" />
+        <div id="s4-confetti"></div>
+      </div>
+
+      <!-- ============ Scene 5 — Outro ============ -->
+      <div id="s5" class="scene">
+        <img class="prepi" id="s5-prepi" src="assets/img/prepi-wave.png" width="300" height="300" alt="" />
+        <h1 class="display word" id="s5-word">PrepifyAI</h1>
+        <div class="tag" id="s5-tag">Read. Test. Master.</div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const easeOut = "power3.out";
+          const easeIO = "power2.inOut";
+
+          // confetti dots (deterministic positions/colors)
+          const cw = document.getElementById("s4-confetti");
+          const cols = ["#c67139", "#7a8a5e", "#e2a52f", "#8f4a20"];
+          const conf = [
+            [520,120],[600,60],[690,150],[470,220],[760,90],[560,260],[820,200],[430,120],[880,140],[660,260]
+          ];
+          const dots = conf.map(function (p, i) {
+            const d = document.createElement("div");
+            d.className = "confetti";
+            d.style.left = p[0] + "px";
+            d.style.top = p[1] + "px";
+            d.style.background = cols[i % cols.length];
+            cw.appendChild(d);
+            return d;
+          });
+
+          // initial states
+          gsap.set("#s1-prepi", { y: 40, scale: 0.7, opacity: 0 });
+          gsap.set(["#s1-word", "#s1-sub"], { y: 30, opacity: 0 });
+          gsap.set("#s2-card", { y: 60, opacity: 0 });
+          gsap.set("#s3 .path", { opacity: 1 });
+          gsap.set("#s3-prepi", { opacity: 0, y: 20 });
+          gsap.set("#s4-card", { y: 50, opacity: 0 });
+          gsap.set(["#s4-o1", "#s4-o3"], { opacity: 0 });
+          gsap.set("#s4-o2", { opacity: 0 });
+          gsap.set("#s5-prepi", { scale: 0.7, opacity: 0 });
+          gsap.set(["#s5-word", "#s5-tag"], { y: 26, opacity: 0 });
+
+          // ---------- Scene 1 (0 – 3.4) ----------
+          tl.to("#s1", { opacity: 1, duration: 0.4 }, 0.0);
+          tl.to("#s1-prepi", { y: 0, scale: 1, opacity: 1, duration: 0.8, ease: easeOut }, 0.1);
+          tl.to("#s1-word", { y: 0, opacity: 1, duration: 0.7, ease: easeOut }, 0.5);
+          tl.to("#s1-sub", { y: 0, opacity: 1, duration: 0.6, ease: easeOut }, 0.8);
+          tl.to("#s1-prepi", { y: -14, duration: 1.1, ease: easeIO, yoyo: true, repeat: 1 }, 1.0);
+          tl.to("#s1", { opacity: 0, duration: 0.45 }, 3.0);
+
+          // ---------- Scene 2 (3.2 – 7.2) ----------
+          tl.to("#s2", { opacity: 1, duration: 0.45 }, 3.2);
+          tl.to("#s2-card", { y: 0, opacity: 1, duration: 0.7, ease: easeOut }, 3.3);
+          tl.to("#s2-cap", { y: 0, opacity: 1, duration: 0.5, ease: easeOut }, 3.4);
+          tl.to("#s2-slo1", { opacity: 1, duration: 0.4, ease: easeOut }, 3.9);
+          tl.to("#s2-slo2", { opacity: 1, duration: 0.4, ease: easeOut }, 4.15);
+          tl.to("#s2", { opacity: 0, duration: 0.45 }, 6.75);
+
+          // ---------- Scene 3 (7.0 – 11.6) ----------
+          tl.to("#s3", { opacity: 1, duration: 0.45 }, 7.0);
+          tl.fromTo("#s3-n1", { opacity: 0, scale: 0.5, y: 24 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(2)" }, 7.5);
+          tl.fromTo("#s3-n2", { opacity: 0, scale: 0.5, y: 24 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(2)" }, 8.1);
+          tl.fromTo("#s3-prepi", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: easeOut }, 8.25);
+          tl.fromTo("#s3-n3", { opacity: 0, scale: 0.5, y: 24 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(2)" }, 8.7);
+          // pulse ring on current node
+          tl.fromTo("#s3-ring", { opacity: 0.55, scale: 1 }, { opacity: 0, scale: 1.35, duration: 1.1, ease: easeOut, repeat: 1 }, 8.6);
+          tl.to("#s3", { opacity: 0, duration: 0.45 }, 11.15);
+
+          // ---------- Scene 4 (11.4 – 15.8) ----------
+          tl.to("#s4", { opacity: 1, duration: 0.45 }, 11.4);
+          tl.to("#s4-card", { y: 0, opacity: 1, duration: 0.6, ease: easeOut }, 11.5);
+          tl.to("#s4-cap", { opacity: 1, duration: 0.4 }, 11.5);
+          tl.to("#s4-o1", { opacity: 1, duration: 0.35 }, 11.9);
+          tl.to("#s4-o2", { opacity: 1, duration: 0.35 }, 12.1);
+          tl.to("#s4-o3", { opacity: 1, duration: 0.35 }, 12.3);
+          // correct answer "picks" — pop
+          tl.fromTo("#s4-o2", { scale: 1 }, { scale: 1.05, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 12.8);
+          // score ring fills to 92% (dashoffset 603 -> ~48) + prepi celebrate + confetti
+          tl.to("#s4-scorewrap", { opacity: 1, duration: 0.4, ease: easeOut }, 13.0);
+          tl.to("#s4-arc", { attr: { "stroke-dashoffset": 48 }, duration: 1.0, ease: "power2.out" }, 13.1);
+          tl.fromTo("#s4-prepi", { opacity: 0, scale: 0.6, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(2)" }, 13.2);
+          dots.forEach(function (d, i) {
+            tl.fromTo(d, { opacity: 1, y: 0, scale: 0.5 }, { opacity: 0, y: -80 - (i % 4) * 20, scale: 1, duration: 0.9, ease: "power2.out" }, 13.2 + (i % 5) * 0.04);
+          });
+          tl.to("#s4", { opacity: 0, duration: 0.45 }, 15.35);
+
+          // ---------- Scene 5 (15.8 – 19.2) ----------
+          tl.to("#s5", { opacity: 1, duration: 0.5 }, 15.8);
+          tl.to("#s5-prepi", { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(1.6)" }, 15.9);
+          tl.to("#s5-word", { y: 0, opacity: 1, duration: 0.6, ease: easeOut }, 16.2);
+          tl.to("#s5-tag", { y: 0, opacity: 1, duration: 0.6, ease: easeOut }, 16.5);
+          tl.to("#s5-prepi", { rotation: -6, duration: 0.5, ease: easeIO, yoyo: true, repeat: 3, transformOrigin: "50% 90%" }, 16.6);
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["main-video"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>
