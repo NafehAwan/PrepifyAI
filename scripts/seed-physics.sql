@@ -1,4 +1,10 @@
-{
+-- Auto-generated from content/physics-9.curriculum.json
+-- Seeds FBISE Class 9 Physics (subjects → books → chapters → topics → slos → content_chunks).
+-- Idempotent: re-running replaces this subject's book tree for the class. Safe to paste
+-- into the Supabase SQL Editor (Dashboard → SQL Editor → New query → Run).
+do $$
+declare
+  v_json    jsonb := $hf${
   "_meta": {
     "note": "AI-drafted FBISE curriculum seed (Part B of the build spec). Per pipeline step 3, every item must be human-verified before it is shipped to students. Codes follow PHY-<class>-<chapter>.<topic>.<slo>.",
     "generated_for": "Prepify AI core learning loop demo",
@@ -505,3 +511,47 @@
     }
   ]
 }
+$hf$::jsonb;
+  v_class   int   := (v_json->>'class_level')::int;
+  v_subject uuid;
+  v_book    uuid;
+  v_chapter uuid;
+  v_topic   uuid;
+  v_slo     uuid;
+  ch jsonb; tp jsonb; sl jsonb;
+begin
+  select id into v_subject from subjects where name = v_json->>'subject';
+  if v_subject is null then
+    insert into subjects(name, track) values (v_json->>'subject', v_json->>'track') returning id into v_subject;
+  else
+    update subjects set track = coalesce(subjects.track, v_json->>'track') where id = v_subject;
+  end if;
+
+  delete from books where subject_id = v_subject and class_level = v_class;
+  insert into books(subject_id, class_level, edition)
+    values (v_subject, v_class, 'FBISE') returning id into v_book;
+
+  for ch in select jsonb_array_elements(v_json->'chapters') loop
+    insert into chapters(book_id, seq, title, title_ur)
+      values (v_book, (ch->>'seq')::int, ch->>'title', ch->>'title_ur')
+      returning id into v_chapter;
+
+    for tp in select jsonb_array_elements(ch->'topics') loop
+      insert into topics(chapter_id, seq, title, est_minutes)
+        values (v_chapter, (tp->>'seq')::int, tp->>'title', coalesce((tp->>'est_minutes')::int, 20))
+        returning id into v_topic;
+
+      for sl in select jsonb_array_elements(tp->'slos') loop
+        insert into slos(topic_id, code, statement, bloom_level)
+          values (v_topic, sl->>'code', sl->>'statement', sl->>'bloom_level')
+          returning id into v_slo;
+
+        insert into content_chunks(slo_id, seq, content_md, token_count)
+          values (v_slo, 1, sl->>'content_md',
+                  ceil(coalesce(array_length(regexp_split_to_array(trim(coalesce(sl->>'content_md','')), '\s+'), 1), 0) * 1.3)::int);
+      end loop;
+    end loop;
+  end loop;
+
+  raise notice 'Seeded Physics: % chapters', jsonb_array_length(v_json->'chapters');
+end $$;
