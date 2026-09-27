@@ -50,7 +50,7 @@ export function Onboarding() {
   const nextDisabled =
     (s.ob === 1 && s.userName.trim().length === 0) ||
     (s.ob === 3 && s.subs.length === 0) ||
-    (s.ob === AI_STEP && keyDraft.trim().length === 0 && s.groqKey.length === 0);
+    (s.ob === AI_STEP && !s.aiConfigured && keyDraft.trim().length === 0 && s.groqKey.length === 0);
   const nextLabel = s.ob === LAST ? (s.dq >= diag.length ? "Go to my dashboard →" : "Skip diagnostic") : "Continue →";
 
   return (
@@ -194,7 +194,22 @@ export function Onboarding() {
                 </>
               )}
 
-              {s.ob === AI_STEP && (
+              {s.ob === AI_STEP && s.aiConfigured && (
+                <>
+                  <H>Your AI study buddy is ready</H>
+                  <Sub>Nothing to set up — Prepi is already connected. Ask it anything you&apos;re stuck on, any time, from the chat bubble in the corner.</Sub>
+                  <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
+                    <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>What Prepi is good at</div>
+                    <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#3a4327", lineHeight: 1.5 }}>
+                      <li>Explaining a question you got wrong, in simple words.</li>
+                      <li>Breaking down a formula or a definition step by step.</li>
+                      <li>Answering &quot;why is the answer C?&quot; after a test.</li>
+                    </ul>
+                  </div>
+                </>
+              )}
+
+              {s.ob === AI_STEP && !s.aiConfigured && (
                 <>
                   <H>Connect your AI tutor</H>
                   <Sub>Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it&apos;s required to set up.</Sub>

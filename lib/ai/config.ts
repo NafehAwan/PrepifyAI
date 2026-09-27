@@ -1,12 +1,13 @@
-// AI backend config. The tutor + examiner call Groq's OpenAI-compatible API.
+// AI backend config. The chatbot and the MCQ generator call Groq's
+// OpenAI-compatible API.
 //
-// Prepify is "bring your own key": each student pastes their own free Groq API
-// key in Settings. The key is stored only in their browser and sent per-request
-// in the `x-groq-key` header — it is never persisted on our servers. A single
-// shared `GROQ_API_KEY` env var is also supported as a fallback for local dev.
+// Prepify runs on ONE shared `GROQ_API_KEY` that the owner sets on the server,
+// so students need no setup at all. A browser may still send its own key in the
+// `x-groq-key` header (useful for local development against a personal
+// account); that key is forwarded straight to Groq and never persisted.
 //
-// Without any key the AI routes return `{configured:false}` and the UI falls
-// back to canned responses, so the demo still works with zero setup.
+// Note that tests themselves cost no API calls — questions are sampled from the
+// `questions` table. The chatbot is the only runtime consumer of this key.
 
 export const GROQ_BASE_URL = process.env.GROQ_BASE_URL ?? "https://api.groq.com/openai/v1";
 
@@ -18,23 +19,23 @@ export const GROQ_MODEL = process.env.PREPIFY_MODEL || "llama-3.1-8b-instant";
 // When PREPIFY_MODEL is explicitly set, pin to it and skip auto-discovery.
 export const GROQ_MODEL_PINNED = !!process.env.PREPIFY_MODEL;
 
-// Optional server-side fallback key (developer convenience for local testing).
-// Real users bring their own key from the browser instead.
+// The shared server key. This is the normal path for every signed-in student.
 export const GROQ_ENV_KEY = process.env.GROQ_API_KEY ?? "";
 
-// The header a browser request carries the student's own key in.
+// The header a browser request may carry an overriding key in.
 export const GROQ_KEY_HEADER = "x-groq-key";
 
-// Resolve the key for a given request: the student's own key (header) wins,
-// otherwise fall back to the server env key (if the developer set one).
+// Resolve the key for a given request: an explicit per-request key wins,
+// otherwise the shared server key.
 export function resolveGroqKey(req: Request): string {
   const header = req.headers.get(GROQ_KEY_HEADER)?.trim();
   if (header && header.length > 0) return header;
   return GROQ_ENV_KEY;
 }
 
-// True when a server-side fallback key exists. Per-request checks use
-// `resolveGroqKey` instead, since most users bring their own key.
+// True when the shared server key exists, i.e. AI works with no student setup.
+// Surfaced to the UI as `AppState.aiConfigured` so no "connect your key"
+// prompts are shown.
 export function isAiConfigured(): boolean {
   return GROQ_ENV_KEY.length > 0;
 }

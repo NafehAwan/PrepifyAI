@@ -213,7 +213,7 @@ export function ChatWidget() {
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
                     <Mascot mood="book" size={78} />
                     <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
-                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
+                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.aiConfigured || s.groqKey ? "" : "First connect your free AI key in Settings."}
                     </div>
                   </div>
                 )}
@@ -237,7 +237,7 @@ export function ChatWidget() {
                     ))}
                   </div>
                 )}
-                {!s.groqKey && (
+                {!s.aiConfigured && !s.groqKey && (
                   <button onClick={() => { setOpen(false); go("settings"); }} style={{ width: "100%", marginBottom: 9, fontSize: 12.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px" }}>
                     Connect your free AI key →
                   </button>

@@ -61,7 +61,11 @@ export interface AppState {
   testChapterTitle: string | null;
   // Grounding context for the tutor, set by the topic screen from real content.
   teach: TeachContext | null;
-  // The student's own Groq API key (browser-only; hydrated from localStorage).
+  // True when the server has a shared GROQ_API_KEY, so nobody has to supply
+  // their own. Set server-side; false in the demo build.
+  aiConfigured: boolean;
+  // An optional per-browser key override (hydrated from localStorage). Only a
+  // developer testing against their own account normally sets this.
   groqKey: string;
 }
 

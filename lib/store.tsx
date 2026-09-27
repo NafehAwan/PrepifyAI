@@ -51,6 +51,7 @@ const INITIAL: AppState = {
   testChapterId: null,
   testChapterTitle: null,
   teach: null,
+  aiConfigured: false,
   groqKey: "",
 };
 

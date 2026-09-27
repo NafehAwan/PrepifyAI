@@ -3,11 +3,12 @@ import { PrepifyApp } from "@/components/PrepifyApp";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { createClient } from "@/lib/supabase/server";
 import { loadUserContext } from "@/lib/supabase/queries";
+import { isAiConfigured } from "@/lib/ai/config";
 
 export default async function Page() {
   // Demo mode: no backend configured, render the app with sample data.
   if (!isSupabaseConfigured()) {
-    return <PrepifyApp />;
+    return <PrepifyApp initial={{ aiConfigured: isAiConfigured() }} />;
   }
 
   const supabase = createClient();

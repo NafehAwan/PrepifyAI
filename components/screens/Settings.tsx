@@ -112,10 +112,59 @@ export function Settings() {
   );
 }
 
-// "Bring your own key" card: paste a free Groq key, test it, and learn how to
-// get one. The key is stored only in this browser and powers the AI tutor +
-// examiner. Without it the app falls back to canned responses.
+// Prepify runs on one shared server key, so the normal card is a read-only
+// "AI is ready" note. The bring-your-own-key form below is only shown when the
+// server has no key — a local dev build, or before the owner has set one.
 function ConnectAI() {
+  const { s } = useApp();
+  return s.aiConfigured ? <AiReady /> : <BringYourOwnKey />;
+}
+
+function AiReady() {
+  const [testing, setTesting] = useState(false);
+  const [result, setResult] = useState<{ ok: boolean; msg: string } | null>(null);
+
+  const test = async () => {
+    setTesting(true);
+    setResult(null);
+    try {
+      const res = await fetch("/api/ai/ping", { method: "POST", headers: { "Content-Type": "application/json" } });
+      const data = (await res.json()) as { ok?: boolean; model?: string; error?: string };
+      if (res.ok && data.ok) setResult({ ok: true, msg: `Working — model ${data.model}.` });
+      else setResult({ ok: false, msg: data.error || "The AI service didn't respond. Try again in a moment." });
+    } catch {
+      setResult({ ok: false, msg: "Couldn't reach the AI service. Check your connection." });
+    }
+    setTesting(false);
+  };
+
+  return (
+    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+        <div style={{ fontWeight: 700, fontSize: 16 }}>Ask Prepify</div>
+        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sageT, color: C.sageD }}>
+          ✓ Ready
+        </span>
+      </div>
+      <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 16 }}>
+        The AI chatbot is set up for you — nothing to connect. Tap the chat bubble any time you&apos;re stuck on a question.
+        Your tests don&apos;t use the AI at all: they come from the real question bank, so they always work.
+      </div>
+      <button onClick={test} disabled={testing} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing ? 0.6 : 1 }}>
+        {testing ? "Checking…" : "Check it's working"}
+      </button>
+      {result && (
+        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginTop: 12, background: result.ok ? C.sageT : "#fdf1e6", color: result.ok ? C.sageD : C.accentD }}>
+          {result.ok ? "✓ " : "✕ "}{result.msg}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// "Bring your own key" card: paste a free Groq key, test it, and learn how to
+// get one. Only reachable when the server has no shared key.
+function BringYourOwnKey() {
   const { s, setGroqKey } = useApp();
   const [draft, setDraft] = useState(s.groqKey);
   const [show, setShow] = useState(false);

@@ -4,14 +4,17 @@ import { GROQ_BASE_URL, GROQ_MODEL, GROQ_MODEL_PINNED } from "./config";
 // real one from the account's /models list once).
 let cachedModel: string | null = null;
 
-// Prefer a capable general chat model, then progressively fall back.
+// Prefer a capable general chat model, then progressively fall back. Groq
+// retires ids (llama-3.3-70b-versatile went away mid-project), so this is a
+// preference list over whatever the account can actually see, not a pin.
 const MODEL_PREFERENCE: RegExp[] = [
+  /(^|[^\d])(120|70)b/i, // largest general models first
   /llama-3\.3-70b/i,
   /70b.*(versatile|instruct)/i,
   /llama.*70b/i,
+  /gpt-oss/i,
   /llama-3\.1-8b-instant/i,
   /8b.*instant/i,
-  /gpt-oss/i,
   /llama/i,
 ];
 
@@ -29,9 +32,16 @@ export async function pickModel(key: string): Promise<string> {
         .filter((id) => !/whisper|tts|guard|embed|distil|prompt-guard/i.test(id));
       for (const re of MODEL_PREFERENCE) {
         const hit = ids.find((id) => re.test(id));
-        if (hit) return (cachedModel = hit);
+        if (hit) {
+          // Log once so a future retirement is visible in the server logs.
+          console.log(`[prepify] Groq model resolved to ${hit}`);
+          return (cachedModel = hit);
+        }
       }
-      if (ids.length) return (cachedModel = ids[0]);
+      if (ids.length) {
+        console.log(`[prepify] Groq model resolved to ${ids[0]} (no preference matched)`);
+        return (cachedModel = ids[0]);
+      }
     }
   } catch {
     // fall through to the static fallback
