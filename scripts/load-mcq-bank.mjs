@@ -11,7 +11,8 @@
 // Questions whose answer is still null are skipped — they cannot be asked until
 // scripts/derive-answers.mjs has filled them in.
 
-import { readFileSync, existsSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
+import { readBank, usableQuestions } from "./lib/bank-read.mjs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -38,41 +39,26 @@ const args = Object.fromEntries(
 
 // difficulty word -> the `questions.difficulty` 1..5 scale the schema uses.
 const DIFFICULTY_INT = { easy: 1, medium: 3, hard: 5 };
+const SLUG = { Chemistry: "chemistry", Physics: "physics", Maths: "maths", "Computer Science": "computer-science", English: "english" };
 
-// One entry per chapter: its original questions plus any variants written for
-// them. Variants live in their own folder so re-running the ingest (which
-// rewrites the originals from the source documents) never touches them.
-function readBank() {
+function readBankForLoad() {
   if (!existsSync(bankDir)) {
     console.error(`No bank at ${bankDir} — run scripts/ingest-mcqs.mjs first.`);
     process.exit(1);
   }
-  const variantDir = join(bankDir, "variants");
-  const files = readdirSync(bankDir).filter((f) => f.endsWith(".json")).sort();
-  const out = [];
-  for (const f of files) {
-    const bank = JSON.parse(readFileSync(join(bankDir, f), "utf8"));
-    if (args.subject && bank.subject !== args.subject) continue;
-
-    let variants = [];
-    if (existsSync(join(variantDir, f))) {
-      variants = JSON.parse(readFileSync(join(variantDir, f), "utf8")).questions ?? [];
-    }
-    // A variant is only as good as its original: skip variants whose original
-    // is gone or still has no answer.
-    const usableIds = new Set(bank.questions.filter((q) => q.answer !== null).map((q) => q.id));
-    const all = [...bank.questions, ...variants.filter((v) => usableIds.has(v.variant_of))];
-    const usable = all.filter((q) => q.answer !== null && q.answer >= 0 && q.answer <= 3);
-    out.push({
-      file: f,
-      subject: bank.subject,
-      chapter_seq: bank.chapter_seq,
-      questions: usable,
-      total: all.length,
-      variants: usable.filter((q) => q.variant_of).length,
+  return readBank(bankDir)
+    .filter((c) => !args.subject || c.subject === args.subject)
+    .map((c) => {
+      const usable = usableQuestions(c);
+      return {
+        file: `${SLUG[c.subject]}-u${String(c.chapter_seq).padStart(2, "0")}.json`,
+        subject: c.subject,
+        chapter_seq: c.chapter_seq,
+        questions: usable,
+        total: c.questions.length,
+        variants: usable.filter((q) => q.kind === "variant").length,
+      };
     });
-  }
-  return out;
 }
 
 // One row as the `questions` table wants it. answer_key_md is a bare A-D letter
@@ -98,12 +84,12 @@ function toRow(q, chapterId) {
   };
 }
 
-const banks = readBank();
-const skipped = banks.reduce((a, b) => a + (b.total - b.questions.length), 0);
+const banks = readBankForLoad();
+const skipped = banks.reduce((a, b) => a + (b.total - b.questions.length), 0); // rejected or unanswered
 console.log(
   `Bank: ${banks.length} chapter files · ${banks.reduce((a, b) => a + b.questions.length, 0)} loadable questions ` +
     `(${banks.reduce((a, b) => a + b.variants, 0)} of them variants)` +
-    (skipped ? ` · ${skipped} skipped (no answer yet)` : ""),
+    (skipped ? ` · ${skipped} not loadable (rejected or unanswered)` : ""),
 );
 
 if (args.sql) {

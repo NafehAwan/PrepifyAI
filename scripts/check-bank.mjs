@@ -9,9 +9,9 @@
 // subject": it samples repeatedly the way lib/tests/build.ts does and asserts
 // the sets really are distinct.
 
-import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { readBank, usableQuestions } from "./lib/bank-read.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const bankDir = join(__dirname, "..", "content", "mcq-bank");
@@ -23,18 +23,15 @@ const args = Object.fromEntries(
   }),
 );
 
-const banks = readdirSync(bankDir)
-  .filter((f) => f.endsWith(".json"))
-  .sort()
-  .map((f) => ({ file: f, ...JSON.parse(readFileSync(join(bankDir, f), "utf8")) }));
+const chapters = readBank(bankDir);
 
 // --- structural validation -------------------------------------------------
 const problems = [];
 const all = [];
-for (const b of banks) {
+for (const b of chapters) {
   const seen = new Set();
   for (const q of b.questions) {
-    all.push({ file: b.file, subject: b.subject, q });
+    all.push({ file: `${q.kind === "original" ? "" : q.kind + "/"}${q.file}`, subject: b.subject, q });
     if (q.options.length !== 4) problems.push(`${b.file}: ${q.options.length} options — ${q.stem.slice(0, 50)}`);
     if (q.options.some((o) => !String(o).trim())) problems.push(`${b.file}: empty option — ${q.stem.slice(0, 50)}`);
     if (q.answer !== null && (q.answer < 0 || q.answer > 3)) problems.push(`${b.file}: answer ${q.answer} out of range`);
@@ -48,11 +45,15 @@ for (const b of banks) {
 // --- counts ----------------------------------------------------------------
 const bySubject = new Map();
 for (const { subject, q } of all) {
-  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, lowConf: 0, rejected: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
+  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, authored: 0, variants: 0, lowConf: 0, rejected: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
   row.total++;
+  if (q.kind === "variant") row.variants++;
   if (q.rejected) row.rejected++;
   else if (q.answer === null) row.missing++;
-  else if (q.answer_source === "file") row.keyed++;
+  else if (q.kind === "variant") {
+    // counted in the variants column only
+  } else if (q.answer_source === "file") row.keyed++;
+  else if (q.answer_source === "authored") row.authored++;
   else row.derived++;
   if (q.answer_confidence === "low") row.lowConf++;
   if (q.scenario) row.scenario++;
@@ -60,10 +61,10 @@ for (const { subject, q } of all) {
   bySubject.set(subject, row);
 }
 
-console.log("Subject           total  from file  derived  (low conf)  rejected  no answer  scenario   easy/med/hard");
+console.log("Subject           total  from file  derived  authored  variants  (low conf)  rejected  no answer  scenario   easy/med/hard");
 for (const [subject, r] of [...bySubject].sort()) {
   console.log(
-    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.lowConf).padStart(10)}  ${String(r.rejected).padStart(8)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
+    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.authored).padStart(8)}  ${String(r.variants).padStart(8)}  ${String(r.lowConf).padStart(10)}  ${String(r.rejected).padStart(8)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
   );
 }
 const usable = all.filter(({ q }) => q.answer !== null).length;
@@ -86,28 +87,35 @@ if (args.combinations) {
   const wanted = Number(args.combinations);
   const size = Number(args.size ?? 25);
   const subject = args.subject ?? "Chemistry";
-  const pool = all.filter((x) => x.subject === subject && x.q.answer !== null);
-  console.log(`\nVariety check — ${wanted} tests of ${size} questions from ${subject} (pool ${pool.length}):`);
-  if (pool.length < size) {
-    console.log(`  NOT ENOUGH: pool is smaller than one test.`);
+  const pool = chapters.filter((c) => c.subject === subject).flatMap((c) => usableQuestions(c));
+  const families = new Map();
+  for (const q of pool) {
+    const f = q.variant_of ?? q.id;
+    if (!families.has(f)) families.set(f, []);
+    families.get(f).push(q);
+  }
+  console.log(`\nVariety check — ${wanted} tests of ${size} from ${subject} (${pool.length} questions in ${families.size} families):`);
+  if (families.size < size) {
+    console.log(`  NOT ENOUGH: fewer families than one test needs.`);
   } else {
-    const fingerprints = new Set();
+    const sets = new Set();
     let internalRepeat = 0;
-    let consecutiveOverlap = 0;
+    let identicalConsecutive = 0;
     let previous = null;
     for (let t = 0; t < wanted; t++) {
-      const picked = [...pool].sort(() => Math.random() - 0.5).slice(0, size);
-      const ids = picked.map((x) => x.q.stem);
-      if (new Set(ids).size !== ids.length) internalRepeat++;
-      const fp = [...ids].sort().join("|");
-      fingerprints.add(fp);
-      if (previous && previous === fp) consecutiveOverlap++;
+      const fams = [...families.values()].sort(() => Math.random() - 0.5).slice(0, size);
+      const picked = fams.map((m) => m[Math.floor(Math.random() * m.length)]);
+      const famIds = picked.map((q) => q.variant_of ?? q.id);
+      if (new Set(famIds).size !== famIds.length) internalRepeat++;
+      const fp = picked.map((q) => q.id).sort().join("|");
+      sets.add(fp);
+      if (fp === previous) identicalConsecutive++;
       previous = fp;
     }
-    console.log(`  distinct question sets: ${fingerprints.size}/${wanted}`);
-    console.log(`  tests repeating a question internally: ${internalRepeat}`);
-    console.log(`  consecutive tests that were identical: ${consecutiveOverlap}`);
-    const ok = fingerprints.size === wanted && internalRepeat === 0 && consecutiveOverlap === 0;
+    console.log(`  distinct question sets: ${sets.size}/${wanted}`);
+    console.log(`  tests asking two versions of one question: ${internalRepeat}`);
+    console.log(`  consecutive tests that were identical: ${identicalConsecutive}`);
+    const ok = sets.size === wanted && internalRepeat === 0 && identicalConsecutive === 0;
     console.log(`  ${ok ? "PASS" : "FAIL"}`);
   }
 }
@@ -115,8 +123,9 @@ if (args.combinations) {
 // --- sample for manual review ---------------------------------------------
 if (args.sample) {
   const n = Number(args.sample);
-  let pool = all.filter(({ q }) => q.answer !== null);
+  let pool = all.filter(({ q }) => q.answer !== null && !q.rejected);
   if (args.derived) pool = pool.filter(({ q }) => q.answer_source === "derived");
+  if (args.variants) pool = pool.filter(({ q }) => q.kind === "variant");
   if (args.subject) pool = pool.filter((x) => x.subject === args.subject);
   console.log(`\n--- ${Math.min(n, pool.length)} random ${args.derived ? "DERIVED " : ""}questions to check ---`);
   const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, n);

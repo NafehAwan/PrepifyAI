@@ -109,7 +109,7 @@ begin
     (v_chapter, 'mcq', 'concept', 'bank', 1, 'Which process is exothermic?', '["Freezing water","Sublimation of dry ice","Thermal decomposition of limestone","Breaking bonds"]'::jsonb, 'A', 1, '4f45696b74ce', null),
     (v_chapter, 'mcq', 'scenario', 'bank', 1, 'During an endothermic reaction:', '["Heat enters the system","Heat leaves the system","No energy transfer occurs","Catalyst absorbs all heat"]'::jsonb, 'A', 1, '08acf4b583c0', null),
     (v_chapter, 'mcq', 'concept', 'bank', 1, 'The combustion of carbon producing carbon dioxide has:', '["Positive ΔH","Negative ΔH","Zero ΔH","Variable ΔH"]'::jsonb, 'B', 1, 'f5cb1eda2a68', null),
-    (v_chapter, 'mcq', 'concept', 'bank', 1, 'The reaction H₂ + I₂ → 2HI has ΔH = +53.8 kJ. It is:', '["Exothermic","Endothermic","Neutral","Catalytic"]'::jsonb, 'B', 1, '695e43956171', null),
+    (v_chapter, 'mcq', 'concept', 'bank', 1, 'The reaction H₂ + I₂ → 2HI has ΔH = +53.8 kJ. It is:', '["Exothermic","Endothermic","Neutral","Catalytic"]'::jsonb, 'B', 1, 'c30f43b5dbcc', null),
     (v_chapter, 'mcq', 'concept', 'bank', 1, 'Which statement is correct?', '["Bond breaking releases energy.","Bond formation absorbs energy.","Bond breaking absorbs energy.","Neither bond breaking nor formation involves energy."]'::jsonb, 'C', 1, '249d47a126d8', null),
     (v_chapter, 'mcq', 'concept', 'bank', 1, 'The activated complex forms during:', '["Effective collision","Condensation","Evaporation","Crystallization"]'::jsonb, 'A', 1, '80c2c3ef5d05', null),
     (v_chapter, 'mcq', 'concept', 'bank', 1, 'A reaction pathway with lower activation energy is provided by:', '["Heat only","Pressure only","Catalyst","Solvent only"]'::jsonb, 'C', 1, '5eb8cf064420', null),
