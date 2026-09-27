@@ -3,6 +3,7 @@
   "chapter_seq": 4,
   "questions": [
     {
+      "id": "c528b81b9111",
       "stem": "How is the modern periodic table arranged?",
       "options": [
         "By increasing atomic mass",
@@ -18,6 +19,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "23ee7ad16dd8",
       "stem": "Which block of the periodic table contains the transition metals?",
       "options": [
         "s-block",
@@ -33,6 +35,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "b5378fb9a068",
       "stem": "An element has the electronic configuration 2,8,1. It belongs to:",
       "options": [
         "Group 1",
@@ -48,6 +51,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "fbd067f53ff8",
       "stem": "Which element belongs to the same group as sodium?",
       "options": [
         "Magnesium",
@@ -63,6 +67,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "db4f9438c649",
       "stem": "What is the common name for the elements in Group 17?",
       "options": [
         "Alkali metals",
@@ -78,6 +83,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "48c41c502510",
       "stem": "As you move from left to right across a period, the atomic radius generally:",
       "options": [
         "Increases",
@@ -93,6 +99,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "3b83f13c0277",
       "stem": "Why do transition metals exhibit variable oxidation states?",
       "options": [
         "They have large atomic radii.",
@@ -108,6 +115,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "c118dd579ca4",
       "stem": "Which group of elements is known for having a full outermost electron shell, making them inert?",
       "options": [
         "Alkali metals",
@@ -123,6 +131,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "88b92f749dbf",
       "stem": "The \"shielding effect\" is most responsible for:",
       "options": [
         "Preventing neutron decay",
@@ -138,6 +147,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "c072e131f459",
       "stem": "The trend for atomic radius down a group is an increase because:",
       "options": [
         "Proton number decreases",
@@ -153,6 +163,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "d2520f7daba1",
       "stem": "Which element has the largest atomic radius?",
       "options": [
         "Li",
@@ -168,6 +179,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "cd8e4bfe8669",
       "stem": "Lanthanides and actinides belong to:",
       "options": [
         "s-block",
@@ -183,6 +195,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "e5f2c491b81e",
       "stem": "What defines the \"period\" number of an element?",
       "options": [
         "The number of valence electrons",
@@ -198,6 +211,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "c50b7cc8a4ad",
       "stem": "Which element has the highest electronegativity?",
       "options": [
         "Oxygen",
@@ -213,6 +227,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "45be7939ddb5",
       "stem": "Which element is expected to have the highest ionization energy?",
       "options": [
         "Li",
@@ -228,6 +243,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "9f81f7ce9fa9",
       "stem": "Which of these is a property of transition metals?",
       "options": [
         "They are all gases at room temperature",
@@ -243,6 +259,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "06d6de41256e",
       "stem": "What does the group number indicate about the valence shell?",
       "options": [
         "The number of inner shell electrons",
@@ -258,6 +275,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "3c9e8dffce26",
       "stem": "Two elements are in the same group of the periodic table. Which property is most likely to be similar?",
       "options": [
         "Number of valence electrons",
@@ -273,6 +291,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "f9c54303a153",
       "stem": "An element belongs to Period 3 and Group 16. How many occupied shells and valence electrons does it have?",
       "options": [
         "16 shells, 3 valence electrons",
@@ -288,6 +307,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "b91eb9e64ede",
       "stem": "An element lies immediately to the right of sodium in the same period. Compared with sodium, it is expected to have:",
       "options": [
         "Fewer protons",
@@ -303,6 +323,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "06a4d23d9758",
       "stem": "A student compares fluorine and chlorine. Which property increases from fluorine to chlorine?",
       "options": [
         "Electron-attracting power",
@@ -318,6 +339,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "f472c2a0b2b4",
       "stem": "Which pair of elements is expected to show the greatest similarity in chemical behavior?",
       "options": [
         "Li and Na",
@@ -333,6 +355,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "afd25b9217b6",
       "stem": "An element has the electronic configuration 2,8,8. What can be inferred about its chemical activity?",
       "options": [
         "Highly reactive",
@@ -348,6 +371,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "af811f77571b",
       "stem": "An element in Group 2 forms ions by:",
       "options": [
         "Gaining two electrons",
@@ -363,6 +387,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "3cb80259303f",
       "stem": "The tendency of an atom to attract electrons in a bond is known to be highest for elements located:",
       "options": [
         "Lower left of the periodic table",
@@ -378,6 +403,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "51e7aeb3088b",
       "stem": "Which statement correctly compares sodium and chlorine?",
       "options": [
         "Both readily lose electrons",
@@ -393,6 +419,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "10970df4a76c",
       "stem": "An element lies at the extreme right of a period. Which property is most likely?",
       "options": [
         "Strong metallic character",
@@ -408,6 +435,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "56205fdd3652",
       "stem": "Why does the first ionization energy not strictly increase across Period 3, showing a slight dip between Magnesium and Aluminum?",
       "options": [
         "Aluminum has a larger atomic radius than Magnesium.",
@@ -423,6 +451,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "50d8236b9435",
       "stem": "Why is the ionic radius of an O2- ion significantly larger than that of a $Ne$ atom, even though they have the same number of electrons?",
       "options": [
         "Neon is a metal.",
@@ -438,6 +467,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "89b2fd5b8a12",
       "stem": "Consider elements X and Y in the same period. If X is a metal and Y is a non-metal, which is more likely to form an acidic oxide?",
       "options": [
         "X",
@@ -453,12 +483,13 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "44b94f71b83b",
       "stem": "What is the correct order of increasing atomic radius for the isoelectronic series N3-, O2-, F-, Ne, Na+?",
       "options": [
-        "N3-<O2-<F-<Ne<Na+",
-        "Na+<Ne<F-<O2-<N3-",
-        "Ne<Na+<N3-<O2-<F-",
-        "N3-=O2-=F-=Ne=Na+"
+        "N³⁻<O²⁻<F⁻<Ne<Na⁺",
+        "Na⁺<Ne<F⁻<O²⁻<N³⁻",
+        "Ne<Na⁺<N³⁻<O²⁻<F⁻",
+        "N³⁻=O²⁻=F⁻=Ne=Na⁺"
       ],
       "answer": null,
       "answer_source": null,
@@ -468,6 +499,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "b5b8ab0a5428",
       "stem": "Why is the ionic radius of a cation smaller than that of its neutral atom?",
       "options": [
         "Cations lose an electron shell, and remaining electrons experience a higher effective nuclear charge.",
@@ -483,6 +515,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "7c264b454bf9",
       "stem": "Which block of the periodic table represents elements whose valence electrons are filling orbitals that are NOT the outermost shell?",
       "options": [
         "s-block",
@@ -498,6 +531,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "78fe31d24664",
       "stem": "Which factor causes the decrease in electron affinity from Chlorine to Bromine?",
       "options": [
         "Bromine is a metal.",
@@ -513,6 +547,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "62f6ad0461d0",
       "stem": "Why are noble gases not truly \"inert\"?",
       "options": [
         "Because they have no electrons.",
@@ -528,6 +563,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "868ee27ad170",
       "stem": "Why does the atomic radius of transition metals show a \"dip\" in the middle of the period?",
       "options": [
         "Because protons are lost.",
@@ -543,6 +579,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "f1f7dd70e29d",
       "stem": "Which pair is most likely to form an ionic compound?",
       "options": [
         "X and Z",
@@ -558,6 +595,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "abd811b5c70d",
       "stem": "Which observation best proves the statement wrong?",
       "options": [
         "Sodium and chlorine are in the same period but behave very differently.",
@@ -573,6 +611,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "9f29670e59f4",
       "stem": "The element is most likely:",
       "options": [
         "Magnesium",
@@ -588,6 +627,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "3ef2f8399b06",
       "stem": "Which periodic trend is being applied?",
       "options": [
         "Radius decreases down a group.",
@@ -603,6 +643,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "cf29b7d7873b",
       "stem": "An element belongs to Group 17. Which statement CANNOT be true?",
       "options": [
         "It contains seven valence electrons.",
@@ -618,6 +659,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "35a5f9b6557e",
       "stem": "The trend in boiling points for Group 17 (Halogens) is:",
       "options": [
         "Increasing down the group due to increased Van der Waals forces.",
@@ -633,6 +675,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "432406538f6b",
       "stem": "What does a negative value for electron affinity mean?",
       "options": [
         "The process is endothermic.",
@@ -648,6 +691,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "2650ba8abd59",
       "stem": "Which property measures the \"energy cost\" of adding an electron?",
       "options": [
         "Electronegativity",
@@ -663,6 +707,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "124ea4a32f9b",
       "stem": "What is the relationship between atomic number and periodicity?",
       "options": [
         "Periodicity is a function of the repetition of electronic configuration.",
@@ -678,6 +723,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "4f3f621b52ce",
       "stem": "What differentiates the actinides from the lanthanides?",
       "options": [
         "Actinides are all non-metals.",
@@ -693,12 +739,13 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "ae3cbfe56ab0",
       "stem": "Which of these sets represents an isoelectronic series where size is purely determined by proton count?",
       "options": [
-        "F-,Na+,Mg2+",
+        "F⁻,Na⁺,Mg²⁺",
         "𝐿𝑖,𝐵𝑒,𝐵",
         "𝐶𝑙,𝐴𝑟,𝐾",
-        "O2-,S2-,Se2-"
+        "O²⁻,S²⁻,Se²⁻"
       ],
       "answer": null,
       "answer_source": null,
@@ -708,6 +755,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "c50927d747d5",
       "stem": "In the Periodic Table, why is Helium often grouped with s-block elements in some theoretical models?",
       "options": [
         "It is very dense.",
@@ -723,6 +771,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "d4cb210c4451",
       "stem": "The \"Diagonal Relationship\" between Lithium and Magnesium implies they share similar:",
       "options": [
         "Atomic mass.",
@@ -738,6 +787,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "47d26f2e4f98",
       "stem": "Which element's electronegativity is often used as the \"standard\" or reference point for determining bond polarity?",
       "options": [
         "Carbon",
@@ -753,6 +803,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "3cb82a47a617",
       "stem": "Why is atomic radius a \"trend\" rather than an absolute property for all elements in a period?",
       "options": [
         "Because the periodic table is a diagram.",
@@ -768,6 +819,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "95cad9619d16",
       "stem": "What is the most significant factor in the reactivity of Alkali metals?",
       "options": [
         "High density.",
@@ -783,6 +835,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "fd3f15c520dd",
       "stem": "What does a high electronegativity value indicate about an atom's behavior in a bond?",
       "options": [
         "It has a strong tendency to attract shared electrons towards itself.",
@@ -798,6 +851,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "d353108a9261",
       "stem": "Why does Carbon show unique bonding compared to other Group 14 elements?",
       "options": [
         "It is a metal.",
@@ -813,6 +867,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "c186828d96c9",
       "stem": "Which period contains the greatest number of elements?",
       "options": [
         "Period 1",
@@ -828,6 +883,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "4bc388426c70",
       "stem": "What trend is observed in the boiling points of Alkali metals down the group?",
       "options": [
         "They increase.",
@@ -843,6 +899,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "b5dac6cad2ff",
       "stem": "Which is the most reactive metal in the periodic table?",
       "options": [
         "Li",
@@ -858,6 +915,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "12a9b9f6f8b7",
       "stem": "Moving across a period, metallic character decreases mainly because atoms:",
       "options": [
         "Hold valence electrons more strongly",
@@ -873,6 +931,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "7ac2bcc2dcf7",
       "stem": "If an element has a high first ionization energy but a very low second ionization energy, it is likely:",
       "options": [
         "A noble gas",
@@ -888,6 +947,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
+      "id": "fbd43356bc29",
       "stem": "Which statement must be true?",
       "options": [
         "X and W have the same number of valence electrons.",

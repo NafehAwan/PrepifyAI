@@ -20,6 +20,9 @@ export interface DBMcq {
   options: string[];
   answer: number; // index of the correct option
   explanation?: string; // present on AI-generated questions
+  // Every reworded / re-valued version of one original question shares a
+  // family, so a test never asks two versions of the same thing.
+  family?: string | null;
 }
 
 export async function listSubjects(): Promise<DBSubject[]> {

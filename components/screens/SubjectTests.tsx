@@ -133,7 +133,7 @@ function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
       )}
 
       <div style={{ fontSize: 12, color: "#9a8d78" }}>
-        {test.questionCount} question{test.questionCount === 1 ? "" : "s"} ·{" "}
+        {test.scope ?? "Whole book"} · {test.questionCount} question{test.questionCount === 1 ? "" : "s"} ·{" "}
         {new Date(test.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
       </div>
     </button>

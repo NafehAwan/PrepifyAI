@@ -3,6 +3,7 @@
   "chapter_seq": 9,
   "questions": [
     {
+      "id": "d56dd0747ef6",
       "stem": "A student places water in a sealed flask. After some time, the water level remains unchanged although evaporation continues. This is because:",
       "options": [
         "Evaporation has stopped",
@@ -18,6 +19,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "38ed6a9587ae",
       "stem": "A chemist observes that the concentration of reactants and products remain constant for several hours. Which conclusion is correct?",
       "options": [
         "The reaction has stopped",
@@ -33,6 +35,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "d0e3acf4d41d",
       "stem": "In a closed vessel, nitrogen and hydrogen react to form ammonia. Initially, ammonia forms rapidly. After some time, the rate of ammonia formation decreases because:",
       "options": [
         "Reverse reaction begins to occur",
@@ -48,6 +51,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "92b8b1821eae",
       "stem": "A student claims that no reaction occurs at equilibrium because concentrations remain constant. Why is the statement incorrect?",
       "options": [
         "Concentrations are not constant",
@@ -63,6 +67,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "79f48d4494ad",
       "stem": "Hydrated copper(II) sulphate crystals are heated until they become white. This colour change indicates:",
       "options": [
         "Formation of copper metal",
@@ -78,6 +83,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "b22a430bb5ea",
       "stem": "A white sample of anhydrous copper(II) sulphate turns blue after exposure to moist air. This demonstrates:",
       "options": [
         "Dehydration",
@@ -93,6 +99,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "e908b2e48987",
       "stem": "A pink cobalt(II) chloride sample is heated and becomes blue. The heating process favors:",
       "options": [
         "Hydration",
@@ -108,6 +115,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "c9fe27145ab1",
       "stem": "A sealed container contains liquid water and water vapour at equilibrium. If some vapour is removed, the system will:",
       "options": [
         "Remain unchanged",
@@ -123,6 +131,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "143dfef137ac",
       "stem": "In an equilibrium system, a student observes millions of molecules reacting every second. This observation supports the concept of:",
       "options": [
         "Static equilibrium",
@@ -138,6 +147,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "83cec8841e7a",
       "stem": "A reaction mixture at equilibrium contains 40% reactants and 60% products. Which statement is correct?",
       "options": [
         "Forward rate is greater than reverse rate",
@@ -153,6 +163,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "06a530fc68c8",
       "stem": "A student increases the temperature of an equilibrium system involving dehydration of hydrated copper sulphate. The equilibrium shifts toward:",
       "options": [
         "Hydrated salt",
@@ -168,6 +179,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "02d9caa1ac04",
       "stem": "Why is a closed system necessary for establishing equilibrium?",
       "options": [
         "To prevent catalyst loss",
@@ -183,6 +195,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "a0eac53a97a1",
       "stem": "A reaction reaches equilibrium after 30 minutes. After another hour, concentrations remain unchanged. This means:",
       "options": [
         "No molecules react anymore",
@@ -198,6 +211,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "786628b90abf",
       "stem": "A student notices that opening the lid of a bottle containing an equilibrium mixture disturbs the equilibrium because:",
       "options": [
         "The system is no longer closed",
@@ -213,6 +227,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "cca489621895",
       "stem": "A sample of hydrated cobalt chloride is left in a dry environment and gradually turns blue. This happens because:",
       "options": [
         "It absorbs water",
@@ -228,6 +243,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "48dac4ea380f",
       "stem": "Which observation best indicates equilibrium has been reached?",
       "options": [
         "Reactants disappear completely",
@@ -243,6 +259,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "12c42fe210be",
       "stem": "In a reversible reaction, the forward reaction rate initially decreases because:",
       "options": [
         "Product concentration increases",
@@ -258,6 +275,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "83201546286f",
       "stem": "A student says equilibrium means equal amounts of reactants and products. The correct explanation is:",
       "options": [
         "Always true",
@@ -273,6 +291,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "681c2d4b8f86",
       "stem": "When water vapour condenses inside a sealed flask, the process represents:",
       "options": [
         "Forward reaction only",
@@ -288,6 +307,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "723f87151163",
       "stem": "The blue colour of hydrated copper sulphate reappears when:",
       "options": [
         "Water is added to the white anhydrous salt",
@@ -303,6 +323,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "b7d64147a4cf",
       "stem": "Which situation best represents dynamic equilibrium?",
       "options": [
         "A stopped pendulum",
@@ -318,6 +339,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "99e8ef8107b9",
       "stem": "In a reaction at equilibrium, increasing the concentration of a reactant generally:",
       "options": [
         "Disturbs equilibrium",
@@ -333,6 +355,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "b01b93610b83",
       "stem": "A scientist records equal forward and reverse reaction rates. The system must:",
       "options": [
         "Be at equilibrium",
@@ -348,6 +371,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "ba841a5b792e",
       "stem": "A reversible reaction reaches equilibrium faster when:",
       "options": [
         "Molecules collide more effectively",
@@ -363,6 +387,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "a91bfc34958d",
       "stem": "Which change clearly demonstrates a reversible reaction?",
       "options": [
         "Burning magnesium ribbon",
@@ -378,6 +403,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "7a584e5323be",
       "stem": "A student heats hydrated cobalt chloride and observes a colour change. Which evidence suggests equilibrium has shifted?",
       "options": [
         "Change in mass only",
@@ -393,6 +419,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "84e35726e04c",
       "stem": "A student heats blue hydrated copper sulphate repeatedly and then adds water. The colour alternates between blue and white. This demonstrates:",
       "options": [
         "Irreversible change",
@@ -408,6 +435,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "6418b8f7bad1",
       "stem": "A reaction is at equilibrium. Suddenly the forward rate becomes greater than the reverse rate. This means:",
       "options": [
         "Equilibrium is disturbed",
@@ -423,6 +451,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "a3f74aa6a188",
       "stem": "A reaction vessel at equilibrium is shaken thoroughly. Assuming no temperature change, equilibrium:",
       "options": [
         "Is permanently destroyed",
@@ -438,6 +467,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "fb585f773f7b",
       "stem": "The strongest evidence for dynamic equilibrium is that:",
       "options": [
         "Reactants disappear completely",
@@ -453,6 +483,7 @@
       "source_file": "chem unit#9 MCQs (D).docx"
     },
     {
+      "id": "dddc9c041926",
       "stem": "A reaction in which products can reform the original reactants is called:",
       "options": [
         "Combination reaction",
@@ -468,6 +499,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "f224bc1fa12d",
       "stem": "Which symbol is used to represent a reversible reaction?",
       "options": [
         "→",
@@ -483,6 +515,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "2e99f6255483",
       "stem": "In a reversible reaction, the reaction proceeds:",
       "options": [
         "Only in forward direction",
@@ -498,6 +531,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "2253fc81955b",
       "stem": "Chemical equilibrium is achieved when:",
       "options": [
         "Reactants are completely consumed",
@@ -513,6 +547,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "bf7ad2e5de79",
       "stem": "Chemical equilibrium can be established only in:",
       "options": [
         "Open system",
@@ -528,6 +563,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "3369d1628d35",
       "stem": "In a closed container, liquid and vapour reach equilibrium when:",
       "options": [
         "Evaporation stops",
@@ -543,6 +579,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "8d3e70b07531",
       "stem": "At equilibrium, the concentration of reactants and products:",
       "options": [
         "Continually increases",
@@ -558,6 +595,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "4cfbbd6631b9",
       "stem": "Which reaction is an example of a reversible reaction?",
       "options": [
         "Burning of paper",
@@ -573,6 +611,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "9ef7f072a1a6",
       "stem": "The conversion of reactants into products is called:",
       "options": [
         "Reverse reaction",
@@ -588,6 +627,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "bc102969c521",
       "stem": "The conversion of products back into reactants is called:",
       "options": [
         "Forward reaction",
@@ -603,6 +643,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "b5ada3092a2d",
       "stem": "At the beginning of a reversible reaction, the reverse reaction rate is often:",
       "options": [
         "Maximum",
@@ -618,6 +659,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "8b7ca698bdd5",
       "stem": "In the reaction 2SO₂ + O₂ ⇌ 2SO₃, SO₃ acts as:",
       "options": [
         "Reactant in forward reaction",
@@ -633,6 +675,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "36d203c88651",
       "stem": "Dynamic equilibrium means:",
       "options": [
         "Reaction stops completely",
@@ -648,6 +691,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "1abdffd74107",
       "stem": "Which condition is necessary for equilibrium?",
       "options": [
         "Constant temperature",
@@ -663,6 +707,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "c472f8891fb3",
       "stem": "If temperature changes, equilibrium may:",
       "options": [
         "Remain unaffected",
@@ -678,6 +723,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "8bff3cbb2d95",
       "stem": "When hydrated copper(II) sulphate is heated, its colour changes from:",
       "options": [
         "White to blue",
@@ -693,6 +739,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "3bea58727e78",
       "stem": "Hydrated copper(II) sulphate is:",
       "options": [
         "White solid",
@@ -708,6 +755,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "35809ec5da2d",
       "stem": "Anhydrous copper(II) sulphate is:",
       "options": [
         "Blue solid",
@@ -723,6 +771,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "c42e406b0f06",
       "stem": "Adding water to anhydrous copper(II) sulphate causes it to become:",
       "options": [
         "Black",
@@ -738,6 +787,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "9eb4cbca2749",
       "stem": "Heating hydrated copper(II) sulphate removes:",
       "options": [
         "Sulphur dioxide",
@@ -753,6 +803,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "54cef8813d49",
       "stem": "Hydrated cobalt(II) chloride is:",
       "options": [
         "Blue solid",
@@ -768,6 +819,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "0c158c04ab14",
       "stem": "Anhydrous cobalt(II) chloride is:",
       "options": [
         "Pink solid",
@@ -783,6 +835,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "2616d672b24f",
       "stem": "When hydrated cobalt(II) chloride is heated, it:",
       "options": [
         "Turns pink",
@@ -798,6 +851,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "adbd59ef1467",
       "stem": "Adding water to anhydrous cobalt(II) chloride shifts equilibrium:",
       "options": [
         "To the right",
@@ -813,6 +867,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "2beff4d42f54",
       "stem": "Which reaction is favored when temperature increases?",
       "options": [
         "Exothermic reaction",
@@ -828,6 +883,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "d53bbe917b69",
       "stem": "At equilibrium, the amount of reactants:",
       "options": [
         "Continuously decreases",
@@ -843,6 +899,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "3442c0eea1c2",
       "stem": "Which statement is true at equilibrium?",
       "options": [
         "No molecules react",
@@ -858,6 +915,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "d46429e766d3",
       "stem": "A reaction that goes to completion is called:",
       "options": [
         "Reversible reaction",
@@ -873,6 +931,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "fe6a4bf9583f",
       "stem": "Equilibrium can be achieved when:",
       "options": [
         "Only reactants are placed in a closed container",
@@ -888,6 +947,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "69453b616ca1",
       "stem": "Which process occurs simultaneously in a reversible reaction?",
       "options": [
         "Melting and freezing",
@@ -903,6 +963,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "cc6335240cf4",
       "stem": "Sulphur trioxide can decompose into:",
       "options": [
         "SO₂ and O₂",
@@ -918,6 +979,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "757300415c57",
       "stem": "Which of the following is NOT true for equilibrium?",
       "options": [
         "Forward rate equals reverse rate",
@@ -933,6 +995,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "b62ee9c67de9",
       "stem": "If the evaporation rate becomes equal to the condensation rate, the system is:",
       "options": [
         "Melting",
@@ -948,6 +1011,7 @@
       "source_file": "chem unit#9 MQs (A).docx"
     },
     {
+      "id": "5640c530c260",
       "stem": "Equilibrium is established in an irreversible reaction:",
       "options": [
         "Quickly",

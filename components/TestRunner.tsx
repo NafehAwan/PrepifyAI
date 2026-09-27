@@ -77,7 +77,7 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
   const answered = picks.filter((p) => p !== null).length;
 
   return (
-    <Frame title={test.title} back={back} subtitle={`${test.mcqs.length} questions · ${test.difficulty}`}>
+    <Frame title={test.title} back={back} subtitle={`${test.scope ?? "Whole book"} · ${test.mcqs.length} questions · ${test.difficulty}`}>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 18, alignItems: "center" }}>
         <div style={{ flex: 1 }} />
         <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>
@@ -138,7 +138,7 @@ function Results({ test, picks, onBack }: { test: TestDetail; picks: (number | n
   const passed = pct >= PASS_BAR;
 
   return (
-    <Frame title={test.title} back={onBack} subtitle={`${test.mcqs.length} questions · ${test.difficulty}`}>
+    <Frame title={test.title} back={onBack} subtitle={`${test.scope ?? "Whole book"} · ${test.mcqs.length} questions · ${test.difficulty}`}>
       <div style={{ maxWidth: 900, display: "flex", flexDirection: "column", gap: 16 }}>
         <div style={{ background: passed ? C.sageT : C.tint, borderRadius: 24, padding: "26px 28px", display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
           <Mascot mood={passed ? "celebrate" : "sad"} size={84} />
@@ -206,7 +206,7 @@ function Frame({ title, subtitle, back, children }: { title: string; subtitle?: 
           ← {s.selectedSubjectName ?? "Back"}
         </button>
         <div style={{ fontFamily: "Caprasimo", fontSize: 28 }}>{title}</div>
-        {subtitle && <div style={{ fontSize: 13.5, color: C.muted, marginTop: 2, textTransform: "capitalize" }}>{subtitle}</div>}
+        {subtitle && <div style={{ fontSize: 13.5, color: C.muted, marginTop: 2 }}>{subtitle}</div>}
       </div>
       {children}
     </>

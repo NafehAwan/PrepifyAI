@@ -3,6 +3,7 @@
   "chapter_seq": 6,
   "questions": [
     {
+      "id": "b9119257ea27",
       "stem": "What is the angle between force and displacement for maximum work done",
       "options": [
         "What is the angle between force and displacement for maximum work done",
@@ -18,6 +19,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "2e967c4d9a85",
       "stem": "Potential",
       "options": [
         "Chemical",
@@ -33,6 +35,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "b74ac949cdd5",
       "stem": "Physical",
       "options": [
         "Chemical",
@@ -48,6 +51,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "bb9f7775ebfc",
       "stem": "Displacement",
       "options": [
         "Friction",
@@ -63,6 +67,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "ef0234e48f2e",
       "stem": "Remain same",
       "options": [
         "All of these",
@@ -78,6 +83,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "bf5c86efb199",
       "stem": "Point range",
       "options": [
         "Perpetual",
@@ -93,6 +99,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "aaa0386214dd",
       "stem": "Hypothesis machine",
       "options": [
         "Hygiene machine",
@@ -108,6 +115,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "bfecf52a54d1",
       "stem": "Natural gas",
       "options": [
         "All of them",
@@ -123,6 +131,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "1d4132320543",
       "stem": "Five million ton",
       "options": [
         "Seven million ton",
@@ -138,6 +147,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "b92a839d5fcd",
       "stem": "Crud oil",
       "options": [
         "All of them",
@@ -153,6 +163,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "660f102426aa",
       "stem": "Uranium -239",
       "options": [
         "All of them",
@@ -168,6 +179,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "59fda24e2fdc",
       "stem": "Extraction",
       "options": [
         "Consumption",
@@ -183,6 +195,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "2ada48bfff39",
       "stem": "Percentage",
       "options": [
         "Kilo joules",
@@ -198,6 +211,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "14db1ee28274",
       "stem": "A student pushes a wall with a force of 200 N for 2 minutes, but the wall does not move. The work done on the wall is:",
       "options": [
         "400 J",
@@ -213,6 +227,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "1a0975f5bc9a",
       "stem": "A car and a motorcycle move at the same speed. Which has greater kinetic energy?",
       "options": [
         "Motorcycle",
@@ -228,6 +243,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "148a292256d3",
       "stem": "If speed doubles, kinetic energy becomes:",
       "options": [
         "Double",
@@ -243,6 +259,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "d5c4473f23e9",
       "stem": "A 2 kg object moves at 4 m/s. Its kinetic energy is:",
       "options": [
         "8 J",
@@ -258,6 +275,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "802bf59e6004",
       "stem": "A ball is thrown vertically upward. At the highest point:",
       "options": [
         "KE maximum",
@@ -273,6 +291,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "d51cb8ede31a",
       "stem": "Which is a renewable energy source?",
       "options": [
         "Coal",
@@ -288,6 +307,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "0a300b6dff06",
       "stem": "Which energy is stored in food?",
       "options": [
         "Sonic",
@@ -303,6 +323,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "def499041feb",
       "stem": "Two balls are dropped from the same height. One is twice as massive. Just before hitting the ground:",
       "options": [
         "Heavier ball has more KE",
@@ -318,6 +339,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "71dd4cfe0086",
       "stem": "A lamp converts electrical energy mostly into:",
       "options": [
         "Light and heat",
@@ -333,6 +355,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "0b0b31e9bade",
       "stem": "Potential energy depends on:",
       "options": [
         "Height",
@@ -348,6 +371,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "aa8a4c98d22d",
       "stem": "Which statement is TRUE?",
       "options": [
         "Work can be done without force",
@@ -363,6 +387,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "0743ab19d27e",
       "stem": "A hydroelectric plant mainly converts:",
       "options": [
         "Chemical → Electrical",
@@ -378,6 +403,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "94fdf8ae00fd",
       "stem": "A machine uses 500 J and delivers 400 J. Efficiency?",
       "options": [
         "20%",
@@ -393,6 +419,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "9e0265ebe535",
       "stem": "A 60 W bulb uses 120 J energy in:",
       "options": [
         "1 s",
@@ -408,6 +435,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "2a86288d1e37",
       "stem": "A moving object must possess:",
       "options": [
         "Potential energy only",
@@ -423,6 +451,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "8230bd297fcc",
       "stem": "Why are renewable sources preferred?",
       "options": [
         "Unlimited and environmentally friendly",
@@ -438,6 +467,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "413cbd1a75ef",
       "stem": "A student lifts a bag slowly and then quickly to the same height. Which is true?",
       "options": [
         "More work when lifted quickly",
@@ -453,6 +483,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "c4478b245f14",
       "stem": "A 500 N piano is lifted from 2 m to 8 m. Increase in PE:",
       "options": [
         "3000 J",
@@ -468,6 +499,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "e066de6ba2db",
       "stem": "If momentum of an object becomes 3 times while mass remains constant, kinetic energy becomes:",
       "options": [
         "3 times",
@@ -483,6 +515,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "16164404bbf2",
       "stem": "Two objects have equal momentum. Which one has greater kinetic energy?",
       "options": [
         "More massive object",
@@ -498,6 +531,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "c7d967f12bb8",
       "stem": "Which unit is equivalent to a joule?",
       "options": [
         "N/m",
@@ -513,6 +547,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "6ca7bd9dc33f",
       "stem": "Which quantity has the same SI unit as work?",
       "options": [
         "Force",
@@ -528,6 +563,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "8827a6099632",
       "stem": "The major component of biogas is:",
       "options": [
         "Carbon dioxide",
@@ -543,6 +579,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "603da31e9cb3",
       "stem": "Biogas is commonly produced from:",
       "options": [
         "Animal dung",
@@ -558,6 +595,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "f597d91ace7f",
       "stem": "Which quantity has unit kg m²/s²?",
       "options": [
         "Power",
@@ -573,6 +611,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "d5f1f01a1380",
       "stem": "1-Watt equals:",
       "options": [
         "1 J × s",
@@ -588,6 +627,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "f2fc1356d90c",
       "stem": "Which of the following is NOT a fossil fuel?",
       "options": [
         "Coal",
@@ -603,6 +643,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "a56f99f73d84",
       "stem": "Which gas released during fossil fuel combustion contributes most to global warming?",
       "options": [
         "Oxygen",
@@ -618,6 +659,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "4c44443d3c28",
       "stem": "Which environmental issue is directly linked to excessive fossil fuel use?",
       "options": [
         "Deforestation only",
@@ -633,6 +675,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "ade77f3a7237",
       "stem": "Which of the following is a commonly used nuclear fuel?",
       "options": [
         "Coal",
@@ -648,6 +691,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "f30265dd323f",
       "stem": "Biogas is produced in the absence of:",
       "options": [
         "Water",
@@ -663,6 +707,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "1f8ab80a0c44",
       "stem": "The process used in most nuclear power plants is:",
       "options": [
         "Fusion",
@@ -678,6 +723,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "64e5a9af430e",
       "stem": "In nuclear fission, a heavy nucleus:",
       "options": [
         "Combines with another nucleus",
@@ -693,6 +739,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "ac97a306e068",
       "stem": "Biogas production helps reduce:",
       "options": [
         "Organic waste accumulation",
@@ -708,6 +755,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "fbcafd3cba5f",
       "stem": "In a nuclear power plant, heat produced by fission is used to:",
       "options": [
         "Melt uranium",
@@ -723,6 +771,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
+      "id": "6a501ecb5d2f",
       "stem": "The leftover material after biogas production is useful as:",
       "options": [
         "Cement",

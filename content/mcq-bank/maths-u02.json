@@ -3,6 +3,7 @@
   "chapter_seq": 2,
   "questions": [
     {
+      "id": "7e77d6a50444",
       "stem": "0.0009988 × 10¹⁰ in standard notation is:",
       "options": [
         "9,988,000",
@@ -18,7 +19,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "logb(mn ) = 4 and logbm = 7, then logbn = ?",
+      "id": "5048b20439dd",
+      "stem": "log_b( m/n ) = 4 and log_b m = 7, then log_b n = ?",
       "options": [
         "28",
         "11",
@@ -33,7 +35,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "log557 × log773 = ?",
+      "id": "7b5fdb565769",
+      "stem": "log₅ 5⁷ × log₇ 7³ = ?",
       "options": [
         "10",
         "21",
@@ -48,7 +51,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "log156.3 = ?",
+      "id": "aeba3a6d48b6",
+      "stem": "log 156.3 = ?",
       "options": [
         "2.1939",
         "1.1939",
@@ -63,7 +67,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "log255 = ?",
+      "id": "29c91f1ba9bf",
+      "stem": "log₂₅ 5 = ?",
       "options": [
         "5",
         "2",
@@ -78,7 +83,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "logb( b3 × b-5 ) = ?",
+      "id": "d64cf811a107",
+      "stem": "log_b ( b³ × b⁻⁵ ) = ?",
       "options": [
         "2",
         "−3",
@@ -93,7 +99,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "If logb2 = 0.3010 and logb3 = 0.4771, then logb72 = ?",
+      "id": "53bbcaeb8f16",
+      "stem": "If log_b 2 = 0.3010 and log_b 3 = 0.4771, then log_b 72 = ?",
       "options": [
         "1.8573",
         "1.6532",
@@ -108,7 +115,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "log100.0012 = ?",
+      "id": "830bff051931",
+      "stem": "log₁₀ (0.001)² = ?",
       "options": [
         "−3",
         "6",
@@ -123,6 +131,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "a580dfd28aed",
       "stem": "The characteristic of log 0.0123 is:",
       "options": [
         "4",
@@ -138,6 +147,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "e47584ec03ca",
       "stem": "If log₂ x = log₄ 16, then x = ?",
       "options": [
         "8",
@@ -153,7 +163,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "If logb2 = 0.3010, logb3 = 0.4771, logb5 = 0.6990, then logb(6/5) = ?",
+      "id": "3adace55e078",
+      "stem": "If log_b 2 = 0.3010, log_b 3 = 0.4771, log_b 5 = 0.6990, then log_b (6/5) = ?",
       "options": [
         "0.0791",
         "0.1761",
@@ -168,6 +179,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "989acba93ebc",
       "stem": "Number of digits in 5⁵⁰ =",
       "options": [
         "34",
@@ -183,7 +195,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "If logb(y3+1) = logb28, then y = ?",
+      "id": "2401d8c88f89",
+      "stem": "If log_b (y³+1) = log_b 28, then y = ?",
       "options": [
         "2",
         "4",
@@ -198,6 +211,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "4949ac6628ba",
       "stem": "If log₆₄ x = −4/3, then x = ?",
       "options": [
         "1/16",
@@ -213,6 +227,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "965f12121034",
       "stem": "log 13/(7b) expanded is:",
       "options": [
         "log 13 − log 7 + log b",
@@ -228,6 +243,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "68f31251acb1",
       "stem": "log 39 − log t − log b combined is:",
       "options": [
         "log(39tb)",
@@ -243,6 +259,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "42efd44bb82e",
       "stem": "antilog 2.4541 = ?",
       "options": [
         "24.45",
@@ -258,12 +275,13 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "logyx will be equal to:",
+      "id": "48a41a669336",
+      "stem": "log_y xwill be equal to:",
       "options": [
-        "logzxlogyz",
-        "logxzlogyz",
-        "logzxlogzy",
-        "logzylogzx"
+        "(log_z x)/(log_y z)",
+        "(logₓ z)/(log_y z)",
+        "(log_z x)/(log_z y)",
+        "(log_z y)/(log_z x)"
       ],
       "answer": null,
       "answer_source": null,
@@ -273,6 +291,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "73651ef585a4",
       "stem": "Integral part of the logarithm is called",
       "options": [
         "Mantissa",
@@ -288,6 +307,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "3c113b848840",
       "stem": "Mantissa is always non- negative number less than",
       "options": [
         "0",
@@ -303,6 +323,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "a5390440999f",
       "stem": "Logarithm of a number = -------------",
       "options": [
         "2(Mantissa) + Characteristic",
@@ -318,6 +339,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "a5f7a486642a",
       "stem": "The inverse operation of taking log is called",
       "options": [
         "Characteristic",
@@ -333,6 +355,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "d6c5ca8331e0",
       "stem": "Logarithms with base ------- are called common logarithms.",
       "options": [
         "10",
@@ -348,6 +371,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "3a5be6a4e921",
       "stem": "Antilog means to find a number whose -------- is given.",
       "options": [
         "Characteristic",
@@ -363,6 +387,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "690a732afc60",
       "stem": "Decimal part or fractional part of a logarithm is called --------",
       "options": [
         "Characteristic",
@@ -378,7 +403,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "If logbx=4 and logby=2 , what is logb(x × y3 ) ?",
+      "id": "7b614a7a6cf3",
+      "stem": "If log_b x=4 and log_b y=2 , what is log_b (x × y³) ?",
       "options": [
         "5",
         "7",
@@ -393,7 +419,8 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "What is the value of x in the exponential equation 9 + e2x-4 = 10?",
+      "id": "322bcfd0bfd2",
+      "stem": "What is the value of x in the exponential equation 9 + e^(2x-4) = 10?",
       "options": [
         "2",
         "3",
@@ -408,12 +435,13 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "Simplify: 1012 ÷ 105 ÷ 103",
+      "id": "4fb21bd69381",
+      "stem": "Simplify: 10¹² ÷ 10⁵ ÷ 10³",
       "options": [
-        "1020",
-        "1012",
-        "1010",
-        "104"
+        "10²⁰",
+        "10¹²",
+        "10¹⁰",
+        "10⁴"
       ],
       "answer": null,
       "answer_source": null,
@@ -423,12 +451,13 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "log (mn) can be written as ----------",
+      "id": "f47a49e329e6",
+      "stem": "log ( mⁿ) can be written as ----------",
       "options": [
-        "(logm)n",
-        "m logn",
-        "n logm",
-        "log(mn)"
+        "(log m)ⁿ",
+        "m log n",
+        "n log m",
+        "log (mn)"
       ],
       "answer": null,
       "answer_source": null,
@@ -438,12 +467,13 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
-      "stem": "The relation y = logzx implies",
+      "id": "b35d90c2a7fa",
+      "stem": "The relation y = log_z x implies",
       "options": [
-        "xy=z",
-        "zy = x",
-        "x2=y",
-        "y2 = x"
+        "x^y=z",
+        "z^y = x",
+        "x²=y",
+        "y² = x"
       ],
       "answer": null,
       "answer_source": null,
@@ -453,6 +483,7 @@
       "source_file": "Maths-Unit = 2 ( Set 02).docx"
     },
     {
+      "id": "024b7551ac17",
       "stem": "Which of the following is correctly written in scientific notation?",
       "options": [
         "53.4 × 10³",
@@ -468,6 +499,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "1a05ec119c5e",
       "stem": "0.00000492 in scientific notation is:",
       "options": [
         "4.92 × 10⁻⁵",
@@ -483,6 +515,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "58d05322657f",
       "stem": "5.64 × 10⁰ in standard notation is:",
       "options": [
         "56.4",
@@ -498,6 +531,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "220ebc5496f6",
       "stem": "(563.71 × 10⁻²) × (2.54 × 10⁴) in scientific notation is:",
       "options": [
         "1.432 × 10⁵",
@@ -513,6 +547,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "a92541a2d00a",
       "stem": "The value of n in 0.00000000001 = 1 × 10ⁿ is:",
       "options": [
         "10",
@@ -528,6 +563,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "892576e24323",
       "stem": "(0.023 × 10²) ÷ 10⁻² in standard notation equals:",
       "options": [
         "230",
@@ -543,6 +579,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "46294b5b0fc3",
       "stem": "log₂ (log₃ 81) = ?",
       "options": [
         "1",
@@ -558,6 +595,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "d3b20382138c",
       "stem": "The number of digits in 1.5 × 10⁸ written in standard form is:",
       "options": [
         "7",
@@ -573,7 +611,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log2128 = ?",
+      "id": "e1b99f9755a6",
+      "stem": "log₂ 128 = ?",
       "options": [
         "6",
         "7",
@@ -588,12 +627,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "1251/3 = 5 in logarithmic form is:",
+      "id": "7273699dacde",
+      "stem": "125^(1/3) = 5 in logarithmic form is:",
       "options": [
-        "log5125 = 3",
-        "log1255 = 1/3",
-        "log5125 = 1/3",
-        "log35= 125"
+        "log₅ 125 = 3",
+        "log₁₂₅ 5 = 1/3",
+        "log₅ 125 = 1/3",
+        "log₃ 5= 125"
       ],
       "answer": null,
       "answer_source": null,
@@ -603,7 +643,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log5(-1) is :",
+      "id": "540f7611537f",
+      "stem": "log₅ (-1) is :",
       "options": [
         "−1",
         "1",
@@ -618,7 +659,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "If log2(4-2x) = y, for which value of x is y undefined?",
+      "id": "fa375112aaeb",
+      "stem": "If log₂ (4-2x) = y, for which value of x is y undefined?",
       "options": [
         "x = 0",
         "x = 1",
@@ -633,12 +675,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "The exponential form of log81(13) = −1/4 is:",
+      "id": "46c7ce2745d4",
+      "stem": "The exponential form of log₈₁ (1/3) = −1/4 is:",
       "options": [
-        "811/4 = 3",
-        "81-1/4= 1/3",
-        "(13)81 = −1/4",
-        "381 = 1/4"
+        "81^(1/4) = 3",
+        "81^(-1/4)= 1/3",
+        "(1/3)⁸¹ = −1/4",
+        "3⁸¹ = 1/4"
       ],
       "answer": null,
       "answer_source": null,
@@ -648,7 +691,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "If logbb5 = x, then x = ?",
+      "id": "f5559ec146a5",
+      "stem": "If log_b b⁵ = x, then x = ?",
       "options": [
         "b",
         "5b",
@@ -663,6 +707,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "a1a69beabb6c",
       "stem": "The characteristic of log 3.3 × 10² is:",
       "options": [
         "1",
@@ -678,6 +723,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "ac001e4de0d6",
       "stem": "Mantissa is always:",
       "options": [
         "Negative",
@@ -693,7 +739,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "If logbx = logby, then which must be true?",
+      "id": "03f9a93afb2b",
+      "stem": "If log_b x = log_b y, then which must be true?",
       "options": [
         "b = 1",
         "x = y",
@@ -708,6 +755,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "d77266bd5da0",
       "stem": "If ln e⁴ = x, then x = ?",
       "options": [
         "e",
@@ -723,11 +771,12 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log0.0123 = ?",
+      "id": "96786eab41e3",
+      "stem": "log 0.0123 = ?",
       "options": [
         "2.0908",
         "2̄.0899",
-        "2.0899",
+        "2̅.0899",
         "−2.899"
       ],
       "answer": null,
@@ -738,6 +787,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "7eadc8d92262",
       "stem": "Number of digits in a whole number = characteristic + ?",
       "options": [
         "0",
@@ -753,6 +803,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "84a25ee94007",
       "stem": "If characteristic of log of a number is 3, how many digits does that number have?",
       "options": [
         "3",
@@ -768,6 +819,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "3fe2addfb04c",
       "stem": "In log 0.00532, the reference position is between digits 5 and 3. The characteristic is:",
       "options": [
         "3",
@@ -783,12 +835,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "30d4ba79a9f7",
       "stem": "Which expression equals 1?",
       "options": [
-        "logb( m+n )",
-        "logbb",
-        "logb0",
-        "logb( b+1 )"
+        "log_b ( m+n )",
+        "log_b b",
+        "log_b 0",
+        "log_b ( b+1 )"
       ],
       "answer": null,
       "answer_source": null,
@@ -798,6 +851,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "d4fdb326051e",
       "stem": "log (x²y³z) expanded equals:",
       "options": [
         "2 log x + 3 log y + log z",
@@ -813,7 +867,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log35 × log527 = ?",
+      "id": "cf3809941ab9",
+      "stem": "log₃ 5 × log₅ 27 = ?",
       "options": [
         "1",
         "2",
@@ -828,12 +883,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "logba × logab = ?",
+      "id": "2a4366ef1061",
+      "stem": "log_b a × logₐ b = ?",
       "options": [
         "0",
-        "logba",
+        "log_b a",
         "1",
-        "logab"
+        "logₐ b"
       ],
       "answer": null,
       "answer_source": null,
@@ -843,12 +899,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log3536 converted to base 10 is:",
+      "id": "4e8d97ac5c72",
+      "stem": "log₃ 536 converted to base 10 is:",
       "options": [
-        "log536 × log3",
-        "log536 / log3",
-        "log3 / log536",
-        "log (536/3)"
+        "log 536 × log 3",
+        "log 536 / log 3",
+        "log 3 / log 536",
+        "log ( 536/3)"
       ],
       "answer": null,
       "answer_source": null,
@@ -858,12 +915,13 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "logb50-5 equals:",
+      "id": "3b777e860acc",
+      "stem": "log_b (50-5)equals:",
       "options": [
-        "logb50- logb5",
-        "logb45",
-        "logb50+ logb5",
-        "logb5 × logb10"
+        "log_b 50- log_b 5",
+        "log_b 45",
+        "log_b 50+ log_b 5",
+        "log_b 5 × log_b 10"
       ],
       "answer": null,
       "answer_source": null,
@@ -873,7 +931,8 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
-      "stem": "log 5p2q1/24s t3 expanded fully is:",
+      "id": "12b6df81ec86",
+      "stem": "log (5p²q^(1/2))/(4√s t³) expanded fully is:",
       "options": [
         "log 5 + 2logp + ½logq − log4 − ½logs − 3logt",
         "log 5 + 2logp + ½logq + log4 + ½logs + 3logt",
@@ -888,6 +947,7 @@
       "source_file": "Maths-Unit = 2 (Set 01).docx"
     },
     {
+      "id": "1ca6bcc8f44d",
       "stem": "The natural logarithm uses base:",
       "options": [
         "10",

@@ -3,6 +3,7 @@
   "chapter_seq": 2,
   "questions": [
     {
+      "id": "ea67e091a96d",
       "stem": "\"How to stop infectious diseases?\" is a real-world problem belonging to which field?",
       "options": [
         "Economic",
@@ -18,6 +19,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "b6ebf2f1e811",
       "stem": "In computer science, a \"computing problem\" is specifically defined as a problem that is solved:",
       "options": [
         "Only by using the internet.",
@@ -33,6 +35,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "96096c3b8af4",
       "stem": "When checking if a specific number is \"Prime\" or \"Not Prime,\" you are dealing with which type of computing problem?",
       "options": [
         "Search Problem",
@@ -48,6 +51,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "83ee2a1a3a18",
       "stem": "In a \"Search Problem,\" which element represents the specific moves that transition from one node to another?",
       "options": [
         "Initial State",
@@ -63,6 +67,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "d4a2b2584fb5",
       "stem": "To solve a search problem, the \"target of end condition\" is officially known as the:",
       "options": [
         "Initial State",
@@ -78,6 +83,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "907854a4f508",
       "stem": "If you have 5 shirts and 3 pants, how many \"total possible casual dresses\" can you form?",
       "options": [
         "8",
@@ -93,6 +99,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "94698707a7fb",
       "stem": "If you enter your home and see water on the floor, what do you need to solve such problems?",
       "options": [
         "High-speed internet access",
@@ -108,6 +115,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "2413290c5283",
       "stem": "In the I-P-O model, which term refers specifically to the \"requirements from the environment\"?",
       "options": [
         "Input",
@@ -123,6 +131,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "e830e7817871",
       "stem": "For a programmer, an I-P-O chart is considered to be a:",
       "options": [
         "Type of hardware.",
@@ -138,6 +147,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "5ca50be570d3",
       "stem": "In an I-P-O chart, the \"Process\" column is defined as:",
       "options": [
         "Data entered into the system.",
@@ -153,6 +163,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "0a93406a8113",
       "stem": "If you are calculating the \"Average of 5 numbers,\" the division operation would be listed in which section of the I-P-O chart?",
       "options": [
         "Input",
@@ -168,6 +179,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "3fc4bb1df16a",
       "stem": "What is the official definition of \"Output\" in the I-P-O tabular form?",
       "options": [
         "Requirements from the environment.",
@@ -183,6 +195,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "4a34a661f0f8",
       "stem": "\"Computational Thinking\" is often described as an extension of which type of thinking?",
       "options": [
         "Mathematical Thinking",
@@ -198,6 +211,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "2154b9cc6348",
       "stem": "Which property of computational thinking involves \"removing the unnecessary details\" to focus on essential info?",
       "options": [
         "Decomposition",
@@ -213,6 +227,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "08deafeecf82",
       "stem": "The process of \"examining a problem for similarities between previously solved problems\" is:",
       "options": [
         "Decomposition",
@@ -228,6 +243,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "01b07ff23561",
       "stem": "\"Actual designing of solution\" and \"creating step-by-step plan\" defines:",
       "options": [
         "Logical Thinking",
@@ -243,6 +259,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "1d8b311efd3b",
       "stem": "In the \"Video Game\" example, ignoring the \"weather\" while focusing on the \"exit\" is an example of:",
       "options": [
         "Decomposition",
@@ -258,6 +275,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "2bbbe25d86e1",
       "stem": "Treating \"Six enemies as a single enemy\" because they behave the same way is an example of:",
       "options": [
         "Decomposition",
@@ -273,6 +291,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "b0a2a54a90b6",
       "stem": "What is the benefit of developing \"algorithmic thinking skills\"?",
       "options": [
         "You become a hardware engineer.",
@@ -288,6 +307,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "ffea117729c8",
       "stem": "Which solution design method is described as a \"diagrammatic representation of an algorithm\"?",
       "options": [
         "Flowchart",
@@ -303,6 +323,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "31f437682094",
       "stem": "Every flowchart should officially start with a \"trigger,\" which is represented by which shape?",
       "options": [
         "Rectangle",
@@ -318,6 +339,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "ed3e0e3de813",
       "stem": "Which graphical shape represents the \"Input to the flowchart\"?",
       "options": [
         "Oval",
@@ -333,6 +355,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "c94321290c74",
       "stem": "When a formula (like Area = (Base x Height) / 2) is applied in a flowchart, which symbol is used?",
       "options": [
         "Oval",
@@ -348,6 +371,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "866054ffbf6f",
       "stem": "When a flowchart needs to check a condition (like \"Is Grade > 50?\"), which symbol is used?",
       "options": [
         "Rectangle",
@@ -363,6 +387,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "2b365294da45",
       "stem": "Why might a flowchart have \"multiple ends\"?",
       "options": [
         "Because the programmer got confused.",
@@ -378,6 +403,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "0c1a8e3526ea",
       "stem": "Which software tool is mentioned as famous for drawing various types of diagrams, including flowcharts?",
       "options": [
         "LARP",
@@ -393,6 +419,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "d8c5a8f28c14",
       "stem": "The LARP programming language is unique because it uses:",
       "options": [
         "Only binary code (0s and 1s).",
@@ -408,6 +435,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "9ab87a462558",
       "stem": "In the \"Video Game Development\" concept map, what are the three sub-concepts under \"Game Design\"?",
       "options": [
         "Gameplay Mechanics, Level Design, and Storyline.",
@@ -423,6 +451,7 @@
       "source_file": "Unit_2_mcqs_done.docx"
     },
     {
+      "id": "5a2f8a7b58cb",
       "stem": "Which of the following methods are mentioned for designing a solution?",
       "options": [
         "Flowcharts and Source Code",

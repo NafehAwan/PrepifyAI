@@ -9,10 +9,11 @@
 // `answer_source: "file"`. Files with no answer key come out with
 // `answer: null` for scripts/derive-answers.mjs to fill in.
 
-import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { parseQuestions, looksScenario } from "./lib/mcq-parse.mjs";
+import { bankId, fingerprint } from "./lib/bank-id.mjs";
+import { docxToText } from "./lib/docx-text.mjs";
 
 // Filename → which subject and chapter the questions belong to. `chapter: null`
 // means the file spans several chapters and carries "Chapter N" headings.
@@ -63,19 +64,6 @@ function matchFile(name) {
   return null;
 }
 
-function docxText(file) {
-  return execFileSync("unzip", ["-p", file, "word/document.xml"], { maxBuffer: 1 << 28 })
-    .toString("utf8")
-    .replace(/<w:tab[^>]*\/>/g, " ")
-    .replace(/<w:br[^>]*\/>/g, "\n")
-    .replace(/<\/w:p>/g, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&amp;/g, "&");
-}
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -104,7 +92,7 @@ for (const name of fs.readdirSync(args.in).sort()) {
   }
   if (rule.skip) continue;
 
-  const { layout, questions } = parseQuestions(docxText(path.join(args.in, name)), rule.chapter);
+  const { layout, questions, key } = parseQuestions(docxToText(path.join(args.in, name)), rule.chapter);
   let kept = 0;
   let keyed = 0;
   for (const q of questions) {
@@ -114,10 +102,12 @@ for (const name of fs.readdirSync(args.in).sort()) {
     const byChapter = banks.get(subject);
     if (!byChapter.has(q.chapter_seq)) byChapter.set(q.chapter_seq, []);
     byChapter.get(q.chapter_seq).push({
+      id: bankId(rule.subject, q.chapter_seq, q.stem),
       stem: q.stem,
       options: q.options,
       answer: q.answer,
       answer_source: q.answer_source,
+      ...(q.explanation ? { explanation: q.explanation } : {}),
       difficulty: rule.difficulty,
       scenario: looksScenario(q.stem, !!rule.scenario),
       chapter_seq: q.chapter_seq,
@@ -126,7 +116,7 @@ for (const name of fs.readdirSync(args.in).sort()) {
     kept++;
     if (q.answer !== null) keyed++;
   }
-  report.push({ name, subject: rule.subject, layout, parsed: questions.length, kept, keyed });
+  report.push({ name, subject: rule.subject, layout, parsed: questions.length, kept, keyed, key });
 }
 
 // Drop questions that repeat a stem within the same chapter — several files
@@ -149,6 +139,29 @@ for (const byChapter of banks.values()) {
   }
 }
 
+// Carry over answers derived since the last run. Re-parsing the documents
+// yields answer:null for every unkeyed question, and silently discarding
+// hundreds of derived answers would be an expensive mistake.
+let carried = 0;
+for (const [subject, byChapter] of banks) {
+  for (const [seq, list] of byChapter) {
+    const file = path.join(outDir, `${SUBJECT_SLUG[subject]}-u${String(seq).padStart(2, "0")}.json`);
+    if (!fs.existsSync(file)) continue;
+    const previous = new Map(
+      JSON.parse(fs.readFileSync(file, "utf8")).questions.map((q) => [fingerprint(q.stem), q]),
+    );
+    for (const q of list) {
+      const old = previous.get(fingerprint(q.stem));
+      if (q.answer === null && old && old.answer !== null) {
+        q.answer = old.answer;
+        q.answer_source = old.answer_source;
+        if (old.answer_confidence) q.answer_confidence = old.answer_confidence;
+        carried++;
+      }
+    }
+  }
+}
+
 // Write one file per subject+chapter.
 let written = 0;
 let totals = { all: 0, keyed: 0, scenario: 0 };
@@ -166,7 +179,13 @@ for (const [subject, byChapter] of [...banks].sort()) {
 
 console.log("\nPer-file parse:");
 for (const r of report) {
-  console.log(`  ${r.kept.toString().padStart(4)} kept (${r.keyed} keyed) [${r.layout.padEnd(8)}] ${r.name}`);
+  const keyNote =
+    r.key.status === "applied"
+      ? ` · end-of-document key applied`
+      : r.key.status === "mismatch"
+        ? ` · KEY NOT APPLIED: ${r.key.entries} entries vs ${r.parsed} questions${r.key.conflicts ? `, ${r.key.conflicts} conflicts` : ""}`
+        : "";
+  console.log(`  ${r.kept.toString().padStart(4)} kept (${r.keyed} keyed) [${r.layout.padEnd(8)}] ${r.name}${keyNote}`);
 }
 console.log("\nPer subject / chapter:");
 for (const [subject, byChapter] of [...banks].sort()) {
@@ -179,7 +198,8 @@ for (const [subject, byChapter] of [...banks].sort()) {
 }
 console.log(
   `\nTotal ${totals.all} questions · ${totals.keyed} with an answer from the file ` +
-    `(${totals.all - totals.keyed} need deriving) · ${totals.scenario} scenario-style · ${duplicates} duplicates dropped`,
+    `(${totals.all - totals.keyed} need deriving) · ${totals.scenario} scenario-style · ${duplicates} duplicates dropped` +
+    (carried ? ` · ${carried} derived answers carried over` : ""),
 );
 if (unmatched.length) console.log(`\nUnmatched files (no rule):\n  ${unmatched.join("\n  ")}`);
 if (!args.dry) console.log(`\nWrote ${written} files to ${outDir}`);

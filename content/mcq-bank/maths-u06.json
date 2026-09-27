@@ -3,6 +3,7 @@
   "chapter_seq": 6,
   "questions": [
     {
+      "id": "0742698e45e0",
       "stem": "In the sexagesimal system, one degree (1°) is equal to:",
       "options": [
         "60 minutes",
@@ -10,14 +11,15 @@
         "60 seconds",
         "3600 minutes"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "4d2ef2c1badf",
       "stem": "How many seconds are there in one degree?",
       "options": [
         "60″",
@@ -25,14 +27,15 @@
         "600″",
         "3600″"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "d85533671951",
       "stem": "The radian measure of a complete angle (360°) is:",
       "options": [
         "π radians",
@@ -40,14 +43,15 @@
         "2π radians",
         "4π radians"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "27c1c6621cdc",
       "stem": "1 radian is approximately equal to:",
       "options": [
         "45° 00′ 00″",
@@ -55,14 +59,15 @@
         "60° 00′ 00″",
         "90° 00′ 00″"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "62158f33d5f3",
       "stem": "To convert an angle from degrees to radians, multiply by:",
       "options": [
         "π/360",
@@ -70,14 +75,15 @@
         "180/π",
         "360/π"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "085f7cf53ff8",
       "stem": "The radian measure of 90° is:",
       "options": [
         "π/4",
@@ -85,14 +91,15 @@
         "π/2",
         "π"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "7fe9b18b1c27",
       "stem": "The length of a circular arc with radius r and central angle θ (in radians) is:",
       "options": [
         "l = r²θ",
@@ -100,14 +107,15 @@
         "l = θ/r",
         "l = 2πr/θ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "52702de3d521",
       "stem": "The area of a sector of a circle with radius r and central angle θ radians is:",
       "options": [
         "A = rθ",
@@ -115,14 +123,15 @@
         "A = ½ r²θ",
         "A = πr²θ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "028638829b9f",
       "stem": "A circle has radius 6 cm and its sector has a central angle of π/3 radians. What is the arc length?",
       "options": [
         "π cm",
@@ -130,14 +139,15 @@
         "3π cm",
         "6π cm"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "f4d123905711",
       "stem": "In a right-angled triangle ABC with ∠C = 90°, sin θ is defined as:",
       "options": [
         "Base / Hypotenuse",
@@ -145,14 +155,15 @@
         "Perpendicular / Base",
         "Hypotenuse / Perpendicular"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "b034ca409684",
       "stem": "Which of the following is the reciprocal of cos θ?",
       "options": [
         "sin θ",
@@ -160,74 +171,79 @@
         "cosec θ",
         "sec θ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "193faed2e3fe",
       "stem": "The value of tan 45° is:",
       "options": [
         "0",
-        "12",
+        "1/(√2)",
         "1",
-        "3"
+        "√3"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "49347d8d2d96",
       "stem": "The value of sin 30° is:",
       "options": [
         "1",
-        "32",
-        "12",
-        "12"
+        "(√3)/2",
+        "1/(√2)",
+        "1/2"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "215f2ff3b24f",
       "stem": "The value of cos 60° is:",
       "options": [
-        "32",
-        "12",
-        "12",
+        "(√3)/2",
+        "1/2",
+        "1/(√2)",
         "0"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "aa4089c2bc52",
       "stem": "sin 90° is equal to:",
       "options": [
         "0",
-        "12",
-        "32",
+        "1/2",
+        "(√3)/2",
         "1"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "994849ef0751",
       "stem": "The value of cos 180° is:",
       "options": [
         "1",
@@ -235,14 +251,15 @@
         "−1",
         "undefined"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "611dbe442b9c",
       "stem": "tan 90° is:",
       "options": [
         "0",
@@ -250,29 +267,31 @@
         "−1",
         "undefined"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "c330d88a000c",
       "stem": "cot θ is equal to:",
       "options": [
-        "sin θ cos θ",
-        "cos θ sin θ",
-        "1sin θ",
-        "1sec θ"
+        "(sin θ)/(cos θ)",
+        "(cos θ)/(sin θ)",
+        "1/(sin θ)",
+        "1/(sec θ)"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "bf7f7ca0195c",
       "stem": "In which quadrant are both sin θ and cos θ positive?",
       "options": [
         "1st quadrant",
@@ -280,14 +299,15 @@
         "3rd quadrant",
         "4th quadrant"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "9f2e1357d6b4",
       "stem": "In the second quadrant, which trigonometric ratio is positive?",
       "options": [
         "cos θ",
@@ -295,14 +315,15 @@
         "sin θ",
         "cot θ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "f7168a91cf7c",
       "stem": "In the third quadrant, which of the following is positive?",
       "options": [
         "sin θ",
@@ -310,14 +331,15 @@
         "tan θ",
         "sec θ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "7294ddabf03d",
       "stem": "Which of the following is a Pythagorean identity?",
       "options": [
         "sin²θ − cos²θ = 1",
@@ -325,14 +347,15 @@
         "sin θ + cos θ = 1",
         "sin²θ × cos²θ = 1"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "5fef42d95097",
       "stem": "sec²θ − tan²θ equals:",
       "options": [
         "0",
@@ -340,14 +363,15 @@
         "2",
         "1"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "9a03e4877f35",
       "stem": "cosec²θ − cot²θ equals:",
       "options": [
         "2",
@@ -355,29 +379,31 @@
         "1",
         "0"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "e3887cd80f97",
       "stem": "tan θ is equal to:",
       "options": [
-        "cos θ sin θ",
-        "sin θ cos θ",
+        "(cos θ)/(sin θ)",
+        "(sin θ)/(cos θ)",
         "sin θ × cos θ",
-        "1cos θ"
+        "1/(cos θ)"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "f2a3930e2da4",
       "stem": "The angle of elevation is measured:",
       "options": [
         "Below the horizontal line",
@@ -385,14 +411,15 @@
         "Above the horizontal line",
         "Along the ground"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "a4f158b44932",
       "stem": "The angle between the horizontal line and the line of sight to an object below the observer is called:",
       "options": [
         "Angle of elevation",
@@ -400,44 +427,47 @@
         "Angle of incidence",
         "Bearing angle"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "053892816ded",
       "stem": "A vertical pole is 10 m high. The angle of elevation of its top from a point on the ground is 45°. The distance of the point from the base of the pole is:",
       "options": [
         "5 m",
-        "102 m",
+        "10/(√2) m",
         "10 m",
         "20 m"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "3749ee6ef41c",
       "stem": "A ladder 10 m long leans against a vertical wall making an angle of 60° with the wall. The height of the ladder along the wall is:",
       "options": [
-        "103 m",
+        "10√3 m",
         "5 m",
         "10 m",
-        "53 m"
+        "5√3 m"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "81a04db4f4c6",
       "stem": "Bearings are measured clockwise from:",
       "options": [
         "East",
@@ -445,14 +475,15 @@
         "West",
         "North"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "138f0c6d14fc",
       "stem": "A three-figure bearing is always written using exactly:",
       "options": [
         "1 digit",
@@ -460,14 +491,15 @@
         "3 digits",
         "4 digits"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "bbc14757aa91",
       "stem": "The three-figure bearing of due East is:",
       "options": [
         "000°",
@@ -475,14 +507,15 @@
         "180°",
         "270°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "04ab4dd0416e",
       "stem": "The three-figure bearing of due South is:",
       "options": [
         "090°",
@@ -490,14 +523,15 @@
         "180°",
         "270°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "df3948e04001",
       "stem": "The three-figure bearing of due West is:",
       "options": [
         "090°",
@@ -505,14 +539,15 @@
         "270°",
         "360°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "da5013f7a567",
       "stem": "The bearing of the South-West direction is:",
       "options": [
         "045°",
@@ -520,14 +555,15 @@
         "225°",
         "315°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "28cbbc9de6d8",
       "stem": "North-East direction has a bearing of:",
       "options": [
         "045°",
@@ -535,14 +571,15 @@
         "135°",
         "315°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
+      "id": "02d8cea44d32",
       "stem": "If an automobile travels at a bearing of 070° from city A to city B, the bearing from city B back to city A is:",
       "options": [
         "070°",
@@ -550,25 +587,10 @@
         "250°",
         "290°"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "file",
       "difficulty": "medium",
       "scenario": true,
-      "chapter_seq": 6,
-      "source_file": "Maths-UNIT 6  SET # 1.docx"
-    },
-    {
-      "stem": "ANSWER KEY",
-      "options": [
-        "Q1: A",
-        "Q2: D",
-        "Q3: C",
-        "Q4: B"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": false,
       "chapter_seq": 6,
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     }

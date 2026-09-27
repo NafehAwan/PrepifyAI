@@ -12,6 +12,8 @@
 // authoritative and copied verbatim. The rest have no key at all, so questions
 // come out with `answer: null` for the separate derive pass to fill in.
 
+const FIGURE = "[figure]"; // see scripts/lib/docx-text.mjs
+
 const LABEL_RE = /^(?:[○●■☐✓•*‑-]\s*)?\(?([A-Da-d])\)?\s*[.):\]]\s*(.*)$/;
 const ANSWER_RE = /^(?:Answer|Ans|Correct answer|Correct option|Key)\s*[:.\-]?\s*\(?([A-Da-d])\)?\b/i;
 // Headings look like "Chapter 7: Electrochemistry", "UNIT = 3 (SETS)" or
@@ -24,7 +26,7 @@ const CHAPTER_RE = /^(?:Chapter|CHAPTER|Unit|UNIT)\s*[#=:]?\s*0*(\d{1,2})(?!\d)(
 const NOISE_RE = new RegExp(
   [
     "^(SET|Section|Tick|Level|Name|Roll|Time|Marks|Total|Class|Subject|Instructions?|Note)\\b",
-    "^(Multiple Choice|Choose the correct|Encircle|Answer Key|Answers?)\\s*[:.]?\\s*$",
+    "^(Multiple Choice|Choose the correct|Encircle)\\s*[:.]?\\s*$", // NOT "Answer Key": splitKey needs that heading
     "^Page\\s*\\d+", // page furniture
     "^\\d{4,}[A-Za-z]?$", // ids left behind by embedded drawings
     "^0+[A-Za-z]?$",
@@ -61,11 +63,22 @@ function clean(line) {
 }
 
 // Splits raw document text into the lines a question can be built from.
+//
+// A paragraph holding nothing but a picture is folded into the line before it,
+// so the question that needs the picture carries the marker (and is dropped by
+// makeQuestion) without knocking the stem/option line count out of step.
 export function toLines(text) {
-  return text
-    .split("\n")
-    .map(clean)
-    .filter((l) => l.length > 0 && !NOISE_RE.test(l));
+  const out = [];
+  for (const raw of text.split("\n")) {
+    const line = clean(raw);
+    if (line.length === 0 || NOISE_RE.test(line)) continue;
+    if (line === FIGURE && out.length > 0) {
+      out[out.length - 1] += ` ${FIGURE}`;
+      continue;
+    }
+    out.push(line);
+  }
+  return out;
 }
 
 // Which option layout dominates this file.
@@ -93,9 +106,11 @@ function pickStem(stemLines) {
   return continues ? stemLines.slice(-2).join(" ") : last;
 }
 
-// A parsed question, or null when the block didn't look like one.
+// A parsed question, or null when the block didn't look like one — or when it
+// depends on a diagram the app has no way to show.
 function makeQuestion(stemLines, options, answerLetter, chapter) {
   if (options.length !== 4) return null;
+  if (stemLines.some((l) => l.includes(FIGURE)) || options.some((o) => o.includes(FIGURE))) return null;
   const stem = clean(pickStem(stemLines)).replace(STEM_NUM_RE, "");
   if (stem.length < 8) return null;
   if (options.some((o) => o.length === 0)) return null;
@@ -241,15 +256,73 @@ function toBlocks(lines, defaultChapter) {
   return blocks.filter((b) => b.lines.length > 0);
 }
 
+// Some documents (the Maths unit 4-6 sets) put the answers at the END, under an
+// "ANSWER KEY" heading, in one of three shapes:
+//   a flattened table   "1" / "B" / "4.1 Factorization" / "16" / "B" / ...
+//   numbered lines      "1. B"
+//   Q-prefixed lines    "Q1: A"   or with a worked reason  "Q1: Ans: B — 15x²y = ..."
+const KEY_HEADING_RE = /^(?:answer\s*key|answers?\s*key|detailed\s+answer\s+explanations?|answers)\s*:?$/i;
+const KEY_LINE_RE = /^Q?\s*#?\s*0*(\d{1,3})\s*[:.)\-]?\s*(?:Ans(?:wer)?\s*[:.\-]?\s*)?\(?([A-D])\)?(?:\s*[\u2014\u2013:-]\s*(.*))?$/;
+
+function splitKey(lines) {
+  const at = lines.findIndex((l) => KEY_HEADING_RE.test(l));
+  if (at < 0) return { body: lines, key: new Map(), explanations: new Map(), conflicts: 0 };
+
+  const key = new Map();
+  const explanations = new Map();
+  let conflicts = 0;
+  const tail = lines.slice(at + 1);
+  const record = (n, letter, why) => {
+    if (key.has(n) && key.get(n) !== letter) conflicts++;
+    if (!key.has(n)) key.set(n, letter);
+    if (why && why.trim().length > 3 && !explanations.has(n)) explanations.set(n, why.trim());
+  };
+  for (let i = 0; i < tail.length; i++) {
+    const m = KEY_LINE_RE.exec(tail[i]);
+    if (m) {
+      record(Number(m[1]), m[2], m[3]);
+      continue;
+    }
+    // Table cells come out one per line: a bare number, then a bare letter.
+    if (/^\d{1,3}$/.test(tail[i]) && /^[A-D]$/.test(tail[i + 1] ?? "")) {
+      record(Number(tail[i]), tail[i + 1]);
+      i++;
+    }
+  }
+  return { body: lines.slice(0, at), key, explanations, conflicts };
+}
+
 export function parseQuestions(text, defaultChapter) {
-  const lines = toLines(text);
+  const { body, key, explanations, conflicts } = splitKey(toLines(text));
   const layouts = new Set();
   const questions = [];
-  for (const block of toBlocks(lines, defaultChapter)) {
+  for (const block of toBlocks(body, defaultChapter)) {
     const layout = detectLayout(block.lines);
     layouts.add(layout);
     const parsed = layout === "labelled" ? parseLabelled(block.lines, block.chapter) : parseBare(block.lines, block.chapter);
     questions.push(...parsed);
   }
-  return { layout: [...layouts].sort().join("+") || "none", questions };
+
+  // An end-of-document key numbers questions 1..N in document order. Apply it
+  // only when it lines up exactly with what was parsed — mapping a key onto a
+  // list that lost or gained a question would shift every answer after the gap.
+  let keyStatus = key.size === 0 ? "none" : "mismatch";
+  const numbers = [...key.keys()].sort((a, b) => a - b);
+  const contiguous = numbers.length > 0 && numbers[0] === 1 && numbers[numbers.length - 1] === numbers.length;
+  if (key.size > 0 && contiguous && key.size === questions.length && conflicts === 0) {
+    questions.forEach((q, i) => {
+      if (q.answer !== null) return;
+      q.answer = "ABCD".indexOf(key.get(i + 1));
+      q.answer_source = "file";
+      const why = explanations.get(i + 1);
+      if (why) q.explanation = why;
+    });
+    keyStatus = "applied";
+  }
+
+  return {
+    layout: [...layouts].sort().join("+") || "none",
+    questions,
+    key: { status: keyStatus, entries: key.size, conflicts },
+  };
 }

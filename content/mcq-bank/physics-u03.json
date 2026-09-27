@@ -3,6 +3,7 @@
   "chapter_seq": 3,
   "questions": [
     {
+      "id": "869e5f3dc32d",
       "stem": "If two forces act along the same straight line but in opposite directions, the magnitude of their resultant is found by which operation?",
       "options": [
         "Addition",
@@ -18,6 +19,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "b84955e8831d",
       "stem": "When vectors act at a certain angle instead of being parallel, which method must be drawn to add them?",
       "options": [
         "Algebraic addition",
@@ -33,6 +35,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "02fb2e8e03e7",
       "stem": "If an object is moving in a straight line at a completely constant speed, what is the net external force acting on it?",
       "options": [
         "Max force",
@@ -48,6 +51,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "db687c2a3d44",
       "stem": "A passenger falls backward when a bus accelerates rapidly from rest. Which property explains this?",
       "options": [
         "Weight",
@@ -63,6 +67,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "4ae9cdb9d179",
       "stem": "If you want to change the state of rest or uniform motion of any object, what type of force is required?",
       "options": [
         "Balanced force",
@@ -78,6 +83,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "07789b964b30",
       "stem": "Which physical quantity is the direct, fundamental measure of a body's inertia?",
       "options": [
         "Weight",
@@ -93,6 +99,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "0acfae4d9196",
       "stem": "A net, completely unbalanced external force acts continuously on a macroscopic object. Which inherent property of this moving object will always undergo a change?",
       "options": [
         "Velocity",
@@ -108,6 +115,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "cf6466641de8",
       "stem": "A player catches a fast baseball with rigid, locked arms and stationary hands instead of pulling them backward during the catch. Which physical variable increases dramatically because of this action?",
       "options": [
         "Average impact force",
@@ -123,6 +131,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "06285958eeba",
       "stem": "A massive block of ice rests on a completely frictionless frozen lake. A heavy stone is thrown horizontally at the block and sticks to it upon impact. Right after the collision, what happens to the total kinetic energy and the total linear momentum of the two-body system?",
       "options": [
         "Both stay constant",
@@ -138,6 +147,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "49360b44bf2b",
       "stem": "According to Newton's third law of motion, action and reaction forces always act on which bodies?",
       "options": [
         "The same body",
@@ -153,6 +163,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "7df10b70c6e1",
       "stem": "When a person jumps out of a small boat onto a dock, the boat moves backward. The backward motion of the boat is called what?",
       "options": [
         "Action force",
@@ -168,6 +179,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "8aa4d92dcfbf",
       "stem": "An exceptional marksman fires a heavy armor-piercing bullet from a standard rifle. The bullet accelerates inside the barrel in 0.005 seconds, while the rifle's recoil velocity is felt by the marksman's shoulder over the exact same time frame. Why does the marksman's body easily withstand the recoil?",
       "options": [
         "Rifle feels less force",
@@ -183,6 +195,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "1ca20eaff260",
       "stem": "Why do action and reaction forces never cancel each other out during motion?",
       "options": [
         "They are unequal",
@@ -198,6 +211,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "fc6b8437fc51",
       "stem": "When a heavy stone is dropped, the Earth pulls the stone down. What does the stone do to the Earth?",
       "options": [
         "Nothing",
@@ -213,6 +227,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "a853fccdefa8",
       "stem": "A large, massive astronaut floating completely at rest in deep space throws a small, light wrench away from himself. Immediately after the throw, how do the magnitudes of their linear momentums compare?",
       "options": [
         "Astronaut has more momentum",
@@ -228,6 +243,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "69fb90b26cf6",
       "stem": "During the firing of a bullet from a rifle, why does the heavy rifle recoil with a much smaller velocity than the bullet?",
       "options": [
         "It experiences less force",
@@ -243,6 +259,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "a930efce498c",
       "stem": "If a gas-propelled rocket accelerates upward in the complete vacuum of outer space, what does it push against to move forward?",
       "options": [
         "Atmospheric nitrogen",
@@ -258,6 +275,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "4f8391458d78",
       "stem": "What does the mathematical area under a Force-versus-Time graph directly represent?",
       "options": [
         "Acceleration",
@@ -273,6 +291,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "513b98032ab3",
       "stem": "If a system is strictly classified as an \"isolated system,\" what must be the value of the net external force acting on it?",
       "options": [
         "Maximum",
@@ -288,6 +307,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "6b625de58fde",
       "stem": "According to Newton's second law written in terms of momentum, the net force acting on an object equals what?",
       "options": [
         "Total momentum",
@@ -303,6 +323,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "94d2ffc23257",
       "stem": "When a cricketer pulls his hands backward while catching a fast-moving ball, which variable is he deliberately increasing?",
       "options": [
         "Applied net force",
@@ -318,6 +339,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "7dda82b12897",
       "stem": "What physical quantity is defined as the product of an object's intrinsic mass and its linear velocity vector?",
       "options": [
         "Force",
@@ -333,6 +355,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "dc12298b401c",
       "stem": "If a body's acceleration is observed to be exactly zero, what must be true about the forces acting on it?",
       "options": [
         "No forces exist",
@@ -348,6 +371,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "166c0a932496",
       "stem": "Newton's laws of motion fail to provide accurate descriptions for objects moving at which speeds?",
       "options": [
         "Very low speeds",
@@ -363,6 +387,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "bb5c028b8230",
       "stem": "If an object is moved from Earth to the Moon, which of its properties remains completely constant?",
       "options": [
         "Weight",
@@ -378,6 +403,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "d4f120adb26a",
       "stem": "What happens to the weight of an object if it is taken to a location where the gravitational field strength is zero?",
       "options": [
         "Remains same",
@@ -393,6 +419,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "559e1f5153e4",
       "stem": "A heavy truck breaks down on a highway, and a small compact car pushes it from behind to a service station. While the car is successfully speeding up the truck, how does the force of the car on the truck compare to the force of the truck on the car?",
       "options": [
         "Car force is greater",
@@ -408,6 +435,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "46caee6ca981",
       "stem": "A standard commercial elevator is moving downward toward the ground floor at a high, completely uniform, unchanging velocity. If a passenger stands on a digital weighing scale inside this elevator, what value will the display show?",
       "options": [
         "True weight",
@@ -423,6 +451,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "24bc5e43b0c3",
       "stem": "Two interacting bodies form an isolated system. During a complex, multi-stage collision between them, what can be scientifically concluded about their individual linear momentums?",
       "options": [
         "Both change",
@@ -438,6 +467,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "80e53b8f6490",
       "stem": "A high-speed railway train traveling at a constant velocity passes through an intense, localized storm where heavy rain falls vertically downward. As water accumulates inside the open cargo containers of the moving train, what must the train engine do to maintain its constant speed without changing its path?",
       "options": [
         "Maintain constant force",
@@ -453,6 +483,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
+      "id": "c2e35a7e8931",
       "stem": "A book is resting on a table. Which force prevents it from passing through the table?",
       "options": [
         "Frictional force",
@@ -468,6 +499,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "8ce443d247b7",
       "stem": "A person pulls a bucket upward using a rope. The force transmitted through the rope is:",
       "options": [
         "Normal force",
@@ -483,6 +515,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "3eccea20448b",
       "stem": "A cricketer catches a fast-moving ball by moving his hands backward. This reduces:",
       "options": [
         "Momentum",
@@ -498,6 +531,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "7da89707d4fe",
       "stem": "Two students push a box equally in opposite directions. The box remains at rest because:",
       "options": [
         "No force acts",
@@ -513,6 +547,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "6c3ce979dc2e",
       "stem": "Which force is responsible for keeping planets in orbit around the Sun?",
       "options": [
         "Magnetic force",
@@ -528,6 +563,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "b0132199157f",
       "stem": "A parachute slows a falling skydiver mainly because of:",
       "options": [
         "Tension",
@@ -543,6 +579,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "5ef196017006",
       "stem": "When a person walks, the forward motion is possible because of:",
       "options": [
         "Gravitational force",
@@ -558,6 +595,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "bef66b84bd2b",
       "stem": "An astronaut's mass on the Moon compared with Earth is:",
       "options": [
         "Greater",
@@ -573,6 +611,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "64cf72643548",
       "stem": "An astronaut's weight on the Moon is:",
       "options": [
         "Same as on Earth",
@@ -588,6 +627,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "340916039d35",
       "stem": "Which pair represents contact forces only?",
       "options": [
         "Friction and tension",
@@ -603,6 +643,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "65331231e408",
       "stem": "A magnet attracts an iron nail without touching it. This demonstrates:",
       "options": [
         "Contact force",
@@ -618,6 +659,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "35f44a9bd869",
       "stem": "The strongest fundamental force is:",
       "options": [
         "Gravitational",
@@ -633,6 +675,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "67d228e48278",
       "stem": "Which force is weakest but has an infinite range?",
       "options": [
         "Strong nuclear",
@@ -648,6 +691,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "37458eb756a3",
       "stem": "A truck and a bicycle have the same speed. Which has greater momentum?",
       "options": [
         "Bicycle",
@@ -663,6 +707,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "8ab4d44b80c4",
       "stem": "Doubling the mass of a moving object while keeping velocity constant will:",
       "options": [
         "Halve momentum",
@@ -678,6 +723,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "a37a8c38185f",
       "stem": "Why is it difficult to stop a loaded truck than an empty one moving at the same speed?",
       "options": [
         "Greater friction",
@@ -693,6 +739,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "7493ca79a2a6",
       "stem": "If Earth suddenly had twice its present gravitational field strength, a person's:",
       "options": [
         "Mass and weight would double.",
@@ -708,6 +755,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "f0af79ae9fd0",
       "stem": "A ball is thrown vertically upward. At the highest point:",
       "options": [
         "Velocity and acceleration are zero.",
@@ -723,6 +771,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "599ef2a799d2",
       "stem": "Two objects have equal momentum. Object X has twice the mass of object Y. Therefore:",
       "options": [
         "X has twice the velocity of Y.",
@@ -738,6 +787,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "cdaa286d87ab",
       "stem": "A satellite moves in a circular orbit at constant speed. Which statement is correct?",
       "options": [
         "Its acceleration is zero.",
@@ -753,6 +803,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "8b796434265c",
       "stem": "A heavier object has greater inertia because it has:",
       "options": [
         "Greater weight",
@@ -768,6 +819,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "7747842b92e2",
       "stem": "A swimmer pushes water backward and moves forward due to:",
       "options": [
         "Inertia",
@@ -783,6 +835,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "4869feaf5efb",
       "stem": "A force can change all EXCEPT:",
       "options": [
         "Speed",
@@ -798,6 +851,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "63b3fc42c3b7",
       "stem": "If mass doubles and acceleration remains constant, force becomes:",
       "options": [
         "Half",
@@ -813,6 +867,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "2951b2321a2e",
       "stem": "Which statement about action and reaction forces is correct?",
       "options": [
         "They act on the same object",
@@ -828,6 +883,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "eeb539895423",
       "stem": "Passengers in a bus fall forward when brakes are applied because:",
       "options": [
         "Their bodies want to move forward.",
@@ -843,6 +899,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "6ad77a2a17f7",
       "stem": "A force of 20 N acts on a body and produces an acceleration of 4 m/s². If the same force acts on a body of double mass, the acceleration will be:",
       "options": [
         "8 m/s²",
@@ -858,6 +915,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "f8b399f6d032",
       "stem": "A gun recoils when a bullet is fired. Which statement best explains why the bullet moves much faster than the gun?",
       "options": [
         "Bullet experiences a larger force.",
@@ -873,6 +931,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "053b1eef0346",
       "stem": "Why are airbags installed in cars?",
       "options": [
         "They reduce momentum.",
@@ -888,6 +947,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "e56849956abc",
       "stem": "A force F gives an acceleration of 4 m/s² to a body weighing 98 N. To produce an acceleration of 8 m/s² in the same body, the required force is:",
       "options": [
         "F/2",
@@ -903,6 +963,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "a60f6063a586",
       "stem": "A force of 8 N is applied to a body weighing 12 N. The acceleration produced is:",
       "options": [
         "0.67 m/s²",
@@ -918,6 +979,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "df7538b03cf5",
       "stem": "Which force holds protons together inside the nucleus?",
       "options": [
         "Gravitational force",
@@ -933,6 +995,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "b8daceac5ee4",
       "stem": "Which force is responsible for radioactive decay?",
       "options": [
         "Gravitational force",
@@ -948,6 +1011,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "30c54dc14a9f",
       "stem": "The electroweak theory combines:",
       "options": [
         "Gravitational and strong forces",
@@ -963,6 +1027,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "4d9a6f40396f",
       "stem": "Newton's laws of motion are not suitable for objects moving with:",
       "options": [
         "Low speed",
@@ -978,6 +1043,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "a9174b32aea6",
       "stem": "1 Newton's laws are not applicable to the motion of:",
       "options": [
         "Large-scale objects",
@@ -993,6 +1059,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "8b9924c47da0",
       "stem": "According to Newton’s second law F=ma, a force of 1N is fundamentally equivalent to which combination of SI base units?",
       "options": [
         "1kg⋅m/s",
@@ -1008,6 +1075,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
+      "id": "7f07f4a5cc35",
       "stem": "The unit of impulse (N s) can be mathematically shown to be completely identical to the unit of which other physical quantity?",
       "options": [
         "Acceleration",

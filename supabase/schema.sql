@@ -92,8 +92,22 @@ create table if not exists questions (
   options_json  jsonb,                     -- MCQ options ["A","B","C","D"]
   answer_key_md text,                      -- correct option / short key
   marking_scheme_json jsonb,               -- ["point keyword (1)", ...]
-  marks         int  default 1
+  marks         int  default 1,
+  -- Reworded / re-valued versions of one original question share a family, so
+  -- a test asks at most one of them. Null = a family of one.
+  family        text,
+  explanation_md text                      -- why the answer is right, when known
 );
+create index if not exists questions_chapter_type_idx on questions(chapter_id, type);
+create index if not exists questions_family_idx on questions(family);
+
+-- Answerable MCQs per chapter, for the chapter picker on the New Test screen.
+-- security_invoker so it is read under the caller's RLS, like the table itself.
+create or replace view chapter_mcq_counts with (security_invoker = true) as
+  select chapter_id, count(*)::int as mcq_count
+  from questions
+  where type = 'mcq' and answer_key_md in ('A', 'B', 'C', 'D')
+  group by chapter_id;
 
 create table if not exists model_answers (
   id                 uuid primary key default gen_random_uuid(),
@@ -256,6 +270,7 @@ create table if not exists tests (
   score_pct      numeric,
   remarks        text,
   status         text not null default 'in_progress',
+  scope          text,                      -- "Whole book", "Chapter 7", "Ch 2, 5"
   created_at     timestamptz default now(),
   submitted_at   timestamptz,
   unique (user_id, subject_id, seq)

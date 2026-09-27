@@ -1,15 +1,23 @@
 "use client";
 
-// Builds a subject test from the question bank.
+// Builds a test from the question bank.
 //
 // This path deliberately makes NO API call. Questions come from the `questions`
-// table (the owner's real FBISE bank, loaded by scripts/load-mcq-bank.mjs), so
-// test-taking costs nothing per student and keeps working even when the shared
-// Groq key is missing or rate-limited. That is what lets one key serve a class.
+// table (the owner's real FBISE bank plus its pre-written variants, loaded by
+// scripts/load-mcq-bank.mjs), so test-taking costs nothing per student and keeps
+// working even when the shared Groq key is missing or rate-limited. That is
+// what lets one key serve a whole class.
+//
+// Variety comes from three places, all free at runtime:
+//   - question families: each original question has reworded / re-valued
+//     variants in the bank, and a test takes at most one member per family;
+//   - memory: families the student met in their last few tests are avoided,
+//     and when one must come back, a version they haven't seen is preferred;
+//   - shuffling: question order and option order are randomised every time.
 //
 // When the bank cannot fill a request, the fallbacks widen in order of least
-// harm: reuse questions from older tests, then widen the difficulty band, and
-// only then generate with AI.
+// harm: reuse older questions, then widen the difficulty band, and only then
+// generate with AI.
 
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
@@ -27,13 +35,20 @@ const BANDS: Record<McqDifficulty, [number, number]> = {
   mixed: [1, 5],
 };
 
-// How many recent tests to avoid repeating questions from.
+// How many recent tests to remember when avoiding repeats.
 const RECENT_TESTS = 5;
 
 export interface BuiltTest {
   mcqs: DBMcq[];
-  // How the questions were found, so the UI can be honest when a subject is thin.
+  // How the questions were found, so the UI can be honest when a scope is thin.
   source: "bank" | "bank-relaxed" | "bank-widened" | "topped-up" | "short";
+}
+
+export interface SubjectChapter {
+  id: string;
+  seq: number;
+  title: string;
+  mcqCount: number; // answerable MCQs, variants included
 }
 
 interface QuestionRow {
@@ -42,11 +57,12 @@ interface QuestionRow {
   options_json: string[] | null;
   answer_key_md: string | null;
   difficulty: number | null;
+  family: string | null;
+  explanation_md: string | null;
 }
 
-// A strict letter → index conversion. lib/curriculum.ts's letterToIndex()
-// silently returns 0 for anything unparseable, which would mark a student wrong
-// on a correct answer; here an unusable row is dropped instead.
+// A strict letter → index conversion. An unparseable key is dropped rather than
+// defaulted to option A, which would mark a correct student answer wrong.
 function answerIndex(letter: string | null): number | null {
   const i = "ABCD".indexOf((letter ?? "").trim().toUpperCase());
   return i < 0 ? null : i;
@@ -56,24 +72,52 @@ function toMcq(row: QuestionRow): DBMcq | null {
   const answer = answerIndex(row.answer_key_md);
   const options = row.options_json ?? [];
   if (answer === null || options.length !== 4) return null;
-  return { id: row.id, stem: row.stem_md, options, answer };
+  return {
+    id: row.id,
+    stem: row.stem_md,
+    options,
+    answer,
+    family: row.family,
+    ...(row.explanation_md ? { explanation: row.explanation_md } : {}),
+  };
 }
 
-// Every chapter id belonging to a subject. Tests are subject-wide, so the whole
-// book is in scope regardless of what the student has studied.
-async function chapterIdsForSubject(subjectId: string): Promise<string[]> {
+// A question with no family is its own family.
+const familyOf = (q: DBMcq) => q.family || q.id;
+
+// The subject's chapters in book order, with how many answerable MCQs each has,
+// for the chapter picker on the New Test screen.
+export async function listSubjectChapters(subjectId: string): Promise<SubjectChapter[]> {
+  if (!isSupabaseConfigured()) return [];
   const supabase = createClient();
   const { data: books } = await supabase.from("books").select("id").eq("subject_id", subjectId);
   const bookIds = ((books ?? []) as Array<{ id: string }>).map((b) => b.id);
   if (bookIds.length === 0) return [];
-  const { data: chapters } = await supabase.from("chapters").select("id").in("book_id", bookIds);
-  return ((chapters ?? []) as Array<{ id: string }>).map((c) => c.id);
+
+  const { data: chapters } = await supabase
+    .from("chapters")
+    .select("id, seq, title")
+    .in("book_id", bookIds)
+    .order("seq");
+  const rows = (chapters ?? []) as Array<{ id: string; seq: number; title: string }>;
+
+  const { data: counts } = await supabase
+    .from("chapter_mcq_counts")
+    .select("chapter_id, mcq_count")
+    .in(
+      "chapter_id",
+      rows.map((r) => r.id),
+    );
+  const countById = new Map(
+    ((counts ?? []) as Array<{ chapter_id: string; mcq_count: number }>).map((c) => [c.chapter_id, Number(c.mcq_count)]),
+  );
+
+  return rows.map((r) => ({ id: r.id, seq: r.seq, title: r.title, mcqCount: countById.get(r.id) ?? 0 }));
 }
 
-// Question ids the student has already been asked in their last few tests.
-async function recentlyAskedIds(userId: string, subjectId: string): Promise<Set<string>> {
-  const supabase = createClient();
-  const { data } = await supabase
+// What the student was asked in their last few tests of this subject.
+async function recentHistory(userId: string, subjectId: string): Promise<{ ids: Set<string>; families: Set<string> }> {
+  const { data } = await createClient()
     .from("tests")
     .select("questions_json")
     .eq("user_id", userId)
@@ -81,32 +125,73 @@ async function recentlyAskedIds(userId: string, subjectId: string): Promise<Set<
     .order("created_at", { ascending: false })
     .limit(RECENT_TESTS);
 
-  const seen = new Set<string>();
+  const ids = new Set<string>();
+  const families = new Set<string>();
   for (const row of (data ?? []) as Array<{ questions_json: unknown }>) {
     const asked = Array.isArray(row.questions_json) ? (row.questions_json as DBMcq[]) : [];
-    for (const q of asked) if (q?.id) seen.add(q.id);
+    for (const q of asked) {
+      if (!q?.id) continue;
+      ids.add(q.id);
+      families.add(familyOf(q));
+    }
   }
-  return seen;
+  return { ids, families };
 }
 
-function sample(pool: DBMcq[], count: number): DBMcq[] {
-  // shuffleMcqs randomises question order AND option order (remapping the
-  // answer index), so two tests drawing the same question still look different.
-  return shuffleMcqs(pool).slice(0, count);
+// Picks up to `count` questions, at most one per family, preferring in order:
+// families the student hasn't met recently, then an unseen version of a family
+// they have met, then anything. Returned already shuffled (questions and options).
+function pickByFamily(pool: DBMcq[], count: number, recent: { ids: Set<string>; families: Set<string> }): DBMcq[] {
+  const byFamily = new Map<string, DBMcq[]>();
+  for (const q of pool) {
+    const f = familyOf(q);
+    const list = byFamily.get(f) ?? [];
+    list.push(q);
+    byFamily.set(f, list);
+  }
+
+  const shuffle = <T,>(arr: T[]): T[] => {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
+  const tiers: DBMcq[][] = [[], [], []];
+  for (const [family, members] of shuffle([...byFamily])) {
+    const unseen = members.filter((m) => !recent.ids.has(m.id));
+    if (!recent.families.has(family)) {
+      tiers[0].push(shuffle(members)[0]);
+    } else if (unseen.length > 0) {
+      tiers[1].push(shuffle(unseen)[0]); // a different wording of a familiar question
+    } else {
+      tiers[2].push(shuffle(members)[0]);
+    }
+  }
+
+  const picked = [...tiers[0], ...tiers[1], ...tiers[2]].slice(0, count);
+  return shuffleMcqs(picked);
 }
+
+const distinctFamilies = (pool: DBMcq[]) => new Set(pool.map(familyOf)).size;
 
 export async function buildTest(opts: {
   userId: string;
   subjectId: string;
   count: number;
   difficulty: McqDifficulty;
+  // Restrict to these chapters. Empty or omitted means the whole book.
+  chapterIds?: string[];
   // Only used by the last-resort AI top-up; omit and the top-up is skipped.
   aiKey?: string;
 }): Promise<BuiltTest> {
   const count = Math.min(Math.max(Math.round(opts.count), 1), 30);
   if (!isSupabaseConfigured()) return { mcqs: [], source: "short" };
 
-  const chapterIds = await chapterIdsForSubject(opts.subjectId);
+  let chapterIds = opts.chapterIds ?? [];
+  if (chapterIds.length === 0) chapterIds = (await listSubjectChapters(opts.subjectId)).map((c) => c.id);
   if (chapterIds.length === 0) return { mcqs: [], source: "short" };
 
   const supabase = createClient();
@@ -115,7 +200,7 @@ export async function buildTest(opts: {
   const inBand = async (min: number, max: number): Promise<DBMcq[]> => {
     const { data } = await supabase
       .from("questions")
-      .select("id, stem_md, options_json, answer_key_md, difficulty")
+      .select("id, stem_md, options_json, answer_key_md, difficulty, family, explanation_md")
       .in("chapter_id", chapterIds)
       .eq("type", "mcq")
       .gte("difficulty", min)
@@ -124,27 +209,35 @@ export async function buildTest(opts: {
   };
 
   const banded = await inBand(lo, hi);
-  const recent = await recentlyAskedIds(opts.userId, opts.subjectId);
+  const recent = await recentHistory(opts.userId, opts.subjectId);
 
-  // 1. The normal path: in-band questions the student hasn't just seen.
-  const fresh = banded.filter((q) => !recent.has(q.id));
-  if (fresh.length >= count) return { mcqs: sample(fresh, count), source: "bank" };
+  // 1. The normal path: enough distinct in-band families the student hasn't
+  //    just met.
+  const freshFamilies = new Set(banded.filter((q) => !recent.families.has(familyOf(q))).map(familyOf));
+  if (freshFamilies.size >= count) return { mcqs: pickByFamily(banded, count, recent), source: "bank" };
 
-  // 2. Allow repeats from older tests before giving up on the band.
-  if (banded.length >= count) return { mcqs: sample(banded, count), source: "bank-relaxed" };
+  // 2. Let familiar families back in — preferring versions not yet seen.
+  if (distinctFamilies(banded) >= count) return { mcqs: pickByFamily(banded, count, recent), source: "bank-relaxed" };
 
   // 3. Widen to the whole difficulty range — better a slightly off-band
   //    question from the real bank than a generated one.
   const all = await inBand(1, 5);
-  if (all.length >= count) {
-    const preferred = [...banded, ...all.filter((q) => !banded.some((b) => b.id === q.id))];
-    return { mcqs: sample(preferred, count), source: "bank-widened" };
+  if (distinctFamilies(all) >= count) {
+    // Keep in-band questions first so the widening only fills the gap.
+    const bandedIds = new Set(banded.map((q) => q.id));
+    const inBandPick = pickByFamily(banded, count, recent);
+    const used = new Set(inBandPick.map(familyOf));
+    const rest = pickByFamily(
+      all.filter((q) => !bandedIds.has(q.id) && !used.has(familyOf(q))),
+      count - inBandPick.length,
+      recent,
+    );
+    return { mcqs: shuffleMcqs([...inBandPick, ...rest]), source: "bank-widened" };
   }
 
   // 4. Last resort: generate the shortfall from real textbook content. Only
-  //    possible for a chapter that has content_chunks seeded, which is why the
-  //    banks exist in the first place.
-  const have = sample(all, Math.min(count, all.length));
+  //    possible for a chapter that has content_chunks seeded.
+  const have = pickByFamily(all, count, recent);
   const shortfall = count - have.length;
   if (shortfall > 0) {
     const topUp = await generateShortfall(chapterIds, shortfall, opts.difficulty, opts.aiKey);
@@ -179,4 +272,13 @@ export function remarkFor(scorePct: number): string {
   if (scorePct >= 60) return "Good";
   if (scorePct >= 50) return "Passed — revise weak areas";
   return "Needs work";
+}
+
+// The short label a test card shows for what the test covered.
+export function scopeLabel(chapters: Array<{ seq: number }>, totalChapters: number): string {
+  if (chapters.length === 0 || chapters.length === totalChapters) return "Whole book";
+  const seqs = chapters.map((c) => c.seq).sort((a, b) => a - b);
+  if (seqs.length === 1) return `Chapter ${seqs[0]}`;
+  if (seqs.length <= 4) return `Ch ${seqs.join(", ")}`;
+  return `${seqs.length} chapters`;
 }

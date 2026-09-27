@@ -20,6 +20,7 @@ export interface TestRow {
   scorePct: number | null;
   remarks: string | null;
   status: string;
+  scope: string | null; // "Whole book", "Chapter 7", "Ch 2, 5"
   createdAt: string;
   submittedAt: string | null;
 }
@@ -39,6 +40,7 @@ interface RawTest {
   score_pct: number | null;
   remarks: string | null;
   status: string;
+  scope: string | null;
   created_at: string;
   submitted_at: string | null;
   questions_json?: unknown;
@@ -56,13 +58,14 @@ function toRow(r: RawTest): TestRow {
     scorePct: r.score_pct === null ? null : Number(r.score_pct),
     remarks: r.remarks,
     status: r.status,
+    scope: r.scope ?? null,
     createdAt: r.created_at,
     submittedAt: r.submitted_at,
   };
 }
 
 const CARD_COLUMNS =
-  "id, seq, title, difficulty, question_count, correct_count, score_pct, remarks, status, created_at, submitted_at";
+  "id, seq, title, difficulty, question_count, correct_count, score_pct, remarks, status, scope, created_at, submitted_at";
 
 // The test name is generated, never typed: "Test #01" numbered per subject.
 export function titleForSeq(seq: number): string {
@@ -119,6 +122,7 @@ export async function createTest(opts: {
   subjectId: string;
   difficulty: McqDifficulty;
   mcqs: DBMcq[];
+  scope?: string;
 }): Promise<TestRow | null> {
   if (!isSupabaseConfigured()) return null;
   const supabase = createClient();
@@ -144,6 +148,7 @@ export async function createTest(opts: {
         question_count: opts.mcqs.length,
         questions_json: opts.mcqs,
         status: "in_progress",
+        scope: opts.scope ?? "Whole book",
       })
       .select(CARD_COLUMNS)
       .maybeSingle();

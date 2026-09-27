@@ -3,6 +3,7 @@
   "chapter_seq": 3,
   "questions": [
     {
+      "id": "ceeb731be0a6",
       "stem": "In a professional development team, the person responsible for creating the \"Graphical User Interface (GUI)\" is known as the:",
       "options": [
         "Front-end Developer.",
@@ -18,6 +19,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "11cc209fe7dc",
       "stem": "What is the functional difference between the starting tag <tag> and the ending tag in HTML?",
       "options": [
         "The ending tag uses a backslash \\.",
@@ -33,6 +35,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "d7df62092739",
       "stem": "What is the official file extension required for a browser to recognize a document as an HTML file?",
       "options": [
         "txt",
@@ -48,6 +51,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "aabcec745b8d",
       "stem": "Where must all the \"main constituents\" of an HTML document be arranged?",
       "options": [
         "Inside the <head> tag-pair.",
@@ -63,6 +67,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "d87d359daf14",
       "stem": "What is the functional difference between <span> and <div> in text arrangement?",
       "options": [
         "Span provides style to a single line; Div provides it to a set of lines.",
@@ -78,6 +83,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "d5b40853782a",
       "stem": "Which tag-pair should be used if you want to emphasize a word specifically with \"italics\" as a note?",
       "options": [
         "<b>",
@@ -93,6 +99,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "9c19f3ba9beb",
       "stem": "In the text \"Strong character,\" which tag-pair is officially used for the display of \"bold and strong characters\"?",
       "options": [
         "<em>",
@@ -108,6 +115,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "6ae4f225a851",
       "stem": "If a developer wants a heading that is \"largest and most important,\" which level should they choose?",
       "options": [
         "Level 1 (h1)",
@@ -123,6 +131,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "04f98ec8dc9f",
       "stem": "According to the DOM tree hierarchy, what does the 'html' node contain?",
       "options": [
         "Only the images of the site.",
@@ -138,6 +147,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "bce11bf072e6",
       "stem": "Which IDE environment is mentioned as being used for the \"Visual Studio version 2022\" examples in the text?",
       "options": [
         "Netbeans",
@@ -153,6 +163,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "1bd2bd3ac259",
       "stem": "How many languages can the Microsoft Visual Studio IDE support for writing and running code?",
       "options": [
         "Only 1 (HTML)",
@@ -168,6 +179,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "c5b4c62df7e4",
       "stem": "A developer wants to organize data using bullets of type \"circle\" or \"square.\" Which tag-pair must be used as the parent container?",
       "options": [
         "<ul>",
@@ -183,6 +195,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "1208441745d7",
       "stem": "In a professional HTML table, which tag-pair is specifically designated to allocate and designate data within a \"Header Row\"?",
       "options": [
         "<td>",
@@ -198,6 +211,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "b1cef23c52bf",
       "stem": "Why is JavaScript considered an ideal language for making webpages dynamic at the \"client-end\"?",
       "options": [
         "It requires a very high amount of memory to run.",
@@ -213,6 +227,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "1ea7ca75fd1d",
       "stem": "In programming, what is the official term for a user action that can be \"sensed\" and triggers a specific task to be done?",
       "options": [
         "Script",
@@ -228,6 +243,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "9df2d00f8f00",
       "stem": "Which JavaScript function is used to display a notification or message box to inform the user about the result of an action?",
       "options": [
         "alert()",
@@ -243,6 +259,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "2671e796dd00",
       "stem": "Which JavaScript function allows the program to take input from the user via a message window?",
       "options": [
         "alert()",
@@ -258,6 +275,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "f5b0d4d85c86",
       "stem": "Which JavaScript operator is used when you specifically need the \"remainder\" of a division operation?",
       "options": [
         "/ (Division)",
@@ -273,6 +291,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "2f9384795560",
       "stem": "What is the purpose of the comparison operator != in a selection statement?",
       "options": [
         "To check if two values are equal.",
@@ -288,6 +307,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "e2ec97318633",
       "stem": "In a selection scenario where there are \"more than two possibilities,\" which structure should be used to extend the logic?",
       "options": [
         "if statement",
@@ -303,6 +323,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "c427b9f3addf",
       "stem": "What is the primary advantage of using an \"Iterative Statement\" like a For Loop?",
       "options": [
         "It makes the code more difficult to read.",
@@ -318,6 +339,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "92daad3080e4",
       "stem": "In a For Loop, which three components must be set to control the number of iterations?",
       "options": [
         "Start, Stop, and Pause.",
@@ -333,6 +355,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "6b4ea19770f2",
       "stem": "What is the starting \"index number\" for any array declared in JavaScript?",
       "options": [
         "0",
@@ -348,6 +371,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "8fe815b96935",
       "stem": "Which debugging command allows a programmer to trace the code \"line by line\"?",
       "options": [
         "Start Debugging",
@@ -363,6 +387,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "fa2b5a7d4dee",
       "stem": "When a programmer wants to add a note in the code that is \"not part of the output\" and is \"ignored by the browser,\" they use:",
       "options": [
         "Tags",
@@ -378,6 +403,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "8e2ef90c7ce4",
       "stem": "According to the DOM tree hierarchy, which node is located at the \"absolute top\" for a whole webpage?",
       "options": [
         "Document",
@@ -393,6 +419,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "b36624a0a819",
       "stem": "Which of the following is the correct order of priority of CSS styles if all three are used in a webpage?",
       "options": [
         "External CSS → Embedded CSS → Inline CSS",
@@ -408,6 +435,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "4590852e9a1e",
       "stem": "Which CSS method is recommended for large projects?",
       "options": [
         "Inline CSS",
@@ -423,6 +451,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "8223062f0c3c",
       "stem": "If a user is unable to recall the specific URL of a webpage, which tool creates \"different combinations\" based on keywords to locate it?",
       "options": [
         "Web Browser",
@@ -438,6 +467,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "5586a71641b4",
       "stem": "What is the first step to establishing a digital presence?",
       "options": [
         "Website Development",
@@ -453,6 +483,7 @@
       "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
     },
     {
+      "id": "0591086b011d",
       "stem": "What is a website called if the information is changed or adjusted in accordance with user input or choice?",
       "options": [
         "Static Website",

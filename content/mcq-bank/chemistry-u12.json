@@ -3,6 +3,7 @@
   "chapter_seq": 12,
   "questions": [
     {
+      "id": "eeed484c9876",
       "stem": "Which chemical is used to detect the presence of water?",
       "options": [
         "Sodium chloride",
@@ -18,6 +19,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "1308337820b6",
       "stem": "The colour of anhydrous copper sulphate is:",
       "options": [
         "Blue",
@@ -33,6 +35,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "ba672d65715b",
       "stem": "When water is added to anhydrous copper sulphate, it becomes:",
       "options": [
         "Red",
@@ -48,6 +51,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "2323154d053d",
       "stem": "The melting point of pure water is:",
       "options": [
         "100°C",
@@ -63,6 +67,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "d6c0595b1e36",
       "stem": "The boiling point of pure water is:",
       "options": [
         "50°C",
@@ -78,6 +83,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "867c0010648d",
       "stem": "Distilled water is obtained by:",
       "options": [
         "Filtration",
@@ -93,6 +99,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "969749440a2e",
       "stem": "Distilled water is commonly used in:",
       "options": [
         "Cooking",
@@ -108,6 +115,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "d576b02c4292",
       "stem": "Tap water comes from:",
       "options": [
         "Oceans only",
@@ -123,6 +131,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "e3516ce21db0",
       "stem": "Which substance in water is beneficial for aquatic life?",
       "options": [
         "Plastics",
@@ -138,6 +147,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "d4e063ac545e",
       "stem": "Excess nitrates in water mainly come from:",
       "options": [
         "Paints",
@@ -153,6 +163,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "63508d423d63",
       "stem": "Which pollutant can harm aquatic life seriously?",
       "options": [
         "Oxygen",
@@ -168,6 +179,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "c4817c009fd8",
       "stem": "Sewage in water may contain:",
       "options": [
         "Vitamins",
@@ -183,6 +195,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "07b7904236b7",
       "stem": "Which process removes large suspended particles from water?",
       "options": [
         "Chlorination",
@@ -198,6 +211,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "993b749da73d",
       "stem": "Chlorine reacts with water to form:",
       "options": [
         "Sulphuric acid",
@@ -213,6 +227,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "6050cacff178",
       "stem": "Typhoid is caused by:",
       "options": [
         "Virus",
@@ -228,6 +243,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "de78d7e79448",
       "stem": "Hepatitis A mainly spreads through:",
       "options": [
         "Clean air",
@@ -243,6 +259,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "4d8a4fbb5151",
       "stem": "Jaundice affects mainly the:",
       "options": [
         "Lungs",
@@ -258,6 +275,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "0b452d463e1a",
       "stem": "Which of the following is a water-borne disease?",
       "options": [
         "Dengue",
@@ -273,6 +291,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "dd45b229b7c0",
       "stem": "Water scarcity in Pakistan is increasing due to:",
       "options": [
         "Excess forests",
@@ -288,6 +307,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "314bbb6ad366",
       "stem": "Flood irrigation in Pakistan causes:",
       "options": [
         "Water conservation",
@@ -303,6 +323,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "7ede8acb2de8",
       "stem": "Which practice can help reduce water scarcity?",
       "options": [
         "Wasting water",
@@ -318,6 +339,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "39af4998604e",
       "stem": "Which of the following is NOT a source of water pollution?",
       "options": [
         "Detergents",
@@ -333,6 +355,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "99b741ea4471",
       "stem": "Dissolved metal compounds in water may:",
       "options": [
         "Always be harmful",
@@ -348,6 +371,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "8ebe9b8e2df6",
       "stem": "Excess phosphates in water can cause:",
       "options": [
         "Better water quality",
@@ -363,6 +387,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "15ea9491e57a",
       "stem": "The process of removing coloured substances from water commonly uses:",
       "options": [
         "Charcoal",
@@ -378,6 +403,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "9fd28c8cd578",
       "stem": "Which type of water is most suitable for preparing laboratory solutions?",
       "options": [
         "River water",
@@ -393,6 +419,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "729207e0fdf8",
       "stem": "Water-borne diseases are prevented mainly by:",
       "options": [
         "Drinking polluted water",
@@ -408,6 +435,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "14dce6dc3c64",
       "stem": "Which of the following can contaminate groundwater?",
       "options": [
         "Septic tanks",
@@ -423,6 +451,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "0bfe2e4af15e",
       "stem": "Which one is a source of nitrates in water?",
       "options": [
         "Fertilizers",
@@ -438,6 +467,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "537ba4500122",
       "stem": "Distillation helps in obtaining:",
       "options": [
         "Polluted water",
@@ -453,6 +483,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "bf4682a28754",
       "stem": "Which pollutant remains in water for a long time?",
       "options": [
         "Sugar",
@@ -468,6 +499,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "c72af1e70d96",
       "stem": "Aquatic life depends greatly on:",
       "options": [
         "Oil",
@@ -483,6 +515,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "034cf7c0181f",
       "stem": "The first step in domestic water treatment is usually:",
       "options": [
         "Chlorination",
@@ -498,6 +531,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "0c8b42765837",
       "stem": "Which disease is caused by Salmonella typhi?",
       "options": [
         "Cholera",
@@ -513,6 +547,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "7c3eb44eec96",
       "stem": "Polluted water may contain:",
       "options": [
         "Parasites",
@@ -528,6 +563,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "8c35b4cb8c8a",
       "stem": "Which method kills bacteria in water treatment plants?",
       "options": [
         "Filtration",
@@ -543,6 +579,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "8250d14635ab",
       "stem": "Excessive extraction of groundwater leads to:",
       "options": [
         "Water abundance",
@@ -558,6 +595,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "1301e549b2b2",
       "stem": "Which of the following is an example of household waste?",
       "options": [
         "Detergents",
@@ -573,6 +611,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "c8f23960bcc2",
       "stem": "The main aim of water purification is to make water:",
       "options": [
         "Salty",
@@ -588,6 +627,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "7a531c8a2cba",
       "stem": "Clean drinking water helps prevent:",
       "options": [
         "Water-borne diseases",
@@ -603,6 +643,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "da76c63343df",
       "stem": "Responsible water use is important because:",
       "options": [
         "Water is unlimited",
@@ -618,6 +659,7 @@
       "source_file": "chem unit#12 MCQs (A).docx"
     },
     {
+      "id": "1521e4fc94a7",
       "stem": "A student added fertilizer near a pond. After a few days, fish started dying due to lack of oxygen. Which substance caused this problem?",
       "options": [
         "Sodium chloride",
@@ -633,6 +675,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "afed4b023057",
       "stem": "A laboratory assistant used distilled water instead of tap water while preparing chemicals. What was the main reason?",
       "options": [
         "Distilled water is coloured",
@@ -648,6 +691,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "fda560883805",
       "stem": "During water treatment, large solid particles settled at the bottom of a tank. Which process was taking place?",
       "options": [
         "Distillation",
@@ -663,6 +707,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "bce233d3b941",
       "stem": "A doctor advised villagers to boil and chlorinate water after flooding. What was the main purpose?",
       "options": [
         "To improve taste",
@@ -678,6 +723,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "098442cd79f5",
       "stem": "A student observed that white copper sulphate powder turned blue after exposure to a liquid. The liquid was most likely:",
       "options": [
         "Oil",
@@ -693,6 +739,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "8a0b0edfc6e4",
       "stem": "A city’s water supply became contaminated with sewage. Which disease is most likely to spread rapidly?",
       "options": [
         "Asthma",
@@ -708,6 +755,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "578c4aa05bc6",
       "stem": "Farmers continuously used chemical fertilizers in fields near a river. Which environmental issue may occur first?",
       "options": [
         "Increased dissolved oxygen",
@@ -723,6 +771,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "42639dd498aa",
       "stem": "A student heated impure water in a flask and condensed the vapours separately. Which method was used?",
       "options": [
         "Filtration",
@@ -738,6 +787,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "2f7cd9978c73",
       "stem": "Villagers dumped household detergents into a stream. Which effect is most likely on aquatic life?",
       "options": [
         "Increase in oxygen",
@@ -753,6 +803,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "b74b4bb6ed47",
       "stem": "A patient developed jaundice after drinking polluted water. Which organ was mainly affected?",
       "options": [
         "Heart",
@@ -768,6 +819,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "edfdc16e3047",
       "stem": "Fish in a polluted lake began dying after sewage disposal. What was the main reason?",
       "options": [
         "Increase in dissolved oxygen",
@@ -783,6 +835,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "e649c813eeb6",
       "stem": "An industrial area released untreated waste into a river. Which type of contamination is most dangerous for humans?",
       "options": [
         "Dissolved oxygen",
@@ -798,6 +851,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "eb95f25308dc",
       "stem": "A teacher asked students why chlorination is done after filtration. The best answer is:",
       "options": [
         "To remove large stones",
@@ -813,6 +867,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "d107bba73192",
       "stem": "Excessive groundwater pumping in a city mainly leads to:",
       "options": [
         "Water abundance",
@@ -828,6 +883,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "6ff935a6336d",
       "stem": "A village used contaminated pond water for drinking. Which precaution would be most effective immediately?",
       "options": [
         "Add sugar",
@@ -843,6 +899,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "2f3780f0549e",
       "stem": "During testing, water showed abnormal smell and colour. This suggests the presence of:",
       "options": [
         "Pure compounds",
@@ -858,6 +915,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "38941d08dba7",
       "stem": "A scientist observed rapid algae growth in a lake receiving fertilizers. What phenomenon is occurring?",
       "options": [
         "Distillation",
@@ -873,6 +931,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "c2564549745b",
       "stem": "A student forgot to chlorinate filtered water before drinking. Which risk increased most?",
       "options": [
         "Mineral deficiency",
@@ -888,6 +947,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "5bfcb53e993a",
       "stem": "A family started using distilled water for car batteries instead of tap water because distilled water:",
       "options": [
         "Contains detergents",
@@ -903,6 +963,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "82dfe03194bc",
       "stem": "Which situation best indicates water pollution?",
       "options": [
         "Clear odourless water",
@@ -918,6 +979,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "f04dcde98c2f",
       "stem": "A student compared river water with distilled water. Which property is most likely different?",
       "options": [
         "Colour of hydrogen",
@@ -933,6 +995,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "e9b378f76b2c",
       "stem": "A laboratory worker used anhydrous copper sulphate to check moisture in a sample. Why was this chemical suitable?",
       "options": [
         "It changes colour in presence of water",
@@ -948,6 +1011,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "1f58ba9ca944",
       "stem": "A polluted river contained excessive phosphates. Which result is most likely?",
       "options": [
         "Better fish growth forever",
@@ -963,6 +1027,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "7a16722b2a95",
       "stem": "During water purification, activated carbon (charcoal) was added mainly to:",
       "options": [
         "Increase microbes",
@@ -978,6 +1043,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "26dbee894801",
       "stem": "A teacher explained that dissolved oxygen is important in rivers because it:",
       "options": [
         "Increases pollution",
@@ -993,6 +1059,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "8668debd547d",
       "stem": "Which condition best shows poor water management?",
       "options": [
         "Drip irrigation",
@@ -1008,6 +1075,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "fbe94d3a2aa4",
       "stem": "A student accidentally drank contaminated water and developed severe diarrhea. Which disease is most likely?",
       "options": [
         "Dysentery",
@@ -1023,6 +1091,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "acae765b51d0",
       "stem": "A student noticed that polluted water had an unpleasant odour. Which factor most likely caused it?",
       "options": [
         "Pure oxygen",
@@ -1038,6 +1107,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "69122b595a21",
       "stem": "Why is boiling water effective before drinking?",
       "options": [
         "It adds minerals",
@@ -1053,6 +1123,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "abd0497bede3",
       "stem": "A polluted lake contained plastic waste. Which property of plastics makes them dangerous?",
       "options": [
         "They dissolve quickly",
@@ -1068,6 +1139,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "470faeee5658",
       "stem": "A student compared pure and impure water samples. Which sample would freeze below 0°C?",
       "options": [
         "Pure water",
@@ -1083,6 +1155,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "4017dd6a024e",
       "stem": "Which activity contributes most to groundwater contamination?",
       "options": [
         "Tree plantation",
@@ -1098,6 +1171,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "cd8aeaacc582",
       "stem": "In a village, children frequently suffered from typhoid. What is the most probable reason?",
       "options": [
         "Clean drinking water",
@@ -1113,6 +1187,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "dd200b163dd5",
       "stem": "Which observation shows successful chlorination?",
       "options": [
         "Large particles settle down",
@@ -1128,6 +1203,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "749d2adab34a",
       "stem": "A chemist used distilled water in a pH meter. Why?",
       "options": [
         "It contains no ions affecting readings",
@@ -1143,6 +1219,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "bf005ac9a8e6",
       "stem": "Which condition is most likely in water with excessive sewage?",
       "options": [
         "High oxygen level",
@@ -1158,6 +1235,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "3ace8cc3acbc",
       "stem": "A teacher explained that water scarcity can become severe if people continue:",
       "options": [
         "Conserving water",
@@ -1173,6 +1251,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "58819610aabc",
       "stem": "A student used filtration before chlorination because filtration mainly:",
       "options": [
         "Removes dissolved salts",
@@ -1188,6 +1267,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "a1a1259bb932",
       "stem": "Which statement best explains the importance of clean water?",
       "options": [
         "It prevents spread of many diseases",
@@ -1203,6 +1283,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "4a0deaef876b",
       "stem": "A student suffered from high fever, weakness, and irregular pulse after consuming unhygienic water from a roadside stall. Which disease is most probable?",
       "options": [
         "Dengue",
@@ -1218,6 +1299,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "89415fb99ec8",
       "stem": "During a medical camp, doctors found that many patients had yellow skin and eyes due to polluted drinking water. Which organ was mainly affected?",
       "options": [
         "Heart",
@@ -1233,6 +1315,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "2ba81f922862",
       "stem": "In a village, sewage water mixed with drinking water pipelines after heavy rain. Which preventive step would be most effective immediately?",
       "options": [
         "Add sugar to water",
@@ -1248,6 +1331,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "fcb65fac526d",
       "stem": "A child drank contaminated pond water and later developed bloody diarrhea. Which disease is most likely?",
       "options": [
         "Dysentery",
@@ -1263,6 +1347,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "b4284a1affb3",
       "stem": "A laboratory test confirmed the presence of Salmonella typhi in a water sample. Which disease can spread through this water?",
       "options": [
         "Cholera",
@@ -1278,6 +1363,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "d6961dccdd16",
       "stem": "During a flood emergency, health workers distributed chlorine tablets among people. What was the main purpose of these tablets?",
       "options": [
         "To improve taste",
@@ -1293,6 +1379,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "98586f4f3ec5",
       "stem": "A student frequently consumed contaminated water and developed liver inflammation. Which water-borne disease is most likely responsible?",
       "options": [
         "Hepatitis A",
@@ -1308,6 +1395,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "fe826867a4b7",
       "stem": "A doctor advised boiling water before drinking during a disease outbreak. Why is boiling effective?",
       "options": [
         "It removes all salts",
@@ -1323,6 +1411,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "ccd44f8df697",
       "stem": "A city improved its filtration system but skipped chlorination. Which risk would still remain high?",
       "options": [
         "Presence of large particles",
@@ -1338,6 +1427,7 @@
       "source_file": "chem unit#12 MCQs (D).docx"
     },
     {
+      "id": "77f5d81b3606",
       "stem": "A health inspector observed foul-smelling water with sewage contamination in a community. Which statement best explains the danger?",
       "options": [
         "It may spread water-borne diseases",
