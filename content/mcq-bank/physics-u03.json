@@ -899,7 +899,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
-      "id": "6ad77a2a17f7",
+      "id": "9b3f9a90ceb9",
       "stem": "A force of 20 N acts on a body and produces an acceleration of 4 m/s². If the same force acts on a body of double mass, the acceleration will be:",
       "options": [
         "8 m/s²",
@@ -947,7 +947,7 @@
       "source_file": "Phy-Unit 3 MCQS.docx"
     },
     {
-      "id": "e56849956abc",
+      "id": "bed8df6af3b5",
       "stem": "A force F gives an acceleration of 4 m/s² to a body weighing 98 N. To produce an acceleration of 8 m/s² in the same body, the required force is:",
       "options": [
         "F/2",
@@ -1063,9 +1063,9 @@
       "stem": "According to Newton’s second law F=ma, a force of 1N is fundamentally equivalent to which combination of SI base units?",
       "options": [
         "1kg⋅m/s",
-        "1kg⋅m/s2",
-        "1kg2⋅m/s",
-        "1m2⋅kg/s"
+        "1kg⋅m/s²",
+        "1kg²⋅m/s",
+        "1m²⋅kg/s"
       ],
       "answer": 1,
       "answer_source": "file",

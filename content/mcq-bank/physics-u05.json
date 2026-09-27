@@ -511,7 +511,7 @@
         "F= x/k",
         "F= −kx",
         "F= k /x",
-        "F= kx2"
+        "F= kx²"
       ],
       "answer": 1,
       "answer_source": "file",
@@ -698,7 +698,7 @@
     },
     {
       "id": "a7bb0c38e0d4",
-      "stem": "If a person of mass 50 kg sits on a spring chair and compresses the spring by 0.1m, what is the calculated spring constant k of the chair’s spring? (Take g = 9.8 m/s2)",
+      "stem": "If a person of mass 50 kg sits on a spring chair and compresses the spring by 0.1m, what is the calculated spring constant k of the chair’s spring? (Take g = 9.8 m/s²)",
       "options": [
         "490 N/m",
         "4,900 N/m",

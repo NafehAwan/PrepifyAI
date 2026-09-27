@@ -4,8 +4,11 @@
 
 import { createHash } from "node:crypto";
 
+// NFKC first, so a superscript or subscript digit counts as the digit: H2O,
+// H₂O and x², x2 fingerprint the same, and a rendering fix never orphans an
+// answer that was already derived for the question.
 export function fingerprint(stem) {
-  return String(stem).toLowerCase().replace(/[^a-z0-9]/g, "");
+  return String(stem).normalize("NFKC").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 export function bankId(subject, chapterSeq, stem) {

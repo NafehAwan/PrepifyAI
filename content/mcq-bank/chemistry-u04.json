@@ -11,8 +11,8 @@
         "By number of neutrons",
         "By increasing the proton number"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -27,8 +27,8 @@
         "p-block",
         "f-block"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -43,8 +43,8 @@
         "Group 2",
         "Group 17"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -59,8 +59,8 @@
         "Potassium",
         "Chlorine"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -75,8 +75,8 @@
         "Alkaline earth metals",
         "Halogens"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -91,8 +91,8 @@
         "Remains constant",
         "Doubles"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -107,8 +107,8 @@
         "Their s and d subshell electrons are close enough in energy to be used in bonding.",
         "They are all magnetic."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -123,8 +123,8 @@
         "Noble gases",
         "Transition metals"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -139,8 +139,8 @@
         "Increasing electronegativity",
         "The ease of losing electrons in lower group elements"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -155,8 +155,8 @@
         "Electrons are lost",
         "Electronegativity increases"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -171,8 +171,8 @@
         "K",
         "Rb"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -187,8 +187,8 @@
         "d-block",
         "f-block"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -203,8 +203,8 @@
         "The number of neutrons",
         "The atomic mass"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -219,8 +219,8 @@
         "Fluorine",
         "Chlorine"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -235,8 +235,8 @@
         "B",
         "Ne"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -251,8 +251,8 @@
         "They are highly electronegative",
         "They have very low melting points"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -267,8 +267,8 @@
         "The number of valence electrons",
         "The number of neutrons"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -283,8 +283,8 @@
         "Number of shells",
         "Atomic size"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -299,8 +299,8 @@
         "3 shells, 16 valence electrons",
         "6 shells, 3 valence electrons"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -315,8 +315,8 @@
         "Higher ionization energy",
         "Larger atomic radius"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -331,8 +331,8 @@
         "Ionization energy",
         "Atomic radius"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 4,
@@ -347,8 +347,8 @@
         "Na and Mg",
         "Cl and Ar"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -363,8 +363,8 @@
         "Moderately reactive",
         "Reacts violently with water"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -379,8 +379,8 @@
         "Gaining one electron",
         "Losing two electrons"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -395,8 +395,8 @@
         "Middle of the periodic table only",
         "In Group 1"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -411,8 +411,8 @@
         "Both have identical chemical properties",
         "Sodium tends to lose electrons, while chlorine tends to gain electrons"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -427,8 +427,8 @@
         "High stability due to a complete outer shell",
         "Lowest ionization energy"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -443,8 +443,8 @@
         "Magnesium has a higher nuclear charge than Aluminum.",
         "Aluminum has more protons, which repel the valence electrons."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -452,15 +452,15 @@
     },
     {
       "id": "50d8236b9435",
-      "stem": "Why is the ionic radius of an O2- ion significantly larger than that of a $Ne$ atom, even though they have the same number of electrons?",
+      "stem": "Why is the ionic radius of an O²⁻ ion significantly larger than that of a Ne atom, even though they have the same number of electrons?",
       "options": [
         "Neon is a metal.",
         "The oxygen nucleus is larger.",
-        "O2- has fewer protons (8) pulling on the same number of electrons (10), resulting in less effective nuclear attraction.",
+        "O²⁻ has fewer protons (8) pulling on the same number of electrons (10), resulting in less effective nuclear attraction.",
         "They have the same nuclear charge."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -475,8 +475,8 @@
         "Both are equally acidic.",
         "Neither can form oxides."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 4,
@@ -484,15 +484,15 @@
     },
     {
       "id": "44b94f71b83b",
-      "stem": "What is the correct order of increasing atomic radius for the isoelectronic series N3-, O2-, F-, Ne, Na+?",
+      "stem": "What is the correct order of increasing atomic radius for the isoelectronic series N³⁻, O²⁻, F⁻, Ne, Na⁺?",
       "options": [
         "N³⁻<O²⁻<F⁻<Ne<Na⁺",
         "Na⁺<Ne<F⁻<O²⁻<N³⁻",
         "Ne<Na⁺<N³⁻<O²⁻<F⁻",
         "N³⁻=O²⁻=F⁻=Ne=Na⁺"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -507,8 +507,8 @@
         "Electrons are heavier than protons.",
         "The nucleus disappears."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -523,8 +523,8 @@
         "d-block",
         "All of the above."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -539,12 +539,13 @@
         "Decreased nuclear charge.",
         "Increased electron-electron repulsion in the larger 4p orbital."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "answer_confidence": "low"
     },
     {
       "id": "62f6ad0461d0",
@@ -555,8 +556,8 @@
         "Because they are all radioactive.",
         "Because they are actually metals."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -571,12 +572,13 @@
         "Because of the change in metallic bonding character as d-orbitals become half-filled.",
         "Because they change into liquids."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "answer_confidence": "low"
     },
     {
       "id": "f1f7dd70e29d",
@@ -592,7 +594,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "Refers to elements X, Y and Z from a table missing from the source."
     },
     {
       "id": "abd811b5c70d",
@@ -608,7 +611,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "Refers to a statement that is not included in the question."
     },
     {
       "id": "9f29670e59f4",
@@ -624,7 +628,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "The clues identifying the element are missing from the source."
     },
     {
       "id": "3ef2f8399b06",
@@ -640,7 +645,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "The observation the question refers to is missing from the source."
     },
     {
       "id": "cf29b7d7873b",
@@ -651,8 +657,8 @@
         "It is chemically inert.",
         "It has a strong tendency to gain electrons."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -667,8 +673,8 @@
         "Constant.",
         "Random."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -683,8 +689,8 @@
         "The atom is a metal.",
         "The atom is unstable."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -699,8 +705,8 @@
         "Atomic radius",
         "Electron affinity"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 4,
@@ -715,8 +721,8 @@
         "It depends only on mass.",
         "Protons define the color of the element."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -731,8 +737,8 @@
         "Actinides have no electrons.",
         "Lanthanides fill the 4f subshell, while actinides fill the 5f."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -743,12 +749,12 @@
       "stem": "Which of these sets represents an isoelectronic series where size is purely determined by proton count?",
       "options": [
         "F⁻,Na⁺,Mg²⁺",
-        "𝐿𝑖,𝐵𝑒,𝐵",
-        "𝐶𝑙,𝐴𝑟,𝐾",
+        "Li,Be,B",
+        "Cl,Ar,K",
         "O²⁻,S²⁻,Se²⁻"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -760,11 +766,11 @@
       "options": [
         "It is very dense.",
         "It is a metal.",
-        "Its electronic configuration (1s2) matches the s-block filling pattern.",
+        "Its electronic configuration (1s²) matches the s-block filling pattern.",
         "It reacts with oxygen."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -779,8 +785,8 @@
         "Charge density and polarization power.",
         "Number of shells."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -800,7 +806,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "Ambiguous: Pauling originally referenced hydrogen, while modern scales anchor on fluorine."
     },
     {
       "id": "3cb82a47a617",
@@ -811,12 +818,13 @@
         "Because atoms are always moving.",
         "Because of varying metallic bonding strengths and orbital occupancy."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "answer_confidence": "low"
     },
     {
       "id": "95cad9619d16",
@@ -827,8 +835,8 @@
         "Low first ionization energy.",
         "Full valence shells."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -843,8 +851,8 @@
         "It is a poor electron attractor.",
         "It becomes radioactive."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -859,8 +867,8 @@
         "It is a noble gas.",
         "It has no protons."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -875,8 +883,8 @@
         "Period 3",
         "Period 2"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -891,8 +899,8 @@
         "They decrease as the metallic bonding becomes weaker due to larger atomic size.",
         "They are random."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 4,
@@ -903,12 +911,12 @@
       "stem": "Which is the most reactive metal in the periodic table?",
       "options": [
         "Li",
-        "𝑁𝑎",
-        "𝑀𝑔",
-        "𝑪𝒔"
+        "Na",
+        "Mg",
+        "Cs"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -923,8 +931,8 @@
         "Become larger",
         "Gain shells"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
@@ -944,7 +952,8 @@
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "Impossible premise: a second ionization energy is always higher than the first."
     },
     {
       "id": "fbd43356bc29",
@@ -960,7 +969,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 4,
-      "source_file": "Chem unit#4 MCQs.docx"
+      "source_file": "Chem unit#4 MCQs.docx",
+      "rejected": "Refers to elements X and W from a table missing from the source."
     }
   ]
 }

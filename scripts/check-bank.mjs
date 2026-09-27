@@ -48,9 +48,10 @@ for (const b of banks) {
 // --- counts ----------------------------------------------------------------
 const bySubject = new Map();
 for (const { subject, q } of all) {
-  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, lowConf: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
+  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, lowConf: 0, rejected: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
   row.total++;
-  if (q.answer === null) row.missing++;
+  if (q.rejected) row.rejected++;
+  else if (q.answer === null) row.missing++;
   else if (q.answer_source === "file") row.keyed++;
   else row.derived++;
   if (q.answer_confidence === "low") row.lowConf++;
@@ -59,14 +60,18 @@ for (const { subject, q } of all) {
   bySubject.set(subject, row);
 }
 
-console.log("Subject           total  from file  derived  (low conf)  no answer  scenario   easy/med/hard");
+console.log("Subject           total  from file  derived  (low conf)  rejected  no answer  scenario   easy/med/hard");
 for (const [subject, r] of [...bySubject].sort()) {
   console.log(
-    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.lowConf).padStart(10)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
+    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.lowConf).padStart(10)}  ${String(r.rejected).padStart(8)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
   );
 }
 const usable = all.filter(({ q }) => q.answer !== null).length;
-console.log(`\n${all.length} questions · ${usable} usable in a test · ${all.length - usable} awaiting an answer`);
+const rejected = all.filter(({ q }) => q.rejected).length;
+console.log(
+  `\n${all.length} questions · ${usable} usable in a test · ${rejected} rejected as defective · ` +
+    `${all.length - usable - rejected} awaiting an answer`,
+);
 
 if (problems.length) {
   console.log(`\n${problems.length} PROBLEMS:`);

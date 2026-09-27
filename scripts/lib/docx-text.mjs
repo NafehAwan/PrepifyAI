@@ -82,7 +82,13 @@ function renderMath(n) {
   const e = () => (kid(n, "m:e") ? mathText(kid(n, "m:e")) : "");
   switch (n.name) {
     case "m:r":
-      return kids(n, "m:t").map((t) => t.children.map((c) => c.text ?? "").join("")).join("");
+      // Word's equation font emits Mathematical Alphanumeric Symbols (𝐿𝑖, 𝑪𝒔);
+      // map just those back to plain letters. Whole-string NFKC would also
+      // flatten superscripts, so it is applied per character in that block only.
+      return kids(n, "m:t")
+        .map((t) => t.children.map((c) => c.text ?? "").join(""))
+        .join("")
+        .replace(/[\u{1D400}-\u{1D7FF}]/gu, (ch) => ch.normalize("NFKC"));
     case "m:f": {
       const num = mathText(kid(n, "m:num") ?? { children: [] }).trim();
       const den = mathText(kid(n, "m:den") ?? { children: [] }).trim();
@@ -154,6 +160,16 @@ function inline(n) {
   switch (n.name) {
     case "w:t":
       return n.children.map((c) => c.text ?? "").join("");
+    case "w:r": {
+      // A run formatted as superscript or subscript (10<sup>23</sup>, H<sub>2</sub>O)
+      // is plain text in the XML; without this, 6.022 × 10²³ reads "6.022 x 1023".
+      const rPr = kid(n, "w:rPr");
+      const align = rPr ? kid(rPr, "w:vertAlign")?.attrs?.["w:val"] : undefined;
+      const text = (n.children ?? []).map(inline).join("");
+      if (align === "superscript") return mapAll(text.trim(), SUP) ?? text;
+      if (align === "subscript") return mapAll(text.trim(), SUB) ?? text;
+      return text;
+    }
     case "w:tab":
       return " ";
     case "w:br":

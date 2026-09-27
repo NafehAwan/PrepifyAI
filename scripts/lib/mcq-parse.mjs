@@ -58,6 +58,8 @@ function clean(line) {
     // The Maths sets prefix option labels with zero-width spaces.
     .replace(/[\u200B-\u200D\uFEFF\u2060]/g, "")
     .replace(/[\u00A0\u2007\u202F]/g, " ")
+    // Math-italic letters (𝐿𝑖, 𝑪𝒔) typed with an equation font, back to plain.
+    .replace(/[\u{1D400}-\u{1D7FF}]/gu, (ch) => ch.normalize("NFKC"))
     .replace(/\s+/g, " ")
     .trim();
 }

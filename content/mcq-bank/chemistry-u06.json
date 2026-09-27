@@ -6,13 +6,13 @@
       "id": "f15076a7d0d9",
       "stem": "How many particles are in one mole of a substance?",
       "options": [
-        "6.022 x 1023",
-        "6.022 x 1022",
-        "1.66 x 10-24",
-        "6.022 x1013"
+        "6.022 x 10²³",
+        "6.022 x 10²²",
+        "1.66 x 10⁻²⁴",
+        "6.022 x10¹³"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -27,8 +27,8 @@
         "Mass = Moles x Molar Mass",
         "Mass = Moles / Molar Mass"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -43,8 +43,8 @@
         "The time taken for the reaction.",
         "Only the products."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -59,8 +59,8 @@
         "The number of moles reacting.",
         "The number of atoms."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -68,15 +68,15 @@
     },
     {
       "id": "afe4261bcba9",
-      "stem": "A binary compound is formed from ions Na+ and Cl-. What is its formula?",
+      "stem": "A binary compound is formed from ions Na⁺ and Cl⁻. What is its formula?",
       "options": [
         "Na₂Cl",
         "NaCl",
         "Na₂Cl₂",
         "NaCl₂"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -84,7 +84,7 @@
     },
     {
       "id": "b377573f06e3",
-      "stem": "What is the molar mass of water (H2O)?",
+      "stem": "What is the molar mass of water (H₂O)?",
       "options": [
         "17.01 g/mol",
         "18.02 g/mol",
@@ -96,19 +96,20 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "Two correct options: 18.02 and 18.016 g/mol are the same molar mass at different precision."
     },
     {
       "id": "25b01cdf57a9",
-      "stem": "What is the simplest formula of a molecule containing C6H12O6?",
+      "stem": "What is the simplest formula of a molecule containing C₆H₁₂O₆?",
       "options": [
         "C₆H₁₂O₆",
         "C₂H₄O₂",
         "C₃H₆O₃",
         "CH₂O"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -116,15 +117,15 @@
     },
     {
       "id": "983d474b162e",
-      "stem": "If you have 0.5 moles of O2, how many molecules of O2 do you have?",
+      "stem": "If you have 0.5 moles of O₂, how many molecules of O₂ do you have?",
       "options": [
         "6.022×10²³",
         "3.011×10²³",
         "0.5",
         "1.204×10²⁴"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -132,31 +133,31 @@
     },
     {
       "id": "e137a4dc9e2c",
-      "stem": "What does the formula of a binary compound like MgCl2 tell us?",
+      "stem": "What does the formula of a binary compound like MgCl₂ tell us?",
       "options": [
         "It has 2 Magnesium atoms.",
         "Magnesium has a -2 charge.",
         "It is a covalent molecule.",
         "It has a ratio of 1 Magnesium ion to 2 Chloride ions."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "159d05280d9b",
+      "id": "cb724c9b5693",
       "stem": "Which is a reactant in the following equation? C+O₂→CO₂",
       "options": [
         "CO₂",
-        "C and O2",
+        "C and O₂",
         "O₂",
         "C"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -171,8 +172,8 @@
         "N₂+3H₂→2NH₃",
         "2N₂+H₂→NH₃"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -187,8 +188,8 @@
         "The substance is in a liquid state.",
         "The substance is a solution."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -203,8 +204,8 @@
         "It connects the microscopic world of atoms/molecules to the macroscopic world of grams.",
         "It is the only unit that measures volume."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -219,8 +220,8 @@
         "It is halved.",
         "It becomes zero."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -235,8 +236,8 @@
         "Only the products have mass.",
         "The total mass of reactants must equal the total mass of products, requiring the same number of each type of atom on both sides."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -251,8 +252,8 @@
         "1 mole of CH₄",
         "1 mole of CO₂"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -267,8 +268,8 @@
         "Both are consumed equally.",
         "C"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -276,15 +277,15 @@
     },
     {
       "id": "16464b46e9cb",
-      "stem": "How many moles of Hydrogen atoms are in 0.5 moles of NH3?",
+      "stem": "How many moles of Hydrogen atoms are in 0.5 moles of NH₃?",
       "options": [
         "0.5",
         "1.0",
         "1.5",
         "3.0"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -299,8 +300,8 @@
         "The ratio of the moles of elements.",
         "The molar mass of the compound."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -315,8 +316,8 @@
         "That 6.022×10²³molecules weigh 18.02 g.",
         "That 1 atom weighs 18.02 g."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -331,8 +332,8 @@
         "6g",
         "24g"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -340,15 +341,15 @@
     },
     {
       "id": "1b8e62927124",
-      "stem": "How many atoms are in one molecule of H2SO4?",
+      "stem": "How many atoms are in one molecule of H₂SO₄?",
       "options": [
         "3",
         "6",
         "7",
         "4"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -363,8 +364,8 @@
         "CHO",
         "C₃H₆O₃"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -379,8 +380,8 @@
         "Because empirical formulas don't use real numbers.",
         "Because ratios are wrong."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -400,7 +401,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "The options answer a different question (formula units versus molecules), not the stem."
     },
     {
       "id": "153de621814b",
@@ -411,8 +413,8 @@
         "Moles are easier to measure.",
         "Grams are not used in science."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -427,15 +429,15 @@
         "Because they are covalent.",
         "Because they form infinite lattices, not discrete molecules."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "da9c5a1c6366",
+      "id": "3ebb55339cd4",
       "stem": "A compound's molar mass is 142 g/mol. Empirical formula is NaPO₃. What is the molecular formula?",
       "options": [
         "NaPO₃",
@@ -448,10 +450,11 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "No correct option: NaPO₃ is 102 g/mol, and 142 is not a whole multiple of it."
     },
     {
-      "id": "d2655615efe6",
+      "id": "3951d48fbcfb",
       "stem": "You have a compound with the empirical formula CH₂. If the molar mass of the actual molecular compound is 84 g/mol, what is the molecular formula?",
       "options": [
         "C₂H₄",
@@ -459,24 +462,24 @@
         "C₆H₁₂",
         "C₃H₆"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "d1d7f8607232",
+      "id": "87e9f94f66e0",
       "stem": "In the combustion of CH₄ (CH₄+2O₂→CO₂+2H₂O), if you have 1 mole of each reactant, which is the limiting reactant and why?",
       "options": [
         "CH₄, because it has fewer moles.",
-        "O₂, because the stoichiometric ratio requires 2 moles of O2 for every 1 mole of CH4.",
+        "O₂, because the stoichiometric ratio requires 2 moles of O₂for every 1 mole of CH₄.",
         "CH₄, because it is heavier.",
         "O₂, because it is a gas."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -491,8 +494,8 @@
         "Because molecular equations are always wrong.",
         "To highlight the specific ions that undergo chemical change, ignoring spectator ions."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -507,8 +510,8 @@
         "Product C and excess reactant A",
         "Only reactant B"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -516,15 +519,15 @@
     },
     {
       "id": "114afb9e3a8c",
-      "stem": "You have two beakers. Beaker 1 contains 1mol of NaCl. Beaker 2 contains 1mol of CaCl2. If you add excess AgNO3 to both to precipitate AgCl, which beaker produces more precipitate, and by what factor?",
+      "stem": "You have two beakers. Beaker 1 contains 1mol of NaCl. Beaker 2 contains 1mol of CaCl₂. If you add excess AgNO₃ to both to precipitate AgCl, which beaker produces more precipitate, and by what factor?",
       "options": [
         "Beaker 1; 1:1 ratio.",
-        "Beaker 2; produces twice as much AgCl because it has 2 moles of Cl- ions per mole of compound.",
+        "Beaker 2; produces twice as much AgCl because it has 2 moles of Cl⁻ ions per mole of compound.",
         "Beaker 2; produces 3 times as much.",
         "Beaker 1; produces twice as much."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -539,8 +542,8 @@
         "Because hydrocarbons don't have molecular formulas.",
         "Because the molar mass of Carbon is variable."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -548,15 +551,15 @@
     },
     {
       "id": "082164fc95e8",
-      "stem": "You have a sample of H2O and D2O (Heavy water). They have the same number of moles, but different masses. Why?",
+      "stem": "You have a sample of H₂O and D₂O (Heavy water). They have the same number of moles, but different masses. Why?",
       "options": [
         "D₂O is a gas.",
         "D₂O has more electrons.",
         "H₂O Is ionic.",
         "D₂O has more neutrons."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -564,15 +567,15 @@
     },
     {
       "id": "919e8424c3a0",
-      "stem": "What does the coefficient \"3\" in 3O2 represent in a chemical equation?",
+      "stem": "What does the coefficient \"3\" in 3O₂ represent in a chemical equation?",
       "options": [
         "3 grams of oxygen.",
-        "3 moles of O2 molecules.",
+        "3 moles of O₂ molecules.",
         "3 atoms of oxygen.",
         "3 moles of oxygen atoms."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -587,15 +590,15 @@
         "It includes isotopes like C-13 and C-14.",
         "Carbon is an ion."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "f097fa489051",
+      "id": "b075c44a5092",
       "stem": "Why is the equation H₂ + O₂ → H₂O considered incorrect?",
       "options": [
         "Hydrogen is a metal",
@@ -603,8 +606,8 @@
         "Water cannot be formed",
         "Atoms are not balanced"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -619,8 +622,8 @@
         "2Fe + O₂ → Fe₂O₃",
         "2Fe + 3O₂ → 2Fe₂O₃"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -635,15 +638,15 @@
         "Changing subscripts",
         "Changing formulas"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "c8033bcdde5b",
+      "id": "05488eafe8de",
       "stem": "A student calculates the molar mass of CaCO₃ as 100 g/mol. Which step is essential in this calculation?",
       "options": [
         "Using atomic numbers",
@@ -651,8 +654,8 @@
         "Adding the relative atomic masses of all atoms in the formula",
         "Dividing by the number of atoms"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -667,8 +670,8 @@
         "Charles’s law",
         "Conservation of mass"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -683,15 +686,15 @@
         "They never affect the coefficients of other substances.",
         "Their coefficients are always one."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "d005faa756de",
+      "id": "0bddee724de7",
       "stem": "A compound contains calcium and nitrogen. Calcium forms Ca²⁺ ions, and nitrogen forms N³⁻ ions. What formula will the compound have?",
       "options": [
         "CaN",
@@ -699,8 +702,8 @@
         "CaN₂",
         "Ca₃N₂"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
@@ -715,8 +718,8 @@
         "Mass is conserved only after conversion.",
         "Avogadro’s number cannot be used with grams."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -731,15 +734,15 @@
         "Solids have no charge.",
         "Solids are always spectator ions."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "65e2b20df1c4",
+      "id": "752a293d1ba6",
       "stem": "What coefficient should be placed before O₂?",
       "options": [
         "2",
@@ -752,7 +755,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "The equation being balanced is missing from the source."
     },
     {
       "id": "e29915e00021",
@@ -768,10 +772,11 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "The equation being balanced is missing from the source."
     },
     {
-      "id": "38cf920c8b43",
+      "id": "d06f4122549d",
       "stem": "A chemist needs to prepare a neutral compound from Al³⁺ and SO₄²⁻ ions. Which formula is correct?",
       "options": [
         "AlSO₄",
@@ -779,8 +784,8 @@
         "Al₃SO₄",
         "Al(SO₄)₂"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -795,8 +800,8 @@
         "Both have different Avogadro numbers.",
         "Oxygen gas contains twice as many oxygen atoms."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -811,8 +816,8 @@
         "100%; yield is always theoretical.",
         "40%; it implies the reaction was too fast."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -832,7 +837,8 @@
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,
-      "source_file": "Chem unit#6 MCQs.docx"
+      "source_file": "Chem unit#6 MCQs.docx",
+      "rejected": "The equation whose coefficients are summed is missing from the source."
     },
     {
       "id": "12fc26adf9b1",
@@ -843,8 +849,8 @@
         "Molecular equations contain only solids.",
         "Net ionic equations include only substances that actually change during the reaction."
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 6,
@@ -859,8 +865,8 @@
         "Subscripts represent masses only",
         "Coefficients change the formula"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 6,

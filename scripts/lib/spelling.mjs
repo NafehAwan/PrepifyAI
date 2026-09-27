@@ -30,6 +30,10 @@ const ALL = [
   [/\b(is|are|rule|device) use to\b/g, "$1 used to"],
   [/\bSommetimes\b/g, "Sometimes"],
   [/^L if /, "If "], // a stray keystroke before one stem
+  [/\$([A-Za-z0-9]{1,6})\$/g, "$1"], // LaTeX dollar signs left around a symbol
+  [/\bO2- ion\b/g, "O²⁻ ion"],
+  [/ϖ-bond/g, "π-bond"], // pomega typed for pi
+  [/\bO2-(?=\s|$)/g, "O²⁻"],
   [/^Studio of motion\b/, "Study of motion"],
 ];
 
