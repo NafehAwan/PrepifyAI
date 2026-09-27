@@ -1,0 +1,36 @@
+# subject: Computer Science
+# chapter: 1
+# source: MCQs chapter # (1-7) final done new.pdf
+# answer_source: derived
+# difficulty: medium
+
+Identify the system that exists independently of human design and invention. | Solar system | Traffic system | School management system | Keyboard | A | e
+During the execute stage of the fetch-decode-execute cycle, which component actively transforms data using logic gates, while the others fetch, decode or hold data? | Control Unit (CU) | Memory Unit (MU) | Arithmetic Logic Unit (ALU) | Register unit | C
+Which memory component temporarily stores active programs and data during execution but loses its contents when the power is turned off? | Hard disk | ROM | RAM | USB flash drive | C | e
+Whose invention provided the conceptual foundation for modern programmable computers? | Alan Turing | Charles Babbage | Bill Gates | John von Neumann | B
+If a computer starts successfully but no application software can run, which of the following software is most likely still functioning? | MS Word | Adobe Photoshop | Windows 11 | Google Chrome | C | s h
+A computer executes instructions accurately because one CPU component directs the activities of all other components. Which function does this component perform? | Perform calculations | Store data permanently | Manage and coordinate all computer operations | Display graphics | C | s
+Which type of memory is located closest to the CPU and stores frequently accessed data for faster processing? | RAM | Cache memory | Hard disk | ROM | B
+A system developed to solve a particular human need is classified as an artificial system because it: | occurs naturally in the environment | is created by humans to achieve a specific goal | cannot be broken down into smaller parts | does not require any input | B
+Which of the following storage devices generally has the largest storage capacity in a typical modern PC? | SSD (solid state drive) | CD-ROM | RAM | Cache memory | A
+A computer stores both program instructions and data in the same memory before execution. This feature is based on which concept? | Stored-program concept | Graphical user interface | Mechanical computing | Cloud computing | A | s
+A user wants to organize numerical data, perform calculations and create charts. Which software is most suitable? | Linux | macOS | MS Excel | BIOS | C | s e
+If a computer stores information in the smallest possible binary form, which unit is being used? | Byte | Kilobyte | Bit | Nibble | C | e
+A team is assigned to develop an operating system instead of assembling computer hardware. Which area of work does this task belong to? | Manufacturing processors | Designing circuits | Developing programs and operating systems | Building monitors | C | s
+A teacher wants to convert a printed worksheet into an editable digital document. Which device should be used? | Monitor | Printer | Speaker | Scanner | D | s e
+A computer loses the contents of its working memory when power is turned off, while another storage device keeps its data. This difference is mainly due to: | Volatility of the memory | Colour and shape | Price and brand | The size of the device | A | s
+Which set of symbols is sufficient to represent all data and instructions in a digital computer? | 0 to 9 | 0 and 1 | 1 and 2 | 0 to 7 | B | e
+A network gives each computer its own separate connection to a central device. Which is a direct advantage of this arrangement? | Failure of one workstation does not affect the others | It needs no connecting device | It uses only a single communication cable | Every computer is directly connected to every other computer | A | s h
+Which component interprets and executes program instructions while coordinating all processing in a computer? | RAM | Motherboard | CPU | Hard disk | C | e
+A student scans old photos, types a report in MS Word and then prints it. How are the scanner, MS Word and the printer classified by function? | Output, system software, input | Input, application software, output | Storage, utility software, input | Processing, hardware, software | B | s h
+A pyramid shows CPU registers at the top (smallest, fastest, costliest), then cache, then RAM, and the hard disk at the bottom (largest, slowest, cheapest). This arrangement illustrates the: | Memory hierarchy | Processing cycle | Network topology | Boot sequence | A | s
+A gamer's high-graphics game runs very slowly. He wants the CPU to reach game data much faster than reading it from the hard drive. Which component should he upgrade? | Hard drive capacity | Monitor size | RAM size | Keyboard speed | C | s h
+A program calculates student grades. The Control Unit directs the flow and the result goes to the monitor. Which part actually calculates the average marks? | Control Unit | Monitor | Arithmetic Logic Unit (ALU) | Hard disk | C | s
+Fatima saves her data on a USB drive, unplugs it overnight, and finds all her data still there the next day. This shows the USB drive is a: | Volatile storage device | Non-volatile storage device | Primary storage device | Temporary storage device | B | s
+A teacher shows three pictures: a student typing on a keyboard, the CPU showing "Processing", and a printer producing a report. What do the three steps represent? | Output, processing, input | Input, processing, output | Storage, input, output | Processing, storage, output | B | s e
+A new laptop (16 GB RAM, 512 GB SSD) costs five times more than an old one (4 GB RAM, 256 GB HDD). The price difference is MOSTLY due to the new laptop having: | A larger screen | More RAM and a faster SSD | A different coloured case | More USB ports | B | s
+A hospital system takes heartbeat data, compares it with normal levels and alerts a nurse if the heart stops. This describes the basic functions of a computer system as: | Artificial system | Data, information and processing | Natural system | Networking only | B | s h
+During data communication, information travels through a fibre-optic cable from one device to another. The fibre-optic cable is the: | Sender | Receiver | Transmission medium | Protocol | C | s
+A school has computer labs in two cities, each with its own local network, and the two networks are joined so teachers can share one database. The connection between the two is best described as a: | PAN | LAN | WAN | VPN | C | s h
+Student A says, "Hardware is useless without software." Student B says, "Software cannot run without hardware." Which conclusion is correct? | Hardware is more important than software | Hardware and software are interdependent | Software is more important than hardware | They are independent of each other | B | s
+A student uses Wi-Fi to open a learning portal hosted in another country; the data passes through several interconnected networks. Which technology mainly enables this? | LAN | Internet | Star topology | Ring topology | B | s

@@ -7,7 +7,10 @@
 //   # chapter: 4
 //   # kind: questions | variants          (default questions)
 //   # source: <where the questions came from>
-//   # answer_source: file | authored      (file = transcribed with the source's key)
+//   # answer_source: file | derived | authored
+//        file     = transcribed with the source's own key
+//        derived  = the source's question, answer worked out because it had no key
+//        authored = question written for Prepify
 //   # difficulty: easy | medium | hard    (default for the file)
 //
 // then one question per line:
@@ -101,7 +104,7 @@ for (const file of files) {
       stem,
       options,
       answer: idx,
-      answer_source: meta.answer_source === "file" ? "file" : "authored",
+      answer_source: ["file", "derived"].includes(meta.answer_source) ? meta.answer_source : "authored",
       difficulty,
       scenario: flagSet.includes("s"),
       chapter_seq: chapter,

@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "0065b10cc158",
+      "stem": "A developer divides a complex payroll system into employee records, salary calculation and report generation before implementation. Which computational thinking skill is being applied?",
+      "options": [
+        "Pattern recognition",
+        "Decomposition",
+        "Debugging",
+        "Selection"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "aac5f1c5cd1a",
+      "stem": "An algorithm repeats the same instructions forever without ever reaching its final step. Which characteristic of a good algorithm has been violated?",
+      "options": [
+        "Effectiveness",
+        "Finiteness",
+        "Clarity",
+        "Input"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e5301c32ce66",
+      "stem": "Which situation is best classified as a computational problem rather than an ordinary daily-life problem?",
+      "options": [
+        "Choosing a dress for a party",
+        "Calculating the shortest route between two cities using a computer",
+        "Watering plants in a garden",
+        "Cleaning a classroom"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "164a831e392f",
+      "stem": "An algorithm calculates the average age of four students. Which condition must the input satisfy for the result to be meaningful?",
+      "options": [
+        "Ages must be whole numbers",
+        "The input ages must be positive",
+        "The sum must be divisible by 4",
+        "The data must be sorted"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "b29c488a4d4c",
+      "stem": "A program checks whether water has reached 100 °C before displaying \"Boiling\". Which computational thinking skill is mainly used?",
+      "options": [
+        "Logical reasoning",
+        "Random guessing",
+        "Pattern recognition",
+        "Sequencing"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "0920ff518ceb",
+      "stem": "A teacher wants the total number of students who scored above 80 in a class. This problem is best classified as a:",
+      "options": [
+        "Decision problem",
+        "Search problem",
+        "Counting problem",
+        "Sorting problem"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "18e9737c82f7",
+      "stem": "A program must check whether a student's marks are 50 or more before displaying \"Pass\". Which flowchart symbol represents this condition?",
+      "options": [
+        "Parallelogram",
+        "Rectangle",
+        "Diamond",
+        "Oval"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f28e05aff76c",
+      "stem": "Which problem needs a \"Yes\" or \"No\" answer rather than locating or counting an item?",
+      "options": [
+        "Find a student's roll number",
+        "Count the absent students",
+        "Decide whether a student has paid the fee",
+        "Arrange students alphabetically"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "83602393c857",
+      "stem": "Which computational thinking skill is most directly responsible for spotting a solution that can be reused for similar problems?",
+      "options": [
+        "Algorithmic thinking",
+        "Pattern recognition",
+        "Abstraction",
+        "Decomposition"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "1c01a42918dc",
+      "stem": "In which situation is abstraction more appropriate than decomposition?",
+      "options": [
+        "Dividing a payroll system into modules",
+        "Ignoring students' favourite colours while designing a student database",
+        "Preparing steps to calculate percentages",
+        "Searching for a student's record"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e1e96c9ce063",
+      "stem": "Which representation focuses on the sequence of operations rather than the relationships among ideas?",
+      "options": [
+        "Concept map",
+        "Flowchart",
+        "Mind map",
+        "Table"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "6f604fb1b882",
+      "stem": "In which situation is logical thinking applied before algorithmic thinking?",
+      "options": [
+        "Deciding whether a voter is eligible based on age",
+        "Drawing flowchart symbols",
+        "Saving a program file",
+        "Installing software"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a4a407161a4c",
+      "stem": "Which computational thinking property reduces a problem's complexity without dividing it into smaller parts?",
+      "options": [
+        "Pattern recognition",
+        "Abstraction",
+        "Decomposition",
+        "Sequencing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e07c2d1c19e7",
+      "stem": "Which task is least likely to be classified as a search problem?",
+      "options": [
+        "Locating a student's admission record",
+        "Finding a word in a dictionary",
+        "Deciding whether a password is valid",
+        "Searching for a contact number"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "db48ee8fa99b",
+      "stem": "A programmer completes every processing step correctly but forgets to display the result. Which essential property of an algorithm is missing?",
+      "options": [
+        "Input",
+        "Output",
+        "Clarity",
+        "Finiteness"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5e4897bc0db7",
+      "stem": "To calculate a student's total marks you split the program into: input the marks, calculate the sum, display the result. This splitting is known as:",
+      "options": [
+        "Pattern recognition",
+        "Decomposition",
+        "Abstraction",
+        "Debugging"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "4a332ff26b22",
+      "stem": "Which problem is most likely to need decomposition before an effective solution can be developed?",
+      "options": [
+        "Adding two numbers",
+        "Finding today's date",
+        "Developing a school management system",
+        "Switching on a computer"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "de2e2cb1aed1",
+      "stem": "A student first studies a problem carefully before applying any solution. According to the LARP approach, this stage is:",
+      "options": [
+        "Learning",
+        "Applying",
+        "Reflecting",
+        "Practising"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c733c0d39d08",
+      "stem": "A school's fee system is split into fee collection, fee calculation and report generation. Which computational thinking skill is being used?",
+      "options": [
+        "Abstraction",
+        "Decomposition",
+        "Pattern recognition",
+        "Sequencing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3f431e27260e",
+      "stem": "Ali notices that every monthly electricity bill is calculated using the same formula. This observation demonstrates:",
+      "options": [
+        "Pattern recognition",
+        "Abstraction",
+        "Flowcharting",
+        "Sequencing"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "d1f6b56bedb9",
+      "stem": "While designing a student database, Sana ignores students' favourite colours because they are irrelevant. This is an example of:",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Sequencing",
+        "Testing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "25fd760869e3",
+      "stem": "What is the output of this algorithm? Start; X = 1; print X; X = X + 2; if X < 6 go back to \"print X\"; End.",
+      "options": [
+        "1, 2, 3, 4, 5",
+        "1, 3, 5",
+        "1, 3, 5, 7",
+        "2, 4, 6"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "36a66a7338a3",
+      "stem": "A bank ATM follows a fixed sequence of instructions whenever cash is withdrawn. This sequence is known as:",
+      "options": [
+        "Data storage",
+        "An algorithm",
+        "An input device",
+        "A database"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a49c81453356",
+      "stem": "A teacher asks students to identify common characteristics among birds, insects and mammals. Which computational thinking skill is being applied?",
+      "options": [
+        "Pattern recognition",
+        "Abstraction",
+        "Sequencing",
+        "Coding"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "96596ac63175",
+      "stem": "In a flowchart for total marks, a student uses a diamond to check whether marks are greater than 50. The diamond represents a:",
+      "options": [
+        "Start/End",
+        "Process",
+        "Input/Output",
+        "Decision"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "80889f6ad038",
+      "stem": "Students must show how \"Computer\", \"Hardware\", \"Software\" and \"Data\" are related, not the order of steps. Which tool should be used?",
+      "options": [
+        "Algorithm",
+        "Flowchart",
+        "Concept map",
+        "IPO chart"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a09b69c87418",
+      "stem": "A company's online exam system has registration, paper generation, attendance and result modules, so the team divides it into smaller tasks first. This is mainly because the project is a:",
+      "options": [
+        "Simple problem",
+        "Logical problem",
+        "Counting problem",
+        "Complex problem"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "db5f2b55b168",
+      "stem": "A weather department analyses millions of temperature readings every day to predict rainfall. Which type of problem is mainly being solved?",
+      "options": [
+        "Simple problem",
+        "Computational problem",
+        "Daily-life problem",
+        "Decision problem"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5084307f0048",
+      "stem": "A programmer ignores unnecessary design details while developing a library management system. Which computational thinking concept is applied?",
+      "options": [
+        "Pattern recognition",
+        "Sequencing",
+        "Abstraction",
+        "Debugging"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c99e2ca8ea01",
+      "stem": "Before coding, Ahmed draws a flowchart showing all the steps and decisions. The main purpose of the flowchart is to:",
+      "options": [
+        "Increase complexity",
+        "Graphically represent the algorithm",
+        "Store data permanently",
+        "Replace the program code"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    }
+  ]
+}

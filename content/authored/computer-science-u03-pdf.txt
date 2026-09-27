@@ -1,0 +1,36 @@
+# subject: Computer Science
+# chapter: 3
+# source: MCQs chapter # (1-7) final done new.pdf
+# answer_source: derived
+# difficulty: medium
+
+Which of these can be declared as a valid JavaScript variable name without a naming error? | 2myVariable | my-variable | my_variable | my variable | C
+The value of a variable can change while a program runs, whereas the value of a constant: | can only be changed by special functions | remains the same throughout the program | changes automatically with the data type | can be changed once per minute | B | e
+What is the output of document.write(15 % 4) in JavaScript? | 3.75 | 4 | 3 | 1 | C | h
+Giving a single name to a collection of related elements of the same data type is called: | An array | A function | A loop | A variable | A | e
+Which of these JavaScript operators is NOT a logical operator? | && | || | ! | + | D
+What happens when the condition of an if statement is valid but evaluates to false? | The program terminates immediately | Control passes to the statement right after the if block | The condition is evaluated forever | A syntax error stops the program | B | h
+A web developer wants a video to work in as many browsers as possible. Which video format should be preferred? | AVI | MOV | MP4 | WMV | C | s
+What is the purpose of the return statement inside a JavaScript function? | To stop the whole program | To print text on the screen | To send a value back to the caller | To declare a new variable | C
+A page contains <p id="intro">Hello</p>. Which JavaScript statement correctly reaches this paragraph through the DOM? | document.getElement("intro") | document.getElementById("intro") | document.id("intro") | document.findById("intro") | B | s
+In the HTML page <html><head><title>My Page</title></head><body><h1>Welcome</h1></body></html>, the parent of the <title> element in the DOM tree is: | <html> | <body> | <head> | <h1> | C | h
+Which software development activity focuses on locating and correcting errors after a program has been written? | Writing the code for the first time | Debugging | Designing the user interface | Translating the program into machine language | B | e
+A program runs without syntax errors but produces the wrong output. This is most likely a: | Compilation error | Logical error | Typing error | Installation error | B | s
+How many times does the loop for (let i = 0; i < 3; i++) run? | 0 | 2 | 3 | 4 | C | h
+A student writes two sentences on separate lines in the HTML body without any tag between them. How will the page most likely display them? | On separate lines | As a browser error | On the same line | With the second sentence hidden | C | s h
+Which JavaScript data type is designed to hold the result of a logical expression? | Integer | String | Float | Boolean | D | e
+Although HTML uses tags and elements, its main purpose is to: | Perform arithmetic calculations | Define the structure and content of web pages | Store records in a database | Run loops and conditions | B
+Which CSS property changes the background colour of an element? | color | bgcolor | background-color | text-color | C | e
+Which JavaScript method writes text directly into the HTML document? | console.log() | alert() | document.write() | prompt() | C | e
+A ticket counter charges 50 if the user's age is 60 or above, and 100 otherwise. Which programming structure suits this logic best? | A loop | An if-else decision | An array | A sequential structure | B | s
+A school admits children who are at least 4 years old using the code: var kid_age = 4; if (kid_age > 4) { document.write("Admission Granted"); }. What happens when kid_age is 4? | "Admission Granted" is printed | Nothing is printed | An error occurs because else is missing | "Admission Granted" is printed twice | B | s h
+A program prints "Excellent" if score > 80, else "Good" if score > 60. A student scores 75. What is printed? | Excellent | Good | Nothing | Error | B | s
+A shopping list is stored as cart = ['Book', 'Pen', 'Eraser']. How is the second item ("Pen") accessed? | cart[1] | cart[2] | cart("Pen") | cart[0] | A | s h
+A student wants to display the numbers 1 to 100 on the screen. Which statement is most efficient for this repetitive task? | if statement | do...while loop | for loop | switch statement | C | s
+In function add(a, b) { return a + b; }, what are a and b called? | Return values | Parameters | Arrays | Strings | B
+In <p> Hello World </p>, what is the role of p? | Attribute | Tag | Property | Variable | B | e
+To make all text inside <div id="main">Text</div> blue, which CSS selector targets this div? | .main | #main | div.main | *main | B | s
+A traffic-light program sets light = "Green" and then checks if (light == "Red") to print "Stop". What happens? | It prints "Go" | It prints "Stop" | It prints "Wait" | It does nothing | D | s
+A program writes average = sum / totalNumbers to find the average of three numbers. This line represents which programming concept? | Input | Output | Processing | Conditional | C | s
+Your JavaScript runs without any error message but gives a wrong calculation result. What type of error is this? | Syntax error | Logical error | Reference error | Compilation error | B | s
+A page uses <video width="500px" height="500px"><source src="video.mp4" type="video/mp4"></video>. The video shows, but the user cannot pause it or change the volume. What is the most likely reason? | The width and height are too large | The controls attribute is missing from the <video> tag | The source tag should be outside the <video> tag | The file should be .avi | B | s h

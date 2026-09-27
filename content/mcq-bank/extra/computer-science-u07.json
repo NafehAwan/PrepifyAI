@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "5b68a03416a0",
+      "stem": "Which characteristic of an entrepreneur is the ability to keep going through failures and setbacks while staying focused on long-term goals?",
+      "options": [
+        "Desire for immediate feedback",
+        "Self-reliance",
+        "Determination (grit)",
+        "Future orientation"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "874664e6d2de",
+      "stem": "An entrepreneur shifts economic resources from an area of scarcity to one of higher productivity and greater yield. This mainly shows:",
+      "options": [
+        "Risk-taking ability",
+        "Innovative thinking",
+        "Resource allocation skills",
+        "Organizing capability"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "2271c6eaf771",
+      "stem": "What distinguishes entrepreneurs from ordinary business owners in how they treat risk?",
+      "options": [
+        "They avoid all risk",
+        "They take moderate, calculated risks rather than wild gambles",
+        "They rely completely on others to decide",
+        "They focus only on short-term profit"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "4068565ad4e5",
+      "stem": "Many successful entrepreneurs failed several times before succeeding. Which trait explains why they kept trying?",
+      "options": [
+        "High level of energy",
+        "Confidence in their ability to succeed",
+        "Skill at organizing",
+        "Valuing achievement over money"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a557e5d35846",
+      "stem": "In Design Thinking, the phase where entrepreneurs build a sample model to test their ideas is:",
+      "options": [
+        "Empathize",
+        "Define",
+        "Ideate",
+        "Prototype"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "6671fecfa0cb",
+      "stem": "Design Thinking is \"iterative and non-linear\". This means:",
+      "options": [
+        "The steps must be followed strictly in order",
+        "Teams keep reviewing and improving their ideas based on results",
+        "Only one solution is developed at a time",
+        "The process ends after testing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5b0196d9bf3d",
+      "stem": "Which Design Thinking phase involves coming up with as many ideas as possible to solve the problem statement?",
+      "options": [
+        "Empathize",
+        "Define",
+        "Ideate",
+        "Test"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3a452a946404",
+      "stem": "A business plan acts as a \"game plan\" for running the business successfully during start-up. Which goal of a business plan is this?",
+      "options": [
+        "Attracting capital",
+        "Guiding the entrepreneur during launch",
+        "Comparing results against targets",
+        "Finding the main risks"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3ce2e381289c",
+      "stem": "In the SMART framework, a \"time-bound\" goal means:",
+      "options": [
+        "The goal is about time management",
+        "A specific timeframe is set for achieving the result",
+        "The goal is measured in hours",
+        "Time is the only consideration"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "6fa21446ad04",
+      "stem": "LivePlan, PlanMaker and Canva are examples of:",
+      "options": [
+        "Business financing options",
+        "Business planning software and tools",
+        "Government business licences",
+        "Marketing strategies"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "162b60c1d9e0",
+      "stem": "When demand for a product is high and supply is limited, an entrepreneur can:",
+      "options": [
+        "Decrease the price to attract customers",
+        "Increase the price and so the profit margin",
+        "Keep the same price regardless",
+        "Stop production to increase scarcity"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "18f18c3e42bd",
+      "stem": "Which is the formula for the selling price?",
+      "options": [
+        "Cost of production × overheads",
+        "Cost of production + overheads + profit",
+        "Cost of production − overheads + profit",
+        "Cost of production + overheads − profit"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bd05edd61a4f",
+      "stem": "The people who need a product or service and are willing to pay for it are called:",
+      "options": [
+        "Competitors",
+        "Suppliers",
+        "Customers",
+        "Distributors"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "2e649a6b24ec",
+      "stem": "Businesses that provide similar products or services are called:",
+      "options": [
+        "Partners",
+        "Competitors",
+        "Customers",
+        "Investors"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3b2c27ab4afd",
+      "stem": "Which Sustainable Development Goal is about ensuring healthy lives and well-being for all at all ages?",
+      "options": [
+        "Goal 1: No Poverty",
+        "Goal 2: Zero Hunger",
+        "Goal 3: Good Health and Well-being",
+        "Goal 4: Quality Education"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "9b9636c6d015",
+      "stem": "\"Decent Work and Economic Growth\" is which Sustainable Development Goal?",
+      "options": [
+        "Goal 6",
+        "Goal 7",
+        "Goal 8",
+        "Goal 9"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "7d897fffe958",
+      "stem": "The skill group that includes creativity, problem-solving and decision-making is:",
+      "options": [
+        "Conducting oneself",
+        "Thinking skills",
+        "Interacting with people",
+        "Safety and survival skills"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bc06b05dd437",
+      "stem": "An entrepreneur studies a community's needs and identifies products or services to solve its difficulties. This demonstrates:",
+      "options": [
+        "Self-reliance",
+        "Risk-taking",
+        "Opportunity recognition",
+        "Financial management"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "807630583038",
+      "stem": "Mr. Sharma runs a bakery with 10 employees. Mrs. Verma bakes cakes at home and sells them online by herself. Which statement is true?",
+      "options": [
+        "Only Mr. Sharma is an entrepreneur because he hires people",
+        "Only Mrs. Verma is an entrepreneur because she works alone",
+        "Both are entrepreneurs because they organize resources and bear risk to make a profit",
+        "Neither is, because baking is a traditional job"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5d4f48c6ce3a",
+      "stem": "\"Innovation\" in entrepreneurship means:",
+      "options": [
+        "Copying a foreign product exactly",
+        "Doing what everyone else does, but cheaper",
+        "Introducing a new method, product or idea that creates value",
+        "Focusing only on money"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f8f7476e0f9f",
+      "stem": "Which scenario carries the HIGHEST level of risk?",
+      "options": [
+        "Working as a cashier in a grocery store",
+        "Investing one's life savings in a new restaurant in an untested location",
+        "Buying government bonds",
+        "Freelancing for established clients"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "74b5f96b758c",
+      "stem": "An entrepreneur who lacks financial literacy is most likely to fail because of:",
+      "options": [
+        "Poor product design",
+        "Mismanaging cash flow and being unable to budget costs",
+        "Excellent customer service",
+        "Too many employees"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5d3ea7f70691",
+      "stem": "Ahmed, 22, has designed logos for friends for three years, notices that local small businesses use outdated logos, and starts his own design business with savings of PKR 50,000. Which trait is he mainly showing by starting his own business?",
+      "options": [
+        "Preference for moderate risk",
+        "Desire for responsibility",
+        "Skill at organizing",
+        "High level of energy"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "4c28abcc3362",
+      "stem": "Ahmed starts a graphic design business because he noticed that small businesses in his community lack professional logos. Which step in developing a business idea does this relate to?",
+      "options": [
+        "Identifying a need in the community",
+        "Calculating production costs",
+        "Analyzing competitors",
+        "Setting profit margins"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "269135dff0b0",
+      "stem": "Ahmed wants to use Design Thinking to develop his new graphic design service. Which phase should he begin with?",
+      "options": [
+        "Prototype",
+        "Test",
+        "Empathize",
+        "Ideate"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "03f12a46d43d",
+      "stem": "Improving entrepreneurial skills and knowledge through training and structured programmes is called:",
+      "options": [
+        "Human resource management",
+        "Entrepreneurship development",
+        "Financial auditing",
+        "Market saturation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "715be5fdfa50",
+      "stem": "A business that sells tangible goods such as paints or cars is mainly a:",
+      "options": [
+        "Service business",
+        "Product business (manufacturing or trading)",
+        "Hybrid business",
+        "Non-governmental organization"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3603f86f8df6",
+      "stem": "Four friends start a food delivery service: one cooks, one markets, one handles logistics and one manages money. Dividing the work by each person's skill shows which characteristic?",
+      "options": [
+        "Desire for immediate feedback",
+        "Self-reliance",
+        "Skill at organizing",
+        "Future orientation"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "13ee82a153e3",
+      "stem": "Four friends starting a food delivery service use Canva for their menu, WordPress for their website and LivePlan for their business proposal. They are using:",
+      "options": [
+        "Government support programmes",
+        "Business planning software and tools",
+        "Financial institutions",
+        "Marketing agencies"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "03e20d5da9a6",
+      "stem": "Friends planning a food delivery service survey how many people in their city would use it. They are trying to estimate their:",
+      "options": [
+        "Profit margin",
+        "Market size",
+        "Production costs",
+        "Competitors' prices"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    }
+  ]
+}
