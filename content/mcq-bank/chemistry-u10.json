@@ -1,0 +1,1281 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "stem": "According to Arrhenius theory, an acid produces which ion in water?",
+      "options": [
+        "OH⁻",
+        "H⁺",
+        "Na⁺",
+        "Cl⁻"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "According to Arrhenius theory, a base produces which ion in water?",
+      "options": [
+        "H⁺",
+        "Cl⁻",
+        "OH⁻",
+        "Na⁺"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which scientist proposed the Arrhenius theory of acids and bases?",
+      "options": [
+        "Dalton",
+        "Rutherford",
+        "Arrhenius",
+        "Bohr"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Acids generally have a ______ taste.",
+      "options": [
+        "Bitter",
+        "Sweet",
+        "Sour",
+        "Salty"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Bases generally have a ______ taste.",
+      "options": [
+        "Sour",
+        "Bitter",
+        "Sweet",
+        "Salty"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "An acid turns blue litmus paper:",
+      "options": [
+        "Green",
+        "Yellow",
+        "Red",
+        "Black"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "A base turns red litmus paper:",
+      "options": [
+        "Blue",
+        "Green",
+        "Yellow",
+        "Red"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is a common acid?",
+      "options": [
+        "NaOH",
+        "KOH",
+        "HCl",
+        "Ca(OH)₂"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is a common base?",
+      "options": [
+        "HNO₃",
+        "H₂SO₄",
+        "H₃PO₄",
+        "NaOH"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Sodium hydroxide is commonly used in:",
+      "options": [
+        "Soap making",
+        "Photography",
+        "Food preservation",
+        "Medicine"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Potassium hydroxide is used in making:",
+      "options": [
+        "Cement",
+        "Liquid soap",
+        "Fertilizers",
+        "Paints"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Calcium hydroxide is used in making:",
+      "options": [
+        "Mortar and cement",
+        "Explosives",
+        "Soft drinks",
+        "Perfumes"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Magnesium hydroxide is commonly used as:",
+      "options": [
+        "Fuel",
+        "Fertilizer",
+        "Antacid",
+        "Dye"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "A Bronsted-Lowry acid is a:",
+      "options": [
+        "Proton acceptor",
+        "Electron donor",
+        "Proton donor",
+        "Salt former"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "A Bronsted-Lowry base is a:",
+      "options": [
+        "Proton acceptor",
+        "Proton donor",
+        "Metal oxide",
+        "Salt"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "In the reaction HCl + H₂O → H₃O⁺ + Cl⁻, HCl acts as:",
+      "options": [
+        "Base",
+        "Acid",
+        "Salt",
+        "Catalyst"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "In the reaction HCl + H₂O → H₃O⁺ + Cl⁻, water acts as:",
+      "options": [
+        "Acid",
+        "Salt",
+        "Base",
+        "Metal"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "In the reaction H₂O + NH₃ → NH₄⁺ + OH⁻, NH₃ acts as:",
+      "options": [
+        "Acid",
+        "Base",
+        "Salt",
+        "Indicator"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "In the reaction H₂O + NH₃ → NH₄⁺ + OH⁻, water acts as:",
+      "options": [
+        "Acid",
+        "Base",
+        "Salt",
+        "Alkali"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Water can behave as both an acid and a base. Such substances are called:",
+      "options": [
+        "Neutral",
+        "Amphoteric",
+        "Basic",
+        "Acidic"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is an amphoteric substance?",
+      "options": [
+        "HCl",
+        "NaOH",
+        "H₂O",
+        "HNO₃"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which acid is used in the manufacture of fertilizers and explosives?",
+      "options": [
+        "HCl",
+        "H₃PO₄",
+        "HNO₃",
+        "CH₃COOH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Hydrochloric acid is commonly used for:",
+      "options": [
+        "Cleaning metals",
+        "Making cement",
+        "Food preservation",
+        "Photography"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Acids and bases in aqueous solutions can:",
+      "options": [
+        "Conduct electricity",
+        "Produce light",
+        "Float on water",
+        "Become gases"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which ion is responsible for acidic properties?",
+      "options": [
+        "Na⁺",
+        "OH⁻",
+        "H⁺",
+        "Cl⁻"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which ion is responsible for basic properties?",
+      "options": [
+        "H⁺",
+        "OH⁻",
+        "NO₃⁻",
+        "SO₄²⁻"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "NaOH dissociates in water to form:",
+      "options": [
+        "H⁺ and OH⁻",
+        "Na⁺ and OH⁻",
+        "Na⁺ and Cl⁻",
+        "H⁺ and Cl⁻"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "HCl dissociates in water to form:",
+      "options": [
+        "H⁺ and Cl⁻",
+        "H⁺ and OH⁻",
+        "Na⁺ and Cl⁻",
+        "K⁺ and OH⁻"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is a base?",
+      "options": [
+        "H₂SO₄",
+        "HNO₃",
+        "NH₄OH",
+        "HCl"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is an acid?",
+      "options": [
+        "KOH",
+        "NaOH",
+        "Ca(OH)₂",
+        "H₃PO₄"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which acid is used as an acidulant in food?",
+      "options": [
+        "HCl",
+        "HNO₃",
+        "H₂SO₄",
+        "H₃PO₄"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Bases that are soluble in water are called:",
+      "options": [
+        "Acids",
+        "Alkalis",
+        "Salts",
+        "Oxides"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is an alkali?",
+      "options": [
+        "NaOH",
+        "CuO",
+        "CO₂",
+        "SO₂"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "A substance that accepts a proton forms a:",
+      "options": [
+        "Negative ion",
+        "Positive ion",
+        "Neutral atom",
+        "Molecule only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "After donating a proton, an acid usually forms a:",
+      "options": [
+        "Positive ion",
+        "Neutral atom",
+        "Negative ion",
+        "Molecule"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is NOT a property of acids?",
+      "options": [
+        "Sour taste",
+        "Turn blue litmus red",
+        "Produce H⁺ ions in water",
+        "Turn red litmus blue"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is NOT a property of bases?",
+      "options": [
+        "Bitter taste",
+        "Produce OH⁻ ions in water",
+        "Turn red litmus blue",
+        "Turn blue litmus red"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "NH₃ behaves as a base because it:",
+      "options": [
+        "Donates electrons",
+        "Accepts a proton",
+        "Produces Cl⁻ ions",
+        "Produces H⁺ ions directly"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which acid is commonly present in laboratory cleaning solutions?",
+      "options": [
+        "Hydrochloric acid",
+        "Sodium hydroxide",
+        "Potassium hydroxide",
+        "Calcium hydroxide"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "The Bronsted-Lowry theory defines acids and bases in terms of:",
+      "options": [
+        "Electrons",
+        "Neutrons",
+        "Protons",
+        "Atoms"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which pair correctly represents an acid and a base respectively?",
+      "options": [
+        "HCl and NaOH",
+        "NaOH and HNO₃",
+        "KOH and H₂SO₄",
+        "NH₄OH and HCl"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following acids is used in the manufacture of many chemicals, dyes, and paints?",
+      "options": [
+        "HCl",
+        "H₂SO₄",
+        "HNO₃",
+        "H₃PO₄"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "The study of acids, bases, and their reactions helps explain:",
+      "options": [
+        "Only physical changes",
+        "Only nuclear reactions",
+        "Many everyday chemical processes",
+        "Only biological reactions"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(A).docx"
+    },
+    {
+      "stem": "A student places blue litmus paper into an unknown solution. The paper immediately turns red. The solution most likely contains:",
+      "options": [
+        "OH⁻ ions",
+        "H⁺ ions",
+        "Na⁺ ions",
+        "Cl⁻ ions"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "During an experiment, a solution changes red litmus paper to blue. According to Arrhenius theory, the solution contains a high concentration of:",
+      "options": [
+        "H⁺ ions",
+        "H₃O⁺ ions",
+        "OH⁻ ions",
+        "Cl⁻ ions"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A factory uses a chemical to remove rust from iron surfaces. Which acid is most likely being used?",
+      "options": [
+        "H₃PO₄",
+        "HCl",
+        "NH₄OH",
+        "Mg(OH)₂"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A patient complains of stomach acidity. The doctor recommends milk of magnesia. This substance works because it is a:",
+      "options": [
+        "Strong acid",
+        "Salt",
+        "Base",
+        "Metal oxide"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemist adds ammonia to water. The ammonia molecule accepts a proton from water. According to Bronsted-Lowry theory, ammonia behaves as a:",
+      "options": [
+        "Salt",
+        "Acid",
+        "Base",
+        "Catalyst"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student accidentally spills a solution on red litmus paper, but no color change occurs. Which statement is most likely correct?",
+      "options": [
+        "The solution is acidic",
+        "The solution is basic",
+        "The solution may be neutral",
+        "The solution contains only H⁺ ions"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A farmer applies a chemical containing phosphoric acid to improve crop growth. The acid is mainly used in the manufacture of:",
+      "options": [
+        "Detergents",
+        "Fertilizers",
+        "Plastics",
+        "Dyes"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "In the reaction HCl + H₂O → H₃O⁺ + Cl⁻, the water molecule acts as a proton:",
+      "options": [
+        "Donor",
+        "Acceptor",
+        "Producer",
+        "Neutralizer"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student observes that a substance has a bitter taste and turns red litmus blue. The substance is most likely:",
+      "options": [
+        "An acid",
+        "A salt",
+        "A base",
+        "A metal"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "During an industrial process, nitric acid is selected because of its role in producing fertilizers and explosives. Its chemical formula is:",
+      "options": [
+        "H₂SO₄",
+        "HCl",
+        "HNO₃",
+        "H₃PO₄"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A solution contains a large number of OH⁻ ions. Which observation would be expected?",
+      "options": [
+        "Blue litmus turns red",
+        "Red litmus turns blue",
+        "Sour taste",
+        "Release of H⁺ ions"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemist identifies a substance as amphoteric. Which behavior confirms this property?",
+      "options": [
+        "It reacts only as an acid",
+        "It reacts only as a base",
+        "It can act as both an acid and a base",
+        "It does not react at all"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A laboratory technician is preparing liquid soap. Which base would be most suitable?",
+      "options": [
+        "Ca(OH)₂",
+        "Mg(OH)₂",
+        "KOH",
+        "HCl"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student is given four unlabeled bottles containing HCl, HNO₃, NaOH, and KOH. Which two substances will turn red litmus paper blue?",
+      "options": [
+        "HCl and HNO₃",
+        "HCl and KOH",
+        "NaOH and KOH",
+        "HNO₃ and NaOH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemical engineer needs a compound for making mortar. Which substance should be selected?",
+      "options": [
+        "HNO₃",
+        "HCl",
+        "Ca(OH)₂",
+        "NH₄OH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student claims that all proton donors are bases. Which observation disproves the claim?",
+      "options": [
+        "HCl donates a proton and acts as an acid",
+        "NH₃ accepts a proton",
+        "NaOH releases OH⁻ ions",
+        "Water is neutral"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A sample solution conducts electricity and turns blue litmus red. The solution most likely contains:",
+      "options": [
+        "H⁺ ions",
+        "OH⁻ ions",
+        "Na⁺ ions only",
+        "Neutral molecules only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "During a reaction, a molecule gains a proton. According to Bronsted-Lowry theory, that molecule is acting as a:",
+      "options": [
+        "Acid",
+        "Salt",
+        "Base",
+        "Metal"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A scientist is studying substances that release H⁺ ions in water. Which theory is being applied?",
+      "options": [
+        "Atomic theory",
+        "Arrhenius theory",
+        "Kinetic theory",
+        "Molecular theory"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A bottle is labeled \"alkali.\" Which property must the substance possess?",
+      "options": [
+        "Soluble base",
+        "Insoluble base",
+        "Strong acid",
+        "Neutral salt"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "While studying acids, a student finds a substance used in food and soft drinks. The substance is most likely:",
+      "options": [
+        "HCl",
+        "H₂SO₄",
+        "H₃PO₄",
+        "NaOH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A solution causes skin irritation and has a sour taste. Which group does it belong to?",
+      "options": [
+        "Bases",
+        "Acids",
+        "Salts",
+        "Metals"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student wants to verify whether a solution is basic. Which indicator result would confirm this?",
+      "options": [
+        "Blue litmus becomes red",
+        "Red litmus becomes blue",
+        "Red litmus remains red in all cases",
+        "Blue litmus becomes colorless"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "In a reaction, NH₃ becomes NH₄⁺. This indicates that NH₃ has:",
+      "options": [
+        "Lost a proton",
+        "Gained a proton",
+        "Lost an electron only",
+        "Gained a neutron"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A technician handling laboratory chemicals notices that a solution contains H⁺ ions but no OH⁻ ions. The solution is most likely:",
+      "options": [
+        "Acidic",
+        "Basic",
+        "Neutral",
+        "Amphoteric"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "Which substance can behave as both proton donor and proton acceptor depending on conditions?",
+      "options": [
+        "HCl",
+        "NaOH",
+        "H₂O",
+        "HNO₃"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "Which pair consists entirely of bases?",
+      "options": [
+        "HCl and HNO₃",
+        "H₂SO₄ and H₃PO₄",
+        "NaOH and KOH",
+        "HCl and NaOH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A substance accepts H⁺ from another substance and forms a positive ion. It is acting as a:",
+      "options": [
+        "Salt",
+        "Acid",
+        "Base",
+        "Catalyst"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "Which observation indicates the presence of an alkali rather than merely a base?",
+      "options": [
+        "It reacts with acids",
+        "It contains OH⁻ ions",
+        "It is soluble in water",
+        "It turns red litmus blue"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemical sample acts as an acid in one reaction and as a base in another. The sample is:",
+      "options": [
+        "Neutral",
+        "Amphoteric",
+        "Metallic",
+        "Inert"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemistry student concludes that a solution is basic because it contains excess OH⁻ ions and changes indicator color accordingly. Which indicator observation supports this conclusion?",
+      "options": [
+        "Blue litmus → Red",
+        "Red litmus → Blue",
+        "Blue litmus → White",
+        "Red litmus → Yellow"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "An unknown oxide reacts with water to produce a solution that turns red litmus blue. The oxide is most likely:",
+      "options": [
+        "Acidic oxide",
+        "Neutral oxide",
+        "Basic oxide",
+        "Amphoteric oxide"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "Magnesium oxide is added to water. The resulting solution becomes slightly basic. This occurs because magnesium oxide is a:",
+      "options": [
+        "Non-metal oxide",
+        "Acidic oxide",
+        "Basic oxide",
+        "Neutral oxide"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "When calcium oxide is mixed with water, the resulting solution turns red litmus blue. Which ion is mainly responsible for this behavior?",
+      "options": [
+        "H⁺",
+        "Cl⁻",
+        "OH⁻",
+        "Ca²⁺"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student adds dilute HCl to magnesium ribbon. Gas bubbles are produced. The gas evolved is:",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Chlorine"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student adds dilute HCl to marble chips (CaCO₃). Which set of products is formed?",
+      "options": [
+        "Salt + Water",
+        "Salt + Hydrogen",
+        "Salt + Water + Carbon dioxide",
+        "Salt + Oxygen + Water"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A teacher asks why carbon dioxide is produced when acids react with carbonates but not when acids react with metals. The best explanation is:",
+      "options": [
+        "Metals contain no carbon atoms",
+        "Metals are insoluble",
+        "Carbonates contain CO₃²⁻ ions",
+        "Acids cannot react with metals"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student mixes HCl and NaOH solutions. No gas is evolved, but the solution becomes warm. This indicates:",
+      "options": [
+        "Neutralization reaction occurred",
+        "Decomposition reaction occurred",
+        "Oxidation occurred",
+        "Carbonation occurred"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student accidentally spills NaOH solution on a surface contaminated with dilute HCl. The resulting reaction mainly produces:",
+      "options": [
+        "Salt and water",
+        "Hydrogen gas",
+        "Carbon dioxide",
+        "Oxygen gas"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A student heats a mixture of ammonium chloride and sodium hydroxide. A pungent gas is evolved. The gas is:",
+      "options": [
+        "Hydrogen",
+        "Carbon dioxide",
+        "Ammonia",
+        "Oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "A gas produced from heating NH₄Cl and NaOH turns moist red litmus paper blue. The gas is:",
+      "options": [
+        "CO₂",
+        "NH₃",
+        "H₂",
+        "O₂"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    },
+    {
+      "stem": "Which reaction would definitely produce ammonia gas?",
+      "options": [
+        "HCl + Mg",
+        "HCl + Na₂CO₃",
+        "NaOH + NH₄Cl",
+        "HCl + NaOH"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "chem unit#10 MCQs(D).docx"
+    }
+  ]
+}

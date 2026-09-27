@@ -1,0 +1,741 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "stem": "What is the angle between force and displacement for maximum work done",
+      "options": [
+        "What is the angle between force and displacement for maximum work done",
+        "A football is kicked by a boy which type of energy explain this",
+        "Solar",
+        "Kinetic"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Potential",
+      "options": [
+        "Chemical",
+        "The shock absorber of motor bike help to absorb energy. Which type of energy is absorbed",
+        "Kinetic",
+        "Potential"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Physical",
+      "options": [
+        "Chemical",
+        "In the process of conversion it is not possible to convert all the energy into useful form due to",
+        "Energy",
+        "Work"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Displacement",
+      "options": [
+        "Friction",
+        "If one form of energy is completely converted to other form of energy this is known as",
+        "Conservation",
+        "Conversion"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Remain same",
+      "options": [
+        "All of these",
+        "If there is a lot of friction is present between the parts of machine kinetic energy is converted into",
+        "Light",
+        "Electrical"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Point range",
+      "options": [
+        "Perpetual",
+        "The ideal machine in which there is no friction present in their part is known as",
+        "Hypothetical machine",
+        "Hyper machine"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Hypothesis machine",
+      "options": [
+        "Hygiene machine",
+        "Which is the most abundant for sale fuel globally",
+        "Coal",
+        "Oil"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Natural gas",
+      "options": [
+        "All of them",
+        "The estimated reserve of coal present on Earth is",
+        "One million ton",
+        "Three million ton"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Five million ton",
+      "options": [
+        "Seven million ton",
+        "Which material undergoes refining and yield gasoline",
+        "Coal tar",
+        "Natural gas"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Crud oil",
+      "options": [
+        "All of them",
+        "I and natural gas is often extracted from reservoirs by the process of",
+        "Mining",
+        "Drilling"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Uranium -239",
+      "options": [
+        "All of them",
+        "The most basic way to harness the biomass fuel is through",
+        "Taking",
+        "Harvesting"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Extraction",
+      "options": [
+        "Consumption",
+        "What is the primary component of natural gas",
+        "Carbon dioxide",
+        "Methane"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Percentage",
+      "options": [
+        "Kilo joules",
+        "The efficiency of an electric generator is equal in percentage",
+        "If there is an ideal system and the efficiency is 100% so very present it as a",
+        "Depover rating of an electric devices is considered as"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "stem": "Work and Energy Multiple Choice Questions (MCQs) 1. A student pushes a wall with a force of 200 N for 2 minutes, but the wall does not move. The work done on the wall is:",
+      "options": [
+        "400 J",
+        "200 J",
+        "0 J",
+        "Cannot be determined"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A car and a motorcycle move at the same speed. Which has greater kinetic energy?",
+      "options": [
+        "Motorcycle",
+        "Car",
+        "Same",
+        "Cannot tell"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "If speed doubles, kinetic energy becomes:",
+      "options": [
+        "Double",
+        "Triple",
+        "Four times",
+        "Eight times"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A 2 kg object moves at 4 m/s. Its kinetic energy is:",
+      "options": [
+        "8 J",
+        "16 J",
+        "24 J",
+        "32 J"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A ball is thrown vertically upward. At the highest point:",
+      "options": [
+        "KE maximum",
+        "PE zero",
+        "KE zero and PE maximum",
+        "Both KE and PE zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which is a renewable energy source?",
+      "options": [
+        "Coal",
+        "Natural gas",
+        "Solar energy",
+        "Petroleum"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which energy is stored in food?",
+      "options": [
+        "Sonic",
+        "Electrical",
+        "Chemical",
+        "Nuclear"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Two balls are dropped from the same height. One is twice as massive. Just before hitting the ground:",
+      "options": [
+        "Heavier ball has more KE",
+        "Same KE",
+        "Lighter ball has more KE",
+        "Both have zero KE"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A lamp converts electrical energy mostly into:",
+      "options": [
+        "Light and heat",
+        "Sound only",
+        "Chemical energy",
+        "Nuclear energy"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Potential energy depends on:",
+      "options": [
+        "Height",
+        "Mass",
+        "Gravity",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which statement is TRUE?",
+      "options": [
+        "Work can be done without force",
+        "Work can be done without displacement",
+        "Work requires force and displacement",
+        "Work depends only on time"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A hydroelectric plant mainly converts:",
+      "options": [
+        "Chemical → Electrical",
+        "Nuclear → Electrical",
+        "Gravitational PE → Electrical",
+        "Heat → Sound"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A machine uses 500 J and delivers 400 J. Efficiency?",
+      "options": [
+        "20%",
+        "40%",
+        "80%",
+        "125%"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A 60 W bulb uses 120 J energy in:",
+      "options": [
+        "1 s",
+        "2 s",
+        "3 s",
+        "4 s"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A moving object must possess:",
+      "options": [
+        "Potential energy only",
+        "Kinetic energy",
+        "Nuclear energy",
+        "Chemical energy"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Why are renewable sources preferred?",
+      "options": [
+        "Unlimited and environmentally friendly",
+        "More expensive only",
+        "Produce no energy",
+        "Need no technology"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A student lifts a bag slowly and then quickly to the same height. Which is true?",
+      "options": [
+        "More work when lifted quickly",
+        "Less work when lifted quickly",
+        "Same work done",
+        "No work done"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "A 500 N piano is lifted from 2 m to 8 m. Increase in PE:",
+      "options": [
+        "3000 J",
+        "4000 J",
+        "5000 J",
+        "6000 J"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "If momentum of an object becomes 3 times while mass remains constant, kinetic energy becomes:",
+      "options": [
+        "3 times",
+        "6 times",
+        "9 times",
+        "12 times"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Two objects have equal momentum. Which one has greater kinetic energy?",
+      "options": [
+        "More massive object",
+        "Less massive object",
+        "Same KE",
+        "Cannot determine"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which unit is equivalent to a joule?",
+      "options": [
+        "N/m",
+        "N·m",
+        "kg/m²",
+        "N²"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which quantity has the same SI unit as work?",
+      "options": [
+        "Force",
+        "Momentum",
+        "Energy",
+        "Power"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "The major component of biogas is:",
+      "options": [
+        "Carbon dioxide",
+        "Methane",
+        "Oxygen",
+        "Nitrogen"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Biogas is commonly produced from:",
+      "options": [
+        "Animal dung",
+        "Agricultural waste",
+        "Organic matter",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which quantity has unit kg m²/s²?",
+      "options": [
+        "Power",
+        "Force",
+        "Work",
+        "Momentum"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "1-Watt equals:",
+      "options": [
+        "1 J × s",
+        "1 J/s",
+        "1 N/s",
+        "1 kg/s"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which of the following is NOT a fossil fuel?",
+      "options": [
+        "Coal",
+        "Petroleum",
+        "Natural Gas",
+        "Uranium"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which gas released during fossil fuel combustion contributes most to global warming?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Helium"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which environmental issue is directly linked to excessive fossil fuel use?",
+      "options": [
+        "Deforestation only",
+        "Global warming",
+        "Earthquakes",
+        "Volcanoes"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Which of the following is a commonly used nuclear fuel?",
+      "options": [
+        "Coal",
+        "Uranium-235",
+        "Petroleum",
+        "Natural gas"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Biogas is produced in the absence of:",
+      "options": [
+        "Water",
+        "Oxygen",
+        "Carbon dioxide",
+        "Sunlight"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "The process used in most nuclear power plants is:",
+      "options": [
+        "Fusion",
+        "Fission",
+        "Distillation",
+        "Combustion"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "In nuclear fission, a heavy nucleus:",
+      "options": [
+        "Combines with another nucleus",
+        "Splits into smaller nuclei",
+        "Burns completely",
+        "Loses all electrons"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "Biogas production helps reduce:",
+      "options": [
+        "Organic waste accumulation",
+        "Environmental pollution",
+        "Dependence on fossil fuels",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "In a nuclear power plant, heat produced by fission is used to:",
+      "options": [
+        "Melt uranium",
+        "Produce steam",
+        "Freeze water",
+        "Burn coal"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    },
+    {
+      "stem": "The leftover material after biogas production is useful as:",
+      "options": [
+        "Cement",
+        "Fertilizer",
+        "Coal",
+        "Fuel oil"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Phy-Unit 6 MCQS.docx"
+    }
+  ]
+}

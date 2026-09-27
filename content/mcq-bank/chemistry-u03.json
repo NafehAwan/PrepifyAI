@@ -1,0 +1,906 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "stem": "When an electron moves from a lower energy shell to a higher energy shell, what is the underlying physical requirement?",
+      "options": [
+        "The electron must emit a photon.",
+        "The electron must absorb a specific amount of energy.",
+        "The nucleus must decrease its proton count.",
+        "The atom must become an ion."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which observation from Rutherford's experiment suggested that most of the atom is empty space?",
+      "options": [
+        "Most alpha particles passed straight through the foil.",
+        "Most alpha particles were deflected.",
+        "Gold foil melted during the experiment.",
+        "Electrons were emitted from the foil."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "An atom contains 17 protons and 17 electrons. Its net charge is:",
+      "options": [
+        "+17",
+        "+34",
+        "-17",
+        "0"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which particle contributes the least to the mass of an atom?",
+      "options": [
+        "Proton",
+        "Neutron",
+        "Electron",
+        "Nucleus"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Why is it impossible to map the exact trajectory of an electron around the nucleus?",
+      "options": [
+        "Electrons move too slowly to be tracked.",
+        "Electrons behave as quantum particles with probabilistic paths rather than fixed orbits.",
+        "The nucleus is too small to serve as a reference point.",
+        "Electrons have no mass."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which force is primarily responsible for keeping protons and neutrons bound together within the nucleus?",
+      "options": [
+        "Gravitational force",
+        "Electromagnetic force",
+        "Strong nuclear force",
+        "Centripetal force"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which statement best supports the existence of a dense nucleus?",
+      "options": [
+        "Alpha particles were strongly deflected.",
+        "Electrons have negative charge.",
+        "Atoms combine to form compounds.",
+        "Neutrons are neutral."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which scientist discovered the electron?",
+      "options": [
+        "Rutherford",
+        "Chadwick",
+        "Bohr",
+        "Thomson"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If an atom undergoes a radioactive change that alters its proton number, what is the direct consequence?",
+      "options": [
+        "The atom's identity changes to a different element.",
+        "The atom becomes a molecule.",
+        "The number of electrons remains unchanged.",
+        "The mass of the atom remains identical."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How does the energy level of an electron shell correlate with its distance from the nucleus?",
+      "options": [
+        "Larger distance implies lower energy.",
+        "Distance has no relationship with energy.",
+        "Larger distance implies higher energy.",
+        "Distance is inversely proportional to the square of the energy."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "The atomic model is best described as:",
+      "options": [
+        "A perfect replica of the atom.",
+        "A tool to aid our understanding of complex subatomic structure.",
+        "A set of unchangeable laws.",
+        "A physical scale model that shows the actual size of protons."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If a nucleus loses a neutron but the number of protons remains the same, the atom becomes:",
+      "options": [
+        "A different element.",
+        "A negatively charged ion.",
+        "A positively charged ion.",
+        "An isotope of the same element."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "An atom's identity is based on 8 protons. If you add 2 neutrons, it is still oxygen. Why?",
+      "options": [
+        "Neutrons do not determine the element's identity.",
+        "Protons determine the identity, and that number stayed 8.",
+        "The nucleus is too large to change.",
+        "The mass number is irrelevant."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "The second shell can accommodate a maximum of:",
+      "options": [
+        "2 electrons",
+        "4 electrons",
+        "8 electrons",
+        "18 electrons"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which atomic model first introduced the concept of quantized energy levels?",
+      "options": [
+        "Dalton's model",
+        "Thomson's model",
+        "Rutherford's model",
+        "Bohr's model"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which experiment led to the rejection of Thomson's plum pudding model?",
+      "options": [
+        "Gold foil experiment",
+        "Cathode ray experiment",
+        "Oil drop experiment",
+        "Radioactivity experiment"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "According to modern atomic theory, the exact position of an electron:",
+      "options": [
+        "Can always be determined precisely",
+        "Is fixed in a circular orbit",
+        "Cannot be known with complete certainty",
+        "Is inside the nucleus"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "The discovery of the neutron was made by:",
+      "options": [
+        "Dalton",
+        "Chadwick",
+        "Bohr",
+        "Rutherford"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "When interpreting the relationship between a particle's charge and its path in an electric field, we observe:",
+      "options": [
+        "Neutral particles are deflected the most.",
+        "Oppositely charged particles deflect in opposite directions.",
+        "Both positive and negative particles move toward the same plate.",
+        "Only electrons can be deflected."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "What happens to the average distance of an electron from the nucleus as the shell energy level increases?",
+      "options": [
+        "It decreases.",
+        "It increases.",
+        "It remains the same.",
+        "It becomes zero."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "The nucleus occupies:",
+      "options": [
+        "Most of the volume of the atom",
+        "Half of the atom",
+        "Entire atom",
+        "Very little space inside the atom"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How would an electron react if exposed to a uniform electric field?",
+      "options": [
+        "It would be attracted to the negative electrode.",
+        "It would be attracted to the positive electrode.",
+        "It would remain stationary.",
+        "It would only move if it were a proton."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which scientist first proposed that atoms are indivisible particles?",
+      "options": [
+        "Dalton",
+        "Thomson",
+        "Rutherford",
+        "Bohr"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "In Thomson's model, electrons were assumed to be:",
+      "options": [
+        "Revolving around the nucleus",
+        "Embedded in a positively charged sphere",
+        "Located in fixed shells",
+        "Present inside neutrons"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How does an alpha particle behave in a magnetic or electric field compared to an electron?",
+      "options": [
+        "They behave identically because they are both subatomic.",
+        "The alpha particle deflects much less due to its significantly higher mass and positive charge.",
+        "The alpha particle is unaffected by electric fields.",
+        "The electron is deflected less because it is lighter."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "What is the structural role of neutrons in a nucleus containing multiple protons?",
+      "options": [
+        "They act as a glue to overcome the electrostatic repulsion between positively charged protons.",
+        "They increase the volume of the atom.",
+        "They provide energy for the electrons.",
+        "They define the chemical properties of the element."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Why is the concept of a \"shell\" as an energy level more accurate than the concept of an \"orbit\"?",
+      "options": [
+        "Shells are physical rings made of matter.",
+        "Orbits are only for planets, not atoms.",
+        "Shells are bigger than orbits.",
+        "Orbits imply a fixed, predictable path, whereas shells define specific energy states where electrons exist based on probability."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Why are electrons described as quantum particles?",
+      "options": [
+        "Because they have a large mass.",
+        "Because they are found only in the nucleus.",
+        "Because they exhibit behavior that classical mechanics cannot explain.",
+        "Because they move in straight lines."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "An atom contains 18 electrons arranged as 2, 8, 8. The total number of protons is:",
+      "options": [
+        "8",
+        "16",
+        "18",
+        "20"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "An atom has a nucleon number of 23 and an atomic number of 11. How many neutrons are in the nucleus?",
+      "options": [
+        "11",
+        "12",
+        "23",
+        "34"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How does the 'strong nuclear force' overcome the electrostatic repulsion between protons in a high-atomic-number nucleus?",
+      "options": [
+        "It acts at long ranges to pull protons toward the electron cloud.",
+        "It is an attractive force that dominates at extremely short distances, counteracting electrostatic repulsion.",
+        "It transforms protons into neutrons.",
+        "It is a gravitational effect generated by the nucleus mass."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If an atom has a nucleon number (A) and an atomic number (Z), why does the loss of a neutron change the isotope but not the chemical identity?",
+      "options": [
+        "Because chemical identity is governed solely by electron configuration, which is determined by proton count.",
+        "Because neutrons carry a positive charge.",
+        "Because neutrons have zero mass.",
+        "Because the nucleus expands."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student says, \"Rutherford's model proved that electrons are present in the nucleus.\" Which fact directly disproves this statement?",
+      "options": [
+        "Most α-particles passed through the foil.",
+        "Electrons were discovered before Rutherford's experiment.",
+        "Rutherford proposed that electrons move around the nucleus.",
+        "Gold foil is a metal."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which feature of the atom remained unchanged from Rutherford's model to Bohr's model?",
+      "options": [
+        "Electrons carrying a positive charge",
+        "Electrons embedded in positive charge",
+        "Absence of nucleus",
+        "Presence of a central nucleus"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If Rutherford had observed all α-particles passing straight through the foil without any deflection, he would most likely have concluded that:",
+      "options": [
+        "Atoms contain no dense central region.",
+        "Positive charge is concentrated in the nucleus.",
+        "Electrons are negatively charged.",
+        "Bohr's model is correct."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If you have a nucleus with 20 protons and 20 neutrons, what happens to the electrostatic repulsion if one proton is added?",
+      "options": [
+        "The repulsion decreases.",
+        "The atom becomes a gas.",
+        "The repulsion increases, requiring more neutrons for nuclear stability.",
+        "The number of electrons stays the same."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Why is the shell model considered an \"aid\" rather than a photographic representation?",
+      "options": [
+        "Because atoms are too small to have a structure.",
+        "Because it simplifies the complex quantum reality of electron distribution for educational clarity.",
+        "Because atoms do not have shells.",
+        "Because shells are only visible under high heat."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Bohr's model successfully explained hydrogen spectra because it assumed that electrons:",
+      "options": [
+        "Have no mass.",
+        "Could possess any energy.",
+        "Remain inside the nucleus.",
+        "Occupy specific energy levels."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "An atom has atomic number Z and mass number A. Which expression represents the number of neutrons?",
+      "options": [
+        "Z − A",
+        "A/Z",
+        "A − Z",
+        "Z + A"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Dalton's atomic theory could not explain isotopes because it assumed:",
+      "options": [
+        "Atoms contain electrons.",
+        "Atoms of the same element are identical in mass.",
+        "Atoms contain nuclei.",
+        "Atoms are mostly empty space."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which conclusion can be drawn from the fact that α-particles are positively charged?",
+      "options": [
+        "They are repelled by the positively charged nucleus.",
+        "They are attracted toward the nucleus.",
+        "They are neutral.",
+        "They contain electrons."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Which statement would be impossible?",
+      "options": [
+        "Two isotopes having different mass numbers",
+        "Two isotopes having different neutrons",
+        "Two isotopes having the same chemical properties",
+        "Two isotopes having different atomic numbers"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Relative to a proton, the mass of an electron is approximately:",
+      "options": [
+        "Equal",
+        "1/1836th",
+        "Double",
+        "10 times greater"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "The existence of ions demonstrates that:",
+      "options": [
+        "Atoms can gain or lose electrons.",
+        "Atoms can gain or lose protons easily.",
+        "Atomic number changes during chemical reactions.",
+        "Nuclei are unstable."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Why can we not map the \"exact path\" of an electron?",
+      "options": [
+        "Because it isn't moving.",
+        "Because the act of measuring its position affects its momentum.",
+        "Because electrons are too heavy.",
+        "Because the nucleus blocks our view."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How does the periodic table arrange elements based on atomic structure?",
+      "options": [
+        "By mass, regardless of proton count.",
+        "By increasing atomic number.",
+        "By the number of neutrons.",
+        "By the total volume of the atom."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "In an electric field, why does a neutron travel completely straight regardless of its velocity?",
+      "options": [
+        "It is repelled by both plates equally.",
+        "It is moving too fast for the field to affect it.",
+        "Its mass is too large.",
+        "It lacks an electric charge, so it experiences no electrostatic force."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "In an atom, the \"empty space\" is:",
+      "options": [
+        "The region occupied by the electron shells.",
+        "Where the nucleus is located.",
+        "A myth; there is no empty space.",
+        "Filled with protons."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "How does the energy requirement for removing an electron from the first shell compare to the third shell?",
+      "options": [
+        "It is easier to remove from the first shell.",
+        "They are identical.",
+        "It is much harder to remove from the first shell because it is closer to the nucleus.",
+        "Electrons cannot be removed from the first shell."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "If a nucleus undergoes beta decay (a neutron turns into a proton), what happens to the atomic number?",
+      "options": [
+        "It stays the same.",
+        "It increases by 1.",
+        "It decreases by 1.",
+        "The atom disappears."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A teacher asks why Rutherford rejected Thomson's model. A student replies, \"Because some α-particles bounced back.\" Which assumption of Thomson's model was challenged?",
+      "options": [
+        "Presence of electrons",
+        "Uniform distribution of positive charge",
+        "Existence of isotopes",
+        "Presence of neutrons"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "Two particles have the following compositions: X: 17 protons, 18 electrons Y: 17 protons, 17 electrons Which statement is correct?",
+      "options": [
+        "Both are isotopes.",
+        "X is neutral, and Y is an ion.",
+        "X is an anion, and Y is neutral.",
+        "X and Y are different elements."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student claims that atoms of the same element must have identical masses. Which discovery proves the student wrong?",
+      "options": [
+        "Electron",
+        "Energy levels",
+        "Proton",
+        "Isotopes"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A neutral atom has an electronic configuration 2,8,7. If it gains one electron, the resulting particle will:",
+      "options": [
+        "Lose a proton.",
+        "Become negatively charged.",
+        "Become neutral.",
+        "Become positively charged."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A particle contains 13 protons, 14 neutrons, and 10 electrons. Which statement is correct?",
+      "options": [
+        "Mass number = 24",
+        "Charge = –3",
+        "Atomic number = 14",
+        "Charge = +3"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student compares Rutherford's and Bohr's models. Which feature is present in both?",
+      "options": [
+        "Positive sphere with embedded electrons",
+        "Central nucleus",
+        "Neutrons in the nucleus",
+        "Quantized energy levels"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student is asked which discovery directly contradicted Dalton's idea of indivisible atoms. Which answer is most appropriate?",
+      "options": [
+        "Discovery of the electron",
+        "Discovery of an isotope",
+        "Discovery of energy levels",
+        "Discovery of valency"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student notices that an electron jumps from the second shell to the fourth shell. According to Bohr's theory, the electron must have:",
+      "options": [
+        "Lost mass",
+        "Lost charge",
+        "Released energy",
+        "Absorbed energy"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "When an electron emits a photon, it must:",
+      "options": [
+        "Change into a proton.",
+        "Increase its velocity to infinity.",
+        "Move to a shell further from the nucleus.",
+        "Move to a shell closer to the nucleus."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    },
+    {
+      "stem": "A student is comparing Cl-35 and Cl⁻. Which statement correctly distinguishes them?",
+      "options": [
+        "One differs in neutrons, the other differs in electrons.",
+        "Both differ in neutrons only.",
+        "Both differ in electrons only.",
+        "Both are isotopes."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Chem unit#3 MCQs.docx"
+    }
+  ]
+}

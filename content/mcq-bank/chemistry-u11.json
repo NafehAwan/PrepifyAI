@@ -1,0 +1,1506 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "stem": "Air is mainly a mixture of:",
+      "options": [
+        "Solids",
+        "Liquids",
+        "Gases",
+        "Metals"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The largest component of dry air is:",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Approximately what percentage of dry air is oxygen?",
+      "options": [
+        "10%",
+        "21%",
+        "50%",
+        "78%"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The envelope of gases surrounding Earth is called:",
+      "options": [
+        "Hydrosphere",
+        "Biosphere",
+        "Atmosphere",
+        "Lithosphere"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Water vapour in air:",
+      "options": [
+        "Remains constant everywhere",
+        "Is absent from air",
+        "Varies from place to place",
+        "Is always 10%"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "A substance present in air, water, or soil that causes harm is called:",
+      "options": [
+        "Nutrient",
+        "Pollutant",
+        "Fertilizer",
+        "Catalyst"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Air pollution affects:",
+      "options": [
+        "Environment only",
+        "Human health only",
+        "Quality of life only",
+        "Environment, health, and quality of life"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sulphur dioxide is represented by:",
+      "options": [
+        "SO₂",
+        "CO₂",
+        "NO₂",
+        "CH₄"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sulphur dioxide is mainly released by:",
+      "options": [
+        "Burning fossil fuels",
+        "Photosynthesis",
+        "Evaporation",
+        "Respiration"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sulphur dioxide is a strong:",
+      "options": [
+        "Nutrient",
+        "Oxidizing agent",
+        "Respiratory irritant",
+        "Fertilizer"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sulphur dioxide is responsible for:",
+      "options": [
+        "Acid rain",
+        "Rusting only",
+        "Photosynthesis",
+        "Digestion"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The common oxides of nitrogen causing air pollution are:",
+      "options": [
+        "NO and NO₂",
+        "CO and CO₂",
+        "SO₂ and SO₃",
+        "CH₄ and CO₂"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Oxides of nitrogen are collectively represented as:",
+      "options": [
+        "SOₓ",
+        "NOₓ",
+        "COₓ",
+        "CHₓ"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The major source of nitrogen oxides is:",
+      "options": [
+        "Vehicle engines",
+        "Oceans",
+        "Forests only",
+        "Rivers"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Nitrogen oxides contribute to:",
+      "options": [
+        "Acid rain",
+        "Smog",
+        "Respiratory problems",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Carbon dioxide is associated with:",
+      "options": [
+        "Ozone depletion only",
+        "Global warming",
+        "Digestion only",
+        "Rusting only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Increased carbon dioxide levels are mainly due to:",
+      "options": [
+        "Fossil fuel burning",
+        "Photosynthesis",
+        "Condensation",
+        "Freezing"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Carbon monoxide is produced during:",
+      "options": [
+        "Complete combustion",
+        "Incomplete combustion",
+        "Neutralization",
+        "Evaporation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Carbon monoxide is:",
+      "options": [
+        "Colored gas",
+        "Odourless and poisonous gas",
+        "Liquid",
+        "Non-toxic gas"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Carbon monoxide affects the blood by:",
+      "options": [
+        "Increasing oxygen transport",
+        "Forming carboxyhemoglobin",
+        "Producing vitamins",
+        "Destroying water molecules"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Methane is represented by:",
+      "options": [
+        "CO₂",
+        "NO₂",
+        "CH₄",
+        "SO₂"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Methane is produced during digestion in:",
+      "options": [
+        "Fish",
+        "Reptiles",
+        "Ruminant animals",
+        "Birds only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "An important source of methane is:",
+      "options": [
+        "Landfills",
+        "Rice fields",
+        "Wetlands",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Methane contributes to:",
+      "options": [
+        "Global warming",
+        "Cooling of Earth",
+        "Ozone depletion only",
+        "Neutralization"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Ground-level ozone is commonly called:",
+      "options": [
+        "Acid rain",
+        "Smog",
+        "Fog",
+        "Dew"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Ground-level ozone is formed by reactions involving:",
+      "options": [
+        "Nitrogen oxides and VOCs",
+        "Water and salt",
+        "Nitrogen and oxygen only",
+        "Carbon and hydrogen"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sunlight plays a role in the formation of:",
+      "options": [
+        "Ground-level ozone",
+        "Limestone",
+        "Salt",
+        "Ice"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Ground-level ozone can damage:",
+      "options": [
+        "Vegetation",
+        "Forests",
+        "Human respiratory system",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Which of the following is a natural source of air pollution?",
+      "options": [
+        "Volcanoes",
+        "Factories",
+        "Vehicles",
+        "Power plants"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Forest fires release:",
+      "options": [
+        "Dust and smoke",
+        "Pure oxygen",
+        "Nitrogen only",
+        "Helium only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Termites and cows release large amounts of:",
+      "options": [
+        "Carbon monoxide",
+        "Methane",
+        "Sulphur dioxide",
+        "Ozone"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Most human-caused air pollution results from:",
+      "options": [
+        "Burning fossil fuels",
+        "Rainfall",
+        "Photosynthesis",
+        "Condensation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Nearly half of air pollution comes from:",
+      "options": [
+        "Oceans",
+        "Mountains",
+        "Cars and motor vehicles",
+        "Trees"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Greenhouse gases include:",
+      "options": [
+        "Carbon dioxide",
+        "Methane",
+        "Water vapour",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Greenhouse gases trap:",
+      "options": [
+        "Sound energy",
+        "Heat energy",
+        "Electrical energy",
+        "Nuclear energy"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The greenhouse effect helps:",
+      "options": [
+        "Regulate Earth's temperature",
+        "Stop rainfall",
+        "Produce minerals",
+        "Create earthquakes"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Excess greenhouse gases lead to:",
+      "options": [
+        "Global warming",
+        "Freezing of oceans",
+        "Reduced sunlight",
+        "Lower sea levels"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Global warming is caused by:",
+      "options": [
+        "Disturbance in greenhouse gas balance",
+        "Increased oxygen only",
+        "Reduced nitrogen",
+        "More noble gases"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "One effect of global warming is:",
+      "options": [
+        "Rising sea levels",
+        "Increased polar ice",
+        "Lower temperatures",
+        "Reduced evaporation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Global warming may increase the risk of:",
+      "options": [
+        "Floods",
+        "Droughts",
+        "Climate change",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Normal rainwater has a pH close to:",
+      "options": [
+        "2.0",
+        "4.0",
+        "5.6",
+        "8.5"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Acid rain forms when rainwater contains:",
+      "options": [
+        "Nitric and sulphuric acids",
+        "Sodium chloride",
+        "Sugar",
+        "Ammonia only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Sulphur dioxide in rainwater can produce:",
+      "options": [
+        "Sulphuric acid",
+        "Hydrochloric acid",
+        "Acetic acid",
+        "Citric acid"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Nitrogen oxides contribute to the formation of:",
+      "options": [
+        "Nitric acid",
+        "Glucose",
+        "Ethanol",
+        "Ammonia"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Acid rain can damage:",
+      "options": [
+        "Buildings",
+        "Statues",
+        "Metal structures",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Carbon monoxide poisoning may result in:",
+      "options": [
+        "Better breathing",
+        "Loss of consciousness",
+        "Increased oxygen supply",
+        "Improved health"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Which pollutant is directly linked with vehicle exhaust?",
+      "options": [
+        "Nitrogen oxides",
+        "Gold",
+        "Calcium carbonate",
+        "Water vapour only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Which gas makes up about 78% of dry air?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "Which pollutant is produced when there is not enough oxygen for burning?",
+      "options": [
+        "Carbon dioxide",
+        "Carbon monoxide",
+        "Methane",
+        "Ozone"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "The best description of clean, dry air is:",
+      "options": [
+        "Pure oxygen",
+        "Pure nitrogen",
+        "A mixture of gases",
+        "Carbon dioxide only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(A).docx"
+    },
+    {
+      "stem": "A factory located near a residential area burns coal as fuel. Residents complain about eye irritation and breathing difficulties, especially on windy days. Which pollutant is most likely responsible?",
+      "options": [
+        "Nitrogen",
+        "Sulphur dioxide",
+        "Argon",
+        "Helium"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "During a traffic jam inside a tunnel, several drivers begin feeling dizzy and weak. Which gas is most likely accumulating in the tunnel?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Carbon monoxide",
+        "Methane"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A city records increasing cases of asthma during summer afternoons. Scientists find high levels of ozone near the ground. The ozone was most likely formed by:",
+      "options": [
+        "Nitrogen and oxygen mixing naturally",
+        "Reactions between NOₓ, VOCs, and sunlight",
+        "Evaporation of water",
+        "Condensation of air pollutants"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A student notices that marble statues near an industrial zone are slowly losing their shine and surface details. The most likely cause is:",
+      "options": [
+        "Ozone depletion",
+        "Acid rain",
+        "Methane emission",
+        "Nitrogen fixation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Farmers observe that crops growing near a busy highway show reduced growth and leaf damage. Which pollutant is most directly involved?",
+      "options": [
+        "Ground-level ozone",
+        "Nitrogen gas",
+        "Argon",
+        "Helium"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A family uses a charcoal stove inside a poorly ventilated room. Which safety risk is greatest?",
+      "options": [
+        "Methane poisoning",
+        "Carbon monoxide poisoning",
+        "Ozone poisoning",
+        "Nitrogen poisoning"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A scientist finds increasing methane emissions from a landfill. What environmental effect is most likely?",
+      "options": [
+        "Ozone layer formation",
+        "Greenhouse effect enhancement",
+        "Acid rain formation",
+        "Increased oxygen concentration"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "After heavy industrial activity, rainwater collected in an area has a pH of 4.2. This indicates:",
+      "options": [
+        "Normal rainwater",
+        "Acid rain",
+        "Distilled water",
+        "Neutral water"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A vehicle engine is not properly maintained and fuel burns incompletely. Which pollutant will increase significantly?",
+      "options": [
+        "Carbon monoxide",
+        "Oxygen",
+        "Nitrogen",
+        "Argon"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "During an environmental survey, researchers identify a gas that binds strongly with hemoglobin and reduces oxygen transport. The gas is:",
+      "options": [
+        "Carbon dioxide",
+        "Sulphur dioxide",
+        "Carbon monoxide",
+        "Methane"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A village near a volcano experiences poor air quality due to natural emissions. Which pollutant is likely released in large amounts?",
+      "options": [
+        "Sulphur dioxide",
+        "Argon",
+        "Helium",
+        "Neon"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Scientists observe melting glaciers and rising sea levels over several decades. Which factor is most directly responsible?",
+      "options": [
+        "Acid rain",
+        "Greenhouse gas accumulation",
+        "Nitrogen fixation",
+        "Ozone layer recovery"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A student compares two cities. City A has many trees, while City B has extensive deforestation. Which city is expected to have higher carbon dioxide levels?",
+      "options": [
+        "City A",
+        "City B",
+        "Both equal",
+        "Cannot be determined"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A chemical plant releases large amounts of NO₂ into the atmosphere. Which environmental problem is most likely to increase?",
+      "options": [
+        "Acid rain",
+        "Water hardness",
+        "Soil fertility",
+        "Oxygen production"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "During a sunny day, pollutants react in urban air and create a brownish haze. This phenomenon is called:",
+      "options": [
+        "Acid rain",
+        "Greenhouse effect",
+        "Photochemical smog",
+        "Condensation"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "An environmental officer wants to reduce greenhouse gas emissions from a city. Which action would be most effective?",
+      "options": [
+        "Increase fossil fuel use",
+        "Promote public transport",
+        "Burn more coal",
+        "Reduce tree plantation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A researcher measures air composition and finds oxygen concentration significantly below 21%. Which conclusion is most reasonable?",
+      "options": [
+        "Air composition has been disturbed",
+        "Air is normal",
+        "Nitrogen disappeared completely",
+        "Carbon dioxide is absent"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A farmer floods rice fields for long periods. Which greenhouse gas is likely released in greater amounts?",
+      "options": [
+        "Sulphur dioxide",
+        "Carbon monoxide",
+        "Methane",
+        "Ozone"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which situation is most likely to increase NOₓ emissions?",
+      "options": [
+        "Planting trees",
+        "Heavy traffic congestion",
+        "Rainfall",
+        "Ocean waves"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A city experiences frequent acid rain. Which combination of gases is primarily responsible?",
+      "options": [
+        "SO₂ and NOₓ",
+        "O₂ and N₂",
+        "Ar and He",
+        "CH₄ and O₂"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Workers near a coal-fired power station complain of throat irritation. Which pollutant is most likely causing this effect?",
+      "options": [
+        "Nitrogen",
+        "Sulphur dioxide",
+        "Oxygen",
+        "Helium"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which activity contributes most directly to increasing atmospheric carbon dioxide?",
+      "options": [
+        "Photosynthesis",
+        "Burning fossil fuels",
+        "Condensation",
+        "Nitrogen fixation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Scientists predict stronger storms due to climate change. The primary reason is:",
+      "options": [
+        "Increased greenhouse gases",
+        "Increased nitrogen",
+        "Reduced rainfall",
+        "Reduced sunlight"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A student notices that forests near industrial areas show signs of damage after rainfall. The likely cause is:",
+      "options": [
+        "Acid rain",
+        "Pure water",
+        "Oxygen enrichment",
+        "Nitrogen fixation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A factory switches from coal to cleaner fuels. Which pollutant will most likely decrease significantly?",
+      "options": [
+        "Sulphur dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Water vapour"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Why is methane considered a serious environmental concern despite being present in smaller amounts than carbon dioxide?",
+      "options": [
+        "It is a stronger greenhouse gas",
+        "It increases oxygen levels",
+        "It neutralizes acids",
+        "It prevents global warming"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A student predicts that reducing vehicle use in a city would lower:",
+      "options": [
+        "NOₓ emissions",
+        "Nitrogen concentration",
+        "Argon concentration",
+        "Helium concentration"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which pollutant is most directly associated with incomplete fuel combustion?",
+      "options": [
+        "Methane",
+        "Carbon monoxide",
+        "Sulphur dioxide",
+        "Ozone"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "During a science project, students compare polluted and clean air samples. Which gas is expected to be higher in polluted urban air?",
+      "options": [
+        "Carbon dioxide",
+        "Neon",
+        "Helium",
+        "Argon"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Residents near an industrial area observe corrosion of metal roofs. Which environmental factor is most likely responsible?",
+      "options": [
+        "Acid rain",
+        "Pure rainwater",
+        "Nitrogen gas",
+        "Argon gas"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A city government wants to reduce photochemical smog. Which measure is most suitable?",
+      "options": [
+        "Reduce vehicle emissions",
+        "Increase coal burning",
+        "Cut down forests",
+        "Increase landfill waste"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Why are trees considered important in controlling global warming?",
+      "options": [
+        "They absorb carbon dioxide",
+        "They produce methane",
+        "They release sulphur dioxide",
+        "They increase NOₓ emissions"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A scientist detects elevated SO₂ levels after a volcanic eruption. What environmental effect may follow?",
+      "options": [
+        "Acid rain formation",
+        "Increased oxygen production",
+        "Reduced cloud formation",
+        "Increased nitrogen levels"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A region experiences unusually high temperatures over many years. This trend is best described as:",
+      "options": [
+        "Ozone depletion",
+        "Global warming",
+        "Neutralization",
+        "Distillation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which source contributes methane naturally?",
+      "options": [
+        "Wetlands",
+        "Oxygen cylinders",
+        "Distilled water",
+        "Rocks"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which pollutant is most likely to irritate the respiratory system directly?",
+      "options": [
+        "Sulphur dioxide",
+        "Argon",
+        "Neon",
+        "Helium"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which environmental issue is directly linked with increased greenhouse gas concentrations?",
+      "options": [
+        "Climate change",
+        "Water hardness",
+        "Neutralization",
+        "Electrolysis"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A researcher finds unusually high NO₂ levels in urban air. The most probable source is:",
+      "options": [
+        "Motor vehicles",
+        "Rivers",
+        "Oceans",
+        "Plants"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which pollutant contributes to both smog formation and acid rain?",
+      "options": [
+        "Nitrogen oxides",
+        "Oxygen",
+        "Helium",
+        "Argon"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A student is asked to identify a greenhouse gas produced by cattle farms. The correct answer is:",
+      "options": [
+        "Oxygen",
+        "Methane",
+        "Argon",
+        "Nitrogen"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which scenario best demonstrates the greenhouse effect?",
+      "options": [
+        "Heat being trapped by atmospheric gases",
+        "Water freezing at 0°C",
+        "Rain formation in clouds",
+        "Evaporation of seawater"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Acid rain is most harmful to structures made of:",
+      "options": [
+        "Marble and limestone",
+        "Plastic",
+        "Rubber",
+        "Glass"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A city replaces diesel buses with electric buses. Which pollutant is expected to decrease first?",
+      "options": [
+        "Nitrogen oxides",
+        "Nitrogen gas",
+        "Oxygen",
+        "Argon"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which pollutant causes the greatest risk of suffocation in enclosed spaces?",
+      "options": [
+        "Carbon monoxide",
+        "Methane",
+        "Nitrogen",
+        "Ozone"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which human activity contributes simultaneously to air pollution and global warming?",
+      "options": [
+        "Burning fossil fuels",
+        "Planting forests",
+        "Recycling paper",
+        "Conserving energy"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A factory emits both SO₂ and NOₓ. Which environmental issue is most likely to worsen?",
+      "options": [
+        "Acid rain",
+        "Distillation",
+        "Filtration",
+        "Crystallization"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which gas is primarily responsible for reducing oxygen transport in the body?",
+      "options": [
+        "Carbon monoxide",
+        "Carbon dioxide",
+        "Methane",
+        "Nitrogen dioxide"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "If greenhouse gas emissions continue to increase, which outcome is most likely?",
+      "options": [
+        "Rising sea levels",
+        "Increased glacier formation",
+        "Reduced temperatures",
+        "Less evaporation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "Which environmental problem results from the accumulation of greenhouse gases over long periods?",
+      "options": [
+        "Global warming",
+        "Water pollution only",
+        "Neutralization",
+        "Filtration"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    },
+    {
+      "stem": "A scientist recommends reducing fossil fuel consumption, planting more trees, and using renewable energy. These measures are primarily intended to combat:",
+      "options": [
+        "Global warming",
+        "Water hardness",
+        "Distillation losses",
+        "Crystallization problems"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "chem unit#11 MCQs(D).docx"
+    }
+  ]
+}

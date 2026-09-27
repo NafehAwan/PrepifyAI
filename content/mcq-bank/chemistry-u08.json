@@ -1,0 +1,1491 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "stem": "A student mixes hydrochloric acid and sodium hydroxide in a beaker. The beaker becomes warm. This observation indicates that the reaction is:",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Reversible",
+        "Photochemical"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "During an experiment, a student notices that a reaction vessel becomes colder than its surroundings. The reaction is most likely:",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Catalytic",
+        "Neutral"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A chemist studies a reaction occurring inside a flask. According to energetics, the reacting chemicals inside the flask represent the:",
+      "options": [
+        "Surroundings",
+        "Environment",
+        "System",
+        "Catalyst"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A fuel burns in a furnace and releases large amounts of heat. The sign of ΔH for this process is:",
+      "options": [
+        "Positive",
+        "Zero",
+        "Negative",
+        "Infinite"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student claims that energy is released when chemical bonds are broken. Which statement is correct?",
+      "options": [
+        "Student is correct",
+        "Bond breaking absorbs energy",
+        "Bond breaking and formation both release energy",
+        "Energy is not involved in bonding"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Two reactions occur under identical conditions. Reaction X requires 50 kJ activation energy while Reaction Y requires 120 kJ. Which reaction is expected to occur more readily?",
+      "options": [
+        "X",
+        "Y",
+        "Both equally",
+        "Cannot be predicted"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A catalyst is added to a reaction mixture. Which change is expected?",
+      "options": [
+        "Increase in ΔH",
+        "Increase in activation energy",
+        "Faster reaction rate",
+        "More products formed than predicted"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction has ΔH = +75 kJ. Which statement is correct?",
+      "options": [
+        "Heat is released",
+        "Heat is absorbed",
+        "No energy change occurs",
+        "Reaction is exothermic"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student observes that ice melts when left on a laboratory bench. The process is:",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Catalytic",
+        "Oxidative"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A spark is needed to start the combustion of petrol even though combustion is exothermic. The spark provides:",
+      "options": [
+        "Enthalpy change",
+        "Bond energy",
+        "Activation energy",
+        "Kinetic energy of products"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction proceeds only when particles collide with sufficient energy and correct orientation. This idea is explained by:",
+      "options": [
+        "Atomic theory",
+        "Collision theory",
+        "Kinetic theory",
+        "Molecular theory"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student heats calcium carbonate strongly. The decomposition occurs because thermal energy:",
+      "options": [
+        "Forms stronger bonds",
+        "Supplies activation energy",
+        "Reduces mass",
+        "Increases pressure only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction pathway changes after adding a catalyst. However, the total energy released remains unchanged. This shows that catalysts:",
+      "options": [
+        "Change ΔH",
+        "Lower activation energy only",
+        "Increase product mass",
+        "Alter reactants permanently"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A chemical engineer wants to maximize the number of effective collisions. Which factor is most important?",
+      "options": [
+        "Color of reactants",
+        "Correct orientation of particles",
+        "Shape of container",
+        "Type of thermometer used"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student compares two reactions. One has ΔH = –150 kJ and the other ΔH = –50 kJ. Which releases more heat?",
+      "options": [
+        "First reaction",
+        "Second reaction",
+        "Both equal",
+        "Cannot be compared"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "In a laboratory, ammonium nitrate dissolves in water and the solution becomes cold. This indicates that:",
+      "options": [
+        "Heat is released",
+        "Heat is absorbed",
+        "No energy transfer occurs",
+        "Catalyst is present"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction does not occur despite frequent collisions between particles. The most likely reason is:",
+      "options": [
+        "Collisions lack sufficient energy",
+        "Reactants have mass",
+        "Products are unstable",
+        "System is closed"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A scientist records a negative ΔH value for a reaction. This means:",
+      "options": [
+        "Products contain more energy than reactants",
+        "Heat is absorbed",
+        "Heat is released",
+        "Activation energy is zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student performs an experiment inside a calorimeter. The calorimeter itself is considered:",
+      "options": [
+        "System",
+        "Product",
+        "Surroundings",
+        "Reactant"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Which process requires continuous absorption of energy?",
+      "options": [
+        "Freezing water",
+        "Condensation of steam",
+        "Melting ice",
+        "Formation of water from hydrogen and oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction releases 250 kJ of energy. Which value best represents ΔH?",
+      "options": [
+        "+250 kJ",
+        "–250 kJ",
+        "0 kJ",
+        "+125 kJ"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A catalyst is recovered unchanged after a reaction. This demonstrates that catalysts:",
+      "options": [
+        "Are reactants",
+        "Are consumed completely",
+        "Remain chemically unchanged",
+        "Become products"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction with a very high activation energy is usually:",
+      "options": [
+        "Faster",
+        "Slower",
+        "More exothermic",
+        "More reversible"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "When hydrogen burns in oxygen, water is formed and heat is released. Which statement is correct?",
+      "options": [
+        "Bond breaking releases energy only",
+        "Bond formation releases energy",
+        "No bonds are formed",
+        "Heat is absorbed overall"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student accidentally removes the catalyst from an industrial process. The most likely consequence is:",
+      "options": [
+        "Reaction stops completely",
+        "Reaction becomes faster",
+        "Reaction becomes slower",
+        "ΔH becomes positive"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Which observation provides direct evidence that a reaction is exothermic?",
+      "options": [
+        "Temperature of surroundings increases",
+        "Temperature decreases",
+        "Color changes",
+        "Gas is produced"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction absorbs 120 kJ from surroundings. The products will generally possess:",
+      "options": [
+        "Less energy than reactants",
+        "Equal energy to reactants",
+        "More energy than reactants",
+        "No measurable energy"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student observes many collisions but very little product formation. Which factor is most likely missing?",
+      "options": [
+        "Correct orientation",
+        "Reactants",
+        "Container",
+        "Mass"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Which situation best represents an activated complex?",
+      "options": [
+        "Stable product",
+        "Highly unstable intermediate state",
+        "Catalyst particle",
+        "Final reactant mixture"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "An industrial chemist wants to increase production without changing ΔH. The best option is:",
+      "options": [
+        "Add catalyst",
+        "Change product formula",
+        "Increase product mass",
+        "Change reaction type"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction profile diagram shows a very tall energy barrier. This barrier represents:",
+      "options": [
+        "ΔH",
+        "Potential energy of products",
+        "Activation energy",
+        "Heat released"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A process releases heat while converting liquid water into ice. The process is:",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Catalytic",
+        "Neutral"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student touches the outside of a reaction vessel and finds it hot. Which conclusion is valid?",
+      "options": [
+        "Reaction absorbs heat",
+        "Heat flows from surroundings to system",
+        "Heat flows from system to surroundings",
+        "No energy transfer occurs"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Why is a matchstick rubbed before it ignites?",
+      "options": [
+        "To decrease activation energy",
+        "To supply activation energy",
+        "To increase ΔH",
+        "To reduce bond energy"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction proceeds rapidly after catalyst addition because:",
+      "options": [
+        "More products are created instantly",
+        "Activation energy decreases",
+        "ΔH becomes zero",
+        "Bond energies increase"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "During respiration, glucose reacts with oxygen. The released energy is mainly used for:",
+      "options": [
+        "Producing catalysts",
+        "Life processes",
+        "Destroying enzymes",
+        "Increasing atomic mass"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student compares two exothermic reactions. Reaction A has ΔH = –80 kJ and Reaction B has ΔH = –200 kJ. Which releases more energy?",
+      "options": [
+        "Reaction A",
+        "Reaction B",
+        "Both equal",
+        "Cannot determine"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "The decomposition of limestone requires continuous heating. Therefore, the reaction is:",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Catalytic",
+        "Neutralization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A catalyst provides an alternative pathway that is:",
+      "options": [
+        "Longer and slower",
+        "Higher in energy",
+        "Lower in activation energy",
+        "Independent of reactants"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student records a positive ΔH value. Which statement is true?",
+      "options": [
+        "Heat leaves the system",
+        "Heat enters the system",
+        "Reaction is exothermic",
+        "Catalyst is absent"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Which situation best illustrates energy absorption during bond breaking?",
+      "options": [
+        "Formation of H₂O from H₂ and O₂",
+        "Ignition of methane",
+        "Separation of atoms in a molecule",
+        "Freezing of water"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "An effective collision occurs when particles:",
+      "options": [
+        "Move slowly",
+        "Have sufficient energy and proper orientation",
+        "Are large in size",
+        "Contain catalyst atoms"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "Which process is most likely to have a positive ΔH?",
+      "options": [
+        "Condensation of steam",
+        "Freezing water",
+        "Burning coal",
+        "Thermal decomposition of limestone"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A catalyst is present in a reaction vessel. At the end of the experiment, its mass remains unchanged. This confirms that catalysts:",
+      "options": [
+        "Are consumed and regenerated",
+        "Remain unchanged overall",
+        "Become products",
+        "Are destroyed slowly"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student wants to identify an exothermic reaction. Which evidence is most reliable?",
+      "options": [
+        "Heat is evolved",
+        "Gas is formed",
+        "Color changes",
+        "Precipitate forms"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A reaction has low activation energy. Under identical conditions, it will generally:",
+      "options": [
+        "Proceed more easily",
+        "Require more catalyst",
+        "Absorb more heat",
+        "Have positive ΔH"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "In a reaction profile, the difference between reactant energy and peak energy represents:",
+      "options": [
+        "ΔH",
+        "Activation energy",
+        "Heat of formation",
+        "Bond energy"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A chemical reaction releases energy because:",
+      "options": [
+        "More energy is absorbed in bond breaking than released in bond formation",
+        "Energy changes are random",
+        "More energy is released in bond formation than absorbed in bond breaking",
+        "No bonds are involved"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "A student is asked to identify the main purpose of studying chemical energetics. The best answer is:",
+      "options": [
+        "To calculate atomic masses only",
+        "To understand energy changes in chemical reactions",
+        "To classify elements only",
+        "To determine molecular shapes only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs (D).docx"
+    },
+    {
+      "stem": "The study of energy changes during chemical reactions is called:",
+      "options": [
+        "Electrochemistry",
+        "Thermochemistry",
+        "Chemical Energetics",
+        "Organic Chemistry"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "In a chemical reaction, energy is exchanged between:",
+      "options": [
+        "Atoms and molecules",
+        "System and surroundings",
+        "Reactants and catalyst",
+        "Products and catalyst"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The part of the universe under study is called:",
+      "options": [
+        "Environment",
+        "Surroundings",
+        "System",
+        "Medium"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Everything outside the system is called:",
+      "options": [
+        "Catalyst",
+        "Medium",
+        "Reactant",
+        "Surroundings"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Breaking a chemical bond always:",
+      "options": [
+        "Releases energy",
+        "Consumes energy",
+        "Produces light only",
+        "Produces sound only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Formation of a chemical bond always:",
+      "options": [
+        "Absorbs energy",
+        "Consumes heat",
+        "Releases energy",
+        "Stops reaction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A reaction that releases heat to the surroundings is:",
+      "options": [
+        "Endothermic",
+        "Neutral",
+        "Reversible",
+        "Exothermic"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Combustion of methane is an example of:",
+      "options": [
+        "Endothermic reaction",
+        "Exothermic reaction",
+        "Decomposition reaction",
+        "Neutralization reaction"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "In an exothermic reaction, heat flows:",
+      "options": [
+        "From surroundings to system",
+        "From system to surroundings",
+        "Into catalyst only",
+        "Into reactants only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A reaction that absorbs heat from its surroundings is:",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Displacement",
+        "Redox"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which process is endothermic?",
+      "options": [
+        "Freezing water",
+        "Condensation of steam",
+        "Sublimation of dry ice",
+        "Combustion of fuel"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The thermal energy evolved or absorbed during a reaction is called:",
+      "options": [
+        "Entropy",
+        "Activation energy",
+        "Enthalpy of reaction",
+        "Kinetic energy"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The symbol used for enthalpy change is:",
+      "options": [
+        "ΔE",
+        "ΔH",
+        "ΔG",
+        "ΔS"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "For an exothermic reaction, ΔH is:",
+      "options": [
+        "Positive",
+        "Zero",
+        "Negative",
+        "Infinite"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "For an endothermic reaction, ΔH is:",
+      "options": [
+        "Negative",
+        "Positive",
+        "Zero",
+        "Undefined"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Standard enthalpy change is measured at:",
+      "options": [
+        "0 K",
+        "100°C",
+        "298 K",
+        "500 K"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The energy required to break one mole of a bond is called:",
+      "options": [
+        "Bond formation energy",
+        "Activation energy",
+        "Bond dissociation energy",
+        "Heat of combustion"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The energy released when one mole of bonds is formed is:",
+      "options": [
+        "Bond formation energy",
+        "Activation energy",
+        "Ionization energy",
+        "Bond dissociation energy"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The enthalpy change of a reaction depends upon:",
+      "options": [
+        "Bond energies involved",
+        "Color of reactants",
+        "Shape of container",
+        "Pressure only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A reaction with ΔH = –393.5 kJ is:",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Reversible",
+        "Slow"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The minimum energy required for effective collision is:",
+      "options": [
+        "Potential energy",
+        "Enthalpy",
+        "Activation energy",
+        "Nuclear energy"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A reaction will occur only when particles:",
+      "options": [
+        "Have mass",
+        "Possess activation energy",
+        "Are colored",
+        "Are liquids"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "According to collision theory, a reaction occurs when particles:",
+      "options": [
+        "Dissolve completely",
+        "Collide effectively",
+        "Become ions",
+        "Change color"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "An effective collision must have:",
+      "options": [
+        "Proper orientation and sufficient energy",
+        "High pressure only",
+        "Large molecules only",
+        "Catalyst only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "If reacting particles possess energy less than activation energy:",
+      "options": [
+        "Reaction speeds up",
+        "Reaction becomes exothermic",
+        "No reaction occurs",
+        "Products form instantly"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Higher activation energy generally means:",
+      "options": [
+        "Faster reaction",
+        "Slower reaction",
+        "No effect on rate",
+        "More products"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A catalyst increases reaction rate by:",
+      "options": [
+        "Increasing ΔH",
+        "Raising temperature permanently",
+        "Lowering activation energy",
+        "Increasing product mass"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A catalyst remains:",
+      "options": [
+        "Consumed completely",
+        "Chemically unchanged",
+        "Converted into product",
+        "Burnt away"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The phenomenon of using a catalyst is called:",
+      "options": [
+        "Catalysis",
+        "Neutralization",
+        "Distillation",
+        "Sublimation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A catalyst affects:",
+      "options": [
+        "Activation energy",
+        "Enthalpy change",
+        "Mass of products",
+        "Nature of reactants"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A catalyst does NOT change:",
+      "options": [
+        "Reaction pathway",
+        "Activation energy",
+        "Enthalpy change",
+        "Reaction rate"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Enzymes are catalysts found in:",
+      "options": [
+        "Metals",
+        "Living organisms",
+        "Rocks",
+        "Fuels"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Respiration is a process in which:",
+      "options": [
+        "Energy is absorbed from surroundings",
+        "Energy is released from food",
+        "Water is produced only",
+        "Oxygen is formed"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Respiration is generally:",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Neutral",
+        "Photochemical"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The main source of energy in respiration is:",
+      "options": [
+        "Nitrogen",
+        "Glucose",
+        "Carbon dioxide",
+        "Water"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which process releases heat?",
+      "options": [
+        "Melting ice",
+        "Sublimation of dry ice",
+        "Combustion of fuel",
+        "Decomposition of limestone"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A student studies limestone reacting with hydrochloric acid in a test tube. The reacting chemicals represent the:",
+      "options": [
+        "Surroundings",
+        "Environment",
+        "System",
+        "Catalyst"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The test tube and air around it, are considered:",
+      "options": [
+        "Reactants",
+        "System",
+        "Products",
+        "Surroundings"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which process is exothermic?",
+      "options": [
+        "Freezing water",
+        "Sublimation of dry ice",
+        "Thermal decomposition of limestone",
+        "Breaking bonds"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "During an endothermic reaction:",
+      "options": [
+        "Heat enters the system",
+        "Heat leaves the system",
+        "No energy transfer occurs",
+        "Catalyst absorbs all heat"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The combustion of carbon producing carbon dioxide has:",
+      "options": [
+        "Positive ΔH",
+        "Negative ΔH",
+        "Zero ΔH",
+        "Variable ΔH"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The reaction H₂ + I₂ → 2HI has ΔH = +53.8 kJ. It is:",
+      "options": [
+        "Exothermic",
+        "Endothermic",
+        "Neutral",
+        "Catalytic"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which statement is correct?",
+      "options": [
+        "Bond breaking releases energy.",
+        "Bond formation absorbs energy.",
+        "Bond breaking absorbs energy.",
+        "Neither bond breaking nor formation involves energy."
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The activated complex forms during:",
+      "options": [
+        "Effective collision",
+        "Condensation",
+        "Evaporation",
+        "Crystallization"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A reaction pathway with lower activation energy is provided by:",
+      "options": [
+        "Heat only",
+        "Pressure only",
+        "Catalyst",
+        "Solvent only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which quantity determines whether a reaction is exothermic or endothermic?",
+      "options": [
+        "Color change",
+        "ΔH value",
+        "Number of atoms",
+        "Volume of container"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "If energy released during bond formation is greater than energy required for bond breaking, the reaction is:",
+      "options": [
+        "Endothermic",
+        "Exothermic",
+        "Reversible",
+        "Neutral"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "A chemical equation showing heat change is called:",
+      "options": [
+        "Ionic equation",
+        "Balanced equation",
+        "Thermochemical equation",
+        "Molecular equation"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "Which factor is essential for successful collision?",
+      "options": [
+        "Proper orientation",
+        "Large volume",
+        "High density only",
+        "Presence of water"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    },
+    {
+      "stem": "The overall effect of a catalyst on a reaction is to:",
+      "options": [
+        "Increase activation energy",
+        "Slow down reaction permanently",
+        "Increase reaction rate",
+        "Change products formed"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "chem unit#8 MCQs(A).docx"
+    }
+  ]
+}

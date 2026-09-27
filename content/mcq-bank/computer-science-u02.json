@@ -1,0 +1,441 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "stem": "\"How to stop infectious diseases?\" is a real-world problem belonging to which field?",
+      "options": [
+        "Economic",
+        "Education",
+        "Healthcare",
+        "Transportation"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In computer science, a \"computing problem\" is specifically defined as a problem that is solved:",
+      "options": [
+        "Only by using the internet.",
+        "Step-by-step using computation.",
+        "By a human without a machine.",
+        "Instantly without any steps."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "When checking if a specific number is \"Prime\" or \"Not Prime,\" you are dealing with which type of computing problem?",
+      "options": [
+        "Search Problem",
+        "Decision Problem",
+        "Counting Problem",
+        "Abstraction Problem"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In a \"Search Problem,\" which element represents the specific moves that transition from one node to another?",
+      "options": [
+        "Initial State",
+        "Operations",
+        "Goal",
+        "Decision Diamond"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "To solve a search problem, the \"target of end condition\" is officially known as the:",
+      "options": [
+        "Initial State",
+        "Operation",
+        "Goal",
+        "Start State"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "If you have 5 shirts and 3 pants, how many \"total possible casual dresses\" can you form?",
+      "options": [
+        "8",
+        "15",
+        "53",
+        "2"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "If you enter your home and see water on the floor, what do you need to solve such problems?",
+      "options": [
+        "High-speed internet access",
+        "Reasoning skills that are based on evidence and facts",
+        "A calculator to measure the volume of water",
+        "Advanced programming knowledge"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In the I-P-O model, which term refers specifically to the \"requirements from the environment\"?",
+      "options": [
+        "Input",
+        "Process",
+        "Output",
+        "Storage"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "For a programmer, an I-P-O chart is considered to be a:",
+      "options": [
+        "Type of hardware.",
+        "Handy tool to solve problems.",
+        "Decision problem.",
+        "Form of machine code."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In an I-P-O chart, the \"Process\" column is defined as:",
+      "options": [
+        "Data entered into the system.",
+        "Operations that will be applied on the input.",
+        "Data that has been turned into information.",
+        "The hardware used for the computation."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "If you are calculating the \"Average of 5 numbers,\" the division operation would be listed in which section of the I-P-O chart?",
+      "options": [
+        "Input",
+        "Process",
+        "Output",
+        "Storage"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "What is the official definition of \"Output\" in the I-P-O tabular form?",
+      "options": [
+        "Requirements from the environment.",
+        "Operations applied to the data.",
+        "Data that has been turned into the Information.",
+        "The physical screen of the computer."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "\"Computational Thinking\" is often described as an extension of which type of thinking?",
+      "options": [
+        "Mathematical Thinking",
+        "Logical Thinking",
+        "Creative Thinking",
+        "Fast Thinking"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Which property of computational thinking involves \"removing the unnecessary details\" to focus on essential info?",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Pattern Recognition",
+        "Algorithm Design"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "The process of \"examining a problem for similarities between previously solved problems\" is:",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Pattern Recognition",
+        "Algorithm Design"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "\"Actual designing of solution\" and \"creating step-by-step plan\" defines:",
+      "options": [
+        "Logical Thinking",
+        "Algorithm Design",
+        "I-P-O Modeling",
+        "Problem Analysis"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In the \"Video Game\" example, ignoring the \"weather\" while focusing on the \"exit\" is an example of:",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Logical Thinking",
+        "Input Identification"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Treating \"Six enemies as a single enemy\" because they behave the same way is an example of:",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Pattern Recognition",
+        "Search Problem"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "What is the benefit of developing \"algorithmic thinking skills\"?",
+      "options": [
+        "You become a hardware engineer.",
+        "You become a better problem solver.",
+        "You can type 100 words per minute.",
+        "You no longer need a computer."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Which solution design method is described as a \"diagrammatic representation of an algorithm\"?",
+      "options": [
+        "Flowchart",
+        "Concept Map",
+        "I-P-O Model",
+        "Machine Code"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Every flowchart should officially start with a \"trigger,\" which is represented by which shape?",
+      "options": [
+        "Rectangle",
+        "Parallelogram",
+        "Oval shape",
+        "Diamond"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Which graphical shape represents the \"Input to the flowchart\"?",
+      "options": [
+        "Oval",
+        "Parallelogram",
+        "Rectangle",
+        "Diamond"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "When a formula (like Area = (Base x Height) / 2) is applied in a flowchart, which symbol is used?",
+      "options": [
+        "Oval",
+        "Parallelogram",
+        "Rectangle",
+        "Diamond"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "When a flowchart needs to check a condition (like \"Is Grade > 50?\"), which symbol is used?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval",
+        "Circle"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Why might a flowchart have \"multiple ends\"?",
+      "options": [
+        "Because the programmer got confused.",
+        "Because of the possibility of multiple decision points.",
+        "Because it is a complex search problem.",
+        "Because the trigger was not an oval."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Which software tool is mentioned as famous for drawing various types of diagrams, including flowcharts?",
+      "options": [
+        "LARP",
+        "Microsoft Visio",
+        "Canva",
+        "ChatGPT"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "The LARP programming language is unique because it uses:",
+      "options": [
+        "Only binary code (0s and 1s).",
+        "Semi-natural syntax.",
+        "Only graphical icons.",
+        "Complex machine language."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "In the \"Video Game Development\" concept map, what are the three sub-concepts under \"Game Design\"?",
+      "options": [
+        "Gameplay Mechanics, Level Design, and Storyline.",
+        "Coding, Scripting, and Engines.",
+        "2D Art, 3D Models, and Animation.",
+        "Sound Effects, Music, and Voice Acting."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    },
+    {
+      "stem": "Which of the following methods are mentioned for designing a solution?",
+      "options": [
+        "Flowcharts and Source Code",
+        "Concept Maps and Pseudo-code",
+        "Flowcharts and Concept Maps",
+        "Algorithms and Charts"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Unit_2_mcqs_done.docx"
+    }
+  ]
+}

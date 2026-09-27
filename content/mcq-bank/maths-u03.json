@@ -1,0 +1,456 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "stem": "If A x B = B x A for two non- empty sets, what can you conclude about the sets?",
+      "options": [
+        "They are disjoint",
+        "A = B",
+        "One is a proper subset of the other",
+        "They have no elements in common"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "If n(A) = 4 and n(B) = 3, what is the total cardinality of their Cartesian product , n (A x B )?",
+      "options": [
+        "If A ⊂ B (A is proper subset of B) , the Venn diagram shows:",
+        "Two separate circles",
+        "Two overlapping circles",
+        "Circle A completely inside circle B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Circles of equal size",
+      "options": [
+        "Sets A = {2,3,5,7,9} and B = { 0,3,5,8 }. The shaded region shows:",
+        "A∪B",
+        "A∩B",
+        "A – B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "None of these",
+      "options": [
+        "The distributive property A∪(B∩C) equals:",
+        "A∪B∩C",
+        "A ∪B∩(A∪C)",
+        "A∩B∪A∩C"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "x=1 , y=5",
+      "options": [
+        "A binary relation R from set A to set B is:",
+        "Any function from A to B",
+        "A subset of A x B",
+        "Equal to A x B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "A subset of A ∪ B",
+      "options": [
+        "If A = {1,2,3} , B = {0,1,3} and R = { (a,b)/ a ∈A , b ∈ B, a > b }, then R is:",
+        "{ (1,0),(2,0),(2,1),(3,0),(3,1) }",
+        "{ (1,0),(2,1),(3,0),(3,1) }",
+        "{ (2,0),(2,1),(3,0),(3,1)(3,3) }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Both A and B are correct",
+      "options": [
+        "Shading only the central overlapping region where circles A and B cross represents:",
+        "A∪B",
+        "A-B",
+        "A∩B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "{x/x ∈ A ^ x ∉ B}",
+      "options": [
+        "{x/x ∉ A ^ x ∉ B}",
+        "The pictorial representation of any set is called a -----------",
+        "Binary relation",
+        "Real line"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Range of R",
+      "options": [
+        "A x B",
+        "None of these",
+        "A x B = ∅ if and only if:",
+        "A = B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "A ∩ B = ∅",
+      "options": [
+        "A = ∅ or B = ∅",
+        "n(A) ≠ n(B)",
+        "R1 = ∅ is called ------",
+        "Empty set"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Single set",
+      "options": [
+        "A void relation",
+        "None of these",
+        "Set of multiples of 4 greater than and equal to 40 in set builder form is:",
+        "{4xx∈N ∧x ≥10 }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "{3xx∈N ∧x ≥10 }",
+      "options": [
+        "{2xx∈N∧x≥10}",
+        "None of these",
+        "Range R-1 = ------",
+        "Domain of R"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Let A and B be two finite sets such that n(A) = 20, n(B) = 28 and n(A∪B)=36, Find n(A∩B).",
+      "options": [
+        "{ ∅ } is a ------------- set.",
+        "Empty set",
+        "Subset",
+        "Singleton set"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "stem": "Which of the following is a well defined set?",
+      "options": [
+        "A collection of tall students",
+        "A set of prime numbers less than 20",
+        "A set of beautiful paintings",
+        "A collection of good books"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If A = {x/x∈N⋀x2=4} , then A equals:",
+      "options": [
+        "{ 2,-2}",
+        "{ 2 }",
+        "{ 4 }",
+        "{ }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If A = { 1,2,3,4,5} and B = { 3,4,1,7,6}, then A∪B is:",
+      "options": [
+        "{ 3, 4,1 }",
+        "{ 1, 2, 3, 4, 5, 6, 7 }",
+        "{ 1,2,3,5,7 }",
+        "Both B and C"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If A = { a, b, c, d } and B = { c, d, e, f }, then A∩B is:",
+      "options": [
+        "{ a, b, c, d,e,f }",
+        "{ c, d }",
+        "{ a, b, e, f }",
+        "{ }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If U = { 1, 2, 3, 4, 5, 6,7 } and A = { 2,4,6 }, then Aˊ equals:",
+      "options": [
+        "{ 1,3,5,7}",
+        "{2,4,6}",
+        "{1,2,3,5,7}",
+        "{1.3.4.5,7}"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "For any set A: A ∩Aˊ equals:",
+      "options": [
+        "A",
+        "∅",
+        "U",
+        "Aˊ"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "For any set A: A ∩ ∅ equals:",
+      "options": [
+        "A",
+        "∅",
+        "U",
+        "Aˊ"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If n(A) = 24, n(B) = 18 and n(A∪B) = 31, then n(A∩B) is:",
+      "options": [
+        "Cannot determine",
+        "Two sets A and B are disjoint if:",
+        "A⊂B",
+        "A∩B = ∅"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "A ∪(B∩C) = (A∪B)∩(A∪C)",
+      "options": [
+        "A ∪ ∅ = A",
+        "If A = 1,2,3, B= 2,3,4, C= 3,4,5, Verify (A∩B)∩C:",
+        "{ 3 }",
+        "{ 2,3 }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "a = c and b = d",
+      "options": [
+        "a = b and c = d",
+        "a + b = c + d",
+        "If A = { 0,1,2 } and B = { 3,4 }, then n( A x B) equals:",
+        "(x-3y , 5x + 1) = (4,6). The value of x is:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "If A = { 5,10,15,20,25}, the number of binary relations in A is:",
+      "options": [
+        "The domain of R = {1,0,2,0,2,1,3,0,(3,1)} is:",
+        "{0,1}",
+        "{1,2,3}",
+        "{0,1,2,3}"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "{1,2,3,4}",
+      "options": [
+        "The range of R = { (1,0),(2,0),(2,1),(3,0),(3,1)} is:",
+        "{ 0,1 }",
+        "{ 1,2,3 }",
+        "{ 0,1,2,3 }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "Cannot be determined",
+      "options": [
+        "If R = { (x,y)/∈A, y∈A, x2=y} and A = {0,2,3}, then R is:",
+        "{ (0,0),(2,4),(3,9) }",
+        "{ (0,0) }",
+        "{ }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "Undefined since 4,9 ∉ A",
+      "options": [
+        "If L x M = {0,2,0,3,0,4,1,2,1,3,(1,4)} , then set L is:",
+        "{ 0,1 }",
+        "{ 2,3,4 }",
+        "{ 0,1,2,3,4 }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "Cannot determine",
+      "options": [
+        "If L x M = {0,2,0,3,0,4,1,2,1,3,(1,4)} , then set M is:",
+        "{ 0,1 }",
+        "{ 2,3,4 }",
+        "{ 0,1,2,3,4 }"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "Intersection",
+      "options": [
+        "The number of subsets of A x B",
+        "2n(A × B)",
+        "2A×B2",
+        "A x B"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "stem": "Null set",
+      "options": [
+        "Let U = { 1,2,3,…….,10} , A = { 2,4,6,8,10} and B = { 1,3,5,7,9 }. Find (A∪B)ˊ.",
+        "U",
+        "∅",
+        "{2,4,6}"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "stem": "Multiple Choice Questions Bank ____________________________________________________ Q1. When creating a \"strong and unique password,\" what specific mix is recommended?",
+      "options": [
+        "Capital and lowercase letters, numbers, and special characters.",
+        "Only your name followed by your birth year.",
+        "Just a long list of numbers that are easy to remember.",
+        "The name of your favorite sports team and city."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Why is it important to backup data in a \"safe place\" like an external drive or the cloud?",
+      "options": [
+        "To make sure other people can see your files easily.",
+        "To ensure you would not lose your important data if your computer gets stolen or damaged.",
+        "To clear space on the computer so it can play games faster.",
+        "To follow government rules about internet usage."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What is the specific misleading technique used by scammers during a phishing attack?",
+      "options": [
+        "Using a program to slow down your internet speed.",
+        "Scammers pretend to be official and try to trick you.",
+        "Physically stealing the external hard drive from your home.",
+        "Sending unsolicited and irrelevant messages via email."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Public Wi-Fi networks are generally avoided for private tasks because they are:",
+      "options": [
+        "Too expensive to use for long periods.",
+        "More susceptible to hackers.",
+        "Not allowed to open banking websites.",
+        "Only available in large city centers."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "To ensure the safety of your system from malware, what is the rule for downloading files?",
+      "options": [
+        "Download apps, programs, and files only from reliable websites.",
+        "Download only from websites that do not require any login details.",
+        "Open every attachment in emails to check for potential updates.",
+        "Only download files when your antivirus software is turned off."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Regarding physical security, what action should you take for your workspace?",
+      "options": [
+        "Keep your computer screen visible to everyone in the room.",
+        "Lock your computer when you are away from it.",
+        "Avoid using any passwords for your social media accounts.",
+        "Share your home address on all digital platforms for verification."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Ethical use of software requires a user to avoid:",
+      "options": [
+        "Updating the software to the latest version.",
+        "Malicious purposes, such as hacking, spreading malware, or cyberbullying.",
+        "Using software for educational or business tasks.",
+        "Changing the privacy settings of the software."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "\"Protection of Individual Rights\" in the digital age means:",
+      "options": [
+        "Everyone has the right to use any software for free.",
+        "Safeguarding a person's personal information, freedom, and privacy.",
+        "Preventing the government from ever seeing your online activities.",
+        "Allowing people to copy anyone’s work without permission."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What mental health conditions are associated with the \"harmful effect\" of digital addiction?",
+      "options": [
+        "Anxiety, depression, and social isolation.",
+        "Increased focus and better memory.",
+        "Improved social skills and physical health.",
+        "A better understanding of computer hardware."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Which general term describes any software that is specifically created with the intent to harm, exploit, or disrupt a computer network?",
+      "options": [
+        "Phishing",
+        "Malware",
+        "Hacking",
+        "Cookies"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "If a cybercriminal uses fake emails or websites to trick individuals into revealing sensitive information, what is this specific deceptive method called?",
+      "options": [
+        "Malware",
+        "Phishing",
+        "Hacking",
+        "Pharming"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What is the term used for unsolicited, irrelevant, or inappropriate messages sent over the internet?",
+      "options": [
+        "Spyware",
+        "Pharming",
+        "Spam",
+        "Hacking"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What specific tool should be used to encrypt a connection if necessary when using public Wi-Fi?",
+      "options": [
+        "Browser cookies",
+        "Virtual private network (VPN)",
+        "Antivirus program",
+        "Public hotspot"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "A software tracking your online activities and sending the data to advertisers without your knowledge or consent is called:",
+      "options": [
+        "Spam",
+        "Phishing",
+        "Spyware",
+        "Pharming"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "When a computer system or network faces unauthorized access or manipulation, it is called:",
+      "options": [
+        "Hacking",
+        "Phishing",
+        "Malware",
+        "Spyware"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "When a person is targeted by deceptive schemes that are explicitly designed to trick people for financial gain or personal information, what is it called?",
+      "options": [
+        "Cookies",
+        "Scam",
+        "Pharming",
+        "Software Piracy"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "If someone engages in the unauthorized copying, distribution, or use of software without proper licensing, which term defines this act?",
+      "options": [
+        "Freeware",
+        "Shareware",
+        "Software Piracy",
+        "Cookies"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What term describes the small text files stored on a user's device, containing information about their interactions with a website?",
+      "options": [
+        "Shareware",
+        "Scam",
+        "Freeware",
+        "Cookies"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "What specific threat is carried out by redirecting website traffic to a fake site without the user's knowledge?",
+      "options": [
+        "Cookies",
+        "Scam",
+        "Shareware",
+        "Pharming"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "If a user downloads Mozilla Firefox, which is a free web browser, what type of software are they using?",
+      "options": [
+        "Shareware",
+        "Freeware",
+        "Software Piracy",
+        "Scam"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "If an organization adopts the Linux operating system because its source code can be openly viewed, modified, and distributed by anyone, what type of software are they utilizing?",
+      "options": [
+        "Shareware",
+        "Open Source",
+        "Freeware",
+        "Tradeoff"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Using complex passwords or encryption to protect your data is a practical example of:",
+      "options": [
+        "Information Privacy",
+        "System Security",
+        "Tradeoff",
+        "Access Control"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Firewalls, encryption, antivirus software, and access control are all classified as core examples of:",
+      "options": [
+        "Information Privacy",
+        "System Security",
+        "Open Source",
+        "Tradeoffs"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Online platforms like Facebook, WhatsApp, and Instagram are explicitly designed to facilitate the exchange of:",
+      "options": [
+        "Fake news and disinformation",
+        "Deceptive schemes and updates",
+        "Ideas, interests, and personal updates",
+        "Public discourse and restrictions"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "The Apple logo on iPhones and MacBooks is a direct, practical example of which legal tool?",
+      "options": [
+        "Patent",
+        "Copyright",
+        "Trademark",
+        "Disinformation"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "When an author writes a book and automatically holds the legal right that prevents others from reproducing or distributing the work without permission, they are exercising a:",
+      "options": [
+        "Patent",
+        "Copyright",
+        "Trademark",
+        "Tradeoff"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Ensuring that no one can copy or use someone else's work (such as books, music, or software) without permission is the primary function of:",
+      "options": [
+        "Protection of Individual Rights",
+        "Intellectual Property Ownership",
+        "Prevention of Unauthorized Use",
+        "Software Copyright"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "While social media and messaging apps make communication fast and easy, which tools specifically simplify finding information?",
+      "options": [
+        "Secure digital payments",
+        "Search engines like Google",
+        "Automation and technology",
+        "Software development"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Which specific issue is facilitated by social media platforms when individuals are harassed, threatened, or humiliated online?",
+      "options": [
+        "Security breach",
+        "Cyberbullying",
+        "Disinformation",
+        "Tradeoff"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    },
+    {
+      "stem": "Fake news on social networking platforms specifically refers to false or misleading information that is presented as:",
+      "options": [
+        "Conspiracy theories",
+        "Factual news",
+        "Security breaches",
+        "Analytical data"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Unit_6_Impacts_of_Computing.docx"
+    }
+  ]
+}

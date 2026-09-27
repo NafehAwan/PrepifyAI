@@ -1,0 +1,156 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "stem": "Application of Computer Science",
+      "options": [
+        "Questions/ Answers:-",
+        "Question 1:",
+        "Briefly describe the positive impact of AI in our daily life.",
+        "AI has a significant positive impact on daily life in many ways:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Virtual assistants like Siri, Google Assistant, and Alexa help with navigation, information retrieval, and home automation.",
+      "options": [
+        "E-commerce:",
+        "AI powers recommendation systems, providing personalized shopping experiences.",
+        "Overall, AI improves productivity, enhances decision - making, and streamlines various aspects of life.",
+        "Question 2:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Object Recognition:",
+      "options": [
+        "Identifying and classifying objects in images or videos (e.g., identifying products on an assembly line).",
+        "Facial Recognition:",
+        "Automating security processes such as user authentication.",
+        "Medical Imaging:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Analyzing medical images like X-rays and MRIs to assist in diagnosis.",
+      "options": [
+        "Self- driving Cars:",
+        "Helping autonomous vehicles interpret road signs, pedestrians, and obstacles.",
+        "Computer vision reduces human error, improves efficiency, and enables automation in various industries.",
+        "Question 4:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Underwater Exploration:",
+      "options": [
+        "Robots can be deployed to explore deep oceans where humans cannot survive due to pressure and depth.",
+        "Elderly Care:",
+        "Robots can assist in taking care of elderly individuals, helping with daily tasks, and providing companionship.",
+        "Military Applications:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Scalability: Cloud services can be scaled up or down depending on usage, offering flexibility for businesses.",
+      "options": [
+        "Cost Effective: Pay-as-you-go models help save costs as there is no need for heavy upfront investment in hardware.",
+        "Remote Access: Cloud computing allows access to data and applications from anywhere with an Internet an connection.",
+        "Data Security: Cloud providers offer advanced security measures, including encryption and backups to protect data.",
+        "Public vs. Private Clouds:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "AI Algorithms are not perfect and can produce wrong results due to several factors:",
+      "options": [
+        "Bias in Data:",
+        "If the data used to train the model is biased, the algorithm will produce biased results.",
+        "Lack of Context:",
+        "AI might lack understanding of complex, nuanced situations that require human judgement."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Overfitting:",
+      "options": [
+        "Sommetimes the model might perform well on training data but fail to generalize to new, unseen data.",
+        "Insufficient Data:",
+        "AI models require vast amounts of high-quality data. Incomplete or poor quality data can lead to inaccurate predictions.",
+        "Question 11:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "Interpret the ethical issues in using the following AI tools:",
+      "options": [
+        "a. ChatGPT:",
+        "Data Privacy:",
+        "Concerns about how user data is handled and whether it is used for training AI without consent.",
+        "Misinformation:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    },
+    {
+      "stem": "The AI might generate biased or culturally insensitive content if not properly trained.",
+      "options": [
+        "c. Virtual Assistants:",
+        "Privacy:",
+        "Virtual assistants constantly listen for commands, raising concerns about surveillance and unauthorized data collection.",
+        "Dependency:"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "computer chapter # 05 Task 2 pre-9C.docx"
+    }
+  ]
+}

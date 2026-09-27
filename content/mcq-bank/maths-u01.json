@@ -1,0 +1,456 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "stem": "Let Q represent the set of Rational numbers and Q' represent the set of Irrational numbers. What is the value of the operation Q ∩ Q'?",
+      "options": [
+        "{0}",
+        "R",
+        "∅",
+        "Z"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following numbers belongs strictly to the set of Non-Integer Rational Numbers?",
+      "options": [
+        "-12",
+        "0",
+        "- 1325",
+        "11"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "If a number x can be represented as a decimal that is non-terminating and non-recurring, to which set does it belong?",
+      "options": [
+        "Natural Numbers (N)",
+        "Integers (Z)",
+        "Rational Numbers (Q)",
+        "Irrational Numbers (Q')"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "According to the textbook layout, the set of Whole Numbers (W) is formed by taking the union of which two components?",
+      "options": [
+        "Negative Integers and Natural Numbers",
+        "The element {0} and the set of Natural Numbers (N)",
+        "Rational Numbers and Irrational Numbers",
+        "Non-integer fractions and Positive Integers"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following numbers is classified as a rational number that can be expressed as a terminating decimal?",
+      "options": [
+        "13",
+        "78",
+        "2",
+        "-π"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Why is the square root of any non-perfect square integer (such as 11 or 23) automatically irrational?",
+      "options": [
+        "Because its value on a number line is always less than zero.",
+        "Because it cannot be written as a terminating or repeating/recurring decimal representation.",
+        "Because it does not contain a base value.",
+        "Because it is a whole number multiple of zero."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What is the structural difference between an open interval like -6 < x < 4 and a closed interval boundary on the real number line?",
+      "options": [
+        "Open intervals only apply to irrational numbers.",
+        "Open intervals completely exclude the exact boundary value numbers from the solution set.",
+        "Closed intervals require the use of infinity symbols.",
+        "Open intervals cannot be translated into algebraic notation."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Let x = -0.3 (or -0.333...). What is its precise structural classification?",
+      "options": [
+        "Irrational number, because the decimal string continues to infinity without stopping.",
+        "Integer, because it lies directly on the left side of the zero origin point.",
+        "Rational number, because it features a non-terminating, recurring decimal pattern.",
+        "Natural number, because it belongs to a predictable sequence."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which statement about the number 0 is universally true based on the properties outlined in Unit 1?",
+      "options": [
+        "It is the multiplicative identity of real numbers.",
+        "It belongs to the set of Natural Numbers (N).",
+        "It is the additive identity of real numbers.",
+        "It is an irrational number because it has no value."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Every natural number is also automatically a member of which of the following sets?",
+      "options": [
+        "Negative Integers",
+        "Non-Integer Rational Numbers",
+        "Irrational Numbers",
+        "Integers, Whole Numbers and Rational Numbers"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following numbers is a real number that is neither rational nor irrational?",
+      "options": [
+        "8",
+        "-4.5",
+        "There is no such number; every real number must be either rational or irrational.",
+        "0"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "If a set contains all values of x such that x > -4, which statement describes its true visual boundary configuration on a number line?",
+      "options": [
+        "A solid dot at -4 with a shaded arrow extending infinitely to the left.",
+        "A hollow circle at -4 with a shaded arrow extending infinitely to the right.",
+        "A solid dot at 0 pointing towards -4.",
+        "A shaded segment trapped exclusively between -4 and 0."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "The coordinate value point designated as the structural \"origin\" on a standard geometric number line corresponds to which real number?",
+      "options": [
+        "1",
+        "-1",
+        "0",
+        "∞"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following represents an irrational number located between the positive integers 2 and 3?",
+      "options": [
+        "78",
+        "2",
+        "8",
+        "4 12"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What real number property is exemplified by the expression: 4 + (6 + 8) = (4 + 6) + 8?",
+      "options": [
+        "Commutative Property with respect to Addition",
+        "Associative Property with respect to Addition",
+        "Distributive Property of Multiplication over Addition",
+        "Closure Property with respect to Addition"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following statements perfectly captures the operational rule of the Additive Inverse property?",
+      "options": [
+        "a . 1 = a",
+        "a + (-a) = 0",
+        "a . 1a = 1",
+        "a . b = 1"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which real number is identified as the only value that does not possess a multiplicative inverse?",
+      "options": [
+        "1",
+        "-1",
+        "0",
+        "Every real number has a multiplicative inverse."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What mathematical property justifies the step: (x + 2) + y = y + (x + 2)?",
+      "options": [
+        "Associative Property of Addition",
+        "Commutative Property of Addition",
+        "Distributive Property",
+        "Reflexive Property of Equality"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "If 14 × 114 = 1, which real number property has been actively applied?",
+      "options": [
+        "Multiplicative Identity Property",
+        "Multiplicative Inverse Property",
+        "Cancellation Property",
+        "Closure Property"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What is the product of any real number a multiplied by the additive identity?",
+      "options": [
+        "a",
+        "1",
+        "0",
+        "-a"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which property is defined as: a(b + c) = ab + ac for all real numbers a, b and c?",
+      "options": [
+        "Associative Property of Multiplication",
+        "Distributive Property of Multiplication over Addition",
+        "Commutative Property of Multiplication",
+        "Symmetric Property of Equality"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "The fact that adding any two real numbers together (a + b ∈ R) will always produce another perfectly valid real number is known as the:",
+      "options": [
+        "Identity Property",
+        "Closure Property with respect to Addition",
+        "Transitive Property",
+        "Distributive Property"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What property is highlighted by the equation: 6 × 4 = 4 × 6?",
+      "options": [
+        "Commutative Property with respect to Multiplication",
+        "Associative Property with respect to Multiplication",
+        "Multiplicative Identity Property",
+        "Closure Property of Multiplication"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What is the value of the expressions evaluated using the distributive property: 32 (18 + 14 )",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "16"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "If (0.2) . 5 = 1, then 0.2 and 5 are related to each other as:",
+      "options": [
+        "Additive Inverses",
+        "Multiplicative Inverses",
+        "Additive Identities",
+        "Multiplicative Identities"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What property justifies the following algebraic statement: a . 1 = 1 . a = a?",
+      "options": [
+        "Multiplicative Inverse Property",
+        "Multiplicative Identity Property",
+        "Commutative Property of Addition",
+        "Trichotomy Property"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "Which of the following operations is not associative over the set of real numbers?",
+      "options": [
+        "Addition",
+        "Multiplication",
+        "Subtraction",
+        "Both Addition and Multiplication are non-associative."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What is the additive inverse of the number 0?",
+      "options": [
+        "1",
+        "-1",
+        "0",
+        "It does not exist."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "If a < b and both share the same sign, what happens to their reciprocals?",
+      "options": [
+        "1a< 1b",
+        "1a > 1b",
+        "1a = 1b",
+        "The relationship stays exactly the same."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    },
+    {
+      "stem": "What happens to the inequality sign if a negative number is multiplied on both sides?",
+      "options": [
+        "The inequality sign remains completely unchanged.",
+        "The inequalities are reversed.",
+        "The inequality changes into an equals sign.",
+        "The entire mathematical expression becomes zero."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Maths-Unit = 1 (Set 01).docx"
+    }
+  ]
+}
