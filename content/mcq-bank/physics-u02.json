@@ -9,7 +9,7 @@
         "Translatory",
         "Rotatory",
         "Vibratory",
-        "Rendom"
+        "Random"
       ],
       "answer": null,
       "answer_source": null,
@@ -89,7 +89,7 @@
         "Circular",
         "Rotatory",
         "Vibratory",
-        "Rendom"
+        "Random"
       ],
       "answer": null,
       "answer_source": null,
@@ -121,7 +121,7 @@
         "Vector",
         "Force",
         "Delta",
-        "Roh"
+        "Rho"
       ],
       "answer": null,
       "answer_source": null,
@@ -131,13 +131,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0c6be80d7ff3",
-      "stem": "Which property is represented by the symbol delta",
+      "id": "d6988b423d04",
+      "stem": "If Sir Jamal running in an Olympics and the running track is oval shape what is his displacement",
       "options": [
-        "Increase",
-        "Decease",
-        "Change",
-        "If Sir Jamal running in an Olympics and the running track is oval shape what is his displacement"
+        "Maximum",
+        "Minimum",
+        "Zero",
+        "Equal"
       ],
       "answer": null,
       "answer_source": null,
@@ -147,13 +147,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "43e8fe854fe7",
-      "stem": "Usain bolt",
+      "id": "98ebe4cdb148",
+      "stem": "Who is the fastest man on Earth",
       "options": [
-        "Jos inglis",
-        "Sangakara",
-        "JP duminy",
-        "If a car is moving with a velocity of 70Km/hr neather speeding up nor slowing down which type of velocity is this"
+        "Usain Bolt",
+        "Josh Inglis",
+        "Sangakkara",
+        "JP Duminy"
       ],
       "answer": null,
       "answer_source": null,
@@ -163,13 +163,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "a447c57303e5",
-      "stem": "Variable",
+      "id": "626035eec827",
+      "stem": "If a car is moving with a velocity of 70Km/hr neither speeding up nor slowing down which type of velocity is this",
       "options": [
+        "Variable",
         "Instantaneous",
         "Uniform",
-        "Average",
-        "Which property has the fastest speed calculated on Earth"
+        "Average"
       ],
       "answer": null,
       "answer_source": null,
@@ -179,13 +179,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "5dc1d18e5104",
-      "stem": "Einstein",
+      "id": "b0557e39c717",
+      "stem": "Which property has the fastest speed calculated on Earth",
       "options": [
+        "Sound",
+        "Current",
+        "Light",
+        "Water"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "0ff215aaceb3",
+      "stem": "If you want to move with a speed of light which property should you remove",
+      "options": [
+        "Energy",
+        "Mass",
+        "Weight",
+        "Charge"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "9982444ce930",
+      "stem": "Who is the first scientist to measure the speed of any material is",
+      "options": [
+        "Einstein",
         "Galileo",
         "Newton",
-        "Hurtz",
-        "The vertical coordinate difference of graph divided by horizontal coordinate difference is known as"
+        "Hertz"
       ],
       "answer": null,
       "answer_source": null,
@@ -195,29 +227,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "db38fd578bed",
-      "stem": "Distance",
+      "id": "8eeed78439a7",
+      "stem": "If the distance time graph represent a parallel line along time Axis what information we get from this",
       "options": [
-        "Gradient",
-        "Points",
-        "Area under a curve of velocity time graph gives",
-        "Velocity"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "hard",
-      "scenario": true,
-      "chapter_seq": 2,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
-    },
-    {
-      "id": "54a0ae27f515",
-      "stem": "Displacement",
-      "options": [
-        "Acceleration",
-        "If the distance time graph represent a parallel line along time Axis what information we get from this",
         "Uniform motion",
-        "Rest"
+        "Rest",
+        "Acceleration",
+        "Speed"
       ],
       "answer": null,
       "answer_source": null,
@@ -227,13 +243,29 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "85537a009a24",
-      "stem": "Negative",
+      "id": "6860e629b102",
+      "stem": "If there is no a resistance a piece of paper and a coin is dropped from a top of building which would strike the earth first",
       "options": [
-        "Zero",
-        "L if a body is thrown upward then it's final velocity will be",
+        "Paper",
+        "Coin",
+        "Dropper",
+        "Both at same time"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "63c3927e8b6a",
+      "stem": "If this speed and direction of moving body does not change with time then it's velocity is said to be",
+      "options": [
         "Uniform",
-        "Positive"
+        "Contact",
+        "Variable",
+        "Zero"
       ],
       "answer": null,
       "answer_source": null,
@@ -243,29 +275,141 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0a677188db7d",
-      "stem": "Both person",
+      "id": "ac287a4a011b",
+      "stem": "If the direction of motion of a body and acceleration are in same direction then acceleration will be",
       "options": [
-        "None of these",
-        "When an object is moving with uniform changing speed then the slope of speed time graph determine the magnitude of",
-        "Displacement",
-        "Velocity"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "hard",
-      "scenario": true,
-      "chapter_seq": 2,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
-    },
-    {
-      "id": "97976df09f6d",
-      "stem": "Acceleration",
-      "options": [
-        "Momentum",
-        "If an object is slowing down the acceleration will be",
+        "Uniform",
         "Positive",
-        "Negative"
+        "Negative",
+        "Zero"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "cda18d8de67d",
+      "stem": "L if a body is thrown upward then it's final velocity will be",
+      "options": [
+        "Uniform",
+        "Positive",
+        "Negative",
+        "Zero"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "73687f28e1fa",
+      "stem": "If an object is dropped from top of building and is freely falling so the value of g depends on",
+      "options": [
+        "Mass",
+        "Speed",
+        "Size",
+        "Height"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e8c1076eb3d2",
+      "stem": "A person A sitting in a bus says that he is at rest but an observer B standing on a road says that A is moving the right person is",
+      "options": [
+        "Person B",
+        "Person A",
+        "Both person",
+        "None of these"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "09400999a67d",
+      "stem": "When an object is moving with uniform changing speed then the slope of speed time graph determine the magnitude of",
+      "options": [
+        "Displacement",
+        "Velocity",
+        "Acceleration",
+        "Momentum"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "98f305211bd2",
+      "stem": "If an object is slowing down the acceleration will be",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Constant"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e92005bed71d",
+      "stem": "At an amusement park, a ride swings back and forth but never leaves the same spot. What type of motion is this?",
+      "options": [
+        "Linear motion",
+        "Circular motion",
+        "Oscillatory motion",
+        "Random motion"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "012e3aec642f",
+      "stem": "A drone flies straight from the warehouse to drop a package 2km north, no turns. What type of motion is this?",
+      "options": [
+        "Rectilinear motion",
+        "Projectile motion",
+        "Rotational motion",
+        "Periodic motion"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "486730b2240c",
+      "stem": "A batsman hits the ball and it follows a curved path before landing on the ground. What type of motion is this?",
+      "options": [
+        "Uniform motion",
+        "Circular motion",
+        "Projectile motion",
+        "Vibratory motion"
       ],
       "answer": null,
       "answer_source": null,

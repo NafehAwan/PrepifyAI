@@ -112,6 +112,8 @@ function pickStem(stemLines) {
 function makeQuestion(stemLines, options, answerLetter, chapter) {
   if (options.length !== 4) return null;
   if (stemLines.some((l) => l.includes(FIGURE)) || options.some((o) => o.includes(FIGURE))) return null;
+  const normalised = options.map((o) => clean(o).toLowerCase());
+  if (new Set(normalised).size !== 4) return null; // a repeated option makes the question ambiguous
   const stem = clean(pickStem(stemLines)).replace(STEM_NUM_RE, "");
   if (stem.length < 8) return null;
   if (options.some((o) => o.length === 0)) return null;
@@ -238,6 +240,7 @@ function parseBare(lines, defaultChapter) {
   }
 
   const punctuated = flat.filter(({ line }) => isStemLike(line)).length >= (flat.length / 5) * 0.6;
+  void blockStarts; // chapter changes are carried per line in `flat`
 
   if (punctuated) {
     for (let i = 0; i < flat.length; ) {
@@ -253,25 +256,28 @@ function parseBare(lines, defaultChapter) {
     return out;
   }
 
-  let group = [];
-  let groupChapter = defaultChapter;
-  const flush = () => {
-    if (group.length === 5) {
-      const [stem, ...options] = group;
-      const plausible = options.every((o) => o.length <= 120 && !o.endsWith("?"));
-      if (plausible) {
-        const q = makeQuestion([stem], options, null, groupChapter);
-        if (q) out.push(q);
-      }
+  // Unpunctuated stems (the Physics "Complicated" set): anchor on shape. A stem
+  // is a long line, options are short, and a real question is a stem, exactly
+  // four options, then another stem (or the end). Some questions in that file
+  // lost their options in the source, and fixed 5-line counting slid out of
+  // step at the first one; anchoring skips them instead.
+  const STEM_MIN = 26;
+  const OPTION_MAX = 45;
+  const looksStem = (l) => l.length >= STEM_MIN;
+  const looksOption = (l) => l.length <= OPTION_MAX && !/[?:]\s*$/.test(l);
+  for (let i = 0; i < flat.length; ) {
+    const window = flat.slice(i + 1, i + 5);
+    const after = flat[i + 5];
+    const sameChapter = window.every((w) => w.chapter === flat[i].chapter);
+    const closes = !after || after.chapter !== flat[i].chapter || looksStem(after.line);
+    if (looksStem(flat[i].line) && window.length === 4 && sameChapter && window.every((w) => looksOption(w.line)) && closes) {
+      const q = makeQuestion([flat[i].line], window.map((w) => w.line), null, flat[i].chapter);
+      if (q) out.push(q);
+      i += 5;
+    } else {
+      i += 1;
     }
-    group = [];
-  };
-  flat.forEach(({ line, chapter: c }, idx) => {
-    if (blockStarts.includes(idx)) flush();
-    if (group.length === 0) groupChapter = c;
-    group.push(line);
-    if (group.length === 5) flush();
-  });
+  }
   return out;
 }
 

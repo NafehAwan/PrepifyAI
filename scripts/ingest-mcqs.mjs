@@ -14,6 +14,7 @@ import path from "node:path";
 import { parseQuestions, looksScenario } from "./lib/mcq-parse.mjs";
 import { bankId, fingerprint } from "./lib/bank-id.mjs";
 import { docxToText } from "./lib/docx-text.mjs";
+import { fixSpelling } from "./lib/spelling.mjs";
 
 // Filename → which subject and chapter the questions belong to. `chapter: null`
 // means the file spans several chapters and carries "Chapter N" headings.
@@ -36,7 +37,9 @@ const FILES = [
   { re: /^Unit1_Computer_Systems_MCQs_Straight\.docx$/i, subject: "Computer Science", chapter: 1, difficulty: "easy" },
   { re: /^Unit_2_mcqs_done\.docx$/i, subject: "Computer Science", chapter: 2, difficulty: "medium" },
   { re: /^Unit_3_Programming_Fundamentals_MCQs-v2\.docx$/i, subject: "Computer Science", chapter: 3, difficulty: "medium" },
-  { re: /^computer chapter # 0?5 .*\.docx$/i, subject: "Computer Science", chapter: 5, difficulty: "medium" },
+  // Not an MCQ file: a written question-and-answer worksheet. Parsing it as
+  // MCQs produces fragments of model answers as "options".
+  { re: /^computer chapter # 0?5 .*\.docx$/i, skip: true },
   { re: /^Unit_6_Impacts_of_Computing\.docx$/i, subject: "Computer Science", chapter: 6, difficulty: "medium" },
   { re: /^Entrepreneurship_MCQs_Bank-v2\.docx$/i, subject: "Computer Science", chapter: 7, difficulty: "medium" },
 
@@ -97,6 +100,8 @@ for (const name of fs.readdirSync(args.in).sort()) {
   let keyed = 0;
   for (const q of questions) {
     if (!q.chapter_seq) continue; // a spanning file's question before its first heading
+    q.stem = fixSpelling(q.stem, rule.subject);
+    q.options = q.options.map((o) => fixSpelling(o, rule.subject));
     const subject = rule.subject;
     if (!banks.has(subject)) banks.set(subject, new Map());
     const byChapter = banks.get(subject);

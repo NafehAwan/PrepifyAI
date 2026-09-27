@@ -67,8 +67,8 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "2be0cf2da3bc",
-      "stem": "A female teacher waers a heel shoes one day and a flat shoes at the second day . Which shoes has a large pressure on floor",
+      "id": "a89eec907128",
+      "stem": "A female teacher wears a heel shoes one day and a flat shoes at the second day . Which shoes has a large pressure on floor",
       "options": [
         "Heel shoes",
         "Flat shoes",
@@ -147,13 +147,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "019b790e319e",
-      "stem": "Usually the range of atmospheric pressure varies from the very high pressure of 1040 mbar to as low as",
+      "id": "0a10cbee7300",
+      "stem": "Galvanometer meter is a device in which hooks law is applicable for which purpose this device is used",
       "options": [
-        "Galvanometer meter is a device in which hooks law is applicable for which purpose this device is used",
         "Charge",
         "Current",
-        "Emf"
+        "Emf",
+        "All of them"
       ],
       "answer": null,
       "answer_source": null,
@@ -163,13 +163,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "a899e539a292",
-      "stem": "All of them",
+      "id": "0e36af89574e",
+      "stem": "If the mass of a person sitting on a chair is doubled what would be the effect on pressure on chair",
       "options": [
-        "If the mass of a person sitting on a chair is doubled what would be the effect on pressure on chair",
         "Double",
         "Four times",
-        "Three times"
+        "Three times",
+        "Half"
       ],
       "answer": null,
       "answer_source": null,
@@ -179,13 +179,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "88b2eb227721",
-      "stem": "Neutral equilibrium",
+      "id": "9a9959322442",
+      "stem": "The unit of pressure which is used in metrology and whether maps is",
       "options": [
-        "If we are climbing a mushkpuri track we feel suffocation this is due to",
+        "Tar",
+        "Newton",
+        "Bar",
+        "Pascal"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "d450912d23f7",
+      "stem": "The liquid barometer works on a principal of",
+      "options": [
+        "Hydrostatic equilibrium",
+        "Stable equilibrium",
+        "Unstable equilibrium",
+        "Neutral equilibrium"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "542593050ad0",
+      "stem": "If we are climbing a mushkpuri track we feel suffocation this is due to",
+      "options": [
         "Low atmospheric pressure",
         "High atmospheric pressure",
-        "Zero atmospheric pressure"
+        "Zero atmospheric pressure",
+        "Due to more oxygen"
       ],
       "answer": null,
       "answer_source": null,
@@ -195,12 +227,44 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "5eba9ca11688",
-      "stem": "Due to more oxygen",
+      "id": "56371e08bf7f",
+      "stem": "The atmospheric pressure is decreases with height due to decrease in",
       "options": [
-        "The atmospheric pressure is decreases with height due to decrease in",
         "Power",
         "Energy",
+        "Density",
+        "Force"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "396a2708f1cd",
+      "stem": "We are standing beside the hernoy lake and experiences that the speed of water at centre is fast as compared to the corners due to",
+      "options": [
+        "Quantity of water",
+        "Depth of water",
+        "Nature of water",
+        "None of these"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "d7f8e39c08da",
+      "stem": "If we have two containers one is filled with water and other is filled with Mercury and we place a stone in each container one after another the change in liquid pressure is due to",
+      "options": [
+        "Gravity",
+        "Depth",
+        "Color",
         "Density"
       ],
       "answer": null,
@@ -211,13 +275,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "51020849f054",
-      "stem": "None of these",
+      "id": "3608776b6d7a",
+      "stem": "The device used to calculate the fluid pressure is manometer which liquid is used in it",
       "options": [
-        "In a device in which pressure is applicable by a force on unit area . Which law describe this",
+        "Water",
+        "Milk",
+        "Mercury",
+        "All of them"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "311fe4bd54a6",
+      "stem": "If you are driving in a sea the force exerted by the pressure of liquid is",
+      "options": [
+        "Parallel",
+        "Perpendicular",
+        "Anti parallel",
+        "None of these"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "f34b7cd04d9e",
+      "stem": "In a device in which pressure is applicable by a force on unit area . Which law describe this",
+      "options": [
         "Newton's law",
         "Pascal's law",
-        "Archimedes principal"
+        "Archimedes principal",
+        "All of these"
       ],
       "answer": null,
       "answer_source": null,
@@ -227,13 +323,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "02be039e5d09",
-      "stem": "All of these",
+      "id": "df9b40d20021",
+      "stem": "If a scuba diver died deep in a sea to experience the marine life he also experiences high pressure due to",
       "options": [
-        "If a scuba diver died deep in a sea to experience the marine life he also experiences high pressure due to",
         "Density",
         "Volume",
-        "Gravity"
+        "Gravity",
+        "Depth"
       ],
       "answer": null,
       "answer_source": null,
@@ -243,13 +339,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "4109efe8b643",
-      "stem": "Voltmeter",
+      "id": "2e9b0a1095fc",
+      "stem": "If we doubled the applied force on a gear pedal of car what would be the effect on pressure",
       "options": [
-        "In system of international units the unit for stress is",
+        "Half",
+        "Three time",
+        "Five times",
+        "Double"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "93e4e7688f90",
+      "stem": "In a DG cement factory there is a chiller power plant filled with oil if the engineers want to check the pressure of oil which device would be suitable",
+      "options": [
+        "Barometer",
+        "Manometer",
+        "Thermometer",
+        "Voltmeter"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "5d052d809baa",
+      "stem": "In system of international units the unit for stress is",
+      "options": [
         "Nm",
         "Nm²",
-        "Nm ³"
+        "Nm ³",
+        "Nm ⁵"
       ],
       "answer": null,
       "answer_source": null,
@@ -279,8 +407,8 @@
       "stem": "If we place a barometer on a smooth surface so are falling barometer maybe indicate as",
       "options": [
         "Dry weather",
-        "Strom",
-        "Hight liquid pressure",
+        "Storm",
+        "High liquid pressure",
         "Expansion of Mercury"
       ],
       "answer": null,

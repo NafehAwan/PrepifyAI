@@ -51,13 +51,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "c40d2e3da9d9",
-      "stem": "The number of drive quantities are",
+      "id": "aa23f027f842",
+      "stem": "The upper jaws of vernier caliper is used to calculate",
       "options": [
-        "Infinite",
-        "The upper jaws of vernier caliper is use to calculate",
         "Volume",
-        "Internal diameter"
+        "Internal diameter",
+        "External diameter",
+        "Area"
       ],
       "answer": null,
       "answer_source": null,
@@ -67,13 +67,61 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "23129046a81a",
-      "stem": "External diameter",
+      "id": "d6f63e698dc6",
+      "stem": "The most precise device in vernier caliper and screw Gauge is",
       "options": [
+        "Screw Gauge",
+        "Vernier caliper",
+        "Both",
+        "None"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "06f118ce4bd4",
+      "stem": "The doubts present in our measurements is known as",
+      "options": [
+        "Precision",
+        "Accuracy",
+        "Errors",
+        "Significant digits"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "3f7f52c130ec",
+      "stem": "The least count for digital stop watch is",
+      "options": [
+        "1s",
+        "0.1s",
+        "0.01s",
+        "0.001s"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "389f5220bc56",
+      "stem": "Measuring cylinder is used to calculate",
+      "options": [
+        "Length",
+        "Volume",
         "Area",
-        "The most precise device in vernier caliper and screw Guage is",
-        "Screw Guage",
-        "Vernier caliper"
+        "Mass"
       ],
       "answer": null,
       "answer_source": null,
@@ -83,13 +131,77 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "312ea62f638e",
-      "stem": "Submission",
+      "id": "63548c81fe74",
+      "stem": "If the car is crashed in west with 30m/s the quantity is",
       "options": [
+        "Scalar",
+        "Base",
+        "Non physical",
+        "Vector"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "236736537df3",
+      "stem": "Which type of quantity momentum is",
+      "options": [
+        "Vector",
+        "Scalar",
+        "Base",
+        "Non physical"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "dfbe3bee75c5",
+      "stem": "Quantity that represent with letter and arrow head over it is",
+      "options": [
+        "Base",
+        "Derived",
+        "Scalar",
+        "Vector"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "49fede91d2ae",
+      "stem": "The proper way to represent vectors is",
+      "options": [
+        "Sketch",
+        "Graph",
+        "Multiplication",
+        "Subtraction"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e6ac5dea3102",
+      "stem": "The rule used to calculate the sum of vectors is",
+      "options": [
+        "Subtraction",
         "Graphical analysis",
         "Head to tail rule",
-        "Crammer rule",
-        "The frame of reference that describe the position of point or object"
+        "Cramer's rule"
       ],
       "answer": null,
       "answer_source": null,
@@ -99,13 +211,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "f8496a68f500",
-      "stem": "Origin system",
+      "id": "4163543f19cb",
+      "stem": "The frame of reference that describe the position of point or object",
       "options": [
+        "Origin system",
         "Coordinate system",
         "SI system",
-        "None of these",
-        "A meter ruler has 100 cm divisions.Each centimeter is further subdivided into"
+        "None of these"
       ],
       "answer": null,
       "answer_source": null,
@@ -115,13 +227,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "7170c3271714",
-      "stem": "1 millimeters",
+      "id": "6ccaacbb8925",
+      "stem": "A meter ruler has 100 cm divisions.Each centimeter is further subdivided into",
       "options": [
+        "1 millimeters",
         "10 millimeters",
         "50 millimeters",
-        "100 millimeters",
-        "You have a page and beaker which device is used to calculate thickness"
+        "100 millimeters"
       ],
       "answer": null,
       "answer_source": null,
@@ -131,13 +243,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "3135396dcec5",
-      "stem": "Vernier caliper",
+      "id": "5034b5468e9e",
+      "stem": "You have a page and beaker which device is used to calculate thickness",
       "options": [
-        "Screw Guage",
+        "Vernier caliper",
+        "Screw Gauge",
         "Meter ruler",
-        "Measuring tape",
-        "The prefix tera is equal to"
+        "Measuring tape"
       ],
       "answer": null,
       "answer_source": null,
@@ -147,13 +259,29 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "e4aaae4168a2",
-      "stem": "Head to tail",
+      "id": "beee8d15fb80",
+      "stem": "The prefix tera is equal to",
       "options": [
+        "10¹²",
+        "10¹⁰",
+        "10¹⁵",
+        "10¹⁶"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "fdba175a7bc0",
+      "stem": "We use measuring cylinder to calculate volume. Which method is used in it?",
+      "options": [
+        "Head to tail",
         "Displacement",
-        "Scaler",
-        "Significant digits",
-        "If I am taking measurements from vernier caliper how many types of values I have"
+        "Scalar",
+        "Significant digits"
       ],
       "answer": null,
       "answer_source": null,
@@ -167,7 +295,7 @@
       "stem": "Measured and exact values are the types of",
       "options": [
         "Measurements",
-        "Scaler",
+        "Scalar",
         "Errors",
         "Vectors"
       ],
@@ -182,7 +310,7 @@
       "id": "21f2dc0ec1e6",
       "stem": "Which type of error is removed by calibration of an instrument",
       "options": [
-        "Rendom",
+        "Random",
         "Systematic",
         "Personal",
         "External"
@@ -246,7 +374,7 @@
       "id": "12753f550eae",
       "stem": "Which type of error is often described as 'bias'",
       "options": [
-        "Rendom",
+        "Random",
         "Systematic",
         "Measurement",
         "Human"

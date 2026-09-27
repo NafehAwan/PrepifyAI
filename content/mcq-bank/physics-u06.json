@@ -3,29 +3,13 @@
   "chapter_seq": 6,
   "questions": [
     {
-      "id": "b9119257ea27",
-      "stem": "What is the angle between force and displacement for maximum work done",
+      "id": "0386cc0ac14c",
+      "stem": "A football is kicked by a boy which type of energy explain this",
       "options": [
-        "What is the angle between force and displacement for maximum work done",
-        "A football is kicked by a boy which type of energy explain this",
         "Solar",
-        "Kinetic"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "hard",
-      "scenario": true,
-      "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
-    },
-    {
-      "id": "2e967c4d9a85",
-      "stem": "Potential",
-      "options": [
-        "Chemical",
-        "The shock absorber of motor bike help to absorb energy. Which type of energy is absorbed",
         "Kinetic",
-        "Potential"
+        "Potential",
+        "Chemical"
       ],
       "answer": null,
       "answer_source": null,
@@ -35,13 +19,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "b74ac949cdd5",
-      "stem": "Physical",
+      "id": "34d4b57b94fc",
+      "stem": "The shock absorber of motor bike help to absorb energy. Which type of energy is absorbed",
       "options": [
-        "Chemical",
-        "In the process of conversion it is not possible to convert all the energy into useful form due to",
+        "Kinetic",
+        "Potential",
+        "Solar",
+        "Wind"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "645d15c7734e",
+      "stem": "We are going on an annual trip in bus which type of energy is converted to kinetic energy of bus",
+      "options": [
+        "Mechanical",
+        "Electrical",
+        "Physical",
+        "Chemical"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "6cfa6614f2fb",
+      "stem": "In the process of conversion it is not possible to convert all the energy into useful form due to",
+      "options": [
         "Energy",
-        "Work"
+        "Work",
+        "Displacement",
+        "Friction"
       ],
       "answer": null,
       "answer_source": null,
@@ -51,13 +67,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "bb9f7775ebfc",
-      "stem": "Displacement",
+      "id": "0a0dcece6588",
+      "stem": "If one form of energy is completely converted to other form of energy this is known as",
       "options": [
-        "Friction",
-        "If one form of energy is completely converted to other form of energy this is known as",
         "Conservation",
-        "Conversion"
+        "Conversion",
+        "Remain same",
+        "All of these"
       ],
       "answer": null,
       "answer_source": null,
@@ -67,13 +83,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "ef0234e48f2e",
-      "stem": "Remain same",
+      "id": "2ee4d0ae84ce",
+      "stem": "If there is a lot of friction is present between the parts of machine kinetic energy is converted into",
       "options": [
-        "All of these",
-        "If there is a lot of friction is present between the parts of machine kinetic energy is converted into",
         "Light",
-        "Electrical"
+        "Electrical",
+        "Waves",
+        "Heat"
       ],
       "answer": null,
       "answer_source": null,
@@ -83,13 +99,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "bf5c86efb199",
-      "stem": "Point range",
+      "id": "0be75d648e8c",
+      "stem": "Most of the daily life energy we use can come from which source",
       "options": [
-        "Perpetual",
-        "The ideal machine in which there is no friction present in their part is known as",
-        "Hypothetical machine",
-        "Hyper machine"
+        "Renewable",
+        "Non renewable",
+        "Solar",
+        "Sound"
       ],
       "answer": null,
       "answer_source": null,
@@ -99,13 +115,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "aaa0386214dd",
-      "stem": "Hypothesis machine",
+      "id": "98fd34417460",
+      "stem": "About 33% of our total non renewable energy is taken from",
       "options": [
-        "Hygiene machine",
-        "Which is the most abundant for sale fuel globally",
         "Coal",
-        "Oil"
+        "Natural gas",
+        "Nuclear",
+        "Petroleum"
       ],
       "answer": null,
       "answer_source": null,
@@ -115,13 +131,77 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "bfecf52a54d1",
-      "stem": "Natural gas",
+      "id": "553aa6304717",
+      "stem": "Which type of energy resources raises various social concerns that involve impact on communities",
       "options": [
-        "All of them",
-        "The estimated reserve of coal present on Earth is",
+        "Non renewable",
+        "Renewable",
+        "Air",
+        "Light"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "673d4521bdf6",
+      "stem": "Demotion of a bodies that continues forever in an unperturbed system",
+      "options": [
+        "Perpendicular",
+        "Powerful",
+        "Point range",
+        "Perpetual"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "f6495a035a78",
+      "stem": "The ideal machine in which there is no friction present in their part is known as",
+      "options": [
+        "Hypothetical machine",
+        "Hyper machine",
+        "Hypothesis machine",
+        "Hygiene machine"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "0cf1912bddc0",
+      "stem": "Which is the most abundant for sale fuel globally",
+      "options": [
+        "Coal",
+        "Oil",
+        "Natural gas",
+        "All of them"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "ae51d3ec8d56",
+      "stem": "The estimated reserve of coal present on Earth is",
+      "options": [
         "One million ton",
-        "Three million ton"
+        "Three million ton",
+        "Five million ton",
+        "Seven million ton"
       ],
       "answer": null,
       "answer_source": null,
@@ -131,13 +211,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "1d4132320543",
-      "stem": "Five million ton",
+      "id": "ec0eb99f9cc2",
+      "stem": "Which material undergoes refining and yield gasoline",
       "options": [
-        "Seven million ton",
-        "Which material undergoes refining and yield gasoline",
         "Coal tar",
-        "Natural gas"
+        "Natural gas",
+        "Crude oil",
+        "All of them"
       ],
       "answer": null,
       "answer_source": null,
@@ -147,13 +227,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "b92a839d5fcd",
-      "stem": "Crud oil",
+      "id": "7cffacc8ad12",
+      "stem": "I and natural gas is often extracted from reservoirs by the process of",
       "options": [
-        "All of them",
-        "I and natural gas is often extracted from reservoirs by the process of",
         "Mining",
-        "Drilling"
+        "Drilling",
+        "Digging",
+        "Extraction"
       ],
       "answer": null,
       "answer_source": null,
@@ -163,13 +243,45 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "660f102426aa",
-      "stem": "Uranium -239",
+      "id": "da117e98166c",
+      "stem": "Nuclear power plant harnesses the energy in the nucleus of an atom through process of",
       "options": [
-        "All of them",
-        "The most basic way to harness the biomass fuel is through",
+        "Fission",
+        "Fusion",
+        "Burning",
+        "Lightning"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "583ce47d86a4",
+      "stem": "Nuclear power plant used which of the radioactive material to produce electricity",
+      "options": [
+        "Uranium -235",
+        "Polonium -238",
+        "Uranium -239",
+        "All of them"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "10cdaf0e5a52",
+      "stem": "The most basic way to harness the biomass fuel is through",
+      "options": [
         "Taking",
-        "Harvesting"
+        "Harvesting",
+        "Extraction",
+        "Consumption"
       ],
       "answer": null,
       "answer_source": null,
@@ -179,13 +291,13 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "59fda24e2fdc",
-      "stem": "Extraction",
+      "id": "574e84735680",
+      "stem": "What is the primary component of natural gas",
       "options": [
-        "Consumption",
-        "What is the primary component of natural gas",
         "Carbon dioxide",
-        "Methane"
+        "Methane",
+        "Ethanol",
+        "Nitrogen"
       ],
       "answer": null,
       "answer_source": null,
@@ -195,13 +307,109 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "2ada48bfff39",
-      "stem": "Percentage",
+      "id": "72cbbf740c11",
+      "stem": "Rate of doing work with respect to kind is called",
       "options": [
-        "Kilo joules",
-        "The efficiency of an electric generator is equal in percentage",
-        "If there is an ideal system and the efficiency is 100% so very present it as a",
-        "Depover rating of an electric devices is considered as"
+        "Pressure",
+        "Density",
+        "Power",
+        "Efficiency"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "8f0206d7b93d",
+      "stem": "Which type of quantity power is",
+      "options": [
+        "Vector",
+        "Scalar",
+        "Base",
+        "Non of these"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "5c9fd207699c",
+      "stem": "If a water motor is utilizing a power of 1120 W how many hp are there in it.",
+      "options": [
+        "1 hp",
+        "2.5 hp",
+        "1.5 hp",
+        "2.7 ho"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "a0022d93be6f",
+      "stem": "What is the unit for efficiency",
+      "options": [
+        "Watt",
+        "Joules",
+        "Newton",
+        "No unit"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "0c37b6c14d3f",
+      "stem": "Efficiency of system is always calculated in",
+      "options": [
+        "Kilo watt",
+        "Horse power",
+        "Percentage",
+        "Kilo joules"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "8983966ae614",
+      "stem": "Power rating of an electric devices is considered as",
+      "options": [
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Wattage"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c5f8aa4cd5e9",
+      "stem": "Physicists have calculated that rise and fall of tides dissipate energy at the rate of about",
+      "options": [
+        "10 million megawatt",
+        "5 million megawatt",
+        "4 million megawatt",
+        "2 million megawatt"
       ],
       "answer": null,
       "answer_source": null,
