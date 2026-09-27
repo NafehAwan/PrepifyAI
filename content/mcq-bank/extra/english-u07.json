@@ -1,0 +1,454 @@
+{
+  "subject": "English",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "8b71c0f0d39e",
+      "stem": "\"Mowing\" was written by:",
+      "options": [
+        "William Wordsworth",
+        "Robert Frost",
+        "Alfred Tennyson",
+        "John Keats"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "a4f641604b21",
+      "stem": "Robert Frost was a poet from:",
+      "options": [
+        "England",
+        "America",
+        "Scotland",
+        "India"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "aa1d4cf7d081",
+      "stem": "In \"Mowing\", the speaker is cutting grass with a:",
+      "options": [
+        "lawnmower",
+        "scythe",
+        "knife",
+        "sickle machine"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "ce4daa85cabd",
+      "stem": "In the poem, the only sound beside the wood is:",
+      "options": [
+        "the birds singing",
+        "the scythe whispering to the ground",
+        "the wind blowing",
+        "a stream flowing"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "ea5d25b52971",
+      "stem": "\"My long scythe whispering to the ground\" is an example of:",
+      "options": [
+        "simile",
+        "personification",
+        "rhyme",
+        "onomatopoeia only"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "14f3acca93b2",
+      "stem": "\"The fact is the sweetest dream that labor knows\" suggests that:",
+      "options": [
+        "real, honest work is more satisfying than daydreams",
+        "dreams are better than work",
+        "labour is useless",
+        "facts are boring"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "b203a53eeef9",
+      "stem": "The poem celebrates the:",
+      "options": [
+        "dignity of hard work",
+        "life in cities",
+        "joy of wealth",
+        "love of travel"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "012ea998a642",
+      "stem": "A \"scythe\" is:",
+      "options": [
+        "a long-handled tool with a curved blade for cutting grass",
+        "a musical instrument",
+        "a type of snake",
+        "a farm animal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "1c5bfceb3c2e",
+      "stem": "\"Mowing\" has fourteen lines, which means it is a:",
+      "options": [
+        "ballad",
+        "sonnet",
+        "limerick",
+        "haiku"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "a9bb1d91a61a",
+      "stem": "The speaker says the work was \"no dream of the gift of idle hours\". This means the work was:",
+      "options": [
+        "real and earnest, not lazy fantasy",
+        "a dream he had while sleeping",
+        "a gift from fairies",
+        "done in idle hours"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "199c2b9e888b",
+      "stem": "In the poem, \"fay or elf\" refers to:",
+      "options": [
+        "farmers",
+        "fairies",
+        "snakes",
+        "flowers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "4b6985dfe219",
+      "stem": "While mowing, the speaker scares a:",
+      "options": [
+        "bright green snake",
+        "little rabbit",
+        "flock of birds",
+        "stray dog"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "ddbb6e38012e",
+      "stem": "\"Swale\" means:",
+      "options": [
+        "a low, marshy piece of land",
+        "a high mountain",
+        "a sandy beach",
+        "a busy road"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "368286c98eeb",
+      "stem": "A farmer feels proud after harvesting his crop with his own hands, even though it was tiring. This feeling matches the poem's idea that:",
+      "options": [
+        "honest labour brings true satisfaction",
+        "work should be avoided",
+        "only rich people are happy",
+        "machines are better than people"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "9a10fc7b7bf7",
+      "stem": "Choose the synonym of \"earnest\":",
+      "options": [
+        "Serious and sincere",
+        "Careless",
+        "Funny",
+        "Lazy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "9643b40eb88b",
+      "stem": "Choose the antonym of \"feeble\":",
+      "options": [
+        "Weak",
+        "Frail",
+        "Strong",
+        "Faint"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "747a63175977",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Whisper",
+        "Wisper",
+        "Whispar",
+        "Whissper"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "6de74ba83909",
+      "stem": "In \"The scythe whispered softly\", the word \"softly\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a verb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "c53080cd1d59",
+      "stem": "Choose the passive voice of \"He mowed the field.\":",
+      "options": [
+        "The field is mowed by him.",
+        "The field was mowed by him.",
+        "The field has mowed him.",
+        "The field was mowing by him."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "2c00a9da749e",
+      "stem": "\"Pale orchises\" in the poem are a kind of:",
+      "options": [
+        "flower",
+        "insect",
+        "stone",
+        "cloud"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "18be4f903487",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "The poet describe his work.",
+        "The poet describes his work.",
+        "The poet describing his work.",
+        "The poet have described his work."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "4f87459e7bf1",
+      "stem": "The mood of \"Mowing\" is mainly:",
+      "options": [
+        "calm and thoughtful",
+        "angry and loud",
+        "scared",
+        "playful and silly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "5eb549a5df47",
+      "stem": "Choose the synonym of \"labour\":",
+      "options": [
+        "Work",
+        "Rest",
+        "Sleep",
+        "Play"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "c3197144816b",
+      "stem": "In \"the heat of the sun\", \"heat\" is a:",
+      "options": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "c09ac24dcee4",
+      "stem": "Fill in the blank: The speaker takes pride ___ his work.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "8179e808cc1e",
+      "stem": "The word \"idle\" in \"idle hours\" means:",
+      "options": [
+        "busy",
+        "not working or doing nothing useful",
+        "angry",
+        "bright"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "13f887f228b5",
+      "stem": "Choose the indirect speech of: The farmer said, \"I love my work.\"",
+      "options": [
+        "The farmer said that he loved his work.",
+        "The farmer said that I love my work.",
+        "The farmer says that he loved his work.",
+        "The farmer said that he loves my work."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    },
+    {
+      "id": "eb1402abce4e",
+      "stem": "The speaker hears the scythe \"whisper\" but cannot tell exactly what it says. This shows the poet leaves the meaning:",
+      "options": [
+        "open for the reader to think about",
+        "completely explained",
+        "as a joke",
+        "as a list of facts"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 7)"
+    }
+  ]
+}

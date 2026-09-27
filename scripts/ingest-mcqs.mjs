@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { parseQuestions, looksScenario } from "./lib/mcq-parse.mjs";
-import { bankId, fingerprint } from "./lib/bank-id.mjs";
+import { bankId, questionKey } from "./lib/bank-id.mjs";
 import { docxToText } from "./lib/docx-text.mjs";
 import { fixSpelling } from "./lib/spelling.mjs";
 
@@ -107,7 +107,7 @@ for (const name of fs.readdirSync(args.in).sort()) {
     const byChapter = banks.get(subject);
     if (!byChapter.has(q.chapter_seq)) byChapter.set(q.chapter_seq, []);
     byChapter.get(q.chapter_seq).push({
-      id: bankId(rule.subject, q.chapter_seq, q.stem),
+      id: bankId(rule.subject, q.chapter_seq, q.stem, q.options),
       stem: q.stem,
       options: q.options,
       answer: q.answer,
@@ -124,20 +124,21 @@ for (const name of fs.readdirSync(args.in).sort()) {
   report.push({ name, subject: rule.subject, layout, parsed: questions.length, kept, keyed, key });
 }
 
-// Drop questions that repeat a stem within the same chapter — several files
-// overlap, and a test must never ask the same thing twice.
+// Drop questions that repeat within the same chapter — several files overlap,
+// and a test must never ask the same thing twice. Stem AND options must match:
+// a generic stem like "Choose the correct sentence:" heads many questions.
 let duplicates = 0;
 for (const byChapter of banks.values()) {
   for (const [seq, list] of byChapter) {
     const seen = new Set();
     const unique = [];
     for (const q of list) {
-      const fingerprint = q.stem.toLowerCase().replace(/[^a-z0-9]/g, "");
-      if (seen.has(fingerprint)) {
+      const key = questionKey(q.stem, q.options);
+      if (seen.has(key)) {
         duplicates++;
         continue;
       }
-      seen.add(fingerprint);
+      seen.add(key);
       unique.push(q);
     }
     byChapter.set(seq, unique);
@@ -153,10 +154,10 @@ for (const [subject, byChapter] of banks) {
     const file = path.join(outDir, `${SUBJECT_SLUG[subject]}-u${String(seq).padStart(2, "0")}.json`);
     if (!fs.existsSync(file)) continue;
     const previous = new Map(
-      JSON.parse(fs.readFileSync(file, "utf8")).questions.map((q) => [fingerprint(q.stem), q]),
+      JSON.parse(fs.readFileSync(file, "utf8")).questions.map((q) => [questionKey(q.stem, q.options), q]),
     );
     for (const q of list) {
-      const old = previous.get(fingerprint(q.stem));
+      const old = previous.get(questionKey(q.stem, q.options));
       if (q.answer !== null || !old) continue;
       if (old.answer !== null) {
         q.answer = old.answer;

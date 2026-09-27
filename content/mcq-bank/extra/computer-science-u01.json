@@ -3,7 +3,7 @@
   "chapter_seq": 1,
   "questions": [
     {
-      "id": "e73566b1281a",
+      "id": "5b57fd7083b8",
       "stem": "Identify the system that exists independently of human design and invention.",
       "options": [
         "Solar system",
@@ -19,7 +19,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "ddf5c6fcbf02",
+      "id": "3a277ae8ac67",
       "stem": "During the execute stage of the fetch-decode-execute cycle, which component actively transforms data using logic gates, while the others fetch, decode or hold data?",
       "options": [
         "Control Unit (CU)",
@@ -35,7 +35,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "1172601951be",
+      "id": "d81e6fc4dc46",
       "stem": "Which memory component temporarily stores active programs and data during execution but loses its contents when the power is turned off?",
       "options": [
         "Hard disk",
@@ -51,7 +51,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "c6a5f9128221",
+      "id": "ac13c9469294",
       "stem": "Whose invention provided the conceptual foundation for modern programmable computers?",
       "options": [
         "Alan Turing",
@@ -67,7 +67,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "94358fc29f27",
+      "id": "e45a36380f41",
       "stem": "If a computer starts successfully but no application software can run, which of the following software is most likely still functioning?",
       "options": [
         "MS Word",
@@ -83,7 +83,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "78a14f2eca4b",
+      "id": "ccf771860ed4",
       "stem": "A computer executes instructions accurately because one CPU component directs the activities of all other components. Which function does this component perform?",
       "options": [
         "Perform calculations",
@@ -99,7 +99,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "58499715d78a",
+      "id": "41a65780573c",
       "stem": "Which type of memory is located closest to the CPU and stores frequently accessed data for faster processing?",
       "options": [
         "RAM",
@@ -115,7 +115,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "3bf8649b33ee",
+      "id": "560fce034e8a",
       "stem": "A system developed to solve a particular human need is classified as an artificial system because it:",
       "options": [
         "occurs naturally in the environment",
@@ -131,7 +131,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "a8f04eef182f",
+      "id": "5bc947eb3b87",
       "stem": "Which of the following storage devices generally has the largest storage capacity in a typical modern PC?",
       "options": [
         "SSD (solid state drive)",
@@ -147,7 +147,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "82d66497fd8f",
+      "id": "144c0e643b15",
       "stem": "A computer stores both program instructions and data in the same memory before execution. This feature is based on which concept?",
       "options": [
         "Stored-program concept",
@@ -163,7 +163,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7609647fcfe2",
+      "id": "32b367e8532a",
       "stem": "A user wants to organize numerical data, perform calculations and create charts. Which software is most suitable?",
       "options": [
         "Linux",
@@ -179,7 +179,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "584acee518d1",
+      "id": "8930c261be03",
       "stem": "If a computer stores information in the smallest possible binary form, which unit is being used?",
       "options": [
         "Byte",
@@ -195,7 +195,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "f52d56bd2dbb",
+      "id": "42a7c9227eb6",
       "stem": "A team is assigned to develop an operating system instead of assembling computer hardware. Which area of work does this task belong to?",
       "options": [
         "Manufacturing processors",
@@ -211,7 +211,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "4b8f0b47a25d",
+      "id": "f1ee72d031d4",
       "stem": "A teacher wants to convert a printed worksheet into an editable digital document. Which device should be used?",
       "options": [
         "Monitor",
@@ -227,7 +227,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "960d70b02f56",
+      "id": "3d8f46bd4b6d",
       "stem": "A computer loses the contents of its working memory when power is turned off, while another storage device keeps its data. This difference is mainly due to:",
       "options": [
         "Volatility of the memory",
@@ -243,7 +243,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "abe9de8f297b",
+      "id": "5182d47e9b3a",
       "stem": "Which set of symbols is sufficient to represent all data and instructions in a digital computer?",
       "options": [
         "0 to 9",
@@ -259,7 +259,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "55c4896b9ebf",
+      "id": "52c03f7eecf8",
       "stem": "A network gives each computer its own separate connection to a central device. Which is a direct advantage of this arrangement?",
       "options": [
         "Failure of one workstation does not affect the others",
@@ -275,7 +275,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7c4f67487908",
+      "id": "80bf1e7151f5",
       "stem": "Which component interprets and executes program instructions while coordinating all processing in a computer?",
       "options": [
         "RAM",
@@ -291,7 +291,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b8cd26907d45",
+      "id": "5a81bad03cc3",
       "stem": "A student scans old photos, types a report in MS Word and then prints it. How are the scanner, MS Word and the printer classified by function?",
       "options": [
         "Output, system software, input",
@@ -307,7 +307,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "bdce4dd6313a",
+      "id": "0020d33c7880",
       "stem": "A pyramid shows CPU registers at the top (smallest, fastest, costliest), then cache, then RAM, and the hard disk at the bottom (largest, slowest, cheapest). This arrangement illustrates the:",
       "options": [
         "Memory hierarchy",
@@ -323,7 +323,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "6ccaf9779a1c",
+      "id": "049052ab3694",
       "stem": "A gamer's high-graphics game runs very slowly. He wants the CPU to reach game data much faster than reading it from the hard drive. Which component should he upgrade?",
       "options": [
         "Hard drive capacity",
@@ -339,7 +339,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "5fd03679f940",
+      "id": "f6aec489c11c",
       "stem": "A program calculates student grades. The Control Unit directs the flow and the result goes to the monitor. Which part actually calculates the average marks?",
       "options": [
         "Control Unit",
@@ -355,7 +355,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7f083aa03823",
+      "id": "74c87272560b",
       "stem": "Fatima saves her data on a USB drive, unplugs it overnight, and finds all her data still there the next day. This shows the USB drive is a:",
       "options": [
         "Volatile storage device",
@@ -371,7 +371,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "3909e777f50f",
+      "id": "2913251924f0",
       "stem": "A teacher shows three pictures: a student typing on a keyboard, the CPU showing \"Processing\", and a printer producing a report. What do the three steps represent?",
       "options": [
         "Output, processing, input",
@@ -387,7 +387,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b63c898a1115",
+      "id": "cdb5833a8a61",
       "stem": "A new laptop (16 GB RAM, 512 GB SSD) costs five times more than an old one (4 GB RAM, 256 GB HDD). The price difference is MOSTLY due to the new laptop having:",
       "options": [
         "A larger screen",
@@ -403,7 +403,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "4f4f38b9bb86",
+      "id": "83480b28e45d",
       "stem": "A hospital system takes heartbeat data, compares it with normal levels and alerts a nurse if the heart stops. This describes the basic functions of a computer system as:",
       "options": [
         "Artificial system",
@@ -419,7 +419,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "bb7276727f95",
+      "id": "d28f7ef219e6",
       "stem": "During data communication, information travels through a fibre-optic cable from one device to another. The fibre-optic cable is the:",
       "options": [
         "Sender",
@@ -435,7 +435,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "621afc7f66ee",
+      "id": "b7c40bd3e0fb",
       "stem": "A school has computer labs in two cities, each with its own local network, and the two networks are joined so teachers can share one database. The connection between the two is best described as a:",
       "options": [
         "PAN",
@@ -451,7 +451,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "f34585f465f4",
+      "id": "11e5648cbd9c",
       "stem": "Student A says, \"Hardware is useless without software.\" Student B says, \"Software cannot run without hardware.\" Which conclusion is correct?",
       "options": [
         "Hardware is more important than software",
@@ -467,7 +467,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "93dd8d00fdbe",
+      "id": "e0dfc8967df2",
       "stem": "A student uses Wi-Fi to open a learning portal hosted in another country; the data passes through several interconnected networks. Which technology mainly enables this?",
       "options": [
         "LAN",

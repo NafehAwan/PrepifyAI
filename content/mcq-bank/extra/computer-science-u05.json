@@ -3,7 +3,7 @@
   "chapter_seq": 5,
   "questions": [
     {
-      "id": "f949774fe7fa",
+      "id": "836bddb665ea",
       "stem": "Which best describes the difference between Artificial Intelligence (AI) and Machine Learning (ML)?",
       "options": [
         "They are the same technology with different names",
@@ -19,7 +19,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "12db1ce7debc",
+      "id": "4cb6b8115663",
       "stem": "Which pair names the two main types of Machine Learning?",
       "options": [
         "Deep learning and neural networks",
@@ -35,7 +35,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "e5060eff1625",
+      "id": "7bb84c4a9f98",
       "stem": "In supervised machine learning, what is the main role of labelled data?",
       "options": [
         "To find hidden patterns without categories",
@@ -51,7 +51,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7815045f6d9c",
+      "id": "3cfea4ba3e96",
       "stem": "A data scientist's dataset has no predefined labels, and the algorithm must find hidden patterns and group similar points. This approach is:",
       "options": [
         "Supervised learning",
@@ -67,7 +67,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "00b088d734bd",
+      "id": "ed44c8bb7316",
       "stem": "How is Computer Vision related to AI?",
       "options": [
         "It is completely separate from AI",
@@ -83,7 +83,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "18b54f84ab35",
+      "id": "3fdfe82ee960",
       "stem": "The technology that lets computers understand, interpret and respond to human language in spoken and written form is:",
       "options": [
         "Computer vision",
@@ -99,7 +99,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "faf55bfa9492",
+      "id": "d3a8d738a170",
       "stem": "Which statement correctly distinguishes speech recognition from Natural Language Processing?",
       "options": [
         "Speech recognition turns spoken words into text, while NLP understands and processes language",
@@ -115,7 +115,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "34c354f8f444",
+      "id": "266cc0d62b70",
       "stem": "An AI medical assistant uses stored expert knowledge, rules and reasoning to analyze symptoms and suggest solutions. What type of AI system is this?",
       "options": [
         "A storage system that only saves information",
@@ -131,7 +131,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "dab7ef58d328",
+      "id": "a16968ce5a9c",
       "stem": "What is the first stage in developing an expert system?",
       "options": [
         "Applying rules to find solutions",
@@ -147,7 +147,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "626737bdb5cf",
+      "id": "78ba020a9e48",
       "stem": "Which correctly distinguishes a chatbot from a virtual assistant?",
       "options": [
         "A chatbot uses only text and a virtual assistant only voice",
@@ -163,7 +163,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b3e4dbd01815",
+      "id": "f2139344bb96",
       "stem": "What is the main purpose of cloud computing?",
       "options": [
         "To store data only on local computers",
@@ -179,7 +179,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7d2b9e2600dc",
+      "id": "a2b377aef259",
       "stem": "Which cloud model has resources owned, operated and maintained by a service provider and delivered over the Internet to many users?",
       "options": [
         "Private cloud",
@@ -195,7 +195,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "5e750d918960",
+      "id": "782d64a268ee",
       "stem": "Which statement correctly distinguishes a private cloud from a public cloud?",
       "options": [
         "A private cloud belongs to a provider and a public cloud to one organization",
@@ -211,7 +211,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "a3967125a875",
+      "id": "4f8d8da1c927",
       "stem": "In AI in education, which of these is NOT a benefit?",
       "options": [
         "Adapting to each student's learning needs",
@@ -227,7 +227,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "bdd38fb669eb",
+      "id": "cef99cc53130",
       "stem": "Which ethical issues are specifically associated with ChatGPT?",
       "options": [
         "It cannot understand any language",
@@ -243,7 +243,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "61ea9598b5c2",
+      "id": "b11964f84d63",
       "stem": "Which correctly identifies a limitation of AI algorithms?",
       "options": [
         "They are always 100% accurate",
@@ -259,7 +259,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "0009023f3b98",
+      "id": "671fd6e17480",
       "stem": "What is a hybrid cloud?",
       "options": [
         "A cloud that only stores data",
@@ -275,7 +275,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "93df79b0fdcd",
+      "id": "2c3e6ea0a949",
       "stem": "Which describes a possible negative impact of AI-based automation?",
       "options": [
         "It creates unlimited jobs in every sector",
@@ -291,7 +291,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b6ab9db152c9",
+      "id": "7475c7f494c9",
       "stem": "A hospital's AI analyzes X-rays and MRI scans to spot early cancer after being trained on thousands of images already labelled by doctors. Which type of machine learning is this?",
       "options": [
         "Unsupervised learning",
@@ -307,7 +307,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "8faeb59b354f",
+      "id": "67368e3cbf4b",
       "stem": "A bank's AI predicts loan defaulters from income, debt, credit history, age, gender and mobile number. Which data should be removed from the model to keep it fair and relevant?",
       "options": [
         "Monthly income and credit history",
@@ -323,7 +323,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "35b01cf1e982",
+      "id": "382dc0bccbfc",
       "stem": "The steps are: collect training data, create an algorithm, learning process, create a training model, predict results. This sequence is:",
       "options": [
         "Building an expert system",
@@ -339,7 +339,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "479362cc56e2",
+      "id": "e56434cbf009",
       "stem": "A school's AI adapts lessons to each student, helps teachers grade work and helps administrators schedule courses. This is AI applied in:",
       "options": [
         "Healthcare",
@@ -355,7 +355,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "9a219a871e12",
+      "id": "baef3d64379c",
       "stem": "An e-commerce website runs a program that answers customer questions instantly through text, 24/7. This is an example of a:",
       "options": [
         "Expert system",
@@ -371,7 +371,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "07d6798a44e0",
+      "id": "54b2fe32cf99",
       "stem": "Model X shares resources with many organizations over the Internet; Model Y is dedicated to one organization; Model Z combines both. What are X, Y and Z?",
       "options": [
         "X private, Y public, Z hybrid",
@@ -387,7 +387,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b2ed8f343ad1",
+      "id": "c7008c197a87",
       "stem": "A university worries that students use ChatGPT to write essays, harming learning and fair assessment. Which ethical issues are relevant?",
       "options": [
         "Only data privacy",
@@ -403,7 +403,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "7f4059e596a4",
+      "id": "427ae7ba332a",
       "stem": "A farmer uses AI drones to monitor crops, detect insect attacks and spray pesticides, and cameras with computer vision to check livestock health. This is AI applied in:",
       "options": [
         "Healthcare",
@@ -419,7 +419,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "bf468fd22314",
+      "id": "2ca51f311801",
       "stem": "An AI tool corrects spelling and grammar, helps improve writing, but is not 100% accurate and cannot replace manual proofreading. Which tool is it?",
       "options": [
         "ChatGPT",
@@ -435,7 +435,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "b32d077ab83e",
+      "id": "07b93739a48b",
       "stem": "A company builds AI for self-driving cars that uses sensors, cameras and radar to travel without a driver. Which field of AI is mainly applied?",
       "options": [
         "Natural Language Processing",
@@ -451,7 +451,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "1f3fb8c562a1",
+      "id": "25cf4945936c",
       "stem": "A text-to-speech AI tool offers about 500 voices in over 100 languages, and its developers must handle personal data carefully and avoid biased training data. Which tool is this?",
       "options": [
         "ChatGPT",
@@ -467,7 +467,7 @@
       "source_file": "MCQs chapter # (1-7) final done new.pdf"
     },
     {
-      "id": "9e56fcb8ba8b",
+      "id": "938419e9a43b",
       "stem": "A military uses AI to detect cyber threats, find suspicious activity, prevent unauthorized access and train soldiers in simulated wars. This is AI applied in:",
       "options": [
         "Healthcare",

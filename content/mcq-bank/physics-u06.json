@@ -3,7 +3,7 @@
   "chapter_seq": 6,
   "questions": [
     {
-      "id": "0386cc0ac14c",
+      "id": "e8b3bf25f6f0",
       "stem": "A football is kicked by a boy which type of energy explain this",
       "options": [
         "Solar",
@@ -19,7 +19,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "34d4b57b94fc",
+      "id": "52ba9b86e789",
       "stem": "The shock absorber of motor bike help to absorb energy. Which type of energy is absorbed",
       "options": [
         "Kinetic",
@@ -35,7 +35,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "645d15c7734e",
+      "id": "5edb5e10906b",
       "stem": "We are going on an annual trip in bus which type of energy is converted to kinetic energy of bus",
       "options": [
         "Mechanical",
@@ -51,7 +51,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "6cfa6614f2fb",
+      "id": "2e984aeff9c8",
       "stem": "In the process of conversion it is not possible to convert all the energy into useful form due to",
       "options": [
         "Energy",
@@ -67,7 +67,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0a0dcece6588",
+      "id": "50b9e6a79680",
       "stem": "If one form of energy is completely converted to other form of energy this is known as",
       "options": [
         "Conservation",
@@ -83,7 +83,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "2ee4d0ae84ce",
+      "id": "e587a178a7fa",
       "stem": "If there is a lot of friction is present between the parts of machine kinetic energy is converted into",
       "options": [
         "Light",
@@ -99,7 +99,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0be75d648e8c",
+      "id": "dd63d21db501",
       "stem": "Most of the daily life energy we use can come from which source",
       "options": [
         "Renewable",
@@ -115,7 +115,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "98fd34417460",
+      "id": "1419e42f76a6",
       "stem": "About 33% of our total non renewable energy is taken from",
       "options": [
         "Coal",
@@ -132,7 +132,7 @@
       "answer_confidence": "low"
     },
     {
-      "id": "553aa6304717",
+      "id": "c143b3bedbf2",
       "stem": "Which type of energy resources raises various social concerns that involve impact on communities",
       "options": [
         "Non renewable",
@@ -149,7 +149,7 @@
       "rejected": "Ambiguous: both renewable projects (dams) and non-renewable ones (mining) raise concerns for communities."
     },
     {
-      "id": "bc503a784425",
+      "id": "e13139d5e925",
       "stem": "The motion of a body that continues forever in an undisturbed system is called",
       "options": [
         "Perpendicular",
@@ -165,7 +165,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "f6495a035a78",
+      "id": "280642196094",
       "stem": "The ideal machine in which there is no friction present in their part is known as",
       "options": [
         "Hypothetical machine",
@@ -181,7 +181,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0cf1912bddc0",
+      "id": "48aa92358ca7",
       "stem": "Which is the most abundant for sale fuel globally",
       "options": [
         "Coal",
@@ -198,7 +198,7 @@
       "answer_confidence": "low"
     },
     {
-      "id": "ae51d3ec8d56",
+      "id": "fb0d86ad35f8",
       "stem": "The estimated reserve of coal present on Earth is",
       "options": [
         "One million ton",
@@ -215,7 +215,7 @@
       "rejected": "The figures are wrong by orders of magnitude (world coal reserves are around a trillion tonnes), so no option is correct."
     },
     {
-      "id": "ec0eb99f9cc2",
+      "id": "50900b752fbd",
       "stem": "Which material undergoes refining and yield gasoline",
       "options": [
         "Coal tar",
@@ -231,7 +231,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "5dc0c916fa42",
+      "id": "253c5e7f00bb",
       "stem": "Oil and natural gas are usually extracted from underground reservoirs by",
       "options": [
         "Mining",
@@ -247,7 +247,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "da117e98166c",
+      "id": "e1448e789eb0",
       "stem": "Nuclear power plant harnesses the energy in the nucleus of an atom through process of",
       "options": [
         "Fission",
@@ -263,7 +263,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "583ce47d86a4",
+      "id": "3667ad2b9968",
       "stem": "Nuclear power plant used which of the radioactive material to produce electricity",
       "options": [
         "Uranium -235",
@@ -279,7 +279,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "10cdaf0e5a52",
+      "id": "1564e3cbaaf6",
       "stem": "The most basic way to harness the biomass fuel is through",
       "options": [
         "Taking",
@@ -296,7 +296,7 @@
       "rejected": "No correct option: biomass is harnessed by burning it, which is not offered."
     },
     {
-      "id": "574e84735680",
+      "id": "75eb7703f5f0",
       "stem": "What is the primary component of natural gas",
       "options": [
         "Carbon dioxide",
@@ -312,7 +312,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "e750db81b305",
+      "id": "931fb5342051",
       "stem": "The rate of doing work with respect to time is called",
       "options": [
         "Pressure",
@@ -328,7 +328,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "8f0206d7b93d",
+      "id": "99285c764164",
       "stem": "Which type of quantity power is",
       "options": [
         "Vector",
@@ -344,7 +344,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "5c9fd207699c",
+      "id": "6c0ab2cfdfb7",
       "stem": "If a water motor is utilizing a power of 1120 W how many hp are there in it.",
       "options": [
         "1 hp",
@@ -360,7 +360,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "a0022d93be6f",
+      "id": "7e1396d8402a",
       "stem": "What is the unit for efficiency",
       "options": [
         "Watt",
@@ -376,7 +376,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0c37b6c14d3f",
+      "id": "696301566190",
       "stem": "Efficiency of system is always calculated in",
       "options": [
         "Kilo watt",
@@ -392,7 +392,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "8983966ae614",
+      "id": "8fd860e6b64f",
       "stem": "Power rating of an electric devices is considered as",
       "options": [
         "Voltage",
@@ -408,7 +408,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "c5f8aa4cd5e9",
+      "id": "04af4f8e0099",
       "stem": "Physicists have calculated that rise and fall of tides dissipate energy at the rate of about",
       "options": [
         "10 million megawatt",
@@ -425,7 +425,7 @@
       "answer_confidence": "low"
     },
     {
-      "id": "14db1ee28274",
+      "id": "4b1f9f70d8f9",
       "stem": "A student pushes a wall with a force of 200 N for 2 minutes, but the wall does not move. The work done on the wall is:",
       "options": [
         "400 J",
@@ -441,7 +441,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "1a0975f5bc9a",
+      "id": "b521e73bb486",
       "stem": "A car and a motorcycle move at the same speed. Which has greater kinetic energy?",
       "options": [
         "Motorcycle",
@@ -457,7 +457,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "148a292256d3",
+      "id": "246e717f0527",
       "stem": "If speed doubles, kinetic energy becomes:",
       "options": [
         "Double",
@@ -473,7 +473,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "d5c4473f23e9",
+      "id": "b7db771e8b48",
       "stem": "A 2 kg object moves at 4 m/s. Its kinetic energy is:",
       "options": [
         "8 J",
@@ -489,7 +489,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "802bf59e6004",
+      "id": "094a03a1aeca",
       "stem": "A ball is thrown vertically upward. At the highest point:",
       "options": [
         "KE maximum",
@@ -505,7 +505,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "d51cb8ede31a",
+      "id": "9526c8262915",
       "stem": "Which is a renewable energy source?",
       "options": [
         "Coal",
@@ -521,7 +521,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "0a300b6dff06",
+      "id": "8cd0f7f7d9ac",
       "stem": "Which energy is stored in food?",
       "options": [
         "Sonic",
@@ -537,7 +537,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "def499041feb",
+      "id": "9caf3f8a1a8b",
       "stem": "Two balls are dropped from the same height. One is twice as massive. Just before hitting the ground:",
       "options": [
         "Heavier ball has more KE",
@@ -553,7 +553,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "71dd4cfe0086",
+      "id": "1097740c968a",
       "stem": "A lamp converts electrical energy mostly into:",
       "options": [
         "Light and heat",
@@ -569,7 +569,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "0b0b31e9bade",
+      "id": "3f06287a5a8c",
       "stem": "Potential energy depends on:",
       "options": [
         "Height",
@@ -585,7 +585,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "aa8a4c98d22d",
+      "id": "d38a3d315924",
       "stem": "Which statement is TRUE?",
       "options": [
         "Work can be done without force",
@@ -601,7 +601,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "0743ab19d27e",
+      "id": "4ae15e0d5e26",
       "stem": "A hydroelectric plant mainly converts:",
       "options": [
         "Chemical → Electrical",
@@ -617,7 +617,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "94fdf8ae00fd",
+      "id": "dea113ea9d82",
       "stem": "A machine uses 500 J and delivers 400 J. Efficiency?",
       "options": [
         "20%",
@@ -633,7 +633,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "9e0265ebe535",
+      "id": "9bd8d81f645f",
       "stem": "A 60 W bulb uses 120 J energy in:",
       "options": [
         "1 s",
@@ -649,7 +649,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "2a86288d1e37",
+      "id": "6c611b4d8eed",
       "stem": "A moving object must possess:",
       "options": [
         "Potential energy only",
@@ -665,7 +665,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "8230bd297fcc",
+      "id": "a301e4d4ec8b",
       "stem": "Why are renewable sources preferred?",
       "options": [
         "Unlimited and environmentally friendly",
@@ -681,7 +681,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "413cbd1a75ef",
+      "id": "8b20ed32ac74",
       "stem": "A student lifts a bag slowly and then quickly to the same height. Which is true?",
       "options": [
         "More work when lifted quickly",
@@ -697,7 +697,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "c4478b245f14",
+      "id": "a69f4843c857",
       "stem": "A 500 N piano is lifted from 2 m to 8 m. Increase in PE:",
       "options": [
         "3000 J",
@@ -713,7 +713,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "e066de6ba2db",
+      "id": "882bf4d08f82",
       "stem": "If momentum of an object becomes 3 times while mass remains constant, kinetic energy becomes:",
       "options": [
         "3 times",
@@ -729,7 +729,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "16164404bbf2",
+      "id": "783c7ccb998e",
       "stem": "Two objects have equal momentum. Which one has greater kinetic energy?",
       "options": [
         "More massive object",
@@ -745,7 +745,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "c7d967f12bb8",
+      "id": "f0ab4d994486",
       "stem": "Which unit is equivalent to a joule?",
       "options": [
         "N/m",
@@ -761,7 +761,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "6ca7bd9dc33f",
+      "id": "813c46cd8f41",
       "stem": "Which quantity has the same SI unit as work?",
       "options": [
         "Force",
@@ -777,7 +777,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "8827a6099632",
+      "id": "479727f9ca6b",
       "stem": "The major component of biogas is:",
       "options": [
         "Carbon dioxide",
@@ -793,7 +793,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "603da31e9cb3",
+      "id": "f8cdec8e2c57",
       "stem": "Biogas is commonly produced from:",
       "options": [
         "Animal dung",
@@ -809,7 +809,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "16edae7e6aed",
+      "id": "b2c548be8577",
       "stem": "Which quantity has unit kg m²/s²?",
       "options": [
         "Power",
@@ -825,7 +825,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "d5f1f01a1380",
+      "id": "db7571c0206e",
       "stem": "1-Watt equals:",
       "options": [
         "1 J × s",
@@ -841,7 +841,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "f2fc1356d90c",
+      "id": "4377d5faa264",
       "stem": "Which of the following is NOT a fossil fuel?",
       "options": [
         "Coal",
@@ -857,7 +857,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "a56f99f73d84",
+      "id": "939042deef32",
       "stem": "Which gas released during fossil fuel combustion contributes most to global warming?",
       "options": [
         "Oxygen",
@@ -873,7 +873,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "4c44443d3c28",
+      "id": "101d3ddc5c10",
       "stem": "Which environmental issue is directly linked to excessive fossil fuel use?",
       "options": [
         "Deforestation only",
@@ -889,7 +889,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "ade77f3a7237",
+      "id": "4713f3686512",
       "stem": "Which of the following is a commonly used nuclear fuel?",
       "options": [
         "Coal",
@@ -905,7 +905,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "f30265dd323f",
+      "id": "269f658cb43d",
       "stem": "Biogas is produced in the absence of:",
       "options": [
         "Water",
@@ -921,7 +921,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "1f8ab80a0c44",
+      "id": "e9d27efd57bc",
       "stem": "The process used in most nuclear power plants is:",
       "options": [
         "Fusion",
@@ -937,7 +937,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "64e5a9af430e",
+      "id": "0d161204341f",
       "stem": "In nuclear fission, a heavy nucleus:",
       "options": [
         "Combines with another nucleus",
@@ -953,7 +953,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "ac97a306e068",
+      "id": "34135820dba8",
       "stem": "Biogas production helps reduce:",
       "options": [
         "Organic waste accumulation",
@@ -969,7 +969,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "fbcafd3cba5f",
+      "id": "ff370e1a3626",
       "stem": "In a nuclear power plant, heat produced by fission is used to:",
       "options": [
         "Melt uranium",
@@ -985,7 +985,7 @@
       "source_file": "Phy-Unit 6 MCQS.docx"
     },
     {
-      "id": "6a501ecb5d2f",
+      "id": "3a9d0595f84d",
       "stem": "The leftover material after biogas production is useful as:",
       "options": [
         "Cement",

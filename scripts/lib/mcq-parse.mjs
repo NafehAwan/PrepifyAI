@@ -114,7 +114,7 @@ function pickStem(stemLines) {
 function makeQuestion(stemLines, options, answerLetter, chapter) {
   if (options.length !== 4) return null;
   if (stemLines.some((l) => l.includes(FIGURE)) || options.some((o) => o.includes(FIGURE))) return null;
-  const normalised = options.map((o) => clean(o).toLowerCase());
+  const normalised = options.map((o) => clean(o));
   if (new Set(normalised).size !== 4) return null; // a repeated option makes the question ambiguous
   const stem = clean(pickStem(stemLines)).replace(STEM_NUM_RE, "");
   if (stem.length < 8) return null;

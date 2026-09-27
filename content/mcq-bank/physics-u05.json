@@ -3,7 +3,7 @@
   "chapter_seq": 5,
   "questions": [
     {
-      "id": "2eef86c59afb",
+      "id": "d92a0eadfd82",
       "stem": "Which state of matter required a large force for deformation",
       "options": [
         "Solid",
@@ -19,7 +19,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0bf1d7d36d69",
+      "id": "4e6d885ccdd2",
       "stem": "When a tennis racket hits a ball the shape of ball is distorted and regain its original shape this property is",
       "options": [
         "Pressure",
@@ -35,7 +35,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "d60c31114fd4",
+      "id": "52d05311883d",
       "stem": "A girl is playing with clay and after pressing it is completely deformed we said this material as",
       "options": [
         "Elastic",
@@ -51,7 +51,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "e7c11b4fbde2",
+      "id": "14cc121c2bca",
       "stem": "If the applied force exceeds the limit of proportionality in hooks law force and extension are no longer directly positional and the graph become",
       "options": [
         "Straight",
@@ -67,7 +67,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "c511d86f8242",
+      "id": "a9b27055fdd0",
       "stem": "A teacher wears high-heeled shoes one day and flat shoes the next day. Which shoes exert more pressure on the floor?",
       "options": [
         "Heel shoes",
@@ -83,7 +83,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "16ca5bb0152b",
+      "id": "970eb5de8002",
       "stem": "Flat shoes exert much less pressure than high heels because their area is",
       "options": [
         "Small",
@@ -99,7 +99,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0e9fde8c7072",
+      "id": "c930c31ec60a",
       "stem": "A suction cup sticks to a wall easily due to",
       "options": [
         "Water pressure",
@@ -115,7 +115,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "6e0057e4a4d8",
+      "id": "7f9ad79a8e05",
       "stem": "At sea level the atmosphere will push down mercury in the tube and make it rise up in a tube to a height of approximately",
       "options": [
         "29.92 mm",
@@ -131,7 +131,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "6263f70bfac8",
+      "id": "6a62e7a5e252",
       "stem": "The height of Mount Everest from the sea level is approximately equal to",
       "options": [
         "4.4 km",
@@ -147,7 +147,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0a10cbee7300",
+      "id": "f7106fc09e77",
       "stem": "Galvanometer meter is a device in which hooks law is applicable for which purpose this device is used",
       "options": [
         "Charge",
@@ -163,7 +163,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "0e36af89574e",
+      "id": "35bbafc12944",
       "stem": "If the mass of a person sitting on a chair is doubled what would be the effect on pressure on chair",
       "options": [
         "Double",
@@ -179,7 +179,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "9a9959322442",
+      "id": "99d202daaf78",
       "stem": "The unit of pressure which is used in metrology and whether maps is",
       "options": [
         "Tar",
@@ -195,7 +195,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "d450912d23f7",
+      "id": "506d9b753720",
       "stem": "The liquid barometer works on a principal of",
       "options": [
         "Hydrostatic equilibrium",
@@ -212,7 +212,7 @@
       "answer_confidence": "low"
     },
     {
-      "id": "542593050ad0",
+      "id": "3595db18b6da",
       "stem": "If we are climbing a mushkpuri track we feel suffocation this is due to",
       "options": [
         "Low atmospheric pressure",
@@ -228,7 +228,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "56371e08bf7f",
+      "id": "e314815297df",
       "stem": "The atmospheric pressure is decreases with height due to decrease in",
       "options": [
         "Power",
@@ -244,7 +244,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "396a2708f1cd",
+      "id": "f7d2c27324a6",
       "stem": "We are standing beside the hernoy lake and experiences that the speed of water at centre is fast as compared to the corners due to",
       "options": [
         "Quantity of water",
@@ -261,7 +261,7 @@
       "rejected": "Premise is unclear and not a Class 9 pressure concept."
     },
     {
-      "id": "d7f8e39c08da",
+      "id": "e8ba4ac541e0",
       "stem": "If we have two containers one is filled with water and other is filled with Mercury and we place a stone in each container one after another the change in liquid pressure is due to",
       "options": [
         "Gravity",
@@ -278,7 +278,7 @@
       "answer_confidence": "low"
     },
     {
-      "id": "3608776b6d7a",
+      "id": "b0cc0b521043",
       "stem": "The device used to calculate the fluid pressure is manometer which liquid is used in it",
       "options": [
         "Water",
@@ -295,7 +295,7 @@
       "rejected": "Two correct options: manometers use water or mercury."
     },
     {
-      "id": "c45036628063",
+      "id": "ff7b961f36f0",
       "stem": "When you dive in the sea, the force exerted on you by the pressure of the water acts",
       "options": [
         "Parallel",
@@ -311,7 +311,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "f34b7cd04d9e",
+      "id": "a0cd528b1d01",
       "stem": "In a device in which pressure is applicable by a force on unit area . Which law describe this",
       "options": [
         "Newton's law",
@@ -327,7 +327,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "4917b4372012",
+      "id": "66742fa24631",
       "stem": "A scuba diver goes deep into the sea to see marine life. The high pressure the diver experiences is due to",
       "options": [
         "Density",
@@ -343,7 +343,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "fbe9ab074774",
+      "id": "621600f3c843",
       "stem": "If the force applied on the brake pedal of a car is doubled over the same area, the pressure",
       "options": [
         "Half",
@@ -359,7 +359,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "93e4e7688f90",
+      "id": "7dbbc77ce738",
       "stem": "In a DG cement factory there is a chiller power plant filled with oil if the engineers want to check the pressure of oil which device would be suitable",
       "options": [
         "Barometer",
@@ -375,7 +375,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "5d052d809baa",
+      "id": "a901b5d834ac",
       "stem": "In system of international units the unit for stress is",
       "options": [
         "Nm",
@@ -392,7 +392,7 @@
       "rejected": "The minus signs in the unit exponents were lost in the source, so no option reads N m⁻² correctly."
     },
     {
-      "id": "af59945707b7",
+      "id": "1e177f2992f4",
       "stem": "One bar is the unit of atmospheric pressure how many pascal are there in one bar",
       "options": [
         "1 x 10²",
@@ -408,7 +408,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "3eea73599354",
+      "id": "b34590284f7f",
       "stem": "A sudden fall in the reading of a barometer usually indicates",
       "options": [
         "Dry weather",
@@ -424,7 +424,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "49f77af3ca1a",
+      "id": "0c2314ab1e39",
       "stem": "Three holes are drilled at different heights in a can full of water. Water spurts out fastest and furthest from which hole?",
       "options": [
         "Lower",
@@ -440,7 +440,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "36a02cbd72cb",
+      "id": "1f5d1077839a",
       "stem": "Three holes are drilled at different heights in a can full of water. Water spurts out slowest and nearest from which hole?",
       "options": [
         "Upper",
@@ -456,7 +456,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "6985b7623920",
+      "id": "738a41ff30ca",
       "stem": "Photo electric effect is a process of particles for this process we have to generate a vacuum which device is more suitable",
       "options": [
         "Barometer",
@@ -473,7 +473,7 @@
       "rejected": "Incoherent premise: none of the listed devices creates a vacuum."
     },
     {
-      "id": "8b529f1e41c7",
+      "id": "a265f192f455",
       "stem": "Which of the following is an example of an elastic material?",
       "options": [
         "Clay",
@@ -489,7 +489,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "d5249baf627d",
+      "id": "2b009e5381e8",
       "stem": "Beyond the elastic limit, a material:",
       "options": [
         "Always breaks immediately",
@@ -505,7 +505,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "ad12448eb002",
+      "id": "abdf2daaf5f1",
       "stem": "The correct mathematical expression of Hooke's law is:",
       "options": [
         "F= x/k",
@@ -521,7 +521,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "779237562f49",
+      "id": "c2fe4a3750e9",
       "stem": "The SI unit of spring constant is:",
       "options": [
         "N",
@@ -537,7 +537,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "6363299e6a29",
+      "id": "92aa420dd05f",
       "stem": "The slope of a force-extension graph gives:",
       "options": [
         "Pressure",
@@ -553,7 +553,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "115b002f0bff",
+      "id": "569e2dac1358",
       "stem": "Hooke’s law is obeyed up to:",
       "options": [
         "Limit of proportionality",
@@ -569,7 +569,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "825e651f712e",
+      "id": "21bf2202539d",
       "stem": "A spring extends 4 cm under a force of 20 N. Under 40 N, the extension will be:",
       "options": [
         "2 cm",
@@ -585,7 +585,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "3ef57a570952",
+      "id": "bfd14ac8c19a",
       "stem": "The maximum stress a material can withstand before fracture is:",
       "options": [
         "Elastic stress",
@@ -601,7 +601,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "c94d54ca9da0",
+      "id": "e47c49ca0219",
       "stem": "The SI unit of pressure is:",
       "options": [
         "Newton",
@@ -617,7 +617,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "bbc0eca860d8",
+      "id": "2f30f911c721",
       "stem": "1 Pascal equals:",
       "options": [
         "1 N/m²",
@@ -633,7 +633,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "2adbf79c1aff",
+      "id": "5fcc11bfebc2",
       "stem": "Pressure increases when:",
       "options": [
         "Area increases",
@@ -649,7 +649,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "ae26701a2988",
+      "id": "06b948655d7a",
       "stem": "A balloon bursts easily when pierced by a pin because:",
       "options": [
         "Pin is heavy",
@@ -665,7 +665,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "d913241022e0",
+      "id": "a3e7c46d21fc",
       "stem": "A sharp knife cuts better because it:",
       "options": [
         "Has greater mass",
@@ -681,7 +681,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "27db26a44096",
+      "id": "5458096b75a0",
       "stem": "A person stands on one foot instead of two. The pressure on the ground:",
       "options": [
         "Halves",
@@ -697,7 +697,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "a7bb0c38e0d4",
+      "id": "47f05e253840",
       "stem": "If a person of mass 50 kg sits on a spring chair and compresses the spring by 0.1m, what is the calculated spring constant k of the chair’s spring? (Take g = 9.8 m/s²)",
       "options": [
         "490 N/m",
@@ -713,7 +713,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "c6e5c1981c3c",
+      "id": "b4511388eaa5",
       "stem": "A mountain climber moves to higher altitude. Atmospheric pressure will:",
       "options": [
         "Increase",
@@ -729,7 +729,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "2804c7d2ead0",
+      "id": "a128f713072d",
       "stem": "One bar equals:",
       "options": [
         "10³ Pa",
@@ -745,7 +745,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "78247c956c08",
+      "id": "00772e5bc528",
       "stem": "1 atmosphere (atm) is equal to:",
       "options": [
         "760 mmHg",
@@ -761,7 +761,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "5d68d0667781",
+      "id": "86e617d20736",
       "stem": "A liquid barometer is used to measure:",
       "options": [
         "Liquid pressure only",
@@ -777,7 +777,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "f066f7cf19f9",
+      "id": "4d54a398a443",
       "stem": "A mercury barometer works on the principle of:",
       "options": [
         "Reflection",
@@ -793,7 +793,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "ce6f33fef625",
+      "id": "67aff4e0c55b",
       "stem": "The unit torr is equivalent to:",
       "options": [
         "1 atm",
@@ -809,7 +809,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "cd307cc0c60a",
+      "id": "d3450ae74fe4",
       "stem": "Pascal's law states that pressure applied to a confined fluid is:",
       "options": [
         "Lost completely",
@@ -825,7 +825,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "831bb904ce74",
+      "id": "8ef6234ae857",
       "stem": "A mechanic uses a hydraulic jack to lift a heavy car with a small effort. This is possible because:",
       "options": [
         "Hooke's law",
@@ -841,7 +841,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "51905a7908a9",
+      "id": "74bf4599cc1a",
       "stem": "The unit for pressure commonly used in weather maps is the millibar (mbar). One millibar 1 mbar is equal to:",
       "options": [
         "1Pa",
@@ -857,7 +857,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "c795b0455a4f",
+      "id": "e0336a9f5b0a",
       "stem": "Drinking through a straw is made possible because the action of sucking achieves which of the following?",
       "options": [
         "It increases the atmospheric pressure outside the straw.",
@@ -873,7 +873,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "b184b035b997",
+      "id": "43f6ae5a94a8",
       "stem": "When a deforming force is removed and an object regains its original shape, the property is called:",
       "options": [
         "Plasticity",
@@ -889,7 +889,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "c3094abc8fc1",
+      "id": "d4fa60e09a63",
       "stem": "Three holes are made in a water tank at different depths. Water comes out fastest from:",
       "options": [
         "Top hole",
@@ -905,7 +905,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "90a215aed81b",
+      "id": "3261c5af9a2b",
       "stem": "Pressure in a liquid depends on:",
       "options": [
         "Depth and density",
@@ -921,7 +921,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "8de966cb16b0",
+      "id": "823d8d209ba1",
       "stem": "If both force and area are doubled, pressure will:",
       "options": [
         "Double",
@@ -937,7 +937,7 @@
       "source_file": "Phy-Unit 5 MCQS.docx"
     },
     {
-      "id": "2c1a6cfa3215",
+      "id": "cdc30ada3104",
       "stem": "Pressure is inversely proportional to:",
       "options": [
         "Force",

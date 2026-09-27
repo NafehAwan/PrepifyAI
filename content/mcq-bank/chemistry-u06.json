@@ -3,7 +3,7 @@
   "chapter_seq": 6,
   "questions": [
     {
-      "id": "f15076a7d0d9",
+      "id": "c727d91f6d11",
       "stem": "How many particles are in one mole of a substance?",
       "options": [
         "6.022 x 10²³",
@@ -19,7 +19,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "fbcd7aa017ee",
+      "id": "eac8f1ecde64",
       "stem": "What is the relationship between mass, moles, and molar mass?",
       "options": [
         "Moles = Mass x Molar Mass",
@@ -35,7 +35,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "0bfd7f24288a",
+      "id": "8d26f9f40e8e",
       "stem": "What does a chemical equation with state symbols represent?",
       "options": [
         "Only the reactants.",
@@ -51,7 +51,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "5d6447e29f1d",
+      "id": "580c503093ad",
       "stem": "In a chemical equation, what do the coefficients indicate?",
       "options": [
         "The number of grams.",
@@ -67,7 +67,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "afe4261bcba9",
+      "id": "7ed879e900cb",
       "stem": "A binary compound is formed from ions Na⁺ and Cl⁻. What is its formula?",
       "options": [
         "Na₂Cl",
@@ -83,7 +83,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "b377573f06e3",
+      "id": "51fe0cb9a724",
       "stem": "What is the molar mass of water (H₂O)?",
       "options": [
         "17.01 g/mol",
@@ -100,7 +100,7 @@
       "rejected": "Two correct options: 18.02 and 18.016 g/mol are the same molar mass at different precision."
     },
     {
-      "id": "25b01cdf57a9",
+      "id": "61b0efb3eafe",
       "stem": "What is the simplest formula of a molecule containing C₆H₁₂O₆?",
       "options": [
         "C₆H₁₂O₆",
@@ -116,7 +116,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "983d474b162e",
+      "id": "8677b0e49163",
       "stem": "If you have 0.5 moles of O₂, how many molecules of O₂ do you have?",
       "options": [
         "6.022×10²³",
@@ -132,7 +132,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "e137a4dc9e2c",
+      "id": "a301086574fc",
       "stem": "What does the formula of a binary compound like MgCl₂ tell us?",
       "options": [
         "It has 2 Magnesium atoms.",
@@ -148,7 +148,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "cb724c9b5693",
+      "id": "f63db279270c",
       "stem": "Which is a reactant in the following equation? C+O₂→CO₂",
       "options": [
         "CO₂",
@@ -164,7 +164,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "436be9905e4c",
+      "id": "027e8584a8b4",
       "stem": "Which of the following equations is balanced?",
       "options": [
         "N₂+H₂→NH₃",
@@ -180,7 +180,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "35cdf729d03c",
+      "id": "4d2a8c4e79f1",
       "stem": "What does the state symbol \"(s)\" indicate in a chemical equation?",
       "options": [
         "The substance is in a solid state.",
@@ -196,7 +196,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "9bae10305ee7",
+      "id": "bb6319f602a7",
       "stem": "Why is the mole considered a \"bridge\" in stoichiometry?",
       "options": [
         "It counts electrons only.",
@@ -212,7 +212,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "be6cbee568c1",
+      "id": "93f70649d3eb",
       "stem": "If you double the amount of moles of a reactant in a balanced equation, what happens to the theoretical amount of product?",
       "options": [
         "It stays the same.",
@@ -228,7 +228,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "23ee368ae14e",
+      "id": "c72d0bc67487",
       "stem": "How does the Law of Conservation of Mass dictate chemical equation balancing?",
       "options": [
         "Atoms must be created to balance charge.",
@@ -244,7 +244,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "fa45ee118e01",
+      "id": "f0b647fe306a",
       "stem": "Which of these contains the largest number of atoms?",
       "options": [
         "1 mole of H₂O",
@@ -260,7 +260,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "7e205b3ed9ab",
+      "id": "cad7b8676669",
       "stem": "If a reaction equation is A+2B→C, and you have 2 moles of A and 2 moles of B, which is the limiting reactant?",
       "options": [
         "A",
@@ -276,7 +276,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "16464b46e9cb",
+      "id": "8de74113c845",
       "stem": "How many moles of Hydrogen atoms are in 0.5 moles of NH₃?",
       "options": [
         "0.5",
@@ -292,7 +292,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "c2f99e3766e7",
+      "id": "e0d780ac9561",
       "stem": "Which measurement is not necessary to find the empirical formula of a compound?",
       "options": [
         "The mass percentage of each element.",
@@ -308,7 +308,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "c39f10079eaa",
+      "id": "69d83d1c4130",
       "stem": "What does a molar mass of 18.02 g/mol tell you physically?",
       "options": [
         "That 1 molecule weighs 18.02g.",
@@ -324,7 +324,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "4b227c6794ac",
+      "id": "f5bb5382b15b",
       "stem": "How many grams of Carbon are in 1 mole of Carbon?",
       "options": [
         "1g",
@@ -340,7 +340,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "1b8e62927124",
+      "id": "82dd2662e8a0",
       "stem": "How many atoms are in one molecule of H₂SO₄?",
       "options": [
         "3",
@@ -356,7 +356,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "55532fcb47f8",
+      "id": "cfca94318929",
       "stem": "What is the empirical formula of a compound with 40% Carbon, 6.7% Hydrogen, and 53.3% Oxygen?",
       "options": [
         "CH₂O",
@@ -372,7 +372,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "b31f48f54725",
+      "id": "bace7e7af05a",
       "stem": "Why can't we determine the molecular formula from just the empirical formula?",
       "options": [
         "Because the elements are different.",
@@ -388,7 +388,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "120b0a1b61f0",
+      "id": "8f788059b353",
       "stem": "How does the Law of Definite Proportions relate to empirical formulas?",
       "options": [
         "Molecule applies to ionic compounds.",
@@ -405,7 +405,7 @@
       "rejected": "The options answer a different question (formula units versus molecules), not the stem."
     },
     {
-      "id": "153de621814b",
+      "id": "00deff44c2e5",
       "stem": "Why is the \"mole\" a better unit than \"gram\" for chemical reactions?",
       "options": [
         "Moles represent the actual count of reactive units, whereas grams depend on atomic mass.",
@@ -421,7 +421,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "2c4002bc0a81",
+      "id": "488dfde051a5",
       "stem": "Why is an empirical formula used for ionic compounds?",
       "options": [
         "Because they are too heavy.",
@@ -437,7 +437,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "3ebb55339cd4",
+      "id": "e0f65a4aa058",
       "stem": "A compound's molar mass is 142 g/mol. Empirical formula is NaPO₃. What is the molecular formula?",
       "options": [
         "NaPO₃",
@@ -454,7 +454,7 @@
       "rejected": "No correct option: NaPO₃ is 102 g/mol, and 142 is not a whole multiple of it."
     },
     {
-      "id": "3951d48fbcfb",
+      "id": "b60f5ea245a9",
       "stem": "You have a compound with the empirical formula CH₂. If the molar mass of the actual molecular compound is 84 g/mol, what is the molecular formula?",
       "options": [
         "C₂H₄",
@@ -470,7 +470,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "87e9f94f66e0",
+      "id": "e4cf50f8d319",
       "stem": "In the combustion of CH₄ (CH₄+2O₂→CO₂+2H₂O), if you have 1 mole of each reactant, which is the limiting reactant and why?",
       "options": [
         "CH₄, because it has fewer moles.",
@@ -486,7 +486,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "9969102f6f8e",
+      "id": "466b33793146",
       "stem": "Why do we use ionic equations instead of full molecular equations in aqueous reactions?",
       "options": [
         "Because state symbols are not used in ionic equations.",
@@ -502,7 +502,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "e0523aefec33",
+      "id": "47a8d944fdc4",
       "stem": "You are performing a synthesis where the balanced equation is A+3B→2C. You mix 4 moles of A with 9 moles of B. After the reaction goes to completion, which species are present in the beaker?",
       "options": [
         "Only product C",
@@ -518,7 +518,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "114afb9e3a8c",
+      "id": "a4ab9aae95e8",
       "stem": "You have two beakers. Beaker 1 contains 1mol of NaCl. Beaker 2 contains 1mol of CaCl₂. If you add excess AgNO₃ to both to precipitate AgCl, which beaker produces more precipitate, and by what factor?",
       "options": [
         "Beaker 1; 1:1 ratio.",
@@ -534,7 +534,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "70a4e72106df",
+      "id": "7a95a476e0a9",
       "stem": "Why is it impossible to determine the molecular formula of a hydrocarbon knowing only the percentage composition by mass?",
       "options": [
         "Because percentage composition only gives the ratio, not the total molar mass required for the molecular formula.",
@@ -550,7 +550,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "082164fc95e8",
+      "id": "4563b7178c05",
       "stem": "You have a sample of H₂O and D₂O (Heavy water). They have the same number of moles, but different masses. Why?",
       "options": [
         "D₂O is a gas.",
@@ -566,7 +566,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "919e8424c3a0",
+      "id": "fea52515363a",
       "stem": "What does the coefficient \"3\" in 3O₂ represent in a chemical equation?",
       "options": [
         "3 grams of oxygen.",
@@ -582,7 +582,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "5a659250393a",
+      "id": "97690146ac1a",
       "stem": "Why is the atomic mass of Carbon 12.01 and not exactly 12?",
       "options": [
         "Measurement errors.",
@@ -598,7 +598,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "b075c44a5092",
+      "id": "2f1ba227f69a",
       "stem": "Why is the equation H₂ + O₂ → H₂O considered incorrect?",
       "options": [
         "Hydrogen is a metal",
@@ -614,7 +614,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "6b2259e3dda9",
+      "id": "cecbcc205b6a",
       "stem": "Which balanced equation is correct?",
       "options": [
         "Fe + O₂ → Fe₂O₃",
@@ -630,7 +630,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "8d323a212f33",
+      "id": "ab6eeda50741",
       "stem": "Which change would NOT affect the validity of a balanced equation?",
       "options": [
         "Multiplying all coefficients by the same number",
@@ -646,7 +646,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "05488eafe8de",
+      "id": "e85a49772572",
       "stem": "A student calculates the molar mass of CaCO₃ as 100 g/mol. Which step is essential in this calculation?",
       "options": [
         "Using atomic numbers",
@@ -662,7 +662,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "fe223c9f5790",
+      "id": "19ff702f2b5e",
       "stem": "During a reaction, the total number of molecules changes, but the equation remains balanced. Which law is still obeyed?",
       "options": [
         "Conservation of energy",
@@ -678,7 +678,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "49eedd98ebde",
+      "id": "e1e278026019",
       "stem": "When balancing equations, why is it often useful to balance oxygen and hydrogen atoms last?",
       "options": [
         "They are usually monatomic.",
@@ -694,7 +694,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "0bddee724de7",
+      "id": "b998b56703d9",
       "stem": "A compound contains calcium and nitrogen. Calcium forms Ca²⁺ ions, and nitrogen forms N³⁻ ions. What formula will the compound have?",
       "options": [
         "CaN",
@@ -710,7 +710,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "0e43fc0a1ab6",
+      "id": "b0dbeb28af18",
       "stem": "While solving a stoichiometry problem, a student converts mass to moles before using the balanced equation. Why is this step necessary?",
       "options": [
         "Balanced equations relate particles and moles, not masses directly.",
@@ -726,7 +726,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "240c2364be9a",
+      "id": "08b0296256fa",
       "stem": "A student notices that ionic equations include aqueous ions but omit solid precipitates. Why?",
       "options": [
         "Solids do not dissociate into ions in solution.",
@@ -742,7 +742,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "752a293d1ba6",
+      "id": "72c5dd8fa716",
       "stem": "What coefficient should be placed before O₂?",
       "options": [
         "2",
@@ -759,7 +759,7 @@
       "rejected": "The equation being balanced is missing from the source."
     },
     {
-      "id": "e29915e00021",
+      "id": "6e721fe8def4",
       "stem": "Which set of coefficients is correct?",
       "options": [
         "1, 5, 2",
@@ -776,7 +776,7 @@
       "rejected": "The equation being balanced is missing from the source."
     },
     {
-      "id": "d06f4122549d",
+      "id": "c84c4b1b9fe2",
       "stem": "A chemist needs to prepare a neutral compound from Al³⁺ and SO₄²⁻ ions. Which formula is correct?",
       "options": [
         "AlSO₄",
@@ -792,7 +792,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "9af517289d45",
+      "id": "1182b7baec33",
       "stem": "A student compares one mole of oxygen gas with one mole of oxygen atoms. Which statement is correct?",
       "options": [
         "Both contain the same number of atoms.",
@@ -808,7 +808,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "7c8732cc8c5b",
+      "id": "6996c937b647",
       "stem": "If a reaction has a theoretical yield of 50g and an actual yield of 40g, what is the percentage yield, and what does this imply?",
       "options": [
         "80%; it implies incomplete reaction or losses during separation.",
@@ -824,7 +824,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "cb77b7601400",
+      "id": "550ba18223ca",
       "stem": "The sum of all coefficients is:",
       "options": [
         "11",
@@ -841,7 +841,7 @@
       "rejected": "The equation whose coefficients are summed is missing from the source."
     },
     {
-      "id": "12fc26adf9b1",
+      "id": "e50a69b42f22",
       "stem": "A chemist writes the molecular equation for a reaction, but the net ionic equation is much shorter. Why?",
       "options": [
         "Molecular equations are always incorrect.",
@@ -857,7 +857,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "id": "73489b77a598",
+      "id": "5571e858e604",
       "stem": "Which statement best explains why coefficients are used instead of changing subscripts when balancing equations?",
       "options": [
         "Subscripts represent fixed chemical identities of substances",

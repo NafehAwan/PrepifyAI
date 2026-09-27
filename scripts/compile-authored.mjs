@@ -27,7 +27,7 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { bankId, fingerprint } from "./lib/bank-id.mjs";
+import { bankId, questionKey } from "./lib/bank-id.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -75,7 +75,7 @@ for (const file of files) {
   const key = `${kind}/${SLUG[subject]}-u${String(chapter).padStart(2, "0")}.json`;
   if (!out.has(key)) out.set(key, { subject, chapter_seq: chapter, questions: [] });
   const target = out.get(key).questions;
-  const seen = new Set(target.map((q) => fingerprint(q.stem)));
+  const seen = new Set(target.map((q) => questionKey(q.stem, q.options)));
 
   lines.forEach((line, i) => {
     const parts = line.split(" | ").map((p) => p.trim());
@@ -93,14 +93,15 @@ for (const file of files) {
 
     if (idx < 0) return problems.push(`${file}:${i + 1}: answer "${answer}" is not A-D`);
     if (options.some((o) => !o)) return problems.push(`${file}:${i + 1}: empty option`);
-    if (new Set(options.map((o) => o.toLowerCase())).size !== 4) return problems.push(`${file}:${i + 1}: repeated option`);
+    // Exact comparison: punctuation questions legitimately differ only in capitals.
+    if (new Set(options).size !== 4) return problems.push(`${file}:${i + 1}: repeated option`);
     if (kind === "variants" && !variantOf) return problems.push(`${file}:${i + 1}: variant without v:<id>`);
     if (variantOf && !originalIds.has(variantOf)) return problems.push(`${file}:${i + 1}: v:${variantOf} is not a bank question`);
-    if (seen.has(fingerprint(stem))) return problems.push(`${file}:${i + 1}: duplicate stem in this chapter`);
-    seen.add(fingerprint(stem));
+    if (seen.has(questionKey(stem, options))) return problems.push(`${file}:${i + 1}: duplicate question in this chapter`);
+    seen.add(questionKey(stem, options));
 
     const q = {
-      id: bankId(subject, chapter, stem),
+      id: bankId(subject, chapter, stem, options),
       stem,
       options,
       answer: idx,

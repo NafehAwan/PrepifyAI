@@ -3,7 +3,7 @@
   "chapter_seq": 4,
   "questions": [
     {
-      "id": "6aea772a7569",
+      "id": "5e7c63834f71",
       "stem": "The factorization of 15x²y as a product of its factors is:",
       "options": [
         "(15x)(y)",
@@ -20,7 +20,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "3d4e6e7ec19b",
+      "id": "00f66339e161",
       "stem": "The factorization of a⁴ + a²b² + b⁴ is:",
       "options": [
         "(a² + ab)(a² − ab)",
@@ -37,7 +37,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "c965a6ff10f9",
+      "id": "488c42652fa4",
       "stem": "a⁴ + 64b⁴ factorizes as:",
       "options": [
         "(a² + 8b² + 4ab)(a² + 8b² − 4ab)",
@@ -54,7 +54,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "8a34b871cd73",
+      "id": "6438c4451a73",
       "stem": "Which of the following is the factored form of x⁴ + 4m⁴?",
       "options": [
         "(x² + 2m)²",
@@ -71,7 +71,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "a6f2034ba9c5",
+      "id": "ed68aeeddca9",
       "stem": "The factored form of y² − 7y + 12 is:",
       "options": [
         "(y + 3)(y + 4)",
@@ -88,7 +88,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "960260c7ff61",
+      "id": "990018dcbba7",
       "stem": "The factored form of m² − 2m − 15 is:",
       "options": [
         "(m − 5)(m + 3)",
@@ -105,7 +105,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "4f0f9cac8a1d",
+      "id": "79fd978d407a",
       "stem": "The factored form of 3x² + 22x − 16 is:",
       "options": [
         "(x − 8)(3x + 2)",
@@ -122,7 +122,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "cacacfc93c3d",
+      "id": "2c1b851194c2",
       "stem": "The factored form of x² + x − 2 is:",
       "options": [
         "(x − 2)(x + 1)",
@@ -139,7 +139,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "6b452e58dc8c",
+      "id": "a366ab9bc34d",
       "stem": "When factorizing (x² + 3x − 4)(x² + 3x + 5) + 8, substituting a = x² + 3x gives:",
       "options": [
         "(a + 4)(a + 5) + 8",
@@ -156,7 +156,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "e1d7f64035d1",
+      "id": "3c40f3e1159f",
       "stem": "The factored form of (x² + 3x − 4)(x² + 3x + 5) + 8 is:",
       "options": [
         "(x² + 3x + 4)(x² + 3x − 3)",
@@ -173,7 +173,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "dfb3cbe5c7ca",
+      "id": "a53e617e0922",
       "stem": "The identity a³ + 3a²b + 3ab² + b³ equals:",
       "options": [
         "a³ + b³",
@@ -190,7 +190,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "549b0619a205",
+      "id": "4020eaadc9c4",
       "stem": "The factored form of 27a³ + 1 + 27a² + 9a is:",
       "options": [
         "(3a − 1)³",
@@ -207,7 +207,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "15057d4de6b1",
+      "id": "c331720d6298",
       "stem": "The expression 8x³ − 60x² + 150x − 125 factorizes as:",
       "options": [
         "(2x + 5)³",
@@ -224,7 +224,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "63e3af549dfa",
+      "id": "651530c38047",
       "stem": "a³ + b³ factorizes as:",
       "options": [
         "(a + b)(a² − ab + b²)",
@@ -241,7 +241,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "e8f95546f262",
+      "id": "f2e0a726115e",
       "stem": "The factored form of x³ + 27y³ is:",
       "options": [
         "(x + 27y)(x² − 3xy + y²)",
@@ -258,7 +258,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "2c0ec0731312",
+      "id": "0f7ce9503ecc",
       "stem": "The factored form of 8a³ − 125b³ is:",
       "options": [
         "(2a + 5b)(4a² − 10ab + 25b²)",
@@ -275,7 +275,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "5fd40d130511",
+      "id": "f94df55cbac6",
       "stem": "The HCF of 18ab³c, 30a²b⁴c³, and 24b²c⁵ is:",
       "options": [
         "6ab³c³",
@@ -292,7 +292,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "49445a288c7f",
+      "id": "4a2e4d55aebf",
       "stem": "The HCF of two or more polynomials is the polynomial that:",
       "options": [
         "divides each of them exactly and is of highest degree",
@@ -309,7 +309,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "4d1027e46235",
+      "id": "3476cd0b723e",
       "stem": "The HCF of x² − 49 and x² − 4x − 21 is:",
       "options": [
         "x² − 49",
@@ -326,7 +326,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "5d0097d1b875",
+      "id": "9824922dbad8",
       "stem": "When finding the HCF of monomials, the HCF of the variable part is determined by taking:",
       "options": [
         "the highest power of each variable",
@@ -343,7 +343,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "7ffce99c437e",
+      "id": "bccf07ed4bd2",
       "stem": "The LCM of two polynomials P and Q with HCF H is given by:",
       "options": [
         "LCM = P × Q × H",
@@ -360,7 +360,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "19e9cbc0d1b8",
+      "id": "bbfd0e0315e9",
       "stem": "The product of two polynomials P and Q equals:",
       "options": [
         "HCF × LCM",
@@ -377,7 +377,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "b03e333fb01c",
+      "id": "4693d0e55e89",
       "stem": "If HCF of two polynomials is x − 7 and their LCM is x³ − 10x² + 11x + 70, their product is:",
       "options": [
         "(x − 7) + (x³ − 10x² + 11x + 70)",
@@ -394,7 +394,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "831f7548aa75",
+      "id": "44f925638ab7",
       "stem": "An algebraic fraction P/Q is defined when:",
       "options": [
         "Q = 0 always",
@@ -411,7 +411,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "09ca91032911",
+      "id": "24298dc47de8",
       "stem": "To add algebraic fractions with different denominators, we first find their:",
       "options": [
         "HCF",
@@ -428,7 +428,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "a0f14535a092",
+      "id": "c4780404762e",
       "stem": "The simplified form of the fraction (x²- 9)/(x +3) is:",
       "options": [
         "x – 3",
@@ -445,7 +445,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "555c5b32e0cb",
+      "id": "00e290b7c41b",
       "stem": "To divide one algebraic fraction by another, we multiply the first fraction by:",
       "options": [
         "the LCM of denominators",
@@ -462,7 +462,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "2b9f34689569",
+      "id": "8d6bfd109ed5",
       "stem": "The square root of a perfect square polynomial can be found by:",
       "options": [
         "addition only",
@@ -479,7 +479,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "8e940b5af450",
+      "id": "69cbdf660a41",
       "stem": "The square root of 9x² − 42xy + 49y² is:",
       "options": [
         "±(9x − 7y)",
@@ -496,7 +496,7 @@
       "source_file": "Maths-UNIT 4 SET # 1.docx"
     },
     {
-      "id": "a1f5e2f56ff5",
+      "id": "5706975f6191",
       "stem": "The expression x⁴ − 6x³ + 17x² − 24x + 16 has the square root:",
       "options": [
         "±(x² − 3x + 4)",

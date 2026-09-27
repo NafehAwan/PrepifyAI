@@ -3,7 +3,7 @@
   "chapter_seq": 6,
   "questions": [
     {
-      "id": "0742698e45e0",
+      "id": "df6a761a1d34",
       "stem": "In the sexagesimal system, one degree (1°) is equal to:",
       "options": [
         "60 minutes",
@@ -19,7 +19,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "4d2ef2c1badf",
+      "id": "070b692c4b47",
       "stem": "How many seconds are there in one degree?",
       "options": [
         "60″",
@@ -35,7 +35,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "d85533671951",
+      "id": "a59125c0b307",
       "stem": "The radian measure of a complete angle (360°) is:",
       "options": [
         "π radians",
@@ -51,7 +51,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "27c1c6621cdc",
+      "id": "cb4cbb560a6b",
       "stem": "1 radian is approximately equal to:",
       "options": [
         "45° 00′ 00″",
@@ -67,7 +67,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "62158f33d5f3",
+      "id": "68a81e72ef15",
       "stem": "To convert an angle from degrees to radians, multiply by:",
       "options": [
         "π/360",
@@ -83,7 +83,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "085f7cf53ff8",
+      "id": "88220f256547",
       "stem": "The radian measure of 90° is:",
       "options": [
         "π/4",
@@ -99,7 +99,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "7fe9b18b1c27",
+      "id": "a73f4d963b00",
       "stem": "The length of a circular arc with radius r and central angle θ (in radians) is:",
       "options": [
         "l = r²θ",
@@ -115,7 +115,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "52702de3d521",
+      "id": "3a1aadfe9d2c",
       "stem": "The area of a sector of a circle with radius r and central angle θ radians is:",
       "options": [
         "A = rθ",
@@ -131,7 +131,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "028638829b9f",
+      "id": "ea3e7385b541",
       "stem": "A circle has radius 6 cm and its sector has a central angle of π/3 radians. What is the arc length?",
       "options": [
         "π cm",
@@ -147,7 +147,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "f4d123905711",
+      "id": "cfd5bcb15327",
       "stem": "In a right-angled triangle ABC with ∠C = 90°, sin θ is defined as:",
       "options": [
         "Base / Hypotenuse",
@@ -163,7 +163,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "b034ca409684",
+      "id": "587854a85e56",
       "stem": "Which of the following is the reciprocal of cos θ?",
       "options": [
         "sin θ",
@@ -179,7 +179,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "193faed2e3fe",
+      "id": "8154307dee5f",
       "stem": "The value of tan 45° is:",
       "options": [
         "0",
@@ -195,7 +195,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "49347d8d2d96",
+      "id": "7fe8274d03c5",
       "stem": "The value of sin 30° is:",
       "options": [
         "1",
@@ -211,7 +211,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "215f2ff3b24f",
+      "id": "ae6a5a53c6ca",
       "stem": "The value of cos 60° is:",
       "options": [
         "(√3)/2",
@@ -227,7 +227,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "aa4089c2bc52",
+      "id": "a3e1343feedc",
       "stem": "sin 90° is equal to:",
       "options": [
         "0",
@@ -243,7 +243,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "994849ef0751",
+      "id": "ff98d204c60a",
       "stem": "The value of cos 180° is:",
       "options": [
         "1",
@@ -259,7 +259,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "611dbe442b9c",
+      "id": "df42fe6d8a27",
       "stem": "tan 90° is:",
       "options": [
         "0",
@@ -275,7 +275,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "c330d88a000c",
+      "id": "d3385d137e7e",
       "stem": "cot θ is equal to:",
       "options": [
         "(sin θ)/(cos θ)",
@@ -291,7 +291,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "bf7f7ca0195c",
+      "id": "7ae8dd4e573c",
       "stem": "In which quadrant are both sin θ and cos θ positive?",
       "options": [
         "1st quadrant",
@@ -307,7 +307,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "9f2e1357d6b4",
+      "id": "f823c28607a6",
       "stem": "In the second quadrant, which trigonometric ratio is positive?",
       "options": [
         "cos θ",
@@ -323,7 +323,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "f7168a91cf7c",
+      "id": "92a8252322bb",
       "stem": "In the third quadrant, which of the following is positive?",
       "options": [
         "sin θ",
@@ -339,7 +339,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "7294ddabf03d",
+      "id": "b55a241505d0",
       "stem": "Which of the following is a Pythagorean identity?",
       "options": [
         "sin²θ − cos²θ = 1",
@@ -355,7 +355,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "89f343166022",
+      "id": "dfc9acf1e29d",
       "stem": "sec²θ − tan²θ equals:",
       "options": [
         "0",
@@ -371,7 +371,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "6066945a1405",
+      "id": "d96c6291059b",
       "stem": "cosec²θ − cot²θ equals:",
       "options": [
         "2",
@@ -387,7 +387,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "e3887cd80f97",
+      "id": "396af54c24f9",
       "stem": "tan θ is equal to:",
       "options": [
         "(cos θ)/(sin θ)",
@@ -403,7 +403,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "f2a3930e2da4",
+      "id": "52031c6c56fe",
       "stem": "The angle of elevation is measured:",
       "options": [
         "Below the horizontal line",
@@ -419,7 +419,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "a4f158b44932",
+      "id": "68b53a4b20c6",
       "stem": "The angle between the horizontal line and the line of sight to an object below the observer is called:",
       "options": [
         "Angle of elevation",
@@ -435,7 +435,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "053892816ded",
+      "id": "9768b7057fcf",
       "stem": "A vertical pole is 10 m high. The angle of elevation of its top from a point on the ground is 45°. The distance of the point from the base of the pole is:",
       "options": [
         "5 m",
@@ -451,7 +451,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "3749ee6ef41c",
+      "id": "afb7c468e4e5",
       "stem": "A ladder 10 m long leans against a vertical wall making an angle of 60° with the wall. The height of the ladder along the wall is:",
       "options": [
         "10√3 m",
@@ -467,7 +467,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "81a04db4f4c6",
+      "id": "019b177c674c",
       "stem": "Bearings are measured clockwise from:",
       "options": [
         "East",
@@ -483,7 +483,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "138f0c6d14fc",
+      "id": "2ec87be18844",
       "stem": "A three-figure bearing is always written using exactly:",
       "options": [
         "1 digit",
@@ -499,7 +499,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "bbc14757aa91",
+      "id": "554e1d0a4874",
       "stem": "The three-figure bearing of due East is:",
       "options": [
         "000°",
@@ -515,7 +515,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "04ab4dd0416e",
+      "id": "b5586470cf6e",
       "stem": "The three-figure bearing of due South is:",
       "options": [
         "090°",
@@ -531,7 +531,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "df3948e04001",
+      "id": "ac67d60279cd",
       "stem": "The three-figure bearing of due West is:",
       "options": [
         "090°",
@@ -547,7 +547,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "da5013f7a567",
+      "id": "b73c0c3d71dd",
       "stem": "The bearing of the South-West direction is:",
       "options": [
         "045°",
@@ -563,7 +563,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "28cbbc9de6d8",
+      "id": "3f42983f2610",
       "stem": "North-East direction has a bearing of:",
       "options": [
         "045°",
@@ -579,7 +579,7 @@
       "source_file": "Maths-UNIT 6  SET # 1.docx"
     },
     {
-      "id": "02d8cea44d32",
+      "id": "d4097edc799d",
       "stem": "If an automobile travels at a bearing of 070° from city A to city B, the bearing from city B back to city A is:",
       "options": [
         "070°",

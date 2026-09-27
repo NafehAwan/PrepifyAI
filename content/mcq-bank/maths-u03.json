@@ -3,7 +3,7 @@
   "chapter_seq": 3,
   "questions": [
     {
-      "id": "a04cf2db1a37",
+      "id": "cfdf34d2021e",
       "stem": "If A x B = B x A for two non- empty sets, what can you conclude about the sets?",
       "options": [
         "They are disjoint",
@@ -19,7 +19,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "4fd198cd4abf",
+      "id": "85f4e2332c22",
       "stem": "If A ⊂ B (A is proper subset of B) , the Venn diagram shows:",
       "options": [
         "Two separate circles",
@@ -35,7 +35,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "92e261c64fe8",
+      "id": "6d9844385d0c",
       "stem": "The distributive property A∪(B∩C) equals:",
       "options": [
         "(A∪B)∩C",
@@ -51,7 +51,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "0b2651010a3a",
+      "id": "ab25436f739e",
       "stem": "For sets A and B : (A∪B)^ˊ equals (De Morganˊs Law).",
       "options": [
         "A^ˊ∪ B^ˊ",
@@ -67,7 +67,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "3d8f25b33af8",
+      "id": "50185e548755",
       "stem": "If (2x+3 , y-1)=(7 , 4) is an equality of ordered pairs , find the unique values of x and y.",
       "options": [
         "x=2 , y=5",
@@ -83,7 +83,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "f5098cdc6b6f",
+      "id": "8463caf441a9",
       "stem": "A binary relation R from set A to set B is:",
       "options": [
         "Any function from A to B",
@@ -99,7 +99,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "b64278eba338",
+      "id": "cd4e8508aef3",
       "stem": "If A = {1,2,3} , B = {0,1,3} and R = { (a,b)/ a ∈A , b ∈ B, a > b }, then R is:",
       "options": [
         "{ (1,0),(2,0),(2,1),(3,0),(3,1) }",
@@ -115,7 +115,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "78fed2f69921",
+      "id": "09c059b9a844",
       "stem": "Shading only the central overlapping region where circles A and B cross represents:",
       "options": [
         "A∪B",
@@ -131,7 +131,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "e8017c403954",
+      "id": "7f1cdc6604bd",
       "stem": "If two circles inside a Venn diagram rectangle do not touch or overlap at any point, the sets are:",
       "options": [
         "Equal",
@@ -147,7 +147,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "edc1f253b0a8",
+      "id": "d064771d3adb",
       "stem": "If a Venn diagram contains zero shaded regions, what set does the unshaded space represent?",
       "options": [
         "Universal set",
@@ -163,7 +163,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "1aacf97c12ff",
+      "id": "1964c00413c6",
       "stem": "Set building form of AՍB is .",
       "options": [
         "{x/x ∈A v x∈B}",
@@ -179,7 +179,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "47ca67578f60",
+      "id": "511bd296cac7",
       "stem": "The pictorial representation of any set is called a -----------",
       "options": [
         "Binary relation",
@@ -195,7 +195,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "f8c1353320ae",
+      "id": "ac6d19335823",
       "stem": "Dom R⁻¹ equals:",
       "options": [
         "Domain of R",
@@ -211,7 +211,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "4bec96365262",
+      "id": "7a106d239526",
       "stem": "A x B = ∅ if and only if:",
       "options": [
         "A = B",
@@ -227,7 +227,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "8ecf5e157277",
+      "id": "873870a66c94",
       "stem": "R₁ = ∅ is called ------",
       "options": [
         "Empty set",
@@ -243,7 +243,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "2f4492f86312",
+      "id": "aea2e5e3d471",
       "stem": "Set of multiples of 4 greater than and equal to 40 in set builder form is:",
       "options": [
         "{4x/x∈N ∧x ≥10 }",
@@ -259,7 +259,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "e938804ac44d",
+      "id": "f7fc00102f5f",
       "stem": "Range R⁻¹ = ------",
       "options": [
         "Domain of R",
@@ -275,7 +275,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "9d4140ec0544",
+      "id": "a4dfcd4fda74",
       "stem": "Shading the entire area across both circles A and B , including their overlapping region , represents:",
       "options": [
         "A ∩B",
@@ -291,7 +291,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "b6a53a736fc9",
+      "id": "2e61774ddee3",
       "stem": "The set {x/x∈U∧x∉A} is equal to:",
       "options": [
         "A",
@@ -307,7 +307,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "6fceb187fd08",
+      "id": "4e6241caffd1",
       "stem": "{ ∅ } is a ------------- set.",
       "options": [
         "Empty set",
@@ -323,7 +323,7 @@
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "96172777c7d1",
+      "id": "b5eabdb6268b",
       "stem": "Which of the following is a well defined set?",
       "options": [
         "A collection of tall students",
@@ -339,7 +339,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "06d44473879f",
+      "id": "00ede88842a8",
       "stem": "If A = {x/x∈N⋀x²=4} , then A equals:",
       "options": [
         "{ 2,-2}",
@@ -355,7 +355,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "7328675826a2",
+      "id": "c9450fca3053",
       "stem": "If A = { 1,2,3,4,5} and B = { 3,4,1,7,6}, then A∪B is:",
       "options": [
         "{ 3, 4,1 }",
@@ -371,7 +371,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "23593416446b",
+      "id": "c18203f798c1",
       "stem": "If A = { a, b, c, d } and B = { c, d, e, f }, then A∩B is:",
       "options": [
         "{ a, b, c, d,e,f }",
@@ -387,7 +387,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "2799f37d55c6",
+      "id": "0edd1700f188",
       "stem": "If U = { 1, 2, 3, 4, 5, 6,7 } and A = { 2,4,6 }, then Aˊ equals:",
       "options": [
         "{ 1,3,5,7}",
@@ -403,7 +403,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "1b7b87e1ed97",
+      "id": "6775f8a6b39b",
       "stem": "For any set A: A ∩Aˊ equals:",
       "options": [
         "A",
@@ -419,7 +419,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "51692d2ec5bc",
+      "id": "358f4256c999",
       "stem": "For any set A: A ∩ ∅ equals:",
       "options": [
         "A",
@@ -435,7 +435,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "a295fc180a25",
+      "id": "6573d3c1b7bb",
       "stem": "Two sets A and B are disjoint if:",
       "options": [
         "A⊂B",
@@ -451,7 +451,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "77d007b1051b",
+      "id": "96f122501baf",
       "stem": "The associative property of union states:",
       "options": [
         "A ∪ B = B ∪ A",
@@ -467,7 +467,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "a179eff280cd",
+      "id": "3a013222b965",
       "stem": "If A = { 1,2,3}, B= {2,3,4}, C= {3,4,5}, Verify (A∩B)∩C:",
       "options": [
         "{ 3 }",
@@ -483,7 +483,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "06b9354b7ac1",
+      "id": "18f90ca25524",
       "stem": "Two ordered pairs (a,b) and (c,d) are equal if:",
       "options": [
         "a = d and b = c",
@@ -499,7 +499,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "9c7b7b2f384e",
+      "id": "a297bc16be46",
       "stem": "The domain of R = {(1,0),(2,0),(2,1),(3,0),(3,1)} is:",
       "options": [
         "{0,1}",
@@ -515,7 +515,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "93dc33b17d2f",
+      "id": "4577373cbf5e",
       "stem": "The range of R = { (1,0),(2,0),(2,1),(3,0),(3,1)} is:",
       "options": [
         "{ 0,1 }",
@@ -531,7 +531,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "a5d51948dd9e",
+      "id": "99cba8578d51",
       "stem": "R⁻¹ of R = { (0,0),(2,4),(3,9)} is :",
       "options": [
         "{ (0,0),(4,2),(9,3) }",
@@ -547,7 +547,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "c0aeda7e17f1",
+      "id": "32a3a2c3f56c",
       "stem": "If R = { (x,y)/∈A, y∈A, x²=y} and A = {0,2,3}, then R is:",
       "options": [
         "{ (0,0),(2,4),(3,9) }",
@@ -563,7 +563,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "44ee976f4e46",
+      "id": "40193037816e",
       "stem": "If L x M = {(0,2),(0,3),(0,4),(1,2),(1,3),(1,4)} , then set L is:",
       "options": [
         "{ 0,1 }",
@@ -579,7 +579,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "c6b54362e1af",
+      "id": "dbff8df74644",
       "stem": "If L x M = {(0,2),(0,3),(0,4),(1,2),(1,3),(1,4)} , then set M is:",
       "options": [
         "{ 0,1 }",
@@ -595,7 +595,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "8203f5b6acf0",
+      "id": "5e1a28af6983",
       "stem": "A ------- is a collection of well defined and distinct objects.",
       "options": [
         "Disjoint",
@@ -611,7 +611,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "0bc0ba928448",
+      "id": "a6bfdbc598b2",
       "stem": "If B = {x/x∈N⋀2<x≤3} , which set best describe B?",
       "options": [
         "Empty set",
@@ -627,7 +627,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "be87b9e23e24",
+      "id": "fa2d7941a4a2",
       "stem": "Let U = { 1,2,3,…….,10} , A = { 2,4,6,8,10} and B = { 1,3,5,7,9 }. Find (A∪B)^ˊ.",
       "options": [
         "U",
@@ -643,7 +643,7 @@
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "087d86320dfe",
+      "id": "dd0fcab9e502",
       "stem": "Let A = { 1,2 } and B = { a,b }. Find the complete Cartesian product set A x B.",
       "options": [
         "{ (1,a) ,(2,b) }",
