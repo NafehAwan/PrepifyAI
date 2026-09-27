@@ -73,7 +73,7 @@ export function Onboarding() {
                 Let&apos;s set up<br />your board year.
               </div>
               <div style={{ color: C.muted, fontSize: 14, marginBottom: 28, maxWidth: 250 }}>
-                A few quick steps. We&apos;ll pull the exact FBISE textbooks for your subjects and build a plan around your paper date.
+                A few quick steps, then you can start taking tests on your real FBISE syllabus.
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {STEP_LABELS.map((label, i) => {
@@ -127,7 +127,7 @@ export function Onboarding() {
               {s.ob === 2 && (
                 <>
                   <H>Which class are you in?</H>
-                  <Sub>We load the exact FBISE textbooks and past papers for that year.</Sub>
+                  <Sub>Your questions come from the real FBISE syllabus for that year.</Sub>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
                     {CLASSES.map(([name, sub]) => {
                       const on = s.cls === name;
@@ -168,7 +168,7 @@ export function Onboarding() {
                       <path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" />
                     </svg>
                     <div style={{ fontSize: 13.5, color: C.sageD, lineHeight: 1.45 }}>
-                      For each subject Prepify fetches the full FBISE textbook, chapter by chapter, plus the last 8 years of board papers — so the tutor answers from <em>your</em> book, not the internet.
+                      Every subject has a bank of real FBISE-style MCQs, unit by unit — including the scenario questions the board actually asks. Your tests are drawn from <em>your</em> syllabus, not the internet.
                     </div>
                   </div>
                 </>
@@ -272,7 +272,7 @@ export function Onboarding() {
                       </div>
                       <div style={{ fontFamily: "Caprasimo", fontSize: 28, marginBottom: 6 }}>You&apos;re all set</div>
                       <div style={{ color: C.muted, maxWidth: 440, margin: "0 auto 22px" }}>
-                        We&apos;ll start you at a comfortable level in each subject and adjust the difficulty as you go. Your plan begins with your weakest topics.
+                        This just gives us a starting point. You pick the difficulty on every test anyway — easy all the way to hard.
                       </div>
                       <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
                         {s.subs.slice(0, 6).map((name) => (

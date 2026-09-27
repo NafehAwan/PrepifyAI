@@ -1,0 +1,141 @@
+"use client";
+
+import { useCallback, useEffect, useState } from "react";
+import { useApp } from "@/lib/store";
+import { C } from "@/lib/theme";
+import { listTests, type TestRow } from "@/lib/tests/store";
+import { currentUserId } from "@/lib/analytics";
+
+// One subject's dashboard: a prominent "New test" button and a card per test
+// taken, showing the marks, the percentage and a remark.
+export function SubjectTests() {
+  const { s, patch, go } = useApp();
+  const subjectId = s.selectedSubjectId;
+  const subjectName = s.selectedSubjectName ?? "Subject";
+
+  const [tests, setTests] = useState<TestRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const load = useCallback(async () => {
+    if (!subjectId) {
+      setLoading(false);
+      return;
+    }
+    const userId = await currentUserId();
+    if (!userId) {
+      setTests([]);
+      setLoading(false);
+      return;
+    }
+    setTests(await listTests(userId, subjectId));
+    setLoading(false);
+  }, [subjectId]);
+
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    load().catch(() => active && setLoading(false));
+    return () => {
+      active = false;
+    };
+  }, [load]);
+
+  const openTest = (t: TestRow) => {
+    patch({ activeTestId: t.id });
+    // An unfinished test resumes rather than opening its (empty) review.
+    go(t.status === "submitted" ? "testReview" : "testRun");
+  };
+
+  const submitted = tests.filter((t) => t.status === "submitted");
+  const best = submitted.length ? Math.max(...submitted.map((t) => t.scorePct ?? 0)) : null;
+
+  return (
+    <>
+      <div style={{ marginBottom: 20 }}>
+        <button onClick={() => go("subjects")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
+          ← All subjects
+        </button>
+        <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap" }}>
+          <div>
+            <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>{subjectName}</div>
+            <div style={{ color: C.muted, marginTop: 4, fontSize: 14 }}>
+              {submitted.length === 0
+                ? "No tests yet — start your first one."
+                : `${submitted.length} test${submitted.length === 1 ? "" : "s"} taken · best ${best}%`}
+            </div>
+          </div>
+          <button
+            onClick={() => go("newTest")}
+            style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15, boxShadow: "0 10px 24px rgba(198,113,57,.25)" }}
+          >
+            + New test
+          </button>
+        </div>
+      </div>
+
+      {loading ? (
+        <div style={{ color: C.muted, fontSize: 14 }}>Loading your tests…</div>
+      ) : tests.length === 0 ? (
+        <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Your first {subjectName} test</div>
+          <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.6 }}>
+            Choose how many questions you want (1 to 30) and how hard they should be. Every test is
+            different, and the harder levels are mostly scenario questions — the kind the board paper
+            actually asks.
+          </div>
+        </div>
+      ) : (
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))", gap: 16 }}>
+          {tests.map((t) => (
+            <TestCard key={t.id} test={t} onOpen={() => openTest(t)} />
+          ))}
+        </div>
+      )}
+    </>
+  );
+}
+
+function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
+  const done = test.status === "submitted";
+  const pct = test.scorePct ?? 0;
+  const strong = pct >= 75;
+  const pass = pct >= 50;
+  const fg = !done ? C.muted : strong ? C.sageD : pass ? C.accentD : C.danger;
+  const bg = !done ? C.sand : strong ? C.sageT : C.tint;
+
+  return (
+    <button
+      onClick={onOpen}
+      className="pf-lift"
+      style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: 20 }}
+    >
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 14 }}>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>{test.title}</div>
+        <span style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "3px 9px", background: bg, color: fg, textTransform: "capitalize", flex: "none" }}>
+          {test.difficulty}
+        </span>
+      </div>
+
+      {done ? (
+        <>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
+            <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
+            <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600 }}>
+              {test.correctCount}/{test.questionCount}
+            </div>
+          </div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: fg, marginBottom: 10 }}>{test.remarks}</div>
+        </>
+      ) : (
+        <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 700, marginBottom: 10 }}>
+          Not finished — tap to continue
+        </div>
+      )}
+
+      <div style={{ fontSize: 12, color: "#9a8d78" }}>
+        {test.questionCount} question{test.questionCount === 1 ? "" : "s"} ·{" "}
+        {new Date(test.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
+      </div>
+    </button>
+  );
+}

@@ -1,16 +1,19 @@
 "use client";
 
-// Client helper that asks the AI to generate a fresh MCQ set grounded on a
-// topic's real content. Returns null when there's no key / generation fails, so
-// callers fall back to the seeded bank.
+// Client helper for the MCQ generation route.
+//
+// This is the last-resort top-up only: a normal test is sampled from the
+// `questions` bank and costs no API call. It is reached when a subject's bank
+// cannot fill the requested number of questions AND the chapter has real
+// textbook content to ground the generation on. Returns null on any failure, so
+// the caller simply serves a shorter test rather than an error.
 
 import { groqAuthHeaders } from "./key";
-import type { DBMcq } from "../curriculum";
-import type { TeachContext } from "../types";
+import type { ChapterGrounding, DBMcq } from "../curriculum";
 import type { McqDifficulty } from "./prompts";
 
 export async function generateQuiz(
-  teach: TeachContext,
+  grounding: ChapterGrounding,
   count: number,
   key: string,
   opts?: { difficulty?: McqDifficulty },
@@ -20,13 +23,13 @@ export async function generateQuiz(
       method: "POST",
       headers: { "Content-Type": "application/json", ...groqAuthHeaders(key) },
       body: JSON.stringify({
-        subject: teach.subject,
-        classLevel: teach.classLevel,
-        sloList: teach.sloList,
-        groundTruth: teach.groundTruth,
+        subject: grounding.subject,
+        classLevel: grounding.classLevel,
+        sloList: grounding.sloList,
+        groundTruth: grounding.groundTruth,
         count,
         difficulty: opts?.difficulty ?? "medium",
-        // a fresh random variant each call → different questions on every retake
+        // a fresh random variant each call → different questions every time
         variant: Math.floor(Math.random() * 1e6),
       }),
     });

@@ -2,21 +2,15 @@ export type Screen =
   | "onboarding"
   | "home"
   | "subjects"
-  | "chapters"
-  | "topic"
-  | "test"
-  | "practice"
-  | "mock"
+  | "subjectTests" // one subject's test cards + "New test"
+  | "newTest" // choose question count and difficulty
+  | "testRun" // taking a test
+  | "testReview" // read-only review of a submitted test
   | "progress"
-  | "plan"
-  | "reviews"
   | "settings";
 
-export type Variant = "A" | "B";
 export type Lang = "EN" | "UR";
-export type Device = "desktop" | "mobile";
 export type Mode = "guided" | "free";
-export type TopicTab = "tutor" | "quiz" | "read";
 export type ChatRole = "ai" | "me";
 export type ChatMsg = readonly [ChatRole, string];
 
@@ -27,24 +21,8 @@ export interface AppState {
   subs: string[];
   examDate: string;
   dq: number; // placement diagnostic index
-  obVar: Variant;
-  homeVar: Variant;
-  topicVar: Variant;
-  fbVar: Variant;
   lang: Lang;
-  device: Device;
   mode: Mode;
-  open: string[]; // expanded chapter ids
-  topicTab: TopicTab;
-  chat: ChatMsg[];
-  draft: string;
-  quizPick: number | null;
-  quizDone: boolean;
-  pAnswer: string;
-  pShow: boolean;
-  mockRunning: boolean;
-  mockLeft: number; // seconds
-  mockDone: boolean;
   saver: boolean;
   remind: boolean;
   // Auth / real-data context (populated server-side when Supabase is configured).
@@ -55,12 +33,8 @@ export interface AppState {
   // Live curriculum navigation (set when browsing real DB content).
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;
-  selectedTopicId: string | null;
-  // The chapter whose test is being taken (set from the chapter tree).
-  testChapterId: string | null;
-  testChapterTitle: string | null;
-  // Grounding context for the tutor, set by the topic screen from real content.
-  teach: TeachContext | null;
+  // The test being taken or reviewed.
+  activeTestId: string | null;
   // True when the server has a shared GROQ_API_KEY, so nobody has to supply
   // their own. Set server-side; false in the demo build.
   aiConfigured: boolean;
@@ -69,11 +43,3 @@ export interface AppState {
   groqKey: string;
 }
 
-export interface TeachContext {
-  subject: string;
-  classLevel: number | string;
-  medium: string;
-  level: string;
-  sloList: string;
-  groundTruth: string;
-}

@@ -14,7 +14,8 @@
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { shuffleMcqs } from "@/lib/quizUtil";
-import type { DBMcq } from "@/lib/curriculum";
+import { getChapterGrounding, type DBMcq } from "@/lib/curriculum";
+import { generateQuiz } from "@/lib/ai/generate";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 
 // The `questions.difficulty` column is 1..5. The bank loader writes easy=1,
@@ -32,7 +33,7 @@ const RECENT_TESTS = 5;
 export interface BuiltTest {
   mcqs: DBMcq[];
   // How the questions were found, so the UI can be honest when a subject is thin.
-  source: "bank" | "bank-relaxed" | "bank-widened" | "short";
+  source: "bank" | "bank-relaxed" | "bank-widened" | "topped-up" | "short";
 }
 
 interface QuestionRow {
@@ -99,6 +100,8 @@ export async function buildTest(opts: {
   subjectId: string;
   count: number;
   difficulty: McqDifficulty;
+  // Only used by the last-resort AI top-up; omit and the top-up is skipped.
+  aiKey?: string;
 }): Promise<BuiltTest> {
   const count = Math.min(Math.max(Math.round(opts.count), 1), 30);
   if (!isSupabaseConfigured()) return { mcqs: [], source: "short" };
@@ -138,8 +141,35 @@ export async function buildTest(opts: {
     return { mcqs: sample(preferred, count), source: "bank-widened" };
   }
 
-  // 4. Genuinely not enough questions for this subject yet.
-  return { mcqs: sample(all, Math.min(count, all.length)), source: "short" };
+  // 4. Last resort: generate the shortfall from real textbook content. Only
+  //    possible for a chapter that has content_chunks seeded, which is why the
+  //    banks exist in the first place.
+  const have = sample(all, Math.min(count, all.length));
+  const shortfall = count - have.length;
+  if (shortfall > 0) {
+    const topUp = await generateShortfall(chapterIds, shortfall, opts.difficulty, opts.aiKey);
+    if (topUp.length > 0) return { mcqs: shuffleMcqs([...have, ...topUp]), source: "topped-up" };
+  }
+  return { mcqs: have, source: "short" };
+}
+
+// Asks the model for the missing questions, grounded on a chapter that actually
+// has textbook text. Returns [] whenever that isn't possible — a shorter test is
+// always better than an ungrounded one.
+async function generateShortfall(
+  chapterIds: string[],
+  shortfall: number,
+  difficulty: McqDifficulty,
+  aiKey?: string,
+): Promise<DBMcq[]> {
+  for (const chapterId of chapterIds) {
+    const grounding = await getChapterGrounding(chapterId);
+    if (!grounding) continue;
+    const generated = await generateQuiz(grounding, shortfall, aiKey ?? "", { difficulty });
+    if (generated && generated.length > 0) return generated;
+    break; // the route is reachable but unhelpful — don't hammer it per chapter
+  }
+  return [];
 }
 
 // Score → the remark shown on a test card.

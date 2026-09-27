@@ -1,47 +1,30 @@
 "use client";
 
-// Real analytics derived from the student's saved topic mastery. Everything is
-// gated on being signed in with Supabase configured: getSubjectMastery returns
-// {} otherwise, so the dashboard screens fall back to their demo numbers.
+// Dashboard analytics, derived from the student's submitted tests.
+//
+// This used to read `topic_progress` and compute topic mastery, which made
+// sense when Prepify taught the textbook. Now that a test is the only thing a
+// student does, every number here comes from the `tests` table instead.
+//
+// Everything is gated on being signed in with Supabase configured, so the demo
+// build keeps rendering its sample figures.
 
 import { createClient } from "./supabase/client";
 import { isSupabaseConfigured } from "./supabase/config";
-import {
-  listSubjects,
-  getChapters,
-  getTopicProgress,
-  computeTopicStates,
-  type TopicMastery,
-} from "./curriculum";
+import { listSubjects } from "./curriculum";
+import { listAllTests, type TestRow } from "./tests/store";
 
-export interface TopicCell {
-  id: string;
-  title: string;
-  chapter: string;
-  state: TopicMastery; // done | now | open (locked never occurs here — analytics ignore gating)
-  score: number | null; // last mcq score %
-}
-
-export interface SubjectMastery {
+export interface SubjectStats {
   id: string;
   name: string;
-  total: number;
-  mastered: number;
-  inProgress: number;
-  pct: number; // mastery % = mastered / total
-  grade: string; // predicted grade from pct
-  topics: TopicCell[];
+  testsTaken: number;
+  bestPct: number | null;
+  lastPct: number | null;
+  avgPct: number | null;
+  grade: string;
 }
 
-export interface WeakSpot {
-  topicId: string;
-  title: string;
-  subject: string;
-  chapter: string;
-  scorePct: number;
-}
-
-// FBISE-style bands: map a mastery/score percentage to a predicted grade.
+// FBISE-style bands: map a score percentage to a predicted grade.
 export function pctToGrade(pct: number): string {
   if (pct >= 90) return "A+";
   if (pct >= 80) return "A";
@@ -52,76 +35,62 @@ export function pctToGrade(pct: number): string {
   return "F";
 }
 
-async function currentUserId(): Promise<string | null> {
+export async function currentUserId(): Promise<string | null> {
   if (!isSupabaseConfigured()) return null;
   try {
-    const supabase = createClient();
     const {
       data: { user },
-    } = await supabase.auth.getUser();
+    } = await createClient().auth.getUser();
     return user?.id ?? null;
   } catch {
     return null;
   }
 }
 
-// Per-subject mastery for the signed-in student, keyed by subject name. Only
-// includes subjects that have seeded topics; returns {} when signed out so the
-// UI keeps demo data.
-export async function getSubjectMastery(enrolled: string[]): Promise<Record<string, SubjectMastery>> {
-  if (!(await currentUserId())) return {};
+// Per-subject test results for the signed-in student, keyed by subject name.
+// Returns {} when signed out so the UI keeps its demo data. A subject the
+// student has not tested yet still appears, with zero tests.
+export async function getSubjectStats(enrolled: string[]): Promise<Record<string, SubjectStats>> {
+  const userId = await currentUserId();
+  if (!userId) return {};
 
   const subjects = await listSubjects();
   const wanted = subjects.filter((s) => enrolled.length === 0 || enrolled.includes(s.name));
+  const tests = await listAllTests(userId);
 
-  const out: Record<string, SubjectMastery> = {};
+  const bySubject = new Map<string, TestRow[]>();
+  for (const t of tests) {
+    if (t.scorePct === null) continue; // still in progress
+    const list = bySubject.get(t.subjectId) ?? [];
+    list.push(t);
+    bySubject.set(t.subjectId, list);
+  }
+
+  const out: Record<string, SubjectStats> = {};
   for (const subj of wanted) {
-    const chapters = await getChapters(subj.id);
-    const topicIds = chapters.flatMap((c) => c.topics.map((t) => t.id));
-    if (topicIds.length === 0) continue; // not seeded → leave it on demo data
-
-    const progress = await getTopicProgress(topicIds);
-    const { states, counts } = computeTopicStates(chapters, progress, false);
-
-    const topics: TopicCell[] = [];
-    for (const c of chapters) {
-      for (const t of c.topics) {
-        topics.push({
-          id: t.id,
-          title: t.title,
-          chapter: c.title,
-          state: states[t.id] ?? "open",
-          score: progress[t.id]?.mcqScore ?? null,
-        });
-      }
-    }
-
-    const pct = Math.round((counts.mastered / topicIds.length) * 100);
+    const done = bySubject.get(subj.id) ?? [];
+    const scores = done.map((t) => t.scorePct as number);
+    const best = scores.length ? Math.max(...scores) : null;
+    const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
     out[subj.name] = {
       id: subj.id,
       name: subj.name,
-      total: topicIds.length,
-      mastered: counts.mastered,
-      inProgress: counts.inProgress,
-      pct,
-      grade: pctToGrade(pct),
-      topics,
+      testsTaken: done.length,
+      bestPct: best,
+      // listAllTests is newest-first, so the first entry is the latest result.
+      lastPct: scores.length ? scores[0] : null,
+      avgPct: avg,
+      grade: avg === null ? "—" : pctToGrade(avg),
     };
   }
   return out;
 }
 
-// Attempted-but-not-passed topics across the signed-in student's subjects,
-// ranked by score (weakest first) — the real "weak spots" list.
-export function weakSpotsFrom(mastery: Record<string, SubjectMastery>, limit = 6): WeakSpot[] {
-  const spots: WeakSpot[] = [];
-  for (const m of Object.values(mastery)) {
-    for (const t of m.topics) {
-      if (t.state === "now" && t.score !== null) {
-        spots.push({ topicId: t.id, title: t.title, subject: m.name, chapter: t.chapter, scorePct: Math.round(t.score) });
-      }
-    }
-  }
-  spots.sort((a, b) => a.scorePct - b.scorePct);
-  return spots.slice(0, limit);
+// The subjects most in need of work: tested at least once, weakest average
+// first. Subjects never tested are left out — there is nothing to say about them.
+export function weakestSubjects(stats: Record<string, SubjectStats>, limit = 3): SubjectStats[] {
+  return Object.values(stats)
+    .filter((s) => s.avgPct !== null)
+    .sort((a, b) => (a.avgPct as number) - (b.avgPct as number))
+    .slice(0, limit);
 }

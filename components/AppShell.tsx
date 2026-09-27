@@ -15,14 +15,10 @@ import type { Screen } from "@/lib/types";
 
 import { Home } from "./screens/Home";
 import { Subjects } from "./screens/Subjects";
-import { Chapters } from "./screens/Chapters";
-import { Topic } from "./screens/Topic";
-import { ChapterTest } from "./screens/ChapterTest";
-import { Practice } from "./screens/Practice";
-import { Mock } from "./screens/Mock";
+import { SubjectTests } from "./screens/SubjectTests";
+import { NewTest } from "./screens/NewTest";
+import { TestRunner } from "./TestRunner";
 import { Progress } from "./screens/Progress";
-import { Plan } from "./screens/Plan";
-import { Reviews } from "./screens/Reviews";
 import { Settings } from "./screens/Settings";
 
 export function AppShell() {
@@ -36,8 +32,11 @@ export function AppShell() {
     applyReducedMotion(isReducedMotion());
   }, []);
 
+  // "My Subjects" stays highlighted through the whole test flow, which lives
+  // underneath it.
+  const SUBJECT_FLOW = ["subjectTests", "newTest", "testRun", "testReview"];
   const isSubjectsActive = (id: string) =>
-    s.screen === id || (id === "subjects" && (s.screen === "chapters" || s.screen === "topic" || s.screen === "test"));
+    s.screen === id || (id === "subjects" && SUBJECT_FLOW.includes(s.screen));
 
   const navGo = (screen: Screen) => {
     go(screen);
@@ -75,9 +74,6 @@ export function AppShell() {
           <button key={id} onClick={() => navGo(id as Screen)} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 14, textAlign: "left", fontWeight: 600, fontSize: 14.5, background: active ? C.accent : "transparent", color: active ? "#fff" : "#5d5648" }}>
             <StrokeIcon d={d} style={{ flex: "none" }} />
             <span style={{ flex: 1 }}>{label}</span>
-            {id === "reviews" && !s.authed && (
-              <span style={{ background: C.accent, color: "#fff", fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "2px 7px" }}>23</span>
-            )}
           </button>
         );
       })}
@@ -152,14 +148,11 @@ function ScreenBody({ screen }: { screen: Screen }) {
   switch (screen) {
     case "home": return <Home />;
     case "subjects": return <Subjects />;
-    case "chapters": return <Chapters />;
-    case "topic": return <Topic />;
-    case "test": return <ChapterTest />;
-    case "practice": return <Practice />;
-    case "mock": return <Mock />;
+    case "subjectTests": return <SubjectTests />;
+    case "newTest": return <NewTest />;
+    case "testRun": return <TestRunner />;
+    case "testReview": return <TestRunner readOnly />;
     case "progress": return <Progress />;
-    case "plan": return <Plan />;
-    case "reviews": return <Reviews />;
     case "settings": return <Settings />;
     default: return <Home />;
   }

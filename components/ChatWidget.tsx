@@ -11,7 +11,7 @@ import { ChatMarkdown, plainLength } from "./ChatMarkdown";
 import { sfxTap } from "@/lib/sfx";
 
 // Floating "Ask Prepify" helper, available on every dashboard screen. A general
-// study buddy (not topic-grounded) so a student can ask anything and learn.
+// study buddy, so a student can ask about anything they got wrong in a test.
 // Conversations are saved in the browser so students can start a new chat and
 // return to old ones.
 export function ChatWidget() {
@@ -113,7 +113,7 @@ export function ChatWidget() {
         headers: { "Content-Type": "application/json", ...groqAuthHeaders(s.groqKey) },
         body: JSON.stringify({ messages: history.map(([role, text]) => ({ role, text })) }),
       });
-      if (res.status === 503) reply = "Connect your free AI key in Settings → Connect your AI, then I can help you learn anything.";
+      if (res.status === 503) reply = "The AI chat isn't set up on this server yet — your tests still work normally.";
       else if (res.ok) reply = ((await res.json()) as { reply?: string }).reply ?? "Sorry, I couldn't answer that — try again.";
       else {
         const err = ((await res.json().catch(() => ({}))) as { error?: string }).error;

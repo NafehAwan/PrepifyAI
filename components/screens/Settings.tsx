@@ -77,13 +77,6 @@ export function Settings() {
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Study preferences</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <Row title="Study mode" desc="Guided locks topics until mastered. Free roam opens everything.">
-            <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
-              <button onClick={() => saveProfile({ mode: "guided" })} style={pill(s.mode === "guided")}>Guided</button>
-              <button onClick={() => saveProfile({ mode: "free" })} style={pill(s.mode === "free")}>Free roam</button>
-            </div>
-          </Row>
-          <Divider />
           <Row title="Language" desc="Tutor explanations and feedback follow this. Textbook stays in the board's language.">
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
               <button onClick={() => saveProfile({ lang: "EN" })} style={pill(s.lang === "EN")}>English</button>
