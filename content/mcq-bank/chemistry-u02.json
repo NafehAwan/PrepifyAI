@@ -3,7 +3,7 @@
   "chapter_seq": 2,
   "questions": [
     {
-      "stem": "Which property best explains why gases can be compressed much more easily than liquids? Higher density (B) Stronger intermolecular forces (C) Large empty spaces between particles (D) Fixed shape Which state of matter is most likely to be found in stars due to extremely high temperatures?",
+      "stem": "Which state of matter is most likely to be found in stars due to extremely high temperatures?",
       "options": [
         "Solid",
         "Plasma",
@@ -108,7 +108,7 @@
       "source_file": "Chem unit#2 MCQs.docx"
     },
     {
-      "stem": "Which statement is true for all compounds? Their components can be separated by filtration. (B) They contain atoms of more than one element chemically combined. (C) Their composition is always variable. (D) They are heterogeneous. If you mix sugar in water and it disappears, the resulting mixture is best described as:",
+      "stem": "If you mix sugar in water and it disappears, the resulting mixture is best described as:",
       "options": [
         "A heterogeneous suspension",
         "A homogeneous solution",
@@ -123,7 +123,7 @@
       "source_file": "Chem unit#2 MCQs.docx"
     },
     {
-      "stem": "Why is \"air\" classified as a mixture rather than a compound? Because it is invisible (B) Because it is made of different gases that retain their individual properties (C) Because it has a fixed chemical formula (D) Because it only contains oxygen What is the key difference between a colloid and a suspension?",
+      "stem": "What is the key difference between a colloid and a suspension?",
       "options": [
         "Colloids are homogeneous; suspensions are heterogeneous",
         "Colloid particles are smaller and do not settle, unlike suspension particles",
@@ -153,7 +153,7 @@
       "source_file": "Chem unit#2 MCQs.docx"
     },
     {
-      "stem": "Which state of matter generally has neither a fixed shape nor a fixed volume? Gas (B) Solid (C) Liquid (D) Crystal The ability of a liquid to flow is directly related to its:",
+      "stem": "The ability of a liquid to flow is directly related to its:",
       "options": [
         "Compressibility",
         "Fluidity",
@@ -813,7 +813,7 @@
       "source_file": "Chem unit#2 MCQs.docx"
     },
     {
-      "stem": "A student prepares three solutions of the same solute at the same temperature: X: Unsaturated Y: Saturated Z: Saturated with excess undissolved solute present Which contains the greatest amount of dissolved solute per unit volume?",
+      "stem": "Which contains the greatest amount of dissolved solute per unit volume?",
       "options": [
         "X only",
         "Y only",
@@ -823,7 +823,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 2,
       "source_file": "Chem unit#2 MCQs.docx"
     }

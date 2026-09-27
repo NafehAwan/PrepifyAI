@@ -243,7 +243,7 @@
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "stem": "Physical Quantities and measurements Multiple Choice Questions (MCQs) 1. Which quantity is largest?",
+      "stem": "Which quantity is largest?",
       "options": [
         "5 mm",
         "5000 μm",
@@ -273,7 +273,7 @@
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
-      "stem": "A digital vernier caliper has a least count of 0.01 mm. This means it can measure:",
+      "stem": "This means it can measure:",
       "options": [
         "Only whole millimetres",
         "Up to 0.1 mm",
@@ -288,7 +288,7 @@
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
-      "stem": "A measuring cylinder contains 40 cm³ of water. After a stone is fully immersed, the reading becomes 55 cm³. The volume of the stone is:",
+      "stem": "The volume of the stone is:",
       "options": [
         "15 cm³",
         "40 cm³",
@@ -303,7 +303,7 @@
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
-      "stem": "A student measures the time for one oscillation of a pendulum. To reduce random error, he should:",
+      "stem": "To reduce random error, he should:",
       "options": [
         "Measure one oscillation only.",
         "Measure many oscillations and find the average.",
@@ -313,7 +313,7 @@
       "answer": 1,
       "answer_source": "file",
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
@@ -438,7 +438,7 @@
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
-      "stem": "A wire has a diameter of 2000 μm. Its diameter in millimeters is:",
+      "stem": "Its diameter in millimeters is:",
       "options": [
         "0.2 mm",
         "2 mm",
@@ -528,7 +528,7 @@
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
-      "stem": "A quantity is measured in m/s. This quantity is most likely:",
+      "stem": "This quantity is most likely:",
       "options": [
         "Base quantity",
         "Derived quantity",

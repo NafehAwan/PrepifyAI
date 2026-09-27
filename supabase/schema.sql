@@ -238,6 +238,30 @@ create table if not exists mistake_book (
   primary key (user_id, question_id)
 );
 
+-- A generated MCQ test. Replaces the old chapter/topic quiz flow: a test is
+-- scoped to a whole subject, auto-named "Test #NN" per user+subject, and keeps
+-- a snapshot of the questions it asked so a review reads back exactly what the
+-- student saw even if the bank changes underneath.
+create table if not exists tests (
+  id             uuid primary key default gen_random_uuid(),
+  user_id        uuid not null references auth.users(id) on delete cascade,
+  subject_id     uuid not null references subjects(id) on delete cascade,
+  seq            int  not null,             -- per user+subject, so "Test #01"
+  title          text not null,             -- auto-generated, never user-editable
+  difficulty     text not null,             -- easy | medium | hard | mixed
+  question_count int  not null check (question_count between 1 and 30),
+  questions_json jsonb not null,            -- snapshot of the MCQs asked
+  answers_json   jsonb,                     -- the student's picked indices
+  correct_count  int,
+  score_pct      numeric,
+  remarks        text,
+  status         text not null default 'in_progress',
+  created_at     timestamptz default now(),
+  submitted_at   timestamptz,
+  unique (user_id, subject_id, seq)
+);
+create index if not exists tests_user_subject_idx on tests(user_id, subject_id, created_at desc);
+
 create table if not exists mock_exams (
   id              uuid primary key default gen_random_uuid(),
   user_id         uuid not null references auth.users(id) on delete cascade,
@@ -337,7 +361,7 @@ begin
     'enrollments','placement','topic_progress','chapter_progress',
     'chapter_attempts','slo_performance','review_queue','daily_plan',
     'attempts','mistake_book','mock_exams','predicted_score','streaks',
-    'xp_ledger','ai_calls'
+    'xp_ledger','ai_calls','tests'
   ]
   loop
     execute format('alter table %I enable row level security;', t);

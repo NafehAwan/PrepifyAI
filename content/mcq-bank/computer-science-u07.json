@@ -3,7 +3,7 @@
   "chapter_seq": 7,
   "questions": [
     {
-      "stem": "Entrepreneurship 1. If a goal is \"precise and clear in setting up,\" it follows which part of the SMART framework?",
+      "stem": "If a goal is \"precise and clear in setting up,\" it follows which part of the SMART framework?",
       "options": [
         "Measurable",
         "Specific",
@@ -13,7 +13,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 7,
       "source_file": "Entrepreneurship_MCQs_Bank-v2.docx"
     },

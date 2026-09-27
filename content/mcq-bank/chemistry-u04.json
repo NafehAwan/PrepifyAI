@@ -543,7 +543,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
-      "stem": "Three elements X, Y, and Z have the following valence electrons: X = 1 Y = 7 Z = 8 Which pair is most likely to form an ionic compound?",
+      "stem": "Which pair is most likely to form an ionic compound?",
       "options": [
         "X and Z",
         "Y and Z",
@@ -558,7 +558,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
-      "stem": "A student claims: \"Elements in the same period have similar chemical properties.\" Which observation best proves the statement wrong?",
+      "stem": "Which observation best proves the statement wrong?",
       "options": [
         "Sodium and chlorine are in the same period but behave very differently.",
         "They have the same number of occupied shells.",
@@ -568,12 +568,12 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 4,
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
-      "stem": "An unknown element is found to: Gain one electron during reactions. Have a smaller atomic radius than sulfur. Be in the same period as sulfur. The element is most likely:",
+      "stem": "The element is most likely:",
       "options": [
         "Magnesium",
         "Aluminium",
@@ -588,7 +588,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
-      "stem": "A student arranges four elements in order of increasing atomic radius: F < O < N < C Which periodic trend is being applied?",
+      "stem": "Which periodic trend is being applied?",
       "options": [
         "Radius decreases down a group.",
         "Radius decreases from left to right across a period.",
@@ -598,7 +598,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 4,
       "source_file": "Chem unit#4 MCQs.docx"
     },
@@ -888,7 +888,7 @@
       "source_file": "Chem unit#4 MCQs.docx"
     },
     {
-      "stem": "Four elements X, Y, Z, and W belong to the same period. X has the largest atomic radius. W has the highest ionization energy. Which statement must be true?",
+      "stem": "Which statement must be true?",
       "options": [
         "X and W have the same number of valence electrons.",
         "X and W belong to the same group.",

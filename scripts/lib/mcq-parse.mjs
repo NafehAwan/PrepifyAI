@@ -80,10 +80,23 @@ export function detectLayout(lines) {
   return labelled >= 8 ? "labelled" : "bare";
 }
 
+// Every one of these documents keeps a stem in a single paragraph, so the lines
+// before it are furniture (a unit title, "Multiple Choice Questions (MCQs)",
+// "Tick the correct option") and must not be glued onto the question. The only
+// exception is a stem broken mid-sentence by a manual line break, which is why
+// a short or clearly-continuing tail pulls the previous line back in.
+function pickStem(stemLines) {
+  if (stemLines.length <= 1) return stemLines.join(" ");
+  const last = stemLines[stemLines.length - 1];
+  const bare = last.replace(STEM_NUM_RE, "");
+  const continues = bare.length < 25 || /^[a-z(=+\-]/.test(bare);
+  return continues ? stemLines.slice(-2).join(" ") : last;
+}
+
 // A parsed question, or null when the block didn't look like one.
 function makeQuestion(stemLines, options, answerLetter, chapter) {
   if (options.length !== 4) return null;
-  const stem = clean(stemLines.join(" ")).replace(STEM_NUM_RE, "");
+  const stem = clean(pickStem(stemLines)).replace(STEM_NUM_RE, "");
   if (stem.length < 8) return null;
   if (options.some((o) => o.length === 0)) return null;
   const answer = answerLetter ? "ABCD".indexOf(answerLetter.toUpperCase()) : null;
@@ -176,7 +189,7 @@ function parseBare(lines, defaultChapter) {
       if (buf.length >= 5) {
         const options = buf.slice(-4);
         const stem = buf.slice(0, -4);
-        const q = makeQuestion(stem.slice(-3), options, ans[1], chapter);
+        const q = makeQuestion(stem, options, ans[1], chapter);
         if (q) out.push(q);
       }
       buf = [];

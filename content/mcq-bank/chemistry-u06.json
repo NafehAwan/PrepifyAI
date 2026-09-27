@@ -63,7 +63,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "Divided by molar mass. Ionic equations exclude: Spectator ions. Products. (C) Reactants. (D) State symbols. A binary compound is formed from ions Na+ and Cl-. What is its formula?",
+      "stem": "A binary compound is formed from ions Na+ and Cl-. What is its formula?",
       "options": [
         "Na2Cl",
         "NaCl",
@@ -108,7 +108,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "Which of the following is an ionic equation? Ag+aq+Cl-aq→AgCls (B) 2H2+O2→2H2O (C) C+O2→CO2 (D) NaCl→Na+Cl If you have 0.5 moles of O2, how many molecules of O2 do you have?",
+      "stem": "If you have 0.5 moles of O2, how many molecules of O2 do you have?",
       "options": [
         "6.022×1023",
         "3.011×1023",
@@ -573,7 +573,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "During an experiment, a student balances the equation: Fe + O₂ → Fe₂O₃ Which balanced equation is correct?",
+      "stem": "Which balanced equation is correct?",
       "options": [
         "Fe + O₂ → Fe₂O₃",
         "4Fe + 3O₂ → 2Fe₂O₃",
@@ -583,7 +583,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
@@ -693,7 +693,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "A student balances the equation: __ C₂H₆ + __ O₂ → __ CO₂ + __ H₂O What coefficient should be placed before O₂?",
+      "stem": "What coefficient should be placed before O₂?",
       "options": [
         "2",
         "3",
@@ -703,12 +703,12 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "A student balances the equation: P₄ + O₂ → P₂O₅ Which set of coefficients is correct?",
+      "stem": "Which set of coefficients is correct?",
       "options": [
         "1, 5, 2",
         "2, 5, 2",
@@ -718,7 +718,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
@@ -768,7 +768,7 @@
       "source_file": "Chem unit#6 MCQs.docx"
     },
     {
-      "stem": "After balancing: Al + HCl → AlCl₃ + H₂ The sum of all coefficients is:",
+      "stem": "The sum of all coefficients is:",
       "options": [
         "11",
         "12",
@@ -778,7 +778,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "medium",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 6,
       "source_file": "Chem unit#6 MCQs.docx"
     },
