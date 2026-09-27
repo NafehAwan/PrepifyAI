@@ -12,6 +12,7 @@
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { readBank, usableQuestions } from "./lib/bank-read.mjs";
+import { questionKey } from "./lib/bank-id.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const bankDir = join(__dirname, "..", "content", "mcq-bank");
@@ -31,14 +32,15 @@ const all = [];
 for (const b of chapters) {
   const seen = new Set();
   for (const q of b.questions) {
-    all.push({ file: `${q.kind === "original" ? "" : q.kind + "/"}${q.file}`, subject: b.subject, q });
-    if (q.options.length !== 4) problems.push(`${b.file}: ${q.options.length} options — ${q.stem.slice(0, 50)}`);
-    if (q.options.some((o) => !String(o).trim())) problems.push(`${b.file}: empty option — ${q.stem.slice(0, 50)}`);
-    if (q.answer !== null && (q.answer < 0 || q.answer > 3)) problems.push(`${b.file}: answer ${q.answer} out of range`);
-    if (q.answer !== null && !"ABCD"[q.answer]) problems.push(`${b.file}: answer ${q.answer} has no letter`);
-    const fp = q.stem.toLowerCase().replace(/[^a-z0-9]/g, "");
-    if (seen.has(fp)) problems.push(`${b.file}: duplicate stem — ${q.stem.slice(0, 50)}`);
-    seen.add(fp);
+    const where = `${q.kind === "original" ? "" : q.kind + "/"}${q.file}`;
+    all.push({ file: where, subject: b.subject, q });
+    if (q.options.length !== 4) problems.push(`${where}: ${q.options.length} options — ${q.stem.slice(0, 50)}`);
+    if (q.options.some((o) => !String(o).trim())) problems.push(`${where}: empty option — ${q.stem.slice(0, 50)}`);
+    if (new Set(q.options).size !== q.options.length) problems.push(`${where}: repeated option — ${q.stem.slice(0, 50)}`);
+    if (q.answer !== null && (q.answer < 0 || q.answer > 3 || !"ABCD"[q.answer])) problems.push(`${where}: answer ${q.answer} out of range`);
+    const key = questionKey(q.stem, q.options);
+    if (seen.has(key)) problems.push(`${where}: duplicate question — ${q.stem.slice(0, 50)}`);
+    seen.add(key);
   }
 }
 
