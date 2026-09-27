@@ -35,7 +35,7 @@ if (!url || !serviceKey) {
 const db = createClient(url, serviceKey, { auth: { persistSession: false } });
 
 // Class 9 subjects offered right now.
-const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
+const ALL_SUBJECTS = ["Physics", "Chemistry", "Maths", "Computer Science", "English"];
 
 async function upsertSubjectByName(name, track) {
   const { data: existing } = await db.from("subjects").select("id").eq("name", name).maybeSingle();

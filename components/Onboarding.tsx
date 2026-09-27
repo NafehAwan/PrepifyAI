@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { buildDiagnostic } from "@/lib/data";
+import { buildDiagnostic, OFFERED_SUBJECTS } from "@/lib/data";
 import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
 import { LogoMark } from "./Logo";
 
@@ -11,7 +11,7 @@ const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
 ];
 
-const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
+const ALL_SUBJECTS = OFFERED_SUBJECTS;
 
 const STEP_LABELS = ["Name", "Class", "Subjects", "Exam date", "Connect AI", "Placement"];
 const LAST = STEP_LABELS.length; // 6

@@ -31,13 +31,15 @@ export const TITLES: Record<string, string> = {
   settings: "Settings",
 };
 
-// The subjects Prepify offers right now (Class 9 only).
-export const OFFERED_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"] as const;
+// The subjects Prepify offers right now (Class 9 only). Single source of truth —
+// Onboarding and Settings both render from this list.
+export const OFFERED_SUBJECTS = ["Physics", "Chemistry", "Maths", "Computer Science", "English"] as const;
 
 // [name, mastery %, predicted grade, reviews due]
 export const SUBJECTS: ReadonlyArray<readonly [string, number, string, number]> = [
   ["Physics", 62, "B", 8],
   ["Chemistry", 71, "B+", 5],
+  ["Maths", 58, "C+", 7],
   ["Computer Science", 77, "A-", 3],
   ["English", 66, "B", 4],
 ];

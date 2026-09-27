@@ -6,10 +6,11 @@ import { C, pill } from "@/lib/theme";
 import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
 import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
+import { OFFERED_SUBJECTS } from "@/lib/data";
 import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
 import type { AppState } from "@/lib/types";
 
-const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
+const ALL_SUBJECTS = OFFERED_SUBJECTS;
 
 export function Settings() {
   const { s, set, patch } = useApp();
