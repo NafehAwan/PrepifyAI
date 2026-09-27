@@ -7,12 +7,13 @@
 import { groqAuthHeaders } from "./key";
 import type { DBMcq } from "../curriculum";
 import type { TeachContext } from "../types";
+import type { McqDifficulty } from "./prompts";
 
 export async function generateQuiz(
   teach: TeachContext,
   count: number,
   key: string,
-  opts?: { mix?: boolean },
+  opts?: { difficulty?: McqDifficulty },
 ): Promise<DBMcq[] | null> {
   try {
     const res = await fetch("/api/ai/quiz", {
@@ -24,7 +25,7 @@ export async function generateQuiz(
         sloList: teach.sloList,
         groundTruth: teach.groundTruth,
         count,
-        mix: opts?.mix ?? false,
+        difficulty: opts?.difficulty ?? "medium",
         // a fresh random variant each call → different questions on every retake
         variant: Math.floor(Math.random() * 1e6),
       }),

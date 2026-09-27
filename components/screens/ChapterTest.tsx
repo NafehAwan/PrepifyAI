@@ -59,7 +59,7 @@ export function ChapterTest() {
           { subject: grounding.subject, classLevel: grounding.classLevel, medium: "English", level: "Developing", sloList: grounding.sloList, groundTruth: grounding.groundTruth },
           25,
           s.groqKey,
-          { mix: true }, // scenario/SLO-based + straightforward blend
+          { difficulty: "mixed" }, // scenario + straightforward blend
         );
         if (!active) return;
         if (gen && gen.length > 0) {

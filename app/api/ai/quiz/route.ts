@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { resolveGroqKey } from "@/lib/ai/config";
 import { groqChat } from "@/lib/ai/client";
-import { QUIZ_GEN_SYSTEM_PROMPT, quizGenUserMessage } from "@/lib/ai/prompts";
+import { QUIZ_GEN_SYSTEM_PROMPT, quizGenUserMessage, type McqDifficulty } from "@/lib/ai/prompts";
 
 export const runtime = "nodejs";
 
@@ -19,14 +19,24 @@ function parseJson(text: string): { questions?: GenQ[] } {
   return JSON.parse(t) as { questions?: GenQ[] };
 }
 
-// Generates fresh MCQs grounded only on the supplied topic/chapter text. Uses
-// the student's own Groq key. Powers the "Generate AI quiz" action so any
-// grounded content can be tested without a pre-seeded question bank.
+const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "mixed"];
+
+// Generates fresh MCQs grounded only on the supplied chapter text. This is the
+// fallback path only — a normal test is sampled from the `questions` bank and
+// costs no API call, which is what lets one shared key serve a whole class.
 export async function POST(req: Request) {
   const key = resolveGroqKey(req);
   if (!key) return NextResponse.json({ configured: false }, { status: 503 });
 
-  let body: { subject?: string; classLevel?: number | string; sloList?: string; groundTruth?: string; count?: number; mix?: boolean; variant?: number };
+  let body: {
+    subject?: string;
+    classLevel?: number | string;
+    sloList?: string;
+    groundTruth?: string;
+    count?: number;
+    difficulty?: string;
+    variant?: number;
+  };
   try {
     body = await req.json();
   } catch {
@@ -38,13 +48,16 @@ export async function POST(req: Request) {
   }
 
   const count = Math.min(Math.max(Number(body.count) || 5, 1), 30);
+  const difficulty: McqDifficulty = DIFFICULTIES.includes(body.difficulty as McqDifficulty)
+    ? (body.difficulty as McqDifficulty)
+    : "medium";
   const userMessage = quizGenUserMessage({
     subject: body.subject ?? "Physics",
     classLevel: body.classLevel ?? 9,
     sloList: body.sloList ?? "",
     groundTruth: body.groundTruth,
     count,
-    mix: !!body.mix,
+    difficulty,
     variant: Number(body.variant) || 1,
   });
 
@@ -53,7 +66,8 @@ export async function POST(req: Request) {
       key,
       // scale output room with the number of questions
       maxTokens: Math.min(7000, 900 + count * 240),
-      temperature: body.mix ? 0.8 : 0.5, // more variety for full tests / retakes
+      // Scenario-heavy bands need more variety; easy recall sets need less drift.
+      temperature: difficulty === "easy" ? 0.5 : 0.8,
       jsonMode: true,
       messages: [
         { role: "system", content: QUIZ_GEN_SYSTEM_PROMPT },

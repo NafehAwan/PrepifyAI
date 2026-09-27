@@ -69,7 +69,34 @@ TEACHING:
 
 // --- Question generator: fresh MCQs grounded ONLY on the supplied text --------
 
+// The house style for every MCQ Prepify writes, derived from the owner's own
+// FBISE Class 9 bank. Two things in that bank shape it: options are short
+// parallel phrases rather than sentences, and the difficult sets are almost
+// entirely scenario questions that put a person in a situation and ask what
+// happens ("A student places a clean iron nail in copper sulphate solution.
+// After some time, a brown layer appears on the nail. This shows that iron:").
+// Kept as one export so the style can be tuned in a single place.
+export const MCQ_STYLE_GUIDE = `HOUSE STYLE — match the FBISE Class 9 board paper:
+1. Exactly 4 options. Exactly one is correct.
+2. Options are short, parallel and the same grammatical shape as each other — a
+   phrase or a value, not a sentence. Never "All of the above" or "None of these".
+3. Distractors must be the mistakes a real student makes: the reverse of the
+   right answer, a confused neighbouring term, a plausible wrong unit or sign.
+   Never filler or jokes.
+4. A SCENARIO question sets up a short concrete situation in one or two
+   sentences — a student, a technician, an experiment, an everyday object — and
+   then asks what follows, ending in a colon or a question. It must require
+   applying the concept, not recalling a definition.
+   Example shape: "An iron gate near the sea rusts faster than the same gate in
+   a dry city. The main reason is:"
+5. A CONCEPT question is direct recall or understanding, one step, no setup.
+6. Plain FBISE textbook wording. No "which of the following" padding where a
+   direct question works. Keep stems under 45 words.
+7. Vary which option letter is correct across the set.`;
+
 export const QUIZ_GEN_SYSTEM_PROMPT = `You are an FBISE paper-setter. Write exam-style multiple-choice questions using ONLY the GROUND TRUTH provided (official textbook text + SLOs). Never use outside knowledge or test facts not present in the ground truth.
+
+${MCQ_STYLE_GUIDE}
 
 RULES:
 1. Every question must be answerable purely from the GROUND TRUTH.
@@ -88,17 +115,29 @@ export interface QuizGenVars {
   sloList: string;
   groundTruth: string;
   count: number;
-  mix?: boolean; // true for a full chapter test: scenario + straightforward blend
+  // Board weighting per band, not a boolean: the owner's difficult sets are
+  // almost entirely scenario questions, which is what "hard" reproduces.
+  difficulty?: McqDifficulty;
   variant?: number; // bump to force a fresh, different set on retake
 }
 
+export type McqDifficulty = "easy" | "medium" | "hard" | "mixed";
+
+// Share of scenario/application questions per band.
+const SCENARIO_SHARE: Record<McqDifficulty, number> = {
+  easy: 0,
+  medium: 35,
+  hard: 70,
+  mixed: 45,
+};
+
 export function quizGenUserMessage(v: QuizGenVars): string {
-  const mixSpec = v.mix
-    ? `Make a deliberate MIX of difficulty:
-- About 60% SCENARIO / APPLICATION questions: give a short real situation or worked case and make the student APPLY the concept to answer. Each must map to one of the SLOs above (higher-order thinking).
-- The remaining ~40% STRAIGHTFORWARD recall/understanding questions (direct, single-step).
-Order them with the straightforward ones first and the scenario ones after.`
-    : `Keep them clear and direct (recall/understanding level).`;
+  const band = v.difficulty ?? "medium";
+  const scenarioPct = SCENARIO_SHARE[band];
+  const mixSpec =
+    scenarioPct === 0
+      ? `DIFFICULTY: EASY. Direct recall and understanding only — one step, no scenario setups.`
+      : `DIFFICULTY: ${band.toUpperCase()}. About ${scenarioPct}% must be SCENARIO / APPLICATION questions as described in the house style, and the rest direct CONCEPT questions. Put the concept questions first and the scenario ones after.`;
 
   return `Class ${v.classLevel} ${v.subject}. Write ${v.count} multiple-choice questions.
 
