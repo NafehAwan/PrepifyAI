@@ -72,7 +72,8 @@ export function toLines(text) {
   for (const raw of text.split("\n")) {
     const line = clean(raw);
     if (line.length === 0 || NOISE_RE.test(line)) continue;
-    if (line === FIGURE && out.length > 0) {
+    // One picture or several side by side — either way the line is only pictures.
+    if (line.replaceAll(FIGURE, "").trim() === "" && out.length > 0) {
       out[out.length - 1] += ` ${FIGURE}`;
       continue;
     }
@@ -212,31 +213,65 @@ function parseBare(lines, defaultChapter) {
     return out;
   }
 
-  // No key anywhere: assume stem + 4 options, and only accept a group whose
-  // "options" all look like options (short, not questions).
+  // No key anywhere. Two conventions exist among the unkeyed files:
+  //
+  //  - stems end in "?", ":", "." or "-----" (the Maths unit 3 sets). Anchor on
+  //    those: a stem followed by exactly four option-like lines is a question,
+  //    and a stem with no options (its choices were pictures) is skipped rather
+  //    than allowed to shift every question after it.
+  //  - stems carry no punctuation at all (the Physics "Complicated" set). There
+  //    is nothing to anchor on, so fall back to fixed stem + 4 groups.
+  const isStemLike = (l) => /[?:]\s*$|-{3,}\s*$|\.\s*$/.test(l.replaceAll(FIGURE, "").trim());
+  const isOptionLike = (l) => !isStemLike(l) && l.length <= 120;
+
   let chapter = defaultChapter;
+  const blockStarts = [];
+  const flat = [];
+  for (const line of lines) {
+    const chap = CHAPTER_RE.exec(line);
+    if (chap) {
+      chapter = Number(chap[1]);
+      blockStarts.push(flat.length);
+      continue;
+    }
+    flat.push({ line, chapter });
+  }
+
+  const punctuated = flat.filter(({ line }) => isStemLike(line)).length >= (flat.length / 5) * 0.6;
+
+  if (punctuated) {
+    for (let i = 0; i < flat.length; ) {
+      const window = flat.slice(i + 1, i + 5);
+      if (isStemLike(flat[i].line) && window.length === 4 && window.every(({ line }) => isOptionLike(line))) {
+        const q = makeQuestion([flat[i].line], window.map(({ line }) => line), null, flat[i].chapter);
+        if (q) out.push(q);
+        i += 5;
+      } else {
+        i += 1; // an orphan stem or stray line — skip it, don't shift the rest
+      }
+    }
+    return out;
+  }
+
   let group = [];
+  let groupChapter = defaultChapter;
   const flush = () => {
     if (group.length === 5) {
       const [stem, ...options] = group;
       const plausible = options.every((o) => o.length <= 120 && !o.endsWith("?"));
       if (plausible) {
-        const q = makeQuestion([stem], options, null, chapter);
+        const q = makeQuestion([stem], options, null, groupChapter);
         if (q) out.push(q);
       }
     }
     group = [];
   };
-  for (const line of lines) {
-    const chap = CHAPTER_RE.exec(line);
-    if (chap) {
-      flush();
-      chapter = Number(chap[1]);
-      continue;
-    }
+  flat.forEach(({ line, chapter: c }, idx) => {
+    if (blockStarts.includes(idx)) flush();
+    if (group.length === 0) groupChapter = c;
     group.push(line);
     if (group.length === 5) flush();
-  }
+  });
   return out;
 }
 

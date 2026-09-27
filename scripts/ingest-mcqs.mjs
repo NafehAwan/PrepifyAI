@@ -152,10 +152,15 @@ for (const [subject, byChapter] of banks) {
     );
     for (const q of list) {
       const old = previous.get(fingerprint(q.stem));
-      if (q.answer === null && old && old.answer !== null) {
+      if (q.answer !== null || !old) continue;
+      if (old.answer !== null) {
         q.answer = old.answer;
         q.answer_source = old.answer_source;
         if (old.answer_confidence) q.answer_confidence = old.answer_confidence;
+        carried++;
+      } else if (old.rejected) {
+        // A question judged defective stays out of tests across re-runs.
+        q.rejected = old.rejected;
         carried++;
       }
     }
@@ -164,11 +169,13 @@ for (const [subject, byChapter] of banks) {
 
 // Write one file per subject+chapter.
 let written = 0;
-let totals = { all: 0, keyed: 0, scenario: 0 };
+let totals = { all: 0, keyed: 0, derived: 0, rejected: 0, scenario: 0 };
 for (const [subject, byChapter] of [...banks].sort()) {
   for (const [seq, list] of [...byChapter].sort((a, b) => a[0] - b[0])) {
     totals.all += list.length;
-    totals.keyed += list.filter((q) => q.answer !== null).length;
+    totals.keyed += list.filter((q) => q.answer_source === "file").length;
+    totals.derived += list.filter((q) => q.answer_source === "derived").length;
+    totals.rejected += list.filter((q) => q.rejected).length;
     totals.scenario += list.filter((q) => q.scenario).length;
     if (args.dry) continue;
     const file = path.join(outDir, `${SUBJECT_SLUG[subject]}-u${String(seq).padStart(2, "0")}.json`);
@@ -197,9 +204,10 @@ for (const [subject, byChapter] of [...banks].sort()) {
   console.log(`  ${subject.padEnd(17)} ${String(n).padStart(4)}  ${counts}`);
 }
 console.log(
-  `\nTotal ${totals.all} questions · ${totals.keyed} with an answer from the file ` +
-    `(${totals.all - totals.keyed} need deriving) · ${totals.scenario} scenario-style · ${duplicates} duplicates dropped` +
-    (carried ? ` · ${carried} derived answers carried over` : ""),
+  `\nTotal ${totals.all} questions · ${totals.keyed} answers from the files · ${totals.derived} derived · ` +
+    `${totals.rejected} rejected as defective · ${totals.all - totals.keyed - totals.derived - totals.rejected} still need an answer · ` +
+    `${totals.scenario} scenario-style · ${duplicates} duplicates dropped` +
+    (carried ? ` · ${carried} earlier judgements carried over` : ""),
 );
 if (unmatched.length) console.log(`\nUnmatched files (no rule):\n  ${unmatched.join("\n  ")}`);
 if (!args.dry) console.log(`\nWrote ${written} files to ${outDir}`);

@@ -11,120 +11,184 @@
         "One is a proper subset of the other",
         "They have no elements in common"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "3109f46d17d2",
-      "stem": "If n(A) = 4 and n(B) = 3, what is the total cardinality of their Cartesian product , n (A x B )?",
+      "id": "4fd198cd4abf",
+      "stem": "If A ⊂ B (A is proper subset of B) , the Venn diagram shows:",
       "options": [
-        "If A ⊂ B (A is proper subset of B) , the Venn diagram shows:",
         "Two separate circles",
         "Two overlapping circles",
-        "Circle A completely inside circle B"
+        "Circle A completely inside circle B",
+        "Circles of equal size"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "id": "92e261c64fe8",
+      "stem": "The distributive property A∪(B∩C) equals:",
+      "options": [
+        "(A∪B)∩C",
+        "(A ∪B)∩(A∪C)",
+        "(A∩B)∪(A∩C)",
+        "A∩(B∪C)"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "3df0100dd6ad",
-      "stem": "(A∩B)∪(A∩C)",
+      "id": "0b2651010a3a",
+      "stem": "For sets A and B : (A∪B)^ˊ equals (De Morganˊs Law).",
       "options": [
-        "A∩(B∪C)",
-        "For sets A and B : (A∪B)^ˊ equals (De Morganˊs Law).",
         "A^ˊ∪ B^ˊ",
-        "A^ˊ ∩ B^ˊ"
+        "A^ˊ ∩ B^ˊ",
+        "A∩B",
+        "A^ˊ ∪B"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "c7d7a4bb9a4d",
-      "stem": "x=2 , y=3",
+      "id": "3d8f25b33af8",
+      "stem": "If (2x+3 , y-1)=(7 , 4) is an equality of ordered pairs , find the unique values of x and y.",
       "options": [
-        "x=1 , y=5",
-        "A binary relation R from set A to set B is:",
+        "x=2 , y=5",
+        "x=5 , y=3",
+        "x=2 , y=3",
+        "x=1 , y=5"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "id": "f5098cdc6b6f",
+      "stem": "A binary relation R from set A to set B is:",
+      "options": [
         "Any function from A to B",
-        "A subset of A x B"
+        "A subset of A x B",
+        "Equal to A x B",
+        "A subset of A ∪ B"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "dbfaf3fd8c34",
-      "stem": "Equal to A x B",
+      "id": "b64278eba338",
+      "stem": "If A = {1,2,3} , B = {0,1,3} and R = { (a,b)/ a ∈A , b ∈ B, a > b }, then R is:",
       "options": [
-        "A subset of A ∪ B",
-        "If A = {1,2,3} , B = {0,1,3} and R = { (a,b)/ a ∈A , b ∈ B, a > b }, then R is:",
         "{ (1,0),(2,0),(2,1),(3,0),(3,1) }",
-        "{ (1,0),(2,1),(3,0),(3,1) }"
+        "{ (1,0),(2,1),(3,0),(3,1) }",
+        "{ (2,0),(2,1),(3,0),(3,1)(3,3) }",
+        "Both A and B are correct"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "2d8662e09e8c",
-      "stem": "{ (2,0),(2,1),(3,0),(3,1)(3,3) }",
+      "id": "78fed2f69921",
+      "stem": "Shading only the central overlapping region where circles A and B cross represents:",
       "options": [
-        "Both A and B are correct",
-        "Shading only the central overlapping region where circles A and B cross represents:",
         "A∪B",
-        "A-B"
+        "A-B",
+        "A∩B",
+        "A^ˊ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "c4e0e57d60d9",
-      "stem": "{x/x ∉ A ^ x ∈ B}",
+      "id": "e8017c403954",
+      "stem": "If two circles inside a Venn diagram rectangle do not touch or overlap at any point, the sets are:",
       "options": [
+        "Equal",
+        "Overlapping",
+        "Disjoint",
+        "Universal"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "id": "edc1f253b0a8",
+      "stem": "If a Venn diagram contains zero shaded regions, what set does the unshaded space represent?",
+      "options": [
+        "Universal set",
+        "Empty set",
+        "Complement set",
+        "Infinite set"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "id": "1aacf97c12ff",
+      "stem": "Set building form of AՍB is .",
+      "options": [
+        "{x/x ∈A v x∈B}",
+        "{x/x ∉ A ^ x ∈ B}",
         "{x/x ∈ A ^ x ∉ B}",
-        "{x/x ∉ A ^ x ∉ B}",
-        "The pictorial representation of any set is called a -----------",
-        "Binary relation"
+        "{x/x ∉ A ^ x ∉ B}"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "d6f308d01dbe",
-      "stem": "A ∩( B ∪C)",
+      "id": "47ca67578f60",
+      "stem": "The pictorial representation of any set is called a -----------",
       "options": [
-        "A ∪( B ∩C)",
-        "A-(B∩C)",
-        "B-(A∪C)",
-        "If P = {2,3 } and Q = {1/2 , 1/3 }, then n( P x Q ) equals:"
+        "Binary relation",
+        "Real line",
+        "Venn diagram",
+        "None of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -139,8 +203,8 @@
         "A x B",
         "None of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -155,8 +219,8 @@
         "A = ∅ or B = ∅",
         "n(A) ≠ n(B)"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -171,8 +235,8 @@
         "A void relation",
         "None of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -187,8 +251,8 @@
         "{2x/x∈N∧x≥10}",
         "None of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -203,8 +267,8 @@
         "Domain of R⁻¹",
         "A x B"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -219,56 +283,40 @@
         "A-B",
         "( A ∩B )^ˊ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
     },
     {
-      "id": "0b3424744d56",
-      "stem": "If A – B = B – A = Ø, then",
+      "id": "b6a53a736fc9",
+      "stem": "The set {x/x∈U∧x∉A} is equal to:",
       "options": [
-        "A = B",
-        "B ⊆ A",
-        "A ⊆ B",
-        "All A,B,C"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": true,
-      "chapter_seq": 3,
-      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
-    },
-    {
-      "id": "84f4d599d07b",
-      "stem": "The set {x/x∈A∧x∉B} is equal to",
-      "options": [
-        "A",
-        "B",
-        "A – B",
-        "B – A"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": false,
-      "chapter_seq": 3,
-      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
-    },
-    {
-      "id": "beeca9dc7f0e",
-      "stem": "If n(A x B) = 6 and A = {1,3} then n(B) is",
-      "options": [
-        "The set {x/x∈U∧x∉A} is equal to:",
         "A",
         "A^ˊ",
-        "A-B"
+        "A-B",
+        "B^ˊ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 ( Set 01) (1).docx"
+    },
+    {
+      "id": "6fceb187fd08",
+      "stem": "{ ∅ } is a ------------- set.",
+      "options": [
+        "Empty set",
+        "Subset",
+        "Singleton set",
+        "None of these"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -283,8 +331,8 @@
         "A set of beautiful paintings",
         "A collection of good books"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -299,8 +347,8 @@
         "{ 4 }",
         "{ }"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 3,
@@ -315,8 +363,8 @@
         "{ 1,2,3,5,7 }",
         "Both B and C"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 3,
@@ -331,8 +379,8 @@
         "{ a, b, e, f }",
         "{ }"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 3,
@@ -347,8 +395,8 @@
         "{1,2,3,5,7}",
         "{1.3.4.5,7}"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -363,8 +411,8 @@
         "U",
         "Aˊ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
@@ -379,184 +427,232 @@
         "U",
         "Aˊ"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "b690979b7cb0",
-      "stem": "If n(A) = 24, n(B) = 18 and n(A∪B) = 31, then n(A∩B) is:",
+      "id": "a295fc180a25",
+      "stem": "Two sets A and B are disjoint if:",
       "options": [
-        "Cannot determine",
-        "Two sets A and B are disjoint if:",
         "A⊂B",
-        "A∩B = ∅"
+        "A∩B = ∅",
+        "A∪B = ∅",
+        "n(A) = n(B)"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "1de3c6c41519",
-      "stem": "A ∪(B∩C) = (A∪B)∩(A∪C)",
+      "id": "77d007b1051b",
+      "stem": "The associative property of union states:",
       "options": [
-        "A ∪ ∅ = A",
-        "If A = { 1,2,3}, B= {2,3,4}, C= {3,4,5}, Verify (A∩B)∩C:",
+        "A ∪ B = B ∪ A",
+        "( A ∪ B ) ∪ C = A ∪ ( B ∪ C )",
+        "A ∪(B∩C) = (A∪B)∩(A∪C)",
+        "A ∪ ∅ = A"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "a179eff280cd",
+      "stem": "If A = { 1,2,3}, B= {2,3,4}, C= {3,4,5}, Verify (A∩B)∩C:",
+      "options": [
         "{ 3 }",
-        "{ 2,3 }"
+        "{ 2,3 }",
+        "{ 3,4 }",
+        "{2,3,4 }"
       ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": false,
-      "chapter_seq": 3,
-      "source_file": "Maths-Unit = 3 (Set 02).docx"
-    },
-    {
-      "id": "209d406976ef",
-      "stem": "a = c and b = d",
-      "options": [
-        "a = b and c = d",
-        "a + b = c + d",
-        "If A = { 0,1,2 } and B = { 3,4 }, then n( A x B) equals:",
-        "(x-3y , 5x + 1) = (4,6). The value of x is:"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": false,
-      "chapter_seq": 3,
-      "source_file": "Maths-Unit = 3 (Set 02).docx"
-    },
-    {
-      "id": "b496ea4da76d",
-      "stem": "If A = { 5,10,15,20,25}, the number of binary relations in A is:",
-      "options": [
-        "2²⁵",
-        "2⁵",
-        "5²",
-        "The domain of R = {(1,0),(2,0),(2,1),(3,0),(3,1)} is:"
-      ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": true,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "ddd9f0b304f9",
-      "stem": "{ (0,0),(4,2),(9,3) }",
+      "id": "06b9354b7ac1",
+      "stem": "Two ordered pairs (a,b) and (c,d) are equal if:",
       "options": [
+        "a = d and b = c",
+        "a = c and b = d",
+        "a = b and c = d",
+        "a + b = c + d"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "9c7b7b2f384e",
+      "stem": "The domain of R = {(1,0),(2,0),(2,1),(3,0),(3,1)} is:",
+      "options": [
+        "{0,1}",
+        "{1,2,3}",
+        "{0,1,2,3}",
+        "{1,2,3,4}"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "93dc33b17d2f",
+      "stem": "The range of R = { (1,0),(2,0),(2,1),(3,0),(3,1)} is:",
+      "options": [
+        "{ 0,1 }",
+        "{ 1,2,3 }",
+        "{ 0,1,2,3 }",
+        "{ }"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "c486106e4642",
+      "stem": "R⁻¹ of R = { (0,0),(2,4),(3,9)} is :",
+      "options": [
+        "{ (0,0),(4,2),(9,3) }",
         "{ (0,0),(2,4),(3,9) }",
         "{ (4,0),(9,3)}",
-        "Cannot be determined",
-        "If R = { (x,y)/∈A, y∈A, x²=y} and A = {0,2,3}, then R is:"
+        "Cannot be determined"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "1aee14aa4889",
-      "stem": "{ (0,0),(2,4),(3,9) }",
+      "id": "111513ac9d88",
+      "stem": "If R = { (x,y)/∈A, y∈A, x²=y} and A = {0,2,3}, then R is:",
       "options": [
+        "{ (0,0),(2,4),(3,9) }",
         "{ (0,0) }",
         "{ }",
-        "Undefined since 4,9 ∉ A",
-        "If L x M = {(0,2),(0,3),(0,4),(1,2),(1,3),(1,4)} , then set L is:"
+        "Undefined since 4,9 ∉ A"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "84251e7604ae",
-      "stem": "Disjoint",
+      "id": "44ee976f4e46",
+      "stem": "If L x M = {(0,2),(0,3),(0,4),(1,2),(1,3),(1,4)} , then set L is:",
       "options": [
+        "{ 0,1 }",
+        "{ 2,3,4 }",
+        "{ 0,1,2,3,4 }",
+        "Cannot determine"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "c6b54362e1af",
+      "stem": "If L x M = {(0,2),(0,3),(0,4),(1,2),(1,3),(1,4)} , then set M is:",
+      "options": [
+        "{ 0,1 }",
+        "{ 2,3,4 }",
+        "{ 0,1,2,3,4 }",
+        "Cannot determine"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Maths-Unit = 3 (Set 02).docx"
+    },
+    {
+      "id": "8203f5b6acf0",
+      "stem": "A ------- is a collection of well defined and distinct objects.",
+      "options": [
+        "Disjoint",
         "Set",
         "Union",
-        "Intersection",
-        "The number of subsets of A x B"
+        "Intersection"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "bdeb477b55db",
-      "stem": "2^(n(A × B))",
+      "id": "0bc0ba928448",
+      "stem": "If B = {x/x∈N⋀2<x≤3} , which set best describe B?",
       "options": [
-        "2^(A×B²)",
-        "A x B",
-        "None",
-        "Set of all the first elements of ordered pairs in a binary relation is called"
-      ],
-      "answer": null,
-      "answer_source": null,
-      "difficulty": "medium",
-      "scenario": false,
-      "chapter_seq": 3,
-      "source_file": "Maths-Unit = 3 (Set 02).docx"
-    },
-    {
-      "id": "dc91ab06371f",
-      "stem": "Empty set",
-      "options": [
+        "Empty set",
         "Singleton set",
         "Infinite set",
-        "Null set",
-        "Let U = { 1,2,3,…….,10} , A = { 2,4,6,8,10} and B = { 1,3,5,7,9 }. Find (A∪B)^ˊ."
+        "Null set"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "4530b731c262",
-      "stem": "Subset of binary relation",
+      "id": "be87b9e23e24",
+      "stem": "Let U = { 1,2,3,…….,10} , A = { 2,4,6,8,10} and B = { 1,3,5,7,9 }. Find (A∪B)^ˊ.",
       "options": [
-        "Domain of binary relation",
-        "Range of binary relation",
-        "None of these",
-        "Let A = { 1,2 } and B = { a,b }. Find the complete Cartesian product set A x B."
+        "U",
+        "∅",
+        "{2,4,6}",
+        "{1,3,5}"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
       "source_file": "Maths-Unit = 3 (Set 02).docx"
     },
     {
-      "id": "29cd8a386f5b",
-      "stem": "{ (1,a) ,(2,b) }",
+      "id": "087d86320dfe",
+      "stem": "Let A = { 1,2 } and B = { a,b }. Find the complete Cartesian product set A x B.",
       "options": [
+        "{ (1,a) ,(2,b) }",
         "{ ( 1,a) , (1,b) , (2,a) ,(2, b)}",
         "{ (a,1) , (b,1) ,( a,2) , (b, 2)}",
-        "{ 1,2,a,b}",
-        "Let A = {1,2} , Find the total number of elements in the triple Cartesian product A x A x A."
+        "{ 1,2,a,b}"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "medium",
       "scenario": false,
       "chapter_seq": 3,
