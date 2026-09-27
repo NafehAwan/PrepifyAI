@@ -699,8 +699,8 @@
         "Fe + S → FeS",
         "Na + Cl₂ → NaCl"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "easy",
       "scenario": false,
       "chapter_seq": 7,

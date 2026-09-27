@@ -11,8 +11,8 @@
         "Physical balance",
         "Vernier caliper"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -27,8 +27,8 @@
         "Kilogram",
         "Candela"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -43,8 +43,8 @@
         "Million watt",
         "Kilowatt"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -59,8 +59,8 @@
         "External diameter",
         "Area"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -75,8 +75,8 @@
         "Both",
         "None"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -91,8 +91,8 @@
         "Errors",
         "Significant digits"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -107,8 +107,8 @@
         "0.01s",
         "0.001s"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -123,8 +123,8 @@
         "Area",
         "Mass"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -139,8 +139,8 @@
         "Non physical",
         "Vector"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -155,8 +155,8 @@
         "Base",
         "Non physical"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -171,8 +171,8 @@
         "Scalar",
         "Vector"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -192,7 +192,8 @@
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "rejected": "No clearly correct option: a vector is drawn as a directed line segment, and both Sketch and Graph describe that loosely."
     },
     {
       "id": "e6ac5dea3102",
@@ -203,8 +204,8 @@
         "Head to tail rule",
         "Cramer's rule"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -219,8 +220,8 @@
         "SI system",
         "None of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -235,8 +236,8 @@
         "50 millimeters",
         "100 millimeters"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -251,8 +252,8 @@
         "Meter ruler",
         "Measuring tape"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -267,8 +268,8 @@
         "10¹⁵",
         "10¹⁶"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -283,8 +284,8 @@
         "Scalar",
         "Significant digits"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -299,12 +300,13 @@
         "Errors",
         "Vectors"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
     },
     {
       "id": "21f2dc0ec1e6",
@@ -315,8 +317,8 @@
         "Personal",
         "External"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -331,8 +333,8 @@
         "Four",
         "One"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -347,8 +349,8 @@
         "Prefixes",
         "All of above"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -363,8 +365,8 @@
         "0.9mm",
         "All of them"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,
@@ -379,8 +381,8 @@
         "Measurement",
         "Human"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 1,

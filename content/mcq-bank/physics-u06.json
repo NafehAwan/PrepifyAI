@@ -11,8 +11,8 @@
         "Potential",
         "Chemical"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -27,8 +27,8 @@
         "Solar",
         "Wind"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -43,8 +43,8 @@
         "Physical",
         "Chemical"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -59,8 +59,8 @@
         "Displacement",
         "Friction"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -75,8 +75,8 @@
         "Remain same",
         "All of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -91,8 +91,8 @@
         "Waves",
         "Heat"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -107,8 +107,8 @@
         "Solar",
         "Sound"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -123,12 +123,13 @@
         "Nuclear",
         "Petroleum"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
     },
     {
       "id": "553aa6304717",
@@ -144,19 +145,20 @@
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "rejected": "Ambiguous: both renewable projects (dams) and non-renewable ones (mining) raise concerns for communities."
     },
     {
-      "id": "673d4521bdf6",
-      "stem": "Demotion of a bodies that continues forever in an unperturbed system",
+      "id": "bc503a784425",
+      "stem": "The motion of a body that continues forever in an undisturbed system is called",
       "options": [
         "Perpendicular",
         "Powerful",
         "Point range",
         "Perpetual"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -171,8 +173,8 @@
         "Hypothesis machine",
         "Hygiene machine"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -187,12 +189,13 @@
         "Natural gas",
         "All of them"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
     },
     {
       "id": "ae51d3ec8d56",
@@ -208,7 +211,8 @@
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "rejected": "The figures are wrong by orders of magnitude (world coal reserves are around a trillion tonnes), so no option is correct."
     },
     {
       "id": "ec0eb99f9cc2",
@@ -219,24 +223,24 @@
         "Crude oil",
         "All of them"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "7cffacc8ad12",
-      "stem": "I and natural gas is often extracted from reservoirs by the process of",
+      "id": "5dc0c916fa42",
+      "stem": "Oil and natural gas are usually extracted from underground reservoirs by",
       "options": [
         "Mining",
         "Drilling",
         "Digging",
         "Extraction"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -251,8 +255,8 @@
         "Burning",
         "Lightning"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -267,8 +271,8 @@
         "Uranium -239",
         "All of them"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 0,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -288,7 +292,8 @@
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "rejected": "No correct option: biomass is harnessed by burning it, which is not offered."
     },
     {
       "id": "574e84735680",
@@ -299,24 +304,24 @@
         "Ethanol",
         "Nitrogen"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
     {
-      "id": "72cbbf740c11",
-      "stem": "Rate of doing work with respect to kind is called",
+      "id": "e750db81b305",
+      "stem": "The rate of doing work with respect to time is called",
       "options": [
         "Pressure",
         "Density",
         "Power",
         "Efficiency"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -331,8 +336,8 @@
         "Base",
         "Non of these"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 1,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -347,8 +352,8 @@
         "1.5 hp",
         "2.7 ho"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -363,8 +368,8 @@
         "Newton",
         "No unit"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -379,8 +384,8 @@
         "Percentage",
         "Kilo joules"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -395,8 +400,8 @@
         "Resistance",
         "Wattage"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 3,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
@@ -411,12 +416,13 @@
         "4 million megawatt",
         "2 million megawatt"
       ],
-      "answer": null,
-      "answer_source": null,
+      "answer": 2,
+      "answer_source": "derived",
       "difficulty": "hard",
       "scenario": true,
       "chapter_seq": 6,
-      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
     },
     {
       "id": "14db1ee28274",
