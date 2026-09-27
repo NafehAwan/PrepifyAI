@@ -34,19 +34,30 @@ export function ChatWidget() {
     if (open) setChats(loadChats());
   }, [open]);
 
+  // Smooth-scroll only when a message actually arrives.
   useEffect(() => {
-    scroller.current?.scrollTo({ top: scroller.current.scrollHeight, behavior: "smooth" });
-  }, [msgs, open, typeShown]);
+    const el = scroller.current;
+    if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+  }, [msgs.length, open]);
 
-  // Drive the typewriter reveal of the newest AI reply.
+  // While the typewriter runs, jump the scroll instantly. Restarting a smooth
+  // scroll on every tick queued a new easing animation ~20x a second, which is
+  // what made the whole app stutter on desktop.
+  useEffect(() => {
+    const el = scroller.current;
+    if (el && typeIdx !== null) el.scrollTop = el.scrollHeight;
+  }, [typeShown, typeIdx]);
+
+  // Drive the typewriter reveal of the newest AI reply. ~30 ticks total, so the
+  // reveal still takes ~1.4s but costs a fraction of the renders.
   useEffect(() => {
     if (typeIdx === null) return;
     const msg = msgs[typeIdx];
     if (!msg) { setTypeIdx(null); return; }
     const full = plainLength(msg[1]);
     if (typeShown >= full) { setTypeIdx(null); return; }
-    const step = Math.max(2, Math.round(full / 90)); // ~1.5s regardless of length
-    const id = setTimeout(() => setTypeShown((n) => Math.min(full, n + step)), 18);
+    const step = Math.max(3, Math.round(full / 30));
+    const id = setTimeout(() => setTypeShown((n) => Math.min(full, n + step)), 45);
     return () => clearTimeout(id);
   }, [typeIdx, typeShown, msgs]);
 

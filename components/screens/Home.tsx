@@ -84,7 +84,9 @@ function HomeGreeter({ mood, text }: { mood: Mood; text: string }) {
         {text}
         <div style={{ position: "absolute", right: -7, top: "50%", transform: "translateY(-50%) rotate(45deg)", width: 13, height: 13, background: C.card, borderRight: `1px solid ${C.line}`, borderTop: `1px solid ${C.line}` }} />
       </div>
-      <Mascot mood={mood} size={isMobile ? 68 : 92} className="pf-lift" />
+      {/* No .pf-lift here — a transform transition on the wrapper fighting the
+          mascot's own transform animation caused layer thrash on hover. */}
+      <Mascot mood={mood} size={isMobile ? 68 : 92} />
     </div>
   );
 }

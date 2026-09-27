@@ -8,6 +8,7 @@ import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
 import { OFFERED_SUBJECTS } from "@/lib/data";
 import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
+import { useReducedMotion, setReducedMotion } from "@/lib/motion";
 import type { AppState } from "@/lib/types";
 
 const ALL_SUBJECTS = OFFERED_SUBJECTS;
@@ -15,6 +16,7 @@ const ALL_SUBJECTS = OFFERED_SUBJECTS;
 export function Settings() {
   const { s, set, patch } = useApp();
   const muted = useMuted();
+  const reduceMotion = useReducedMotion();
 
   // Apply a change locally and persist it (persist is a no-op in demo mode).
   const saveProfile = (partial: Partial<AppState>) => {
@@ -99,6 +101,10 @@ export function Settings() {
           <Divider />
           <Row title="Sound effects" desc="Little chimes when you answer questions and pass a quiz.">
             <Toggle on={!muted} onClick={() => { const nextMuted = !muted; setMuted(nextMuted); if (!nextMuted) sfxCorrect(); }} />
+          </Row>
+          <Divider />
+          <Row title="Reduce animations" desc="Turn off Prepi's movement and screen transitions. Try this if the app feels slow on your computer.">
+            <Toggle on={reduceMotion} onClick={() => setReducedMotion(!reduceMotion)} />
           </Row>
         </div>
       </div>

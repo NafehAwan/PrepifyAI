@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
+import { applyReducedMotion, isReducedMotion } from "@/lib/motion";
 import { C } from "@/lib/theme";
 import { NAV, TITLES } from "@/lib/data";
 import { StrokeIcon, FillIcon, PATH } from "./Icon";
@@ -28,6 +29,12 @@ export function AppShell() {
   const { s, go, patch, daysLeft } = useApp();
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Re-apply the student's "Reduce animations" choice on mount (localStorage is
+  // only readable client-side, so the root attribute can't be server-rendered).
+  useEffect(() => {
+    applyReducedMotion(isReducedMotion());
+  }, []);
 
   const isSubjectsActive = (id: string) =>
     s.screen === id || (id === "subjects" && (s.screen === "chapters" || s.screen === "topic" || s.screen === "test"));
