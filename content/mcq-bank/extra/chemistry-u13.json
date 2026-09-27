@@ -1,0 +1,486 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 13,
+  "questions": [
+    {
+      "id": "d77b221f8e95",
+      "stem": "Organic chemistry is the study of compounds of:",
+      "options": [
+        "nitrogen",
+        "carbon",
+        "oxygen",
+        "sulphur"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "46ee475fd03a",
+      "stem": "The ability of carbon atoms to join with each other to form long chains and rings is called:",
+      "options": [
+        "isomerism",
+        "catenation",
+        "polymerization",
+        "hydrolysis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "e787bd64400d",
+      "stem": "Carbon forms four covalent bonds because it is:",
+      "options": [
+        "monovalent",
+        "divalent",
+        "trivalent",
+        "tetravalent"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "540bd5c456b2",
+      "stem": "Which of these is NOT usually classed as an organic compound?",
+      "options": [
+        "Methane",
+        "Ethanol",
+        "Carbon dioxide",
+        "Glucose"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "342b7e89c22e",
+      "stem": "The main natural sources of organic compounds are:",
+      "options": [
+        "coal, petroleum, natural gas and living things",
+        "sand and rocks",
+        "sea salt and air",
+        "metals and ores"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "5719467b486c",
+      "stem": "The functional group of an alcohol is:",
+      "options": [
+        "–OH",
+        "–COOH",
+        "–CHO",
+        "–NH₂"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "226c43827bdc",
+      "stem": "The functional group –COOH belongs to:",
+      "options": [
+        "alcohols",
+        "aldehydes",
+        "carboxylic acids",
+        "ketones"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "eb127fdd8f37",
+      "stem": "The functional group –CHO belongs to:",
+      "options": [
+        "ketones",
+        "aldehydes",
+        "esters",
+        "amines"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "b11a39c32ae6",
+      "stem": "A homologous series is a family of compounds in which each member differs from the next by:",
+      "options": [
+        "–CH₂–",
+        "–OH",
+        "–H₂O",
+        "–CO₂"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "662b46219a5a",
+      "stem": "Members of a homologous series have:",
+      "options": [
+        "the same general formula and similar chemical properties",
+        "different functional groups",
+        "identical boiling points",
+        "no carbon"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "d423c8a36dd1",
+      "stem": "Compounds with the same molecular formula but different structures are called:",
+      "options": [
+        "isotopes",
+        "isomers",
+        "allotropes",
+        "polymers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "729adfe8a3b3",
+      "stem": "Butane (C₄H₁₀) and isobutane (C₄H₁₀) are examples of:",
+      "options": [
+        "isotopes",
+        "isomers",
+        "allotropes",
+        "homologues with different formulas"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "1cba8e974b02",
+      "stem": "The prefix \"prop-\" in an organic name shows a chain of:",
+      "options": [
+        "1 carbon",
+        "2 carbons",
+        "3 carbons",
+        "4 carbons"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "51595e221a70",
+      "stem": "The prefix \"eth-\" shows a chain of:",
+      "options": [
+        "1 carbon",
+        "2 carbons",
+        "3 carbons",
+        "5 carbons"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "18796891034b",
+      "stem": "Heating coal strongly in the absence of air is called:",
+      "options": [
+        "fractional distillation",
+        "destructive distillation",
+        "combustion",
+        "cracking"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "d500e89a2130",
+      "stem": "Destructive distillation of coal produces coke, coal gas and:",
+      "options": [
+        "coal tar",
+        "crude oil",
+        "natural gas only",
+        "sand"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "35addaefa5d5",
+      "stem": "Crude petroleum is separated into useful parts such as petrol and diesel by:",
+      "options": [
+        "filtration",
+        "fractional distillation",
+        "crystallization",
+        "chromatography"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "7eb5cf6cc927",
+      "stem": "A chemist finds that a liquid turns blue litmus red and contains the –COOH group. The compound is most likely:",
+      "options": [
+        "an alcohol",
+        "a carboxylic acid",
+        "an alkane",
+        "an ester"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "43d794fae102",
+      "stem": "A formula that shows every atom and bond in a molecule is a:",
+      "options": [
+        "molecular formula",
+        "structural formula",
+        "empirical formula",
+        "condensed name"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "6b310fdf1e59",
+      "stem": "Vinegar contains which organic compound?",
+      "options": [
+        "Ethanol",
+        "Ethanoic (acetic) acid",
+        "Methane",
+        "Glucose"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "802b82936475",
+      "stem": "Ethanol belongs to which class of compounds?",
+      "options": [
+        "Alcohols",
+        "Alkanes",
+        "Carboxylic acids",
+        "Ketones"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "a1407758c2d9",
+      "stem": "Esters are known for their:",
+      "options": [
+        "pleasant fruity smells",
+        "sour taste",
+        "ability to conduct electricity",
+        "magnetic properties"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "e7d942303b6e",
+      "stem": "A student finds a compound that contains only carbon and hydrogen. It is a:",
+      "options": [
+        "carbohydrate",
+        "hydrocarbon",
+        "carboxylic acid",
+        "protein"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "ec0cbab8238e",
+      "stem": "Why are there millions of organic compounds but far fewer inorganic ones?",
+      "options": [
+        "Carbon forms stable chains, rings and multiple bonds",
+        "Carbon is the most abundant element",
+        "Carbon is a metal",
+        "Organic compounds are all gases"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "38865968a2c2",
+      "stem": "Most organic compounds are:",
+      "options": [
+        "ionic and high-melting",
+        "covalent and have relatively low melting points",
+        "metals",
+        "insoluble in all solvents"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "4be0efad8533",
+      "stem": "Which of these products is made from organic compounds?",
+      "options": [
+        "Plastics and medicines",
+        "Glass",
+        "Table salt",
+        "Iron nails"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "ada8aa4a46f3",
+      "stem": "The functional group in amines is:",
+      "options": [
+        "–NH₂",
+        "–OH",
+        "–COOH",
+        "–CHO"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "c1acebdae081",
+      "stem": "A molecule has the condensed formula CH₃CH₂OH. How many carbon atoms does it contain?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "9f86c25547e1",
+      "stem": "The general formula of the alcohol series (alkanols) is:",
+      "options": [
+        "CₙH₂ₙ₊₁OH",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙH₂ₙ₊₁COOH"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    },
+    {
+      "id": "43796beba318",
+      "stem": "In a homologous series, as the chain gets longer, the boiling point generally:",
+      "options": [
+        "decreases",
+        "increases",
+        "stays the same",
+        "becomes zero"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)"
+    }
+  ]
+}

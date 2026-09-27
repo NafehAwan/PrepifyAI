@@ -1,0 +1,518 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "4988ce2f1fa1",
+      "stem": "The sum of the interior angles of a triangle is:",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "2cb5a6de7a54",
+      "stem": "The sum of the interior angles of a hexagon is:",
+      "options": [
+        "540°",
+        "720°",
+        "900°",
+        "1080°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "799c1be08dec",
+      "stem": "Each interior angle of a regular pentagon is:",
+      "options": [
+        "72°",
+        "100°",
+        "108°",
+        "120°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "8d29217e69f0",
+      "stem": "Each exterior angle of a regular octagon is:",
+      "options": [
+        "30°",
+        "40°",
+        "45°",
+        "60°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "9e7c44dbe704",
+      "stem": "Each exterior angle of a regular polygon is 30°. The number of sides is:",
+      "options": [
+        "6",
+        "10",
+        "12",
+        "15"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "88178efd128c",
+      "stem": "The number of diagonals of a hexagon is:",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "15"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "5c4a00426a75",
+      "stem": "Two angles of a triangle are 50° and 60°. The third angle is:",
+      "options": [
+        "60°",
+        "70°",
+        "80°",
+        "90°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "a6a6d9437c8e",
+      "stem": "In a triangle, the two interior opposite angles are 40° and 65°. The exterior angle formed at the third vertex is:",
+      "options": [
+        "75°",
+        "105°",
+        "115°",
+        "140°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "11668a56342e",
+      "stem": "The legs of a right-angled triangle are 6 cm and 8 cm. The hypotenuse is:",
+      "options": [
+        "10 cm",
+        "12 cm",
+        "14 cm",
+        "48 cm"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "ef9db70faf2c",
+      "stem": "The hypotenuse of a right-angled triangle is 13 cm and one leg is 5 cm. The other leg is:",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "18 cm"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "e0e9226ec7de",
+      "stem": "In a parallelogram, opposite angles are:",
+      "options": [
+        "equal",
+        "supplementary",
+        "complementary",
+        "always right angles"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "1550ac88fb56",
+      "stem": "The diagonals of a rhombus:",
+      "options": [
+        "bisect each other at right angles",
+        "are always equal",
+        "never meet",
+        "are parallel"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "4a9a93e0ca5a",
+      "stem": "The diagonals of a rectangle are:",
+      "options": [
+        "equal in length",
+        "perpendicular to each other",
+        "parallel",
+        "unequal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "2ceae9d4c6fb",
+      "stem": "Two triangles are congruent when two sides and the included angle of one equal those of the other. This is the:",
+      "options": [
+        "SSS rule",
+        "SAS rule",
+        "ASA rule",
+        "RHS rule"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "fd6c4333cc08",
+      "stem": "Two right-angled triangles with equal hypotenuses and one pair of equal legs are congruent by the:",
+      "options": [
+        "SAS rule",
+        "ASA rule",
+        "RHS rule",
+        "AAA rule"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "c1968b4e18e2",
+      "stem": "One of two angles on a straight line is 115°. The other is:",
+      "options": [
+        "55°",
+        "65°",
+        "75°",
+        "245°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "d8d2db3cc9f7",
+      "stem": "When two straight lines intersect, the vertically opposite angles are:",
+      "options": [
+        "equal",
+        "supplementary",
+        "complementary",
+        "always 90°"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "9b2fd079b1f1",
+      "stem": "When a transversal cuts two parallel lines, the alternate angles are:",
+      "options": [
+        "equal",
+        "supplementary",
+        "complementary",
+        "unequal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "07bb321d0481",
+      "stem": "A transversal cuts two parallel lines. One of the co-interior angles is 110°. The other is:",
+      "options": [
+        "70°",
+        "80°",
+        "110°",
+        "250°"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "64075ec49ab6",
+      "stem": "Three angles of a quadrilateral are 80°, 95° and 105°. The fourth angle is:",
+      "options": [
+        "70°",
+        "80°",
+        "90°",
+        "100°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "96c5b05db0be",
+      "stem": "A tiler wants to cover a floor with identical regular hexagonal tiles leaving no gaps. This works because at each corner three angles of 120° make:",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "540°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "2531a2683158",
+      "stem": "The vertex angle of an isosceles triangle is 40°. Each base angle is:",
+      "options": [
+        "40°",
+        "60°",
+        "70°",
+        "140°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "7c9770dae432",
+      "stem": "Each angle of an equilateral triangle is:",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "492f51c3e6db",
+      "stem": "A 10 m ladder leans against a wall with its foot 6 m from the wall. How high up the wall does it reach?",
+      "options": [
+        "4 m",
+        "8 m",
+        "12 m",
+        "16 m"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "bd506a019bd3",
+      "stem": "The sum of the exterior angles of any convex polygon is:",
+      "options": [
+        "180°",
+        "360°",
+        "540°",
+        "depends on the number of sides"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "28f270f982e3",
+      "stem": "Each interior angle of a regular polygon is 150°. The number of sides is:",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "15bb2e2f9afe",
+      "stem": "A triangle with sides 3 cm, 4 cm and 5 cm is:",
+      "options": [
+        "acute-angled",
+        "right-angled",
+        "obtuse-angled",
+        "equilateral"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "75065652f262",
+      "stem": "Two similar triangles have corresponding sides 5 cm and 10 cm. The scale factor from the smaller to the larger is:",
+      "options": [
+        "1/2",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "3d299b93591d",
+      "stem": "A polygon with all sides equal and all angles equal is called a:",
+      "options": [
+        "regular polygon",
+        "irregular polygon",
+        "trapezium",
+        "concave polygon"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "f3f649897dae",
+      "stem": "The sum of the interior angles of a polygon with n sides is:",
+      "options": [
+        "(n − 2) × 180°",
+        "n × 180°",
+        "(n − 1) × 90°",
+        "360° ÷ n"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "6f90d4bfe7c9",
+      "stem": "A garden gate is braced with a diagonal strut, splitting the rectangular frame into two triangles. Triangles are used because a triangle:",
+      "options": [
+        "is a rigid shape that cannot change shape without changing side lengths",
+        "has four sides",
+        "uses less wood than any other shape",
+        "has no angles"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    },
+    {
+      "id": "dafb869a5861",
+      "stem": "A kite-shaped quadrilateral has one pair of opposite angles equal to 100° each and a third angle of 70°. The fourth angle is:",
+      "options": [
+        "70°",
+        "80°",
+        "90°",
+        "100°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# subject: Maths
+# chapter: 8
+# source: Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)
+# answer_source: authored
+# difficulty: medium
+
+The slope of the line through (1, 2) and (3, 6) is: | 1/2 | 2 | 4 | 8 | B | e
+The slope of the line through (2, 5) and (4, 1) is: | 2 | −2 | 1/2 | −1/2 | B
+The slope of the line y = 3x + 4 is: | 3 | 4 | 7 | −3 | A | e
+The y-intercept of the line y = 3x + 4 is: | 3 | 4 | −4 | 7 | B | e
+The slope of a horizontal line is: | 0 | 1 | −1 | undefined | A | e
+The slope of a vertical line is: | 0 | 1 | −1 | undefined | D
+Two non-vertical lines are parallel if their slopes are: | equal | negative reciprocals | both zero only | opposite in sign | A
+Two lines with slopes m₁ and m₂ are perpendicular if: | m₁ = m₂ | m₁m₂ = 1 | m₁m₂ = −1 | m₁ + m₂ = 0 | C
+The slope of a line perpendicular to a line of slope 2 is: | 2 | −2 | 1/2 | −1/2 | D
+The equation of the line with slope 2 and y-intercept −3 is: | y = 2x − 3 | y = −3x + 2 | y = 2x + 3 | 2y = x − 3 | A | e
+The line 2x + y = 6 cuts the x-axis at: | (6, 0) | (3, 0) | (0, 3) | (0, 6) | B
+For the line 3x − 2y = 12, the y-intercept is: | 6 | −6 | 4 | −4 | B | h
+The equation of the line through (1, 3) with slope 2 is: | y = 2x + 1 | y = 2x + 3 | y = 3x + 2 | y = 2x − 1 | A
+The equation of the line through (2, 1) and (4, 5) is: | y = 2x − 3 | y = 2x + 1 | y = x − 1 | y = 3x − 5 | A | h
+Which point lies on the line y = 2x + 1? | (1, 2) | (2, 5) | (3, 6) | (0, 2) | B | e
+The lines y = 3x + 2 and y = 3x − 5 are: | parallel | perpendicular | the same line | intersecting at the origin | A
+The lines y = 2x + 1 and y = −½x + 3 are: | parallel | perpendicular | the same line | both horizontal | B | h
+A line makes an angle of 45° with the positive x-axis. Its slope is: | 0 | 1 | −1 | √3 | B
+The equation of the x-axis is: | x = 0 | y = 0 | y = x | x + y = 0 | B | e
+The line parallel to the x-axis and passing through (0, 4) is: | x = 4 | y = 4 | y = 4x | x + y = 4 | B
+The line with x-intercept 2 and y-intercept 3 is: | 3x + 2y = 6 | 2x + 3y = 6 | x + y = 5 | 3x − 2y = 6 | A | h
+A taxi charges a fixed Rs 100 plus Rs 20 per km. The cost is y = 20x + 100. The slope, 20, represents: | the fixed charge | the cost per kilometre | the total distance | the waiting charge | B | s
+A ramp rises 3 m over a horizontal distance of 12 m. Its slope is: | 4 | 0.25 | 9 | 36 | B | s
+The points (1, 2), (2, 4) and (3, 6) are collinear because: | the slope between each pair is 2 | they are all in the first quadrant | their x-coordinates are consecutive | they form a right angle | A | h
+A line through (2, 1) and (k, 3) has slope 2. The value of k is: | 1 | 2 | 3 | 4 | C | h
+The point-slope form of a line through (x₁, y₁) with slope m is: | y − y₁ = m(x − x₁) | y = mx | x − x₁ = m(y − y₁) | y + y₁ = m(x + x₁) | A | e
+The slope of the line 4x − 2y + 7 = 0 is: | 2 | −2 | 4 | 7/2 | A | h
+The slope of a line perpendicular to y = −3x + 1 is: | 3 | −3 | 1/3 | −1/3 | C
+The vertical line through (5, 2) has the equation: | y = 2 | x = 5 | y = 5x + 2 | x + y = 7 | B
+A car's distance–time graph is a straight line through the origin. The slope of this line gives the car's: | speed | acceleration | total distance | starting time | A | s

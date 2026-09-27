@@ -1,0 +1,502 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "f1e31c37ece1",
+      "stem": "The instrument used to draw circles and arcs is a:",
+      "options": [
+        "protractor",
+        "compass",
+        "set square",
+        "ruler"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "8f0bdd1f9497",
+      "stem": "The instrument used to measure an angle is a:",
+      "options": [
+        "compass",
+        "divider",
+        "protractor",
+        "ruler"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "94073aa96dd9",
+      "stem": "The point where the perpendicular bisectors of the sides of a triangle meet is the:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "a6803d4fa2bf",
+      "stem": "The point where the angle bisectors of a triangle meet is the:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "fe6b2d2e17b6",
+      "stem": "The point where the medians of a triangle meet is the:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "442c19d10d61",
+      "stem": "The point where the altitudes of a triangle meet is the:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "0da175d57ffa",
+      "stem": "The centroid divides each median in the ratio:",
+      "options": [
+        "1 : 1",
+        "2 : 1",
+        "3 : 1",
+        "3 : 2"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "e288e12db165",
+      "stem": "For an obtuse-angled triangle, the orthocentre lies:",
+      "options": [
+        "inside the triangle",
+        "on a side",
+        "outside the triangle",
+        "at a vertex"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "396064b32d2f",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "3 cm, 4 cm, 5 cm",
+        "2 cm, 3 cm, 6 cm",
+        "1 cm, 2 cm, 3 cm",
+        "4 cm, 4 cm, 9 cm"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "ddd22f137f3e",
+      "stem": "Which set of lengths cannot form a triangle?",
+      "options": [
+        "5 cm, 6 cm, 7 cm",
+        "2 cm, 3 cm, 6 cm",
+        "3 cm, 3 cm, 3 cm",
+        "6 cm, 8 cm, 10 cm"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "ca26cc3a6cfe",
+      "stem": "Two sides of a triangle are 7 cm and 3 cm. A possible length of the third side is:",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "10 cm"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "4d7665ed83f5",
+      "stem": "Bisecting an angle of 60° gives two angles of:",
+      "options": [
+        "20°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "7829a2aef5ff",
+      "stem": "Bisecting a right angle gives two angles of:",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "af026b545e04",
+      "stem": "An angle of 120° can be constructed with a compass by:",
+      "options": [
+        "stepping off two 60° angles",
+        "bisecting a 60° angle",
+        "bisecting a 90° angle",
+        "adding 45° and 45°"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "f9a42734078b",
+      "stem": "The circle that passes through all three vertices of a triangle is its:",
+      "options": [
+        "incircle",
+        "circumcircle",
+        "tangent circle",
+        "concentric circle"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "c43d395f5e15",
+      "stem": "The circle that touches all three sides of a triangle from inside is its:",
+      "options": [
+        "incircle",
+        "circumcircle",
+        "semicircle",
+        "arc"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "ead67cfb078c",
+      "stem": "A tangent to a circle is perpendicular to the:",
+      "options": [
+        "chord",
+        "radius at the point of contact",
+        "diameter parallel to it",
+        "arc"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "404b49a7855d",
+      "stem": "From a point outside a circle, the number of tangents that can be drawn is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "infinitely many"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "3fa5e5a876f8",
+      "stem": "To construct a triangle when all three sides are given, we use the:",
+      "options": [
+        "SSS construction",
+        "SAS construction",
+        "ASA construction",
+        "RHS construction"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "ee05a035242d",
+      "stem": "Three villages are to share one water tank placed at the same distance from each village. The tank should be at the triangle's:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "71286f779b0a",
+      "stem": "A fountain is to be placed in a triangular park so that it is equally far from all three boundary walls. It should be at the:",
+      "options": [
+        "incentre",
+        "circumcentre",
+        "centroid",
+        "orthocentre"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "cc716168a782",
+      "stem": "Every point on the perpendicular bisector of a line segment is:",
+      "options": [
+        "equidistant from both endpoints",
+        "on the segment",
+        "closer to one endpoint",
+        "equal to the segment's length away"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "0dd7297fdbc8",
+      "stem": "Every point on the bisector of an angle is:",
+      "options": [
+        "equidistant from both arms of the angle",
+        "on one arm",
+        "at the vertex",
+        "equidistant from the vertex only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "aec6092c141c",
+      "stem": "In a right-angled triangle, the circumcentre lies:",
+      "options": [
+        "at the right-angled vertex",
+        "at the midpoint of the hypotenuse",
+        "outside the triangle",
+        "at the centroid"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "313a397d7c59",
+      "stem": "The hypotenuse of a right-angled triangle is 10 cm. The radius of its circumcircle is:",
+      "options": [
+        "5 cm",
+        "10 cm",
+        "20 cm",
+        "2.5 cm"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "06e349f6b968",
+      "stem": "In an equilateral triangle, the incentre, circumcentre, centroid and orthocentre:",
+      "options": [
+        "all coincide",
+        "form a straight line only",
+        "are all outside the triangle",
+        "are at the vertices"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "802c8f733067",
+      "stem": "A student tries to construct a triangle with angles 90°, 60° and 40°. This is:",
+      "options": [
+        "possible, giving a right triangle",
+        "impossible, because the angles add to 190°",
+        "possible, giving an isosceles triangle",
+        "possible only with a compass"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "7a17ecdda840",
+      "stem": "A metal triangle cut from a sheet balances on a pencil tip at one point. That point is the:",
+      "options": [
+        "centroid",
+        "incentre",
+        "circumcentre",
+        "orthocentre"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "7e63c6994c88",
+      "stem": "Through three points that are not on one line, the number of circles that can be drawn is:",
+      "options": [
+        "none",
+        "exactly one",
+        "two",
+        "infinitely many"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "672d3b320a23",
+      "stem": "To construct the incircle of a triangle, you must first draw:",
+      "options": [
+        "two angle bisectors",
+        "two perpendicular bisectors",
+        "two medians",
+        "two altitudes"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    },
+    {
+      "id": "d7748a797852",
+      "stem": "A median of a triangle joins a vertex to the:",
+      "options": [
+        "midpoint of the opposite side",
+        "foot of the perpendicular",
+        "incentre",
+        "opposite vertex"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Practical Geometry)"
+    }
+  ]
+}

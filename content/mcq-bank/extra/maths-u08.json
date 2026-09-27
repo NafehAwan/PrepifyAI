@@ -1,0 +1,486 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "5ec5fe8c20cf",
+      "stem": "The slope of the line through (1, 2) and (3, 6) is:",
+      "options": [
+        "1/2",
+        "2",
+        "4",
+        "8"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "9462db0391d6",
+      "stem": "The slope of the line through (2, 5) and (4, 1) is:",
+      "options": [
+        "2",
+        "−2",
+        "1/2",
+        "−1/2"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "19aed16c6020",
+      "stem": "The slope of the line y = 3x + 4 is:",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "−3"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "ee1d97fead77",
+      "stem": "The y-intercept of the line y = 3x + 4 is:",
+      "options": [
+        "3",
+        "4",
+        "−4",
+        "7"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "83e3ebe8e310",
+      "stem": "The slope of a horizontal line is:",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "undefined"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "94cc634fef52",
+      "stem": "The slope of a vertical line is:",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "undefined"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "9dc0ae315084",
+      "stem": "Two non-vertical lines are parallel if their slopes are:",
+      "options": [
+        "equal",
+        "negative reciprocals",
+        "both zero only",
+        "opposite in sign"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "222e98a0d18a",
+      "stem": "Two lines with slopes m₁ and m₂ are perpendicular if:",
+      "options": [
+        "m₁ = m₂",
+        "m₁m₂ = 1",
+        "m₁m₂ = −1",
+        "m₁ + m₂ = 0"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "b2fb46194fdb",
+      "stem": "The slope of a line perpendicular to a line of slope 2 is:",
+      "options": [
+        "2",
+        "−2",
+        "1/2",
+        "−1/2"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "f069586ea392",
+      "stem": "The equation of the line with slope 2 and y-intercept −3 is:",
+      "options": [
+        "y = 2x − 3",
+        "y = −3x + 2",
+        "y = 2x + 3",
+        "2y = x − 3"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "3de9207895b3",
+      "stem": "The line 2x + y = 6 cuts the x-axis at:",
+      "options": [
+        "(6, 0)",
+        "(3, 0)",
+        "(0, 3)",
+        "(0, 6)"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "9c048e2fb7f2",
+      "stem": "For the line 3x − 2y = 12, the y-intercept is:",
+      "options": [
+        "6",
+        "−6",
+        "4",
+        "−4"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "63c4ea0aba11",
+      "stem": "The equation of the line through (1, 3) with slope 2 is:",
+      "options": [
+        "y = 2x + 1",
+        "y = 2x + 3",
+        "y = 3x + 2",
+        "y = 2x − 1"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "75dc85c4bc04",
+      "stem": "The equation of the line through (2, 1) and (4, 5) is:",
+      "options": [
+        "y = 2x − 3",
+        "y = 2x + 1",
+        "y = x − 1",
+        "y = 3x − 5"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "13578133a83b",
+      "stem": "Which point lies on the line y = 2x + 1?",
+      "options": [
+        "(1, 2)",
+        "(2, 5)",
+        "(3, 6)",
+        "(0, 2)"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "afa1b996e319",
+      "stem": "The lines y = 3x + 2 and y = 3x − 5 are:",
+      "options": [
+        "parallel",
+        "perpendicular",
+        "the same line",
+        "intersecting at the origin"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "a66b225f2044",
+      "stem": "The lines y = 2x + 1 and y = −½x + 3 are:",
+      "options": [
+        "parallel",
+        "perpendicular",
+        "the same line",
+        "both horizontal"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "e3f2f9f60ef0",
+      "stem": "A line makes an angle of 45° with the positive x-axis. Its slope is:",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "√3"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "e903c801fd98",
+      "stem": "The equation of the x-axis is:",
+      "options": [
+        "x = 0",
+        "y = 0",
+        "y = x",
+        "x + y = 0"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "630ee651cbb6",
+      "stem": "The line parallel to the x-axis and passing through (0, 4) is:",
+      "options": [
+        "x = 4",
+        "y = 4",
+        "y = 4x",
+        "x + y = 4"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "514dd352ea25",
+      "stem": "The line with x-intercept 2 and y-intercept 3 is:",
+      "options": [
+        "3x + 2y = 6",
+        "2x + 3y = 6",
+        "x + y = 5",
+        "3x − 2y = 6"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "ba4edb3757f2",
+      "stem": "A taxi charges a fixed Rs 100 plus Rs 20 per km. The cost is y = 20x + 100. The slope, 20, represents:",
+      "options": [
+        "the fixed charge",
+        "the cost per kilometre",
+        "the total distance",
+        "the waiting charge"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "4c4099ca4bc3",
+      "stem": "A ramp rises 3 m over a horizontal distance of 12 m. Its slope is:",
+      "options": [
+        "4",
+        "0.25",
+        "9",
+        "36"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "8dc11041a5b0",
+      "stem": "The points (1, 2), (2, 4) and (3, 6) are collinear because:",
+      "options": [
+        "the slope between each pair is 2",
+        "they are all in the first quadrant",
+        "their x-coordinates are consecutive",
+        "they form a right angle"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "4ac0f03ced3e",
+      "stem": "A line through (2, 1) and (k, 3) has slope 2. The value of k is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "c5727734861c",
+      "stem": "The point-slope form of a line through (x₁, y₁) with slope m is:",
+      "options": [
+        "y − y₁ = m(x − x₁)",
+        "y = mx",
+        "x − x₁ = m(y − y₁)",
+        "y + y₁ = m(x + x₁)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "69c3c373a87b",
+      "stem": "The slope of the line 4x − 2y + 7 = 0 is:",
+      "options": [
+        "2",
+        "−2",
+        "4",
+        "7/2"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "a0c38e86e5cf",
+      "stem": "The slope of a line perpendicular to y = −3x + 1 is:",
+      "options": [
+        "3",
+        "−3",
+        "1/3",
+        "−1/3"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "7666e431bd67",
+      "stem": "The vertical line through (5, 2) has the equation:",
+      "options": [
+        "y = 2",
+        "x = 5",
+        "y = 5x + 2",
+        "x + y = 7"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    },
+    {
+      "id": "398d1eaef2a0",
+      "stem": "A car's distance–time graph is a straight line through the origin. The slope of this line gives the car's:",
+      "options": [
+        "speed",
+        "acceleration",
+        "total distance",
+        "starting time"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry of Straight Lines)"
+    }
+  ]
+}

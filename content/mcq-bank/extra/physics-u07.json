@@ -1,0 +1,486 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "6adfc917c329",
+      "stem": "Density is defined as:",
+      "options": [
+        "mass per unit volume",
+        "volume per unit mass",
+        "weight per unit area",
+        "force per unit volume"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "74e54bf1f2b7",
+      "stem": "The SI unit of density is:",
+      "options": [
+        "kg m⁻³",
+        "kg m⁻²",
+        "g m",
+        "N m⁻³"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "ec83732ce0e6",
+      "stem": "A block has a mass of 200 g and a volume of 50 cm³. Its density is:",
+      "options": [
+        "0.25 g cm⁻³",
+        "4 g cm⁻³",
+        "250 g cm⁻³",
+        "10 000 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "ed6c7a9a1694",
+      "stem": "The density of pure water is about:",
+      "options": [
+        "100 kg m⁻³",
+        "1000 kg m⁻³",
+        "10 000 kg m⁻³",
+        "1 kg m⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "45135ec7557a",
+      "stem": "What is the mass of 2 m³ of water (density 1000 kg m⁻³)?",
+      "options": [
+        "500 kg",
+        "1002 kg",
+        "2000 kg",
+        "0.002 kg"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "d600e293793e",
+      "stem": "A substance has a density of 2.5 g cm⁻³. What volume does 500 g of it occupy?",
+      "options": [
+        "200 cm³",
+        "1250 cm³",
+        "502.5 cm³",
+        "20 cm³"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "75b016b64316",
+      "stem": "A wooden block floats on water while an iron nail of the same size sinks. This is because:",
+      "options": [
+        "wood is less dense than water and iron is denser",
+        "wood is heavier than iron",
+        "iron has a smaller volume",
+        "water pulls wood upward only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "4df3225c381d",
+      "stem": "Temperature is a measure of the:",
+      "options": [
+        "total heat in a body",
+        "average kinetic energy of its particles",
+        "mass of the particles",
+        "volume of the body"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "4028fea8da16",
+      "stem": "27 °C on the Kelvin scale is:",
+      "options": [
+        "246 K",
+        "273 K",
+        "300 K",
+        "327 K"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "97a9c1bff371",
+      "stem": "0 K is called absolute zero. On the Celsius scale it is about:",
+      "options": [
+        "0 °C",
+        "−100 °C",
+        "−273 °C",
+        "273 °C"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "4c40abc4ecec",
+      "stem": "100 °C on the Fahrenheit scale is:",
+      "options": [
+        "180 °F",
+        "212 °F",
+        "100 °F",
+        "132 °F"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "748a91863507",
+      "stem": "A weather report gives the temperature as 77 °F. In Celsius this is:",
+      "options": [
+        "25 °C",
+        "45 °C",
+        "32 °C",
+        "20 °C"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "dbca2eca05e5",
+      "stem": "At which temperature do the Celsius and Fahrenheit scales show the same reading?",
+      "options": [
+        "0",
+        "−40",
+        "32",
+        "100"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "2efcfd23ffda",
+      "stem": "The lower fixed point (ice point) of the Celsius scale is:",
+      "options": [
+        "0 °C",
+        "4 °C",
+        "32 °C",
+        "100 °C"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "0161164abb6f",
+      "stem": "A clinical thermometer usually measures temperatures in the range:",
+      "options": [
+        "0 °C to 100 °C",
+        "35 °C to 42 °C",
+        "−10 °C to 110 °C",
+        "50 °C to 150 °C"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "49494d6e0e13",
+      "stem": "Alcohol rather than mercury is used in thermometers for very cold places because alcohol:",
+      "options": [
+        "has a very low freezing point",
+        "is heavier",
+        "conducts heat better",
+        "is a metal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "54f888221381",
+      "stem": "Mercury is useful in thermometers because it:",
+      "options": [
+        "expands uniformly and does not wet the glass",
+        "is colourless",
+        "freezes at room temperature",
+        "evaporates quickly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "ae220ecc095e",
+      "stem": "Gaps are left between railway track sections because the rails:",
+      "options": [
+        "contract in summer",
+        "expand when heated in summer",
+        "become lighter in winter",
+        "need drainage"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "2e91f5b9b228",
+      "stem": "A bimetallic strip bends when heated because the two metals:",
+      "options": [
+        "expand by different amounts",
+        "have the same expansion",
+        "melt at once",
+        "lose mass"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "2343dd6ee4d9",
+      "stem": "Water has its maximum density at:",
+      "options": [
+        "0 °C",
+        "4 °C",
+        "37 °C",
+        "100 °C"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "856cfe368072",
+      "stem": "In winter a lake freezes from the top downward, so fish survive in the water below. This happens mainly because:",
+      "options": [
+        "ice is denser than water",
+        "water is densest at 4 °C and ice floats",
+        "fish produce heat",
+        "the bottom of the lake is warmer due to sunlight"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "6876cc143fea",
+      "stem": "A metal lid on a glass jar is stuck. Pouring hot water over the lid helps because:",
+      "options": [
+        "the metal expands more than the glass",
+        "the glass expands more than the metal",
+        "hot water is a lubricant",
+        "heat reduces friction to zero"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "8a6c2b1bfc75",
+      "stem": "Heat and temperature differ because heat is:",
+      "options": [
+        "the energy transferred due to a temperature difference",
+        "always measured in kelvin",
+        "the same as temperature",
+        "a property of particles at rest"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "724b3dd5ed8f",
+      "stem": "When a gas is heated in a sealed container, its particles:",
+      "options": [
+        "slow down",
+        "move faster",
+        "stop moving",
+        "shrink"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "f0ff009bb247",
+      "stem": "A student measures the mass of a stone as 60 g and finds it raises the water in a measuring cylinder from 40 cm³ to 60 cm³. The stone's density is:",
+      "options": [
+        "1.5 g cm⁻³",
+        "3 g cm⁻³",
+        "1 g cm⁻³",
+        "20 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "6cd02de19c26",
+      "stem": "Which of these has the lowest density?",
+      "options": [
+        "Iron",
+        "Water",
+        "Air",
+        "Glass"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "b601472c3a70",
+      "stem": "The temperature of a body rises from 20 °C to 50 °C. The rise in temperature on the Kelvin scale is:",
+      "options": [
+        "30 K",
+        "303 K",
+        "323 K",
+        "273 K"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "b1a8bd521ccc",
+      "stem": "Overhead electric wires are left slightly slack in summer so that in winter they:",
+      "options": [
+        "do not snap when they contract",
+        "can expand more",
+        "carry more current",
+        "look straight"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "2e5a4ffdee9a",
+      "stem": "The instrument used to measure temperature is the:",
+      "options": [
+        "barometer",
+        "thermometer",
+        "hygrometer",
+        "manometer"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    },
+    {
+      "id": "6467ed799333",
+      "stem": "If equal masses of two liquids have volumes of 100 cm³ and 50 cm³, the liquid with volume 50 cm³ has:",
+      "options": [
+        "half the density",
+        "the same density",
+        "twice the density",
+        "four times the density"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)"
+    }
+  ]
+}

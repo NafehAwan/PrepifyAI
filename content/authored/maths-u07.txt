@@ -1,0 +1,36 @@
+# subject: Maths
+# chapter: 7
+# source: Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)
+# answer_source: authored
+# difficulty: medium
+
+The distance between the points (0, 0) and (3, 4) is: | 5 | 7 | 12 | 25 | A | e
+The distance between (1, 2) and (4, 6) is: | 3 | 4 | 5 | 7 | C
+The distance between (−2, 3) and (4, −5) is: | 8 | 10 | 14 | √28 | B | h
+The midpoint of the segment joining (2, 4) and (6, 8) is: | (4, 6) | (8, 12) | (2, 2) | (3, 5) | A | e
+The midpoint of the segment joining (−3, 5) and (5, −1) is: | (1, 2) | (2, 4) | (−4, 3) | (8, −6) | A
+The point (−3, 4) lies in the: | first quadrant | second quadrant | third quadrant | fourth quadrant | B | e
+The point (5, −2) lies in the: | first quadrant | second quadrant | third quadrant | fourth quadrant | D | e
+The point (0, 7) lies on the: | x-axis | y-axis | origin | third quadrant | B | e
+The abscissa (x-coordinate) of the point (−4, 9) is: | 9 | −4 | 5 | −9 | B | e
+Both coordinates of a point are negative. The point lies in the: | first quadrant | second quadrant | third quadrant | fourth quadrant | C | e
+M(3, 4) is the midpoint of AB and A is (1, 2). The coordinates of B are: | (5, 6) | (2, 3) | (4, 6) | (7, 10) | A | h
+The distance of the point (−6, 8) from the origin is: | 2 | 10 | 14 | 100 | B
+The distance between (3, −2) and (3, 5) is: | 3 | 5 | 7 | 8 | C
+The distance between (−4, 1) and (2, 1) is: | 2 | 4 | 6 | 8 | C
+The formula for the distance between (x₁, y₁) and (x₂, y₂) is: | √((x₂ − x₁)² + (y₂ − y₁)²) | (x₂ − x₁) + (y₂ − y₁) | √(x₂ + x₁)² | (x₂ − x₁)(y₂ − y₁) | A | e
+The midpoint of the segment joining (x₁, y₁) and (x₂, y₂) is: | ((x₁ + x₂)/2, (y₁ + y₂)/2) | ((x₁ − x₂)/2, (y₁ − y₂)/2) | (x₁ + x₂, y₁ + y₂) | (x₁x₂, y₁y₂) | A | e
+On a town map, the school is at (2, 3) and Ali's home is at (5, 7), with each unit equal to 1 km. The straight-line distance from home to school is: | 3 km | 4 km | 5 km | 7 km | C | s
+Two villages are at (−1, 2) and (5, 10) on a grid. A clinic is to be built exactly halfway between them. Its coordinates are: | (2, 6) | (3, 4) | (4, 12) | (6, 8) | A | s
+The triangle with vertices (0, 0), (4, 0) and (0, 3) has a perimeter of: | 7 | 10 | 12 | 14 | C | h
+Triangle ABC has A(0, 0), B(4, 0) and C(2, 3). Since AC = BC, the triangle is: | equilateral | isosceles | scalene | right-angled at A | B | h
+The points (1, 1), (2, 2) and (3, 3) are: | collinear | vertices of a right triangle | vertices of an equilateral triangle | all on the x-axis | A
+The line joining (2, 3) and (2, −5) is parallel to the: | x-axis | y-axis | line y = x | line y = −x | B
+Every point on the x-axis has: | x-coordinate 0 | y-coordinate 0 | both coordinates equal | both coordinates 1 | B | e
+The coordinates of the origin are: | (1, 1) | (0, 0) | (0, 1) | (1, 0) | B | e
+The distance between (a, 0) and (0, a), where a > 0, is: | a | 2a | a√2 | a² | C | h
+A point on the x-axis is 5 units from the origin. Its coordinates could be: | (5, 5) | (0, 5) | (−5, 0) | (5, −5) | C | h
+The midpoint of (−4, −6) and (4, 6) is: | (0, 0) | (4, 6) | (−4, −6) | (8, 12) | A
+A drone flies from (1, 1) to (7, 9) in a straight line on a grid measured in metres. How far does it fly? | 8 m | 10 m | 14 m | 6 m | B | s
+The ordinate (y-coordinate) of the point (6, −1) is: | 6 | −1 | 5 | −6 | B | e
+The fourth quadrant contains points with: | x > 0 and y > 0 | x < 0 and y > 0 | x < 0 and y < 0 | x > 0 and y < 0 | D

@@ -1,0 +1,36 @@
+# subject: Physics
+# chapter: 9
+# source: Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)
+# answer_source: authored
+# difficulty: medium
+
+Physics is the branch of science that deals with: | living things | matter, energy and their interactions | the Earth's rocks | chemical reactions only | B | e
+The study of heat and temperature is a branch of physics called: | optics | thermodynamics | acoustics | mechanics | B | e
+The branch of physics that deals with light is: | optics | mechanics | nuclear physics | electricity | A | e
+The study of sound is called: | acoustics | optics | astronomy | geology | A | e
+The branch of physics that deals with the nucleus of the atom is: | atomic physics | nuclear physics | plasma physics | mechanics | B
+The study of motion and forces is called: | mechanics | optics | electronics | thermodynamics | A | e
+A scientist suggests a possible explanation that can be tested by experiment. This explanation is called a: | law | hypothesis | theory proven forever | conclusion | B
+A hypothesis that has been tested and supported by a lot of evidence may become a: | guess | theory | myth | question | B
+The scientific method usually begins with: | observation | a final conclusion | publishing results | a guess without evidence | A | e
+A student tests whether plant height depends on the amount of water. The amount of water given is the: | independent variable | dependent variable | control | constant | A | s
+In the same plant experiment, the height of the plant is the: | independent variable | dependent variable | constant | hypothesis | B | s
+In a fair test, the variables kept the same are called: | controlled variables | independent variables | dependent variables | results | A
+Why do scientists repeat an experiment several times? | To make the results more reliable | To use more equipment | To change the hypothesis each time | To avoid writing a report | A
+Physics contributes to technology because: | many devices are built on physics principles | technology has nothing to do with science | physics only studies the past | physics is only theoretical | A | e
+The technology behind X-ray and MRI machines in hospitals comes mainly from: | physics | geography | history | literature | A | s
+A mobile phone works using principles of electromagnetic waves. This shows the link between physics and: | technology | art | music | sports | A | s
+A scientific theory is different from a guess because it: | is supported by evidence and can be tested | is just an opinion | can never be changed | has no evidence | A
+Scientific knowledge can change over time because: | new evidence may improve or correct it | scientists are careless | science has no rules | facts never matter | A
+Which field combines physics with the study of living things? | Biophysics | Astrophysics | Geophysics | Nuclear physics | A
+The study of the Earth using physics, such as earthquakes, is called: | geophysics | biophysics | acoustics | optics | A
+The study of stars and planets using physics is: | astrophysics | biophysics | thermodynamics | electronics | A | e
+A researcher wants to know whether a new material is a good conductor of heat. The best first step is to: | design and carry out a fair experiment | announce the result without testing | ask friends to guess | ignore the material | A | s
+Which of these is a quantitative observation? | The liquid is blue | The rod is 25 cm long | The flower smells sweet | The sound is pleasant | B | h
+Which of these is a qualitative observation? | The mass is 5 kg | The temperature is 30 °C | The solution is cloudy | The time is 10 s | C | h
+A scientist records data in a table and then draws a graph. The main purpose of the graph is to: | show the relationship between variables clearly | hide the data | replace the experiment | make the report longer | A
+Solar panels convert light energy into electrical energy. This technology is based on: | physics | poetry | economics | history | A | e
+When results of an experiment do not support the hypothesis, a scientist should: | reject or modify the hypothesis | change the data | ignore the results | stop doing science | A | s
+Engineering differs from science because engineering mainly: | applies scientific knowledge to design solutions | discovers laws of nature only | studies ancient history | avoids using science | A
+A physicist studies electrons flowing through circuits. This branch is: | electricity and electronics | optics | acoustics | thermodynamics | A
+Ethics in science means scientists should: | report results honestly | copy others' work | change results to look better | hide mistakes | A | e

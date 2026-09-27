@@ -1,0 +1,502 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "id": "63ed5aba7a04",
+      "stem": "The mean of 2, 4, 6, 8 and 10 is:",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "30"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "a0c7aa35c6e4",
+      "stem": "The median of 3, 7, 1, 9 and 5 is:",
+      "options": [
+        "1",
+        "5",
+        "7",
+        "9"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "9c3a4cfedcde",
+      "stem": "The median of 2, 4, 6 and 8 is:",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "c8520d3b99b1",
+      "stem": "The mode of 2, 3, 3, 5, 7, 3, 5 is:",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "3deb802b7a11",
+      "stem": "The range of 12, 5, 20 and 8 is:",
+      "options": [
+        "8",
+        "12",
+        "15",
+        "20"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "0cae29c707cf",
+      "stem": "The mean of 10, 20, 30 and 40 is:",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "100"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "3ffd04d915d3",
+      "stem": "The class mark (mid-point) of the class 10–20 is:",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "e88c19c7d65b",
+      "stem": "The class width of the classes 0–10, 10–20, 20–30 is:",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "30"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "08495e7ffa71",
+      "stem": "In a pie chart, a category with 10 out of 40 students gets a sector angle of:",
+      "options": [
+        "10°",
+        "40°",
+        "90°",
+        "120°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "b9e34f93301a",
+      "stem": "Which average is most affected by a single very large value (an outlier)?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "All equally"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "49557043d1da",
+      "stem": "The sum of the deviations of the values from their mean is always:",
+      "options": [
+        "0",
+        "1",
+        "the mean",
+        "the range"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "bb5140e72d84",
+      "stem": "The mean of 5 numbers is 12. Their sum is:",
+      "options": [
+        "17",
+        "50",
+        "60",
+        "2.4"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "253459781499",
+      "stem": "The mean of 4 numbers is 10. A fifth number, 20, is added. The new mean is:",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "30"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "444062bd1d1f",
+      "stem": "For the frequencies 3, 5 and 7, the cumulative frequencies are:",
+      "options": [
+        "3, 8, 15",
+        "3, 5, 7",
+        "7, 12, 15",
+        "3, 15, 8"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "daa2978bfbfd",
+      "stem": "Grouped continuous data such as heights of students is best shown by a:",
+      "options": [
+        "pie chart",
+        "histogram",
+        "pictograph",
+        "line of symmetry"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "a31a4b8b2428",
+      "stem": "Favourite colours of a class are best shown by a:",
+      "options": [
+        "bar chart",
+        "histogram",
+        "frequency polygon only",
+        "scatter graph"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "cbf6f2c221cb",
+      "stem": "A data set that has two modes is called:",
+      "options": [
+        "unimodal",
+        "bimodal",
+        "skewed",
+        "grouped"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "f76b22ee1821",
+      "stem": "For x = 1, 2, 3 with frequencies 2, 3, 5, the mean Σfx ÷ Σf is:",
+      "options": [
+        "2",
+        "2.3",
+        "2.5",
+        "3"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "9d4d478a1e7b",
+      "stem": "A shoe shop wants to know which shoe size to stock the most. The average it should use is the:",
+      "options": [
+        "mean",
+        "median",
+        "mode",
+        "range"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "670c5bafe338",
+      "stem": "The range of a data set measures its:",
+      "options": [
+        "spread",
+        "centre",
+        "most common value",
+        "total"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "41db949761af",
+      "stem": "The median of 7, 2, 9, 4, 5 and 8 is:",
+      "options": [
+        "5",
+        "6",
+        "6.5",
+        "7"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "254932119177",
+      "stem": "The midday temperatures over five days were 30°C, 32°C, 31°C, 35°C and 32°C. The mean temperature was:",
+      "options": [
+        "31°C",
+        "32°C",
+        "33°C",
+        "35°C"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "f5ba6eade8a0",
+      "stem": "The angles of all the sectors in a pie chart add up to:",
+      "options": [
+        "100°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "3381a32d916d",
+      "stem": "The data 1, 2, 2, 3, 3, 4 has mode(s):",
+      "options": [
+        "2 only",
+        "3 only",
+        "2 and 3",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "fbd0237b6f9d",
+      "stem": "If 5 is added to every value in a data set, the mean:",
+      "options": [
+        "stays the same",
+        "increases by 5",
+        "doubles",
+        "decreases by 5"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "cff83f3c0f09",
+      "stem": "Data collected by the investigator directly for their own purpose is called:",
+      "options": [
+        "primary data",
+        "secondary data",
+        "grouped data",
+        "cumulative data"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "ce7f8e988772",
+      "stem": "Data taken from newspapers, books or websites is called:",
+      "options": [
+        "primary data",
+        "secondary data",
+        "raw frequency",
+        "class mark"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "504dded9542b",
+      "stem": "A cricketer scored 20, 45, 0, 80 and 55 runs in five innings. The average score per innings is:",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "200"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "325894e4fb34",
+      "stem": "The monthly salaries in an office are Rs 30,000 for nine staff and Rs 3,00,000 for the manager. Which average best describes a typical salary?",
+      "options": [
+        "Mean",
+        "Median",
+        "Maximum",
+        "Range"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "e723d7197bb1",
+      "stem": "A frequency polygon is drawn by joining the:",
+      "options": [
+        "mid-points of the tops of histogram bars",
+        "corners of the bars",
+        "class boundaries",
+        "cumulative totals"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    },
+    {
+      "id": "1371ec134391",
+      "stem": "In a class of 30 students, 12 walk to school. In a pie chart the \"walk\" sector is:",
+      "options": [
+        "12°",
+        "120°",
+        "144°",
+        "180°"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)"
+    }
+  ]
+}

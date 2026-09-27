@@ -1,0 +1,486 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "f259bff26da6",
+      "stem": "The distance between the points (0, 0) and (3, 4) is:",
+      "options": [
+        "5",
+        "7",
+        "12",
+        "25"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "7298a6dd6098",
+      "stem": "The distance between (1, 2) and (4, 6) is:",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "2a864c5e90a8",
+      "stem": "The distance between (−2, 3) and (4, −5) is:",
+      "options": [
+        "8",
+        "10",
+        "14",
+        "√28"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "f9cce6c5f9d4",
+      "stem": "The midpoint of the segment joining (2, 4) and (6, 8) is:",
+      "options": [
+        "(4, 6)",
+        "(8, 12)",
+        "(2, 2)",
+        "(3, 5)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "a051e50f876d",
+      "stem": "The midpoint of the segment joining (−3, 5) and (5, −1) is:",
+      "options": [
+        "(1, 2)",
+        "(2, 4)",
+        "(−4, 3)",
+        "(8, −6)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "043574c06b63",
+      "stem": "The point (−3, 4) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "97f868398df1",
+      "stem": "The point (5, −2) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "1a09a5c77c1d",
+      "stem": "The point (0, 7) lies on the:",
+      "options": [
+        "x-axis",
+        "y-axis",
+        "origin",
+        "third quadrant"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "f5bc85a2d676",
+      "stem": "The abscissa (x-coordinate) of the point (−4, 9) is:",
+      "options": [
+        "9",
+        "−4",
+        "5",
+        "−9"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "740afd4dfd69",
+      "stem": "Both coordinates of a point are negative. The point lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "33d73043ba07",
+      "stem": "M(3, 4) is the midpoint of AB and A is (1, 2). The coordinates of B are:",
+      "options": [
+        "(5, 6)",
+        "(2, 3)",
+        "(4, 6)",
+        "(7, 10)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "cf0ba99be596",
+      "stem": "The distance of the point (−6, 8) from the origin is:",
+      "options": [
+        "2",
+        "10",
+        "14",
+        "100"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "3774d7aefc22",
+      "stem": "The distance between (3, −2) and (3, 5) is:",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "1ea431416b28",
+      "stem": "The distance between (−4, 1) and (2, 1) is:",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "3a1c7208cd37",
+      "stem": "The formula for the distance between (x₁, y₁) and (x₂, y₂) is:",
+      "options": [
+        "√((x₂ − x₁)² + (y₂ − y₁)²)",
+        "(x₂ − x₁) + (y₂ − y₁)",
+        "√(x₂ + x₁)²",
+        "(x₂ − x₁)(y₂ − y₁)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "24bcba690672",
+      "stem": "The midpoint of the segment joining (x₁, y₁) and (x₂, y₂) is:",
+      "options": [
+        "((x₁ + x₂)/2, (y₁ + y₂)/2)",
+        "((x₁ − x₂)/2, (y₁ − y₂)/2)",
+        "(x₁ + x₂, y₁ + y₂)",
+        "(x₁x₂, y₁y₂)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "c1eb0409795e",
+      "stem": "On a town map, the school is at (2, 3) and Ali's home is at (5, 7), with each unit equal to 1 km. The straight-line distance from home to school is:",
+      "options": [
+        "3 km",
+        "4 km",
+        "5 km",
+        "7 km"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "0eef249b2347",
+      "stem": "Two villages are at (−1, 2) and (5, 10) on a grid. A clinic is to be built exactly halfway between them. Its coordinates are:",
+      "options": [
+        "(2, 6)",
+        "(3, 4)",
+        "(4, 12)",
+        "(6, 8)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "4ac339b7ee46",
+      "stem": "The triangle with vertices (0, 0), (4, 0) and (0, 3) has a perimeter of:",
+      "options": [
+        "7",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "58cf2c667a63",
+      "stem": "Triangle ABC has A(0, 0), B(4, 0) and C(2, 3). Since AC = BC, the triangle is:",
+      "options": [
+        "equilateral",
+        "isosceles",
+        "scalene",
+        "right-angled at A"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "2b6ff9222304",
+      "stem": "The points (1, 1), (2, 2) and (3, 3) are:",
+      "options": [
+        "collinear",
+        "vertices of a right triangle",
+        "vertices of an equilateral triangle",
+        "all on the x-axis"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "c56dbc5881d2",
+      "stem": "The line joining (2, 3) and (2, −5) is parallel to the:",
+      "options": [
+        "x-axis",
+        "y-axis",
+        "line y = x",
+        "line y = −x"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "2dae4aac9b38",
+      "stem": "Every point on the x-axis has:",
+      "options": [
+        "x-coordinate 0",
+        "y-coordinate 0",
+        "both coordinates equal",
+        "both coordinates 1"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "2320525f0d34",
+      "stem": "The coordinates of the origin are:",
+      "options": [
+        "(1, 1)",
+        "(0, 0)",
+        "(0, 1)",
+        "(1, 0)"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "ab1bd042e502",
+      "stem": "The distance between (a, 0) and (0, a), where a > 0, is:",
+      "options": [
+        "a",
+        "2a",
+        "a√2",
+        "a²"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "cf4c93e2814f",
+      "stem": "A point on the x-axis is 5 units from the origin. Its coordinates could be:",
+      "options": [
+        "(5, 5)",
+        "(0, 5)",
+        "(−5, 0)",
+        "(5, −5)"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "2d38f7ccfa41",
+      "stem": "The midpoint of (−4, −6) and (4, 6) is:",
+      "options": [
+        "(0, 0)",
+        "(4, 6)",
+        "(−4, −6)",
+        "(8, 12)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "1757e7e56c3d",
+      "stem": "A drone flies from (1, 1) to (7, 9) in a straight line on a grid measured in metres. How far does it fly?",
+      "options": [
+        "8 m",
+        "10 m",
+        "14 m",
+        "6 m"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "e9b481f08d09",
+      "stem": "The ordinate (y-coordinate) of the point (6, −1) is:",
+      "options": [
+        "6",
+        "−1",
+        "5",
+        "−6"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    },
+    {
+      "id": "c4fd238f126e",
+      "stem": "The fourth quadrant contains points with:",
+      "options": [
+        "x > 0 and y > 0",
+        "x < 0 and y > 0",
+        "x < 0 and y < 0",
+        "x > 0 and y < 0"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Written for Prepify from the FBISE Class 9 Mathematics syllabus (Coordinate Geometry)"
+    }
+  ]
+}
