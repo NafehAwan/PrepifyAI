@@ -1,0 +1,414 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "212d7949fda1",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "6 cm, 4 cm, 10 cm",
+        "4 cm, 5 cm, 12 cm",
+        "9 cm, 3 cm, 9 cm",
+        "7 cm, 2 cm, 4 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "fede07e255fd",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "8 cm, 3 cm, 2 cm",
+        "6 cm, 4 cm, 8 cm",
+        "4 cm, 3 cm, 9 cm",
+        "6 cm, 3 cm, 11 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "11261d4d4b73",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "3 cm, 9 cm, 11 cm",
+        "6 cm, 15 cm, 6 cm",
+        "6 cm, 8 cm, 2 cm",
+        "13 cm, 6 cm, 4 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "714eb94bc577",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "4 cm, 2 cm, 6 cm",
+        "11 cm, 7 cm, 6 cm",
+        "4 cm, 8 cm, 4 cm",
+        "3 cm, 6 cm, 9 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "57e69f49c312",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "3 cm, 6 cm, 12 cm",
+        "6 cm, 3 cm, 10 cm",
+        "11 cm, 3 cm, 5 cm",
+        "6 cm, 4 cm, 3 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "9a387b31ebb7",
+      "stem": "Which set of lengths can form a triangle?",
+      "options": [
+        "6 cm, 4 cm, 13 cm",
+        "3 cm, 2 cm, 7 cm",
+        "6 cm, 6 cm, 6 cm",
+        "6 cm, 11 cm, 4 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-triangle-inequality",
+      "variant_of": "396064b32d2f"
+    },
+    {
+      "id": "96a7f3878eca",
+      "stem": "Two sides of a triangle are 11 cm and 7 cm. Which of these could be the third side?",
+      "options": [
+        "4 cm",
+        "14 cm",
+        "21 cm",
+        "18 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "b98209244992",
+      "stem": "Two sides of a triangle are 7 cm and 6 cm. Which of these could be the third side?",
+      "options": [
+        "8 cm",
+        "1 cm",
+        "13 cm",
+        "16 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "d8b02f924c45",
+      "stem": "Two sides of a triangle are 6 cm and 4 cm. Which of these could be the third side?",
+      "options": [
+        "2 cm",
+        "10 cm",
+        "11 cm",
+        "8 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "2e70377d2cf0",
+      "stem": "Two sides of a triangle are 5 cm and 2 cm. Which of these could be the third side?",
+      "options": [
+        "7 cm",
+        "3 cm",
+        "6 cm",
+        "9 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "bbbb81aac250",
+      "stem": "Two sides of a triangle are 10 cm and 6 cm. Which of these could be the third side?",
+      "options": [
+        "4 cm",
+        "14 cm",
+        "16 cm",
+        "17 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "22912191ea6c",
+      "stem": "Two sides of a triangle are 10 cm and 2 cm. Which of these could be the third side?",
+      "options": [
+        "13 cm",
+        "9 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-third-side",
+      "family": "gen-maths-m10-third-side"
+    },
+    {
+      "id": "355843c7a48e",
+      "stem": "A right-angled triangle has sides 5 cm, 12 cm and 13 cm. The radius of its circumcircle is:",
+      "options": [
+        "13 cm",
+        "6 cm",
+        "2.5 cm",
+        "6.5 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "d72cf827900b",
+      "stem": "A right-angled triangle has sides 12 cm, 16 cm and 20 cm. The radius of its circumcircle is:",
+      "options": [
+        "6 cm",
+        "8 cm",
+        "10 cm",
+        "20 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "33d2247dcda0",
+      "stem": "A right-angled triangle has sides 3 cm, 4 cm and 5 cm. The radius of its circumcircle is:",
+      "options": [
+        "2 cm",
+        "2.5 cm",
+        "1.5 cm",
+        "5 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "7e5a5b0f78c4",
+      "stem": "A right-angled triangle has sides 6 cm, 8 cm and 10 cm. The radius of its circumcircle is:",
+      "options": [
+        "4 cm",
+        "3 cm",
+        "5 cm",
+        "10 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "f4ae32482c41",
+      "stem": "A right-angled triangle has sides 8 cm, 15 cm and 17 cm. The radius of its circumcircle is:",
+      "options": [
+        "8.5 cm",
+        "4 cm",
+        "7.5 cm",
+        "17 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "80883261a122",
+      "stem": "A right-angled triangle has sides 9 cm, 12 cm and 15 cm. The radius of its circumcircle is:",
+      "options": [
+        "7.5 cm",
+        "6 cm",
+        "15 cm",
+        "4.5 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-circumradius",
+      "family": "gen-maths-m10-circumradius"
+    },
+    {
+      "id": "358c7f40501d",
+      "stem": "A median of a triangle is 6 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "6 cm",
+        "2 cm",
+        "3 cm",
+        "4 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    },
+    {
+      "id": "992cf99b4a35",
+      "stem": "A median of a triangle is 15 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "15 cm",
+        "7.5 cm",
+        "10 cm",
+        "5 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    },
+    {
+      "id": "417d66536780",
+      "stem": "A median of a triangle is 21 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "14 cm",
+        "7 cm",
+        "21 cm",
+        "10.5 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    },
+    {
+      "id": "643db556cb0a",
+      "stem": "A median of a triangle is 24 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "8 cm",
+        "16 cm",
+        "12 cm",
+        "24 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    },
+    {
+      "id": "168804fcef40",
+      "stem": "A median of a triangle is 27 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "9 cm",
+        "18 cm",
+        "27 cm",
+        "13.5 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    },
+    {
+      "id": "e42ef6afdf1c",
+      "stem": "A median of a triangle is 18 cm long. The distance from the vertex to the centroid along this median is:",
+      "options": [
+        "9 cm",
+        "12 cm",
+        "6 cm",
+        "18 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:m10-centroid",
+      "family": "gen-maths-m10-centroid"
+    }
+  ]
+}

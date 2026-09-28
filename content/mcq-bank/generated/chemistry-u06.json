@@ -1,0 +1,924 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "73adda5a5256",
+      "stem": "The molar mass of MgO is: (Mg = 24, O = 16)",
+      "options": [
+        "40 g/mol",
+        "38 g/mol",
+        "56 g/mol",
+        "80 g/mol"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "5ceb0bcaf42e",
+      "stem": "The molar mass of CaCO₃ is: (Ca = 40, C = 12, O = 16)",
+      "options": [
+        "98 g/mol",
+        "116 g/mol",
+        "68 g/mol",
+        "100 g/mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "b19ad08f178e",
+      "stem": "The molar mass of HCl is: (H = 1, Cl = 35.5)",
+      "options": [
+        "52.5 g/mol",
+        "73 g/mol",
+        "36.5 g/mol",
+        "34.5 g/mol"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "a89cc2ef99af",
+      "stem": "The molar mass of CH₄ is: (C = 12, H = 1)",
+      "options": [
+        "13 g/mol",
+        "14 g/mol",
+        "32 g/mol",
+        "16 g/mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "076748164d9c",
+      "stem": "The molar mass of NaOH is: (Na = 23, O = 16, H = 1)",
+      "options": [
+        "80 g/mol",
+        "56 g/mol",
+        "38 g/mol",
+        "40 g/mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "ff04ca7537e1",
+      "stem": "The molar mass of HNO₃ is: (H = 1, N = 14, O = 16)",
+      "options": [
+        "31 g/mol",
+        "63 g/mol",
+        "79 g/mol",
+        "61 g/mol"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molar-mass",
+      "family": "gen-chemistry-c6-molar-mass"
+    },
+    {
+      "id": "46f79bd3aca4",
+      "stem": "How many moles are present in 196 g of H₂SO₄? (molar mass = 98 g/mol)",
+      "options": [
+        "4 mol",
+        "2 mol",
+        "0.5 mol",
+        "19,208 mol"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "54986ba3b173",
+      "stem": "How many moles are present in 168 g of KOH? (molar mass = 56 g/mol)",
+      "options": [
+        "0.33 mol",
+        "6 mol",
+        "9408 mol",
+        "3 mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "1c564f725f57",
+      "stem": "How many moles are present in 300 g of CaCO₃? (molar mass = 100 g/mol)",
+      "options": [
+        "30,000 mol",
+        "0.33 mol",
+        "6 mol",
+        "3 mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "f153214e0611",
+      "stem": "How many moles are present in 73 g of HCl? (molar mass = 36.5 g/mol)",
+      "options": [
+        "2664.5 mol",
+        "4 mol",
+        "0.5 mol",
+        "2 mol"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "73de891eb3bc",
+      "stem": "How many moles are present in 85 g of NH₃? (molar mass = 17 g/mol)",
+      "options": [
+        "5 mol",
+        "1445 mol",
+        "10 mol",
+        "0.2 mol"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "22aa24bf1264",
+      "stem": "How many moles are present in 120 g of NaOH? (molar mass = 40 g/mol)",
+      "options": [
+        "6 mol",
+        "0.33 mol",
+        "3 mol",
+        "4800 mol"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-moles-from-mass",
+      "family": "gen-chemistry-c6-moles-from-mass"
+    },
+    {
+      "id": "bb64ba5fd564",
+      "stem": "What is the mass of 0.1 mol of MgO? (molar mass = 40 g/mol)",
+      "options": [
+        "400 g",
+        "40 g",
+        "4 g",
+        "0.0025 g"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "d59dc73e9161",
+      "stem": "What is the mass of 0.2 mol of NaOH? (molar mass = 40 g/mol)",
+      "options": [
+        "8 g",
+        "40 g",
+        "200 g",
+        "0.005 g"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "1b36a2979318",
+      "stem": "What is the mass of 0.2 mol of HNO₃? (molar mass = 63 g/mol)",
+      "options": [
+        "63 g",
+        "0.0032 g",
+        "12.6 g",
+        "315 g"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "bd6d4b1b972f",
+      "stem": "What is the mass of 1.5 mol of HNO₃? (molar mass = 63 g/mol)",
+      "options": [
+        "63 g",
+        "94.5 g",
+        "0.0238 g",
+        "42 g"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "41fad9d12d44",
+      "stem": "What is the mass of 1.5 mol of CO₂? (molar mass = 44 g/mol)",
+      "options": [
+        "29.33 g",
+        "44 g",
+        "0.0341 g",
+        "66 g"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "9d5d01d2a41e",
+      "stem": "What is the mass of 1.5 mol of C₆H₁₂O₆? (molar mass = 180 g/mol)",
+      "options": [
+        "180 g",
+        "270 g",
+        "0.0083 g",
+        "120 g"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-mass-from-moles",
+      "family": "gen-chemistry-c6-mass-from-moles"
+    },
+    {
+      "id": "ce7405848222",
+      "stem": "How many atoms in total are present in 1.5 mol of H₂O? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "1.806 × 10²⁴",
+        "9.03 × 10²³",
+        "2.709 × 10²⁴",
+        "2.709 × 10²⁵"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "edae96cfd5e5",
+      "stem": "How many atoms in total are present in 5 mol of H₂O? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "3.01 × 10²⁴",
+        "9.03 × 10²⁴",
+        "9.03 × 10²⁵",
+        "1.806 × 10²⁴"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "22681f23f25e",
+      "stem": "How many atoms in total are present in 5 mol of N₂? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "6.02 × 10²⁵",
+        "1.204 × 10²⁴",
+        "3.01 × 10²⁴",
+        "6.02 × 10²⁴"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "486c9c5e073a",
+      "stem": "How many atoms in total are present in 1.5 mol of CH₄? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "4.515 × 10²⁴",
+        "3.01 × 10²⁴",
+        "9.03 × 10²³",
+        "4.515 × 10²⁵"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "9405b1fd785f",
+      "stem": "How many atoms in total are present in 3 mol of CH₄? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "3.01 × 10²⁴",
+        "9.03 × 10²⁵",
+        "1.806 × 10²⁴",
+        "9.03 × 10²⁴"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "8f1c4d0cba5a",
+      "stem": "How many atoms in total are present in 5 mol of O₂? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+      "options": [
+        "6.02 × 10²⁵",
+        "6.02 × 10²⁴",
+        "3.01 × 10²⁴",
+        "1.204 × 10²⁴"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-particles",
+      "variant_of": "8677b0e49163"
+    },
+    {
+      "id": "5afb33b04081",
+      "stem": "How many moles of oxygen atoms are present in 0.5 mol of H₂SO₄?",
+      "options": [
+        "0.5",
+        "2",
+        "4",
+        "4.5"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "ee7a8d7f0b2f",
+      "stem": "How many moles of hydrogen atoms are present in 2 mol of NH₃?",
+      "options": [
+        "6",
+        "2",
+        "12",
+        "3"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "0bd99e4373a2",
+      "stem": "How many moles of oxygen atoms are present in 0.5 mol of CO₂?",
+      "options": [
+        "1",
+        "0.5",
+        "2.5",
+        "2"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "95419cc7443b",
+      "stem": "How many moles of oxygen atoms are present in 0.25 mol of CO₂?",
+      "options": [
+        "2",
+        "0.5",
+        "1",
+        "0.25"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "186fef0686d1",
+      "stem": "How many moles of carbon atoms are present in 0.25 mol of C₆H₁₂O₆?",
+      "options": [
+        "6",
+        "3",
+        "1.5",
+        "0.25"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "928a020cd756",
+      "stem": "How many moles of oxygen atoms are present in 2 mol of H₂SO₄?",
+      "options": [
+        "2",
+        "8",
+        "16",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-atoms-in-moles",
+      "variant_of": "8de74113c845"
+    },
+    {
+      "id": "e2198f3bcb89",
+      "stem": "What volume does 1.5 mol of hydrogen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "0.067 dm³",
+        "33.6 dm³",
+        "22.4 dm³",
+        "14.93 dm³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "4a2c4ce7b864",
+      "stem": "What volume does 2 mol of hydrogen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "11.2 dm³",
+        "22.4 dm³",
+        "0.089 dm³",
+        "44.8 dm³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "a3908215232f",
+      "stem": "What volume does 0.25 mol of hydrogen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "0.011 dm³",
+        "89.6 dm³",
+        "5.6 dm³",
+        "22.4 dm³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "138c880d93ca",
+      "stem": "What volume does 1.5 mol of oxygen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "33.6 dm³",
+        "0.067 dm³",
+        "22.4 dm³",
+        "14.93 dm³"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "4586e719f99b",
+      "stem": "What volume does 0.1 mol of nitrogen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "2.24 dm³",
+        "0.004 dm³",
+        "22.4 dm³",
+        "224 dm³"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "32e5f95a9c84",
+      "stem": "What volume does 3 mol of nitrogen gas occupy at STP? (molar volume = 22.4 dm³)",
+      "options": [
+        "0.134 dm³",
+        "22.4 dm³",
+        "67.2 dm³",
+        "7.47 dm³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-gas-volume",
+      "family": "gen-chemistry-c6-gas-volume"
+    },
+    {
+      "id": "757efcda9ad2",
+      "stem": "What is the percentage by mass of S in SO₂? (S = 32, O = 16)",
+      "options": [
+        "32%",
+        "25%",
+        "33.3%",
+        "50%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "899b89f49462",
+      "stem": "What is the percentage by mass of O in H₂O? (H = 1, O = 16)",
+      "options": [
+        "88.9%",
+        "33.3%",
+        "11.1%",
+        "44.4%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "290acbb24519",
+      "stem": "What is the percentage by mass of O in CaCO₃? (Ca = 40, C = 12, O = 16)",
+      "options": [
+        "60%",
+        "16%",
+        "52%",
+        "48%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "bd8bbe29e51a",
+      "stem": "What is the percentage by mass of C in CO₂? (C = 12, O = 16)",
+      "options": [
+        "72.7%",
+        "33.3%",
+        "13.6%",
+        "27.3%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "32db42bc2204",
+      "stem": "What is the percentage by mass of C in CH₄? (C = 12, H = 1)",
+      "options": [
+        "75%",
+        "25%",
+        "37.5%",
+        "20%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "c87c9bfa944b",
+      "stem": "What is the percentage by mass of Mg in MgO? (Mg = 24, O = 16)",
+      "options": [
+        "60%",
+        "30%",
+        "50%",
+        "40%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-composition",
+      "family": "gen-chemistry-c6-percent-composition"
+    },
+    {
+      "id": "5c2e8be1a471",
+      "stem": "A student calculates that a reaction should give 50 g of product but actually collects 47.5 g. The percentage yield is:",
+      "options": [
+        "5%",
+        "95%",
+        "105.3%",
+        "47.5%"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "7ffffc48830d",
+      "stem": "A student calculates that a reaction should give 80 g of product but actually collects 64 g. The percentage yield is:",
+      "options": [
+        "80%",
+        "64%",
+        "20%",
+        "125%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "e62fc68495e0",
+      "stem": "A student calculates that a reaction should give 80 g of product but actually collects 48 g. The percentage yield is:",
+      "options": [
+        "60%",
+        "166.7%",
+        "48%",
+        "40%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "242500cce646",
+      "stem": "A student calculates that a reaction should give 80 g of product but actually collects 76 g. The percentage yield is:",
+      "options": [
+        "5%",
+        "76%",
+        "105.3%",
+        "95%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "0dcfd3a696ca",
+      "stem": "A student calculates that a reaction should give 25 g of product but actually collects 22.5 g. The percentage yield is:",
+      "options": [
+        "111.1%",
+        "22.5%",
+        "90%",
+        "10%"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "f668825b2f5b",
+      "stem": "A student calculates that a reaction should give 80 g of product but actually collects 60 g. The percentage yield is:",
+      "options": [
+        "60%",
+        "25%",
+        "75%",
+        "133.3%"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:c6-percent-yield",
+      "variant_of": "6996c937b647"
+    },
+    {
+      "id": "6cde7ecbf956",
+      "stem": "A compound has the empirical formula CH. If its molar mass is 26 g/mol, its molecular formula is:",
+      "options": [
+        "C₂H₂",
+        "CH",
+        "C₃H₃",
+        "C₄H₄"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    },
+    {
+      "id": "0283b11176e5",
+      "stem": "A compound has the empirical formula NO₂. If its molar mass is 92 g/mol, its molecular formula is:",
+      "options": [
+        "N₄O₈",
+        "NO₂",
+        "N₂O₄",
+        "N₃O₆"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    },
+    {
+      "id": "784086748bbc",
+      "stem": "A compound has the empirical formula CH₃. If its molar mass is 30 g/mol, its molecular formula is:",
+      "options": [
+        "C₄H₁₂",
+        "C₃H₉",
+        "C₂H₆",
+        "CH₃"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    },
+    {
+      "id": "318d18dd99a3",
+      "stem": "A compound has the empirical formula CH₂. If its molar mass is 70 g/mol, its molecular formula is:",
+      "options": [
+        "C₆H₁₂",
+        "C₄H₈",
+        "C₁₀H₂₀",
+        "C₅H₁₀"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    },
+    {
+      "id": "6ac627cf06d1",
+      "stem": "A compound has the empirical formula CH₂. If its molar mass is 42 g/mol, its molecular formula is:",
+      "options": [
+        "C₃H₆",
+        "C₄H₈",
+        "C₆H₁₂",
+        "C₂H₄"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    },
+    {
+      "id": "e1f1cfe9d9c7",
+      "stem": "A compound has the empirical formula CH. If its molar mass is 78 g/mol, its molecular formula is:",
+      "options": [
+        "C₁₂H₁₂",
+        "C₅H₅",
+        "C₆H₆",
+        "C₇H₇"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:c6-molecular-formula",
+      "variant_of": "b60f5ea245a9"
+    }
+  ]
+}

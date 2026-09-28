@@ -1,0 +1,1009 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "7bc5a1587347",
+      "stem": "A block has a mass of 100 g and a volume of 25 cm³. Its density is:",
+      "options": [
+        "2500 g cm⁻³",
+        "4 g cm⁻³",
+        "40 g cm⁻³",
+        "0.25 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "1f02326ee620",
+      "stem": "A block has a mass of 300 g and a volume of 100 cm³. Its density is:",
+      "options": [
+        "30,000 g cm⁻³",
+        "3 g cm⁻³",
+        "0.333 g cm⁻³",
+        "30 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "6f3aa9bf2807",
+      "stem": "A block has a mass of 32 g and a volume of 40 cm³. Its density is:",
+      "options": [
+        "1.25 g cm⁻³",
+        "0.8 g cm⁻³",
+        "8 g cm⁻³",
+        "1280 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "b705cbffbef3",
+      "stem": "A block has a mass of 25 g and a volume of 10 cm³. Its density is:",
+      "options": [
+        "2.5 g cm⁻³",
+        "250 g cm⁻³",
+        "0.4 g cm⁻³",
+        "25 g cm⁻³"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "66784d766548",
+      "stem": "A block has a mass of 60 g and a volume of 20 cm³. Its density is:",
+      "options": [
+        "0.333 g cm⁻³",
+        "3 g cm⁻³",
+        "1200 g cm⁻³",
+        "30 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "eb9a2fe68bde",
+      "stem": "A block has a mass of 320 g and a volume of 40 cm³. Its density is:",
+      "options": [
+        "12,800 g cm⁻³",
+        "0.125 g cm⁻³",
+        "8 g cm⁻³",
+        "80 g cm⁻³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-density",
+      "variant_of": "ec83732ce0e6"
+    },
+    {
+      "id": "cc1bb8b3829c",
+      "stem": "What is the mass of 4 m³ of kerosene (density 800 kg m⁻³)?",
+      "options": [
+        "200 kg",
+        "0.005 kg",
+        "804 kg",
+        "3200 kg"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "551410326966",
+      "stem": "What is the mass of 5 m³ of water (density 1000 kg m⁻³)?",
+      "options": [
+        "200 kg",
+        "5000 kg",
+        "1005 kg",
+        "0.005 kg"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "b0d782184799",
+      "stem": "What is the mass of 2 m³ of cooking oil (density 900 kg m⁻³)?",
+      "options": [
+        "450 kg",
+        "1800 kg",
+        "902 kg",
+        "0.0022 kg"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "1cc95f3b18f2",
+      "stem": "What is the mass of 5 m³ of kerosene (density 800 kg m⁻³)?",
+      "options": [
+        "0.0063 kg",
+        "160 kg",
+        "4000 kg",
+        "805 kg"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "d8b0838319d8",
+      "stem": "What is the mass of 4 m³ of cooking oil (density 900 kg m⁻³)?",
+      "options": [
+        "0.0044 kg",
+        "904 kg",
+        "3600 kg",
+        "225 kg"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "f155d2633b1e",
+      "stem": "What is the mass of 0.5 m³ of cooking oil (density 900 kg m⁻³)?",
+      "options": [
+        "900.5 kg",
+        "0.0006 kg",
+        "1800 kg",
+        "450 kg"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-mass-from-density",
+      "variant_of": "45135ec7557a"
+    },
+    {
+      "id": "bb7cb2775cdf",
+      "stem": "A substance has a density of 10 g cm⁻³. What volume does 1000 g of it occupy?",
+      "options": [
+        "10,000 cm³",
+        "1010 cm³",
+        "0.01 cm³",
+        "100 cm³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "3a65db77ed7c",
+      "stem": "A substance has a density of 8 g cm⁻³. What volume does 400 g of it occupy?",
+      "options": [
+        "0.02 cm³",
+        "408 cm³",
+        "3200 cm³",
+        "50 cm³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "89ed71e41158",
+      "stem": "A substance has a density of 10 g cm⁻³. What volume does 400 g of it occupy?",
+      "options": [
+        "410 cm³",
+        "0.025 cm³",
+        "4000 cm³",
+        "40 cm³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "73960c24316f",
+      "stem": "A substance has a density of 8 g cm⁻³. What volume does 800 g of it occupy?",
+      "options": [
+        "808 cm³",
+        "6400 cm³",
+        "100 cm³",
+        "0.01 cm³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "8c880719f530",
+      "stem": "A substance has a density of 2.5 g cm⁻³. What volume does 100 g of it occupy?",
+      "options": [
+        "250 cm³",
+        "102.5 cm³",
+        "0.025 cm³",
+        "40 cm³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "d5a027d40efe",
+      "stem": "A substance has a density of 4 g cm⁻³. What volume does 400 g of it occupy?",
+      "options": [
+        "404 cm³",
+        "100 cm³",
+        "0.01 cm³",
+        "1600 cm³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-volume-from-density",
+      "variant_of": "d600e293793e"
+    },
+    {
+      "id": "3e2b7c07f674",
+      "stem": "A temperature of 323 K on the Celsius scale is:",
+      "options": [
+        "50 °C",
+        "596 °C",
+        "323 °C",
+        "−50 °C"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "bf632fd1e6b8",
+      "stem": "A temperature of 373 K on the Celsius scale is:",
+      "options": [
+        "646 °C",
+        "373 °C",
+        "−100 °C",
+        "100 °C"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "baf96db53642",
+      "stem": "A temperature of 290 K on the Celsius scale is:",
+      "options": [
+        "17 °C",
+        "290 °C",
+        "−17 °C",
+        "563 °C"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "46a6c2c4074c",
+      "stem": "A temperature of 400 K on the Celsius scale is:",
+      "options": [
+        "127 °C",
+        "−127 °C",
+        "400 °C",
+        "673 °C"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "53ebcf865684",
+      "stem": "227 °C on the Kelvin scale is:",
+      "options": [
+        "600 K",
+        "500 K",
+        "46 K",
+        "−46 K"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "13702d0b1b9e",
+      "stem": "37 °C on the Kelvin scale is:",
+      "options": [
+        "−236 K",
+        "236 K",
+        "410 K",
+        "310 K"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-kelvin",
+      "variant_of": "4028fea8da16"
+    },
+    {
+      "id": "8033b7e62d80",
+      "stem": "10 °C on the Fahrenheit scale is:",
+      "options": [
+        "50 °F",
+        "18 °F",
+        "37.6 °F",
+        "42 °F"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "193290904b9f",
+      "stem": "60 °C on the Fahrenheit scale is:",
+      "options": [
+        "140 °F",
+        "92 °F",
+        "108 °F",
+        "65.3 °F"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "dcd8e523c581",
+      "stem": "40 °C on the Fahrenheit scale is:",
+      "options": [
+        "40 °F",
+        "72 °F",
+        "54.2 °F",
+        "104 °F"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "887dcd74db46",
+      "stem": "50 °C on the Fahrenheit scale is:",
+      "options": [
+        "90 °F",
+        "59.8 °F",
+        "122 °F",
+        "82 °F"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "c0ba72563b25",
+      "stem": "25 °C on the Fahrenheit scale is:",
+      "options": [
+        "45.9 °F",
+        "45 °F",
+        "57 °F",
+        "77 °F"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "324db897e68d",
+      "stem": "30 °C on the Fahrenheit scale is:",
+      "options": [
+        "48.7 °F",
+        "62 °F",
+        "54 °F",
+        "86 °F"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-fahrenheit",
+      "variant_of": "4c40abc4ecec"
+    },
+    {
+      "id": "ae5464aaca40",
+      "stem": "A weather report gives the temperature as 86 °F. In Celsius this is:",
+      "options": [
+        "186.8 °C",
+        "40 °C",
+        "54 °C",
+        "30 °C"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "6314e2997440",
+      "stem": "A weather report gives the temperature as 59 °F. In Celsius this is:",
+      "options": [
+        "25 °C",
+        "27 °C",
+        "138.2 °C",
+        "15 °C"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "9c25c190dc5d",
+      "stem": "A weather report gives the temperature as 95 °F. In Celsius this is:",
+      "options": [
+        "63 °C",
+        "203 °C",
+        "35 °C",
+        "45 °C"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "baeabe4885d8",
+      "stem": "A weather report gives the temperature as 50 °F. In Celsius this is:",
+      "options": [
+        "18 °C",
+        "10 °C",
+        "122 °C",
+        "20 °C"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "64dbcc5298af",
+      "stem": "A weather report gives the temperature as 104 °F. In Celsius this is:",
+      "options": [
+        "40 °C",
+        "50 °C",
+        "219.2 °C",
+        "72 °C"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "8759aa4c7f59",
+      "stem": "A weather report gives the temperature as 68 °F. In Celsius this is:",
+      "options": [
+        "36 °C",
+        "20 °C",
+        "154.4 °C",
+        "30 °C"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-celsius-from-fahrenheit",
+      "variant_of": "748a91863507"
+    },
+    {
+      "id": "0fcb6c52f01f",
+      "stem": "How much heat is needed to raise the temperature of 0.5 kg of water by 40 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "84,000 J",
+        "8400 J",
+        "2100 J",
+        "168,000 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "72d4acfd1b35",
+      "stem": "How much heat is needed to raise the temperature of 1 kg of water by 50 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "21,000 J",
+        "4200 J",
+        "2,100,000 J",
+        "210,000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "b2a2dbaaf36e",
+      "stem": "How much heat is needed to raise the temperature of 2 kg of water by 25 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "105,000 J",
+        "8400 J",
+        "210,000 J",
+        "21,000 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "96b279917b33",
+      "stem": "How much heat is needed to raise the temperature of 1 kg of water by 20 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "4200 J",
+        "840,000 J",
+        "8400 J",
+        "84,000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "9f807192ad90",
+      "stem": "How much heat is needed to raise the temperature of 1 kg of water by 25 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "4200 J",
+        "1,050,000 J",
+        "10,500 J",
+        "105,000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "5fbe4fb2d466",
+      "stem": "How much heat is needed to raise the temperature of 1 kg of water by 40 °C? (specific heat capacity of water = 4200 J kg⁻¹ °C⁻¹)",
+      "options": [
+        "4200 J",
+        "1,680,000 J",
+        "168,000 J",
+        "16,800 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:p7-specific-heat",
+      "family": "gen-physics-p7-specific-heat"
+    },
+    {
+      "id": "d2b1e4c4d6f5",
+      "stem": "How much heat is needed to melt 0.5 kg of ice already at 0 °C? (specific latent heat of fusion of ice = 336,000 J/kg)",
+      "options": [
+        "2100 J",
+        "672,000 J",
+        "1,680,000 J",
+        "168,000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-latent-heat",
+      "family": "gen-physics-p7-latent-heat"
+    },
+    {
+      "id": "fe58c280d271",
+      "stem": "How much heat is needed to melt 0.25 kg of ice already at 0 °C? (specific latent heat of fusion of ice = 336,000 J/kg)",
+      "options": [
+        "84,000 J",
+        "1050 J",
+        "1,344,000 J",
+        "840,000 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-latent-heat",
+      "family": "gen-physics-p7-latent-heat"
+    },
+    {
+      "id": "5feb3dce7db6",
+      "stem": "How much heat is needed to melt 5 kg of ice already at 0 °C? (specific latent heat of fusion of ice = 336,000 J/kg)",
+      "options": [
+        "1,680,000 J",
+        "21,000 J",
+        "67,200 J",
+        "16,800,000 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-latent-heat",
+      "family": "gen-physics-p7-latent-heat"
+    },
+    {
+      "id": "73d6768c504c",
+      "stem": "How much heat is needed to melt 3 kg of ice already at 0 °C? (specific latent heat of fusion of ice = 336,000 J/kg)",
+      "options": [
+        "112,000 J",
+        "1,008,000 J",
+        "10,080,000 J",
+        "12,600 J"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-latent-heat",
+      "family": "gen-physics-p7-latent-heat"
+    },
+    {
+      "id": "e396ac5b2423",
+      "stem": "How much heat is needed to melt 2 kg of ice already at 0 °C? (specific latent heat of fusion of ice = 336,000 J/kg)",
+      "options": [
+        "168,000 J",
+        "8400 J",
+        "6,720,000 J",
+        "672,000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-latent-heat",
+      "family": "gen-physics-p7-latent-heat"
+    },
+    {
+      "id": "38100db6d222",
+      "stem": "A steel rail 10 m long is heated through 100 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "1200 mm",
+        "1.2 mm",
+        "120 mm",
+        "12 mm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "8019cf36a057",
+      "stem": "A steel rail 50 m long is heated through 50 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "300 mm",
+        "3000 mm",
+        "3 mm",
+        "30 mm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "b53c67375881",
+      "stem": "A steel rail 50 m long is heated through 20 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "120 mm",
+        "12 mm",
+        "1.2 mm",
+        "1200 mm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "eb299d53ca26",
+      "stem": "A steel rail 20 m long is heated through 40 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "960 mm",
+        "9.6 mm",
+        "0.96 mm",
+        "96 mm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "c0bb6f0ec491",
+      "stem": "A steel rail 10 m long is heated through 20 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "24 mm",
+        "240 mm",
+        "2.4 mm",
+        "0.24 mm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "be76eb9120ca",
+      "stem": "A steel rail 10 m long is heated through 40 °C. If the coefficient of linear expansion of steel is 1.2 × 10⁻⁵ per °C, its increase in length is:",
+      "options": [
+        "48 mm",
+        "4.8 mm",
+        "480 mm",
+        "0.48 mm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-expansion",
+      "family": "gen-physics-p7-expansion"
+    },
+    {
+      "id": "2364f6837640",
+      "stem": "An object has a mass of 30 g and a volume of 50 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "sink, because its density is 0.6 g cm⁻³",
+        "sink, because its mass is 30 g",
+        "float, because its volume is 50 cm³",
+        "float, because its density is 0.6 g cm⁻³"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    },
+    {
+      "id": "3c08e63e3709",
+      "stem": "An object has a mass of 150 g and a volume of 50 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "float, because its density is 3 g cm⁻³",
+        "sink, because its density is 3 g cm⁻³",
+        "float, because its mass is 150 g",
+        "sink, because its volume is 50 cm³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    },
+    {
+      "id": "83a99ee93a50",
+      "stem": "An object has a mass of 100 g and a volume of 50 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "sink, because its volume is 50 cm³",
+        "sink, because its density is 2 g cm⁻³",
+        "float, because its mass is 100 g",
+        "float, because its density is 2 g cm⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    },
+    {
+      "id": "bdf05882bcdc",
+      "stem": "An object has a mass of 16 g and a volume of 40 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "float, because its density is 0.4 g cm⁻³",
+        "sink, because its density is 0.4 g cm⁻³",
+        "float, because its volume is 40 cm³",
+        "sink, because its mass is 16 g"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    },
+    {
+      "id": "701d06fdfdd8",
+      "stem": "An object has a mass of 30 g and a volume of 20 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "sink, because its volume is 20 cm³",
+        "float, because its mass is 30 g",
+        "sink, because its density is 1.5 g cm⁻³",
+        "float, because its density is 1.5 g cm⁻³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    },
+    {
+      "id": "aba04437b973",
+      "stem": "An object has a mass of 12 g and a volume of 20 cm³. When placed in water (density 1 g cm⁻³), it will:",
+      "options": [
+        "float, because its density is 0.6 g cm⁻³",
+        "float, because its volume is 20 cm³",
+        "sink, because its mass is 12 g",
+        "sink, because its density is 0.6 g cm⁻³"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "template:p7-float-or-sink",
+      "family": "gen-physics-p7-float-or-sink"
+    }
+  ]
+}

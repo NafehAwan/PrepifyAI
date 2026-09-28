@@ -3,6 +3,7 @@
 //   node scripts/check-bank.mjs                       # validate + counts
 //   node scripts/check-bank.mjs --sample=10           # plus 10 random questions
 //   node scripts/check-bank.mjs --derived --sample=15 # only model-derived answers
+//   node scripts/check-bank.mjs --generated --sample=20 # only re-valued calculations
 //   node scripts/check-bank.mjs --combinations=100    # test-variety check
 //
 // The --combinations run is the check behind "100 different tests of the same
@@ -11,7 +12,7 @@
 
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { readBank, usableQuestions } from "./lib/bank-read.mjs";
+import { readBank, usableQuestions, familyOf } from "./lib/bank-read.mjs";
 import { questionKey } from "./lib/bank-id.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -47,13 +48,14 @@ for (const b of chapters) {
 // --- counts ----------------------------------------------------------------
 const bySubject = new Map();
 for (const { subject, q } of all) {
-  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, authored: 0, variants: 0, lowConf: 0, rejected: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
+  const row = bySubject.get(subject) ?? { total: 0, keyed: 0, derived: 0, authored: 0, variants: 0, generated: 0, lowConf: 0, rejected: 0, missing: 0, scenario: 0, easy: 0, medium: 0, hard: 0 };
   row.total++;
   if (q.kind === "variant") row.variants++;
+  if (q.kind === "generated") row.generated++;
   if (q.rejected) row.rejected++;
   else if (q.answer === null) row.missing++;
-  else if (q.kind === "variant") {
-    // counted in the variants column only
+  else if (q.kind === "variant" || q.kind === "generated") {
+    // counted in the reworded / re-valued columns only
   } else if (q.answer_source === "file") row.keyed++;
   else if (q.answer_source === "authored") row.authored++;
   else row.derived++;
@@ -63,10 +65,10 @@ for (const { subject, q } of all) {
   bySubject.set(subject, row);
 }
 
-console.log("Subject           total  from file  derived  authored  variants  (low conf)  rejected  no answer  scenario   easy/med/hard");
+console.log("Subject           total  from file  derived  authored  reworded  re-valued  (low conf)  rejected  no answer  scenario   easy/med/hard");
 for (const [subject, r] of [...bySubject].sort()) {
   console.log(
-    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.authored).padStart(8)}  ${String(r.variants).padStart(8)}  ${String(r.lowConf).padStart(10)}  ${String(r.rejected).padStart(8)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
+    `${subject.padEnd(17)} ${String(r.total).padStart(5)}  ${String(r.keyed).padStart(9)}  ${String(r.derived).padStart(7)}  ${String(r.authored).padStart(8)}  ${String(r.variants).padStart(8)}  ${String(r.generated).padStart(9)}  ${String(r.lowConf).padStart(10)}  ${String(r.rejected).padStart(8)}  ${String(r.missing).padStart(9)}  ${String(r.scenario).padStart(8)}   ${r.easy}/${r.medium}/${r.hard}`,
   );
 }
 const usable = all.filter(({ q }) => q.answer !== null).length;
@@ -92,7 +94,7 @@ if (args.combinations) {
   const pool = chapters.filter((c) => c.subject === subject).flatMap((c) => usableQuestions(c));
   const families = new Map();
   for (const q of pool) {
-    const f = q.variant_of ?? q.id;
+    const f = familyOf(q);
     if (!families.has(f)) families.set(f, []);
     families.get(f).push(q);
   }
@@ -107,7 +109,7 @@ if (args.combinations) {
     for (let t = 0; t < wanted; t++) {
       const fams = [...families.values()].sort(() => Math.random() - 0.5).slice(0, size);
       const picked = fams.map((m) => m[Math.floor(Math.random() * m.length)]);
-      const famIds = picked.map((q) => q.variant_of ?? q.id);
+      const famIds = picked.map(familyOf);
       if (new Set(famIds).size !== famIds.length) internalRepeat++;
       const fp = picked.map((q) => q.id).sort().join("|");
       sets.add(fp);
@@ -128,6 +130,7 @@ if (args.sample) {
   let pool = all.filter(({ q }) => q.answer !== null && !q.rejected);
   if (args.derived) pool = pool.filter(({ q }) => q.answer_source === "derived");
   if (args.variants) pool = pool.filter(({ q }) => q.kind === "variant");
+  if (args.generated) pool = pool.filter(({ q }) => q.kind === "generated");
   if (args.subject) pool = pool.filter((x) => x.subject === args.subject);
   console.log(`\n--- ${Math.min(n, pool.length)} random ${args.derived ? "DERIVED " : ""}questions to check ---`);
   const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, n);

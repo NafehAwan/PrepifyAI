@@ -1,0 +1,210 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "94a1b5f9d448",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.1 mol/dm³ and [HI] = 0.5 mol/dm³. The value of Kc is:",
+      "options": [
+        "25",
+        "0.04",
+        "50",
+        "1.25"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "f9ec54dfe3c2",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.2 mol/dm³ and [HI] = 0.8 mol/dm³. The value of Kc is:",
+      "options": [
+        "16",
+        "20",
+        "1.6",
+        "0.0625"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "00f7fc1404d0",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.1 mol/dm³ and [HI] = 0.3 mol/dm³. The value of Kc is:",
+      "options": [
+        "0.1111",
+        "0.45",
+        "30",
+        "9"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "7bd1246cc2a9",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.5 mol/dm³ and [HI] = 1 mol/dm³. The value of Kc is:",
+      "options": [
+        "4",
+        "1",
+        "0.25",
+        "8"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "b9425f138917",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.1 mol/dm³ and [HI] = 0.9 mol/dm³. The value of Kc is:",
+      "options": [
+        "81",
+        "4.05",
+        "0.0123",
+        "90"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "d5c793ace2a7",
+      "stem": "For H₂ + I₂ ⇌ 2HI at equilibrium, [H₂] = [I₂] = 0.1 mol/dm³ and [HI] = 0.7 mol/dm³. The value of Kc is:",
+      "options": [
+        "2.45",
+        "0.0204",
+        "70",
+        "49"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-value",
+      "family": "gen-chemistry-c9-kc-value"
+    },
+    {
+      "id": "fbdb1460e89a",
+      "stem": "The equilibrium constant expression (Kc) for N₂ + 3H₂ ⇌ 2NH₃ is:",
+      "options": [
+        "([N₂][H₂]³) / [NH₃]²",
+        "2[NH₃] / ([N₂] 3[H₂])",
+        "[NH₃] / ([N₂][H₂])",
+        "[NH₃]² / ([N₂][H₂]³)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    },
+    {
+      "id": "6906e11c97d0",
+      "stem": "The equilibrium constant expression (Kc) for PCl₅ ⇌ PCl₃ + Cl₂ is:",
+      "options": [
+        "[PCl₅] / ([PCl₃][Cl₂])",
+        "[PCl₃] / [PCl₅]",
+        "[PCl₃][Cl₂] / [PCl₅]",
+        "([PCl₃] + [Cl₂]) / [PCl₅]"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    },
+    {
+      "id": "9944f8e4966e",
+      "stem": "The equilibrium constant expression (Kc) for 2SO₂ + O₂ ⇌ 2SO₃ is:",
+      "options": [
+        "([SO₂]²[O₂]) / [SO₃]²",
+        "[SO₃]² / ([SO₂]²[O₂])",
+        "[SO₃]² / ([SO₂][O₂])",
+        "[SO₃] / ([SO₂][O₂])"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    },
+    {
+      "id": "4e432f0a0d81",
+      "stem": "The equilibrium constant expression (Kc) for H₂ + I₂ ⇌ 2HI is:",
+      "options": [
+        "2[HI] / ([H₂][I₂])",
+        "[HI]² / ([H₂][I₂])",
+        "([H₂][I₂]) / [HI]²",
+        "[HI] / ([H₂][I₂])"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    },
+    {
+      "id": "4bf94b03473d",
+      "stem": "The equilibrium constant expression (Kc) for 2NO₂ ⇌ N₂O₄ is:",
+      "options": [
+        "[N₂O₄] / [NO₂]²",
+        "[NO₂]² / [N₂O₄]",
+        "[N₂O₄] / 2[NO₂]",
+        "[N₂O₄] / [NO₂]"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    },
+    {
+      "id": "49e2140804a6",
+      "stem": "The equilibrium constant expression (Kc) for N₂ + O₂ ⇌ 2NO is:",
+      "options": [
+        "[NO]² / ([N₂][O₂])",
+        "([N₂][O₂]) / [NO]²",
+        "[NO] / ([N₂][O₂])",
+        "2[NO] / ([N₂][O₂])"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "template:c9-kc-expression",
+      "family": "gen-chemistry-c9-kc-expression"
+    }
+  ]
+}

@@ -1,0 +1,822 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "id": "49e1e7b120ec",
+      "stem": "The mean of 22, 16, 10, 20, 5, 5 is:",
+      "options": [
+        "14",
+        "13",
+        "11",
+        "78"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "840cd917ba3c",
+      "stem": "The mean of 8, 21, 10, 29 is:",
+      "options": [
+        "18",
+        "17",
+        "15",
+        "68"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "f696e8d40d28",
+      "stem": "The mean of 35, 7, 22, 4 is:",
+      "options": [
+        "18",
+        "15",
+        "17",
+        "68"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "39b3aaaba158",
+      "stem": "The mean of 15, 3, 9, 28, 40, 19 is:",
+      "options": [
+        "20",
+        "19",
+        "17",
+        "114"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "f58937410ebe",
+      "stem": "The mean of 3, 11, 11, 9, 5, 3 is:",
+      "options": [
+        "7",
+        "5",
+        "42",
+        "8"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "b12d1c25d96c",
+      "stem": "The mean of 20, 14, 25, 29 is:",
+      "options": [
+        "23",
+        "20",
+        "22",
+        "88"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mean",
+      "family": "gen-maths-m11-mean"
+    },
+    {
+      "id": "e298180f7e32",
+      "stem": "The median of 21, 1, 14, 23, 24 is:",
+      "options": [
+        "16.6",
+        "21",
+        "23",
+        "14"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "dfbbeaf0d33a",
+      "stem": "The median of 15, 7, 11, 20, 21 is:",
+      "options": [
+        "15",
+        "14.8",
+        "11",
+        "20"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "3c11732a16ff",
+      "stem": "The median of 3, 11, 16, 15, 19 is:",
+      "options": [
+        "15",
+        "11",
+        "12.8",
+        "16"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "52945b00dfae",
+      "stem": "The median of 23, 13, 12, 26, 15, 11, 2 is:",
+      "options": [
+        "14.6",
+        "15",
+        "13",
+        "26"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "0cd7bbab51d2",
+      "stem": "The median of 14, 26, 18, 4, 27, 17, 13 is:",
+      "options": [
+        "17",
+        "14",
+        "4",
+        "18"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "0c83f22578c7",
+      "stem": "The median of 15, 4, 26, 7, 9 is:",
+      "options": [
+        "15",
+        "12.2",
+        "26",
+        "9"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-median",
+      "family": "gen-maths-m11-median"
+    },
+    {
+      "id": "fb8a00f6b0c1",
+      "stem": "The mode of 12, 4, 12, 12, 10, 10, 3, 6 is:",
+      "options": [
+        "8",
+        "3",
+        "12",
+        "10"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "0c5ecd3cdf32",
+      "stem": "The mode of 3, 4, 6, 10, 10, 7, 4, 10 is:",
+      "options": [
+        "8",
+        "10",
+        "4",
+        "3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "2d29d2ac991a",
+      "stem": "The mode of 13, 11, 11, 3, 15, 11, 13, 1 is:",
+      "options": [
+        "13",
+        "15",
+        "11",
+        "8"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "c1aea7cc88ae",
+      "stem": "The mode of 7, 4, 11, 7, 4, 15, 13, 4 is:",
+      "options": [
+        "11",
+        "7",
+        "4",
+        "15"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "81a7a5589f9d",
+      "stem": "The mode of 4, 4, 11, 14, 8, 3, 3, 4 is:",
+      "options": [
+        "4",
+        "14",
+        "3",
+        "8"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "7997425835fe",
+      "stem": "The mode of 1, 12, 5, 12, 15, 9, 12, 15 is:",
+      "options": [
+        "1",
+        "8",
+        "12",
+        "15"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-mode",
+      "family": "gen-maths-m11-mode"
+    },
+    {
+      "id": "31616217e5fc",
+      "stem": "The range of 60, 57, 54, 32, 58, 34 is:",
+      "options": [
+        "60",
+        "92",
+        "26",
+        "28"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "027c256109d5",
+      "stem": "The range of 26, 10, 16, 5, 34, 35 is:",
+      "options": [
+        "35",
+        "40",
+        "30",
+        "9"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "615e75d56251",
+      "stem": "The range of 12, 9, 22, 41, 23 is:",
+      "options": [
+        "41",
+        "32",
+        "11",
+        "50"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "870229c2a052",
+      "stem": "The range of 22, 41, 37, 30, 10 is:",
+      "options": [
+        "12",
+        "41",
+        "51",
+        "31"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "36cc9af5a2ac",
+      "stem": "The range of 53, 37, 44, 25, 6, 56 is:",
+      "options": [
+        "3",
+        "62",
+        "56",
+        "50"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "54e9bc02b2ef",
+      "stem": "The range of 50, 5, 42, 7, 12, 15 is:",
+      "options": [
+        "35",
+        "55",
+        "50",
+        "45"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-range",
+      "family": "gen-maths-m11-range"
+    },
+    {
+      "id": "172771ee4320",
+      "stem": "In a survey of 40 students, 9 like maths best. In a pie chart, the angle of this sector is:",
+      "options": [
+        "81°",
+        "22.5°",
+        "40.5°",
+        "9°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "58f6d006cef3",
+      "stem": "In a survey of 120 students, 32 like maths best. In a pie chart, the angle of this sector is:",
+      "options": [
+        "48°",
+        "96°",
+        "26.67°",
+        "32°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "5b6ba0b37781",
+      "stem": "In a survey of 90 students, 12 like maths best. In a pie chart, the angle of this sector is:",
+      "options": [
+        "24°",
+        "12°",
+        "13.33°",
+        "48°"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "7c383c0e24a4",
+      "stem": "In a survey of 60 students, 23 prefer cricket. In a pie chart, the angle of this sector is:",
+      "options": [
+        "138°",
+        "69°",
+        "23°",
+        "38.33°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "eabbf3b65f0f",
+      "stem": "In a survey of 72 students, 33 come by bus. In a pie chart, the angle of this sector is:",
+      "options": [
+        "33°",
+        "165°",
+        "45.83°",
+        "82.5°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "de4977e0525c",
+      "stem": "In a survey of 40 students, 18 like maths best. In a pie chart, the angle of this sector is:",
+      "options": [
+        "162°",
+        "45°",
+        "81°",
+        "18°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "template:m11-pie-chart",
+      "family": "gen-maths-m11-pie-chart"
+    },
+    {
+      "id": "56fa89a85d7f",
+      "stem": "For the values x = 5, 10, 6, 4 with frequencies f = 4, 6, 1, 4, the mean Σfx ÷ Σf is:",
+      "options": [
+        "6.8",
+        "6.25",
+        "102",
+        "25.5"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "92d9e8733078",
+      "stem": "For the values x = 1, 10, 3, 4 with frequencies f = 6, 1, 3, 5, the mean Σfx ÷ Σf is:",
+      "options": [
+        "45",
+        "4.5",
+        "11.25",
+        "3"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "3870da047fd9",
+      "stem": "For the values x = 2, 10, 6, 20 with frequencies f = 3, 1, 1, 5, the mean Σfx ÷ Σf is:",
+      "options": [
+        "9.5",
+        "30.5",
+        "122",
+        "12.2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "168ef2479bd8",
+      "stem": "For the values x = 2, 2, 15, 4 with frequencies f = 2, 2, 1, 1, the mean Σfx ÷ Σf is:",
+      "options": [
+        "27",
+        "5.75",
+        "6.75",
+        "4.5"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "987e5ae36499",
+      "stem": "For the values x = 2, 4, 3, 8 with frequencies f = 6, 5, 2, 2, the mean Σfx ÷ Σf is:",
+      "options": [
+        "13.5",
+        "4.25",
+        "3.6",
+        "54"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "104294d9d54b",
+      "stem": "For the values x = 2, 2, 3, 4 with frequencies f = 1, 4, 5, 2, the mean Σfx ÷ Σf is:",
+      "options": [
+        "2.75",
+        "33",
+        "8.25",
+        "3.25"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-frequency-mean",
+      "family": "gen-maths-m11-frequency-mean"
+    },
+    {
+      "id": "2adecfccdbe3",
+      "stem": "The mean of 7 numbers is 9. When one more number, 17, is added, the new mean is:",
+      "options": [
+        "11.43",
+        "13",
+        "9",
+        "10"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "e30845501980",
+      "stem": "The mean of 5 numbers is 27. When one more number, 51, is added, the new mean is:",
+      "options": [
+        "37.2",
+        "39",
+        "31",
+        "27"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "b6dd712b31d0",
+      "stem": "The mean of 5 numbers is 18. When one more number, 42, is added, the new mean is:",
+      "options": [
+        "30",
+        "26.4",
+        "22",
+        "18"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "54fc1b104fc1",
+      "stem": "The mean of 7 numbers is 24. When one more number, 40, is added, the new mean is:",
+      "options": [
+        "26",
+        "24",
+        "29.71",
+        "32"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "6008055e3447",
+      "stem": "The mean of 6 numbers is 30. When one more number, 44, is added, the new mean is:",
+      "options": [
+        "30",
+        "37",
+        "37.33",
+        "32"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "5dff83661807",
+      "stem": "The mean of 5 numbers is 9. When one more number, 33, is added, the new mean is:",
+      "options": [
+        "13",
+        "21",
+        "15.6",
+        "9"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-new-mean",
+      "family": "gen-maths-m11-new-mean"
+    },
+    {
+      "id": "2dd6997e682f",
+      "stem": "The class mark (mid-point) of the class 100–110 is:",
+      "options": [
+        "105",
+        "110",
+        "100",
+        "10"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    },
+    {
+      "id": "f9f9f0790835",
+      "stem": "The class mark (mid-point) of the class 40–50 is:",
+      "options": [
+        "45",
+        "10",
+        "50",
+        "40"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    },
+    {
+      "id": "33df7aa65054",
+      "stem": "The class mark (mid-point) of the class 20–25 is:",
+      "options": [
+        "25",
+        "5",
+        "22.5",
+        "20"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    },
+    {
+      "id": "dd84f55b5ed2",
+      "stem": "The class mark (mid-point) of the class 70–80 is:",
+      "options": [
+        "70",
+        "10",
+        "75",
+        "80"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    },
+    {
+      "id": "e2256e84e03d",
+      "stem": "The class mark (mid-point) of the class 30–40 is:",
+      "options": [
+        "30",
+        "35",
+        "10",
+        "40"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    },
+    {
+      "id": "2ce4a5005238",
+      "stem": "The class mark (mid-point) of the class 140–160 is:",
+      "options": [
+        "150",
+        "20",
+        "140",
+        "160"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "template:m11-class-mark",
+      "family": "gen-maths-m11-class-mark"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-// Loads content/mcq-bank/*.json (and the variants under content/mcq-bank/variants/)
-// into the `questions` table.
+// Loads content/mcq-bank/*.json (plus extra/, variants/ and generated/) into the
+// `questions` table.
 //
 //   node scripts/load-mcq-bank.mjs                 # write via the service role
 //   node scripts/load-mcq-bank.mjs --sql           # emit SQL instead (one file per chapter)
@@ -12,7 +12,7 @@
 // scripts/derive-answers.mjs has filled them in.
 
 import { readFileSync, existsSync, writeFileSync, mkdirSync } from "node:fs";
-import { readBank, usableQuestions } from "./lib/bank-read.mjs";
+import { readBank, usableQuestions, familyOf } from "./lib/bank-read.mjs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -56,7 +56,7 @@ function readBankForLoad() {
         chapter_seq: c.chapter_seq,
         questions: usable,
         total: c.questions.length,
-        variants: usable.filter((q) => q.kind === "variant").length,
+        variants: usable.filter((q) => q.kind === "variant" || q.kind === "generated").length,
       };
     });
 }
@@ -79,7 +79,7 @@ function toRow(q, chapterId) {
     marks: 1,
     // Every version of one original question shares a family; the builder asks
     // at most one member per family in a test.
-    family: q.variant_of ?? q.id ?? null,
+    family: familyOf(q),
     explanation_md: q.explanation ?? null,
   };
 }

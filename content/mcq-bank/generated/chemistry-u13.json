@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 13,
+  "questions": [
+    {
+      "id": "d1d90afaf3c5",
+      "stem": "How many carbon atoms are in one molecule of octane?",
+      "options": [
+        "9",
+        "8",
+        "10",
+        "7"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    },
+    {
+      "id": "df9fdc087a41",
+      "stem": "How many carbon atoms are in one molecule of propane?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    },
+    {
+      "id": "2f175e3e6476",
+      "stem": "How many carbon atoms are in one molecule of propanol?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    },
+    {
+      "id": "472021d3df1b",
+      "stem": "How many carbon atoms are in one molecule of ethanol?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    },
+    {
+      "id": "716eb4903f7c",
+      "stem": "How many carbon atoms are in one molecule of butanol?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    },
+    {
+      "id": "c22a0d8703fd",
+      "stem": "How many carbon atoms are in one molecule of methanol?",
+      "options": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "template:c13-carbon-count",
+      "family": "gen-chemistry-c13-carbon-count"
+    }
+  ]
+}

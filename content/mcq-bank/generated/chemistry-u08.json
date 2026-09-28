@@ -1,0 +1,312 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "92e63256ad2a",
+      "stem": "Burning 1 mol of methane releases 890 kJ of heat. How much heat is released when 2 mol burn completely?",
+      "options": [
+        "445 kJ",
+        "890 kJ",
+        "892 kJ",
+        "1780 kJ"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "0c3b8162f3f0",
+      "stem": "Burning 1 mol of carbon releases 393 kJ of heat. How much heat is released when 2 mol burn completely?",
+      "options": [
+        "196.5 kJ",
+        "786 kJ",
+        "393 kJ",
+        "395 kJ"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "f2d18f9270d9",
+      "stem": "Burning 1 mol of methane releases 890 kJ of heat. How much heat is released when 3 mol burn completely?",
+      "options": [
+        "296.7 kJ",
+        "890 kJ",
+        "2670 kJ",
+        "893 kJ"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "ed60a3ee1daa",
+      "stem": "Burning 1 mol of ethanol releases 1367 kJ of heat. How much heat is released when 3 mol burn completely?",
+      "options": [
+        "455.7 kJ",
+        "1367 kJ",
+        "1370 kJ",
+        "4101 kJ"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "a06c2ada2021",
+      "stem": "Burning 1 mol of ethanol releases 1367 kJ of heat. How much heat is released when 2 mol burn completely?",
+      "options": [
+        "683.5 kJ",
+        "2734 kJ",
+        "1369 kJ",
+        "1367 kJ"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "05840eb9d909",
+      "stem": "Burning 1 mol of hydrogen releases 286 kJ of heat. How much heat is released when 0.5 mol burn completely?",
+      "options": [
+        "143 kJ",
+        "572 kJ",
+        "286.5 kJ",
+        "286 kJ"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-scale-enthalpy",
+      "family": "gen-chemistry-c8-scale-enthalpy"
+    },
+    {
+      "id": "d2c6f1891a64",
+      "stem": "The reactants of a reaction have 510 kJ of energy and the products have 660 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = +150 kJ; endothermic",
+        "ΔH = −150 kJ; exothermic",
+        "ΔH = −150 kJ; endothermic",
+        "ΔH = +150 kJ; exothermic"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "833197970b90",
+      "stem": "The reactants of a reaction have 530 kJ of energy and the products have 690 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = −160 kJ; endothermic",
+        "ΔH = −160 kJ; exothermic",
+        "ΔH = +160 kJ; exothermic",
+        "ΔH = +160 kJ; endothermic"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "6c31a0c09d93",
+      "stem": "The reactants of a reaction have 170 kJ of energy and the products have 210 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = −40 kJ; endothermic",
+        "ΔH = −40 kJ; exothermic",
+        "ΔH = +40 kJ; endothermic",
+        "ΔH = +40 kJ; exothermic"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "dc3c56f838e8",
+      "stem": "The reactants of a reaction have 200 kJ of energy and the products have 310 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = −110 kJ; exothermic",
+        "ΔH = +110 kJ; exothermic",
+        "ΔH = +110 kJ; endothermic",
+        "ΔH = −110 kJ; endothermic"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "bb315c34f142",
+      "stem": "The reactants of a reaction have 400 kJ of energy and the products have 500 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = −100 kJ; endothermic",
+        "ΔH = −100 kJ; exothermic",
+        "ΔH = +100 kJ; endothermic",
+        "ΔH = +100 kJ; exothermic"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "52f3eb2f11aa",
+      "stem": "The reactants of a reaction have 570 kJ of energy and the products have 520 kJ. Which statement is correct?",
+      "options": [
+        "ΔH = −50 kJ; exothermic",
+        "ΔH = −50 kJ; endothermic",
+        "ΔH = +50 kJ; endothermic",
+        "ΔH = +50 kJ; exothermic"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-enthalpy-sign",
+      "family": "gen-chemistry-c8-enthalpy-sign"
+    },
+    {
+      "id": "6ba2d1261d09",
+      "stem": "In a reaction, 1800 kJ of energy is absorbed to break the bonds of the reactants and 1550 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = +250 kJ; endothermic",
+        "ΔH = +250 kJ; exothermic",
+        "ΔH = +3350 kJ; endothermic",
+        "ΔH = −250 kJ; exothermic"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    },
+    {
+      "id": "91a9ede782f6",
+      "stem": "In a reaction, 800 kJ of energy is absorbed to break the bonds of the reactants and 750 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = +50 kJ; exothermic",
+        "ΔH = +50 kJ; endothermic",
+        "ΔH = −50 kJ; exothermic",
+        "ΔH = +1550 kJ; endothermic"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    },
+    {
+      "id": "5634d8ec34a6",
+      "stem": "In a reaction, 1300 kJ of energy is absorbed to break the bonds of the reactants and 1000 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = +300 kJ; exothermic",
+        "ΔH = −300 kJ; exothermic",
+        "ΔH = +300 kJ; endothermic",
+        "ΔH = +2300 kJ; endothermic"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    },
+    {
+      "id": "d8380be1fe0b",
+      "stem": "In a reaction, 1050 kJ of energy is absorbed to break the bonds of the reactants and 1200 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = +150 kJ; endothermic",
+        "ΔH = −150 kJ; endothermic",
+        "ΔH = +2250 kJ; endothermic",
+        "ΔH = −150 kJ; exothermic"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    },
+    {
+      "id": "3d4d591d2a8d",
+      "stem": "In a reaction, 1750 kJ of energy is absorbed to break the bonds of the reactants and 1450 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = +300 kJ; endothermic",
+        "ΔH = +300 kJ; exothermic",
+        "ΔH = +3200 kJ; endothermic",
+        "ΔH = −300 kJ; exothermic"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    },
+    {
+      "id": "d31a2f35c5ca",
+      "stem": "In a reaction, 1100 kJ of energy is absorbed to break the bonds of the reactants and 1050 kJ is released when the bonds of the products form. Which is correct?",
+      "options": [
+        "ΔH = −50 kJ; exothermic",
+        "ΔH = +50 kJ; endothermic",
+        "ΔH = +50 kJ; exothermic",
+        "ΔH = +2150 kJ; endothermic"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "template:c8-bond-energy",
+      "family": "gen-chemistry-c8-bond-energy"
+    }
+  ]
+}

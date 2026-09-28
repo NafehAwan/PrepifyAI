@@ -1,0 +1,1009 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "d3dcbb7db5ac",
+      "stem": "A force of 40 N pushes a cupboard 4 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "44 J",
+        "80 J",
+        "160 J",
+        "10 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "794602ce6349",
+      "stem": "A force of 50 N pushes a trolley 4 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "200 J",
+        "100 J",
+        "12.5 J",
+        "54 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "066cc5136dd0",
+      "stem": "A force of 50 N pushes a table 3 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "75 J",
+        "16.67 J",
+        "150 J",
+        "53 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "56a35a2afeb3",
+      "stem": "A force of 25 N pushes a box 3 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "75 J",
+        "37.5 J",
+        "8.33 J",
+        "28 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "132ec2112626",
+      "stem": "A force of 25 N pushes a box 4 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "6.25 J",
+        "50 J",
+        "100 J",
+        "29 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "91525f9f0ebf",
+      "stem": "A force of 10 N pushes a box 10 m along the floor in the direction of the force. The work done is:",
+      "options": [
+        "1 J",
+        "20 J",
+        "50 J",
+        "100 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-work",
+      "family": "gen-physics-p6-work"
+    },
+    {
+      "id": "dc07ad351ac3",
+      "stem": "A 6 kg trolley moves at 3 m/s. Its kinetic energy is:",
+      "options": [
+        "9 J",
+        "27 J",
+        "18 J",
+        "54 J"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "3ad3f49029db",
+      "stem": "A 2 kg ball moves at 10 m/s. Its kinetic energy is:",
+      "options": [
+        "200 J",
+        "10 J",
+        "20 J",
+        "100 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "f8918359fa96",
+      "stem": "A 4 kg trolley moves at 6 m/s. Its kinetic energy is:",
+      "options": [
+        "24 J",
+        "144 J",
+        "12 J",
+        "72 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "5a4680af30e6",
+      "stem": "A 2 kg object moves at 6 m/s. Its kinetic energy is:",
+      "options": [
+        "12 J",
+        "72 J",
+        "36 J",
+        "6 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "02043606cedd",
+      "stem": "A 2 kg trolley moves at 3 m/s. Its kinetic energy is:",
+      "options": [
+        "3 J",
+        "6 J",
+        "18 J",
+        "9 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "404f6b5a29d3",
+      "stem": "A 10 kg ball moves at 6 m/s. Its kinetic energy is:",
+      "options": [
+        "180 J",
+        "360 J",
+        "30 J",
+        "60 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-kinetic-energy",
+      "variant_of": "b7db771e8b48"
+    },
+    {
+      "id": "018cd8d1276f",
+      "stem": "A 10 kg bag is lifted onto a shelf 3 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "33.33 J",
+        "30 J",
+        "300 J",
+        "150 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "f2da64880629",
+      "stem": "A 10 kg bag is lifted onto a shelf 5 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "250 J",
+        "50 J",
+        "500 J",
+        "20 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "1b9ea99e1d47",
+      "stem": "A 8 kg bag is lifted onto a shelf 2 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "80 J",
+        "16 J",
+        "40 J",
+        "160 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "c1a7eebde24a",
+      "stem": "A 20 kg bag is lifted onto a shelf 1.5 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "133.33 J",
+        "30 J",
+        "300 J",
+        "150 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "e1d56e59cf07",
+      "stem": "A 5 kg bag is lifted onto a shelf 2 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "50 J",
+        "25 J",
+        "100 J",
+        "10 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "97fb5e8ec9d9",
+      "stem": "A 2 kg bag is lifted onto a shelf 10 m high. Taking g = 10 m/s², its gain in potential energy is:",
+      "options": [
+        "20 J",
+        "100 J",
+        "200 J",
+        "2 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-potential-energy",
+      "family": "gen-physics-p6-potential-energy"
+    },
+    {
+      "id": "116847055db7",
+      "stem": "A 800 N box is lifted from a height of 1 m to 3 m. Its increase in potential energy is:",
+      "options": [
+        "2400 J",
+        "800 J",
+        "1600 J",
+        "3200 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "6fc089a43e89",
+      "stem": "A 800 N box is lifted from a height of 4 m to 6 m. Its increase in potential energy is:",
+      "options": [
+        "8000 J",
+        "1600 J",
+        "3200 J",
+        "4800 J"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "707d0f17b4a8",
+      "stem": "A 200 N box is lifted from a height of 4 m to 9 m. Its increase in potential energy is:",
+      "options": [
+        "800 J",
+        "1000 J",
+        "2600 J",
+        "1800 J"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "232fdb19b1f1",
+      "stem": "A 500 N box is lifted from a height of 3 m to 9 m. Its increase in potential energy is:",
+      "options": [
+        "6000 J",
+        "1500 J",
+        "4500 J",
+        "3000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "20128d695e21",
+      "stem": "A 500 N box is lifted from a height of 4 m to 10 m. Its increase in potential energy is:",
+      "options": [
+        "5000 J",
+        "2000 J",
+        "7000 J",
+        "3000 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "ad76fc281239",
+      "stem": "A 400 N box is lifted from a height of 1 m to 6 m. Its increase in potential energy is:",
+      "options": [
+        "2400 J",
+        "400 J",
+        "2000 J",
+        "2800 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-pe-two-heights",
+      "variant_of": "a69f4843c857"
+    },
+    {
+      "id": "0765ce6d97d3",
+      "stem": "A motor does 250 J of work in 5 s. Its power is:",
+      "options": [
+        "50 W",
+        "245 W",
+        "0.02 W",
+        "1250 W"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "0c349781daeb",
+      "stem": "A motor does 1000 J of work in 20 s. Its power is:",
+      "options": [
+        "50 W",
+        "0.02 W",
+        "980 W",
+        "20,000 W"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "49d02808109d",
+      "stem": "A motor does 5000 J of work in 10 s. Its power is:",
+      "options": [
+        "500 W",
+        "4990 W",
+        "0.002 W",
+        "50,000 W"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "e1d7d8dc6c1c",
+      "stem": "A motor does 1000 J of work in 4 s. Its power is:",
+      "options": [
+        "996 W",
+        "0.004 W",
+        "4000 W",
+        "250 W"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "e1bc6106ed52",
+      "stem": "A motor does 200 J of work in 2 s. Its power is:",
+      "options": [
+        "0.01 W",
+        "100 W",
+        "400 W",
+        "198 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "27cd48cdaf1a",
+      "stem": "A motor does 100 J of work in 5 s. Its power is:",
+      "options": [
+        "95 W",
+        "500 W",
+        "0.05 W",
+        "20 W"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-power",
+      "family": "gen-physics-p6-power"
+    },
+    {
+      "id": "42493ecc7e32",
+      "stem": "A student of mass 60 kg runs up a staircase 5 m high in 6 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "500 W",
+        "50 W",
+        "3000 W",
+        "18,000 W"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "cc6375cde189",
+      "stem": "A student of mass 70 kg runs up a staircase 6 m high in 12 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "50,400 W",
+        "350 W",
+        "35 W",
+        "4200 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "718683708101",
+      "stem": "A student of mass 50 kg runs up a staircase 8 m high in 10 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "40,000 W",
+        "400 W",
+        "4000 W",
+        "40 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "c26c2532df4d",
+      "stem": "A student of mass 50 kg runs up a staircase 6 m high in 10 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "3000 W",
+        "300 W",
+        "30 W",
+        "30,000 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "9dd04cbdae2d",
+      "stem": "A student of mass 60 kg runs up a staircase 4 m high in 8 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "2400 W",
+        "19,200 W",
+        "30 W",
+        "300 W"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "366978b2c0f0",
+      "stem": "A student of mass 40 kg runs up a staircase 9 m high in 12 s. Taking g = 10 m/s², the power developed is:",
+      "options": [
+        "43,200 W",
+        "3600 W",
+        "30 W",
+        "300 W"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:p6-stair-power",
+      "family": "gen-physics-p6-stair-power"
+    },
+    {
+      "id": "2e2b8d19ca8b",
+      "stem": "A machine takes in 400 J of energy and gives out 160 J of useful energy. Its efficiency is:",
+      "options": [
+        "16%",
+        "40%",
+        "60%",
+        "250%"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "eaff20f15973",
+      "stem": "A machine takes in 800 J of energy and gives out 200 J of useful energy. Its efficiency is:",
+      "options": [
+        "400%",
+        "20%",
+        "25%",
+        "75%"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "4e58a5a0ebb0",
+      "stem": "A machine takes in 800 J of energy and gives out 600 J of useful energy. Its efficiency is:",
+      "options": [
+        "75%",
+        "60%",
+        "133.33%",
+        "25%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "ec5af309f5e9",
+      "stem": "A machine takes in 200 J of energy and gives out 80 J of useful energy. Its efficiency is:",
+      "options": [
+        "8%",
+        "250%",
+        "40%",
+        "60%"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "8e7c5fa7822c",
+      "stem": "A machine takes in 200 J of energy and gives out 50 J of useful energy. Its efficiency is:",
+      "options": [
+        "400%",
+        "25%",
+        "75%",
+        "5%"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "020eb160d888",
+      "stem": "A machine takes in 2000 J of energy and gives out 500 J of useful energy. Its efficiency is:",
+      "options": [
+        "75%",
+        "25%",
+        "400%",
+        "50%"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-efficiency",
+      "variant_of": "dea113ea9d82"
+    },
+    {
+      "id": "12dd883a631f",
+      "stem": "A 60 W bulb uses 3600 J of energy in:",
+      "options": [
+        "216,000 s",
+        "61 s",
+        "120 s",
+        "60 s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "19f51c99ba97",
+      "stem": "A 60 W heater is switched on for 60 s. The electrical energy it uses is:",
+      "options": [
+        "3600 J",
+        "1 J",
+        "120 J",
+        "1800 J"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "87e5e32f0282",
+      "stem": "A 100 W bulb uses 500 J of energy in:",
+      "options": [
+        "5 s",
+        "10 s",
+        "6 s",
+        "50,000 s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "24859e7db098",
+      "stem": "A 40 W heater is switched on for 10 s. The electrical energy it uses is:",
+      "options": [
+        "50 J",
+        "0.25 J",
+        "400 J",
+        "4 J"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "2f8a751a73ec",
+      "stem": "A 100 W heater is switched on for 2 s. The electrical energy it uses is:",
+      "options": [
+        "102 J",
+        "0.02 J",
+        "50 J",
+        "200 J"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "4b2975007137",
+      "stem": "A 40 W bulb uses 1200 J of energy in:",
+      "options": [
+        "30 s",
+        "31 s",
+        "60 s",
+        "48,000 s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-electrical-energy",
+      "variant_of": "9bd8d81f645f"
+    },
+    {
+      "id": "95024a9ceaaa",
+      "stem": "A ball falls from rest through a height of 20 m. Ignoring air resistance and taking g = 10 m/s², its speed just before hitting the ground is:",
+      "options": [
+        "20 m/s",
+        "10 m/s",
+        "200 m/s",
+        "400 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-speed-from-height",
+      "family": "gen-physics-p6-speed-from-height"
+    },
+    {
+      "id": "c76367407783",
+      "stem": "A ball falls from rest through a height of 80 m. Ignoring air resistance and taking g = 10 m/s², its speed just before hitting the ground is:",
+      "options": [
+        "800 m/s",
+        "40 m/s",
+        "20 m/s",
+        "1600 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-speed-from-height",
+      "family": "gen-physics-p6-speed-from-height"
+    },
+    {
+      "id": "d9761d92f6d0",
+      "stem": "A ball falls from rest through a height of 125 m. Ignoring air resistance and taking g = 10 m/s², its speed just before hitting the ground is:",
+      "options": [
+        "50 m/s",
+        "2500 m/s",
+        "1250 m/s",
+        "25 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-speed-from-height",
+      "family": "gen-physics-p6-speed-from-height"
+    },
+    {
+      "id": "1db500c28ea0",
+      "stem": "A ball falls from rest through a height of 5 m. Ignoring air resistance and taking g = 10 m/s², its speed just before hitting the ground is:",
+      "options": [
+        "100 m/s",
+        "10 m/s",
+        "5 m/s",
+        "50 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-speed-from-height",
+      "family": "gen-physics-p6-speed-from-height"
+    },
+    {
+      "id": "24d51584cb9b",
+      "stem": "A ball falls from rest through a height of 45 m. Ignoring air resistance and taking g = 10 m/s², its speed just before hitting the ground is:",
+      "options": [
+        "15 m/s",
+        "450 m/s",
+        "30 m/s",
+        "900 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-speed-from-height",
+      "family": "gen-physics-p6-speed-from-height"
+    },
+    {
+      "id": "455c4f5f88b7",
+      "stem": "A water pump is rated at 1 hp. Taking 1 hp = 746 W, its power in watts is:",
+      "options": [
+        "747 W",
+        "746 W",
+        "1492 W",
+        "1000 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    },
+    {
+      "id": "c2fe21a1c9db",
+      "stem": "A water pump is rated at 1.5 hp. Taking 1 hp = 746 W, its power in watts is:",
+      "options": [
+        "1500 W",
+        "2238 W",
+        "497.3 W",
+        "1119 W"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    },
+    {
+      "id": "69fb1b219c13",
+      "stem": "A motor uses 1492 W of power. Taking 1 hp = 746 W, this is:",
+      "options": [
+        "4 hp",
+        "3 hp",
+        "1492 hp",
+        "2 hp"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    },
+    {
+      "id": "abfd8c5236e9",
+      "stem": "A motor uses 746 W of power. Taking 1 hp = 746 W, this is:",
+      "options": [
+        "1 hp",
+        "0.5 hp",
+        "2 hp",
+        "746 hp"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    },
+    {
+      "id": "fc2bfe07ae59",
+      "stem": "A water pump is rated at 3 hp. Taking 1 hp = 746 W, its power in watts is:",
+      "options": [
+        "3000 W",
+        "2238 W",
+        "248.7 W",
+        "4476 W"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    },
+    {
+      "id": "2d3cfd321444",
+      "stem": "A motor uses 1119 W of power. Taking 1 hp = 746 W, this is:",
+      "options": [
+        "1119 hp",
+        "2.5 hp",
+        "1.5 hp",
+        "3 hp"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:p6-horsepower",
+      "variant_of": "6c0ab2cfdfb7"
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "6866559d7cfc",
+      "stem": "A box of weight 400 N rests on an area of 4 m². The pressure it exerts is:",
+      "options": [
+        "50 Pa",
+        "1600 Pa",
+        "0.01 Pa",
+        "100 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "e5b81923f195",
+      "stem": "A crate of weight 50 N rests on an area of 0.5 m². The pressure it exerts is:",
+      "options": [
+        "100 Pa",
+        "25 Pa",
+        "0.01 Pa",
+        "50 Pa"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "fa3ae66083b9",
+      "stem": "A box of weight 1600 N rests on an area of 4 m². The pressure it exerts is:",
+      "options": [
+        "0.0025 Pa",
+        "6400 Pa",
+        "200 Pa",
+        "400 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "f70cb5e4f84b",
+      "stem": "A box of weight 200 N rests on an area of 0.25 m². The pressure it exerts is:",
+      "options": [
+        "800 Pa",
+        "0.00125 Pa",
+        "50 Pa",
+        "400 Pa"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "36b33e10a600",
+      "stem": "A statue of weight 2000 N rests on an area of 5 m². The pressure it exerts is:",
+      "options": [
+        "200 Pa",
+        "400 Pa",
+        "0.0025 Pa",
+        "10,000 Pa"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "06e495b6eb44",
+      "stem": "A water tank of weight 50 N rests on an area of 0.5 m². The pressure it exerts is:",
+      "options": [
+        "100 Pa",
+        "25 Pa",
+        "50 Pa",
+        "0.01 Pa"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-pressure",
+      "family": "gen-physics-p5-pressure"
+    },
+    {
+      "id": "07dad2b29a69",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 10 m is:",
+      "options": [
+        "100,000 Pa",
+        "1000 Pa",
+        "1,000,000 Pa",
+        "10,000 Pa"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "c6d822a8774c",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 20 m is:",
+      "options": [
+        "2000 Pa",
+        "500 Pa",
+        "200,000 Pa",
+        "20,000 Pa"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "7a25589026fb",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 2 m is:",
+      "options": [
+        "5000 Pa",
+        "200 Pa",
+        "2000 Pa",
+        "20,000 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "6b3fc9270d12",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 15 m is:",
+      "options": [
+        "1500 Pa",
+        "15,000 Pa",
+        "666.67 Pa",
+        "150,000 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "b7313a38aa8a",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 8 m is:",
+      "options": [
+        "8000 Pa",
+        "1250 Pa",
+        "800 Pa",
+        "80,000 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "75831ae66cb1",
+      "stem": "Taking the density of water as 1000 kg/m³ and g = 10 m/s², the pressure due to the water at a depth of 5 m is:",
+      "options": [
+        "5000 Pa",
+        "2000 Pa",
+        "500 Pa",
+        "50,000 Pa"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-liquid-pressure",
+      "family": "gen-physics-p5-liquid-pressure"
+    },
+    {
+      "id": "876435e5932d",
+      "stem": "A spring stretches by 2 cm under a load of 10 N. Within the elastic limit, a load of 40 N stretches it by:",
+      "options": [
+        "8 cm",
+        "2 cm",
+        "32 cm",
+        "0.5 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "c34b94722b84",
+      "stem": "A spring stretches by 2 cm under a load of 20 N. Within the elastic limit, a load of 60 N stretches it by:",
+      "options": [
+        "2 cm",
+        "6 cm",
+        "0.67 cm",
+        "18 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "affcffa1b43b",
+      "stem": "A spring stretches by 5 cm under a load of 10 N. Within the elastic limit, a load of 30 N stretches it by:",
+      "options": [
+        "1.67 cm",
+        "5 cm",
+        "45 cm",
+        "15 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "c8c99e717382",
+      "stem": "A spring stretches by 3 cm under a load of 25 N. Within the elastic limit, a load of 75 N stretches it by:",
+      "options": [
+        "1 cm",
+        "27 cm",
+        "3 cm",
+        "9 cm"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "6297bf42aa65",
+      "stem": "A spring stretches by 5 cm under a load of 20 N. Within the elastic limit, a load of 60 N stretches it by:",
+      "options": [
+        "15 cm",
+        "5 cm",
+        "1.67 cm",
+        "45 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "303c230f3dd9",
+      "stem": "A spring stretches by 4 cm under a load of 20 N. Within the elastic limit, a load of 60 N stretches it by:",
+      "options": [
+        "36 cm",
+        "12 cm",
+        "4 cm",
+        "1.33 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hooke",
+      "variant_of": "21bf2202539d"
+    },
+    {
+      "id": "70d5d1051a43",
+      "stem": "A force of 20 N stretches a spring by 0.05 m. The spring constant is:",
+      "options": [
+        "1 N/m",
+        "40 N/m",
+        "0.0025 N/m",
+        "400 N/m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "42211933ec4e",
+      "stem": "A force of 100 N stretches a spring by 0.25 m. The spring constant is:",
+      "options": [
+        "0.0025 N/m",
+        "400 N/m",
+        "40 N/m",
+        "25 N/m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "270d190e6044",
+      "stem": "A force of 10 N stretches a spring by 0.1 m. The spring constant is:",
+      "options": [
+        "1 N/m",
+        "100 N/m",
+        "0.01 N/m",
+        "10 N/m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "f0c463a1b544",
+      "stem": "A force of 4 N stretches a spring by 0.02 m. The spring constant is:",
+      "options": [
+        "0.08 N/m",
+        "0.005 N/m",
+        "20 N/m",
+        "200 N/m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "9963c20046c6",
+      "stem": "A force of 80 N stretches a spring by 0.2 m. The spring constant is:",
+      "options": [
+        "16 N/m",
+        "0.0025 N/m",
+        "400 N/m",
+        "40 N/m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "8fe9e56a5cf0",
+      "stem": "A force of 50 N stretches a spring by 0.25 m. The spring constant is:",
+      "options": [
+        "12.5 N/m",
+        "20 N/m",
+        "0.005 N/m",
+        "200 N/m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-spring-constant",
+      "family": "gen-physics-p5-spring-constant"
+    },
+    {
+      "id": "7bf765de62d4",
+      "stem": "In a car-lift, a force of 200 N is applied to a small piston of area 10 cm². The large piston has an area of 200 cm². The upward force on the large piston is:",
+      "options": [
+        "200 N",
+        "4000 N",
+        "40,000 N",
+        "10 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "04fdd02df32c",
+      "stem": "In a car-lift, a force of 200 N is applied to a small piston of area 5 cm². The large piston has an area of 250 cm². The upward force on the large piston is:",
+      "options": [
+        "4 N",
+        "10,000 N",
+        "200 N",
+        "50,000 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "e3517260fc64",
+      "stem": "In a car-lift, a force of 250 N is applied to a small piston of area 20 cm². The large piston has an area of 400 cm². The upward force on the large piston is:",
+      "options": [
+        "12.5 N",
+        "5000 N",
+        "250 N",
+        "100,000 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "c06944ceb4a2",
+      "stem": "In a car-lift, a force of 100 N is applied to a small piston of area 20 cm². The large piston has an area of 200 cm². The upward force on the large piston is:",
+      "options": [
+        "100 N",
+        "20,000 N",
+        "10 N",
+        "1000 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "9e34ffb2d34f",
+      "stem": "In a car-lift, a force of 200 N is applied to a small piston of area 10 cm². The large piston has an area of 100 cm². The upward force on the large piston is:",
+      "options": [
+        "200 N",
+        "20 N",
+        "2000 N",
+        "20,000 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "a765bc9dbcaf",
+      "stem": "In a car-lift, a force of 50 N is applied to a small piston of area 20 cm². The large piston has an area of 800 cm². The upward force on the large piston is:",
+      "options": [
+        "1.25 N",
+        "50 N",
+        "40,000 N",
+        "2000 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "template:p5-hydraulic",
+      "family": "gen-physics-p5-hydraulic"
+    },
+    {
+      "id": "2ec7aaca3b92",
+      "stem": "A wire 5 m long is stretched by 2 mm. The strain in the wire is:",
+      "options": [
+        "0.0004",
+        "2500",
+        "0.004",
+        "0.4"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    },
+    {
+      "id": "8cebd49f065c",
+      "stem": "A wire 4 m long is stretched by 1 mm. The strain in the wire is:",
+      "options": [
+        "0.25",
+        "0.0025",
+        "0.00025",
+        "4000"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    },
+    {
+      "id": "d55171dd7d25",
+      "stem": "A wire 4 m long is stretched by 5 mm. The strain in the wire is:",
+      "options": [
+        "1.25",
+        "800",
+        "0.00125",
+        "0.0125"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    },
+    {
+      "id": "45f79bd6cd60",
+      "stem": "A wire 2 m long is stretched by 2 mm. The strain in the wire is:",
+      "options": [
+        "0.001",
+        "1",
+        "1000",
+        "0.01"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    },
+    {
+      "id": "9615dd564340",
+      "stem": "A wire 4 m long is stretched by 2 mm. The strain in the wire is:",
+      "options": [
+        "0.005",
+        "0.5",
+        "2000",
+        "0.0005"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    },
+    {
+      "id": "dee3b5fac85d",
+      "stem": "A wire 1 m long is stretched by 5 mm. The strain in the wire is:",
+      "options": [
+        "200",
+        "5",
+        "0.005",
+        "0.05"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:p5-strain",
+      "family": "gen-physics-p5-strain"
+    }
+  ]
+}

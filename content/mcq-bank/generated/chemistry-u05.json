@@ -1,0 +1,210 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "3f6d3c738218",
+      "stem": "The formula of the compound formed between sodium ions (Na⁺) and fluoride ions (F⁻) is:",
+      "options": [
+        "Na₂F₃",
+        "Na₃F₂",
+        "NaF",
+        "Na₂F"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "45679bf25bcd",
+      "stem": "The formula of the compound formed between potassium ions (K⁺) and nitride ions (N³⁻) is:",
+      "options": [
+        "KN₃",
+        "K₃N",
+        "KN",
+        "K₂N₃"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "8e7401b2bd22",
+      "stem": "The formula of the compound formed between aluminium ions (Al³⁺) and oxide ions (O²⁻) is:",
+      "options": [
+        "Al₃O₂",
+        "Al₂O₃",
+        "AlO",
+        "Al₂O"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "339a8ecbc40a",
+      "stem": "The formula of the compound formed between magnesium ions (Mg²⁺) and nitride ions (N³⁻) is:",
+      "options": [
+        "MgN",
+        "Mg₃N₂",
+        "Mg₂N₃",
+        "Mg₃N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "f6a822811230",
+      "stem": "The formula of the compound formed between magnesium ions (Mg²⁺) and oxide ions (O²⁻) is:",
+      "options": [
+        "Mg₂O₂",
+        "MgO",
+        "Mg₂O",
+        "MgO₂"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "cca5083c201c",
+      "stem": "The formula of the compound formed between magnesium ions (Mg²⁺) and fluoride ions (F⁻) is:",
+      "options": [
+        "Mg₂F",
+        "MgF",
+        "Mg₂F₃",
+        "MgF₂"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-ionic-formula",
+      "family": "gen-chemistry-c5-ionic-formula"
+    },
+    {
+      "id": "b6c755824b47",
+      "stem": "How many shared pairs of electrons are there in a molecule of N₂?",
+      "options": [
+        "4",
+        "3",
+        "6",
+        "2"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    },
+    {
+      "id": "6bc7659736b3",
+      "stem": "How many shared pairs of electrons are there in a molecule of CH₄?",
+      "options": [
+        "5",
+        "8",
+        "4",
+        "3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    },
+    {
+      "id": "7d3c8acdc63b",
+      "stem": "How many shared pairs of electrons are there in a molecule of CO₂?",
+      "options": [
+        "5",
+        "3",
+        "8",
+        "4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    },
+    {
+      "id": "110674f6ac6f",
+      "stem": "How many shared pairs of electrons are there in a molecule of HCl?",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    },
+    {
+      "id": "d4e7930fc097",
+      "stem": "How many shared pairs of electrons are there in a molecule of H₂O?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    },
+    {
+      "id": "45484c33e1a3",
+      "stem": "How many shared pairs of electrons are there in a molecule of C₂H₄?",
+      "options": [
+        "12",
+        "7",
+        "5",
+        "6"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "template:c5-shared-pairs",
+      "family": "gen-chemistry-c5-shared-pairs"
+    }
+  ]
+}

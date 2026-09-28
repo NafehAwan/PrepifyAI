@@ -1,0 +1,312 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 14,
+  "questions": [
+    {
+      "id": "666ec7580b8b",
+      "stem": "The molecular formula of hexane is:",
+      "options": [
+        "C₆H₁₂",
+        "C₆H₁₆",
+        "C₆H₁₀",
+        "C₆H₁₄"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "16694bb4fa4f",
+      "stem": "The molecular formula of butyne is:",
+      "options": [
+        "C₄H₁₂",
+        "C₄H₁₀",
+        "C₄H₆",
+        "C₄H₈"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "181bc3126ef1",
+      "stem": "The molecular formula of pentane is:",
+      "options": [
+        "C₅H₈",
+        "C₅H₁₂",
+        "C₅H₁₄",
+        "C₅H₁₀"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "6815b24f3c82",
+      "stem": "The molecular formula of propane is:",
+      "options": [
+        "C₃H₈",
+        "C₃H₄",
+        "C₃H₁₀",
+        "C₃H₆"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "72680d63cd8b",
+      "stem": "The molecular formula of hexene is:",
+      "options": [
+        "C₆H₁₂",
+        "C₆H₁₄",
+        "C₆H₁₆",
+        "C₆H₁₀"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "c390101e93b8",
+      "stem": "The molecular formula of pentyne is:",
+      "options": [
+        "C₅H₁₂",
+        "C₅H₁₀",
+        "C₅H₁₄",
+        "C₅H₈"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-formula",
+      "family": "gen-chemistry-c14-formula"
+    },
+    {
+      "id": "4b554225f7c0",
+      "stem": "The molar mass of propene (C₃H₆) is (C = 12, H = 1):",
+      "options": [
+        "42 g mol⁻¹",
+        "40 g mol⁻¹",
+        "56 g mol⁻¹",
+        "36 g mol⁻¹"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "f54df222f5de",
+      "stem": "The molar mass of hexene (C₆H₁₂) is (C = 12, H = 1):",
+      "options": [
+        "98 g mol⁻¹",
+        "84 g mol⁻¹",
+        "72 g mol⁻¹",
+        "82 g mol⁻¹"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "462278fa4f45",
+      "stem": "The molar mass of hexane (C₆H₁₄) is (C = 12, H = 1):",
+      "options": [
+        "72 g mol⁻¹",
+        "86 g mol⁻¹",
+        "84 g mol⁻¹",
+        "100 g mol⁻¹"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "5a9e21edb65e",
+      "stem": "The molar mass of pentene (C₅H₁₀) is (C = 12, H = 1):",
+      "options": [
+        "60 g mol⁻¹",
+        "70 g mol⁻¹",
+        "68 g mol⁻¹",
+        "84 g mol⁻¹"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "9c7f5476074b",
+      "stem": "The molar mass of octene (C₈H₁₆) is (C = 12, H = 1):",
+      "options": [
+        "126 g mol⁻¹",
+        "96 g mol⁻¹",
+        "110 g mol⁻¹",
+        "112 g mol⁻¹"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "9e6b9882fed9",
+      "stem": "The molar mass of methane (CH₄) is (C = 12, H = 1):",
+      "options": [
+        "14 g mol⁻¹",
+        "12 g mol⁻¹",
+        "30 g mol⁻¹",
+        "16 g mol⁻¹"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-molar-mass",
+      "variant_of": "9ce64a9326e8"
+    },
+    {
+      "id": "a6154edf6788",
+      "stem": "Complete combustion of one molecule of ethane (C₂H₆) produces:",
+      "options": [
+        "2 CO₂ and 3 H₂O",
+        "4 CO₂ and 3 H₂O",
+        "2 CO₂ and 6 H₂O",
+        "3 CO₂ and 2 H₂O"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    },
+    {
+      "id": "ec68a056c43a",
+      "stem": "Complete combustion of one molecule of butane (C₄H₁₀) produces:",
+      "options": [
+        "5 CO₂ and 4 H₂O",
+        "8 CO₂ and 5 H₂O",
+        "4 CO₂ and 5 H₂O",
+        "4 CO₂ and 10 H₂O"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    },
+    {
+      "id": "3e696bfc0a63",
+      "stem": "Complete combustion of one molecule of butene (C₄H₈) produces:",
+      "options": [
+        "4 CO₂ and 4 H₂O",
+        "8 CO₂ and 4 H₂O",
+        "5 CO₂ and 5 H₂O",
+        "4 CO₂ and 8 H₂O"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    },
+    {
+      "id": "24a82ff7dbd7",
+      "stem": "Complete combustion of one molecule of methane (CH₄) produces:",
+      "options": [
+        "1 CO₂ and 4 H₂O",
+        "2 CO₂ and 2 H₂O",
+        "2 CO₂ and 1 H₂O",
+        "1 CO₂ and 2 H₂O"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    },
+    {
+      "id": "c572e62d00a8",
+      "stem": "Complete combustion of one molecule of hexane (C₆H₁₄) produces:",
+      "options": [
+        "6 CO₂ and 7 H₂O",
+        "7 CO₂ and 6 H₂O",
+        "6 CO₂ and 14 H₂O",
+        "12 CO₂ and 7 H₂O"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    },
+    {
+      "id": "9377f9a3b7fe",
+      "stem": "Complete combustion of one molecule of hexene (C₆H₁₂) produces:",
+      "options": [
+        "6 CO₂ and 12 H₂O",
+        "6 CO₂ and 6 H₂O",
+        "12 CO₂ and 6 H₂O",
+        "7 CO₂ and 7 H₂O"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "template:c14-combustion-products",
+      "family": "gen-chemistry-c14-combustion-products"
+    }
+  ]
+}

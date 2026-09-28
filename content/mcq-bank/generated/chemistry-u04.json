@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "5a2632f02b7a",
+      "stem": "An element has the electronic configuration 2, 3. Its position in the periodic table is:",
+      "options": [
+        "Period 3, Group 2",
+        "Period 3, Group 13",
+        "Period 2, Group 14",
+        "Period 2, Group 13"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    },
+    {
+      "id": "5183fc1e6cea",
+      "stem": "An element has the electronic configuration 2, 1. Its position in the periodic table is:",
+      "options": [
+        "Period 2, Group 2",
+        "Period 2, Group 1",
+        "Period 1, Group 2",
+        "Period 3, Group 1"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    },
+    {
+      "id": "eebeb6abe057",
+      "stem": "An element has the electronic configuration 2, 5. Its position in the periodic table is:",
+      "options": [
+        "Period 2, Group 16",
+        "Period 3, Group 15",
+        "Period 2, Group 15",
+        "Period 5, Group 2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    },
+    {
+      "id": "504458b6f706",
+      "stem": "An element has the electronic configuration 2, 7. Its position in the periodic table is:",
+      "options": [
+        "Period 3, Group 17",
+        "Period 2, Group 17",
+        "Period 2, Group 18",
+        "Period 7, Group 2"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    },
+    {
+      "id": "6330e655b7ab",
+      "stem": "An element has the electronic configuration 2, 8, 8, 1. Its position in the periodic table is:",
+      "options": [
+        "Period 4, Group 2",
+        "Period 4, Group 1",
+        "Period 1, Group 4",
+        "Period 5, Group 1"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    },
+    {
+      "id": "9551c646736f",
+      "stem": "An element has the electronic configuration 2, 8, 4. Its position in the periodic table is:",
+      "options": [
+        "Period 4, Group 14",
+        "Period 4, Group 3",
+        "Period 3, Group 14",
+        "Period 3, Group 15"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:c4-period-group",
+      "family": "gen-chemistry-c4-period-group"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "5105d03b3ad2",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻² mol/dm³. Its pH is:",
+      "options": [
+        "−2",
+        "3",
+        "2",
+        "12"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "4c74c437bb8f",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻⁸ mol/dm³. Its pH is:",
+      "options": [
+        "6",
+        "9",
+        "−8",
+        "8"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "7618862fc3aa",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻³ mol/dm³. Its pH is:",
+      "options": [
+        "−3",
+        "3",
+        "11",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "d6808e4ed731",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻¹⁰ mol/dm³. Its pH is:",
+      "options": [
+        "11",
+        "10",
+        "4",
+        "−10"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "d39f8e806714",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻⁵ mol/dm³. Its pH is:",
+      "options": [
+        "5",
+        "−5",
+        "9",
+        "6"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "eb17f4761b21",
+      "stem": "The hydrogen-ion concentration of a solution is 1 × 10⁻⁴ mol/dm³. Its pH is:",
+      "options": [
+        "10",
+        "4",
+        "5",
+        "−4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-ph",
+      "family": "gen-chemistry-c10-ph"
+    },
+    {
+      "id": "ac98ad784b60",
+      "stem": "The pH of a solution is 12. Its pOH is:",
+      "options": [
+        "26",
+        "2",
+        "5",
+        "12"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "8ce35b78d1aa",
+      "stem": "The pH of a solution is 5. Its pOH is:",
+      "options": [
+        "2",
+        "5",
+        "9",
+        "19"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "262c33555971",
+      "stem": "The pH of a solution is 4. Its pOH is:",
+      "options": [
+        "18",
+        "3",
+        "10",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "2420332fb6d1",
+      "stem": "The pH of a solution is 11. Its pOH is:",
+      "options": [
+        "11",
+        "25",
+        "4",
+        "3"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "211721b03124",
+      "stem": "The pH of a solution is 2. Its pOH is:",
+      "options": [
+        "2",
+        "16",
+        "5",
+        "12"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "46b1bee36adf",
+      "stem": "The pH of a solution is 10. Its pOH is:",
+      "options": [
+        "10",
+        "24",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "template:c10-poh",
+      "family": "gen-chemistry-c10-poh"
+    },
+    {
+      "id": "adc8a22459ab",
+      "stem": "How many moles of NaOH are needed to neutralise 1 mol of HCl completely?",
+      "options": [
+        "2 mol",
+        "1 mol",
+        "0.5 mol",
+        "4 mol"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    },
+    {
+      "id": "c6698ec28735",
+      "stem": "How many moles of NaOH are needed to neutralise 1.5 mol of HNO₃ completely?",
+      "options": [
+        "1.5 mol",
+        "3 mol",
+        "0.75 mol",
+        "6 mol"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    },
+    {
+      "id": "4a834daf7699",
+      "stem": "How many moles of NaOH are needed to neutralise 0.1 mol of HNO₃ completely?",
+      "options": [
+        "0.1 mol",
+        "0.05 mol",
+        "0.2 mol",
+        "0.4 mol"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    },
+    {
+      "id": "b04bd0167309",
+      "stem": "How many moles of NaOH are needed to neutralise 0.2 mol of HCl completely?",
+      "options": [
+        "0.1 mol",
+        "0.2 mol",
+        "0.4 mol",
+        "0.8 mol"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    },
+    {
+      "id": "3e407e8b49d3",
+      "stem": "How many moles of NaOH are needed to neutralise 0.5 mol of HNO₃ completely?",
+      "options": [
+        "0.5 mol",
+        "1 mol",
+        "0.25 mol",
+        "2 mol"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    },
+    {
+      "id": "d52ae4b8f8a8",
+      "stem": "How many moles of NaOH are needed to neutralise 0.5 mol of H₂SO₄ completely?",
+      "options": [
+        "2 mol",
+        "0.25 mol",
+        "1 mol",
+        "0.5 mol"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "template:c10-neutralisation",
+      "family": "gen-chemistry-c10-neutralisation"
+    }
+  ]
+}
