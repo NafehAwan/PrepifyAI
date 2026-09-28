@@ -1,0 +1,518 @@
+{
+  "subject": "English",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "d3301e46d5bc",
+      "stem": "An \"entrepreneur\" is a person who:",
+      "options": [
+        "starts and runs a business, taking on its risks",
+        "works only for the government",
+        "avoids all kinds of risk",
+        "buys goods only for personal use"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "fb501d81ea85",
+      "stem": "Hazrat Khadija (RA) is remembered as a successful:",
+      "options": [
+        "poet",
+        "merchant",
+        "soldier",
+        "teacher"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "e44616f57267",
+      "stem": "Hazrat Khadija (RA) hired the Holy Prophet ﷺ to lead her trade caravan to:",
+      "options": [
+        "Egypt",
+        "Syria",
+        "Yemen",
+        "Persia"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "d6f67163246a",
+      "stem": "Choose the synonym of \"venture\":",
+      "options": [
+        "Enterprise",
+        "Holiday",
+        "Failure",
+        "Rest"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "74a139f29315",
+      "stem": "Choose the antonym of \"profit\":",
+      "options": [
+        "Gain",
+        "Income",
+        "Loss",
+        "Benefit"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "22d47f109f9c",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Entrepreneur",
+        "Entreprenuer",
+        "Enterpreneur",
+        "Entrepeneur"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "1ee45a4d8490",
+      "stem": "The noun form of \"independent\" is:",
+      "options": [
+        "Independently",
+        "Independence",
+        "Depend",
+        "Dependable"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "67df3245e7ff",
+      "stem": "\"Empowerment\" means:",
+      "options": [
+        "giving someone the confidence and means to control their own life",
+        "taking away someone's rights",
+        "making someone lazy",
+        "forcing someone to stop working"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "2380e6bf99ca",
+      "stem": "Ayesha sells handmade jewellery online from home and manages her own orders and profits. She is best described as:",
+      "options": [
+        "an employee",
+        "a home-based entrepreneur",
+        "a customer",
+        "a supplier's agent"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "71108b6f76c6",
+      "stem": "Fill in the blank: She invested her savings ___ a small bakery.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "52183314a415",
+      "stem": "In \"She manages her business wisely\", the word \"wisely\" is:",
+      "options": [
+        "a noun",
+        "a verb",
+        "an adverb",
+        "an adjective"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "fd2ecfd51cda",
+      "stem": "Choose the passive voice of \"She started a new business.\":",
+      "options": [
+        "A new business is started by her.",
+        "A new business was started by her.",
+        "A new business has been started by her.",
+        "A new business was starting by her."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "47368e84686d",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "She have started a shop.",
+        "She has started a shop.",
+        "She has start a shop.",
+        "She having started a shop."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "71e7d2f30270",
+      "stem": "Which sentence is in the present perfect tense?",
+      "options": [
+        "She sells clothes.",
+        "She sold clothes.",
+        "She has sold many clothes.",
+        "She will sell clothes."
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "0d5136c4d3ab",
+      "stem": "The word \"capital\" in business means:",
+      "options": [
+        "the money used to start or run a business",
+        "a big letter",
+        "the main city of a country",
+        "a type of building"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "a16631efd4ff",
+      "stem": "Choose the synonym of \"initiative\":",
+      "options": [
+        "Enterprise and self-motivation",
+        "Laziness",
+        "Delay",
+        "Fear"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "7d53fdf9903e",
+      "stem": "A woman borrows a small loan, buys a sewing machine and starts stitching clothes for her neighbours. Which quality does she mainly show?",
+      "options": [
+        "Self-reliance",
+        "Dependence",
+        "Carelessness",
+        "Idleness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "917e118d49bf",
+      "stem": "Choose the correct article: She opened ___ online store last year.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "a4acd6ee43f5",
+      "stem": "Choose the correct form: If she works hard, she ___ succeed.",
+      "options": [
+        "will",
+        "would",
+        "had",
+        "was"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "cd87e609330f",
+      "stem": "Which word is an adjective?",
+      "options": [
+        "Success",
+        "Succeed",
+        "Successful",
+        "Successfully"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "9915270eaf64",
+      "stem": "Choose the antonym of \"confident\":",
+      "options": [
+        "Bold",
+        "Sure",
+        "Nervous",
+        "Brave"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "e10d151145b4",
+      "stem": "Choose the indirect speech of: She said, \"I will open a boutique.\"",
+      "options": [
+        "She said that she would open a boutique.",
+        "She said that I will open a boutique.",
+        "She says that she would open a boutique.",
+        "She said that she will opened a boutique."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "ce24877b21f9",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "Her shop sells clothes, shoes and bags.",
+        "Her shop sells, clothes shoes and bags.",
+        "Her shop sells clothes shoes, and bags",
+        "her shop sells clothes, shoes and bags."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "effac9fd4964",
+      "stem": "The prefix in \"unemployed\" means:",
+      "options": [
+        "again",
+        "not",
+        "before",
+        "after"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "8be6f25f5f4f",
+      "stem": "Sana's online business grows because customers trust the quality of her products. Which quality is most important here?",
+      "options": [
+        "Honesty and quality",
+        "Rudeness",
+        "Delay",
+        "High prices"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "1a0e0dd94c9e",
+      "stem": "Choose the correct preposition: Muslim women have contributed ___ trade since early Islamic times.",
+      "options": [
+        "to",
+        "at",
+        "from",
+        "over"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "691376bd5f1e",
+      "stem": "\"Economic independence\" means:",
+      "options": [
+        "being able to support oneself financially",
+        "having no money at all",
+        "depending on others for money",
+        "spending carelessly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "fe84bc9e1109",
+      "stem": "Choose the plural of \"business\":",
+      "options": [
+        "businesss",
+        "businesses",
+        "business's",
+        "busineses"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "fa3ac9caa564",
+      "stem": "Choose the word that best completes the sentence: Starting a business requires hard work and ___.",
+      "options": [
+        "determination",
+        "determined",
+        "determine",
+        "determinedly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "0211134011fb",
+      "stem": "Which sentence is a question?",
+      "options": [
+        "She runs a café.",
+        "Does she run a café?",
+        "Run the café well.",
+        "What a lovely café!"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "971ff47c97a3",
+      "stem": "Maria makes a plan listing her costs, prices and expected customers before opening her shop. What is she preparing?",
+      "options": [
+        "A business plan",
+        "A recipe",
+        "A holiday plan",
+        "A complaint"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    },
+    {
+      "id": "6fc35586982b",
+      "stem": "Choose the synonym of \"flourish\":",
+      "options": [
+        "Fail",
+        "Prosper",
+        "Shrink",
+        "Collapse"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 2)"
+    }
+  ]
+}

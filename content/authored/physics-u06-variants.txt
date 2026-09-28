@@ -1,0 +1,13 @@
+# subject: Physics
+# chapter: 6
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A stone is thrown straight up. At its highest point it has: | maximum kinetic energy | zero kinetic energy and maximum potential energy | zero potential energy | no energy | B | v:094a03a1aeca
+Efficiency is a ratio of two energies, so it has: | the unit watt | the unit joule | no unit | the unit newton | C | v:7e1396d8402a
+Two balls of the same mass are dropped from heights of 5 m and 10 m. The ball from 10 m hits the ground with: | less kinetic energy | the same kinetic energy | more kinetic energy | no kinetic energy | C | h v:9caf3f8a1a8b
+An electric fan converts electrical energy mainly into: | kinetic energy (and some heat and sound) | chemical energy | nuclear energy | light only | A | e v:1097740c968a
+The gravitational potential energy of a body does NOT depend on its: | mass | height | the value of g | speed | D | h v:3f06287a5a8c
+Cow dung in a biogas plant produces fuel gas, and the leftover slurry is used as: | fertilizer | cement | coal | petrol | A | v:3a9d0595f84d

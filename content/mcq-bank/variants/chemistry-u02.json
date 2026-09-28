@@ -1,0 +1,142 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "4e05ce26c226",
+      "stem": "Chalk powder stirred into water settles at the bottom after some time. This mixture is a:",
+      "options": [
+        "true solution",
+        "suspension",
+        "colloid",
+        "compound"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "934630e027ce"
+    },
+    {
+      "id": "1b43080f871d",
+      "stem": "In which state are the particles most widely spaced and least ordered?",
+      "options": [
+        "Ice",
+        "Liquid water",
+        "Steam",
+        "Iron"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "345d99898525"
+    },
+    {
+      "id": "aa9cc40e779a",
+      "stem": "A torch beam becomes visible when it passes through fog, but not through salt water. Fog is therefore a:",
+      "options": [
+        "true solution",
+        "colloid",
+        "compound",
+        "pure element"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "78313328aa2e"
+    },
+    {
+      "id": "30d9cf434491",
+      "stem": "Unlike diamond, graphite is used in electrodes because it:",
+      "options": [
+        "is harder",
+        "conducts electricity",
+        "has no carbon",
+        "is transparent"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d1356997af2c"
+    },
+    {
+      "id": "ef3ed91c4845",
+      "stem": "A balloon becomes firm when air is blown into it. This shows that the air particles:",
+      "options": [
+        "are stationary",
+        "collide continuously with the walls and exert pressure",
+        "have no mass",
+        "turn into liquid"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "09a7088b46db"
+    },
+    {
+      "id": "e0f6b87d618d",
+      "stem": "A pumped-up football is heavier than a flat one. This observation shows that air:",
+      "options": [
+        "has mass and is matter",
+        "is invisible",
+        "is a colour",
+        "is not matter"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "20872f815397"
+    },
+    {
+      "id": "95a0f98a2ac0",
+      "stem": "In a saturated solution at a fixed temperature, adding more solute:",
+      "options": [
+        "makes it dissolve completely",
+        "leaves the extra solute undissolved",
+        "turns the solution into a gas",
+        "removes the solvent"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "3e57d7961dbf"
+    },
+    {
+      "id": "dde610fedd8f",
+      "stem": "Liquids can flow and take the shape of their container because their particles:",
+      "options": [
+        "are held in fixed positions",
+        "can slide past each other while staying close",
+        "have no forces between them",
+        "do not move"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "827c29660e04"
+    }
+  ]
+}

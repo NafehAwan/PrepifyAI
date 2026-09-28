@@ -1,0 +1,227 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "d25a8fcd17c8",
+      "stem": "A student records a voice note for an assignment. Which input device turns the student's voice into digital signals?",
+      "options": [
+        "Scanner",
+        "Microphone",
+        "Speaker",
+        "Webcam"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "2112edea75a6"
+    },
+    {
+      "id": "29e52e25a73b",
+      "stem": "A cable company links its offices spread across one city, about 30 km apart. This network is a:",
+      "options": [
+        "LAN",
+        "MAN",
+        "WAN",
+        "PAN"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "756b184c515d"
+    },
+    {
+      "id": "8df66c03b9ef",
+      "stem": "Which register holds the address of the instruction to be fetched next?",
+      "options": [
+        "Accumulator",
+        "Program Counter",
+        "Instruction Register",
+        "Memory Data Register"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "8819ee05fd3c"
+    },
+    {
+      "id": "9e9b4f95584e",
+      "stem": "Short symbolic codes such as MOV, ADD and SUB are used in:",
+      "options": [
+        "machine language",
+        "assembly language",
+        "high-level languages only",
+        "HTML"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "4abcc84f95f4"
+    },
+    {
+      "id": "0c10124d0f83",
+      "stem": "During a phone call both people can talk and listen at the same time. This uses which transmission mode?",
+      "options": [
+        "Simplex",
+        "Half-duplex",
+        "Full-duplex",
+        "Broadcast"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b414f31fa08c"
+    },
+    {
+      "id": "d2bfb8d5bd06",
+      "stem": "Data that flows in only one direction, as from a keyboard to a computer, uses which mode?",
+      "options": [
+        "Simplex",
+        "Half-duplex",
+        "Full-duplex",
+        "Multiplex"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "9a06fde71277"
+    },
+    {
+      "id": "6f3d0e85c060",
+      "stem": "The part of the CPU that directs the flow of data and tells the other components what to do is the:",
+      "options": [
+        "ALU",
+        "Control Unit",
+        "Cache",
+        "Hard disk"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "381d8782c7a0"
+    },
+    {
+      "id": "a3f5056b22c4",
+      "stem": "Which protocol does a web browser use to request and load web pages?",
+      "options": [
+        "SMTP",
+        "FTP",
+        "HTTP",
+        "POP3"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "ce3fcabcfa9e"
+    },
+    {
+      "id": "831e7e0db7ab",
+      "stem": "The key idea of the Von Neumann architecture is that:",
+      "options": [
+        "instructions and data are stored together in the same memory",
+        "instructions are stored only on paper",
+        "data is kept only in registers",
+        "each program needs its own CPU"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "9572ac25cbc0"
+    },
+    {
+      "id": "8d5e6101b16c",
+      "stem": "The Internet grew out of a 1960s U.S. research network called:",
+      "options": [
+        "ARPANET",
+        "Ethernet",
+        "World Wide Web",
+        "Bluetooth"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "4e5c563ff66c"
+    },
+    {
+      "id": "9d9a56680761",
+      "stem": "A shopkeeper wants to turn a printed price list into a digital image on the computer. Which device should be used?",
+      "options": [
+        "Printer",
+        "Scanner",
+        "Plotter",
+        "Projector"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "f1ee72d031d4"
+    },
+    {
+      "id": "bf31a83e9c09",
+      "stem": "Which component is called the \"brain\" of the computer because it processes all instructions?",
+      "options": [
+        "RAM",
+        "Hard disk",
+        "CPU",
+        "Monitor"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "80bf1e7151f5"
+    },
+    {
+      "id": "32e17b62b659",
+      "stem": "A walkie-talkie lets only one person speak at a time, although both can speak. This is:",
+      "options": [
+        "simplex mode",
+        "half-duplex mode",
+        "full-duplex mode",
+        "broadcast mode"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b414f31fa08c"
+    }
+  ]
+}

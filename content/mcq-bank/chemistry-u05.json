@@ -1,0 +1,902 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "74a0366eda77",
+      "stem": "What is the primary driving force for atoms to form chemical bonds?",
+      "options": [
+        "To increase their total energy.",
+        "To become radioactive.",
+        "To achieve a stable noble gas electronic configuration.",
+        "To increase the number of protons."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "61d6c77c6e09",
+      "stem": "An atom forms three covalent bonds. It most likely needs:",
+      "options": [
+        "Three electrons for stability",
+        "Two electrons for stability",
+        "One electron for stability",
+        "Four electrons for stability"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "6108496c5788",
+      "stem": "Which statement best explains the formation of ionic compounds?",
+      "options": [
+        "Like charges attract each other",
+        "Oppositely charged ions attract each other",
+        "Neutrons attract electrons",
+        "Protons are exchanged"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b7ab9e0afc93",
+      "stem": "Which rule states that atoms tend to gain, lose, or share electrons to have eight electrons in their valence shell?",
+      "options": [
+        "Pauli exclusion principle",
+        "Duplet rule",
+        "Hund’s rule",
+        "Octet rule"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "91279ee2f9d0",
+      "stem": "Which of the following is a characteristic property of ionic compounds?",
+      "options": [
+        "Low melting points.",
+        "High electrical conductivity in the solid state.",
+        "High melting points and brittleness.",
+        "Solubility only in organic solvents."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "dd2a1b6ad7ab",
+      "stem": "Which type of bond is responsible for the high electrical and thermal conductivity of metals?",
+      "options": [
+        "Covalent bond.",
+        "Metallic bond",
+        "Hydrogen bond.",
+        "Ionic bond."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b72a9bcd0ec5",
+      "stem": "What determines the strength of an ionic bond?",
+      "options": [
+        "The number of neutrons.",
+        "The color of the crystal.",
+        "The magnitude of the charges on the ions and the distance between them.",
+        "The atomic mass of the elements."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "9259b9fa56be",
+      "stem": "In the formation of a covalent bond, what happens to the energy of the system?",
+      "options": [
+        "It disappears.",
+        "It remains unchanged.",
+        "It increases.",
+        "It decreases to reach a stable energy minimum."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "3f0e2e3a6f91",
+      "stem": "Electropositive elements are typically:",
+      "options": [
+        "Metals",
+        "Noble gases",
+        "Non-metals.",
+        "Metalloids"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "4cfa2d345abb",
+      "stem": "Which substance would have the highest melting point?",
+      "options": [
+        "CH₄",
+        "NaCl",
+        "H₂O",
+        "O₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "da337f7ab047",
+      "stem": "Covalent compounds usually have:",
+      "options": [
+        "A rigid lattice structure.",
+        "Ionic conductivity.",
+        "High boiling points.",
+        "Low boiling points due to weak intermolecular forces between molecules."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "8d83b7ef4865",
+      "stem": "Atoms with high electronegativity are more likely to form:",
+      "options": [
+        "Cations.",
+        "Metallic bonds.",
+        "Anions.",
+        "Nothing."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "7ecd757c1eb9",
+      "stem": "In the formation of MgO, what charge do the ions acquire?",
+      "options": [
+        "+1, -1",
+        "+2, -2",
+        "+1, -2",
+        "0, 0"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "a7a5abc748fb",
+      "stem": "What represents the \"cloud\" in metallic bonding?",
+      "options": [
+        "The neutrons.",
+        "The empty orbitals.",
+        "The protons.",
+        "The valence electrons that are no longer associated with a single nucleus."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "fca229843def",
+      "stem": "Why is it that covalent bonds are generally strong?",
+      "options": [
+        "Because shared electrons are held tightly by two positively charged nuclei.",
+        "Because they involve transfer.",
+        "Because they are large.",
+        "Because they only occur in solids."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "bc3218a1f372",
+      "stem": "Which of the following substances would conduct electricity as a solid?",
+      "options": [
+        "NaCl",
+        "Copper",
+        "Diamond",
+        "H₂O"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "f4f1ba75a65f",
+      "stem": "Why is fluorine highly reactive?",
+      "options": [
+        "It has no valence electrons",
+        "It easily loses seven electrons",
+        "It has a complete octet",
+        "It needs one electron to complete its octet"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "8c362c283451",
+      "stem": "Why is electron transfer unlikely between two oxygen atoms?",
+      "options": [
+        "Both atoms tend to gain electrons rather than lose them",
+        "Oxygen has no valence electrons",
+        "Oxygen atoms are metals",
+        "Oxygen atoms already have complete octets"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "a4b20da7c9ba",
+      "stem": "A student says, “Every bond involves electron transfer.” Which substance proves the statement incorrect?",
+      "options": [
+        "NaCl",
+        "MgO",
+        "H₂O",
+        "KCl"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "536db92cc178",
+      "stem": "Why does hydrogen form one covalent bond, but oxygen usually forms two?",
+      "options": [
+        "Oxygen is heavier than hydrogen",
+        "Hydrogen needs one electron, and oxygen needs two electrons for stability",
+        "Oxygen has fewer electrons",
+        "Hydrogen forms only ionic bonds"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "d7f45cfc8339",
+      "stem": "Why does the melting point of magnesium oxide (MgO) significantly exceed that of sodium chloride (NaCl)?",
+      "options": [
+        "The lattice energy of MgO is much higher due to the greater electrostatic attraction between +2/-2 ions compared to +1/-1 ions.",
+        "MgO is a covalent compound.",
+        "NaCl is a metal.",
+        "Mg and O are smaller than Na and Cl."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "2d4baa6b00b3",
+      "stem": "In the molecule BF₃, the Boron atom is said to be \"electron-deficient.\" What does this mean?",
+      "options": [
+        "It has 8 valence electrons.",
+        "It has only 6 valence electrons, meaning it does not satisfy the octet rule.",
+        "It has 10 valence electrons.",
+        "It is a metal."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "8c19d73fcd23",
+      "stem": "When an atom forms a covalent bond, what is happening to the atomic orbitals?",
+      "options": [
+        "They expand to infinite size.",
+        "They are destroyed.",
+        "They become ionic.",
+        "They overlap to create a region of space where electrons are likely to be shared."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b4ab0e483eed",
+      "stem": "Which of these is a non-directional force?",
+      "options": [
+        "The covalent bond between C and H.",
+        "The metallic bond between Na atoms.",
+        "The electrostatic attraction in an ionic lattice.",
+        "Both B and C."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "43d866ec4bfa",
+      "stem": "What happens to the electronegativity difference as you go from an ionic to a covalent bond?",
+      "options": [
+        "It becomes negative.",
+        "It increases.",
+        "It stays the same.",
+        "It decreases."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "f6a07233a9e9",
+      "stem": "An atom X loses one electron while atom Y gains one electron. Which statement is correct?",
+      "options": [
+        "Both become negatively charged",
+        "X becomes a cation, and Y becomes an anion",
+        "Both become positively charged",
+        "X becomes an anion, and Y becomes a cation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "5ac5eeed921a",
+      "stem": "You are given an unknown substance X. It has a very high melting point, is brittle, and does not conduct electricity as a solid. When you dissolve it in water, the solution conducts electricity vigorously. What is the nature of X?",
+      "options": [
+        "Polar covalent molecule",
+        "Metallic solid",
+        "Covalent network solid",
+        "Ionic lattice"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "7e5a2650cc7c",
+      "stem": "A scientist discovers a material that conducts electricity in both the solid and liquid states and is highly malleable. What type of bonding is present?",
+      "options": [
+        "Covalent",
+        "Metallic",
+        "Ionic",
+        "Dative"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "914c7bf30e2c",
+      "stem": "A student compares NaCl and Cl₂. Both contain chlorine atoms. Why is chlorine present as ions in one substance but as molecules in the other?",
+      "options": [
+        "Chlorine changes its atomic number",
+        "The bonding partner is different",
+        "Chlorine gains protons in NaCl",
+        "Chlorine loses neutrons in Cl₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "93fc29a0ecaf",
+      "stem": "A metal atom loses two electrons while a non-metal atom gains two electrons. What is the ratio of ions in the resulting compound?",
+      "options": [
+        "1 : 1",
+        "1 : 2",
+        "2 : 1",
+        "2 : 3"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "af5fd09a30ac",
+      "stem": "You have two liquids: H₂O and CCl₄. You notice that NaCl dissolves in H₂O but not in CCl₄. Why?",
+      "options": [
+        "CCl₄ is too viscous.",
+        "NaCl is covalent.",
+        "H₂O is polar and interacts with ions; CCl₄ is non-polar and cannot stabilize ions.",
+        "H₂O is a metal."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "aeaf06fcf0f4",
+      "stem": "An atom Z has an empty 2p orbital and forms a bond with NH₃, where both electrons are provided by the Nitrogen. What is this bond called?",
+      "options": [
+        "Coordinate covalent bond",
+        "Ionic bond",
+        "Metallic bond",
+        "Hydrogen bond"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "1763e04e108e",
+      "stem": "You add a substance to a beaker of water; the substance sinks and does not dissolve, and it does not conduct electricity. What kind of substance is it likely to be?",
+      "options": [
+        "A salt",
+        "An ionic compound",
+        "A metal",
+        "A simple covalent molecule"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "ad3d60c57519",
+      "stem": "A scientist labels a bond as \"non-directional.\" Which type of bonding could this be?",
+      "options": [
+        "Ionic or Metallic.",
+        "Covalent only.",
+        "Only metallic.",
+        "Only ionic."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "df36ac2c19e0",
+      "stem": "Why do ionic crystals shatter when struck by a hammer?",
+      "options": [
+        "They become covalent.",
+        "The layers slide, and like-charged ions end up adjacent to each other, causing massive repulsion.",
+        "The electrons escape.",
+        "The metal atoms bend."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "1bd02de2241a",
+      "stem": "Why can't a simple covalent molecule like CH₄ conduct electricity?",
+      "options": [
+        "It has no ions and no delocalized electrons.",
+        "It is too small.",
+        "It has no protons.",
+        "It is metallic."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "0328a33f08c9",
+      "stem": "If an atom of Magnesium reacts with Chlorine, what happens to the energy level?",
+      "options": [
+        "Energy remains constant.",
+        "The atom disappears.",
+        "Energy is absorbed.",
+        "Energy is released as the system reaches a more stable configuration."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "d2eaea25553a",
+      "stem": "Why are ionic compounds solids at room temperature?",
+      "options": [
+        "They have weak bonds.",
+        "The electrostatic forces between ions are so strong that they lock them into a rigid, repeating lattice.",
+        "They are metals.",
+        "They have no bonds."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "74d4f804d78a",
+      "stem": "You find a substance that is a \"giant\" structure, very hard, and does not conduct electricity. What could it be?",
+      "options": [
+        "Graphite",
+        "Sodium Chloride",
+        "Silicon Dioxide",
+        "Copper"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "4f3cd043e374",
+      "stem": "Why are delocalized electrons in metals considered \"delocalized\"?",
+      "options": [
+        "They are not bound to any single atom and can move throughout the lattice.",
+        "They are lost.",
+        "They are in the nucleus.",
+        "They are in the inner shell."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "894b8d38263b",
+      "stem": "An atom with six valence electrons reacts with hydrogen atoms. How many covalent bonds will it most likely form?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "2cdf433508a2",
+      "stem": "A student notices that an ionic compound remains electrically neutral despite containing charged particles. Why?",
+      "options": [
+        "Positive and negative charges balance each other",
+        "Electrons disappear during bonding",
+        "Only positive ions are present",
+        "Only negative ions are present"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "f83de9f9942f",
+      "stem": "A student argues that atoms bond because they want to increase their mass. Which observation best refutes this idea?",
+      "options": [
+        "Bonding increases neutrons",
+        "Bonding creates new elements",
+        "Bonding increases the atomic number",
+        "Bonding changes electron arrangement, not nuclear composition"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "3632f5579bb0",
+      "stem": "An atom contributes both electrons in a shared pair while the other contributes none. Before bond formation, the second atom most likely had:",
+      "options": [
+        "No valence electrons",
+        "A vacant orbital available for the pair",
+        "Excess neutrons",
+        "A positive nucleus only"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "528ed64e81af",
+      "stem": "A student observes that chlorine forms Cl⁻ rather than Cl⁺ during ionic bond formation. The most reasonable explanation is that chlorine:",
+      "options": [
+        "Easily loses seven electrons",
+        "Is a metal",
+        "Has one valence electron",
+        "Needs one electron for stability"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "93c7d8231a37",
+      "stem": "An atom gains electrons during bond formation. Which quantity remains unchanged?",
+      "options": [
+        "Electronic configuration",
+        "Atomic number",
+        "Charge",
+        "Number of electrons"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "86cff65a999f",
+      "stem": "Element P has 2 valence electrons, and Element Q has 7 valence electrons. If they react, what is the most likely formula and bond type?",
+      "options": [
+        "PQ₂, Covalent",
+        "P₂Q, Ionic",
+        "PQ₂, Ionic",
+        "PQ₇, Metallic"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "c96fc33c307d",
+      "stem": "Why does the bond angle in NH₃ (107o) differ from the ideal tetrahedral angle (109.5o)?",
+      "options": [
+        "The lone pair on Nitrogen exerts more repulsion on the bonding pairs than the bonding pairs do on each other.",
+        "NH₃ is an ionic compound.",
+        "Nitrogen has too many protons.",
+        "H atoms are too large."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "10665581ffa0",
+      "stem": "Which of the following explains why NH₃ has a higher boiling point than PH₃?",
+      "options": [
+        "NH₃ has stronger Van der Waals forces.",
+        "Nitrogen is more electronegative than Phosphorus, allowing NH₃ to form intermolecular Hydrogen bonds, while PH₃ cannot.",
+        "NH₃ is a larger molecule.",
+        "PH₃is ionic."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "d89348e42ae7",
+      "stem": "In the molecule SF₆, the Sulfur atom is said to have an \"expanded octet.\" How is this physically possible?",
+      "options": [
+        "It is an ionic compound.",
+        "It has no bonds.",
+        "Sulfur uses its vacant 3d orbitals to accommodate more than 8 valence electrons.",
+        "It loses its nucleus."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "3f3364c33bca",
+      "stem": "Which factor is the most significant in determining the \"covalent character\" of an ionic bond?",
+      "options": [
+        "High charge and small size of the cation.",
+        "Large size of the cation.",
+        "Low electronegativity of the anion.",
+        "The color of the crystal."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "37aefda6494f",
+      "stem": "Which of the following bonds is the most polar?",
+      "options": [
+        "C-H",
+        "C-F",
+        "C-O",
+        "C-N"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b13b840901bf",
+      "stem": "Why is the bond energy of O₂ (double bond) not exactly twice the bond energy of O-O (single bond)?",
+      "options": [
+        "Double bonds are always exactly double.",
+        "O₂ is ionic.",
+        "It depends on the color.",
+        "π-bonds are generally weaker than σ-bonds due to less effective orbital overlap, so they do not add linearly."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b8b344a6b208",
+      "stem": "Which of the following ions is most likely to show the highest degree of polarization in a bond?",
+      "options": [
+        "Na⁺",
+        "Al³⁺",
+        "K⁺",
+        "Ca²⁺"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "b950aa602235",
+      "stem": "If electrons in a metallic bond were localized between specific atoms, metals would most likely lose their:",
+      "options": [
+        "Color",
+        "Malleability",
+        "Atomic mass",
+        "Density"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    },
+    {
+      "id": "05f8c54966dc",
+      "stem": "In an ionic crystal, each ion is surrounded by ions of opposite charge. This arrangement primarily serves to:",
+      "options": [
+        "Reduce atomic number.",
+        "Increase neutron count.",
+        "Maximize electrostatic stability.",
+        "Form molecules."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Chem unit#5 MCQs.docx"
+    }
+  ]
+}

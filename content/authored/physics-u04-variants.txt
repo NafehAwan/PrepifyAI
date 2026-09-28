@@ -1,0 +1,13 @@
+# subject: Physics
+# chapter: 4
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A racing car goes round a circular track. If its speed is doubled on the same track, the centripetal force needed becomes: | half | double | four times | the same | C | h v:03148a29d106
+A bus overturns on a sharp turn when it is loaded high on the roof because: | its centre of gravity rises and can fall outside its base | its mass decreases | friction increases | its wheels get bigger | A | s v:31cb7aaaba9c
+Oil on a road increases a car's braking distance because oil: | increases friction | acts as a lubricant and reduces friction | adds weight to the car | makes the road rougher | B | s v:b43d5aa34522
+A door is easiest to open when you push: | at the hinge | at the middle | at the edge farthest from the hinge, perpendicular to the door | along the door towards the hinge | C | e v:16615cd3b076
+A ball resting at the bottom of a bowl returns there when pushed slightly. This is: | stable equilibrium | unstable equilibrium | neutral equilibrium | no equilibrium | A | v:e6bea19d9bce
+A body moving in a circle at constant speed is accelerating because its: | mass changes | direction of motion keeps changing | speed increases | weight changes | B | v:99dc8c0a86d4

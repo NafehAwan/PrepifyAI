@@ -1,0 +1,176 @@
+{
+  "subject": "English",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "b88cdb7ee563",
+      "stem": "Choose the indirect speech of: She said, \"I help my neighbours.\"",
+      "options": [
+        "She said that she helped her neighbours.",
+        "She said that I help my neighbours.",
+        "She says that she helped her neighbours.",
+        "She said that she helps my neighbours."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7831c62d2ca9"
+    },
+    {
+      "id": "0d81733f7db6",
+      "stem": "A student returns a lost wallet to its owner without taking anything. Which word best describes the student?",
+      "options": [
+        "Honest",
+        "Greedy",
+        "Lazy",
+        "Rude"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "03db0f93e358"
+    },
+    {
+      "id": "609521eb0dfc",
+      "stem": "Fill in the blank with the correct article: She is ___ obedient daughter.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "574f6cdf51cd"
+    },
+    {
+      "id": "8dfa1e6db329",
+      "stem": "Choose the correctly spelled word:",
+      "options": [
+        "Forgivness",
+        "Forgiveness",
+        "Forgiviness",
+        "Forgivenes"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "220821433d08"
+    },
+    {
+      "id": "abb2ac560e0f",
+      "stem": "Choose the passive voice of \"He helped the poor.\":",
+      "options": [
+        "The poor are helped by him.",
+        "The poor were helped by him.",
+        "The poor had helped him.",
+        "The poor was helped by him."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "603dff3cffb5"
+    },
+    {
+      "id": "5d0eb3665a54",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "She don't waste food.",
+        "She doesn't wastes food.",
+        "She doesn't waste food.",
+        "She not waste food."
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2467a7b71b0e"
+    },
+    {
+      "id": "aa2b2f3b2b5a",
+      "stem": "Choose the antonym of \"kindness\":",
+      "options": [
+        "Gentleness",
+        "Care",
+        "Cruelty",
+        "Mercy"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "13abbc9478cc"
+    },
+    {
+      "id": "43efb829646b",
+      "stem": "In \"The Prophet ﷺ forgave the people of Makkah\", the tense of \"forgave\" is:",
+      "options": [
+        "simple present",
+        "simple past",
+        "past continuous",
+        "present perfect"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8114a3a6da73"
+    },
+    {
+      "id": "7500ac4047ef",
+      "stem": "The adjective form of \"mercy\" is:",
+      "options": [
+        "Merciful",
+        "Mercifully",
+        "Mercies",
+        "Mercy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7f26a53851fe"
+    },
+    {
+      "id": "0c253f6e9c61",
+      "stem": "A person who stays calm and does not complain while waiting is:",
+      "options": [
+        "patient",
+        "proud",
+        "jealous",
+        "careless"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "50c0627f9a45"
+    }
+  ]
+}

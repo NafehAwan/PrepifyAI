@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "7ca8e8ca9e51",
+      "stem": "The \"Pascaline\" (1642) performed basic arithmetic using which specific mechanism?",
+      "options": [
+        "Vacuum tubes",
+        "Punched cards",
+        "Gears and wheels",
+        "Transistors"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "6f498f37c8be",
+      "stem": "Which component is described as the \"backbone\" of the computer that enables communication between all hardware parts?",
+      "options": [
+        "The Central Processing Unit",
+        "The Motherboard",
+        "The Hard Disk Drive",
+        "The Power Supply Unit"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "4710b27c8d10",
+      "stem": "Which generation introduced the standard use of keyboards and monitors?",
+      "options": [
+        "Second Generation",
+        "Third Generation",
+        "Fourth Generation",
+        "Fifth Generation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "40cd9ff9194c",
+      "stem": "\"Self-regulation and stability\" are the defining characteristics of which system type?",
+      "options": [
+        "Natural Systems",
+        "Artificial Systems",
+        "Operating Systems",
+        "Network Systems"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "2112edea75a6",
+      "stem": "Which input device is specifically used to convert \"sound into digital signals\"?",
+      "options": [
+        "Scanner",
+        "Microphone",
+        "Barcode Reader",
+        "Digital Camera"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "5801bc811ef9",
+      "stem": "In the microprocessor, if the system needs to compare two numbers to see which is larger, which unit handles this task?",
+      "options": [
+        "Control Unit (CU)",
+        "Arithmetic Logic Unit (ALU)",
+        "L3 Cache",
+        "Memory Address Register"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "9572ac25cbc0",
+      "stem": "In Von Neumann Architecture, where are \"instructions and program data\" stored according to the core concept?",
+      "options": [
+        "In separate physical devices",
+        "Together in the same memory",
+        "Only in the Accumulator register",
+        "Directly on the Control Bus"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "8819ee05fd3c",
+      "stem": "What is the specific role of the \"Program Counter (PC)\" register during the instruction cycle?",
+      "options": [
+        "It holds the result of a mathematical addition",
+        "It contains the memory address of the next instruction to be executed",
+        "It decodes the current instruction into binary code",
+        "It manages the flow of data to the printer"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "f6c86dd9b5fd",
+      "stem": "If a CPU needs to move data but NOT the memory address, which pathway is utilized?",
+      "options": [
+        "Address Bus",
+        "Data Bus",
+        "Control Bus",
+        "Expansion Slot"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "381d8782c7a0",
+      "stem": "Within the microprocessor, which unit manages and directs all system activities during instruction execution?",
+      "options": [
+        "Arithmetic Logic Unit (ALU)",
+        "Control Unit (CU)",
+        "Registers",
+        "Cache"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "e2ca64c62219",
+      "stem": "What distinguishes \"Firmware\" from standard application software?",
+      "options": [
+        "It is easily deleted by the user",
+        "It is permanently stored on hardware devices",
+        "It is used only for word processing",
+        "It requires a browser to execute tasks"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "cb67e7d3c310",
+      "stem": "In data communication, what is the role of the \"Protocol\"?",
+      "options": [
+        "To provide the physical path for the message",
+        "To act as a set of rules that governs data communications",
+        "To convert electrical signals into light",
+        "To increase the speed of the sender"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "b414f31fa08c",
+      "stem": "Which communication mode is compared to a \"two-way street\" where traffic flows in both directions at the same time?",
+      "options": [
+        "Simplex mode",
+        "Half-duplex mode",
+        "Full-duplex mode",
+        "Asynchronous mode"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "756b184c515d",
+      "stem": "A network that spans an entire city, covering an area between \"5 to 50 km\", is officially a:",
+      "options": [
+        "LAN",
+        "WAN",
+        "MAN",
+        "VPN"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "b98ca4b4c6f1",
+      "stem": "Which category of application software includes tools like \"Microsoft Word\" and \"Google Sheets\"?",
+      "options": [
+        "Business Software",
+        "Productivity Software",
+        "Entertainment Software",
+        "Educational Software"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "1d43f53920a4",
+      "stem": "\"LMS\" (Learning Management Systems) are categorized as which type of software?",
+      "options": [
+        "Productivity",
+        "Business",
+        "Educational Software",
+        "System Utility"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "4abcc84f95f4",
+      "stem": "\"Mnemonics\" like MOV and ADD are the symbolic codes used in which language?",
+      "options": [
+        "Machine Language",
+        "Assembly Language",
+        "High Level Language",
+        "Java"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "fe67ce7675b4",
+      "stem": "In a \"Star Topology\", what is the consequence if the central hub or switch fails?",
+      "options": [
+        "Only one computer stops working",
+        "The whole network goes down",
+        "Data starts traveling in a circle",
+        "The network automatically switches to Bus topology"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "7df53f62be55",
+      "stem": "Which Internet technology allows data packets to potentially take \"different routes\" to reach their destination?",
+      "options": [
+        "Circuit Switching",
+        "Packet Switching",
+        "Simplex Transmission",
+        "Synchronous Timing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "628414348060",
+      "stem": "What is listed as a significant \"Disadvantage\" of the Internet regarding human social behavior?",
+      "options": [
+        "Global Connectivity",
+        "Digital Addiction and social isolation",
+        "Real-time communication",
+        "Enhanced productivity"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "561289d8be77",
+      "stem": "\"Walkie-talkies\" are the classic example of which communication mode?",
+      "options": [
+        "Simplex",
+        "Half-duplex",
+        "Full-duplex",
+        "Synchronous"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "11bf6e14cc0f",
+      "stem": "Which transmission type uses \"Start and Stop bits\" because character timing is variable?",
+      "options": [
+        "Synchronous",
+        "Asynchronous",
+        "Parallel",
+        "Full-duplex"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "ce3fcabcfa9e",
+      "stem": "When you are \"reading a web page\" on your browser, which protocol is working behind the scenes?",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SMTP",
+        "TCP"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "bf3521b9dd76",
+      "stem": "FORTRAN and ALGOL are classic examples of which high-level language category?",
+      "options": [
+        "Procedural Languages",
+        "Structured Languages",
+        "Object-Oriented Languages",
+        "Machine Languages"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "9a06fde71277",
+      "stem": "Data transmission from a computer to a printer, or broadcasting via radio and television, takes place in which mode?",
+      "options": [
+        "Simplex mode",
+        "Half-duplex mode",
+        "Full-duplex mode",
+        "Asynchronous mode"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "3bedfe7f41f7",
+      "stem": "Without which of the following component can two devices be physically connected but still unable to communicate or exchange information?",
+      "options": [
+        "Receiver",
+        "Medium",
+        "Protocol",
+        "Notice board"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "bde94699efca",
+      "stem": "Which layer of the OSI model is explicitly responsible for converting data into a format that ensures compatibility across different systems?",
+      "options": [
+        "Application Layer",
+        "Presentation Layer",
+        "Session Layer",
+        "Transport Layer"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "7dbd018ad470",
+      "stem": "Which OSI layer determines the optimal path for data transmission using devices like routers?",
+      "options": [
+        "Physical Layer",
+        "Data Link Layer",
+        "Network Layer",
+        "Application Layer"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "4e5c563ff66c",
+      "stem": "The modern global Internet originally evolved from a 1960s research project designed for military installations and research institutions. What was the name of this project?",
+      "options": [
+        "World Wide Web",
+        "Internet of Things",
+        "ARPANET",
+        "ISP Web"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    },
+    {
+      "id": "267656649b92",
+      "stem": "A network setup that is typically smaller and usually consists of \"between two and ten computers\" is called:",
+      "options": [
+        "Client/Server Network",
+        "Peer-to-Peer Network",
+        "Dedicated Server Network",
+        "Central Switch Network"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Unit1_Computer_Systems_MCQs_Straight.docx"
+    }
+  ]
+}

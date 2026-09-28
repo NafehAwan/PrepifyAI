@@ -1,0 +1,13 @@
+# subject: Maths
+# chapter: 3
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+If U = {1, 2, 3, 4, 5, 6} and A = {1, 3, 5}, then A′ is: | {2, 4, 6} | {1, 3, 5} | {1, 2, 3, 4, 5, 6} | ∅ | A | e v:0edd1700f188
+In a Venn diagram, shading only the overlapping region of circles A and B represents: | A ∪ B | A ∩ B | A − B | B − A | B | v:a4dfcd4fda74
+If A = {x : x ∈ N and x² = 9}, then A is: | {3, −3} | {3} | {9} | { } | B | h v:00ede88842a8
+A set containing exactly one element, such as {0}, is called a: | empty set | singleton set | universal set | infinite set | B | v:4e6241caffd1
+If L × M = {(a, 1), (a, 2), (b, 1), (b, 2)}, then set M is: | {a, b} | {1, 2} | {a, 1} | {a, b, 1, 2} | B | v:40193037816e
+If A = {1, 2} and B = {x}, then A × B is: | {(1, x), (2, x)} | {(x, 1), (x, 2)} | {(1, 2)} | {1, 2, x} | A | v:dd0fcab9e502

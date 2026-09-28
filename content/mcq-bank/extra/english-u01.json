@@ -1,0 +1,614 @@
+{
+  "subject": "English",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "8b45f643982b",
+      "stem": "The title \"Rahmatul-lil-Alameen\" means:",
+      "options": [
+        "Mercy for all the worlds",
+        "Leader of the Arabs",
+        "The last messenger",
+        "The truthful one"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "4da94b15960f",
+      "stem": "Before prophethood, the people of Makkah called the Holy Prophet ﷺ \"Al-Amin\", which means:",
+      "options": [
+        "The trustworthy",
+        "The brave",
+        "The wise",
+        "The generous"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "b3a76e444825",
+      "stem": "Choose the synonym of \"compassion\":",
+      "options": [
+        "Cruelty",
+        "Sympathy",
+        "Anger",
+        "Pride"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "13abbc9478cc",
+      "stem": "Choose the antonym of \"mercy\":",
+      "options": [
+        "Kindness",
+        "Pity",
+        "Cruelty",
+        "Grace"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "9d17c5e6e690",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Forgivness",
+        "Forgiveness",
+        "Forgiviness",
+        "Forgeveness"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "b33158e0b3a4",
+      "stem": "In \"The Holy Prophet ﷺ forgave the people of Taif\", the verb is:",
+      "options": [
+        "Holy",
+        "forgave",
+        "people",
+        "Taif"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "603dff3cffb5",
+      "stem": "Choose the passive voice of \"He forgave his enemies.\":",
+      "options": [
+        "His enemies are forgiven by him.",
+        "His enemies were forgiven by him.",
+        "His enemies had forgiven him.",
+        "His enemies were forgiving by him."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "929483b14eee",
+      "stem": "Which of these words is a noun?",
+      "options": [
+        "Merciful",
+        "Mercifully",
+        "Mercy",
+        "Merciless"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "7f26a53851fe",
+      "stem": "The adjective form of \"humility\" is:",
+      "options": [
+        "Humble",
+        "Humbly",
+        "Humbleness",
+        "Humiliate"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "50c0627f9a45",
+      "stem": "Sara wants one word for a person who always keeps promises and can be depended on. Which word should she use?",
+      "options": [
+        "Reliable",
+        "Careless",
+        "Arrogant",
+        "Stubborn"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "79643fcc6327",
+      "stem": "Fill in the blank: The Holy Prophet ﷺ was kind ___ everyone.",
+      "options": [
+        "at",
+        "to",
+        "on",
+        "over"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "3af31ba5a155",
+      "stem": "In the Last Sermon, the Holy Prophet ﷺ declared that an Arab has no superiority over a non-Arab except by:",
+      "options": [
+        "wealth",
+        "piety and good action",
+        "family name",
+        "language"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "c67d43dcda89",
+      "stem": "In \"He treated orphans kindly\", the word \"kindly\" is:",
+      "options": [
+        "a noun",
+        "an adjective",
+        "an adverb",
+        "a verb"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "792680074042",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "The Prophet ﷺ said, \"Be kind to others.\"",
+        "The Prophet ﷺ said \"be kind to others\".",
+        "The Prophet ﷺ said, be kind to others.",
+        "the Prophet ﷺ said, \"Be kind to others.\""
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "aeda6f07611f",
+      "stem": "The plural of \"orphan\" is:",
+      "options": [
+        "orphanes",
+        "orphans",
+        "orphen",
+        "orphanage"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "6a174321c57c",
+      "stem": "Choose the correct verb: Neither the students nor the teacher ___ absent.",
+      "options": [
+        "were",
+        "are",
+        "was",
+        "have"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "4d75b34337f8",
+      "stem": "\"Tolerance\" means:",
+      "options": [
+        "accepting views different from one's own",
+        "the habit of complaining",
+        "the desire for revenge",
+        "the fear of strangers"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "309a65ea0025",
+      "stem": "After the Conquest of Makkah, the Holy Prophet ﷺ pardoned his former enemies. This action best shows his:",
+      "options": [
+        "forgiveness",
+        "strictness",
+        "wealth",
+        "silence"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "2467a7b71b0e",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "He don't tell lies.",
+        "He doesn't tells lies.",
+        "He doesn't tell lies.",
+        "He not tell lies."
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "2afad6958a72",
+      "stem": "Which sentence is in the past perfect tense?",
+      "options": [
+        "He helps the poor.",
+        "He had helped the poor.",
+        "He was helping the poor.",
+        "He will help the poor."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "9543a3af63ca",
+      "stem": "Choose the synonym of \"benevolent\":",
+      "options": [
+        "Kind-hearted",
+        "Selfish",
+        "Lazy",
+        "Rude"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "27d96e58020a",
+      "stem": "Choose the antonym of \"honest\":",
+      "options": [
+        "Truthful",
+        "Sincere",
+        "Dishonest",
+        "Upright"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "a3f70f20d73e",
+      "stem": "The word \"unjust\" is formed by adding the prefix:",
+      "options": [
+        "in-",
+        "un-",
+        "dis-",
+        "mis-"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "574f6cdf51cd",
+      "stem": "Fill in the blank with the correct article: He was ___ honest man.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "7831c62d2ca9",
+      "stem": "Choose the indirect speech of: He said, \"I respect my elders.\"",
+      "options": [
+        "He said that he respected his elders.",
+        "He said that I respect my elders.",
+        "He says that he respected his elders.",
+        "He said that he respects my elders."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "ecd45e92cef1",
+      "stem": "Ahmed sees a classmate being teased unfairly and stands up for him. Which quality from the lesson is Ahmed showing?",
+      "options": [
+        "Justice and kindness",
+        "Greed",
+        "Laziness",
+        "Pride"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "20b44162a14a",
+      "stem": "\"Humble\" is the opposite of:",
+      "options": [
+        "modest",
+        "proud",
+        "gentle",
+        "simple"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "c3b6464321ee",
+      "stem": "Which of these is a compound word?",
+      "options": [
+        "Kindness",
+        "Mankind",
+        "Kindly",
+        "Unkind"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "2058880e6424",
+      "stem": "Choose the correct preposition: Muslims believe in the Holy Prophet ﷺ ___ the last messenger of Allah.",
+      "options": [
+        "like",
+        "as",
+        "for",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "1d55cf2b907e",
+      "stem": "The word \"sermon\" means:",
+      "options": [
+        "a religious speech",
+        "a poem",
+        "a letter",
+        "a story"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "03db0f93e358",
+      "stem": "A shopkeeper always returns extra money that customers pay him by mistake. Which word best describes him?",
+      "options": [
+        "Trustworthy",
+        "Wasteful",
+        "Jealous",
+        "Timid"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "220821433d08",
+      "stem": "Choose the correctly spelled word:",
+      "options": [
+        "Tolerence",
+        "Tolerance",
+        "Tollerance",
+        "Tolarance"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "4146a4855eb8",
+      "stem": "\"The Holy Prophet ﷺ was sent as a mercy for all creation.\" This sentence is in the:",
+      "options": [
+        "active voice",
+        "passive voice",
+        "imperative mood",
+        "interrogative form"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "f30d3a9b873a",
+      "stem": "Fill in the blank: Honesty is the ___ policy.",
+      "options": [
+        "good",
+        "better",
+        "best",
+        "most good"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "ead5aded9e6e",
+      "stem": "Which sentence is a command?",
+      "options": [
+        "He is kind.",
+        "Be kind to animals.",
+        "Is he kind?",
+        "How kind he is!"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "6f0bdba4b886",
+      "stem": "Choose the word closest in meaning to \"justice\":",
+      "options": [
+        "Fairness",
+        "Weakness",
+        "Loudness",
+        "Laziness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "135baf67e7cf",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Everyone love the Prophet ﷺ.",
+        "Everyone loves the Prophet ﷺ.",
+        "Everyone are loving the Prophet ﷺ.",
+        "Everyone have loved the Prophet ﷺ."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    },
+    {
+      "id": "8114a3a6da73",
+      "stem": "A student writes: \"The Prophet ﷺ taught us to treat our neighbours well.\" What is the tense of \"taught\"?",
+      "options": [
+        "Simple present",
+        "Simple past",
+        "Past continuous",
+        "Present perfect"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 1)"
+    }
+  ]
+}

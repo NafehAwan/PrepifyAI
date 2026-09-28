@@ -1,0 +1,16 @@
+# subject: English
+# chapter: 3
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: She said, "Technology is useful." | She said that technology was useful. | She said that technology is used. | She says that technology was useful. | She said that technology will be useful. | A | h v:d0068f394a15
+In "Mobile phones have made life easier", the tense is: | simple past | present perfect | past perfect | simple present | B | v:8edb9ec3cbbd
+Choose the antonym of "ancient": | Old | Historic | Modern | Aged | C | e v:79a22c5b4017
+Choose the correct article: A computer is ___ amazing machine. | a | an | the | no article | B | h v:7cbd6b04f065
+Fill in the blank: The internet has advantages ___ disadvantages. | or | and | but | nor | B | e v:e52c85b159b8
+Choose the word that is an adverb: | Quick | Quickly | Quickness | Quicken | B | e v:aba908588eef
+A student spends all night playing online games and falls asleep in class. This shows a: | negative effect of technology misuse | benefit of technology | healthy habit | study technique | A | s v:deb42b328803
+A small Sialkot company sells footballs to buyers in Europe through its website. This shows businesses can reach: | a global market | only local customers | only relatives | nobody | A | s v:8d134d54a135
+Choose the plural of "phenomenon": | phenomenons | phenomena | phenomenas | phenomenon | B | h v:981d11b39e34

@@ -1,0 +1,36 @@
+# subject: Physics
+# chapter: 8
+# source: Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)
+# answer_source: authored
+# difficulty: medium
+
+Like magnetic poles: | attract each other | repel each other | have no effect on each other | cancel each other's magnetism | B | e
+Which of these is a magnetic material? | Copper | Aluminium | Iron | Wood | C | e
+Which group contains only magnetic materials? | Iron, nickel, cobalt | Iron, copper, zinc | Nickel, gold, silver | Cobalt, aluminium, tin | A
+Outside a bar magnet, magnetic field lines go from: | south pole to north pole | north pole to south pole | the middle to both ends | both ends to the middle | B
+A freely suspended bar magnet comes to rest pointing: | east–west | north–south | up–down | in any direction | B | e
+The Earth's geographic North Pole is near a magnetic: | north pole | south pole | equator | neutral point | B | h
+Soft iron is used in electromagnets because it: | is easily magnetized and easily loses its magnetism | keeps its magnetism permanently | is not magnetic | is very heavy | A
+Steel is used for permanent magnets because it: | keeps its magnetism for a long time | loses its magnetism quickly | is non-magnetic | is a good insulator | A
+A student strokes an iron nail many times in one direction with a magnet. The nail: | becomes magnetized | becomes electrically charged | melts | loses its mass | A | s
+Which of these will destroy a magnet's magnetism? | Heating it strongly or hammering it | Keeping it with a keeper | Storing it in pairs | Cooling it slightly | A
+According to domain theory, an unmagnetized piece of iron has domains that are: | all aligned in one direction | randomly arranged | absent | all pointing south | B | h
+Field lines close together show that the magnetic field is: | weak | strong | zero | reversed | B
+A crane at a scrapyard lifts iron scrap and drops it when switched off. It uses: | a permanent magnet | an electromagnet | a bar of copper | a compass | B | s
+The strength of an electromagnet can be increased by: | increasing the current and the number of turns | decreasing the current | removing the iron core | using fewer turns | A
+A magnetic compass needle is: | a small magnet | a piece of copper | a charged plastic strip | a piece of glass | A | e
+A current-carrying straight wire produces a magnetic field that is: | in straight lines along the wire | in circles around the wire | zero | only at the ends of the wire | B | h
+The direction of the magnetic field around a current-carrying wire is given by the: | right-hand grip rule | left-hand rule for motors only | head-to-tail rule | parallelogram law | A | h
+A student brings a magnet near a paper clip without touching it and the clip is attracted. This shows magnetism can act: | only by contact | at a distance | only in water | only on plastics | B | s
+Which device uses an electromagnet? | Electric bell | Torch bulb | Candle | Mirror | A | e
+A magnet is broken into two pieces. Each piece: | has only one pole | becomes a complete magnet with a north and a south pole | loses all magnetism | becomes a south pole only | B | h
+Iron filings sprinkled around a bar magnet gather most thickly: | at the middle | near the poles | nowhere | in a straight line | B
+Which method can make a temporary magnet from an iron bar? | Placing it near a strong magnet (induction) | Painting it | Cooling it | Wrapping it in cloth | A
+A sensitive watch is kept inside a soft iron box near strong magnets. The box: | shields the watch from magnetic fields | magnetizes the watch | charges the watch | heats the watch | A | s h
+Which is NOT a use of magnets? | Loudspeakers | MRI machines | Compasses | Measuring temperature | D | e
+A magnet attracts: | wood | iron | plastic | rubber | B | e
+Two magnets are placed with a north pole facing a south pole. They will: | repel | attract | rotate away | lose magnetism | B | e
+The region around a magnet where its magnetic force can be felt is called its: | magnetic field | electric field | gravitational field | domain | A | e
+A hiker's compass points wrongly when held next to a steel knife. This is because: | the steel's magnetic field disturbs the needle | the knife is charged | steel is non-magnetic | the Earth's field has disappeared | A | s
+Reversing the direction of current in an electromagnet: | reverses its poles | destroys it | doubles its strength | has no effect | A | h
+Magnetic field lines of a magnet: | never cross each other | always cross at the poles | form straight parallel lines everywhere | start and end at the middle | A | h

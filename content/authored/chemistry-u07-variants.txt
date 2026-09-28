@@ -1,0 +1,15 @@
+# subject: Chemistry
+# chapter: 7
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+In ZnO + C → Zn + CO, carbon acts as a reducing agent because it: | gains oxygen by removing it from ZnO | loses mass | is a metal | turns into zinc | A | h v:bc0cd30c4697
+A copper roof slowly turns green after years in the open air. This is an example of: | distillation | corrosion | neutralization | electrolysis | B | s v:897dc40f4809
+The oxidation number of magnesium in MgO is: | +2 | −2 | +1 | 0 | A | e v:f83868e3a987
+An iron pipeline buried underground is joined to blocks of zinc. The zinc protects the iron because it: | is less reactive than iron | corrodes first instead of the iron | stops water reaching the soil | is a non-metal | B | s h v:ec549825df0a
+The substance that loses electrons in a redox reaction is the: | oxidizing agent | reducing agent | catalyst | electrolyte | B | v:25915bf5f6be
+A zinc strip is placed in copper sulphate solution and a brown coating forms on it. This shows that zinc: | is more reactive than copper and displaces it | is less reactive than copper | is reduced | does not react | A | s v:448f0a87946d
+The oxidation number of oxygen in H₂O is: | +2 | −2 | −1 | 0 | B | e v:99fea1fa7af1
+For iron to rust, it must be exposed to: | oxygen and water | nitrogen only | dry air only | hydrogen | A | e v:1592ef162740

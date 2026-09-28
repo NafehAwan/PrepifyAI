@@ -1,0 +1,176 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "3250d1fd23d0",
+      "stem": "Bilal receives a message claiming he has won a prize and must enter his bank PIN on a link. This is an example of:",
+      "options": [
+        "phishing",
+        "a firewall",
+        "a backup",
+        "a cookie"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "077f5db8cb8a"
+    },
+    {
+      "id": "92c760107668",
+      "stem": "A user types the correct web address of a shopping site but is secretly sent to a fake copy of it. This attack is:",
+      "options": [
+        "phishing",
+        "pharming",
+        "spam",
+        "a backup"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "05cbeae974a8"
+    },
+    {
+      "id": "26301f065e54",
+      "stem": "Small text files that a website stores on your device to remember your preferences are called:",
+      "options": [
+        "viruses",
+        "cookies",
+        "patches",
+        "firewalls"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "e920e696c40a"
+    },
+    {
+      "id": "b70568f483f2",
+      "stem": "Software that secretly records a user's online activity and sends it to others without permission is:",
+      "options": [
+        "freeware",
+        "spyware",
+        "a firewall",
+        "a browser"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "023708328fc0"
+    },
+    {
+      "id": "ab36e2455358",
+      "stem": "An inventor wants the legal right to stop others copying her new machine for a number of years. She should apply for a:",
+      "options": [
+        "trademark",
+        "copyright",
+        "patent",
+        "licence to drive"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "c7e03ecdcf37"
+    },
+    {
+      "id": "21325e4e7bea",
+      "stem": "The golden \"M\" logo of a fast-food chain is protected by a:",
+      "options": [
+        "patent",
+        "copyright",
+        "trademark",
+        "firewall"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "35000a8480bd"
+    },
+    {
+      "id": "114e6307a90a",
+      "stem": "Which tool monitors and controls the traffic entering and leaving a school network?",
+      "options": [
+        "A firewall",
+        "A printer driver",
+        "A spreadsheet",
+        "A cookie"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "031b5aa84505"
+    },
+    {
+      "id": "d1df40eebaaf",
+      "stem": "Viruses, worms and trojan horses all belong to the general category of:",
+      "options": [
+        "malware",
+        "cookies",
+        "freeware",
+        "hardware"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "5e0ba7ac93f9"
+    },
+    {
+      "id": "634b245bab66",
+      "stem": "Hamza keeps copies of his project files on a USB drive and in cloud storage in case his computer fails. This is:",
+      "options": [
+        "backing up data",
+        "hacking",
+        "pharming",
+        "encryption"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a35f594e5068"
+    },
+    {
+      "id": "380a76efa883",
+      "stem": "Someone breaks into a school's computer system without permission and changes students' marks. This is:",
+      "options": [
+        "hacking",
+        "spam",
+        "a backup",
+        "a trademark"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "6e6c7120060a"
+    }
+  ]
+}

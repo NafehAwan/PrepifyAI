@@ -1,0 +1,37 @@
+# subject: Maths
+# chapter: 11
+# source: Written for Prepify from the FBISE Class 9 Mathematics syllabus (Basic Statistics)
+# answer_source: authored
+# difficulty: medium
+
+The mean of 2, 4, 6, 8 and 10 is: | 5 | 6 | 7 | 30 | B | e
+The median of 3, 7, 1, 9 and 5 is: | 1 | 5 | 7 | 9 | B
+The median of 2, 4, 6 and 8 is: | 4 | 5 | 6 | 10 | B
+The mode of 2, 3, 3, 5, 7, 3, 5 is: | 2 | 3 | 5 | 7 | B | e
+The range of 12, 5, 20 and 8 is: | 8 | 12 | 15 | 20 | C | e
+The mean of 10, 20, 30 and 40 is: | 20 | 25 | 30 | 100 | B | e
+The class mark (mid-point) of the class 10–20 is: | 10 | 15 | 20 | 30 | B
+The class width of the classes 0–10, 10–20, 20–30 is: | 5 | 10 | 20 | 30 | B | e
+In a pie chart, a category with 10 out of 40 students gets a sector angle of: | 10° | 40° | 90° | 120° | C
+Which average is most affected by a single very large value (an outlier)? | Mean | Median | Mode | All equally | A
+The sum of the deviations of the values from their mean is always: | 0 | 1 | the mean | the range | A | h
+The mean of 5 numbers is 12. Their sum is: | 17 | 50 | 60 | 2.4 | C
+The mean of 4 numbers is 10. A fifth number, 20, is added. The new mean is: | 10 | 12 | 15 | 30 | B | h
+For the frequencies 3, 5 and 7, the cumulative frequencies are: | 3, 8, 15 | 3, 5, 7 | 7, 12, 15 | 3, 15, 8 | A
+Grouped continuous data such as heights of students is best shown by a: | pie chart | histogram | pictograph | line of symmetry | B
+Favourite colours of a class are best shown by a: | bar chart | histogram | frequency polygon only | scatter graph | A | e
+A data set that has two modes is called: | unimodal | bimodal | skewed | grouped | B
+For x = 1, 2, 3 with frequencies 2, 3, 5, the mean Σfx ÷ Σf is: | 2 | 2.3 | 2.5 | 3 | B | h
+A shoe shop wants to know which shoe size to stock the most. The average it should use is the: | mean | median | mode | range | C | s
+The range of a data set measures its: | spread | centre | most common value | total | A
+The median of 7, 2, 9, 4, 5 and 8 is: | 5 | 6 | 6.5 | 7 | B | h
+The midday temperatures over five days were 30°C, 32°C, 31°C, 35°C and 32°C. The mean temperature was: | 31°C | 32°C | 33°C | 35°C | B | s
+The angles of all the sectors in a pie chart add up to: | 100° | 180° | 270° | 360° | D | e
+The data 1, 2, 2, 3, 3, 4 has mode(s): | 2 only | 3 only | 2 and 3 | 4 | C
+If 5 is added to every value in a data set, the mean: | stays the same | increases by 5 | doubles | decreases by 5 | B | h
+Data collected by the investigator directly for their own purpose is called: | primary data | secondary data | grouped data | cumulative data | A
+Data taken from newspapers, books or websites is called: | primary data | secondary data | raw frequency | class mark | B
+A cricketer scored 20, 45, 0, 80 and 55 runs in five innings. The average score per innings is: | 40 | 45 | 50 | 200 | A | s
+The monthly salaries in an office are Rs 30,000 for nine staff and Rs 3,00,000 for the manager. Which average best describes a typical salary? | Mean | Median | Maximum | Range | B | s h
+A frequency polygon is drawn by joining the: | mid-points of the tops of histogram bars | corners of the bars | class boundaries | cumulative totals | A
+In a class of 30 students, 12 walk to school. In a pie chart the "walk" sector is: | 12° | 120° | 144° | 180° | C | h

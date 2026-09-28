@@ -1,0 +1,558 @@
+-- Auto-generated from content/physics-9.curriculum.json
+-- Seeds FBISE Class 9 Physics (subjects → books → chapters → topics → slos → content_chunks).
+-- Idempotent: re-running replaces this subject's book tree for the class. Safe to paste
+-- into the Supabase SQL Editor (Dashboard → SQL Editor → New query → Run).
+do $$
+declare
+  v_json    jsonb := $hf${
+  "_meta": {
+    "note": "AI-drafted FBISE curriculum seed (Part B of the build spec). Per pipeline step 3, every item must be human-verified before it is shipped to students. Codes follow PHY-<class>-<chapter>.<topic>.<slo>.",
+    "generated_for": "Prepify AI core learning loop demo",
+    "source_basis": "FBISE Physics IX textbook + past-paper exercise questions"
+  },
+  "subject": "Physics",
+  "track": "pre_eng",
+  "class_level": 9,
+  "chapters": [
+    {
+      "seq": 1,
+      "title": "Physical Quantities and Measurement",
+      "title_ur": "طبیعی مقداریں اور پیمائش",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Introduction to Physics",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-1.1.1",
+              "bloom_level": "understand",
+              "statement": "Define physics and identify its main branches.",
+              "content_md": "## What is Physics?\n\n**Physics** is the branch of science that studies matter, energy and their mutual interactions. It explains how the physical world behaves — from the fall of an apple to the orbit of a satellite.\n\nMain branches include **mechanics** (motion and forces), **heat/thermodynamics**, **sound**, **light/optics**, **electricity and magnetism**, **atomic physics** and **nuclear physics**.\n\n**Examiner keyword:** the mark is awarded for *matter, energy and their interactions* — a vague 'study of nature' loses it."
+            },
+            {
+              "code": "PHY-9-1.1.2",
+              "bloom_level": "understand",
+              "statement": "Explain the role of physics in science, technology and society.",
+              "content_md": "## Why Physics Matters\n\nPhysics underpins engineering, medicine (X-rays, MRI), communication (fibre optics, mobile phones) and energy production. Advances in physics drive new technology, which in turn changes society.\n\n**Examiner keyword:** give a *specific application* (e.g. MRI, fibre optics) rather than 'it is useful'."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Physical Quantities and SI Units",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-1.2.1",
+              "bloom_level": "understand",
+              "statement": "Differentiate between base and derived physical quantities.",
+              "content_md": "## Base vs Derived Quantities\n\nA **physical quantity** is one that can be measured. **Base quantities** are seven fundamental quantities that are not defined in terms of others: length (m), mass (kg), time (s), electric current (A), temperature (K), amount of substance (mol) and luminous intensity (cd).\n\n**Derived quantities** are obtained by combining base quantities — e.g. speed (m s⁻¹), force (kg m s⁻²), area (m²).\n\n**Examiner keyword:** name a base quantity *with its SI unit* to secure the mark."
+            },
+            {
+              "code": "PHY-9-1.2.2",
+              "bloom_level": "understand",
+              "statement": "Express quantities using prefixes and scientific (standard) notation.",
+              "content_md": "## Prefixes and Standard Form\n\nVery large or small numbers are written in **standard form** a × 10ⁿ where 1 ≤ a < 10. SI **prefixes** scale units: kilo (10³), centi (10⁻²), milli (10⁻³), micro (10⁻⁶), nano (10⁻⁹), mega (10⁶), giga (10⁹).\n\nExample: 3 000 000 m = 3 × 10⁶ m = 3 Mm.\n\n**Examiner keyword:** the coefficient must satisfy 1 ≤ a < 10, or the standard-form mark is lost."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Measuring Instruments",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-1.3.1",
+              "bloom_level": "apply",
+              "statement": "Use a vernier callipers and a screw gauge, and state their least counts.",
+              "content_md": "## Vernier Callipers and Screw Gauge\n\nThe **least count** is the smallest measurement an instrument can read.\n\n* Vernier callipers: least count = 1 main-scale division ÷ number of vernier divisions = 1 mm ÷ 10 = **0.1 mm (0.01 cm)**.\n* Screw gauge: least count = pitch ÷ number of circular-scale divisions = 1 mm ÷ 100 = **0.01 mm**.\n\nReading = main-scale reading + (vernier/circular division coinciding × least count).\n\n**Examiner keyword:** always quote the least count *with units* and show the addition."
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "title": "Significant Figures",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-1.4.1",
+              "bloom_level": "apply",
+              "statement": "Identify and apply the rules of significant figures in measurements and calculations.",
+              "content_md": "## Significant Figures\n\n**Significant figures** are the digits in a measurement that carry meaning. Rules: all non-zero digits are significant; zeros between non-zero digits are significant; leading zeros are not; trailing zeros after a decimal point are significant.\n\nIn multiplication/division the answer keeps the *fewest* significant figures of the data; in addition/subtraction it keeps the fewest decimal places.\n\n**Examiner keyword:** round *only at the end*, and state the number of significant figures kept."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 2,
+      "title": "Kinematics",
+      "title_ur": "حرکیات",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Rest, Motion and Types of Motion",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-2.1.1",
+              "bloom_level": "understand",
+              "statement": "Define rest and motion and explain that they are relative.",
+              "content_md": "## Rest and Motion\n\nA body is at **rest** if it does not change its position with respect to its surroundings, and in **motion** if it changes its position with respect to its surroundings, with time.\n\nRest and motion are **relative** — a passenger sitting in a moving bus is at rest relative to the bus but in motion relative to the road.\n\n**Examiner keyword:** the phrase *with respect to its surroundings (reference)* must appear."
+            },
+            {
+              "code": "PHY-9-2.1.2",
+              "bloom_level": "understand",
+              "statement": "Distinguish between translatory, rotatory and vibratory motion.",
+              "content_md": "## Types of Motion\n\n* **Translatory** — every particle moves along parallel paths (linear, circular or random). Example: a car on a road.\n* **Rotatory** — a body spins about a fixed axis. Example: a spinning wheel.\n* **Vibratory** — a body moves to and fro about a mean position. Example: a pendulum.\n\n**Examiner keyword:** attach a *correct example* to each type."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Scalars, Vectors and Terms of Motion",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-2.2.1",
+              "bloom_level": "understand",
+              "statement": "Differentiate between scalar and vector quantities and between distance and displacement.",
+              "content_md": "## Scalars and Vectors\n\nA **scalar** has magnitude only (e.g. distance, speed, mass). A **vector** has both magnitude and direction (e.g. displacement, velocity, force).\n\n**Distance** is the total path length (scalar); **displacement** is the shortest straight-line distance from start to finish with direction (vector).\n\n**Examiner keyword:** displacement needs *direction* and *shortest path* to earn full marks."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Equations of Motion",
+          "est_minutes": 40,
+          "slos": [
+            {
+              "code": "PHY-9-2.3.1",
+              "bloom_level": "apply",
+              "statement": "Apply the three equations of uniformly accelerated motion to solve problems.",
+              "content_md": "## Equations of Motion\n\nFor uniform acceleration a:\n\n* v = v₍i₎ + a t\n* S = v₍i₎ t + ½ a t²\n* 2 a S = v₍f₎² − v₍i₎²\n\nwhere v₍i₎ is initial velocity, v₍f₎ final velocity, S displacement, t time.\n\n**Examiner keyword:** always write the formula, substitute with units, then evaluate — method marks are awarded even if the final number slips."
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "title": "Graphs of Motion and Motion under Gravity",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-2.4.1",
+              "bloom_level": "understand",
+              "statement": "Interpret distance–time and speed–time graphs, and apply equations to motion under gravity.",
+              "content_md": "## Graphs and Free Fall\n\nOn a **distance–time graph** the slope gives speed. On a **speed–time graph** the slope gives acceleration and the area under the line gives distance.\n\nFor a body falling freely, a = g ≈ 10 m s⁻² (near Earth). Use the equations of motion with a = g (downward positive) or a = −g (upward positive).\n\n**Examiner keyword:** state that *area under a speed–time graph = distance* — a common lost mark."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 3,
+      "title": "Dynamics - I",
+      "title_ur": "حرکیات - ا",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Force, Inertia and Momentum",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-3.1.1",
+              "bloom_level": "understand",
+              "statement": "Define force, inertia and momentum with their units.",
+              "content_md": "## Force, inertia and momentum\n\nA **force** is an agency that changes or tends to change the state of rest or of uniform motion of a body. SI unit: **newton (N)**.\n\n**Inertia** is the property of a body by which it resists any change in its state of rest or motion; the greater the **mass**, the greater the inertia.\n\n**Momentum** is the quantity of motion: **p = m v** (a vector). SI unit: **kg·m·s⁻¹**.\n\n**Examiner keyword:** momentum needs *both* mass and velocity plus a direction."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Newton's Laws of Motion",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-3.2.1",
+              "bloom_level": "understand",
+              "statement": "State Newton's three laws of motion.",
+              "content_md": "## Newton's laws of motion\n\n**First law (inertia):** a body stays at rest or in uniform straight-line motion unless a net external force acts.\n\n**Second law:** net force = rate of change of momentum; for constant mass, **F = m a**.\n\n**Third law:** to every action there is an equal and opposite reaction, on **two different bodies**.\n\n**Examiner keyword:** the third-law pair acts on **two different bodies** — not the same one."
+            },
+            {
+              "code": "PHY-9-3.2.2",
+              "bloom_level": "apply",
+              "statement": "Apply F = ma to simple problems.",
+              "content_md": "## Using F = ma\n\nRearrange: **F = m a**, **a = F / m**, **m = F / a**.\n\n*Example:* a net force of 20 N on a 4 kg trolley gives a = 20/4 = **5 m·s⁻²**.\n\n**Examiner keyword:** use the **net (resultant)** force when friction or weight also acts."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Mass and Weight",
+          "est_minutes": 20,
+          "slos": [
+            {
+              "code": "PHY-9-3.3.1",
+              "bloom_level": "understand",
+              "statement": "Distinguish between mass and weight.",
+              "content_md": "## Mass and weight\n\n**Mass** is the amount of matter in a body — a scalar, measured in **kg**, and the **same everywhere**.\n\n**Weight** is the force of gravity on the body: **W = m g** — a vector, measured in **newtons (N)**, that **changes** with location (g differs on the Moon, at altitude).\n\n**Examiner keyword:** mass is constant; **weight = m g** varies with g."
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "title": "Friction",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-3.4.1",
+              "bloom_level": "understand",
+              "statement": "Explain friction and how to reduce it.",
+              "content_md": "## Friction\n\n**Friction** opposes the relative motion (or tendency of motion) between two surfaces in contact, arising from the interlocking of surface irregularities.\n\nIt is **reduced** by polishing, lubrication, ball bearings and streamlining. It is useful for walking, gripping and braking, but wastes energy as heat.\n\n**Examiner keyword:** friction **always opposes** relative motion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 4,
+      "title": "Dynamics - II",
+      "title_ur": "حرکیات - ب",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Law of Conservation of Momentum",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-4.1.1",
+              "bloom_level": "understand",
+              "statement": "State and apply the law of conservation of momentum.",
+              "content_md": "## Conservation of momentum\n\nIn an **isolated system** (no net external force) the **total momentum stays constant**: total momentum before = total momentum after.\n\nThis explains a **gun's recoil** and **rocket propulsion**: the forward momentum of the ejected gas/bullet equals the backward momentum of the rocket/gun.\n\n**Examiner keyword:** momentum is conserved only for an **isolated system** (no external force)."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Impulse",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-4.2.1",
+              "bloom_level": "understand",
+              "statement": "Define impulse and relate it to change in momentum.",
+              "content_md": "## Impulse\n\n**Impulse** is the product of force and the time for which it acts: **impulse = F Δt**, and it equals the **change in momentum** (Δp). SI unit: **N·s**.\n\nIncreasing the contact **time** reduces the force — why airbags, crumple zones and bending your knees on landing protect you.\n\n**Examiner keyword:** impulse = **F Δt = change in momentum**; a longer time means a **smaller force**."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Uniform Circular Motion and Centripetal Force",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-4.3.1",
+              "bloom_level": "understand",
+              "statement": "Explain centripetal force in circular motion.",
+              "content_md": "## Circular motion and centripetal force\n\nA body moving in a circle at constant speed is still **accelerating**, because its **direction** (velocity) keeps changing. The force causing this, directed toward the centre, is the **centripetal force**: **Fc = m v² / r**.\n\nIt is provided by a real force — tension in a string, friction on a road, or gravity on a satellite.\n\n**Examiner keyword:** centripetal force acts **toward the centre**; there is **no real outward \"centrifugal\" force**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 5,
+      "title": "Pressure and Deformation in Solids",
+      "title_ur": "دباؤ اور ٹھوس اجسام میں تبدیلی",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Pressure",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-5.1.1",
+              "bloom_level": "apply",
+              "statement": "Define and calculate pressure.",
+              "content_md": "## Pressure\n\n**Pressure** is force per unit area: **P = F / A**. SI unit: **pascal (Pa)**, where 1 Pa = 1 N·m⁻².\n\nThe same force on a **smaller area** gives a **greater** pressure — why a sharp knife or a drawing pin works.\n\n**Examiner keyword:** pressure = **force ÷ area**; smaller area → greater pressure."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Pressure in Liquids and Gases",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-5.2.1",
+              "bloom_level": "understand",
+              "statement": "Describe liquid pressure, Pascal's law and atmospheric pressure.",
+              "content_md": "## Pressure in fluids\n\nLiquid pressure **increases with depth** and density: **P = ρ g h**, and acts equally in all directions at a point.\n\n**Pascal's law:** pressure applied to an enclosed liquid is transmitted equally throughout — the basis of **hydraulic brakes and presses**.\n\nThe atmosphere exerts a pressure of about **101 kPa** at sea level, measured with a **barometer**.\n\n**Examiner keyword:** liquid pressure **P = ρ g h** depends on **depth and density**, not on the container's shape."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Deformation: Stress, Strain and Hooke's Law",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-5.3.1",
+              "bloom_level": "understand",
+              "statement": "Define stress and strain and state Hooke's law.",
+              "content_md": "## Deformation in solids\n\n**Stress** = force ÷ area (Pa); **strain** = extension ÷ original length (no unit).\n\n**Hooke's law:** within the **elastic limit**, extension is directly proportional to the load: **F = k x**. Beyond the elastic limit the deformation becomes permanent.\n\n**Young's modulus** = stress ÷ strain measures a material's stiffness.\n\n**Examiner keyword:** Hooke's law holds **only within the elastic limit**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 6,
+      "title": "Work and Energy",
+      "title_ur": "کام اور توانائی",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Work and Power",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-6.1.1",
+              "bloom_level": "understand",
+              "statement": "Define work and power with units.",
+              "content_md": "## Work and power\n\n**Work** is done when a force moves its point of application along its direction: **W = F d** (or F d cos θ). SI unit: **joule (J)**.\n\n**Power** is the rate of doing work: **P = W / t**. SI unit: **watt (W)** = J·s⁻¹.\n\n**Examiner keyword:** **no work** is done with no displacement, or when force is **perpendicular** to motion."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Kinetic and Potential Energy",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-6.2.1",
+              "bloom_level": "apply",
+              "statement": "Use KE and PE formulas.",
+              "content_md": "## Kinetic and potential energy\n\n**Kinetic energy:** **KE = ½ m v²**. **Gravitational potential energy:** **PE = m g h**.\n\n*Example:* a 2 kg body at 5 m·s⁻¹ has KE = ½ × 2 × 5² = **25 J**.\n\n**Examiner keyword:** KE depends on **v²** — double the speed, **four times** the KE."
+            },
+            {
+              "code": "PHY-9-6.2.2",
+              "bloom_level": "understand",
+              "statement": "State the law of conservation of energy.",
+              "content_md": "## Conservation of energy\n\n**Energy can neither be created nor destroyed; it only changes form.** Total energy of an isolated system stays constant.\n\nA falling body converts PE to KE; friction turns some into heat — dispersed, not destroyed.\n\n**Examiner keyword:** energy is **transformed**, not used up."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Efficiency and Sources of Energy",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-6.3.1",
+              "bloom_level": "understand",
+              "statement": "Define efficiency and distinguish energy sources.",
+              "content_md": "## Efficiency and energy sources\n\n**Efficiency** = (useful output ÷ total input) × 100%. No machine is 100% efficient — friction always wastes some energy as heat.\n\n**Renewable** sources (solar, wind, hydro, biomass, geothermal) replenish naturally; **non-renewable** (coal, oil, gas, nuclear) run out and pollute.\n\n**Examiner keyword:** efficiency is always **less than 100%**; the loss is mostly **heat from friction**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 7,
+      "title": "Density and Temperature",
+      "title_ur": "کثافت اور درجہ حرارت",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Density and States of Matter",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-7.1.1",
+              "bloom_level": "apply",
+              "statement": "Define density and describe the states of matter.",
+              "content_md": "## Density and states of matter\n\n**Density** = mass ÷ volume: **ρ = m / V** (SI unit **kg·m⁻³**). It decides whether an object floats.\n\nIn a **solid** particles vibrate in fixed positions (fixed shape and volume); in a **liquid** they slide past one another (fixed volume only); in a **gas** they move freely (no fixed shape or volume).\n\n**Examiner keyword:** density = **mass ÷ volume**; state the property (shape/volume) that is fixed."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Temperature and Thermometers",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-7.2.1",
+              "bloom_level": "understand",
+              "statement": "Distinguish heat and temperature and convert scales.",
+              "content_md": "## Temperature and heat\n\n**Temperature** is the degree of hotness of a body and sets the direction of heat flow, measured in **°C** or **kelvin (K)**: **T(K) = T(°C) + 273**.\n\n**Heat** is energy that flows from hot to cold because of a temperature difference, measured in **joules (J)**. A thermometer works by the **thermal expansion** of mercury or alcohol.\n\n**Examiner keyword:** heat is **energy in transit (J)**; temperature is a **measure of hotness (K)**."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Thermal Expansion",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-7.3.1",
+              "bloom_level": "understand",
+              "statement": "Explain thermal expansion with examples.",
+              "content_md": "## Thermal expansion\n\nMost substances **expand on heating** as their particles vibrate more and move apart. Expansion gaps are left in railway lines and bridges.\n\nA **bimetallic strip** bends when heated because two metals expand differently — used in thermostats and fire alarms.\n\n**Examiner keyword:** particles gain **kinetic energy** and move **farther apart** — the particles themselves do not grow."
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "title": "Specific Heat and Latent Heat",
+          "est_minutes": 35,
+          "slos": [
+            {
+              "code": "PHY-9-7.4.1",
+              "bloom_level": "apply",
+              "statement": "Use Q = m c ΔT and explain latent heat.",
+              "content_md": "## Specific heat and latent heat\n\n**Specific heat capacity (c):** heat to raise 1 kg by 1 K — **Q = m c ΔT**.\n\n**Latent heat:** heat absorbed or released during a **change of state** at constant temperature. Water's high specific heat (**4200 J·kg⁻¹·K⁻¹**) makes it a good coolant.\n\n**Examiner keyword:** during a change of state the **temperature stays constant** while latent heat flows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 8,
+      "title": "Magnetism",
+      "title_ur": "مقناطیسیت",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "Magnets and Magnetic Fields",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-8.1.1",
+              "bloom_level": "understand",
+              "statement": "Describe magnets, poles and magnetic fields.",
+              "content_md": "## Magnets and magnetic fields\n\nEvery magnet has a **north** and a **south pole**. **Like poles repel, unlike poles attract**, and poles always occur in pairs.\n\nA **magnetic field** is the region around a magnet where its force acts. Field lines run **from N to S outside** the magnet and are **closest (strongest) at the poles**.\n\n**Examiner keyword:** field lines go **N → S outside** the magnet and never cross."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Magnetic Materials and Magnetisation",
+          "est_minutes": 30,
+          "slos": [
+            {
+              "code": "PHY-9-8.2.1",
+              "bloom_level": "understand",
+              "statement": "Distinguish magnetic materials and describe magnetisation.",
+              "content_md": "## Magnetic materials\n\n**Ferromagnetic** materials (**iron, nickel, cobalt**) can be strongly magnetised; most others cannot. A magnet attracts them by **magnetic induction**.\n\n**Soft iron** magnetises and demagnetises easily (temporary magnets, electromagnets); **steel** keeps its magnetism (permanent magnets). Magnetism is destroyed by **heating, hammering, or alternating current**.\n\n**Examiner keyword:** **soft iron** = temporary magnet; **steel** = permanent magnet."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Earth's Magnetism and Applications",
+          "est_minutes": 25,
+          "slos": [
+            {
+              "code": "PHY-9-8.3.1",
+              "bloom_level": "understand",
+              "statement": "Explain Earth's magnetism and uses of magnets.",
+              "content_md": "## Earth's magnetism and applications\n\nThe Earth behaves like a giant magnet, so a freely suspended **compass** needle lines up north–south. Note the geographic and magnetic poles are not identical.\n\nMagnets are used in **loudspeakers, electric motors and generators, MRI machines, maglev trains and magnetic strips** on cards.\n\n**Examiner keyword:** a compass works because the **Earth acts as a magnet**."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seq": 9,
+      "title": "Nature of Science and Physics",
+      "title_ur": "سائنس اور طبیعیات کی نوعیت",
+      "topics": [
+        {
+          "seq": 1,
+          "title": "The Scientific Method",
+          "est_minutes": 20,
+          "slos": [
+            {
+              "code": "PHY-9-9.1.1",
+              "bloom_level": "understand",
+              "statement": "Describe the steps of the scientific method.",
+              "content_md": "## The scientific method\n\nScience builds knowledge through a repeatable process: **observation → question → hypothesis → experiment → analysis of data → conclusion**, which may become a **theory** or a **law**.\n\nA key feature is that results must be **reproducible** and open to testing; a hypothesis that cannot be tested is not scientific.\n\n**Examiner keyword:** a scientific claim must be **testable and reproducible**."
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "title": "Branches and Scope of Physics",
+          "est_minutes": 20,
+          "slos": [
+            {
+              "code": "PHY-9-9.2.1",
+              "bloom_level": "understand",
+              "statement": "Identify the main branches of physics and its scope.",
+              "content_md": "## Branches of physics\n\n**Physics** studies matter, energy and their interactions. Main branches include **mechanics, heat, sound, light (optics), electricity and magnetism, atomic** and **nuclear** physics.\n\nPhysics underpins the other sciences (chemistry, biology, astronomy) and all engineering and technology.\n\n**Examiner keyword:** physics is the study of **matter, energy and their interactions**."
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "title": "Science, Technology and Society",
+          "est_minutes": 20,
+          "slos": [
+            {
+              "code": "PHY-9-9.3.1",
+              "bloom_level": "understand",
+              "statement": "Explain how physics benefits society through technology.",
+              "content_md": "## Science, technology and society\n\nPhysics drives everyday technology: **medicine** (X-rays, MRI, ultrasound), **communication** (mobiles, satellites, fibre optics), **energy** (power stations, solar cells) and **transport**.\n\nWith this power comes responsibility — scientists must weigh benefits against risks such as pollution and misuse.\n\n**Examiner keyword:** technology is the **application** of physics to solve real problems."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+$hf$::jsonb;
+  v_class   int   := (v_json->>'class_level')::int;
+  v_subject uuid;
+  v_book    uuid;
+  v_chapter uuid;
+  v_topic   uuid;
+  v_slo     uuid;
+  ch jsonb; tp jsonb; sl jsonb;
+begin
+  select id into v_subject from subjects where name = v_json->>'subject';
+  if v_subject is null then
+    insert into subjects(name, track) values (v_json->>'subject', v_json->>'track') returning id into v_subject;
+  else
+    update subjects set track = coalesce(subjects.track, v_json->>'track') where id = v_subject;
+  end if;
+
+  delete from books where subject_id = v_subject and class_level = v_class;
+  insert into books(subject_id, class_level, edition)
+    values (v_subject, v_class, 'FBISE') returning id into v_book;
+
+  for ch in select jsonb_array_elements(v_json->'chapters') loop
+    insert into chapters(book_id, seq, title, title_ur)
+      values (v_book, (ch->>'seq')::int, ch->>'title', ch->>'title_ur')
+      returning id into v_chapter;
+
+    for tp in select jsonb_array_elements(ch->'topics') loop
+      insert into topics(chapter_id, seq, title, est_minutes)
+        values (v_chapter, (tp->>'seq')::int, tp->>'title', coalesce((tp->>'est_minutes')::int, 20))
+        returning id into v_topic;
+
+      for sl in select jsonb_array_elements(tp->'slos') loop
+        insert into slos(topic_id, code, statement, bloom_level)
+          values (v_topic, sl->>'code', sl->>'statement', sl->>'bloom_level')
+          returning id into v_slo;
+
+        insert into content_chunks(slo_id, seq, content_md, token_count)
+          values (v_slo, 1, sl->>'content_md',
+                  ceil(coalesce(array_length(regexp_split_to_array(trim(coalesce(sl->>'content_md','')), '\s+'), 1), 0) * 1.3)::int);
+      end loop;
+    end loop;
+  end loop;
+
+  raise notice 'Seeded Physics: % chapters', jsonb_array_length(v_json->'chapters');
+end $$;

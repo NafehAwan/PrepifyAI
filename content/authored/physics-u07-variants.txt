@@ -1,0 +1,12 @@
+# subject: Physics
+# chapter: 7
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The instrument used to measure atmospheric pressure is the: | thermometer | barometer | hygrometer | ammeter | B | e v:2e5a4ffdee9a
+Absolute zero (0 K) is the temperature at which: | water freezes | the particles of a substance have the least possible energy | water boils | mercury melts | B | v:97a9c1bff371
+An ice cube floats on water because ice is: | denser than water | less dense than water | heavier than water | hotter than water | B | s e v:75b016b64316
+The upper fixed point (steam point) of the Celsius scale is: | 0 °C | 37 °C | 100 °C | 212 °C | C | e v:2efcfd23ffda
+The density of a substance is its: | mass per unit volume | volume per unit mass | weight per unit area | mass times volume | A | e v:74e54bf1f2b7

@@ -1,0 +1,15 @@
+# subject: Physics
+# chapter: 5
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A camel walks easily on sand because its wide feet: | increase the pressure on the sand | spread its weight over a large area and reduce pressure | reduce its weight | increase its mass | B | s v:a3e7c46d21fc
+A dentist's chair is raised by pressing a small pedal because of: | Hooke's law | Pascal's law | Newton's first law | Archimedes' principle | B | s v:8ef6234ae857
+If the force on a surface is doubled and the area is halved, the pressure becomes: | the same | double | four times | half | C | h v:823d8d209ba1
+A person lies flat on thin ice instead of standing on it. This reduces the risk of breaking the ice because: | the weight decreases | the pressure on the ice decreases | the mass decreases | the ice becomes thicker | B | s v:5458096b75a0
+A dam is built much thicker at the bottom than at the top because water pressure: | increases with depth | decreases with depth | is the same at all depths | depends only on the dam's colour | A | s v:d4fa60e09a63
+The pressure at a point in a liquid depends on the liquid's density and the: | depth of the point | shape of the container | total volume of liquid | colour of the liquid | A | v:3261c5af9a2b
+Sucking air out of a straw lowers the pressure inside it, so the drink is pushed up by: | atmospheric pressure | gravity | friction | magnetism | A | v:e0336a9f5b0a
+A spring is stretched beyond its limit of proportionality. Its force–extension graph then: | stays a straight line | becomes a curve | becomes a horizontal line | disappears | B | v:14cc121c2bca

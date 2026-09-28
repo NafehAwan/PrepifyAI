@@ -1,0 +1,486 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 14,
+  "questions": [
+    {
+      "id": "d6dc9122f7e7",
+      "stem": "Hydrocarbons are compounds made of:",
+      "options": [
+        "carbon and oxygen",
+        "carbon and hydrogen",
+        "hydrogen and oxygen",
+        "carbon, hydrogen and nitrogen"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "608994cbfd39",
+      "stem": "The general formula of alkanes is:",
+      "options": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙHₙ"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "133e8b7a8c6b",
+      "stem": "The general formula of alkenes is:",
+      "options": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙH₂ₙ₊₁"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "a8226fbd4fc2",
+      "stem": "The general formula of alkynes is:",
+      "options": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙH₂ₙ₊₄"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "fef0018be32e",
+      "stem": "Alkanes are called saturated hydrocarbons because they contain:",
+      "options": [
+        "only single bonds between carbon atoms",
+        "at least one double bond",
+        "a triple bond",
+        "no hydrogen"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "c85038edc49a",
+      "stem": "The simplest alkane is:",
+      "options": [
+        "ethane",
+        "methane",
+        "ethene",
+        "ethyne"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "e50bce0a5269",
+      "stem": "The molecular formula of an alkane with 5 carbon atoms is:",
+      "options": [
+        "C₅H₁₀",
+        "C₅H₁₂",
+        "C₅H₈",
+        "C₅H₁₄"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "7aaf91744c24",
+      "stem": "The molecular formula of an alkene with 3 carbon atoms is:",
+      "options": [
+        "C₃H₈",
+        "C₃H₆",
+        "C₃H₄",
+        "C₃H₃"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "f4d475e4a8c3",
+      "stem": "The molecular formula of an alkyne with 4 carbon atoms is:",
+      "options": [
+        "C₄H₁₀",
+        "C₄H₈",
+        "C₄H₆",
+        "C₄H₄"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "95a466a22bfb",
+      "stem": "Ethene (C₂H₄) contains a:",
+      "options": [
+        "single bond only",
+        "carbon–carbon double bond",
+        "carbon–carbon triple bond",
+        "benzene ring"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "b6a961e54593",
+      "stem": "Ethyne (C₂H₂) is commonly called:",
+      "options": [
+        "methane",
+        "acetylene",
+        "propane",
+        "butane"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "7e636a27683f",
+      "stem": "The gas used with oxygen in welding torches is:",
+      "options": [
+        "methane",
+        "ethyne (acetylene)",
+        "propane",
+        "ethane"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "1ba3013fe8b5",
+      "stem": "When bromine water is shaken with an alkene, it:",
+      "options": [
+        "turns from orange-brown to colourless",
+        "turns blue",
+        "turns red",
+        "stays orange-brown"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "370ea673df01",
+      "stem": "A student shakes two gases with bromine water. Gas X decolourizes it; gas Y does not. Which statement is correct?",
+      "options": [
+        "X is unsaturated and Y is saturated",
+        "X is saturated and Y is unsaturated",
+        "Both are alkanes",
+        "Both are alkenes"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "2e132f4ecc12",
+      "stem": "Alkanes react with chlorine in sunlight by:",
+      "options": [
+        "addition",
+        "substitution",
+        "polymerization",
+        "neutralization"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "e4a94939eb8e",
+      "stem": "Alkenes typically undergo:",
+      "options": [
+        "addition reactions",
+        "substitution reactions only",
+        "no reactions",
+        "neutralization"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "f950f1f6f39c",
+      "stem": "Adding hydrogen to an alkene in the presence of a nickel catalyst is called:",
+      "options": [
+        "hydration",
+        "hydrogenation",
+        "halogenation",
+        "cracking"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "597a617139c2",
+      "stem": "Vegetable ghee (margarine) is made from vegetable oils by:",
+      "options": [
+        "hydrogenation",
+        "dehydration",
+        "combustion",
+        "fermentation"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "28476fa147cb",
+      "stem": "Complete combustion of methane produces:",
+      "options": [
+        "carbon monoxide and water",
+        "carbon dioxide and water",
+        "carbon and hydrogen",
+        "methanol"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "56e798544d2b",
+      "stem": "The balanced equation for complete combustion of methane is:",
+      "options": [
+        "CH₄ + O₂ → CO₂ + H₂O",
+        "CH₄ + 2O₂ → CO₂ + 2H₂O",
+        "2CH₄ + O₂ → 2CO + 4H₂",
+        "CH₄ + 3O₂ → CO₂ + 3H₂O"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "430259d1706f",
+      "stem": "A gas heater in a closed room burns fuel with too little oxygen and produces a poisonous gas. The gas is:",
+      "options": [
+        "carbon dioxide",
+        "carbon monoxide",
+        "nitrogen",
+        "water vapour"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "2c66c407247e",
+      "stem": "The main component of natural gas is:",
+      "options": [
+        "ethane",
+        "methane",
+        "propane",
+        "butane"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "1c1099c50c5a",
+      "stem": "LPG (liquefied petroleum gas) used in cylinders is mainly:",
+      "options": [
+        "methane and ethane",
+        "propane and butane",
+        "ethene and ethyne",
+        "hydrogen"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "ed34155105fc",
+      "stem": "Breaking large hydrocarbon molecules into smaller, more useful ones is called:",
+      "options": [
+        "cracking",
+        "polymerization",
+        "distillation",
+        "condensation"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "2f4f05e4336b",
+      "stem": "Polythene is made by joining many ethene molecules together. This process is:",
+      "options": [
+        "cracking",
+        "polymerization",
+        "hydrogenation",
+        "combustion"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "9ce64a9326e8",
+      "stem": "The molar mass of propane (C₃H₈) is (C = 12, H = 1):",
+      "options": [
+        "36 g mol⁻¹",
+        "44 g mol⁻¹",
+        "42 g mol⁻¹",
+        "48 g mol⁻¹"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "855c9506f83a",
+      "stem": "Which is the next member after propane in the alkane series?",
+      "options": [
+        "Butane",
+        "Ethane",
+        "Pentane",
+        "Propene"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "6929c1891ec5",
+      "stem": "Methane is formed naturally in marshes and by animal digestion. It is also called:",
+      "options": [
+        "marsh gas",
+        "laughing gas",
+        "water gas",
+        "noble gas"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "3262f606a57f",
+      "stem": "Alkynes are more reactive than alkanes because they contain:",
+      "options": [
+        "only single bonds",
+        "a triple bond",
+        "no carbon",
+        "ionic bonds"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    },
+    {
+      "id": "f55552956b7a",
+      "stem": "A student burns a hydrocarbon and gets a sooty yellow flame. This suggests:",
+      "options": [
+        "incomplete combustion",
+        "complete combustion",
+        "no combustion",
+        "the fuel is water"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)"
+    }
+  ]
+}

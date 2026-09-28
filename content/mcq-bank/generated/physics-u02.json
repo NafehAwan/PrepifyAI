@@ -1,0 +1,1264 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "d30728eaf9ac",
+      "stem": "A cyclist rides along a winding road 220 m long in 20 s. The straight-line distance from start to finish is 132 m. The cyclist's average speed is:",
+      "options": [
+        "17.6 m/s",
+        "11 m/s",
+        "22 m/s",
+        "6.6 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "e7ce9d736393",
+      "stem": "A cyclist rides along a winding road 840 m long in 60 s. The straight-line distance from start to finish is 420 m. The cyclist's average speed is:",
+      "options": [
+        "28 m/s",
+        "21 m/s",
+        "14 m/s",
+        "7 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "7d6be704785d",
+      "stem": "A train covers 100 km in 2 hours. Its average speed is:",
+      "options": [
+        "100 km/h",
+        "200 km/h",
+        "25 km/h",
+        "50 km/h"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "df9c2e582081",
+      "stem": "A cyclist rides along a winding road 400 m long in 50 s. The straight-line distance from start to finish is 240 m. The cyclist's average speed is:",
+      "options": [
+        "4.8 m/s",
+        "16 m/s",
+        "8 m/s",
+        "12.8 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "86147cd396a5",
+      "stem": "A train covers 120 km in 2 hours. Its average speed is:",
+      "options": [
+        "60 km/h",
+        "120 km/h",
+        "30 km/h",
+        "240 km/h"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "aecac793edf6",
+      "stem": "A bus covers 250 km in 5 hours. Its average speed is:",
+      "options": [
+        "100 km/h",
+        "50 km/h",
+        "1250 km/h",
+        "25 km/h"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-average-speed",
+      "variant_of": "233843f8f4a5"
+    },
+    {
+      "id": "6ec013b48e75",
+      "stem": "A train speeds up uniformly from 15 m/s to 25 m/s in 2 s. Its acceleration is:",
+      "options": [
+        "20 m/s²",
+        "5 m/s²",
+        "12.5 m/s²",
+        "6 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "c06eb603170a",
+      "stem": "A car speeds up uniformly from 15 m/s to 27 m/s in 3 s. Its acceleration is:",
+      "options": [
+        "4 m/s²",
+        "36 m/s²",
+        "9 m/s²",
+        "14 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "2161280d7c9d",
+      "stem": "A train speeds up uniformly from 20 m/s to 32 m/s in 2 s. Its acceleration is:",
+      "options": [
+        "24 m/s²",
+        "16 m/s²",
+        "26 m/s²",
+        "6 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "ef4d0a9c61fe",
+      "stem": "A bus speeds up uniformly from 5 m/s to 25 m/s in 4 s. Its acceleration is:",
+      "options": [
+        "7.5 m/s²",
+        "5 m/s²",
+        "80 m/s²",
+        "6.25 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "90d130cc3aea",
+      "stem": "A car speeds up uniformly from 20 m/s to 32 m/s in 4 s. Its acceleration is:",
+      "options": [
+        "3 m/s²",
+        "48 m/s²",
+        "8 m/s²",
+        "13 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "eb2c31591d3f",
+      "stem": "A motorcycle speeds up uniformly from 10 m/s to 34 m/s in 8 s. Its acceleration is:",
+      "options": [
+        "192 m/s²",
+        "3 m/s²",
+        "4.25 m/s²",
+        "5.5 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration",
+      "variant_of": "89851d5fe393"
+    },
+    {
+      "id": "5f33a615e4ae",
+      "stem": "A particle starts from rest and reaches a velocity of 18 m/s in 9 s. Its average acceleration is:",
+      "options": [
+        "2 m/s²",
+        "162 m/s²",
+        "1 m/s²",
+        "0.5 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "271ab7d7efb1",
+      "stem": "A particle starts from rest and reaches a velocity of 9 m/s in 3 s. Its average acceleration is:",
+      "options": [
+        "1.5 m/s²",
+        "27 m/s²",
+        "3 m/s²",
+        "0.33 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "46b347505169",
+      "stem": "A particle starts from rest and reaches a velocity of 24 m/s in 8 s. Its average acceleration is:",
+      "options": [
+        "192 m/s²",
+        "1.5 m/s²",
+        "0.33 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "0c86f0a44f39",
+      "stem": "A particle starts from rest and reaches a velocity of 36 m/s in 6 s. Its average acceleration is:",
+      "options": [
+        "6 m/s²",
+        "216 m/s²",
+        "0.17 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "c7c463914d34",
+      "stem": "A particle starts from rest and reaches a velocity of 42 m/s in 7 s. Its average acceleration is:",
+      "options": [
+        "6 m/s²",
+        "294 m/s²",
+        "0.17 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "4a98e6d761a7",
+      "stem": "A particle starts from rest and reaches a velocity of 40 m/s in 8 s. Its average acceleration is:",
+      "options": [
+        "2.5 m/s²",
+        "0.2 m/s²",
+        "320 m/s²",
+        "5 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-acceleration-from-rest",
+      "variant_of": "e748cecc7f5f"
+    },
+    {
+      "id": "b29322295614",
+      "stem": "A car moving at 12 m/s is brought to rest by its brakes in 4 s. Its acceleration is:",
+      "options": [
+        "0 m/s²",
+        "−3 m/s²",
+        "−48 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "d48dcd9900d9",
+      "stem": "A car moving at 30 m/s is brought to rest by its brakes in 6 s. Its acceleration is:",
+      "options": [
+        "−5 m/s²",
+        "−180 m/s²",
+        "0 m/s²",
+        "5 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "b8f47a2367f5",
+      "stem": "A car moving at 12 m/s is brought to rest by its brakes in 2 s. Its acceleration is:",
+      "options": [
+        "−6 m/s²",
+        "6 m/s²",
+        "0 m/s²",
+        "−24 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "20ec54c98755",
+      "stem": "A car moving at 24 m/s is brought to rest by its brakes in 6 s. Its acceleration is:",
+      "options": [
+        "0 m/s²",
+        "−4 m/s²",
+        "4 m/s²",
+        "−144 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "eb84bc9779de",
+      "stem": "A car moving at 18 m/s is brought to rest by its brakes in 3 s. Its acceleration is:",
+      "options": [
+        "0 m/s²",
+        "6 m/s²",
+        "−54 m/s²",
+        "−6 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "1592b38a4c04",
+      "stem": "A car moving at 15 m/s is brought to rest by its brakes in 3 s. Its acceleration is:",
+      "options": [
+        "−5 m/s²",
+        "−45 m/s²",
+        "0 m/s²",
+        "5 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-deceleration",
+      "family": "gen-physics-p2-deceleration"
+    },
+    {
+      "id": "a57393b2718e",
+      "stem": "A stone is dropped from rest from the top of a tall building. Taking g = 10 m/s², its speed after 5 s is:",
+      "options": [
+        "15 m/s",
+        "125 m/s",
+        "2 m/s",
+        "50 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-speed",
+      "variant_of": "54d154502459"
+    },
+    {
+      "id": "fb02057e70b0",
+      "stem": "A stone is dropped from rest from the top of a tall building. Taking g = 10 m/s², its speed after 1 s is:",
+      "options": [
+        "5 m/s",
+        "20 m/s",
+        "10 m/s",
+        "11 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-speed",
+      "variant_of": "54d154502459"
+    },
+    {
+      "id": "bc8aae8e7209",
+      "stem": "A stone is dropped from rest from the top of a tall building. Taking g = 10 m/s², its speed after 4 s is:",
+      "options": [
+        "80 m/s",
+        "2.5 m/s",
+        "14 m/s",
+        "40 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-speed",
+      "variant_of": "54d154502459"
+    },
+    {
+      "id": "944c940c56fd",
+      "stem": "A stone is dropped from rest from the top of a tall building. Taking g = 10 m/s², its speed after 6 s is:",
+      "options": [
+        "180 m/s",
+        "1.67 m/s",
+        "16 m/s",
+        "60 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-speed",
+      "variant_of": "54d154502459"
+    },
+    {
+      "id": "8d6c15232708",
+      "stem": "A stone is dropped from rest from the top of a tall building. Taking g = 10 m/s², its speed after 2 s is:",
+      "options": [
+        "40 m/s",
+        "5 m/s",
+        "20 m/s",
+        "12 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-speed",
+      "variant_of": "54d154502459"
+    },
+    {
+      "id": "dc5d166e5b79",
+      "stem": "A stone dropped from rest falls freely for 5 s. Taking g = 10 m/s², the distance it falls is:",
+      "options": [
+        "25 m",
+        "125 m",
+        "250 m",
+        "50 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-distance",
+      "family": "gen-physics-p2-free-fall-distance"
+    },
+    {
+      "id": "7b8d4ce0cd12",
+      "stem": "A stone dropped from rest falls freely for 2 s. Taking g = 10 m/s², the distance it falls is:",
+      "options": [
+        "40 m",
+        "10 m",
+        "20 m",
+        "80 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-distance",
+      "family": "gen-physics-p2-free-fall-distance"
+    },
+    {
+      "id": "a9a107adf329",
+      "stem": "A stone dropped from rest falls freely for 4 s. Taking g = 10 m/s², the distance it falls is:",
+      "options": [
+        "20 m",
+        "40 m",
+        "80 m",
+        "160 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-distance",
+      "family": "gen-physics-p2-free-fall-distance"
+    },
+    {
+      "id": "e3d0aa714759",
+      "stem": "A stone dropped from rest falls freely for 3 s. Taking g = 10 m/s², the distance it falls is:",
+      "options": [
+        "90 m",
+        "30 m",
+        "45 m",
+        "15 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-free-fall-distance",
+      "family": "gen-physics-p2-free-fall-distance"
+    },
+    {
+      "id": "7141f699344b",
+      "stem": "A trolley moving at 9 m/s accelerates uniformly at 5 m/s² for 2 s. Its final velocity is:",
+      "options": [
+        "10 m/s",
+        "90 m/s",
+        "28 m/s",
+        "19 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "cb1cc6c43daf",
+      "stem": "A trolley moving at 5 m/s accelerates uniformly at 4 m/s² for 5 s. Its final velocity is:",
+      "options": [
+        "100 m/s",
+        "45 m/s",
+        "25 m/s",
+        "20 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "7af1cf16a00c",
+      "stem": "A trolley moving at 10 m/s accelerates uniformly at 2 m/s² for 7 s. Its final velocity is:",
+      "options": [
+        "84 m/s",
+        "14 m/s",
+        "140 m/s",
+        "24 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "77947a2ab6d7",
+      "stem": "A boat moving at 11 m/s accelerates uniformly at 3 m/s² for 7 s. Its final velocity is:",
+      "options": [
+        "98 m/s",
+        "21 m/s",
+        "32 m/s",
+        "231 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "1b5342b29f67",
+      "stem": "A cyclist moving at 8 m/s accelerates uniformly at 4 m/s² for 6 s. Its final velocity is:",
+      "options": [
+        "32 m/s",
+        "72 m/s",
+        "192 m/s",
+        "24 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "cded7b16cbb6",
+      "stem": "A boat moving at 4 m/s accelerates uniformly at 2 m/s² for 8 s. Its final velocity is:",
+      "options": [
+        "20 m/s",
+        "64 m/s",
+        "48 m/s",
+        "16 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-final-velocity",
+      "family": "gen-physics-p2-final-velocity"
+    },
+    {
+      "id": "f67186608e55",
+      "stem": "A car starts from rest and accelerates uniformly at 2 m/s² for 7 s. The distance it covers is:",
+      "options": [
+        "49 m",
+        "14 m",
+        "98 m",
+        "7 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "2296b8f1d9d9",
+      "stem": "A car starts from rest and accelerates uniformly at 4 m/s² for 8 s. The distance it covers is:",
+      "options": [
+        "16 m",
+        "256 m",
+        "128 m",
+        "32 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "db42ae232bcb",
+      "stem": "A car starts from rest and accelerates uniformly at 6 m/s² for 7 s. The distance it covers is:",
+      "options": [
+        "147 m",
+        "42 m",
+        "294 m",
+        "21 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "1778fa08e4da",
+      "stem": "A car starts from rest and accelerates uniformly at 6 m/s² for 2 s. The distance it covers is:",
+      "options": [
+        "48 m",
+        "24 m",
+        "6 m",
+        "12 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "4b31399a358c",
+      "stem": "A car starts from rest and accelerates uniformly at 2 m/s² for 3 s. The distance it covers is:",
+      "options": [
+        "6 m",
+        "9 m",
+        "18 m",
+        "3 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "bf1f2a9f385a",
+      "stem": "A car starts from rest and accelerates uniformly at 4 m/s² for 5 s. The distance it covers is:",
+      "options": [
+        "100 m",
+        "20 m",
+        "10 m",
+        "50 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-from-rest",
+      "family": "gen-physics-p2-distance-from-rest"
+    },
+    {
+      "id": "3dea72c13db4",
+      "stem": "A car travelling at 30 m/s brakes with a uniform deceleration of 6 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "150 m",
+        "5 m",
+        "75 m",
+        "2.5 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "ea5c3dcfc990",
+      "stem": "A car travelling at 30 m/s brakes with a uniform deceleration of 5 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "180 m",
+        "6 m",
+        "90 m",
+        "3 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "fae6ec5c2809",
+      "stem": "A car travelling at 20 m/s brakes with a uniform deceleration of 5 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "80 m",
+        "40 m",
+        "4 m",
+        "2 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "9616d234794d",
+      "stem": "A car travelling at 20 m/s brakes with a uniform deceleration of 4 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "2.5 m",
+        "5 m",
+        "50 m",
+        "100 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "e8619ae740b9",
+      "stem": "A car travelling at 20 m/s brakes with a uniform deceleration of 8 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "50 m",
+        "1.25 m",
+        "2.5 m",
+        "25 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "7e09f0f6df73",
+      "stem": "A car travelling at 10 m/s brakes with a uniform deceleration of 2 m/s² until it stops. Its stopping distance is:",
+      "options": [
+        "25 m",
+        "5 m",
+        "50 m",
+        "2.5 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-braking-distance",
+      "family": "gen-physics-p2-braking-distance"
+    },
+    {
+      "id": "fd344ad2bca7",
+      "stem": "A car's speedometer reads 90 km/h. In metres per second this is:",
+      "options": [
+        "9 m/s",
+        "324 m/s",
+        "25 m/s",
+        "1.5 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "b4fbefee3112",
+      "stem": "A car's speedometer reads 108 km/h. In metres per second this is:",
+      "options": [
+        "388.8 m/s",
+        "1.8 m/s",
+        "30 m/s",
+        "10.8 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "062579811972",
+      "stem": "A car travels at 25 m/s. In kilometres per hour this is:",
+      "options": [
+        "250 km/h",
+        "6.9 km/h",
+        "1500 km/h",
+        "90 km/h"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "3d963d07ff9e",
+      "stem": "A car travels at 15 m/s. In kilometres per hour this is:",
+      "options": [
+        "900 km/h",
+        "4.2 km/h",
+        "150 km/h",
+        "54 km/h"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "df3f90cd28bd",
+      "stem": "A car travels at 10 m/s. In kilometres per hour this is:",
+      "options": [
+        "100 km/h",
+        "36 km/h",
+        "2.8 km/h",
+        "600 km/h"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "18dea0d28593",
+      "stem": "A car's speedometer reads 18 km/h. In metres per second this is:",
+      "options": [
+        "1.8 m/s",
+        "0.3 m/s",
+        "64.8 m/s",
+        "5 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-kmh-ms",
+      "family": "gen-physics-p2-kmh-ms"
+    },
+    {
+      "id": "90ec8bc72345",
+      "stem": "A boy walks 3 m east and then 4 m north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 7 m, displacement = 5 m",
+        "Distance = 7 m, displacement = 7 m",
+        "Distance = 5 m, displacement = 7 m",
+        "Distance = 5 m, displacement = 5 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "6f3f5d3c2424",
+      "stem": "A delivery van travels 3 km east and then 4 km north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 7 km, displacement = 5 km",
+        "Distance = 5 km, displacement = 7 km",
+        "Distance = 7 km, displacement = 7 km",
+        "Distance = 5 km, displacement = 5 km"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "3accea673e02",
+      "stem": "A boy walks 12 m east and then 16 m north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 20 m, displacement = 28 m",
+        "Distance = 20 m, displacement = 20 m",
+        "Distance = 28 m, displacement = 28 m",
+        "Distance = 28 m, displacement = 20 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "3b4e5b0cd287",
+      "stem": "A delivery van travels 12 km east and then 16 km north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 20 km, displacement = 28 km",
+        "Distance = 20 km, displacement = 20 km",
+        "Distance = 28 km, displacement = 28 km",
+        "Distance = 28 km, displacement = 20 km"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "cf0b9f0bdab9",
+      "stem": "A boy walks 9 m east and then 12 m north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 21 m, displacement = 21 m",
+        "Distance = 15 m, displacement = 21 m",
+        "Distance = 21 m, displacement = 15 m",
+        "Distance = 15 m, displacement = 15 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "7ced241ba722",
+      "stem": "A delivery van travels 9 km east and then 12 km north. What are the distance covered and the magnitude of the displacement?",
+      "options": [
+        "Distance = 15 km, displacement = 21 km",
+        "Distance = 15 km, displacement = 15 km",
+        "Distance = 21 km, displacement = 21 km",
+        "Distance = 21 km, displacement = 15 km"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-distance-displacement",
+      "variant_of": "4488a73703a9"
+    },
+    {
+      "id": "94c1e2c01dbf",
+      "stem": "A car moves at a constant speed of 8 m/s for 4 s. The area under its speed–time graph, which gives the distance covered, is:",
+      "options": [
+        "2 m",
+        "32 m",
+        "12 m",
+        "16 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "1addfa4011c4",
+      "stem": "A car moves at a constant speed of 10 m/s for 6 s. The area under its speed–time graph, which gives the distance covered, is:",
+      "options": [
+        "30 m",
+        "60 m",
+        "16 m",
+        "1.67 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "ba49c5f6677b",
+      "stem": "A car moves at a constant speed of 12 m/s for 5 s. The area under its speed–time graph, which gives the distance covered, is:",
+      "options": [
+        "30 m",
+        "17 m",
+        "2.4 m",
+        "60 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "64cb5f83b00f",
+      "stem": "A body accelerates uniformly from rest to 12 m/s in 5 s. Using the area under its velocity–time graph, the distance it covers is:",
+      "options": [
+        "30 m",
+        "17 m",
+        "2.4 m",
+        "60 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "8a61a628c01d",
+      "stem": "A body accelerates uniformly from rest to 4 m/s in 4 s. Using the area under its velocity–time graph, the distance it covers is:",
+      "options": [
+        "4 m",
+        "1 m",
+        "16 m",
+        "8 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "5a63026fb8ab",
+      "stem": "A body accelerates uniformly from rest to 10 m/s in 5 s. Using the area under its velocity–time graph, the distance it covers is:",
+      "options": [
+        "15 m",
+        "2 m",
+        "25 m",
+        "50 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:p2-graph-area",
+      "family": "gen-physics-p2-graph-area"
+    },
+    {
+      "id": "bccf524f510f",
+      "stem": "An athlete runs half a lap of a circular track of radius 35 m. Taking π = 22/7, the distance covered and the displacement are:",
+      "options": [
+        "Distance = 110 m, displacement = 35 m",
+        "Distance = 70 m, displacement = 110 m",
+        "Distance = 220 m, displacement = 0 m",
+        "Distance = 110 m, displacement = 70 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-half-lap",
+      "variant_of": "464080c982ff"
+    },
+    {
+      "id": "38fc49bced12",
+      "stem": "An athlete runs half a lap of a circular track of radius 21 m. Taking π = 22/7, the distance covered and the displacement are:",
+      "options": [
+        "Distance = 132 m, displacement = 0 m",
+        "Distance = 42 m, displacement = 66 m",
+        "Distance = 66 m, displacement = 42 m",
+        "Distance = 66 m, displacement = 21 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-half-lap",
+      "variant_of": "464080c982ff"
+    },
+    {
+      "id": "dc352126469e",
+      "stem": "An athlete runs half a lap of a circular track of radius 14 m. Taking π = 22/7, the distance covered and the displacement are:",
+      "options": [
+        "Distance = 44 m, displacement = 14 m",
+        "Distance = 28 m, displacement = 44 m",
+        "Distance = 88 m, displacement = 0 m",
+        "Distance = 44 m, displacement = 28 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-half-lap",
+      "variant_of": "464080c982ff"
+    },
+    {
+      "id": "f68c820b0096",
+      "stem": "An athlete runs half a lap of a circular track of radius 70 m. Taking π = 22/7, the distance covered and the displacement are:",
+      "options": [
+        "Distance = 220 m, displacement = 140 m",
+        "Distance = 440 m, displacement = 0 m",
+        "Distance = 220 m, displacement = 70 m",
+        "Distance = 140 m, displacement = 220 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-half-lap",
+      "variant_of": "464080c982ff"
+    },
+    {
+      "id": "c6fb3d36bfb2",
+      "stem": "An athlete runs half a lap of a circular track of radius 7 m. Taking π = 22/7, the distance covered and the displacement are:",
+      "options": [
+        "Distance = 22 m, displacement = 7 m",
+        "Distance = 44 m, displacement = 0 m",
+        "Distance = 22 m, displacement = 14 m",
+        "Distance = 14 m, displacement = 22 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:p2-half-lap",
+      "variant_of": "464080c982ff"
+    }
+  ]
+}

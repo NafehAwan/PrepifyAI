@@ -1,0 +1,142 @@
+{
+  "subject": "English",
+  "chapter_seq": 12,
+  "questions": [
+    {
+      "id": "b959ff44b42a",
+      "stem": "Choose the indirect speech of: The coach said, \"Warm up before running.\"",
+      "options": [
+        "The coach advised us to warm up before running.",
+        "The coach said that warm up before running.",
+        "The coach says to warmed up before running.",
+        "The coach said that we warm up before running yesterday."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6ea3cec569ca"
+    },
+    {
+      "id": "e76992c3152b",
+      "stem": "Which sentence is in the present continuous tense?",
+      "options": [
+        "He jogs daily.",
+        "He is jogging now.",
+        "He jogged yesterday.",
+        "He will jog tomorrow."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f9f25401d75a"
+    },
+    {
+      "id": "5f550023d677",
+      "stem": "Choose the passive voice of \"Nurses care for patients.\":",
+      "options": [
+        "Patients are cared for by nurses.",
+        "Patients were cared for by nurses.",
+        "Patients cared for by nurses.",
+        "Patients are care for by nurses."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d6aa0d4f7887"
+    },
+    {
+      "id": "ab9acc121338",
+      "stem": "Choose the synonym of \"stop\":",
+      "options": [
+        "Prevent",
+        "Allow",
+        "Encourage",
+        "Cause"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "50dcc0440e5a"
+    },
+    {
+      "id": "f306c49f6cbd",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Vegetables is good for health.",
+        "Vegetables are good for health.",
+        "Vegetables be good for health.",
+        "Vegetables was good for health."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "075834a87bd1"
+    },
+    {
+      "id": "e367ad05e6c5",
+      "stem": "A person who sits at a desk all day and rarely walks or exercises has a:",
+      "options": [
+        "sedentary lifestyle",
+        "active lifestyle",
+        "balanced diet",
+        "healthy routine"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "831c92e5a535"
+    },
+    {
+      "id": "227b68801c90",
+      "stem": "Washing hands before eating is an example of good:",
+      "options": [
+        "hygiene",
+        "exercise",
+        "medicine",
+        "sleep"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ab9d1673f7e2"
+    },
+    {
+      "id": "34c9ac960474",
+      "stem": "Choose the correct article: She eats ___ orange every morning.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "517f73e28af8"
+    }
+  ]
+}

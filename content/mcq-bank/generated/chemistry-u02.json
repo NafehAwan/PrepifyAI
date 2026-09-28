@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "fd4266f7e2d7",
+      "stem": "25 g of sugar is dissolved in 75 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "75%",
+        "12.5%",
+        "33.3%",
+        "25%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    },
+    {
+      "id": "47f9d0c6516a",
+      "stem": "5 g of urea is dissolved in 95 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "5%",
+        "2.5%",
+        "95%",
+        "5.3%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    },
+    {
+      "id": "d36c27a22f06",
+      "stem": "25 g of urea is dissolved in 75 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "33.3%",
+        "75%",
+        "12.5%",
+        "25%"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    },
+    {
+      "id": "331fa5c6b028",
+      "stem": "20 g of urea is dissolved in 30 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "66.7%",
+        "60%",
+        "40%",
+        "20%"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    },
+    {
+      "id": "af7988d07770",
+      "stem": "5 g of copper sulphate is dissolved in 245 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "2%",
+        "1%",
+        "5%",
+        "98%"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    },
+    {
+      "id": "def3f38721dd",
+      "stem": "10 g of urea is dissolved in 90 g of water. The concentration of the solution by mass is:",
+      "options": [
+        "5%",
+        "10%",
+        "11.1%",
+        "90%"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "template:c2-mass-percent",
+      "family": "gen-chemistry-c2-mass-percent"
+    }
+  ]
+}

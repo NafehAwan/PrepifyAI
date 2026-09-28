@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "7d05ade83d78",
+      "stem": "The oxidation number of oxygen in H₂O₂ is:",
+      "options": [
+        "0",
+        "+1",
+        "−1",
+        "−3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    },
+    {
+      "id": "26c54c7517fe",
+      "stem": "The oxidation number of iron in Fe₂O₃ is:",
+      "options": [
+        "+1",
+        "+5",
+        "+3",
+        "−3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    },
+    {
+      "id": "89226ac45715",
+      "stem": "The oxidation number of nitrogen in HNO₃ is:",
+      "options": [
+        "−5",
+        "+7",
+        "+3",
+        "+5"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    },
+    {
+      "id": "467e5cfb0f31",
+      "stem": "The oxidation number of manganese in MnO₂ is:",
+      "options": [
+        "+4",
+        "+2",
+        "+6",
+        "−4"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    },
+    {
+      "id": "33d3a6d73a42",
+      "stem": "The oxidation number of sulphur in SO₂ is:",
+      "options": [
+        "+2",
+        "+6",
+        "−4",
+        "+4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    },
+    {
+      "id": "749929108500",
+      "stem": "The oxidation number of carbon in CO₂ is:",
+      "options": [
+        "+2",
+        "−4",
+        "+6",
+        "+4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:c7-oxidation-number",
+      "family": "gen-chemistry-c7-oxidation-number"
+    }
+  ]
+}

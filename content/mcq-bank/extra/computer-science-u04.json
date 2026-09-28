@@ -1,0 +1,2230 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "1a1acf8b4fd7",
+      "stem": "Which best describes the fundamental difference between nominal and ordinal data?",
+      "options": [
+        "Nominal data is numerical while ordinal data is categorical",
+        "Nominal data has no meaningful order while ordinal data has a ranking",
+        "Nominal data can be counted while ordinal data cannot",
+        "Nominal data is quantitative while ordinal data is qualitative"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "40b61ad7ace4",
+      "stem": "In Big Data, which combination of V's identifies the three core characteristics?",
+      "options": [
+        "Volume, Value, Validity",
+        "Volume, Velocity, Variety",
+        "Volume, Veracity, Variability",
+        "Volume, Value, Volatility"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "248133c248df",
+      "stem": "A data scientist has student grades (A, B, C, D, F), blood types (A, B, AB, O) and daily temperatures (35 °C, 28 °C, 42 °C). How are they correctly classified?",
+      "options": [
+        "Grades and blood types are nominal; temperatures are ordinal",
+        "Grades are ordinal; blood types are nominal; temperatures are continuous",
+        "Grades are discrete; blood types are ordinal; temperatures are continuous",
+        "All three are nominal"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c9927d370f10",
+      "stem": "Which scenario correctly illustrates the difference between primary and secondary data?",
+      "options": [
+        "A researcher records satellite weather data vs. analyzes data another scientist collected",
+        "A company collects its own customer feedback vs. uses government census data",
+        "A student records observations from an experiment vs. uses data from a published paper",
+        "All of the above"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ff1552498ec0",
+      "stem": "A dataset is a collection of related records, while a system managing many such collections with relationships and controls is a database. Which option explains the difference?",
+      "options": [
+        "A dataset is always larger than a database",
+        "A database holds organized collections of data in multiple datasets or tables managed by a DBMS",
+        "A dataset needs a DBMS while a database does not",
+        "A database is unstructured while a dataset is structured"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a3fb8ebad5b1",
+      "stem": "A company moved from separate files to a system that reduced duplication and improved data management. Which statement describes the history of databases?",
+      "options": [
+        "File systems were developed after databases",
+        "The first DBMS appeared in the 1960s to overcome the limits of file management systems",
+        "Non-relational databases came before relational ones",
+        "Databases were built mainly for personal computing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f3b789efda50",
+      "stem": "A scientist records the number of students in a class and the temperature of a city. Which statement correctly contrasts these two kinds of data?",
+      "options": [
+        "Discrete data can be subdivided while continuous data cannot",
+        "Discrete data has countable values while continuous data can take any value between two points",
+        "Discrete data is always qualitative",
+        "Continuous data can only take whole numbers"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bceede344b6c",
+      "stem": "A social media platform must store huge amounts of unstructured posts, images and comments without fixed table structures. Which database system suits this best?",
+      "options": [
+        "Relational DBMS",
+        "Non-relational (NoSQL) DBMS",
+        "File management system",
+        "Data warehouse"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3344e922d808",
+      "stem": "A researcher turns a large dataset into charts to discover hidden relationships, unusual values and changing patterns. What is the purpose of data visualization here?",
+      "options": [
+        "It can only show numbers",
+        "It only makes reports look better",
+        "It reveals patterns, trends and outliers graphically",
+        "It removes the need for any analysis"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5bedaad48615",
+      "stem": "A company uses collection, cleaning, analysis and algorithms that learn from data automatically. How are Data Science and Machine Learning related?",
+      "options": [
+        "Machine Learning is a branch of Data Science that lets systems learn from data",
+        "Data Science is a small part of Machine Learning",
+        "They are unrelated fields",
+        "Machine Learning only stores data"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "624bd8bdbffd",
+      "stem": "What is the correct sequence of steps in predictive analysis?",
+      "options": [
+        "Data collection → pattern identification → future prediction → historical analysis",
+        "Data collection → historical analysis → pattern identification → future prediction",
+        "Pattern identification → data collection → historical analysis → future prediction",
+        "Historical analysis → future prediction → data collection → pattern identification"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c143b711bc18",
+      "stem": "Which correctly describes Natural Language Processing (NLP)?",
+      "options": [
+        "Data visualization and predictive analytics",
+        "The interaction between human language and computers, including chatbots and sentiment analysis",
+        "Only speech recognition without text",
+        "Mathematical modelling without language understanding"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "9f906897f1f7",
+      "stem": "Which DBMS classification is correct based on how data is stored?",
+      "options": [
+        "Relational DBMS uses key-value pairs while NoSQL uses tables",
+        "Relational DBMS stores data in tables while NoSQL uses forms such as key-value pairs",
+        "Both store data only in tables",
+        "Relational DBMS is never used in data science"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "37bb2ab7da7a",
+      "stem": "What is the correct interpretation of summary statistics?",
+      "options": [
+        "They only include mean and mode",
+        "They give a quick overview such as minimum, maximum, mean and standard deviation",
+        "They are only for categorical data",
+        "They replace data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "32fe6b000e9a",
+      "stem": "Which statement correctly distinguishes data mining from data science?",
+      "options": [
+        "Data mining is broader than data science",
+        "Data mining discovers patterns in existing datasets, while data science is more comprehensive",
+        "Data mining uses advanced algorithms while data science uses only basic statistics",
+        "They are identical"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "7aa443700271",
+      "stem": "Which is the correct classification of data collection methods?",
+      "options": [
+        "Interviews and experiments are secondary methods",
+        "Surveys and questionnaires are primary methods",
+        "Published sources are primary methods",
+        "Focus groups are secondary methods"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "73809201569b",
+      "stem": "Which is NOT a valid storage method for large-scale data?",
+      "options": [
+        "Relational databases",
+        "Distributed file systems",
+        "Manual file storage without any structure",
+        "Cloud-based storage"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a0c45df9cfaa",
+      "stem": "What does the \"Volume\" characteristic of Big Data mean?",
+      "options": [
+        "The speed at which data is generated",
+        "The amount of data being processed",
+        "The variety of data types",
+        "The accuracy of data"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c353d3363596",
+      "stem": "A supermarket chain has five years of daily sales, customer footfall, product categories and weather data, and wants to plan what to stock each season. Which data science application fits best?",
+      "options": [
+        "Sentiment analysis of reviews",
+        "Demand forecasting from historical sales patterns",
+        "Social media marketing analysis",
+        "Employee performance evaluation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5a609473c9eb",
+      "stem": "A transport company collects GPS data, traffic patterns and delivery times (in hours) for 50 trucks. What type of data are the delivery times in hours?",
+      "options": [
+        "Nominal",
+        "Ordinal",
+        "Continuous quantitative",
+        "Discrete qualitative"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e70969827851",
+      "stem": "A health survey of 1000 people records age, blood pressure, disease diagnosis (yes/no), education level (primary/secondary/graduate/postgraduate) and city. Which variable is ordinal?",
+      "options": [
+        "Age in years",
+        "Disease diagnosis (yes/no)",
+        "Education level",
+        "City of residence"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "1244db953bf7",
+      "stem": "A bank's team uses past transactions, customer profiles and known fraud cases to spot suspicious patterns in real time. Which concept is being applied?",
+      "options": [
+        "Natural Language Processing",
+        "Recommendation systems",
+        "Fraud detection through pattern analysis",
+        "Social media sentiment analysis"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "baf4b5d065e0",
+      "stem": "During a flu outbreak, a hospital hands out questionnaires to patients and interviews healthcare workers. Which data collection method is this?",
+      "options": [
+        "Primary data collection",
+        "Secondary data collection",
+        "Statistical modelling",
+        "Web scraping"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "594a8e53493b",
+      "stem": "A university stores Student ID, Name, Department, GPA (0.0–4.0), Enrollment year and Courses. What type of data is \"Department\"?",
+      "options": [
+        "Ordinal",
+        "Nominal",
+        "Discrete",
+        "Continuous"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3cb7786a1d5a",
+      "stem": "A dataset holds favourite colour (red, blue...), income bracket (low, medium, high), number of siblings and daily step count. Which pair is correctly matched with its data type?",
+      "options": [
+        "Favourite colour – continuous; income bracket – ordinal",
+        "Favourite colour – nominal; income bracket – ordinal",
+        "Number of siblings – continuous; step count – discrete",
+        "Income bracket – nominal; step count – continuous"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "341be1325957",
+      "stem": "A company wants to analyze feedback from social media posts, product reviews and support calls to understand customer satisfaction. Which component suits this best?",
+      "options": [
+        "Predictive analytics",
+        "Natural Language Processing",
+        "Data mining",
+        "Big Data processing only"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "18c237217733",
+      "stem": "A supermarket records \"Items purchased\" as Groceries, Electronics, Clothing, Groceries, Groceries. This variable is:",
+      "options": [
+        "Continuous data",
+        "Ordinal data",
+        "Nominal data",
+        "Discrete quantitative data"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "42d1b6518fd7",
+      "stem": "An e-commerce company suggests products based on browsing history, purchases and ratings from millions of customers. Which technique is this?",
+      "options": [
+        "Fraud detection",
+        "Predictive maintenance",
+        "Recommendation systems",
+        "Sentiment analysis"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f9dfe181e663",
+      "stem": "A research team records seismic readings every second from 200 sensors. The sensor readings represent which data collection method?",
+      "options": [
+        "Secondary data collection",
+        "Primary data collection through sensors",
+        "Data from published sources",
+        "Government records"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "031f0ca01188",
+      "stem": "A logistics company tracks the location, speed, fuel use and delivery status of 1000 vehicles in real time to optimize routes and predict delays. Which combination of applications fits best?",
+      "options": [
+        "Route optimization and demand forecasting only",
+        "Route optimization, real-time tracking and load balancing",
+        "Sentiment analysis and social media monitoring",
+        "Image recognition and video processing"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a596a9bd0d9d",
+      "stem": "What is data?",
+      "options": [
+        "A collection of facts or information",
+        "A type of computer program",
+        "A mathematical equation",
+        "A graphical representation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "5b87d2c9488a",
+      "stem": "What is the purpose of data analytics?",
+      "options": [
+        "To collect data",
+        "To analyze data and extract meaningful insights",
+        "To create hardware devices",
+        "To write computer programs"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "0a78b5dd286a",
+      "stem": "Which of the following is an example of data?",
+      "options": [
+        "A computer program",
+        "Temperature readings in an experiment",
+        "A programming language",
+        "A mathematical formula"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "a381352dc4c7",
+      "stem": "What is data science?",
+      "options": [
+        "A branch of computer hardware",
+        "An interdisciplinary field that uses mathematics, statistics and machine learning to analyze data",
+        "A type of programming language",
+        "A method for creating graphical designs"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ffec38d45af3",
+      "stem": "Which of the following is a key component of data science?",
+      "options": [
+        "Data collection",
+        "Data cleaning",
+        "Data visualization",
+        "All of the above"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "0fa2bb13baa5",
+      "stem": "What is the purpose of data visualization?",
+      "options": [
+        "To collect data",
+        "To clean data",
+        "To represent data graphically for better understanding",
+        "To write computer programs"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "fc2214173b59",
+      "stem": "Which of the following is used in data science to build predictive models?",
+      "options": [
+        "Data collection",
+        "Machine learning",
+        "Data cleaning",
+        "Data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "48124c345ee4",
+      "stem": "What is the role of domain knowledge in data science?",
+      "options": [
+        "To write computer programs",
+        "To understand the specific field and interpret data effectively",
+        "To clean data",
+        "To collect data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "c0fa9b48c277",
+      "stem": "Which of the following is an example of qualitative data?",
+      "options": [
+        "Temperature readings",
+        "Survey responses about preferences",
+        "Sales numbers",
+        "Website traffic statistics"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "e0c4147de76e",
+      "stem": "What is the final goal of data science?",
+      "options": [
+        "To collect data",
+        "To clean data",
+        "To make informed decisions using insights from data",
+        "To write computer programs"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "150f5d22343a",
+      "stem": "What is a dataset?",
+      "options": [
+        "A single piece of data",
+        "A structured collection of related data",
+        "A type of machine learning algorithm",
+        "A graphical representation of data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "53980e65d4f4",
+      "stem": "What is the purpose of statistics in data science?",
+      "options": [
+        "To predict future events",
+        "To analyze the frequency of past events",
+        "To create graphical representations",
+        "To clean data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ce333a118ac9",
+      "stem": "Which of the following is a subset of machine learning?",
+      "options": [
+        "Data mining",
+        "Deep learning",
+        "Data visualization",
+        "Big Data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "fc4f9a79c4eb",
+      "stem": "What is the primary focus of data mining?",
+      "options": [
+        "To create graphical representations",
+        "To discover patterns and relationships in datasets",
+        "To predict future events",
+        "To clean data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "0dc53911c4ce",
+      "stem": "What is Big Data?",
+      "options": [
+        "A type of machine learning algorithm",
+        "Handling large volumes of data",
+        "A graphical representation of data",
+        "A type of data cleaning technique"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "213b6675232c",
+      "stem": "What is predictive analysis?",
+      "options": [
+        "Analyzing past events",
+        "Predicting future trends based on historical data",
+        "Cleaning data",
+        "Creating graphical representations"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "a2aac8c3ee4b",
+      "stem": "What is Natural Language Processing (NLP)?",
+      "options": [
+        "The study of interaction between human language and computers",
+        "A type of data visualization technique",
+        "A subset of data mining",
+        "A type of machine learning algorithm"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "50ed98d2f66f",
+      "stem": "Which of the following is an example of unstructured data?",
+      "options": [
+        "Tables",
+        "Databases",
+        "Audio files",
+        "Spreadsheets"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "321392eff130",
+      "stem": "What is the role of mathematics in data science?",
+      "options": [
+        "To clean data",
+        "To solve problems and interpret complex data",
+        "To create graphical representations",
+        "To collect data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "8364653958b4",
+      "stem": "Which of the following is an application of deep learning?",
+      "options": [
+        "Data cleaning",
+        "Image recognition",
+        "Data visualization",
+        "Data mining"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "909f6ebf2a6c",
+      "stem": "Which of the following is an example of a recommendation system?",
+      "options": [
+        "Predicting flight delays",
+        "Suggesting movies on Netflix",
+        "Detecting credit card fraud",
+        "Analyzing customer reviews"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "f82c56e00e74",
+      "stem": "What is sentiment analysis used for?",
+      "options": [
+        "To predict future trends",
+        "To identify customer sentiment (positive, negative or neutral)",
+        "To create graphical representations",
+        "To clean data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "3b12414e24b9",
+      "stem": "Which industry uses data science to optimize shipping routes?",
+      "options": [
+        "Healthcare",
+        "Finance",
+        "Transportation",
+        "Marketing"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "177277155100",
+      "stem": "Which of the following is an application of data science in healthcare?",
+      "options": [
+        "Predicting disease outbreaks",
+        "Recommending products",
+        "Detecting credit card fraud",
+        "Creating promotional offers"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "7d06bc077086",
+      "stem": "What is the purpose of fraud detection in data science?",
+      "options": [
+        "To predict future trends",
+        "To identify unusual patterns or behaviors",
+        "To create graphical representations",
+        "To clean data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "4608602d94af",
+      "stem": "Which of the following is an example of a business problem solved by data science?",
+      "options": [
+        "Choosing the best shipping routes",
+        "Writing computer programs",
+        "Creating hardware devices",
+        "Designing websites"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b066c831b69a",
+      "stem": "What is the primary use of machine learning in data science?",
+      "options": [
+        "To clean data",
+        "To build models for automation and pattern recognition",
+        "To create graphical representations",
+        "To collect data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "96f05fd42628",
+      "stem": "Which of the following is an example of sentiment analysis?",
+      "options": [
+        "Predicting election outcomes",
+        "Analyzing customer reviews to determine satisfaction",
+        "Forecasting revenue",
+        "Detecting fraudulent transactions"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "6dd9b01c65a6",
+      "stem": "How does data science help in the consumer goods industry?",
+      "options": [
+        "By predicting stock market trends",
+        "By optimizing inventory based on demand forecasting",
+        "By creating recommendation systems",
+        "By detecting fraudulent transactions"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "2d2818e440ef",
+      "stem": "What is the role of data science in logistics companies?",
+      "options": [
+        "To predict election outcomes",
+        "To analyze customer sentiment",
+        "To optimize delivery routes and reduce costs",
+        "To create graphical representations"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "00781fc4d4ef",
+      "stem": "Which of the following is an application of data science in e-commerce?",
+      "options": [
+        "Route optimization",
+        "Fraud detection",
+        "Market sentiment analysis",
+        "Quality control"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "1bd661883bcb",
+      "stem": "What is the primary use of data science in stock markets?",
+      "options": [
+        "To optimize inventory",
+        "To predict stock price movements and manage risks",
+        "To create recommendation systems",
+        "To analyze customer reviews"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "85a3cceb6da9",
+      "stem": "How does data science improve quality control in industries?",
+      "options": [
+        "By predicting stock market trends",
+        "By analyzing historical data to identify defects and improve processes",
+        "By creating recommendation systems",
+        "By optimizing delivery routes"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "039f3a975b19",
+      "stem": "What is qualitative data?",
+      "options": [
+        "Data that describes objects or groups using categories",
+        "Data that deals with numeric values",
+        "Data that can be divided into smaller units",
+        "Data that represents measurements"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ca89ed2a28fe",
+      "stem": "Which of the following is an example of ordinal data?",
+      "options": [
+        "Gender",
+        "Test grades (A, B, C)",
+        "City names",
+        "Colors"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "50d25d499aa2",
+      "stem": "What is nominal data?",
+      "options": [
+        "Data with a specific order or ranking",
+        "Data without any order, grouped into categories",
+        "Data that can be counted",
+        "Data that represents measurements"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "76c2d6dc1ab7",
+      "stem": "Which of the following is an example of nominal data?",
+      "options": [
+        "Military ranks",
+        "Temperature",
+        "Gender",
+        "Number of students"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "d5d58e2f0a1e",
+      "stem": "What is quantitative data?",
+      "options": [
+        "Data that describes objects or groups using categories",
+        "Data that deals with numeric values",
+        "Data that cannot be computed mathematically",
+        "Data that represents categories"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "df2d537a352b",
+      "stem": "Which of the following is an example of discrete data?",
+      "options": [
+        "Weight",
+        "Temperature",
+        "Number of employees",
+        "Height"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "608ff4899b23",
+      "stem": "What is continuous data?",
+      "options": [
+        "Data that can only take specific, countable values",
+        "Data that can take any value within a range",
+        "Data that describes categories",
+        "Data that represents rankings"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b8ae26074359",
+      "stem": "Which of the following is an example of continuous data?",
+      "options": [
+        "Number of computers",
+        "Number of tickets sold",
+        "Daily wind speed",
+        "Number of employees"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "364f477864b0",
+      "stem": "What is the key difference between ordinal and nominal data?",
+      "options": [
+        "Ordinal data has a specific order, while nominal data does not",
+        "Ordinal data is numeric, while nominal data is categorical",
+        "Ordinal data is continuous, while nominal data is discrete",
+        "Ordinal data is countable, while nominal data is not"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "bc49aa497f06",
+      "stem": "Which of the following is an example of quantitative data?",
+      "options": [
+        "Colors",
+        "Gender",
+        "Height",
+        "City names"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "741791a64a93",
+      "stem": "What is primary data?",
+      "options": [
+        "Data collected from existing sources",
+        "Data collected directly from original sources",
+        "Data collected from websites",
+        "Data collected from sensors"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b9be90e63e0c",
+      "stem": "Which of the following is a method of collecting primary data?",
+      "options": [
+        "Analyzing tweets",
+        "Using seismic data",
+        "Conducting surveys",
+        "Accessing databases"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "2c86385965e9",
+      "stem": "What is secondary data?",
+      "options": [
+        "Data collected directly from original sources",
+        "Data collected from previously recorded sources",
+        "Data collected through experiments",
+        "Data collected through observations"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "d658137190b0",
+      "stem": "Which of the following is an example of secondary data?",
+      "options": [
+        "Survey results",
+        "Interview transcripts",
+        "Tweets about a trending topic",
+        "Experimental data"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "9bced3067283",
+      "stem": "What is the purpose of using sensors as a data source?",
+      "options": [
+        "To conduct surveys",
+        "To collect real-time data (e.g. seismic data)",
+        "To analyze customer preferences",
+        "To perform experiments"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b11408c93055",
+      "stem": "Which of the following is an example of primary data collection?",
+      "options": [
+        "Analyzing sales data from a company's database",
+        "Conducting interviews with employees",
+        "Collecting tweets about a political event",
+        "Using seismic data from sensors"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ed27e33e5521",
+      "stem": "What is a database?",
+      "options": [
+        "A single collection of data",
+        "A type of dataset",
+        "An organized collection of multiple datasets or tables",
+        "A software for data visualization"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "7cf699ef1977",
+      "stem": "What is the role of a Database Management System (DBMS)?",
+      "options": [
+        "To analyze data",
+        "To collect data",
+        "To visualize data",
+        "To create, modify and retrieve data from a database"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "d43af3c60da2",
+      "stem": "Which of the following is a relational DBMS?",
+      "options": [
+        "MongoDB",
+        "Cassandra",
+        "MySQL",
+        "All of the above"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "6fd88ff4c51b",
+      "stem": "Which of the following is a non-relational (NoSQL) DBMS?",
+      "options": [
+        "Oracle",
+        "MS-Access",
+        "MongoDB",
+        "IBM Db2"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "1a0aa963a21b",
+      "stem": "Which of the following is an example of a dataset?",
+      "options": [
+        "A database with tables for customers and orders",
+        "A DBMS like MySQL",
+        "A CSV file of student grades",
+        "A NoSQL database like MongoDB"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "624011640262",
+      "stem": "What was used to store data before the advent of databases?",
+      "options": [
+        "Spreadsheets",
+        "File management systems",
+        "Cloud storage",
+        "Data warehouses"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "09c17f6498b4",
+      "stem": "What is the primary role of databases in data science?",
+      "options": [
+        "To visualize data",
+        "To analyze data",
+        "To store, manage and retrieve large volumes of data",
+        "To collect data"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "3f74ff53ca5c",
+      "stem": "Why have databases become popular in recent years?",
+      "options": [
+        "Due to the rapid increase in data generation",
+        "Due to the dependence of data science on data",
+        "Both (a) and (b)",
+        "None of the above"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "f049667f54be",
+      "stem": "How do supermarkets use databases and data science?",
+      "options": [
+        "To create graphical representations of data",
+        "To manage inventory and analyze customer shopping patterns",
+        "To collect data from social media",
+        "To perform sentiment analysis"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "beee40f29f97",
+      "stem": "What is one key advantage of databases over file management systems?",
+      "options": [
+        "They are unstructured",
+        "They are less secure",
+        "They cannot handle large volumes of data",
+        "They provide efficient data storage and retrieval"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "a6f70b17450d",
+      "stem": "What ensures data accuracy and consistency in databases?",
+      "options": [
+        "Data visualization",
+        "File management systems",
+        "Constraints and validation rules",
+        "Spreadsheets"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "3eadce23de5e",
+      "stem": "Which of the following is NOT a benefit of databases in data science?",
+      "options": [
+        "Efficient data storage",
+        "Data accessibility for multiple users",
+        "Data integrity",
+        "Unstructured data management"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "cc4333a937e5",
+      "stem": "What is the first step in a statistical investigation?",
+      "options": [
+        "Data analysis",
+        "Data visualization",
+        "Data collection",
+        "Data interpretation"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "f90a26f6809d",
+      "stem": "Which of the following is an example of secondary data from official records?",
+      "options": [
+        "Survey results",
+        "Interview transcripts",
+        "Sensor data",
+        "Government census data"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "828d1d50b45f",
+      "stem": "What is the role of an investigator in data collection?",
+      "options": [
+        "To analyze data",
+        "To conduct the statistical inquiry",
+        "To visualize data",
+        "To interpret data"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "3a27886ef293",
+      "stem": "What are enumerators?",
+      "options": [
+        "People who analyze data",
+        "People who interpret data",
+        "People who assist in collecting data",
+        "People who visualize data"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "e2ac4e1d4e5c",
+      "stem": "Which of the following is a method of secondary data collection?",
+      "options": [
+        "Interviews",
+        "Observations",
+        "Experiments",
+        "Online databases"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "dfada2e05a64",
+      "stem": "What is the advantage of using secondary data?",
+      "options": [
+        "It is always more accurate than primary data",
+        "It is easier and faster to collect",
+        "It requires direct interaction with respondents",
+        "It is always up-to-date"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "5bdd920b46c5",
+      "stem": "What is a data warehouse?",
+      "options": [
+        "A decentralized storage system",
+        "A type of NoSQL database",
+        "A centralized repository for integrated data",
+        "A cloud-based storage system"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b2c98ac912cf",
+      "stem": "Which of the following is an example of a distributed file system?",
+      "options": [
+        "MySQL",
+        "Hadoop Distributed File System (HDFS)",
+        "MongoDB",
+        "Blockchain"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "d37b7b54f7ab",
+      "stem": "What is cloud-based data storage?",
+      "options": [
+        "Storing data on physical servers",
+        "Storing data on decentralized networks",
+        "Storing data in relational databases",
+        "Storing data on remote servers accessed via the internet"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "7e5920515436",
+      "stem": "Which of the following is a visual element used in data visualization?",
+      "options": [
+        "Charts",
+        "Databases",
+        "Sensors",
+        "Blockchain"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "563410acaa28",
+      "stem": "What is summary statistics?",
+      "options": [
+        "A graphical representation of data",
+        "A method of storing data",
+        "A quick overview of the characteristics of a dataset",
+        "A type of database"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "e4a20c653f67",
+      "stem": "Which of the following is NOT a metric in summary statistics?",
+      "options": [
+        "Mean",
+        "Standard deviation",
+        "Total number of values",
+        "Data visualization"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "b7300c32a35f",
+      "stem": "What is blockchain in data storage?",
+      "options": [
+        "A centralized storage system",
+        "A type of relational database",
+        "A cloud-based storage system",
+        "A decentralized and secure method of storing data"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "c4f73704feae",
+      "stem": "What are the three Vs of Big Data?",
+      "options": [
+        "Volume, Velocity, Variety",
+        "Volume, Value, Variety",
+        "Velocity, Value, Volume",
+        "Variety, Value, Velocity"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "9617d3f2762e",
+      "stem": "What does \"Volume\" in Big Data refer to?",
+      "options": [
+        "The speed of data generation",
+        "The types of data",
+        "The amount of data",
+        "The value of data"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "6604b61452d0",
+      "stem": "What does \"Velocity\" in Big Data refer to?",
+      "options": [
+        "The amount of data",
+        "The types of data",
+        "The value of data",
+        "The speed at which data is generated and processed"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ef6c6c1ebad8",
+      "stem": "What does \"Variety\" in Big Data refer to?",
+      "options": [
+        "The amount of data",
+        "The speed of data generation",
+        "The different types and formats of data",
+        "The value of data"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "9b0c6c69911b",
+      "stem": "Which of the following is an example of unstructured data found online?",
+      "options": [
+        "Database tables",
+        "JSON files",
+        "XML files",
+        "Social media posts"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "e1f9eb433564",
+      "stem": "Which of the following is an example of semi-structured data?",
+      "options": [
+        "Database tables",
+        "JSON files",
+        "Social media posts",
+        "Images"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "8f33d8d0b907",
+      "stem": "What is a challenge of Big Data?",
+      "options": [
+        "Traditional tools can easily process it",
+        "It has low volume",
+        "It requires advanced tools and technologies",
+        "It is always structured"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "a48e96b0bb16",
+      "stem": "Which of the following is a tool used for Big Data processing?",
+      "options": [
+        "MySQL",
+        "Hadoop",
+        "MS-Access",
+        "Oracle"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "cc34a42c2423",
+      "stem": "What is an application of Big Data in healthcare?",
+      "options": [
+        "Customer behavior analysis",
+        "Fraud detection",
+        "Traffic optimization",
+        "Disease prediction"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "fe052e2c5ccf",
+      "stem": "What is an application of Big Data in finance?",
+      "options": [
+        "Disease prediction",
+        "Traffic optimization",
+        "Fraud detection",
+        "Personalized marketing"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "2c4a06412c8f",
+      "stem": "Which of the following is NOT a characteristic of Big Data?",
+      "options": [
+        "Volume",
+        "Velocity",
+        "Variety",
+        "Simplicity"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "0aaddb339d49",
+      "stem": "What is the importance of real-time processing in Big Data?",
+      "options": [
+        "To handle large volumes of data",
+        "To process data at high speed",
+        "To manage different types of data",
+        "To store data securely"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "0168ad0b9d08",
+      "stem": "When did the term Big Data emerge?",
+      "options": [
+        "1990s",
+        "Early 2000s",
+        "2010s",
+        "1980s"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "72f3d88a695b",
+      "stem": "What is Hadoop?",
+      "options": [
+        "A social media platform",
+        "An open-source framework for storing and analyzing big datasets",
+        "A type of IoT device",
+        "A machine learning algorithm"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "015d56eed37c",
+      "stem": "What role does IoT play in Big Data?",
+      "options": [
+        "It reduces the amount of data generated",
+        "It replaces traditional data storage methods",
+        "It simplifies data analysis",
+        "It connects devices to the internet, generating more data"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "8149f0f226ce",
+      "stem": "What is the primary benefit of Big Data in product development?",
+      "options": [
+        "Reducing costs",
+        "Simplifying data storage",
+        "Anticipating customer demand and creating data-driven products",
+        "Eliminating the need for customer feedback"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "85de38bc210b",
+      "stem": "What is predictive maintenance?",
+      "options": [
+        "A strategy to reduce customer complaints",
+        "A proactive maintenance strategy using data analysis to predict equipment failures",
+        "A method to increase data storage capacity",
+        "A technique to improve data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "1814a2e5c34e",
+      "stem": "How does Big Data improve customer experience?",
+      "options": [
+        "By reducing the need for customer feedback",
+        "By eliminating customer complaints",
+        "By simplifying product design",
+        "By analyzing data from social media, web visits and call logs"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "482317e15f34",
+      "stem": "What is the significance of machine learning in Big Data?",
+      "options": [
+        "It reduces the amount of data generated",
+        "It produces more data for analysis",
+        "It replaces traditional data storage methods",
+        "It simplifies data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "519312e1f594",
+      "stem": "Which of the following is an example of predictive maintenance?",
+      "options": [
+        "Analyzing customer feedback",
+        "Simplifying product design",
+        "Reducing data storage costs",
+        "Predicting equipment failures using data analysis"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "842e7e8c8bce",
+      "stem": "How does Big Data enhance cybersecurity?",
+      "options": [
+        "By reducing the amount of data generated",
+        "By simplifying data storage",
+        "By identifying unusual patterns and anomalies to detect fraud",
+        "By eliminating the need for customer feedback"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "85ecfbb50e89",
+      "stem": "What is a major challenge of Big Data related to data quality?",
+      "options": [
+        "Ensuring compatibility between tools",
+        "Poor-quality data leading to errors and inefficiency",
+        "Rapid growth of data",
+        "Data integration"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "bd40d09b6a82",
+      "stem": "What is the challenge of data security and privacy in Big Data?",
+      "options": [
+        "Ensuring compatibility between tools",
+        "Rapid growth of data",
+        "Data integration",
+        "Protecting massive datasets from unauthorized access"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "7b209748d272",
+      "stem": "What is the impact of poor data quality in Big Data?",
+      "options": [
+        "Improved decision-making",
+        "Enhanced data security",
+        "Errors, inefficiency and misleading insights",
+        "Simplified data integration"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "5708e382ba4d",
+      "stem": "What is the challenge of ensuring compatibility between Big Data tools called?",
+      "options": [
+        "Data quality",
+        "Data security and privacy",
+        "Data integration",
+        "Big Data tool selection"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "785568a0e9e1",
+      "stem": "What is the challenge of harmonizing diverse data formats called?",
+      "options": [
+        "Data quality",
+        "Rapid growth of data",
+        "Data security and privacy",
+        "Data integration"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "d71ac7b26442",
+      "stem": "What is the role of Big Data in media and entertainment?",
+      "options": [
+        "To reduce the need for content creation",
+        "To predict viewer preferences and target ads effectively",
+        "To eliminate the need for audience analysis",
+        "To simplify data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "de7766343134",
+      "stem": "How does Big Data enhance IoT capabilities?",
+      "options": [
+        "By reducing the amount of data generated",
+        "By eliminating the need for IoT devices",
+        "By providing meaningful insights from IoT-generated data",
+        "By simplifying data storage"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "7992024148af",
+      "stem": "How does Big Data help governments?",
+      "options": [
+        "By increasing system errors",
+        "By eliminating the need for data analysis",
+        "By simplifying data storage",
+        "By understanding citizen needs and improving services"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ebf4928515cb",
+      "stem": "Which of the following is an application of Big Data in agriculture?",
+      "options": [
+        "Predicting machine failures",
+        "Optimizing crop yields and resource usage",
+        "Personalizing customer experiences",
+        "Detecting cyber threats"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "f84edbf7833d",
+      "stem": "What is the role of Big Data in cybersecurity?",
+      "options": [
+        "To reduce the need for data analysis",
+        "To eliminate the need for data storage",
+        "To simplify data visualization",
+        "To detect and prevent cyber threats"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "cf4b18dfebcb",
+      "stem": "How does Big Data improve e-commerce?",
+      "options": [
+        "By reducing the need for customer data",
+        "By eliminating the need for product recommendations",
+        "By personalizing recommendations and improving customer experience",
+        "By simplifying data storage"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "fb48db7c2bd2",
+      "stem": "What is the application of Big Data in weather forecasting?",
+      "options": [
+        "To reduce the need for data analysis",
+        "To predict weather patterns accurately",
+        "To eliminate the need for weather sensors",
+        "To simplify data storage"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "a030a6db7118",
+      "stem": "Which of the following is NOT an application of Big Data?",
+      "options": [
+        "Reducing the need for data analysis",
+        "Predictive maintenance in manufacturing",
+        "Fraud detection in government",
+        "Personalized customer experience in IoT"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    },
+    {
+      "id": "ba79c151b497",
+      "stem": "What is the challenge of data integration in Big Data?",
+      "options": [
+        "Harmonizing diverse data formats and structures",
+        "Ensuring compatibility between tools",
+        "Protecting data from unauthorized access",
+        "Handling increasing data volumes"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Chapter 4 MCQ's - Class 9th computer.pdf"
+    }
+  ]
+}

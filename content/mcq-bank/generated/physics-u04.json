@@ -1,0 +1,720 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "dd5731a45337",
+      "stem": "A force of 25 N acts at a perpendicular distance of 0.4 m from a pivot. The torque is:",
+      "options": [
+        "25.4 N m",
+        "62.5 N m",
+        "0.016 N m",
+        "10 N m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "209901207f4d",
+      "stem": "A mechanic pushes with 100 N at right angles to the end of a spanner 0.2 m long. The turning effect (torque) is:",
+      "options": [
+        "100.2 N m",
+        "20 N m",
+        "0.002 N m",
+        "500 N m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "d7da0f85ba87",
+      "stem": "A mechanic pushes with 80 N at right angles to the end of a spanner 0.4 m long. The turning effect (torque) is:",
+      "options": [
+        "200 N m",
+        "80.4 N m",
+        "32 N m",
+        "0.005 N m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "50cdb3350d5b",
+      "stem": "A mechanic pushes with 40 N at right angles to the end of a spanner 0.4 m long. The turning effect (torque) is:",
+      "options": [
+        "16 N m",
+        "40.4 N m",
+        "100 N m",
+        "0.01 N m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "b393b7b390f8",
+      "stem": "A force of 50 N acts at a perpendicular distance of 0.25 m from a pivot. The torque is:",
+      "options": [
+        "0.005 N m",
+        "12.5 N m",
+        "50.25 N m",
+        "200 N m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "818ee3b88751",
+      "stem": "A mechanic pushes with 25 N at right angles to the end of a spanner 0.4 m long. The turning effect (torque) is:",
+      "options": [
+        "62.5 N m",
+        "0.016 N m",
+        "10 N m",
+        "25.4 N m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-torque",
+      "variant_of": "b1c2c952b644"
+    },
+    {
+      "id": "727c3727a4c1",
+      "stem": "A 400 N child sits 1 m from the pivot of a see-saw. To balance it, a 200 N child must sit on the other side at a distance of:",
+      "options": [
+        "1 m",
+        "2 m",
+        "0.5 m",
+        "3 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "943f2cd51fd8",
+      "stem": "A 500 N child sits 1.5 m from the pivot of a see-saw. To balance it, a 250 N child must sit on the other side at a distance of:",
+      "options": [
+        "0.75 m",
+        "1.5 m",
+        "3 m",
+        "4 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "5ad65d399863",
+      "stem": "A 600 N child sits 2 m from the pivot of a see-saw. To balance it, a 400 N child must sit on the other side at a distance of:",
+      "options": [
+        "3 m",
+        "4 m",
+        "2 m",
+        "1.33 m"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "7d3800535916",
+      "stem": "A 600 N child sits 1.5 m from the pivot of a see-saw. To balance it, a 400 N child must sit on the other side at a distance of:",
+      "options": [
+        "1.5 m",
+        "1 m",
+        "3.25 m",
+        "2.25 m"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "28b0965d6758",
+      "stem": "A 600 N child sits 1.5 m from the pivot of a see-saw. To balance it, a 300 N child must sit on the other side at a distance of:",
+      "options": [
+        "1.5 m",
+        "0.75 m",
+        "3 m",
+        "4 m"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "ff815811de38",
+      "stem": "A 600 N child sits 2 m from the pivot of a see-saw. To balance it, a 300 N child must sit on the other side at a distance of:",
+      "options": [
+        "2 m",
+        "4 m",
+        "5 m",
+        "1 m"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-seesaw",
+      "variant_of": "b757eac75cfe"
+    },
+    {
+      "id": "f3c10c2dfd11",
+      "stem": "A 2 kg ball moves in a circle of radius 5 m at a speed of 10 m/s. The centripetal force on it is:",
+      "options": [
+        "8 N",
+        "1000 N",
+        "40 N",
+        "4 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "bf0d74236987",
+      "stem": "A 0.5 kg ball moves in a circle of radius 4 m at a speed of 8 m/s. The centripetal force on it is:",
+      "options": [
+        "1 N",
+        "128 N",
+        "2 N",
+        "8 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "5a9c4c4ea7af",
+      "stem": "A 4 kg ball moves in a circle of radius 4 m at a speed of 6 m/s. The centripetal force on it is:",
+      "options": [
+        "576 N",
+        "6 N",
+        "9 N",
+        "36 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "dbf8bd316190",
+      "stem": "A 1 kg ball moves in a circle of radius 2 m at a speed of 4 m/s. The centripetal force on it is:",
+      "options": [
+        "8 N",
+        "32 N",
+        "2 N",
+        "4 N"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "f8dd7e1cbeec",
+      "stem": "A 3 kg ball moves in a circle of radius 2 m at a speed of 4 m/s. The centripetal force on it is:",
+      "options": [
+        "6 N",
+        "24 N",
+        "12 N",
+        "96 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "4f1fdf3d8263",
+      "stem": "A 2 kg ball moves in a circle of radius 3 m at a speed of 6 m/s. The centripetal force on it is:",
+      "options": [
+        "4 N",
+        "24 N",
+        "8 N",
+        "216 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-centripetal",
+      "variant_of": "b7ba5c3412e0"
+    },
+    {
+      "id": "6ab9f94b21a2",
+      "stem": "A batsman's bat exerts a force of 500 N on a ball for 0.2 s. The impulse given to the ball is:",
+      "options": [
+        "500.2 N s",
+        "0.0004 N s",
+        "2500 N s",
+        "100 N s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "797da70c331c",
+      "stem": "A batsman's bat exerts a force of 500 N on a ball for 0.5 s. The impulse given to the ball is:",
+      "options": [
+        "250 N s",
+        "0.001 N s",
+        "500.5 N s",
+        "1000 N s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "e61e69629c87",
+      "stem": "A batsman's bat exerts a force of 50 N on a ball for 0.05 s. The impulse given to the ball is:",
+      "options": [
+        "1000 N s",
+        "0.001 N s",
+        "50.05 N s",
+        "2.5 N s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "a3edbabde1f5",
+      "stem": "A batsman's bat exerts a force of 100 N on a ball for 0.2 s. The impulse given to the ball is:",
+      "options": [
+        "0.002 N s",
+        "500 N s",
+        "20 N s",
+        "100.2 N s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "2cc91b8b97fd",
+      "stem": "A batsman's bat exerts a force of 50 N on a ball for 0.1 s. The impulse given to the ball is:",
+      "options": [
+        "500 N s",
+        "5 N s",
+        "50.1 N s",
+        "0.002 N s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "3b29d5544685",
+      "stem": "A batsman's bat exerts a force of 40 N on a ball for 0.05 s. The impulse given to the ball is:",
+      "options": [
+        "0.0013 N s",
+        "40.05 N s",
+        "2 N s",
+        "800 N s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-impulse",
+      "family": "gen-physics-p4-impulse"
+    },
+    {
+      "id": "da1c71db1c2c",
+      "stem": "The velocity of a 0.5 kg ball changes from 5 m/s to 15 m/s in 0.1 s. The average force on the ball is:",
+      "options": [
+        "75 N",
+        "50 N",
+        "0.5 N",
+        "100 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "988e9af67cdc",
+      "stem": "The velocity of a 0.5 kg ball changes from 2 m/s to 5 m/s in 0.2 s. The average force on the ball is:",
+      "options": [
+        "17.5 N",
+        "12.5 N",
+        "7.5 N",
+        "0.3 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "4b6cb48715ed",
+      "stem": "The velocity of a 2 kg ball changes from 2 m/s to 4 m/s in 0.5 s. The average force on the ball is:",
+      "options": [
+        "2 N",
+        "24 N",
+        "8 N",
+        "16 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "b2ad7a9eab23",
+      "stem": "The velocity of a 1 kg ball changes from 4 m/s to 9 m/s in 0.2 s. The average force on the ball is:",
+      "options": [
+        "45 N",
+        "1 N",
+        "65 N",
+        "25 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "51340aea7624",
+      "stem": "The velocity of a 4 kg ball changes from 3 m/s to 6 m/s in 2 s. The average force on the ball is:",
+      "options": [
+        "24 N",
+        "6 N",
+        "18 N",
+        "12 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "145a108c8428",
+      "stem": "The velocity of a 0.5 kg ball changes from 5 m/s to 13 m/s in 2 s. The average force on the ball is:",
+      "options": [
+        "4.5 N",
+        "2 N",
+        "8 N",
+        "3.25 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-force-from-momentum",
+      "family": "gen-physics-p4-force-from-momentum"
+    },
+    {
+      "id": "4d9689dac570",
+      "stem": "A gun of mass 3 kg fires a bullet of mass 20 g at 300 m/s. The recoil speed of the gun is:",
+      "options": [
+        "2 m/s",
+        "20 m/s",
+        "2000 m/s",
+        "100 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "01e18c185c5d",
+      "stem": "A gun of mass 5 kg fires a bullet of mass 10 g at 500 m/s. The recoil speed of the gun is:",
+      "options": [
+        "1 m/s",
+        "10 m/s",
+        "100 m/s",
+        "1000 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "2d2335aac149",
+      "stem": "A gun of mass 4 kg fires a bullet of mass 20 g at 400 m/s. The recoil speed of the gun is:",
+      "options": [
+        "2000 m/s",
+        "20 m/s",
+        "2 m/s",
+        "100 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "2b051112afe7",
+      "stem": "A gun of mass 4 kg fires a bullet of mass 50 g at 200 m/s. The recoil speed of the gun is:",
+      "options": [
+        "2500 m/s",
+        "2.5 m/s",
+        "25 m/s",
+        "50 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "88fc26c14530",
+      "stem": "A gun of mass 5 kg fires a bullet of mass 25 g at 400 m/s. The recoil speed of the gun is:",
+      "options": [
+        "80 m/s",
+        "2 m/s",
+        "20 m/s",
+        "2000 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "d2464d62dcd1",
+      "stem": "A gun of mass 2 kg fires a bullet of mass 10 g at 400 m/s. The recoil speed of the gun is:",
+      "options": [
+        "20 m/s",
+        "200 m/s",
+        "2000 m/s",
+        "2 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "template:p4-recoil",
+      "family": "gen-physics-p4-recoil"
+    },
+    {
+      "id": "0e5c988c2456",
+      "stem": "A 2 kg trolley moving at 8 m/s hits a stationary 2 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "16 m/s",
+        "5 m/s",
+        "4 m/s",
+        "8 m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    },
+    {
+      "id": "f3d612458d2d",
+      "stem": "A 2 kg trolley moving at 10 m/s hits a stationary 8 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "5 m/s",
+        "2.5 m/s",
+        "10 m/s",
+        "2 m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    },
+    {
+      "id": "ef0458153cdb",
+      "stem": "A 2 kg trolley moving at 8 m/s hits a stationary 6 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "2 m/s",
+        "4 m/s",
+        "8 m/s",
+        "2.67 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    },
+    {
+      "id": "676e91558661",
+      "stem": "A 2 kg trolley moving at 4 m/s hits a stationary 6 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "1 m/s",
+        "2 m/s",
+        "4 m/s",
+        "1.33 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    },
+    {
+      "id": "fe9a297eb8d1",
+      "stem": "A 1 kg trolley moving at 4 m/s hits a stationary 1 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "2 m/s",
+        "4 m/s",
+        "8 m/s",
+        "3 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    },
+    {
+      "id": "ed5c48831a40",
+      "stem": "A 1 kg trolley moving at 2 m/s hits a stationary 1 kg trolley and they move off together. Their common speed is:",
+      "options": [
+        "1 m/s",
+        "2 m/s",
+        "4 m/s",
+        "3 m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:p4-stick-together",
+      "family": "gen-physics-p4-stick-together"
+    }
+  ]
+}

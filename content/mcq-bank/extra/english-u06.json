@@ -1,0 +1,470 @@
+{
+  "subject": "English",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "6e80bda8aa5f",
+      "stem": "\"Addiction\" means:",
+      "options": [
+        "a strong, harmful dependence on something",
+        "a healthy hobby",
+        "a kind of medicine",
+        "a sports activity"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "e4b252610207",
+      "stem": "\"Peer pressure\" means:",
+      "options": [
+        "influence from people of your own age group",
+        "pressure of air",
+        "pressure from teachers only",
+        "a medical test"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "15fa2560834f",
+      "stem": "A friend offers Usman a cigarette and says everyone in the group smokes. Refusing firmly and walking away shows:",
+      "options": [
+        "resisting peer pressure",
+        "peer pressure",
+        "addiction",
+        "rudeness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "f5b1cf4ac473",
+      "stem": "\"Rehabilitation\" means:",
+      "options": [
+        "helping a person recover and return to normal life",
+        "punishing a person",
+        "selling drugs",
+        "a kind of exercise"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "d3b14a1fa374",
+      "stem": "Choose the synonym of \"harmful\":",
+      "options": [
+        "Damaging",
+        "Useful",
+        "Safe",
+        "Healthy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "e1341ea54263",
+      "stem": "Choose the antonym of \"healthy\":",
+      "options": [
+        "Fit",
+        "Strong",
+        "Unhealthy",
+        "Active"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "a3a6995907ad",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Adiction",
+        "Addiction",
+        "Addicshun",
+        "Adicttion"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "a0c6a2971cee",
+      "stem": "In \"Drugs destroy lives\", the verb is:",
+      "options": [
+        "Drugs",
+        "destroy",
+        "lives",
+        "none"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "5d1d49d64f9c",
+      "stem": "Choose the passive voice of \"Drugs ruin many young lives.\":",
+      "options": [
+        "Many young lives are ruined by drugs.",
+        "Many young lives were ruined by drugs.",
+        "Many young lives ruined by drugs.",
+        "Many young lives are ruining by drugs."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "8a08e02b614a",
+      "stem": "Fill in the blank: We must say no ___ drugs.",
+      "options": [
+        "at",
+        "to",
+        "on",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "96c2261fa071",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Drugs is dangerous.",
+        "Drugs are dangerous.",
+        "Drugs be dangerous.",
+        "Drugs was dangerous."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "129f6894010c",
+      "stem": "Which word is an adjective?",
+      "options": [
+        "Danger",
+        "Dangerous",
+        "Dangerously",
+        "Endanger"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "d0346253c50e",
+      "stem": "A teenager starts missing school, loses interest in family and becomes secretive after mixing with a new group. What should his family do first?",
+      "options": [
+        "Talk to him calmly and seek help",
+        "Ignore the change",
+        "Punish him without asking",
+        "Give him more money"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "e350b0521c48",
+      "stem": "Choose the synonym of \"abstain\":",
+      "options": [
+        "Refrain",
+        "Indulge",
+        "Continue",
+        "Consume"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "133b7342cc3e",
+      "stem": "Choose the indirect speech of: The doctor said, \"Drugs damage the brain.\"",
+      "options": [
+        "The doctor said that drugs damaged the brain.",
+        "The doctor said that drugs damage the brain.",
+        "The doctor says that drugs damaged the brain.",
+        "The doctor said drugs damaging the brain."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "4268041322b0",
+      "stem": "Which sentence is in the present perfect tense?",
+      "options": [
+        "He quits smoking.",
+        "He has quit smoking.",
+        "He quit smoking.",
+        "He will quit smoking."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "11bbcddc8960",
+      "stem": "Choose the correct article: Drug abuse is ___ serious problem.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "86111afac4e4",
+      "stem": "Choose the antonym of \"dependent\":",
+      "options": [
+        "Reliant",
+        "Independent",
+        "Addicted",
+        "Attached"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "3113b81358aa",
+      "stem": "The prefix \"anti-\" in \"anti-drug campaign\" means:",
+      "options": [
+        "against",
+        "for",
+        "before",
+        "after"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "67a6b7c5392e",
+      "stem": "Fill in the blank: He was addicted ___ drugs for years.",
+      "options": [
+        "on",
+        "to",
+        "with",
+        "at"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "89a6108639b7",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "Drugs harm your body, mind, and future.",
+        "Drugs harm your body mind and future.",
+        "Drugs harm, your body, mind and future",
+        "drugs harm your body, mind, and future."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "6599e931e851",
+      "stem": "Choose the synonym of \"consequence\":",
+      "options": [
+        "Result",
+        "Cause",
+        "Reason",
+        "Beginning"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "b7e14f7f9567",
+      "stem": "Choose the word that is a noun:",
+      "options": [
+        "Recover",
+        "Recovery",
+        "Recovering",
+        "Recovered"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "bc9ed2415576",
+      "stem": "A student joins a sports club and makes new friends there after leaving a group that used drugs. This shows:",
+      "options": [
+        "choosing a healthy lifestyle",
+        "peer pressure",
+        "addiction",
+        "withdrawal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "420a40859792",
+      "stem": "Choose the correct form: If you ___ drugs, you will ruin your health.",
+      "options": [
+        "take",
+        "took",
+        "taken",
+        "taking"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "834c99e0e148",
+      "stem": "Choose the synonym of \"awareness\":",
+      "options": [
+        "Knowledge",
+        "Ignorance",
+        "Sleep",
+        "Doubt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "41e27f52dace",
+      "stem": "\"Withdrawal symptoms\" are:",
+      "options": [
+        "the unpleasant effects felt when a person stops taking an addictive drug",
+        "the benefits of exercise",
+        "signs of good health",
+        "symptoms of a cold"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "5ed1f439a7f3",
+      "stem": "Which sentence is an exclamation?",
+      "options": [
+        "Drugs are harmful.",
+        "Stay away from drugs.",
+        "What a terrible habit drug abuse is!",
+        "Are drugs harmful?"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    },
+    {
+      "id": "fbdb9159765c",
+      "stem": "Choose the plural of \"life\":",
+      "options": [
+        "lifes",
+        "lives",
+        "lifs",
+        "livies"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 6)"
+    }
+  ]
+}

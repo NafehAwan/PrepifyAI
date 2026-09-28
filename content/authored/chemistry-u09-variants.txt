@@ -1,0 +1,13 @@
+# subject: Chemistry
+# chapter: 9
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+In a closed bottle of water, the rate of evaporation becomes equal to the rate of condensation. The system has reached: | melting | boiling | equilibrium | freezing | C | s e v:7f2bbe2112e9
+Blue anhydrous cobalt(II) chloride paper is dipped in water. It turns: | pink | green | white | black | A | v:a3de346ecc97
+White anhydrous copper sulphate turns blue when a liquid is added to it. This shows the liquid contains: | water | oxygen | copper | salt | A | s v:6b1db0a43f39
+At dynamic equilibrium: | both reactions stop | the forward and reverse reactions continue at equal rates | only products are present | only the forward reaction occurs | B | v:321770fcf098
+Heating blue copper sulphate crystals turns them white because they lose: | sulphur | oxygen | water of crystallization | copper | C | e v:1dcdaad6c607
+A reaction mixture in a closed flask keeps the same colour and pressure for an hour. This suggests that: | the reaction has reached equilibrium | all reactants are used up | the reaction is irreversible | no products formed | A | s v:250ede59f20b

@@ -1,0 +1,14 @@
+# subject: Physics
+# chapter: 3
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Two teams pull a rope with equal forces in opposite directions and the rope does not move. This is because: | no force acts | the resultant force is zero | friction is absent | the rope has no mass | B | s v:987867e2d03b
+A body moves with constant velocity. The net force acting on it is: | maximum | zero | increasing | equal to its weight | B | v:49980edc90fc
+To make a resting football start moving, the forces on it must be: | balanced | unbalanced | zero | internal only | B | e v:45e3c4c7cfe4
+An astronaut travels from Earth to the Moon. Which of these stays the same? | Weight | Mass | The pull of gravity | The reading on a spring balance | B | s v:1155f5c9ffbf
+A cricketer pulls his hands back while catching a fast ball. This reduces the force because it: | increases the time taken to stop the ball | increases the ball's mass | increases the ball's speed | removes friction | A | s v:1299f1b42622
+A net unbalanced force always changes a body's: | mass | velocity | volume | colour | B | v:c8302f092997
+In deep space, far from any planet or star, an object's weight becomes: | the same as on Earth | zero | double | negative | B | h v:623d5f305c5c

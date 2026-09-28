@@ -1,0 +1,516 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "2019f3f4b47f",
+      "stem": "In simplest form, √180 is:",
+      "options": [
+        "36√5",
+        "5√6",
+        "6√6",
+        "6√5"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "d83590ca19b9",
+      "stem": "In simplest form, √54 is:",
+      "options": [
+        "6√3",
+        "9√6",
+        "3√7",
+        "3√6"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "068c8bc88646",
+      "stem": "In simplest form, √112 is:",
+      "options": [
+        "4√8",
+        "16√7",
+        "4√7",
+        "7√4"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "686a858a7b5f",
+      "stem": "In simplest form, √63 is:",
+      "options": [
+        "9√7",
+        "3√7",
+        "3√8",
+        "7√3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "5d25cad270de",
+      "stem": "In simplest form, √45 is:",
+      "options": [
+        "5√3",
+        "9√5",
+        "3√5",
+        "3√6"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "737c2af17da6",
+      "stem": "In simplest form, √150 is:",
+      "options": [
+        "25√6",
+        "6√5",
+        "5√7",
+        "5√6"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-surd",
+      "family": "gen-maths-m1-surd"
+    },
+    {
+      "id": "a3afb7381967",
+      "stem": "x² × x³ is equal to:",
+      "options": [
+        "x¹",
+        "x⁶",
+        "2x⁵",
+        "x⁵"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "b638f9e07bf9",
+      "stem": "(y⁴)⁴ is equal to:",
+      "options": [
+        "4y⁴",
+        "y⁸",
+        "y¹⁶",
+        "y²⁵⁶"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "67ead18a39ed",
+      "stem": "a⁶ × a⁴ is equal to:",
+      "options": [
+        "a²⁴",
+        "a²",
+        "2a¹⁰",
+        "a¹⁰"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "2e7227d5b1ee",
+      "stem": "x¹¹ ÷ x⁵ is equal to:",
+      "options": [
+        "x¹⁶",
+        "x⁶",
+        "x⁵⁵",
+        "x²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "af223066c7ab",
+      "stem": "a⁶ × a³ is equal to:",
+      "options": [
+        "2a⁹",
+        "a³",
+        "a¹⁸",
+        "a⁹"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "51dc3c79f100",
+      "stem": "x⁶ ÷ x⁴ is equal to:",
+      "options": [
+        "x²",
+        "x³",
+        "x²⁴",
+        "x¹⁰"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-exponent-laws",
+      "family": "gen-maths-m1-exponent-laws"
+    },
+    {
+      "id": "b21b2b3e5d16",
+      "stem": "Rationalising the denominator, 10/√5 becomes:",
+      "options": [
+        "2√5",
+        "3√5",
+        "10√5",
+        "√5/10"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "f8abc7887945",
+      "stem": "Rationalising the denominator, 12/√3 becomes:",
+      "options": [
+        "4√3",
+        "√3/12",
+        "12√3",
+        "5√3"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "4755d538a972",
+      "stem": "Rationalising the denominator, 7/√7 becomes:",
+      "options": [
+        "√7/7",
+        "7√7",
+        "√7",
+        "2√7"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "4a57d59be814",
+      "stem": "Rationalising the denominator, 20/√5 becomes:",
+      "options": [
+        "4√5",
+        "5√5",
+        "20√5",
+        "√5/20"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "a7456afbb3e8",
+      "stem": "Rationalising the denominator, 10/√2 becomes:",
+      "options": [
+        "10√2",
+        "6√2",
+        "5√2",
+        "√2/10"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "c04f7d4f4dc3",
+      "stem": "Rationalising the denominator, 2/√2 becomes:",
+      "options": [
+        "2/2",
+        "2√2",
+        "√2",
+        "√2/2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-rationalise",
+      "family": "gen-maths-m1-rationalise"
+    },
+    {
+      "id": "4a4a082f2810",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "1/3",
+        "5/12",
+        "1/15",
+        "9/25"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "83ba8bf497b2",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "3/11",
+        "7/16",
+        "3/7",
+        "2/3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "29d9b7b18b1b",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "6/7",
+        "1/8",
+        "7/9",
+        "2/3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "e7caefc23e20",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "6/7",
+        "3/16",
+        "2/3",
+        "8/11"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "d0ec7c908418",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "11/12",
+        "1/6",
+        "17/25",
+        "1/3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "3b1e0fb700b0",
+      "stem": "Which of these fractions has a terminating decimal expansion?",
+      "options": [
+        "11/12",
+        "1/3",
+        "37/40",
+        "6/7"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-terminating",
+      "variant_of": "a72e579d1e43"
+    },
+    {
+      "id": "19176f81ae1e",
+      "stem": "The recurring decimal 0.111… (the digit 1 repeating) as a fraction is:",
+      "options": [
+        "1/9",
+        "1/10",
+        "11/100",
+        "1/99"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    },
+    {
+      "id": "ba5c480cb7e7",
+      "stem": "The recurring decimal 0.262626… (the digits 26 repeating) as a fraction is:",
+      "options": [
+        "26/999",
+        "26/99",
+        "26/100",
+        "13/45"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    },
+    {
+      "id": "2fc3a52c48e8",
+      "stem": "The recurring decimal 0.777… (the digit 7 repeating) as a fraction is:",
+      "options": [
+        "7/10",
+        "77/100",
+        "7/99",
+        "7/9"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    },
+    {
+      "id": "841051cc52f8",
+      "stem": "The recurring decimal 0.888… (the digit 8 repeating) as a fraction is:",
+      "options": [
+        "88/100",
+        "8/10",
+        "8/99",
+        "8/9"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    },
+    {
+      "id": "2c9f0f2f2231",
+      "stem": "The recurring decimal 0.121212… (the digits 12 repeating) as a fraction is:",
+      "options": [
+        "12/999",
+        "4/33",
+        "12/100",
+        "2/15"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    },
+    {
+      "id": "d26e61bb7419",
+      "stem": "The recurring decimal 0.333… (the digit 3 repeating) as a fraction is:",
+      "options": [
+        "33/100",
+        "1/3",
+        "3/99",
+        "3/10"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "template:m1-recurring",
+      "family": "gen-maths-m1-recurring"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "subject": "English",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "c37ec512e398",
+      "stem": "Choose the indirect speech of: The teacher said, \"The sun rises in the east.\"",
+      "options": [
+        "The teacher said that the sun rises in the east.",
+        "The teacher said that the sun rose in the east always.",
+        "The teacher says that the sun rose in the east.",
+        "The teacher said that the sun will rise in the east."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "75202d606105"
+    },
+    {
+      "id": "d3280551315c",
+      "stem": "A poet writes, \"Her smile was as bright as the sun.\" Which device is this?",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Personification",
+        "Rhyme"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "eedc09739965"
+    },
+    {
+      "id": "1c30cba00e5d",
+      "stem": "\"The wind howled angrily at the window\" gives the wind a human feeling. This is:",
+      "options": [
+        "personification",
+        "simile",
+        "alliteration",
+        "a question"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a7faa7117f04"
+    },
+    {
+      "id": "5cf8d02e715c",
+      "stem": "Choose the passive voice of \"The eagle watched the sea.\":",
+      "options": [
+        "The sea is watched by the eagle.",
+        "The sea was watched by the eagle.",
+        "The sea has watched the eagle.",
+        "The sea was watch by the eagle."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6e2c06a64152"
+    },
+    {
+      "id": "fadb73c5157f",
+      "stem": "In \"The Eagle\", the \"azure world\" around the bird is the:",
+      "options": [
+        "blue sky",
+        "green forest",
+        "dark night",
+        "snowy mountain"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6781e9baaea4"
+    },
+    {
+      "id": "daa5d4939234",
+      "stem": "Choose the synonym of \"solitary\":",
+      "options": [
+        "Lonely",
+        "Crowded",
+        "Busy",
+        "Cheerful"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "438c2d9da94e"
+    },
+    {
+      "id": "42ef8a67ff4f",
+      "stem": "Fill in the blank: Pakistan is famous ___ its mountains.",
+      "options": [
+        "for",
+        "of",
+        "at",
+        "by"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4f43b8dd54d2"
+    },
+    {
+      "id": "addb6e0ac73d",
+      "stem": "\"He clasps the crag with crooked hands\" describes the eagle's claws as hands. This is an example of:",
+      "options": [
+        "personification",
+        "simile",
+        "alliteration only",
+        "a question"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "0450496afddc"
+    }
+  ]
+}

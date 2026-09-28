@@ -1,0 +1,36 @@
+# subject: Computer Science
+# chapter: 7
+# source: MCQs chapter # (1-7) final done new.pdf
+# answer_source: derived
+# difficulty: medium
+
+Which characteristic of an entrepreneur is the ability to keep going through failures and setbacks while staying focused on long-term goals? | Desire for immediate feedback | Self-reliance | Determination (grit) | Future orientation | C
+An entrepreneur shifts economic resources from an area of scarcity to one of higher productivity and greater yield. This mainly shows: | Risk-taking ability | Innovative thinking | Resource allocation skills | Organizing capability | C | s
+What distinguishes entrepreneurs from ordinary business owners in how they treat risk? | They avoid all risk | They take moderate, calculated risks rather than wild gambles | They rely completely on others to decide | They focus only on short-term profit | B
+Many successful entrepreneurs failed several times before succeeding. Which trait explains why they kept trying? | High level of energy | Confidence in their ability to succeed | Skill at organizing | Valuing achievement over money | B | s
+In Design Thinking, the phase where entrepreneurs build a sample model to test their ideas is: | Empathize | Define | Ideate | Prototype | D | e
+Design Thinking is "iterative and non-linear". This means: | The steps must be followed strictly in order | Teams keep reviewing and improving their ideas based on results | Only one solution is developed at a time | The process ends after testing | B
+Which Design Thinking phase involves coming up with as many ideas as possible to solve the problem statement? | Empathize | Define | Ideate | Test | C | e
+A business plan acts as a "game plan" for running the business successfully during start-up. Which goal of a business plan is this? | Attracting capital | Guiding the entrepreneur during launch | Comparing results against targets | Finding the main risks | B
+In the SMART framework, a "time-bound" goal means: | The goal is about time management | A specific timeframe is set for achieving the result | The goal is measured in hours | Time is the only consideration | B | e
+LivePlan, PlanMaker and Canva are examples of: | Business financing options | Business planning software and tools | Government business licences | Marketing strategies | B | e
+When demand for a product is high and supply is limited, an entrepreneur can: | Decrease the price to attract customers | Increase the price and so the profit margin | Keep the same price regardless | Stop production to increase scarcity | B | s
+Which is the formula for the selling price? | Cost of production × overheads | Cost of production + overheads + profit | Cost of production − overheads + profit | Cost of production + overheads − profit | B
+The people who need a product or service and are willing to pay for it are called: | Competitors | Suppliers | Customers | Distributors | C | e
+Businesses that provide similar products or services are called: | Partners | Competitors | Customers | Investors | B | e
+Which Sustainable Development Goal is about ensuring healthy lives and well-being for all at all ages? | Goal 1: No Poverty | Goal 2: Zero Hunger | Goal 3: Good Health and Well-being | Goal 4: Quality Education | C
+"Decent Work and Economic Growth" is which Sustainable Development Goal? | Goal 6 | Goal 7 | Goal 8 | Goal 9 | C
+The skill group that includes creativity, problem-solving and decision-making is: | Conducting oneself | Thinking skills | Interacting with people | Safety and survival skills | B
+An entrepreneur studies a community's needs and identifies products or services to solve its difficulties. This demonstrates: | Self-reliance | Risk-taking | Opportunity recognition | Financial management | C | s
+Mr. Sharma runs a bakery with 10 employees. Mrs. Verma bakes cakes at home and sells them online by herself. Which statement is true? | Only Mr. Sharma is an entrepreneur because he hires people | Only Mrs. Verma is an entrepreneur because she works alone | Both are entrepreneurs because they organize resources and bear risk to make a profit | Neither is, because baking is a traditional job | C | s h
+"Innovation" in entrepreneurship means: | Copying a foreign product exactly | Doing what everyone else does, but cheaper | Introducing a new method, product or idea that creates value | Focusing only on money | C
+Which scenario carries the HIGHEST level of risk? | Working as a cashier in a grocery store | Investing one's life savings in a new restaurant in an untested location | Buying government bonds | Freelancing for established clients | B | s
+An entrepreneur who lacks financial literacy is most likely to fail because of: | Poor product design | Mismanaging cash flow and being unable to budget costs | Excellent customer service | Too many employees | B | s
+Ahmed, 22, has designed logos for friends for three years, notices that local small businesses use outdated logos, and starts his own design business with savings of PKR 50,000. Which trait is he mainly showing by starting his own business? | Preference for moderate risk | Desire for responsibility | Skill at organizing | High level of energy | B | s h
+Ahmed starts a graphic design business because he noticed that small businesses in his community lack professional logos. Which step in developing a business idea does this relate to? | Identifying a need in the community | Calculating production costs | Analyzing competitors | Setting profit margins | A | s
+Ahmed wants to use Design Thinking to develop his new graphic design service. Which phase should he begin with? | Prototype | Test | Empathize | Ideate | C | s
+Improving entrepreneurial skills and knowledge through training and structured programmes is called: | Human resource management | Entrepreneurship development | Financial auditing | Market saturation | B
+A business that sells tangible goods such as paints or cars is mainly a: | Service business | Product business (manufacturing or trading) | Hybrid business | Non-governmental organization | B
+Four friends start a food delivery service: one cooks, one markets, one handles logistics and one manages money. Dividing the work by each person's skill shows which characteristic? | Desire for immediate feedback | Self-reliance | Skill at organizing | Future orientation | C | s h
+Four friends starting a food delivery service use Canva for their menu, WordPress for their website and LivePlan for their business proposal. They are using: | Government support programmes | Business planning software and tools | Financial institutions | Marketing agencies | B | s
+Friends planning a food delivery service survey how many people in their city would use it. They are trying to estimate their: | Profit margin | Market size | Production costs | Competitors' prices | B | s

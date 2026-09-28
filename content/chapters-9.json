@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "note": "FBISE Class 9 chapter/unit lists, transcribed from the student's own textbook contents pages. Chapters exist to tag MCQs by unit; there is no chapter UI.",
+    "class_level": 9
+  },
+  "subjects": [
+    {
+      "subject": "Chemistry",
+      "chapters": [
+        "Nature of Science in Chemistry",
+        "Matter",
+        "Atomic Structure",
+        "Periodic Table and Periodicity of Properties",
+        "Chemical Bonding",
+        "Stoichiometry",
+        "Electrochemistry",
+        "Energetics",
+        "Chemical Equilibrium",
+        "Acids, Bases and Salts",
+        "Environmental Chemistry — Air",
+        "Environmental Chemistry — Water",
+        "Organic Chemistry",
+        "Hydrocarbons",
+        "Biochemistry"
+      ]
+    },
+    {
+      "subject": "Computer Science",
+      "chapters": [
+        "Computer Systems",
+        "Computational Thinking & Algorithms",
+        "Programming Fundamentals",
+        "Data and Analysis",
+        "Application of Computer Science",
+        "Impacts of Computing",
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "subject": "Maths",
+      "chapters": [
+        "Real Numbers",
+        "Logarithms",
+        "Sets and Relations",
+        "Factorization and Algebraic Manipulation",
+        "Linear Equations and Inequalities",
+        "Trigonometry and Bearing",
+        "Coordinate Geometry",
+        "Geometry of Straight Lines",
+        "Geometry and Polygons",
+        "Practical Geometry",
+        "Basic Statistics"
+      ]
+    },
+    {
+      "subject": "English",
+      "chapters": [
+        "Hazrat Muhammad Rasulullah ﷺ — A Mercy for All Creation",
+        "The Art of Muslim Women's Entrepreneurship",
+        "Modern World and Age of Digital Globalization",
+        "Nothing is Impossible — The Construction of Spectacular Brooklyn Bridge",
+        "5 of Jeff Bezos's Best Lessons for Success",
+        "Say No to Drugs",
+        "Mowing by Robert Frost",
+        "The Eagle by Alfred Tennyson",
+        "Travel and Tourism",
+        "Two Mothers Remembered by Joann Snow Duncanson",
+        "The Metamorphosis",
+        "Good Health and Well Being"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "6911a547c18b",
+      "stem": "The instrument used to measure atmospheric pressure is the:",
+      "options": [
+        "thermometer",
+        "barometer",
+        "hygrometer",
+        "ammeter"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2e5a4ffdee9a"
+    },
+    {
+      "id": "d969b830f88d",
+      "stem": "Absolute zero (0 K) is the temperature at which:",
+      "options": [
+        "water freezes",
+        "the particles of a substance have the least possible energy",
+        "water boils",
+        "mercury melts"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "97a9c1bff371"
+    },
+    {
+      "id": "9fd0d20354a6",
+      "stem": "An ice cube floats on water because ice is:",
+      "options": [
+        "denser than water",
+        "less dense than water",
+        "heavier than water",
+        "hotter than water"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "75b016b64316"
+    },
+    {
+      "id": "1174a850b529",
+      "stem": "The upper fixed point (steam point) of the Celsius scale is:",
+      "options": [
+        "0 °C",
+        "37 °C",
+        "100 °C",
+        "212 °C"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2efcfd23ffda"
+    },
+    {
+      "id": "8c88aab1a805",
+      "stem": "The density of a substance is its:",
+      "options": [
+        "mass per unit volume",
+        "volume per unit mass",
+        "weight per unit area",
+        "mass times volume"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "74e54bf1f2b7"
+    }
+  ]
+}

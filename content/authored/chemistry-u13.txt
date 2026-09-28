@@ -1,0 +1,36 @@
+# subject: Chemistry
+# chapter: 13
+# source: Written for Prepify from the FBISE Class 9 Chemistry syllabus (Organic Chemistry)
+# answer_source: authored
+# difficulty: medium
+
+Organic chemistry is the study of compounds of: | nitrogen | carbon | oxygen | sulphur | B | e
+The ability of carbon atoms to join with each other to form long chains and rings is called: | isomerism | catenation | polymerization | hydrolysis | B
+Carbon forms four covalent bonds because it is: | monovalent | divalent | trivalent | tetravalent | D | e
+Which of these is NOT usually classed as an organic compound? | Methane | Ethanol | Carbon dioxide | Glucose | C
+The main natural sources of organic compounds are: | coal, petroleum, natural gas and living things | sand and rocks | sea salt and air | metals and ores | A | e
+The functional group of an alcohol is: | –OH | –COOH | –CHO | –NH₂ | A
+The functional group –COOH belongs to: | alcohols | aldehydes | carboxylic acids | ketones | C
+The functional group –CHO belongs to: | ketones | aldehydes | esters | amines | B
+A homologous series is a family of compounds in which each member differs from the next by: | –CH₂– | –OH | –H₂O | –CO₂ | A
+Members of a homologous series have: | the same general formula and similar chemical properties | different functional groups | identical boiling points | no carbon | A
+Compounds with the same molecular formula but different structures are called: | isotopes | isomers | allotropes | polymers | B
+Butane (C₄H₁₀) and isobutane (C₄H₁₀) are examples of: | isotopes | isomers | allotropes | homologues with different formulas | B | h
+The prefix "prop-" in an organic name shows a chain of: | 1 carbon | 2 carbons | 3 carbons | 4 carbons | C | e
+The prefix "eth-" shows a chain of: | 1 carbon | 2 carbons | 3 carbons | 5 carbons | B | e
+Heating coal strongly in the absence of air is called: | fractional distillation | destructive distillation | combustion | cracking | B
+Destructive distillation of coal produces coke, coal gas and: | coal tar | crude oil | natural gas only | sand | A
+Crude petroleum is separated into useful parts such as petrol and diesel by: | filtration | fractional distillation | crystallization | chromatography | B
+A chemist finds that a liquid turns blue litmus red and contains the –COOH group. The compound is most likely: | an alcohol | a carboxylic acid | an alkane | an ester | B | s
+A formula that shows every atom and bond in a molecule is a: | molecular formula | structural formula | empirical formula | condensed name | B
+Vinegar contains which organic compound? | Ethanol | Ethanoic (acetic) acid | Methane | Glucose | B | e
+Ethanol belongs to which class of compounds? | Alcohols | Alkanes | Carboxylic acids | Ketones | A | e
+Esters are known for their: | pleasant fruity smells | sour taste | ability to conduct electricity | magnetic properties | A
+A student finds a compound that contains only carbon and hydrogen. It is a: | carbohydrate | hydrocarbon | carboxylic acid | protein | B | s e
+Why are there millions of organic compounds but far fewer inorganic ones? | Carbon forms stable chains, rings and multiple bonds | Carbon is the most abundant element | Carbon is a metal | Organic compounds are all gases | A | h
+Most organic compounds are: | ionic and high-melting | covalent and have relatively low melting points | metals | insoluble in all solvents | B
+Which of these products is made from organic compounds? | Plastics and medicines | Glass | Table salt | Iron nails | A | e
+The functional group in amines is: | –NH₂ | –OH | –COOH | –CHO | A
+A molecule has the condensed formula CH₃CH₂OH. How many carbon atoms does it contain? | 1 | 2 | 3 | 6 | B | s
+The general formula of the alcohol series (alkanols) is: | CₙH₂ₙ₊₁OH | CₙH₂ₙ | CₙH₂ₙ₋₂ | CₙH₂ₙ₊₁COOH | A | h
+In a homologous series, as the chain gets longer, the boiling point generally: | decreases | increases | stays the same | becomes zero | B | h

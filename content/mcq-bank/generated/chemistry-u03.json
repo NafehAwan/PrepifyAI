@@ -1,0 +1,414 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "26e9bdaa98ee",
+      "stem": "A lithium atom has 3 protons and 4 neutrons. Its mass number is:",
+      "options": [
+        "4",
+        "7",
+        "3",
+        "1"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "976a93669e72",
+      "stem": "An atom of sodium has mass number 23 and atomic number 11. The number of neutrons in its nucleus is:",
+      "options": [
+        "34",
+        "23",
+        "11",
+        "12"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "5e1fed18d22b",
+      "stem": "An atom of chlorine has mass number 35 and atomic number 17. The number of neutrons in its nucleus is:",
+      "options": [
+        "35",
+        "17",
+        "52",
+        "18"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "d0c5ed0f5c0d",
+      "stem": "An atom of silicon has mass number 28 and atomic number 14. The number of neutrons in its nucleus is:",
+      "options": [
+        "28",
+        "15",
+        "42",
+        "14"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "1eb89045b297",
+      "stem": "An atom of boron has mass number 11 and atomic number 5. The number of neutrons in its nucleus is:",
+      "options": [
+        "11",
+        "5",
+        "6",
+        "16"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "169609047c2a",
+      "stem": "A carbon atom has 6 protons and 6 neutrons. Its mass number is:",
+      "options": [
+        "18",
+        "6",
+        "12",
+        "13"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-nucleons",
+      "family": "gen-chemistry-c3-nucleons"
+    },
+    {
+      "id": "994a4150794d",
+      "stem": "The electronic configuration of an element with atomic number 17 is:",
+      "options": [
+        "2, 8, 8",
+        "2, 15",
+        "2, 8, 7",
+        "2, 8, 6"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "77c1d4a65f47",
+      "stem": "The electronic configuration of an element with atomic number 18 is:",
+      "options": [
+        "2, 16",
+        "2, 8, 8, 1",
+        "2, 8, 7",
+        "2, 8, 8"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "0acd8a2bec7e",
+      "stem": "The electronic configuration of an element with atomic number 3 is:",
+      "options": [
+        "2, 2",
+        "2, 1",
+        "1, 2",
+        "2"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "d491022a88c5",
+      "stem": "The electronic configuration of an element with atomic number 13 is:",
+      "options": [
+        "2, 11",
+        "2, 8, 4",
+        "2, 8, 3",
+        "2, 8, 2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "2b1dd4290486",
+      "stem": "The electronic configuration of an element with atomic number 6 is:",
+      "options": [
+        "2, 5",
+        "2, 4",
+        "1, 5",
+        "2, 3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "5c0b1a3f18a4",
+      "stem": "The electronic configuration of an element with atomic number 9 is:",
+      "options": [
+        "2, 7",
+        "2, 6",
+        "1, 8",
+        "2, 8"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-configuration",
+      "family": "gen-chemistry-c3-configuration"
+    },
+    {
+      "id": "0ebf46854c1a",
+      "stem": "The atomic number of the element in the Na⁺ ion is 11. How many electrons does the ion have?",
+      "options": [
+        "12",
+        "11",
+        "10",
+        "9"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "f6aab5b13151",
+      "stem": "The atomic number of the element in the Al³⁺ ion is 13. How many electrons does the ion have?",
+      "options": [
+        "11",
+        "13",
+        "10",
+        "16"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "0ad207693f1e",
+      "stem": "The atomic number of the element in the N³⁻ ion is 7. How many electrons does the ion have?",
+      "options": [
+        "4",
+        "11",
+        "10",
+        "7"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "84bcb1efe65d",
+      "stem": "The atomic number of the element in the Mg²⁺ ion is 12. How many electrons does the ion have?",
+      "options": [
+        "10",
+        "14",
+        "12",
+        "11"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "63401a16dadf",
+      "stem": "The atomic number of the element in the Ca²⁺ ion is 20. How many electrons does the ion have?",
+      "options": [
+        "18",
+        "20",
+        "19",
+        "22"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "f95f414d7a9d",
+      "stem": "The atomic number of the element in the O²⁻ ion is 8. How many electrons does the ion have?",
+      "options": [
+        "8",
+        "6",
+        "11",
+        "10"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-ion-electrons",
+      "family": "gen-chemistry-c3-ion-electrons"
+    },
+    {
+      "id": "556094896ad9",
+      "stem": "Boron has atomic number 5. How many valence electrons does its atom have?",
+      "options": [
+        "3",
+        "5",
+        "4",
+        "2"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    },
+    {
+      "id": "21e20f4b2c27",
+      "stem": "Magnesium has atomic number 12. How many valence electrons does its atom have?",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "6"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    },
+    {
+      "id": "4a9faee2b6bc",
+      "stem": "Potassium has atomic number 19. How many valence electrons does its atom have?",
+      "options": [
+        "1",
+        "7",
+        "2",
+        "4"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    },
+    {
+      "id": "fc2f7e2e96d3",
+      "stem": "Beryllium has atomic number 4. How many valence electrons does its atom have?",
+      "options": [
+        "1",
+        "6",
+        "3",
+        "2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    },
+    {
+      "id": "593020716bf4",
+      "stem": "Calcium has atomic number 20. How many valence electrons does its atom have?",
+      "options": [
+        "4",
+        "3",
+        "6",
+        "2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    },
+    {
+      "id": "4b7bdd6b7c53",
+      "stem": "Nitrogen has atomic number 7. How many valence electrons does its atom have?",
+      "options": [
+        "6",
+        "5",
+        "3",
+        "2"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:c3-valence-electrons",
+      "family": "gen-chemistry-c3-valence-electrons"
+    }
+  ]
+}

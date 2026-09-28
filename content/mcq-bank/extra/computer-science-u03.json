@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "97f76a642af4",
+      "stem": "Which of these can be declared as a valid JavaScript variable name without a naming error?",
+      "options": [
+        "2myVariable",
+        "my-variable",
+        "my_variable",
+        "my variable"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f16e45cb1a99",
+      "stem": "The value of a variable can change while a program runs, whereas the value of a constant:",
+      "options": [
+        "can only be changed by special functions",
+        "remains the same throughout the program",
+        "changes automatically with the data type",
+        "can be changed once per minute"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "6e98b004d157",
+      "stem": "What is the output of document.write(15 % 4) in JavaScript?",
+      "options": [
+        "3.75",
+        "4",
+        "3",
+        "1"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "b92c91174383",
+      "stem": "Giving a single name to a collection of related elements of the same data type is called:",
+      "options": [
+        "An array",
+        "A function",
+        "A loop",
+        "A variable"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bba836b36c01",
+      "stem": "Which of these JavaScript operators is NOT a logical operator?",
+      "options": [
+        "&&",
+        "||",
+        "!",
+        "+"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f0017cf3da89",
+      "stem": "What happens when the condition of an if statement is valid but evaluates to false?",
+      "options": [
+        "The program terminates immediately",
+        "Control passes to the statement right after the if block",
+        "The condition is evaluated forever",
+        "A syntax error stops the program"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a7cb8a5e003d",
+      "stem": "A web developer wants a video to work in as many browsers as possible. Which video format should be preferred?",
+      "options": [
+        "AVI",
+        "MOV",
+        "MP4",
+        "WMV"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "7723e867ac4b",
+      "stem": "What is the purpose of the return statement inside a JavaScript function?",
+      "options": [
+        "To stop the whole program",
+        "To print text on the screen",
+        "To send a value back to the caller",
+        "To declare a new variable"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "4444655a463a",
+      "stem": "A page contains <p id=\"intro\">Hello</p>. Which JavaScript statement correctly reaches this paragraph through the DOM?",
+      "options": [
+        "document.getElement(\"intro\")",
+        "document.getElementById(\"intro\")",
+        "document.id(\"intro\")",
+        "document.findById(\"intro\")"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "31265308ffb8",
+      "stem": "In the HTML page <html><head><title>My Page</title></head><body><h1>Welcome</h1></body></html>, the parent of the <title> element in the DOM tree is:",
+      "options": [
+        "<html>",
+        "<body>",
+        "<head>",
+        "<h1>"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bde8534ce3a8",
+      "stem": "Which software development activity focuses on locating and correcting errors after a program has been written?",
+      "options": [
+        "Writing the code for the first time",
+        "Debugging",
+        "Designing the user interface",
+        "Translating the program into machine language"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "7e69692fa844",
+      "stem": "A program runs without syntax errors but produces the wrong output. This is most likely a:",
+      "options": [
+        "Compilation error",
+        "Logical error",
+        "Typing error",
+        "Installation error"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "fda711a785a2",
+      "stem": "How many times does the loop for (let i = 0; i < 3; i++) run?",
+      "options": [
+        "0",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "64918e1c2acf",
+      "stem": "A student writes two sentences on separate lines in the HTML body without any tag between them. How will the page most likely display them?",
+      "options": [
+        "On separate lines",
+        "As a browser error",
+        "On the same line",
+        "With the second sentence hidden"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "bb1624748319",
+      "stem": "Which JavaScript data type is designed to hold the result of a logical expression?",
+      "options": [
+        "Integer",
+        "String",
+        "Float",
+        "Boolean"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ec33165380ad",
+      "stem": "Although HTML uses tags and elements, its main purpose is to:",
+      "options": [
+        "Perform arithmetic calculations",
+        "Define the structure and content of web pages",
+        "Store records in a database",
+        "Run loops and conditions"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "1bd3221f47af",
+      "stem": "Which CSS property changes the background colour of an element?",
+      "options": [
+        "color",
+        "bgcolor",
+        "background-color",
+        "text-color"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "333343382470",
+      "stem": "Which JavaScript method writes text directly into the HTML document?",
+      "options": [
+        "console.log()",
+        "alert()",
+        "document.write()",
+        "prompt()"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "cc1d6cdb3ffb",
+      "stem": "A ticket counter charges 50 if the user's age is 60 or above, and 100 otherwise. Which programming structure suits this logic best?",
+      "options": [
+        "A loop",
+        "An if-else decision",
+        "An array",
+        "A sequential structure"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c4af6131f557",
+      "stem": "A school admits children who are at least 4 years old using the code: var kid_age = 4; if (kid_age > 4) { document.write(\"Admission Granted\"); }. What happens when kid_age is 4?",
+      "options": [
+        "\"Admission Granted\" is printed",
+        "Nothing is printed",
+        "An error occurs because else is missing",
+        "\"Admission Granted\" is printed twice"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "7b8c9a57eb2e",
+      "stem": "A program prints \"Excellent\" if score > 80, else \"Good\" if score > 60. A student scores 75. What is printed?",
+      "options": [
+        "Excellent",
+        "Good",
+        "Nothing",
+        "Error"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "cbbd1dc24b4f",
+      "stem": "A shopping list is stored as cart = ['Book', 'Pen', 'Eraser']. How is the second item (\"Pen\") accessed?",
+      "options": [
+        "cart[1]",
+        "cart[2]",
+        "cart(\"Pen\")",
+        "cart[0]"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3c7da4cc84a4",
+      "stem": "A student wants to display the numbers 1 to 100 on the screen. Which statement is most efficient for this repetitive task?",
+      "options": [
+        "if statement",
+        "do...while loop",
+        "for loop",
+        "switch statement"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f05c807cb3fe",
+      "stem": "In function add(a, b) { return a + b; }, what are a and b called?",
+      "options": [
+        "Return values",
+        "Parameters",
+        "Arrays",
+        "Strings"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f469b03ff6d0",
+      "stem": "In <p> Hello World </p>, what is the role of p?",
+      "options": [
+        "Attribute",
+        "Tag",
+        "Property",
+        "Variable"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "21964910cc16",
+      "stem": "To make all text inside <div id=\"main\">Text</div> blue, which CSS selector targets this div?",
+      "options": [
+        ".main",
+        "#main",
+        "div.main",
+        "*main"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "36a66e362ef8",
+      "stem": "A traffic-light program sets light = \"Green\" and then checks if (light == \"Red\") to print \"Stop\". What happens?",
+      "options": [
+        "It prints \"Go\"",
+        "It prints \"Stop\"",
+        "It prints \"Wait\"",
+        "It does nothing"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "83b555d2fe85",
+      "stem": "A program writes average = sum / totalNumbers to find the average of three numbers. This line represents which programming concept?",
+      "options": [
+        "Input",
+        "Output",
+        "Processing",
+        "Conditional"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "972df260b4a6",
+      "stem": "Your JavaScript runs without any error message but gives a wrong calculation result. What type of error is this?",
+      "options": [
+        "Syntax error",
+        "Logical error",
+        "Reference error",
+        "Compilation error"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ab6d9e2e29ab",
+      "stem": "A page uses <video width=\"500px\" height=\"500px\"><source src=\"video.mp4\" type=\"video/mp4\"></video>. The video shows, but the user cannot pause it or change the volume. What is the most likely reason?",
+      "options": [
+        "The width and height are too large",
+        "The controls attribute is missing from the <video> tag",
+        "The source tag should be outside the <video> tag",
+        "The file should be .avi"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    }
+  ]
+}

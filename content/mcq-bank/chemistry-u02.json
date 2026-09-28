@@ -1,0 +1,888 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "2a05a3c160d7",
+      "stem": "Which state of matter is most likely to be found in stars due to extremely high temperatures?",
+      "options": [
+        "Solid",
+        "Plasma",
+        "Liquid",
+        "Bose-Einstein Condensate"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "b1c8cf9a2c30",
+      "stem": "Which state of matter would have the highest fluidity?",
+      "options": [
+        "Plasma",
+        "Gas",
+        "Solid",
+        "Liquid"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "92d5f75c05c1",
+      "stem": "Which of these is a pure substance composed of only one type of atom?",
+      "options": [
+        "Water",
+        "Air",
+        "Gold",
+        "Brass"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "345d99898525",
+      "stem": "In which of the following is the arrangement of particles the least ordered?",
+      "options": [
+        "Diamond",
+        "Liquid water",
+        "Oxygen gas",
+        "Graphite"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "409aa573d2ef",
+      "stem": "Which mixture type shows the Tyndall effect, but its particles do not settle when kept stationary?",
+      "options": [
+        "Solution",
+        "Suspension",
+        "Colloid",
+        "Element"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "1bdf12c72f9b",
+      "stem": "The conversion of liquid water into steam is an example of:",
+      "options": [
+        "Physical change",
+        "Decomposition",
+        "Nuclear change",
+        "Chemical change"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "b9d82fcce497",
+      "stem": "Which sample is most likely to have the highest density under normal conditions?",
+      "options": [
+        "Oxygen gas",
+        "Water vapor",
+        "Ice cube",
+        "Iron nail"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "208af0d9219b",
+      "stem": "If you mix sugar in water and it disappears, the resulting mixture is best described as:",
+      "options": [
+        "A heterogeneous suspension",
+        "A homogeneous solution",
+        "A colloid",
+        "A pure compound"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "4562a0a54ac3",
+      "stem": "What is the key difference between a colloid and a suspension?",
+      "options": [
+        "Colloids are homogeneous; suspensions are heterogeneous",
+        "Colloid particles are smaller and do not settle, unlike suspension particles",
+        "Suspensions are smaller than colloids",
+        "There is no difference"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "dad87ab81f53",
+      "stem": "Why are diamond and graphite considered allotropes of carbon?",
+      "options": [
+        "They contain different elements.",
+        "They have different atomic numbers.",
+        "They are different structural forms of the same element.",
+        "They have different chemical compositions."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "52bd2157c36e",
+      "stem": "The ability of a liquid to flow is directly related to its:",
+      "options": [
+        "Compressibility",
+        "Fluidity",
+        "Density",
+        "Hardness"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "4f6fa5284e89",
+      "stem": "Which change is most likely to increase the solubility of many solid solutes in water?",
+      "options": [
+        "Lowering temperature",
+        "Stirring only",
+        "Removing solvent",
+        "Increasing temperature"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "63d4dfe0f0a3",
+      "stem": "The dissolved and undissolved solute in a saturated solution are in:",
+      "options": [
+        "Chemical reaction",
+        "Nuclear equilibrium",
+        "Dynamic equilibrium",
+        "Thermal decomposition"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "1af984e5438b",
+      "stem": "Which substance can be separated into its components by physical means?",
+      "options": [
+        "Pure Gold",
+        "Sucrose",
+        "Carbon Dioxide",
+        "A mixture of salt and sand"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "226c4e248113",
+      "stem": "What is the result when a saturated solution is cooled down?",
+      "options": [
+        "It becomes unsaturated",
+        "It may form crystals as the solubility decreases",
+        "It turns into a gas",
+        "The mass of the solvent increases"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "09a7088b46db",
+      "stem": "Why does gas exert pressure on the walls of its container?",
+      "options": [
+        "Because of the continuous random motion and collisions of particles",
+        "Because the particles are stationary",
+        "Because the container is heated",
+        "Because gas particles attract each other strongly"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "67034f6ba926",
+      "stem": "What is most likely observed when extra solute is added to a saturated solution?",
+      "options": [
+        "Solvent disappears",
+        "The solution becomes a gas",
+        "Solute remains undissolved",
+        "All solute dissolves instantly"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "b32255e779ef",
+      "stem": "Which factor has the greatest effect on whether a solution becomes saturated?",
+      "options": [
+        "Amount of solute and temperature",
+        "Color of solvent",
+        "Shape of container",
+        "Density of air"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "8fca0ed94970",
+      "stem": "In soft drinks, the substance present in the greatest amount is generally:",
+      "options": [
+        "Sugar",
+        "Carbon dioxide",
+        "Water",
+        "Salt"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "d1356997af2c",
+      "stem": "Compared with diamond, graphite:",
+      "options": [
+        "Has no carbon atoms",
+        "Is harder",
+        "Has a higher melting point",
+        "Conducts electricity better"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "95adaeb21d35",
+      "stem": "Which property makes diamond suitable for use as a cutting tool?",
+      "options": [
+        "Electrical conductivity",
+        "Soft structure",
+        "Solubility in water",
+        "Extreme hardness"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "a3bbbf6e9101",
+      "stem": "An example of a liquid-in-gas colloid is:",
+      "options": [
+        "Fog",
+        "Smoke",
+        "Jelly",
+        "Milk"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "934630e027ce",
+      "stem": "A scientist wants to separate mud from water. This is an example of separating a:",
+      "options": [
+        "True solution",
+        "Suspension",
+        "Colloid",
+        "Compound"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "7565e80de703",
+      "stem": "Why is a suspension considered a heterogeneous mixture?",
+      "options": [
+        "Because its components are chemically bonded",
+        "Because its components are not uniformly distributed and can be separated",
+        "Because it is invisible to the naked eye",
+        "Because it is a pure substance"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "ab5ff84f326b",
+      "stem": "Which property of liquids allows them to take the shape of their container?",
+      "options": [
+        "High density",
+        "Fluidity",
+        "Compressibility",
+        "Rigid structure"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "fb762c1f7bfa",
+      "stem": "A liquid changes into a gas when:",
+      "options": [
+        "Particle motion decreases",
+        "Chemical bonds are permanently broken",
+        "New substances are formed",
+        "Particles gain sufficient energy to escape"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "417eb6b57467",
+      "stem": "If the intermolecular forces in a substance are significantly weakened without changing the chemical composition, which phase transition is most likely occurring at a macroscopic level?",
+      "options": [
+        "Deposition",
+        "Melting or Vaporization",
+        "Condensation",
+        "Sublimation to Plasma"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "457a1e2f2e5c",
+      "stem": "A student has four samples: oxygen, distilled water, brass, and sodium chloride. How many of these are pure substances?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "2f63add9e421",
+      "stem": "A beaker contains a saturated solution of potassium nitrate at 40°C with some undissolved crystals at the bottom. Which statement must be true?",
+      "options": [
+        "Dissolving has completely stopped.",
+        "Crystallization occurs faster than dissolving.",
+        "No more solute can ever dissolve.",
+        "Dissolving and crystallization occur at equal rates"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "c40b300a677c",
+      "stem": "In an allotropic study, how does the hybridization of carbon in Diamond fundamentally dictate its physical hardness compared to Graphite?",
+      "options": [
+        "Diamond is heavier",
+        "Diamond's sp³ network creates a rigid 3D structure, whereas Graphite's sp² layers slide",
+        "Graphite has no carbon atoms",
+        "Diamond is a mixture, not an allotrope"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "f178b15866dd",
+      "stem": "When a saturated solution is prepared at 80oC and then rapidly cooled to 20oC without agitation, it may become 'supersaturated.' Why is this state thermodynamically unstable?",
+      "options": [
+        "The solute concentration exceeds the equilibrium solubility limit for 20oC",
+        "The solvent evaporates",
+        "The molecules stop moving",
+        "The pressure increases"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "827c29660e04",
+      "stem": "In the context of the kinetic molecular theory, why do liquids exhibit fluidity?",
+      "options": [
+        "Their particles have zero kinetic energy",
+        "Their intermolecular forces are strong enough to hold volume, but weak enough to allow particle slippage",
+        "They are made of plasma",
+        "They have no mass"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "8c47ff6f93ff",
+      "stem": "A student compares two colorless liquids. Both boil at exactly the same temperature and have identical densities. From this information alone, the student can conclude that:",
+      "options": [
+        "Both are compounds.",
+        "They are definitely the same substance.",
+        "Both are pure substances.",
+        "They are mixtures."
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx",
+      "rejected": "No option follows from the data given: matching boiling point and density alone do not establish identity or purity."
+    },
+    {
+      "id": "480713cd962e",
+      "stem": "Graphite conducts electricity, while diamond does not, even though both consist entirely of carbon atoms. This difference is primarily due to:",
+      "options": [
+        "Difference in purity",
+        "Difference in atomic mass",
+        "Difference in the number of carbon atoms",
+        "Difference in atomic arrangement and bonding"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "5f817d2fdd92",
+      "stem": "A gas occupies 500 cm³ in a container. If transferred to a 1000 cm³ container at the same temperature, the gas will:",
+      "options": [
+        "Occupy 1000 cm³",
+        "Occupy 500 cm³ only",
+        "Remain at the bottom of the container",
+        "Become a liquid"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "6686e35dbee4",
+      "stem": "A chemist claims that a sample is an element because it cannot be separated by chemical means. Why is this reasoning incomplete?",
+      "options": [
+        "Some compounds also cannot be separated chemically.",
+        "Elements have fixed compositions.",
+        "The sample might be a mixture.",
+        "The inability to separate chemically does not alone prove it contains only one type of atom."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "8025be33937e",
+      "stem": "If all intermolecular forces in a solid were suddenly reduced to nearly zero, the solid would most likely:",
+      "options": [
+        "Remain unchanged",
+        "Become more rigid",
+        "Behave like a gas",
+        "Become an element"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "87f0a9905a14",
+      "stem": "Which of the following correctly describes the relationship between particle size and the Tyndall effect?",
+      "options": [
+        "Particles must be smaller than the wavelength of light",
+        "Particles must be of a size that effectively scatters light (1-1000 nm)",
+        "Particles must be larger than 1000 nm",
+        "Particle size has no effect"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "da446acbeaea",
+      "stem": "In a suspension, the term \"stationary\" refers to:",
+      "options": [
+        "The mixture is being heated",
+        "The state where the mixture is left undisturbed, allowing gravity to act on particles",
+        "The state where light is blocked",
+        "The state where the mixture is moving rapidly"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "cdb41950dec0",
+      "stem": "When analyzing the internal structure of matter, what does the term 'intermolecular spacing' explain about compressibility?",
+      "options": [
+        "Large spacing allows particles to be pushed closer together",
+        "Small spacing prevents compression",
+        "Spacing has no relation to compressibility",
+        "Large spacing makes compression impossible"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "88b5b8ce6ef6",
+      "stem": "When a solute is added to a solvent, why does the freezing point of the resulting solution often decrease?",
+      "options": [
+        "Because the solution gets hotter",
+        "Because the solvent becomes a gas",
+        "Because the solute is a metal",
+        "Because the solute disrupts the crystal lattice formation of the solvent"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "2cf67ecf6dc4",
+      "stem": "Why is the formation of a compound considered a chemical change, while the formation of a mixture is a physical change?",
+      "options": [
+        "Compounds have fixed mass ratios; mixtures have variable ratios",
+        "Mixtures are always solids",
+        "Compounds are always liquids",
+        "There is no difference"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "73dbc475098c",
+      "stem": "Two colorless liquids are placed in separate beakers. One is pure water, and the other is a salt solution. Which property would most reliably distinguish them?",
+      "options": [
+        "Color",
+        "Composition",
+        "State",
+        "Transparency"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "ca40f6849085",
+      "stem": "Which process involves the greatest increase in particle freedom?",
+      "options": [
+        "Steam → Water",
+        "Water → Ice",
+        "Water → Steam",
+        "Ice → Water"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "1c832c3baa03",
+      "stem": "A mixture of iron filings and sulfur appears uniform after thorough mixing. Why is it still considered a mixture?",
+      "options": [
+        "It contains two elements not chemically combined.",
+        "It has a fixed composition.",
+        "New properties have developed.",
+        "It cannot be separated physically."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "542b0eda4213",
+      "stem": "A gas occupies a container of 2 L. If transferred to a 5 L container at the same temperature, the gas will:",
+      "options": [
+        "Increase its mass.",
+        "Become a liquid.",
+        "Expand to fill the 5 L container.",
+        "Occupy exactly 2 L."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "12390239f056",
+      "stem": "If a solid carbon allotrope contains C₆₀ molecules arranged in a specific geometry, it is identified as:",
+      "options": [
+        "Diamond",
+        "Fullerene",
+        "Coal",
+        "Graphite"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "20872f815397",
+      "stem": "A student claims that because air is invisible, it is not matter. Which observation most directly disproves this claim?",
+      "options": [
+        "Air is transparent.",
+        "Air contains oxygen.",
+        "Air is colorless.",
+        "Air can be compressed."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "b6efe48f8ded",
+      "stem": "Why are Bose-Einstein Condensates (BEC) considered an \"exotic\" state of matter?",
+      "options": [
+        "They are found in volcanoes",
+        "They occur only at temperatures near absolute zero, where quantum effects become macroscopic",
+        "They are used to make steel",
+        "They are a form of smoke"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "3e57d7961dbf",
+      "stem": "Which statement would be FALSE for every saturated solution at a given temperature?",
+      "options": [
+        "It contains dissolved solute.",
+        "Additional solute can dissolve without changing conditions.",
+        "Dissolving and crystallization may occur simultaneously.",
+        "Its concentration has reached a maximum value under those conditions."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "52d63e8641ca",
+      "stem": "Which of the following mixtures exhibits particles that can be separated by dialysis but not by filter paper?",
+      "options": [
+        "Suspension",
+        "Colloid",
+        "True Solution",
+        "Compound"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "6005f2000227",
+      "stem": "Why do amorphous solids lack a definite melting point compared to crystalline solids?",
+      "options": [
+        "Because they have stronger intermolecular forces",
+        "Because they are actually liquids",
+        "Because they have higher density",
+        "Because they lack a long-range ordered internal structure"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "de580a030b6f",
+      "stem": "The density of a gas is inversely proportional to its volume at constant pressure. This physical behavior is rooted in:",
+      "options": [
+        "The compressibility of the gas due to vast intermolecular spaces",
+        "The chemical bonding between atoms",
+        "The high fluidity of the gas",
+        "The plasma state"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "78313328aa2e",
+      "stem": "Which of the following correctly describes the relationship between particle size and the Tyndall effect?",
+      "options": [
+        "Particles must be smaller than the wavelength of light",
+        "Particles must be of a size that effectively scatters light",
+        "Particles must be larger than 1000 nm",
+        "Particle size has no effect"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx"
+    },
+    {
+      "id": "c6fdc32d292e",
+      "stem": "Which contains the greatest amount of dissolved solute per unit volume?",
+      "options": [
+        "X only",
+        "Y only",
+        "Z only",
+        "Y and Z"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Chem unit#2 MCQs.docx",
+      "rejected": "Refers to samples X, Y and Z from a table that is not in the source."
+    }
+  ]
+}

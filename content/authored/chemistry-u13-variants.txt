@@ -1,0 +1,16 @@
+# subject: Chemistry
+# chapter: 13
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Which group is present in every alcohol, such as methanol and ethanol? | –OH | –COOH | –CHO | –NH₂ | A | v:5719467b486c
+Ethanoic acid (CH₃COOH) belongs to the class of: | alcohols | aldehydes | carboxylic acids | ketones | C | v:226c43827bdc
+Glucose and fructose both have the formula C₆H₁₂O₆ but different structures. They are: | isotopes | isomers | allotropes | polymers | B | h v:d423c8a36dd1
+The prefix "but-" in butane shows a chain of: | 2 carbons | 3 carbons | 4 carbons | 5 carbons | C | e v:1cba8e974b02
+Petrol, diesel and kerosene are obtained from crude oil by: | filtration | fractional distillation | crystallization | chromatography | B | v:35addaefa5d5
+Coke, coal gas and coal tar are produced when coal is: | burnt in plenty of air | heated strongly without air | dissolved in water | cracked with a catalyst | B | v:18796891034b
+Carbon atoms can link together to form very long chains. This property is called: | isomerism | catenation | hydrolysis | oxidation | B | e v:46ee475fd03a
+Which of these is an inorganic compound? | Ethanol | Methane | Sodium chloride | Glucose | C | v:540bd5c456b2
+The pleasant smells of many fruits and perfumes come from compounds called: | esters | alkanes | amines | acids | A | v:a1407758c2d9

@@ -11,7 +11,7 @@ import { ChatMarkdown, plainLength } from "./ChatMarkdown";
 import { sfxTap } from "@/lib/sfx";
 
 // Floating "Ask Prepify" helper, available on every dashboard screen. A general
-// study buddy (not topic-grounded) so a student can ask anything and learn.
+// study buddy, so a student can ask about anything they got wrong in a test.
 // Conversations are saved in the browser so students can start a new chat and
 // return to old ones.
 export function ChatWidget() {
@@ -34,19 +34,30 @@ export function ChatWidget() {
     if (open) setChats(loadChats());
   }, [open]);
 
+  // Smooth-scroll only when a message actually arrives.
   useEffect(() => {
-    scroller.current?.scrollTo({ top: scroller.current.scrollHeight, behavior: "smooth" });
-  }, [msgs, open, typeShown]);
+    const el = scroller.current;
+    if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
+  }, [msgs.length, open]);
 
-  // Drive the typewriter reveal of the newest AI reply.
+  // While the typewriter runs, jump the scroll instantly. Restarting a smooth
+  // scroll on every tick queued a new easing animation ~20x a second, which is
+  // what made the whole app stutter on desktop.
+  useEffect(() => {
+    const el = scroller.current;
+    if (el && typeIdx !== null) el.scrollTop = el.scrollHeight;
+  }, [typeShown, typeIdx]);
+
+  // Drive the typewriter reveal of the newest AI reply. ~30 ticks total, so the
+  // reveal still takes ~1.4s but costs a fraction of the renders.
   useEffect(() => {
     if (typeIdx === null) return;
     const msg = msgs[typeIdx];
     if (!msg) { setTypeIdx(null); return; }
     const full = plainLength(msg[1]);
     if (typeShown >= full) { setTypeIdx(null); return; }
-    const step = Math.max(2, Math.round(full / 90)); // ~1.5s regardless of length
-    const id = setTimeout(() => setTypeShown((n) => Math.min(full, n + step)), 18);
+    const step = Math.max(3, Math.round(full / 30));
+    const id = setTimeout(() => setTypeShown((n) => Math.min(full, n + step)), 45);
     return () => clearTimeout(id);
   }, [typeIdx, typeShown, msgs]);
 
@@ -102,7 +113,7 @@ export function ChatWidget() {
         headers: { "Content-Type": "application/json", ...groqAuthHeaders(s.groqKey) },
         body: JSON.stringify({ messages: history.map(([role, text]) => ({ role, text })) }),
       });
-      if (res.status === 503) reply = "Connect your free AI key in Settings → Connect your AI, then I can help you learn anything.";
+      if (res.status === 503) reply = "The AI chat isn't set up on this server yet — your tests still work normally.";
       else if (res.ok) reply = ((await res.json()) as { reply?: string }).reply ?? "Sorry, I couldn't answer that — try again.";
       else {
         const err = ((await res.json().catch(() => ({}))) as { error?: string }).error;
@@ -202,7 +213,7 @@ export function ChatWidget() {
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
                     <Mascot mood="book" size={78} />
                     <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
-                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.groqKey ? "" : "First connect your free AI key in Settings."}
+                      Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.aiConfigured || s.groqKey ? "" : "First connect your free AI key in Settings."}
                     </div>
                   </div>
                 )}
@@ -226,7 +237,7 @@ export function ChatWidget() {
                     ))}
                   </div>
                 )}
-                {!s.groqKey && (
+                {!s.aiConfigured && !s.groqKey && (
                   <button onClick={() => { setOpen(false); go("settings"); }} style={{ width: "100%", marginBottom: 9, fontSize: 12.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px" }}>
                     Connect your free AI key →
                   </button>

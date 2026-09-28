@@ -1,0 +1,13 @@
+# subject: Maths
+# chapter: 1
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The multiplicative identity of real numbers is: | 0 | 1 | −1 | It does not exist | B | v:e1c17ccd6a5e
+The step (3 × x) × y = 3 × (x × y) uses the: | commutative property of multiplication | associative property of multiplication | distributive property | closure property | B | v:9d3dd2c4ce83
+Since 7 + (−7) = 0, the numbers 7 and −7 are: | additive inverses | multiplicative inverses | additive identities | reciprocals | A | v:233af3dc499b
+If (0.25) × 4 = 1, then 0.25 and 4 are: | additive inverses | multiplicative inverses | additive identities | equal numbers | B | v:4e66cf9cdf6f
+Any real number multiplied by 0 gives: | the number itself | 1 | 0 | its negative | C | e v:7b81fc806139
+Multiplying any two real numbers always gives a real number. This is the: | identity property | closure property of multiplication | inverse property | commutative property | B | v:7205fdc361f3

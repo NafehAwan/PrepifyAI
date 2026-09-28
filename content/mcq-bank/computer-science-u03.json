@@ -1,0 +1,503 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "c8a1e74f71a8",
+      "stem": "In a professional development team, the person responsible for creating the \"Graphical User Interface (GUI)\" is known as the:",
+      "options": [
+        "Front-end Developer.",
+        "Back-end Developer.",
+        "Database Administrator.",
+        "Network Engineer."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "2518f5e96114",
+      "stem": "What is the functional difference between the starting tag <tag> and the ending tag in HTML?",
+      "options": [
+        "The ending tag uses a backslash \\.",
+        "The ending tag is recognized with the help of a forward slash /.",
+        "The starting tag must be in capital letters.",
+        "There is no difference between them."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "149773867ac3",
+      "stem": "What is the official file extension required for a browser to recognize a document as an HTML file?",
+      "options": [
+        "txt",
+        "doc",
+        "html",
+        "web"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "a715f7ff07af",
+      "stem": "Where must all the \"main constituents\" of an HTML document be arranged?",
+      "options": [
+        "Inside the <head> tag-pair.",
+        "Inside the <body> tag-pair.",
+        "Before the <html> tag.",
+        "Inside the title section."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "1a62e7848755",
+      "stem": "What is the functional difference between <span> and <div> in text arrangement?",
+      "options": [
+        "Span provides style to a single line; Div provides it to a set of lines.",
+        "Div is for images; Span is for text.",
+        "Span is for the header; Div is for the footer.",
+        "There is no difference; they are interchangeable."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "3d3df46bd5bd",
+      "stem": "Which tag-pair should be used if you want to emphasize a word specifically with \"italics\" as a note?",
+      "options": [
+        "<b>",
+        "<i>",
+        "<u>",
+        "<sub>"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "1db447853593",
+      "stem": "In the text \"Strong character,\" which tag-pair is officially used for the display of \"bold and strong characters\"?",
+      "options": [
+        "<em>",
+        "<small>",
+        "<strong>",
+        "<sup>"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "4ec49e071ef5",
+      "stem": "If a developer wants a heading that is \"largest and most important,\" which level should they choose?",
+      "options": [
+        "Level 1 (h1)",
+        "Level 6 (h6)",
+        "Level 10 (h10)",
+        "Main Level (h0)"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "16d289cc6003",
+      "stem": "According to the DOM tree hierarchy, what does the 'html' node contain?",
+      "options": [
+        "Only the images of the site.",
+        "Two sub-nodes: 'head' and 'body'.",
+        "The web browser's search engine index.",
+        "The password for the CRM system."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "5c8c19ed5168",
+      "stem": "Which IDE environment is mentioned as being used for the \"Visual Studio version 2022\" examples in the text?",
+      "options": [
+        "Netbeans",
+        "Microsoft Visual Studio",
+        "Notepad",
+        "Canva"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "517693460d1d",
+      "stem": "How many languages can the Microsoft Visual Studio IDE support for writing and running code?",
+      "options": [
+        "Only 1 (HTML)",
+        "Exactly 10",
+        "More than 30",
+        "Exactly 100"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "055ace91f1d0",
+      "stem": "A developer wants to organize data using bullets of type \"circle\" or \"square.\" Which tag-pair must be used as the parent container?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<dl>"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "59354b0aaef6",
+      "stem": "In a professional HTML table, which tag-pair is specifically designated to allocate and designate data within a \"Header Row\"?",
+      "options": [
+        "<td>",
+        "<tr>",
+        "<th>",
+        "<table>"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "a8a5328d68b4",
+      "stem": "Why is JavaScript considered an ideal language for making webpages dynamic at the \"client-end\"?",
+      "options": [
+        "It requires a very high amount of memory to run.",
+        "It does not consume much memory and works on any operating system.",
+        "It can only be used on Windows-based servers.",
+        "It replaces the need for using any HTML tags."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "ae07983582fb",
+      "stem": "In programming, what is the official term for a user action that can be \"sensed\" and triggers a specific task to be done?",
+      "options": [
+        "Script",
+        "event",
+        "Variable",
+        "Function"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "0db63671aa9a",
+      "stem": "Which JavaScript function is used to display a notification or message box to inform the user about the result of an action?",
+      "options": [
+        "alert()",
+        "prompt()",
+        "document.write()",
+        "console.log()"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "ecd7ce965e64",
+      "stem": "Which JavaScript function allows the program to take input from the user via a message window?",
+      "options": [
+        "alert()",
+        "prompt()",
+        "document.write()",
+        "var()"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "c8978f8a2222",
+      "stem": "Which JavaScript operator is used when you specifically need the \"remainder\" of a division operation?",
+      "options": [
+        "/ (Division)",
+        "% (Modulus)",
+        "* (Multiplication)",
+        "+ (Addition)"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "9a9b2a7cd8a1",
+      "stem": "What is the purpose of the comparison operator != in a selection statement?",
+      "options": [
+        "To check if two values are equal.",
+        "To check if two values are not equal.",
+        "To check if the left value is greater.",
+        "To check if the right value is smaller."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "ef48c42d5189",
+      "stem": "In a selection scenario where there are \"more than two possibilities,\" which structure should be used to extend the logic?",
+      "options": [
+        "if statement",
+        "if-else statement",
+        "if-else if-else statement",
+        "For Loop"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "b575f3fd6a0a",
+      "stem": "What is the primary advantage of using an \"Iterative Statement\" like a For Loop?",
+      "options": [
+        "It makes the code more difficult to read.",
+        "The same task is achieved in much lesser lines of code.",
+        "It prevents the computer from using any memory.",
+        "It only works for mathematical calculations."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "cf5ec054470a",
+      "stem": "In a For Loop, which three components must be set to control the number of iterations?",
+      "options": [
+        "Start, Stop, and Pause.",
+        "Initialization, terminating condition, and step-size.",
+        "HTML, CSS, and JS.",
+        "Input, Process, and Output."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "b5bd5bd70780",
+      "stem": "What is the starting \"index number\" for any array declared in JavaScript?",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "10"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "2b6d89fbb4f9",
+      "stem": "Which debugging command allows a programmer to trace the code \"line by line\"?",
+      "options": [
+        "Start Debugging",
+        "Step Into",
+        "Toggle Breakpoint",
+        "Restart"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "18806fb6eab4",
+      "stem": "When a programmer wants to add a note in the code that is \"not part of the output\" and is \"ignored by the browser,\" they use:",
+      "options": [
+        "Tags",
+        "comments",
+        "Breakpoints",
+        "Alerts"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "d37b9db6c850",
+      "stem": "According to the DOM tree hierarchy, which node is located at the \"absolute top\" for a whole webpage?",
+      "options": [
+        "Document",
+        "html",
+        "head",
+        "body"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "172405c818b3",
+      "stem": "Which of the following is the correct order of priority of CSS styles if all three are used in a webpage?",
+      "options": [
+        "External CSS → Embedded CSS → Inline CSS",
+        "Embedded CSS → External CSS → Inline CSS",
+        "Inline CSS → Embedded CSS → External CSS",
+        "Embedded CSS → Inline CSS → External CSS"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "8789e235353c",
+      "stem": "Which CSS method is recommended for large projects?",
+      "options": [
+        "Inline CSS",
+        "Embedded CSS",
+        "External CSS",
+        "Internal CSS"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "6af60d958f35",
+      "stem": "If a user is unable to recall the specific URL of a webpage, which tool creates \"different combinations\" based on keywords to locate it?",
+      "options": [
+        "Web Browser",
+        "Search Engine",
+        "Web Hosting Service",
+        "Hyper-Text Markup Language"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    },
+    {
+      "id": "ca34b3300cd8",
+      "stem": "What is the first step to establishing a digital presence?",
+      "options": [
+        "Website Development",
+        "Visual Studio Installation",
+        "Writing JavaScript",
+        "Buying a Web Server"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx",
+      "answer_confidence": "low"
+    },
+    {
+      "id": "fc9aaa3168ff",
+      "stem": "What is a website called if the information is changed or adjusted in accordance with user input or choice?",
+      "options": [
+        "Static Website",
+        "Dynamic Website",
+        "Single Page Website",
+        "Offline Website"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Unit_3_Programming_Fundamentals_MCQs-v2.docx"
+    }
+  ]
+}

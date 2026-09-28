@@ -1,0 +1,159 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 14,
+  "questions": [
+    {
+      "id": "754cde26de76",
+      "stem": "The general formula CₙH₂ₙ₋₂ belongs to the:",
+      "options": [
+        "alkanes",
+        "alkenes",
+        "alkynes",
+        "alcohols"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a8226fbd4fc2"
+    },
+    {
+      "id": "716daabd8e98",
+      "stem": "Alkenes are called unsaturated hydrocarbons because they contain:",
+      "options": [
+        "only single bonds",
+        "at least one carbon–carbon double bond",
+        "no hydrogen",
+        "oxygen atoms"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fef0018be32e"
+    },
+    {
+      "id": "3ca736c88528",
+      "stem": "Bromine water is shaken with hexane (an alkane). The orange-brown colour:",
+      "options": [
+        "disappears quickly",
+        "remains",
+        "turns blue",
+        "turns green"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1ba3013fe8b5"
+    },
+    {
+      "id": "1dd5ab195146",
+      "stem": "Methane reacts with chlorine in sunlight and a hydrogen atom is replaced by chlorine. This is:",
+      "options": [
+        "addition",
+        "substitution",
+        "polymerization",
+        "cracking"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2e132f4ecc12"
+    },
+    {
+      "id": "06cd003f1388",
+      "stem": "Margarine is made by passing hydrogen through vegetable oil with a nickel catalyst. This reaction is:",
+      "options": [
+        "hydrogenation",
+        "dehydration",
+        "fermentation",
+        "combustion"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "597a617139c2"
+    },
+    {
+      "id": "265fe0c7ca94",
+      "stem": "Burning a fuel in too little oxygen can produce the poisonous gas:",
+      "options": [
+        "carbon monoxide",
+        "oxygen",
+        "nitrogen",
+        "helium"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "430259d1706f"
+    },
+    {
+      "id": "f5ba34b240c8",
+      "stem": "Plastic shopping bags made of polythene are formed by:",
+      "options": [
+        "cracking",
+        "polymerization of ethene",
+        "hydrogenation",
+        "fermentation"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2f4f05e4336b"
+    },
+    {
+      "id": "0ccecd4a5cb2",
+      "stem": "The gas supplied to homes through pipes in Pakistan (Sui gas) is mainly:",
+      "options": [
+        "methane",
+        "propane",
+        "butane",
+        "ethyne"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2c66c407247e"
+    },
+    {
+      "id": "3e2e35b8d7db",
+      "stem": "The alkane that comes just before butane in the series is:",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Propane",
+        "Pentane"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "855c9506f83a"
+    }
+  ]
+}

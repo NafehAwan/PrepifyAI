@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "a680fee77c8f",
+      "stem": "In a closed bottle of water, the rate of evaporation becomes equal to the rate of condensation. The system has reached:",
+      "options": [
+        "melting",
+        "boiling",
+        "equilibrium",
+        "freezing"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7f2bbe2112e9"
+    },
+    {
+      "id": "cf4bab59162e",
+      "stem": "Blue anhydrous cobalt(II) chloride paper is dipped in water. It turns:",
+      "options": [
+        "pink",
+        "green",
+        "white",
+        "black"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a3de346ecc97"
+    },
+    {
+      "id": "28844d269455",
+      "stem": "White anhydrous copper sulphate turns blue when a liquid is added to it. This shows the liquid contains:",
+      "options": [
+        "water",
+        "oxygen",
+        "copper",
+        "salt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6b1db0a43f39"
+    },
+    {
+      "id": "af6154e7cd7e",
+      "stem": "At dynamic equilibrium:",
+      "options": [
+        "both reactions stop",
+        "the forward and reverse reactions continue at equal rates",
+        "only products are present",
+        "only the forward reaction occurs"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "321770fcf098"
+    },
+    {
+      "id": "4be9a152cd9e",
+      "stem": "Heating blue copper sulphate crystals turns them white because they lose:",
+      "options": [
+        "sulphur",
+        "oxygen",
+        "water of crystallization",
+        "copper"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1dcdaad6c607"
+    },
+    {
+      "id": "490d61150135",
+      "stem": "A reaction mixture in a closed flask keeps the same colour and pressure for an hour. This suggests that:",
+      "options": [
+        "the reaction has reached equilibrium",
+        "all reactants are used up",
+        "the reaction is irreversible",
+        "no products formed"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "250ede59f20b"
+    }
+  ]
+}

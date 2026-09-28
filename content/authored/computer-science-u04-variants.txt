@@ -1,0 +1,17 @@
+# subject: Computer Science
+# chapter: 4
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A video platform receives millions of hours of uploads every day. This huge amount of data describes which characteristic of Big Data? | Velocity | Volume | Variety | Veracity | B | s v:a0c45df9cfaa
+A student surveys classmates about their favourite subject using a questionnaire. The data collected is: | primary data | secondary data | metadata | derived data | A | s e v:baf4b5d065e0
+The heights of students measured in centimetres are an example of: | nominal data | ordinal data | continuous quantitative data | discrete quantitative data | C | v:5a609473c9eb
+The number of students present in each class is an example of: | continuous quantitative data | discrete quantitative data | nominal data | ordinal data | B | h v:5a609473c9eb
+An online shop shows "Customers who bought this also bought…". This is an example of a: | recommendation system | fraud-detection system | search engine | spam filter | A | s e v:909f6ebf2a6c
+Which of these is quantitative data? | Favourite colour of students | Eye colour | Number of books in a school bag | Name of a city | C | v:c0fa9b48c277
+A voice assistant understands the spoken command "set an alarm for 6 am". Which field makes this possible? | Data mining | Natural Language Processing | Data cleaning | Data visualization | B | s v:a2aac8c3ee4b
+A database that stores data in fixed tables of rows and columns is a: | NoSQL database | relational database | flat image file | graph drawing | B | v:bceede344b6c
+Analysing sales records shows that customers who buy bread often also buy eggs. This is an example of: | data mining | data entry | data backup | data encryption | A | s v:fc4f9a79c4eb
+A collection of related records, such as the marks of all students in a class, is called a: | dataset | program | chart | protocol | A | e v:150f5d22343a

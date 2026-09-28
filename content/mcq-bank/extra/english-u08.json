@@ -1,0 +1,438 @@
+{
+  "subject": "English",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "66b708288e7c",
+      "stem": "\"The Eagle\" was written by:",
+      "options": [
+        "Robert Frost",
+        "Alfred Tennyson",
+        "William Shakespeare",
+        "John Milton"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "e5786c3c76c8",
+      "stem": "Alfred Tennyson was a poet from:",
+      "options": [
+        "England",
+        "America",
+        "Pakistan",
+        "France"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "004c65303259",
+      "stem": "\"He clasps the crag with crooked hands\" — the repeated \"c/k\" sound is an example of:",
+      "options": [
+        "simile",
+        "alliteration",
+        "metaphor",
+        "irony"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "0450496afddc",
+      "stem": "Calling the eagle's claws \"crooked hands\" is an example of:",
+      "options": [
+        "personification",
+        "simile",
+        "alliteration only",
+        "hyperbole"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "64b4e467b384",
+      "stem": "\"And like a thunderbolt he falls\" is an example of:",
+      "options": [
+        "metaphor",
+        "simile",
+        "personification",
+        "onomatopoeia"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "e091dc39e315",
+      "stem": "In the poem, a \"crag\" is:",
+      "options": [
+        "a steep, rugged rock",
+        "a river bank",
+        "a nest",
+        "a cloud"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "6781e9baaea4",
+      "stem": "\"Ringed with the azure world\" means the eagle is:",
+      "options": [
+        "surrounded by the blue sky",
+        "wearing a ring",
+        "trapped in a cage",
+        "covered in snow"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "ea926de3c568",
+      "stem": "\"Azure\" means:",
+      "options": [
+        "bright blue",
+        "dark green",
+        "deep red",
+        "pure white"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "e97d37fca5a9",
+      "stem": "\"The wrinkled sea beneath him crawls\" suggests that from the eagle's height the sea looks:",
+      "options": [
+        "small, slow and rippled",
+        "very close and loud",
+        "dry and empty",
+        "frozen"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "65f1d85e5339",
+      "stem": "The eagle \"falls\" at the end of the poem most likely to:",
+      "options": [
+        "swoop down on its prey",
+        "die of old age",
+        "escape a storm",
+        "build its nest"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "3c14ff6a905f",
+      "stem": "\"The Eagle\" consists of:",
+      "options": [
+        "two stanzas of three lines each",
+        "one stanza of fourteen lines",
+        "three stanzas of four lines",
+        "four stanzas of two lines"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "64fa0ccdda5d",
+      "stem": "The rhyme scheme of \"The Eagle\" is:",
+      "options": [
+        "AAA BBB",
+        "ABAB CDCD",
+        "AABB CCDD",
+        "ABCABC"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "c73a999d8ea4",
+      "stem": "The eagle is described as standing \"close to the sun in lonely lands\". This shows that it lives:",
+      "options": [
+        "high up and alone",
+        "in crowded forests",
+        "near the sea shore",
+        "in a zoo"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "3856e7da2af3",
+      "stem": "The overall picture of the eagle in the poem is one of:",
+      "options": [
+        "power and majesty",
+        "weakness and fear",
+        "laziness",
+        "foolishness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "eedc09739965",
+      "stem": "A student describes a cheetah as \"running like the wind\". Which device from the poem is the student also using?",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Personification",
+        "Rhyme scheme"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "438c2d9da94e",
+      "stem": "Choose the synonym of \"lonely\":",
+      "options": [
+        "Solitary",
+        "Crowded",
+        "Busy",
+        "Cheerful"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "9a3467700283",
+      "stem": "Choose the antonym of \"beneath\":",
+      "options": [
+        "Below",
+        "Under",
+        "Above",
+        "Down"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "464ef8a16614",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Thunderbolt",
+        "Thunderbolte",
+        "Thundarbolt",
+        "Thunderbollt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "e18498006527",
+      "stem": "In \"The eagle falls swiftly\", \"swiftly\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a verb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "6e2c06a64152",
+      "stem": "Choose the passive voice of \"The eagle caught a fish.\":",
+      "options": [
+        "A fish is caught by the eagle.",
+        "A fish was caught by the eagle.",
+        "A fish has caught the eagle.",
+        "A fish was catching by the eagle."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "a9a88bdbc7e8",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "The eagle watch from the mountain.",
+        "The eagle watches from the mountain.",
+        "The eagle watching from the mountain.",
+        "The eagle have watched from the mountain."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "ef0e56816762",
+      "stem": "In \"He watches from his mountain walls\", \"mountain walls\" refers to:",
+      "options": [
+        "the steep sides of the mountains",
+        "walls of a castle",
+        "walls of a house",
+        "a prison"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "4f43b8dd54d2",
+      "stem": "Fill in the blank: The eagle is famous ___ its sharp eyesight.",
+      "options": [
+        "for",
+        "of",
+        "at",
+        "by"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "d8364a12a477",
+      "stem": "Choose the plural of \"eagle\":",
+      "options": [
+        "eagles",
+        "eagless",
+        "eagels",
+        "eaglies"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "a686d89f7fcd",
+      "stem": "Which word best describes the tone of the poem?",
+      "options": [
+        "Vivid and powerful",
+        "Sad and weeping",
+        "Humorous",
+        "Confused"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "75202d606105",
+      "stem": "Choose the indirect speech of: The teacher said, \"Eagles fly very high.\"",
+      "options": [
+        "The teacher said that eagles fly very high.",
+        "The teacher said that eagles flew very high always.",
+        "The teacher says that eagles flew very high.",
+        "The teacher said eagles flying very high."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    },
+    {
+      "id": "a7faa7117f04",
+      "stem": "A writer says, \"The angry clouds shouted at the town.\" Which device is this, the same one Tennyson uses for \"the wrinkled sea crawls\"?",
+      "options": [
+        "Personification",
+        "Simile",
+        "Alliteration",
+        "Rhyme"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 8)"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import { C } from "@/lib/theme";
 
 const EMPTY: AuthState = {};
 
-export function LoginForm({ initialError }: { initialError?: string }) {
+export function LoginForm({ initialError, next }: { initialError?: string; next?: string }) {
   const [mode, setMode] = useState<"login" | "signup">("login");
   const [loginState, loginAction] = useFormState(login, EMPTY);
   const [signupState, signupAction] = useFormState(signup, EMPTY);
@@ -31,6 +31,7 @@ export function LoginForm({ initialError }: { initialError?: string }) {
       </div>
 
       <form action={signInWithGoogle} style={{ marginBottom: 16 }}>
+        <input type="hidden" name="next" value={next ?? "/"} />
         <button type="submit" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderRadius: 999, background: "#fff", border: "1.5px solid #e0d0b4", padding: "12px 0", fontSize: 14.5, fontWeight: 700, color: C.ink }}>
           <GoogleG />
           Continue with Google
@@ -44,6 +45,7 @@ export function LoginForm({ initialError }: { initialError?: string }) {
       </div>
 
       <form action={isLogin ? loginAction : signupAction} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <input type="hidden" name="next" value={next ?? "/"} />
         <Field label="Email" name="email" type="email" placeholder="you@example.com" autoComplete="email" />
         <Field
           label="Password"

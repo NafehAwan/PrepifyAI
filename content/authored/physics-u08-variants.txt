@@ -1,0 +1,16 @@
+# subject: Physics
+# chapter: 8
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Around a long straight wire carrying current, the magnetic field lines form: | straight lines parallel to the wire | concentric circles around the wire | no pattern | lines only at the ends | B | h v:9131237ac267
+A compass needle points wrongly when placed near a steel scissors. This happens because: | the steel's magnetic field affects the needle | the scissors are charged | steel is non-magnetic | the compass is broken | A | s v:f6e2857922c3
+Iron filings sprinkled around a bar magnet are least crowded: | near the north pole | near the south pole | near the middle of the magnet | at both ends | C | h v:46b753f6234f
+Inside a bar magnet, magnetic field lines run from: | north pole to south pole | south pole to north pole | the middle outwards | nowhere | B | h v:c9274736d248
+The core of an electromagnet in a scrapyard crane is made of soft iron because soft iron: | is easily magnetized and demagnetized | keeps its magnetism forever | is non-magnetic | is very light | A | s v:4b0e4a48de61
+A magnet picks up a steel pin through a sheet of paper. This shows that magnetic force: | acts only by contact | can act at a distance and through paper | needs air | works only in water | B | s v:94e6834c33a5
+Where magnetic field lines are far apart, the field is: | strong | weak | zero | reversed | B | v:87dce209bdcc
+A magnet loses its magnetism if it is: | stored with keepers | dropped repeatedly or heated strongly | kept in pairs | kept in a dry place | B | v:32b269efa87c
+Which of these uses an electromagnet? | Candle | Door bell | Mirror | Glass jar | B | e v:5717920dc372

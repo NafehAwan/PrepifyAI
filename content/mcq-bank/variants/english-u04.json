@@ -1,0 +1,159 @@
+{
+  "subject": "English",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "5662f40d5141",
+      "stem": "The suffix in \"enjoyment\" turns the verb \"enjoy\" into a:",
+      "options": [
+        "noun",
+        "adjective",
+        "adverb",
+        "verb"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6c850df0013b"
+    },
+    {
+      "id": "ea8575abf009",
+      "stem": "Choose the indirect speech of: The workers said, \"We can finish it.\"",
+      "options": [
+        "The workers said that they could finish it.",
+        "The workers said that we can finish it.",
+        "The workers say that they could finish it.",
+        "The workers said that they can finished it."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fc6e318a17d0"
+    },
+    {
+      "id": "9a08f3dfdc37",
+      "stem": "Choose the synonym of \"determined\":",
+      "options": [
+        "Unwilling",
+        "Persistent",
+        "Careless",
+        "Weak"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6add08eb102e"
+    },
+    {
+      "id": "5fd8bc15d3bb",
+      "stem": "Fill in the blank: Never give ___ your dreams, however hard the road.",
+      "options": [
+        "in",
+        "up",
+        "out",
+        "off"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c6aa58f9af61"
+    },
+    {
+      "id": "155efb84df28",
+      "stem": "Choose the synonym of \"impressive\":",
+      "options": [
+        "Ordinary",
+        "Spectacular",
+        "Tiny",
+        "Dull"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2a60fb31ac9e"
+    },
+    {
+      "id": "7a4df4c7d9d6",
+      "stem": "In \"The towers were built of granite\", the verb phrase is in the:",
+      "options": [
+        "active voice",
+        "passive voice",
+        "imperative mood",
+        "future tense"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "091f9dd307f4"
+    },
+    {
+      "id": "5bba503f2bb0",
+      "stem": "Choose the antonym of \"impossible\":",
+      "options": [
+        "Unlikely",
+        "Hopeless",
+        "Possible",
+        "Difficult"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b39eba87829b"
+    },
+    {
+      "id": "ee82e1aa9578",
+      "stem": "Choose the correct form: If the engineers had stopped, the bridge ___ never been finished.",
+      "options": [
+        "will have",
+        "would have",
+        "has",
+        "had"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c39023ce684d"
+    },
+    {
+      "id": "030be4c455ce",
+      "stem": "People doubted the plan, but the builders kept faith in it. This shows the builders had:",
+      "options": [
+        "a strong vision",
+        "no plan",
+        "weak confidence",
+        "little interest"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "459f90e3f433"
+    }
+  ]
+}

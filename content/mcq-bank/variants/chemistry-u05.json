@@ -1,0 +1,142 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "b32bd2b98ad3",
+      "stem": "In the ammonium ion, NH₃ donates both electrons of a bond to H⁺. This bond is a:",
+      "options": [
+        "coordinate covalent bond",
+        "ionic bond",
+        "metallic bond",
+        "hydrogen bond"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "aeaf06fcf0f4"
+    },
+    {
+      "id": "a2c01af6f0f4",
+      "stem": "Atoms tend to gain, lose or share electrons so that their outer shell holds eight electrons. This is the:",
+      "options": [
+        "duplet rule",
+        "octet rule",
+        "Hund's rule",
+        "Aufbau rule"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b7ab9e0afc93"
+    },
+    {
+      "id": "c034a1a58790",
+      "stem": "Which substance conducts electricity in the solid state?",
+      "options": [
+        "Sugar",
+        "Aluminium",
+        "Sulphur",
+        "Ice"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bc3218a1f372"
+    },
+    {
+      "id": "6d0217995424",
+      "stem": "Element X has 1 valence electron and element Y has 6. The compound they form is most likely:",
+      "options": [
+        "XY₂, covalent",
+        "X₂Y, ionic",
+        "XY, covalent",
+        "XY₆, ionic"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "86cff65a999f"
+    },
+    {
+      "id": "09d02e4d13cc",
+      "stem": "Which bond is the most polar?",
+      "options": [
+        "H–H",
+        "H–Cl",
+        "H–F",
+        "Cl–Cl"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "37aefda6494f"
+    },
+    {
+      "id": "22753d0d5a2b",
+      "stem": "A white solid has a high melting point, does not conduct as a solid, but conducts when dissolved in water. It is most likely:",
+      "options": [
+        "an ionic compound",
+        "a metal",
+        "a covalent gas",
+        "graphite"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5ac5eeed921a"
+    },
+    {
+      "id": "19dad9bc9c61",
+      "stem": "Nitrogen usually forms three covalent bonds because it:",
+      "options": [
+        "needs three more electrons to complete its octet",
+        "has three shells",
+        "is a metal",
+        "has no valence electrons"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "536db92cc178"
+    },
+    {
+      "id": "291598d027bc",
+      "stem": "A covalent bond forms when the orbitals of two atoms:",
+      "options": [
+        "overlap and share a pair of electrons",
+        "move apart",
+        "transfer all electrons",
+        "become ions"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8c19d73fcd23"
+    }
+  ]
+}

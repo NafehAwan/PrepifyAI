@@ -1,0 +1,18 @@
+# subject: Computer Science
+# chapter: 2
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Planning a school sports day is split into smaller tasks: booking the ground, making teams and arranging prizes. This skill is called: | Abstraction | Decomposition | Pattern recognition | Debugging | B | s v:bd8f75719ca5
+An algorithm must produce at least one result. This property is called: | input | output | finiteness | definiteness | B | v:7ad02b928a02
+A librarian wants to know how many books were borrowed this week. This is best classified as a: | sorting problem | counting problem | searching problem | decision problem | B | s v:6f2fc0bbc0fb
+In a flowchart, the step "Total = Price × Quantity" is drawn inside a: | diamond | rectangle | oval | parallelogram | B | v:d6b58b88e32c
+Which flowchart symbol is used for a question with a Yes/No answer, such as "Is Age ≥ 18?" | Oval | Rectangle | Diamond | Parallelogram | C | e v:b597eab241a7
+A city map shows the roads but leaves out trees and buildings. Which computational thinking skill does this show? | Decomposition | Abstraction | Pattern recognition | Algorithm design | B | s v:5cffaee82f48
+A student notices that the method for finding the average of test marks also works for average temperatures. This is: | abstraction | pattern recognition | decomposition | debugging | B | s v:8f79bd880873
+A diagram that shows the steps of an algorithm using standard symbols joined by arrows is a: | concept map | flowchart | pseudocode | source code | B | e v:48f2b7f4cb63
+In a search problem, the state we want to reach is called the: | initial state | goal | operation | path | B | v:042ebeb44932
+In an I-P-O chart, the marks a student types into a result program are the: | input | process | output | storage | A | s v:b2d4e93689d9
+Which flowchart symbol marks the Start and End of an algorithm? | Rectangle | Diamond | Oval (terminal) | Parallelogram | C | e v:48f2b7f4cb63

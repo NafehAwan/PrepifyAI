@@ -1,0 +1,13 @@
+# subject: Maths
+# chapter: 4
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+If the HCF of two polynomials is H and their LCM is L, then their product equals: | H + L | H × L | L ÷ H | H ÷ L | B | v:bbfd0e0315e9
+The factored form of x² + 2x − 8 is: | (x + 4)(x − 2) | (x − 4)(x + 2) | (x + 4)(x + 2) | (x − 4)(x − 2) | A | v:2c1b851194c2
+The HCF of x³y² and x²y⁵ is: | x³y⁵ | x²y² | xy | x⁵y⁷ | B | h v:9824922dbad8
+The factored form of 27x³ − 8 is: | (3x − 2)(9x² + 6x + 4) | (3x + 2)(9x² − 6x + 4) | (3x − 2)³ | (3x − 2)(9x² − 4) | A | h v:0f7ce9503ecc
+To subtract algebraic fractions with different denominators, we first find their: | HCF | LCM | product of numerators | sum of denominators | B | e v:24298dc47de8
+The factored form of 8a³ + 12a² + 6a + 1 is: | (2a + 1)³ | (2a − 1)³ | (2a + 1)(4a² − 2a + 1) | 8a³ + 1 | A | h v:4020eaadc9c4

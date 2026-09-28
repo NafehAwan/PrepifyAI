@@ -1,0 +1,454 @@
+{
+  "subject": "English",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "163dc42020af",
+      "stem": "The poem \"Two Mothers Remembered\" is written by:",
+      "options": [
+        "Joann Snow Duncanson",
+        "Robert Frost",
+        "Alfred Tennyson",
+        "Emily Dickinson"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "2b72a5eb001c",
+      "stem": "The central idea of \"Two Mothers Remembered\" is:",
+      "options": [
+        "gratitude and love for two mothers, one who gave birth and one who raised the child",
+        "a journey to the mountains",
+        "the life of a soldier",
+        "the beauty of nature"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "51b5d2be78cd",
+      "stem": "A mother who raises a child who was not born to her is called an:",
+      "options": [
+        "adoptive mother",
+        "aunt",
+        "teacher",
+        "neighbour"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "cebb13ce1f3e",
+      "stem": "The main feeling expressed in the poem is:",
+      "options": [
+        "gratitude",
+        "anger",
+        "fear",
+        "jealousy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "624d6fc616d7",
+      "stem": "\"Gratitude\" means:",
+      "options": [
+        "the feeling of being thankful",
+        "a feeling of hatred",
+        "a kind of pride",
+        "a feeling of boredom"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "6cf39fa322ce",
+      "stem": "Choose the synonym of \"nurture\":",
+      "options": [
+        "Care for and bring up",
+        "Ignore",
+        "Punish",
+        "Abandon"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "216809873a8e",
+      "stem": "Choose the antonym of \"remember\":",
+      "options": [
+        "Recall",
+        "Recollect",
+        "Forget",
+        "Memorize"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "1a7f612fca32",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Gratitude",
+        "Gratetude",
+        "Gratitued",
+        "Graditude"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "f897ad99a809",
+      "stem": "Aliya was raised lovingly by her aunt after her own mother died. Writing a poem thanking both women would express the same feelings as:",
+      "options": [
+        "\"Two Mothers Remembered\"",
+        "a travel diary",
+        "a business letter",
+        "a news report"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "ffd8e7d9fde1",
+      "stem": "In \"She loved me dearly\", \"dearly\" is:",
+      "options": [
+        "a noun",
+        "an adjective",
+        "an adverb",
+        "a verb"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "61d55a11fe81",
+      "stem": "Choose the passive voice of \"My mother raised me.\":",
+      "options": [
+        "I am raised by my mother.",
+        "I was raised by my mother.",
+        "I have raised my mother.",
+        "I was raising by my mother."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "6b583c998d1a",
+      "stem": "Fill in the blank: I am grateful ___ my mother for her love.",
+      "options": [
+        "at",
+        "to",
+        "on",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "fa13d229dd58",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "A mother's love are special.",
+        "A mother's love is special.",
+        "A mother's love be special.",
+        "A mother's love were special."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "430c95465feb",
+      "stem": "Which sentence is in the past tense?",
+      "options": [
+        "She cares for me.",
+        "She cared for me.",
+        "She will care for me.",
+        "She is caring for me."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "a98895b4a04f",
+      "stem": "Choose the synonym of \"affection\":",
+      "options": [
+        "Love",
+        "Hatred",
+        "Anger",
+        "Envy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "2ac39a323428",
+      "stem": "Choose the indirect speech of: She said, \"I will always love you.\"",
+      "options": [
+        "She said that she would always love me.",
+        "She said that I will always love you.",
+        "She says that she would always love me.",
+        "She said that she will always loved me."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "75af3af0cfe4",
+      "stem": "Choose the correct way to write \"the love of my mother\":",
+      "options": [
+        "my mothers love",
+        "my mother's love",
+        "my mothers's love",
+        "my mother love"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "e281cb6db416",
+      "stem": "Choose the plural of \"mother-in-law\":",
+      "options": [
+        "mother-in-laws",
+        "mothers-in-law",
+        "mothers-in-laws",
+        "mother-ins-law"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "bec99effebfe",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "\"Thank you, Mother,\" I said.",
+        "\"Thank you Mother\" I said.",
+        "\"thank you, mother,\" I said.",
+        "Thank you, Mother, I said."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "540955e3a495",
+      "stem": "A student gives her mother a card saying, \"You gave me love that I can never repay.\" The word \"repay\" means:",
+      "options": [
+        "pay back",
+        "take away",
+        "borrow",
+        "forget"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "3e6863c685a1",
+      "stem": "The word \"sacrifice\" means:",
+      "options": [
+        "giving up something valuable for the sake of others",
+        "taking something from others",
+        "winning a game",
+        "a kind of gift shop"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "78030e7b1fc5",
+      "stem": "Choose the adjective in: \"She has a gentle heart.\"",
+      "options": [
+        "She",
+        "has",
+        "gentle",
+        "heart"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "361d828c1764",
+      "stem": "Choose the antonym of \"selfless\":",
+      "options": [
+        "Generous",
+        "Kind",
+        "Selfish",
+        "Caring"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "76342fb610b5",
+      "stem": "Fill in the blank: Both mothers played ___ important role in the child's life.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "3b3d31951b41",
+      "stem": "Choose the synonym of \"cherish\":",
+      "options": [
+        "Treasure",
+        "Neglect",
+        "Destroy",
+        "Forget"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "f7a1211a9b76",
+      "stem": "Which sentence shows gratitude?",
+      "options": [
+        "Thank you for everything you have done for me.",
+        "Leave me alone.",
+        "I don't care.",
+        "Why did you do that?"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "e972be00e161",
+      "stem": "The word \"remembered\" in the title shows that the poet is:",
+      "options": [
+        "thinking back with love about the two mothers",
+        "forgetting the mothers",
+        "writing a letter of complaint",
+        "describing a holiday"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    },
+    {
+      "id": "1e98c9a0aabd",
+      "stem": "Choose the noun related to \"grateful\":",
+      "options": [
+        "Gratefully",
+        "Gratitude",
+        "Great",
+        "Grated"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 10)"
+    }
+  ]
+}

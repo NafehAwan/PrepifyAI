@@ -1,0 +1,967 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "5cc82e9182fa",
+      "stem": "If there are three points on basketball P1,P2 and P3 moves parallel to each other and there is no change in orientation which type of motion is this",
+      "options": [
+        "Translatory",
+        "Rotatory",
+        "Vibratory",
+        "Random"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "b91eb69115c4",
+      "stem": "An object is changing its position with respect to its surrounding which property explains this",
+      "options": [
+        "Heat",
+        "Light",
+        "Atomic",
+        "Mechanics"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "ad46c67c0ed0",
+      "stem": "Study of motion without discussing the cause of motion is called",
+      "options": [
+        "Kinematics",
+        "Dynamics",
+        "Heat",
+        "Motion"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c2aed1d75b98",
+      "stem": "The rest and motion of an object is explained by which property",
+      "options": [
+        "Absolute",
+        "Constant",
+        "Variable",
+        "Relative"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "29c53d356815",
+      "stem": "When an object repeat its motion about a point again and again this motion is known as",
+      "options": [
+        "Translatory",
+        "Rotatory",
+        "Vibratory",
+        "None of these"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "939729193f06",
+      "stem": "Which type of motion of earth causes day and night on earth",
+      "options": [
+        "Circular",
+        "Rotatory",
+        "Vibratory",
+        "Random"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "baea97e6f2b5",
+      "stem": "If an object is moving from point A to B and take turn moves toward C it's total path is explained by",
+      "options": [
+        "Distance",
+        "Displacement",
+        "Speed",
+        "Velocity"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "14a0e823f0f9",
+      "stem": "What is the name for this symbol '∆'",
+      "options": [
+        "Vector",
+        "Force",
+        "Delta",
+        "Rho"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "cd1470d2c675",
+      "stem": "If Sir Jamal running in an Olympics and the running track is oval shape what is his displacement",
+      "options": [
+        "Maximum",
+        "Minimum",
+        "Zero",
+        "Equal"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
+    },
+    {
+      "id": "4008fe33a3f8",
+      "stem": "Who is the fastest man on Earth",
+      "options": [
+        "Usain Bolt",
+        "Josh Inglis",
+        "Sangakkara",
+        "JP Duminy"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "1c3b760c2048",
+      "stem": "If a car is moving with a velocity of 70Km/hr neither speeding up nor slowing down which type of velocity is this",
+      "options": [
+        "Variable",
+        "Instantaneous",
+        "Uniform",
+        "Average"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "6c40bde2a9cf",
+      "stem": "Which property has the fastest speed calculated on Earth",
+      "options": [
+        "Sound",
+        "Current",
+        "Light",
+        "Water"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "60f65305e31c",
+      "stem": "If you want to move with a speed of light which property should you remove",
+      "options": [
+        "Energy",
+        "Mass",
+        "Weight",
+        "Charge"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "8e6fd9841184",
+      "stem": "Who is the first scientist to measure the speed of any material is",
+      "options": [
+        "Einstein",
+        "Galileo",
+        "Newton",
+        "Hertz"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "f7a35986c94d",
+      "stem": "If the distance time graph represent a parallel line along time Axis what information we get from this",
+      "options": [
+        "Uniform motion",
+        "Rest",
+        "Acceleration",
+        "Speed"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "b6795e206d8c",
+      "stem": "If there is no a resistance a piece of paper and a coin is dropped from a top of building which would strike the earth first",
+      "options": [
+        "Paper",
+        "Coin",
+        "Dropper",
+        "Both at same time"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "5abe3f4ede45",
+      "stem": "If this speed and direction of moving body does not change with time then it's velocity is said to be",
+      "options": [
+        "Uniform",
+        "Contact",
+        "Variable",
+        "Zero"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "8fe93cf050ef",
+      "stem": "If the direction of motion of a body and acceleration are in same direction then acceleration will be",
+      "options": [
+        "Uniform",
+        "Positive",
+        "Negative",
+        "Zero"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "22959966ca87",
+      "stem": "If a body is thrown upward then it's final velocity will be",
+      "options": [
+        "Uniform",
+        "Positive",
+        "Negative",
+        "Zero"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "a9417370c34a",
+      "stem": "If an object is dropped from top of building and is freely falling so the value of g depends on",
+      "options": [
+        "Mass",
+        "Speed",
+        "Size",
+        "Height"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "982ed9d955c6",
+      "stem": "A person A sitting in a bus says that he is at rest but an observer B standing on a road says that A is moving the right person is",
+      "options": [
+        "Person B",
+        "Person A",
+        "Both person",
+        "None of these"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "b08a656bf229",
+      "stem": "When an object is moving with uniform changing speed then the slope of speed time graph determine the magnitude of",
+      "options": [
+        "Displacement",
+        "Velocity",
+        "Acceleration",
+        "Momentum"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e956605f6462",
+      "stem": "If an object is slowing down the acceleration will be",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Constant"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "246cfac2dc12",
+      "stem": "At an amusement park, a ride swings back and forth but never leaves the same spot. What type of motion is this?",
+      "options": [
+        "Linear motion",
+        "Circular motion",
+        "Oscillatory motion",
+        "Random motion"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "a6ca7012bfc6",
+      "stem": "A drone flies straight from the warehouse to drop a package 2km north, no turns. What type of motion is this?",
+      "options": [
+        "Rectilinear motion",
+        "Projectile motion",
+        "Rotational motion",
+        "Periodic motion"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "24c8c18a8b6a",
+      "stem": "A batsman hits the ball and it follows a curved path before landing on the ground. What type of motion is this?",
+      "options": [
+        "Uniform motion",
+        "Circular motion",
+        "Projectile motion",
+        "Vibratory motion"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e60ca4d75776",
+      "stem": "Which type of motion is exhibited by a freely falling body?",
+      "options": [
+        "Circular Motion",
+        "Linear Motion",
+        "Rotatory Motion",
+        "Vibrational Motion"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "464080c982ff",
+      "stem": "An athlete runs exactly one complete lap around a circular running track of radius R. What are the values of distance (s) and displacement (Δd) respectively?",
+      "options": [
+        "s = 0, Δd = 2πR",
+        "s = 2πR, Δd = 0",
+        "s = πR², Δd = 2R",
+        "s = 2R, Δd = 0"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "4488a73703a9",
+      "stem": "If a commuter travels 10 km due North, then makes a sharp right turn and drives 10 km due East, what is the total distance covered and the net displacement?",
+      "options": [
+        "Distance = 20 km, Displacement = 20 km",
+        "Distance = 14.14 km, Displacement = 20 km",
+        "Distance = 20 km, Displacement = 14.14 km North-East",
+        "Distance = 0 km, Displacement = 10 km"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "233843f8f4a5",
+      "stem": "A delivery truck travels along a winding track of length 1200 m in 60 seconds. The straight-line distance from its starting warehouse to its destination is 600 m. What is its average speed?",
+      "options": [
+        "10 m/s",
+        "20 m/s",
+        "30 m/s",
+        "5 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "8e16f5a6a026",
+      "stem": "An object is moving with a constant velocity of +15 m/s along a straight runway. What is its acceleration?",
+      "options": [
+        "+15 m/s²",
+        "-15 m/s²",
+        "Zero",
+        "Dependent on the total time elapsed"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "89851d5fe393",
+      "stem": "A sports car accelerates uniformly from 10 m/s to 30 m/s over a time interval of 5 seconds. What is the precise rate of change of its velocity?",
+      "options": [
+        "8 m/s²",
+        "4 m/s²",
+        "6 m/s²",
+        "2 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "6d132cd92ce6",
+      "stem": "When an object is dropped in a true vacuum environment near Earth’s surface, its downward acceleration is:",
+      "options": [
+        "Dependent on the object’s total surface area profile",
+        "Directly proportional to the mass of the object",
+        "Constant at approximately 9.8 m/s², regardless of mass values",
+        "Progressively decreasing as the object gains velocity"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "710352835c8d",
+      "stem": "If a heavy iron ball and a light wooden ball are dropped simultaneously from the top of a tall tower in a vacuum chamber, which ball strikes the base first?",
+      "options": [
+        "The heavy iron ball hits significantly earlier",
+        "The light wooden ball hits significantly earlier",
+        "Both balls strike the base at the exact same instant",
+        "It depends heavily on which ball was released with more force"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "54d154502459",
+      "stem": "An object is dropped from rest from the edge of a high cliff. Assuming g = 10 m/s² for calculation ease, what will be its downward speed after exactly 3 seconds of free fall?",
+      "options": [
+        "15 m/s",
+        "30 m/s",
+        "45 m/s",
+        "9.8 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "70ddc1ed8e1b",
+      "stem": "The study of motion without considering the forces involved is called:",
+      "options": [
+        "Dynamics",
+        "Statics",
+        "Kinematics",
+        "Thermodynamics"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "0b7c093e2ed3",
+      "stem": "What is an example of rotatory motion?",
+      "options": [
+        "A car moving on a road",
+        "A wheel spinning about its axle",
+        "A ball falling from a height",
+        "A person walking"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "7a5f5ae8bc01",
+      "stem": "If a car is traveling westward along a straight highway and applies its brakes to slow down, what are the directions of its velocity and acceleration vectors respectively?",
+      "options": [
+        "Velocity is West, Acceleration is West",
+        "Velocity is East, Acceleration is West",
+        "Velocity is West, Acceleration is East",
+        "Both vectors drop instantly to zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "9954b8e72338",
+      "stem": "Which of the following is the correct formula for speed?",
+      "options": [
+        "Speed = Time / Distance",
+        "Speed = Distance x Time",
+        "Speed = Distance / Time",
+        "Speed = Time x Acceleration"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "cf856d7284b2",
+      "stem": "When does an object accelerate?",
+      "options": [
+        "Only when its speed increases",
+        "Only when its speed decreases",
+        "Only when its direction of motion changes",
+        "When there is a change in its speed, direction, or both"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "cc487bf738dc",
+      "stem": "If a car is traveling around a circular track at a constant speed of 50 km/h, is it accelerating?",
+      "options": [
+        "Yes, because its direction is constantly changing",
+        "No, because the speed is constant",
+        "No, because the velocity is constant",
+        "Yes, because the distance is increasing"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "a9845a4ab5d3",
+      "stem": "What is the SI unit of acceleration?",
+      "options": [
+        "m/s",
+        "m/s²",
+        "m/s³",
+        "kg/m³"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "9cb3cbdc7823",
+      "stem": "The area under a speed–time graph represents:",
+      "options": [
+        "Speed",
+        "Volume",
+        "Acceleration",
+        "Distance"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "e748cecc7f5f",
+      "stem": "A particle starts from rest and achieves a velocity of 24 m/s in a span of 6 seconds along a linear track. What is its average acceleration?",
+      "options": [
+        "4 m/s²",
+        "144 m/s²",
+        "2 m/s²",
+        "0.25 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "9a37eab3cb2a",
+      "stem": "If a body covers equal distance in equal intervals of time, then the speed of the body is known as:",
+      "options": [
+        "Uniform",
+        "Variable",
+        "Non uniform",
+        "All of these"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "5060f9795193",
+      "stem": "If a satellite is moving in a circle with constant speed, its velocity will be:",
+      "options": [
+        "Uniform",
+        "Constant",
+        "Variable",
+        "All of these"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "601c7fd40759",
+      "stem": "If the velocity of the body is decreasing then its acceleration will be:",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Uniform"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "520842ade0c6",
+      "stem": "If the velocity of the body is increasing then its acceleration will be:",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Non-uniform"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "46ae50438941",
+      "stem": "If the velocity of a body is uniform then its acceleration will be:",
+      "options": [
+        "Positive",
+        "Negative",
+        "Zero",
+        "Doubled"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "4510b4a8f258",
+      "stem": "A passenger train traveling eastward along a straight track begins to slow down as it approaches a station. The direction of the train's acceleration is:",
+      "options": [
+        "Toward the East",
+        "Toward the West",
+        "Vertically downward",
+        "It has no direction because it is slowing down"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "33a7c6a5ada3",
+      "stem": "An airplane is flying toward the Southeast when the pilot throttles back the engines, causing the plane to slow down. The direction of the aircraft's acceleration is toward the:",
+      "options": [
+        "Southeast",
+        "Northwest",
+        "Southwest",
+        "Northeast"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "8a3bbe81feaf",
+      "stem": "A driver presses the gas pedal of a car moving along a straight highway, causing it to speed up in the forward direction. In this situation, the car's acceleration is:",
+      "options": [
+        "Negative",
+        "Positive",
+        "Zero",
+        "Non-uniform"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "a294ddb3eb3c",
+      "stem": "A speed-time graph features a straight line sloping downward toward the right. This represents:",
+      "options": [
+        "Uniform acceleration",
+        "Uniform deceleration",
+        "Non-uniform acceleration",
+        "Constant speed"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "32576a985761",
+      "stem": "When a distance-time graph shows a curved line that bends gradually upward (getting steeper), the motion of the body can be described as:",
+      "options": [
+        "Uniform speed",
+        "Constant velocity",
+        "Non-uniform speed where the object is speeding up",
+        "Non-uniform speed where the object is slowing down"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "87b98fb9cdd1",
+      "stem": "The slope (or gradient) of a distance-time graph directly represents which physical quantity?",
+      "options": [
+        "Displacement",
+        "Acceleration",
+        "Distance",
+        "Speed"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "1ff11d87b15f",
+      "stem": "If the distance-time graph of a moving object is a perfectly flat, horizontal line parallel to the time axis, it indicates that:",
+      "options": [
+        "The object is moving with constant speed",
+        "The object is at complete rest",
+        "The object is moving with uniform acceleration",
+        "The object is returning back to its starting point"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "5a670fa7f80f",
+      "stem": "An object is thrown vertically straight upward into the air. At the highest point of its flight, the object’s velocity and acceleration are:",
+      "options": [
+        "Velocity is zero, and acceleration is zero",
+        "Velocity is zero, and acceleration is equal to acceleration due to gravity",
+        "Velocity is maximum, and acceleration is zero",
+        "Velocity is maximum, and acceleration is equal to acceleration due to gravity"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "d7d864e9d686",
+      "stem": "The gradient (slope) of speed time curve gives magnitude of:",
+      "options": [
+        "Distance",
+        "Speed",
+        "Time",
+        "Acceleration"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "5a9343081594",
+      "stem": "The speedometer of a car shows:",
+      "options": [
+        "Average speed",
+        "Instantaneous speed",
+        "Uniform acceleration",
+        "Total distance"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    },
+    {
+      "id": "539b644b96c2",
+      "stem": "The motion of a guitar string when plucked is an example of:",
+      "options": [
+        "Linear motion",
+        "Circular motion",
+        "Vibratory motion",
+        "Random motion"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Phy-Unit 2 MCQS.docx"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# subject: Physics
+# chapter: 7
+# source: Written for Prepify from the FBISE Class 9 Physics syllabus (Density and Temperature)
+# answer_source: authored
+# difficulty: medium
+
+Density is defined as: | mass per unit volume | volume per unit mass | weight per unit area | force per unit volume | A | e
+The SI unit of density is: | kg m⁻³ | kg m⁻² | g m | N m⁻³ | A | e
+A block has a mass of 200 g and a volume of 50 cm³. Its density is: | 0.25 g cm⁻³ | 4 g cm⁻³ | 250 g cm⁻³ | 10 000 g cm⁻³ | B | s
+The density of pure water is about: | 100 kg m⁻³ | 1000 kg m⁻³ | 10 000 kg m⁻³ | 1 kg m⁻³ | B | e
+What is the mass of 2 m³ of water (density 1000 kg m⁻³)? | 500 kg | 1002 kg | 2000 kg | 0.002 kg | C | s
+A substance has a density of 2.5 g cm⁻³. What volume does 500 g of it occupy? | 200 cm³ | 1250 cm³ | 502.5 cm³ | 20 cm³ | A | s h
+A wooden block floats on water while an iron nail of the same size sinks. This is because: | wood is less dense than water and iron is denser | wood is heavier than iron | iron has a smaller volume | water pulls wood upward only | A | s
+Temperature is a measure of the: | total heat in a body | average kinetic energy of its particles | mass of the particles | volume of the body | B
+27 °C on the Kelvin scale is: | 246 K | 273 K | 300 K | 327 K | C | e
+0 K is called absolute zero. On the Celsius scale it is about: | 0 °C | −100 °C | −273 °C | 273 °C | C | e
+100 °C on the Fahrenheit scale is: | 180 °F | 212 °F | 100 °F | 132 °F | B
+A weather report gives the temperature as 77 °F. In Celsius this is: | 25 °C | 45 °C | 32 °C | 20 °C | A | s h
+At which temperature do the Celsius and Fahrenheit scales show the same reading? | 0 | −40 | 32 | 100 | B | h
+The lower fixed point (ice point) of the Celsius scale is: | 0 °C | 4 °C | 32 °C | 100 °C | A | e
+A clinical thermometer usually measures temperatures in the range: | 0 °C to 100 °C | 35 °C to 42 °C | −10 °C to 110 °C | 50 °C to 150 °C | B
+Alcohol rather than mercury is used in thermometers for very cold places because alcohol: | has a very low freezing point | is heavier | conducts heat better | is a metal | A | s
+Mercury is useful in thermometers because it: | expands uniformly and does not wet the glass | is colourless | freezes at room temperature | evaporates quickly | A
+Gaps are left between railway track sections because the rails: | contract in summer | expand when heated in summer | become lighter in winter | need drainage | B | s
+A bimetallic strip bends when heated because the two metals: | expand by different amounts | have the same expansion | melt at once | lose mass | A
+Water has its maximum density at: | 0 °C | 4 °C | 37 °C | 100 °C | B
+In winter a lake freezes from the top downward, so fish survive in the water below. This happens mainly because: | ice is denser than water | water is densest at 4 °C and ice floats | fish produce heat | the bottom of the lake is warmer due to sunlight | B | s h
+A metal lid on a glass jar is stuck. Pouring hot water over the lid helps because: | the metal expands more than the glass | the glass expands more than the metal | hot water is a lubricant | heat reduces friction to zero | A | s
+Heat and temperature differ because heat is: | the energy transferred due to a temperature difference | always measured in kelvin | the same as temperature | a property of particles at rest | A
+When a gas is heated in a sealed container, its particles: | slow down | move faster | stop moving | shrink | B
+A student measures the mass of a stone as 60 g and finds it raises the water in a measuring cylinder from 40 cm³ to 60 cm³. The stone's density is: | 1.5 g cm⁻³ | 3 g cm⁻³ | 1 g cm⁻³ | 20 g cm⁻³ | B | s h
+Which of these has the lowest density? | Iron | Water | Air | Glass | C | e
+The temperature of a body rises from 20 °C to 50 °C. The rise in temperature on the Kelvin scale is: | 30 K | 303 K | 323 K | 273 K | A | h
+Overhead electric wires are left slightly slack in summer so that in winter they: | do not snap when they contract | can expand more | carry more current | look straight | A | s
+The instrument used to measure temperature is the: | barometer | thermometer | hygrometer | manometer | B | e
+If equal masses of two liquids have volumes of 100 cm³ and 50 cm³, the liquid with volume 50 cm³ has: | half the density | the same density | twice the density | four times the density | C | h

@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "5b57fd7083b8",
+      "stem": "Identify the system that exists independently of human design and invention.",
+      "options": [
+        "Solar system",
+        "Traffic system",
+        "School management system",
+        "Keyboard"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3a277ae8ac67",
+      "stem": "During the execute stage of the fetch-decode-execute cycle, which component actively transforms data using logic gates, while the others fetch, decode or hold data?",
+      "options": [
+        "Control Unit (CU)",
+        "Memory Unit (MU)",
+        "Arithmetic Logic Unit (ALU)",
+        "Register unit"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "d81e6fc4dc46",
+      "stem": "Which memory component temporarily stores active programs and data during execution but loses its contents when the power is turned off?",
+      "options": [
+        "Hard disk",
+        "ROM",
+        "RAM",
+        "USB flash drive"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ac13c9469294",
+      "stem": "Whose invention provided the conceptual foundation for modern programmable computers?",
+      "options": [
+        "Alan Turing",
+        "Charles Babbage",
+        "Bill Gates",
+        "John von Neumann"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e45a36380f41",
+      "stem": "If a computer starts successfully but no application software can run, which of the following software is most likely still functioning?",
+      "options": [
+        "MS Word",
+        "Adobe Photoshop",
+        "Windows 11",
+        "Google Chrome"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ccf771860ed4",
+      "stem": "A computer executes instructions accurately because one CPU component directs the activities of all other components. Which function does this component perform?",
+      "options": [
+        "Perform calculations",
+        "Store data permanently",
+        "Manage and coordinate all computer operations",
+        "Display graphics"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "41a65780573c",
+      "stem": "Which type of memory is located closest to the CPU and stores frequently accessed data for faster processing?",
+      "options": [
+        "RAM",
+        "Cache memory",
+        "Hard disk",
+        "ROM"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "560fce034e8a",
+      "stem": "A system developed to solve a particular human need is classified as an artificial system because it:",
+      "options": [
+        "occurs naturally in the environment",
+        "is created by humans to achieve a specific goal",
+        "cannot be broken down into smaller parts",
+        "does not require any input"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5bc947eb3b87",
+      "stem": "Which of the following storage devices generally has the largest storage capacity in a typical modern PC?",
+      "options": [
+        "SSD (solid state drive)",
+        "CD-ROM",
+        "RAM",
+        "Cache memory"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "144c0e643b15",
+      "stem": "A computer stores both program instructions and data in the same memory before execution. This feature is based on which concept?",
+      "options": [
+        "Stored-program concept",
+        "Graphical user interface",
+        "Mechanical computing",
+        "Cloud computing"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "32b367e8532a",
+      "stem": "A user wants to organize numerical data, perform calculations and create charts. Which software is most suitable?",
+      "options": [
+        "Linux",
+        "macOS",
+        "MS Excel",
+        "BIOS"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "8930c261be03",
+      "stem": "If a computer stores information in the smallest possible binary form, which unit is being used?",
+      "options": [
+        "Byte",
+        "Kilobyte",
+        "Bit",
+        "Nibble"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "42a7c9227eb6",
+      "stem": "A team is assigned to develop an operating system instead of assembling computer hardware. Which area of work does this task belong to?",
+      "options": [
+        "Manufacturing processors",
+        "Designing circuits",
+        "Developing programs and operating systems",
+        "Building monitors"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f1ee72d031d4",
+      "stem": "A teacher wants to convert a printed worksheet into an editable digital document. Which device should be used?",
+      "options": [
+        "Monitor",
+        "Printer",
+        "Speaker",
+        "Scanner"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "3d8f46bd4b6d",
+      "stem": "A computer loses the contents of its working memory when power is turned off, while another storage device keeps its data. This difference is mainly due to:",
+      "options": [
+        "Volatility of the memory",
+        "Colour and shape",
+        "Price and brand",
+        "The size of the device"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5182d47e9b3a",
+      "stem": "Which set of symbols is sufficient to represent all data and instructions in a digital computer?",
+      "options": [
+        "0 to 9",
+        "0 and 1",
+        "1 and 2",
+        "0 to 7"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "52c03f7eecf8",
+      "stem": "A network gives each computer its own separate connection to a central device. Which is a direct advantage of this arrangement?",
+      "options": [
+        "Failure of one workstation does not affect the others",
+        "It needs no connecting device",
+        "It uses only a single communication cable",
+        "Every computer is directly connected to every other computer"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "80bf1e7151f5",
+      "stem": "Which component interprets and executes program instructions while coordinating all processing in a computer?",
+      "options": [
+        "RAM",
+        "Motherboard",
+        "CPU",
+        "Hard disk"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "5a81bad03cc3",
+      "stem": "A student scans old photos, types a report in MS Word and then prints it. How are the scanner, MS Word and the printer classified by function?",
+      "options": [
+        "Output, system software, input",
+        "Input, application software, output",
+        "Storage, utility software, input",
+        "Processing, hardware, software"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "0020d33c7880",
+      "stem": "A pyramid shows CPU registers at the top (smallest, fastest, costliest), then cache, then RAM, and the hard disk at the bottom (largest, slowest, cheapest). This arrangement illustrates the:",
+      "options": [
+        "Memory hierarchy",
+        "Processing cycle",
+        "Network topology",
+        "Boot sequence"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "049052ab3694",
+      "stem": "A gamer's high-graphics game runs very slowly. He wants the CPU to reach game data much faster than reading it from the hard drive. Which component should he upgrade?",
+      "options": [
+        "Hard drive capacity",
+        "Monitor size",
+        "RAM size",
+        "Keyboard speed"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "f6aec489c11c",
+      "stem": "A program calculates student grades. The Control Unit directs the flow and the result goes to the monitor. Which part actually calculates the average marks?",
+      "options": [
+        "Control Unit",
+        "Monitor",
+        "Arithmetic Logic Unit (ALU)",
+        "Hard disk"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "74c87272560b",
+      "stem": "Fatima saves her data on a USB drive, unplugs it overnight, and finds all her data still there the next day. This shows the USB drive is a:",
+      "options": [
+        "Volatile storage device",
+        "Non-volatile storage device",
+        "Primary storage device",
+        "Temporary storage device"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "2913251924f0",
+      "stem": "A teacher shows three pictures: a student typing on a keyboard, the CPU showing \"Processing\", and a printer producing a report. What do the three steps represent?",
+      "options": [
+        "Output, processing, input",
+        "Input, processing, output",
+        "Storage, input, output",
+        "Processing, storage, output"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "cdb5833a8a61",
+      "stem": "A new laptop (16 GB RAM, 512 GB SSD) costs five times more than an old one (4 GB RAM, 256 GB HDD). The price difference is MOSTLY due to the new laptop having:",
+      "options": [
+        "A larger screen",
+        "More RAM and a faster SSD",
+        "A different coloured case",
+        "More USB ports"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "83480b28e45d",
+      "stem": "A hospital system takes heartbeat data, compares it with normal levels and alerts a nurse if the heart stops. This describes the basic functions of a computer system as:",
+      "options": [
+        "Artificial system",
+        "Data, information and processing",
+        "Natural system",
+        "Networking only"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "d28f7ef219e6",
+      "stem": "During data communication, information travels through a fibre-optic cable from one device to another. The fibre-optic cable is the:",
+      "options": [
+        "Sender",
+        "Receiver",
+        "Transmission medium",
+        "Protocol"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "b7c40bd3e0fb",
+      "stem": "A school has computer labs in two cities, each with its own local network, and the two networks are joined so teachers can share one database. The connection between the two is best described as a:",
+      "options": [
+        "PAN",
+        "LAN",
+        "WAN",
+        "VPN"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "11e5648cbd9c",
+      "stem": "Student A says, \"Hardware is useless without software.\" Student B says, \"Software cannot run without hardware.\" Which conclusion is correct?",
+      "options": [
+        "Hardware is more important than software",
+        "Hardware and software are interdependent",
+        "Software is more important than hardware",
+        "They are independent of each other"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e0dfc8967df2",
+      "stem": "A student uses Wi-Fi to open a learning portal hosted in another country; the data passes through several interconnected networks. Which technology mainly enables this?",
+      "options": [
+        "LAN",
+        "Internet",
+        "Star topology",
+        "Ring topology"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    }
+  ]
+}

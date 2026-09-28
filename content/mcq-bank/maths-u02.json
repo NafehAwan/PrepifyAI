@@ -1,0 +1,969 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "e757869cbb4e",
+      "stem": "0.0009988 × 10¹⁰ in standard notation is:",
+      "options": [
+        "9,988,000",
+        "998,800",
+        "99,880,000",
+        "9,988"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "951c81df9c87",
+      "stem": "log_b( m/n ) = 4 and log_b m = 7, then log_b n = ?",
+      "options": [
+        "28",
+        "11",
+        "3",
+        "−3"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "04cd89bb18ee",
+      "stem": "log₅ 5⁷ × log₇ 7³ = ?",
+      "options": [
+        "10",
+        "21",
+        "7",
+        "3"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "c602820e054b",
+      "stem": "log 156.3 = ?",
+      "options": [
+        "2.1939",
+        "1.1939",
+        "3.1939",
+        "2.9310"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "ba5f9281924f",
+      "stem": "log₂₅ 5 = ?",
+      "options": [
+        "5",
+        "2",
+        "1/2",
+        "1/5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "9ebefa45f1c5",
+      "stem": "log_b ( b³ × b⁻⁵ ) = ?",
+      "options": [
+        "2",
+        "−3",
+        "8",
+        "−2"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "afda8d6cda15",
+      "stem": "If log_b 2 = 0.3010 and log_b 3 = 0.4771, then log_b 72 = ?",
+      "options": [
+        "1.8573",
+        "1.6532",
+        "2.1401",
+        "1.9542"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "626d292794ef",
+      "stem": "log₁₀ (0.001)² = ?",
+      "options": [
+        "−3",
+        "6",
+        "−6",
+        "3"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "917735c2691a",
+      "stem": "The characteristic of log 0.0123 is:",
+      "options": [
+        "4",
+        "−2",
+        "2̄",
+        "3"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx",
+      "rejected": "Two correct options: −2 and 2̄ are the same characteristic written two ways."
+    },
+    {
+      "id": "9024ccb29934",
+      "stem": "If log₂ x = log₄ 16, then x = ?",
+      "options": [
+        "8",
+        "16",
+        "2",
+        "4"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "ee34891c9eb9",
+      "stem": "If log_b 2 = 0.3010, log_b 3 = 0.4771, log_b 5 = 0.6990, then log_b (6/5) = ?",
+      "options": [
+        "0.0791",
+        "0.1761",
+        "0.2218",
+        "0.9542"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "2f8107199b70",
+      "stem": "Number of digits in 5⁵⁰ =",
+      "options": [
+        "34",
+        "35",
+        "36",
+        "33"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "736793685a23",
+      "stem": "If log_b (y³+1) = log_b 28, then y = ?",
+      "options": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "cf82bed746e9",
+      "stem": "If log₆₄ x = −4/3, then x = ?",
+      "options": [
+        "1/16",
+        "1/256",
+        "256",
+        "16"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "8ef7170b5db7",
+      "stem": "log 13/(7b) expanded is:",
+      "options": [
+        "log 13 − log 7 + log b",
+        "log 13 − log 7 − log b",
+        "log 13 + log 7 − log b",
+        "log 13/(log 7 · log b)"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "09bb3a32660a",
+      "stem": "log 39 − log t − log b combined is:",
+      "options": [
+        "log(39tb)",
+        "log(39/t + b)",
+        "log(39/tb)",
+        "log 39/log(tb)"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "7512f92a837e",
+      "stem": "antilog 2.4541 = ?",
+      "options": [
+        "24.45",
+        "284.5",
+        "2845",
+        "0.2845"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "48876679077e",
+      "stem": "log_y xwill be equal to:",
+      "options": [
+        "(log_z x)/(log_y z)",
+        "(logₓ z)/(log_y z)",
+        "(log_z x)/(log_z y)",
+        "(log_z y)/(log_z x)"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "dda09737c3c3",
+      "stem": "Integral part of the logarithm is called",
+      "options": [
+        "Mantissa",
+        "Characteristic",
+        "Exponent",
+        "Base"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "5eb1b2a0753d",
+      "stem": "Mantissa is always non- negative number less than",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "80e9941177c4",
+      "stem": "Logarithm of a number = -------------",
+      "options": [
+        "2(Mantissa) + Characteristic",
+        "Characteristic + Mantissa",
+        "Characteristic – Mantissa",
+        "Mantissa – Characteristic"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "5c8ba962454e",
+      "stem": "The inverse operation of taking log is called",
+      "options": [
+        "Characteristic",
+        "Mantissa",
+        "Antilog",
+        "None of these"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "b66b5b091b12",
+      "stem": "Logarithms with base ------- are called common logarithms.",
+      "options": [
+        "10",
+        "e",
+        "-e",
+        "2"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "d20eccaa8339",
+      "stem": "Antilog means to find a number whose -------- is given.",
+      "options": [
+        "Characteristic",
+        "Mantissa",
+        "Log",
+        "None of these"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "099d7831d688",
+      "stem": "Decimal part or fractional part of a logarithm is called --------",
+      "options": [
+        "Characteristic",
+        "Mantissa",
+        "Zero",
+        "None of these"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "b3ccad2f053d",
+      "stem": "If log_b x=4 and log_b y=2 , what is log_b (x × y³) ?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "10"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "879bcdc9da21",
+      "stem": "What is the value of x in the exponential equation 9 + e^(2x-4) = 10?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "6acf6e8a536c",
+      "stem": "Simplify: 10¹² ÷ 10⁵ ÷ 10³",
+      "options": [
+        "10²⁰",
+        "10¹²",
+        "10¹⁰",
+        "10⁴"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "90253abda447",
+      "stem": "log ( mⁿ) can be written as ----------",
+      "options": [
+        "(log m)ⁿ",
+        "m log n",
+        "n log m",
+        "log (mn)"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "17ac08032662",
+      "stem": "The relation y = log_z x implies",
+      "options": [
+        "x^y=z",
+        "z^y = x",
+        "x²=y",
+        "y² = x"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 ( Set 02).docx"
+    },
+    {
+      "id": "a36af47a574c",
+      "stem": "Which of the following is correctly written in scientific notation?",
+      "options": [
+        "53.4 × 10³",
+        "0.534 × 10⁵",
+        "5.34 × 10⁴",
+        "53.4 × 10⁴"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "76ea1f3b5588",
+      "stem": "0.00000492 in scientific notation is:",
+      "options": [
+        "4.92 × 10⁻⁵",
+        "4.92 × 10⁻⁶",
+        "49.2 × 10⁻⁷",
+        "0.492 × 10⁻⁵"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "4a7f22ee6ea3",
+      "stem": "5.64 × 10⁰ in standard notation is:",
+      "options": [
+        "56.4",
+        "0.564",
+        "5.64",
+        "564"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "1404729df6f7",
+      "stem": "(563.71 × 10⁻²) × (2.54 × 10⁴) in scientific notation is:",
+      "options": [
+        "1.432 × 10⁵",
+        "14.32 × 10⁴",
+        "1.432 × 10⁴",
+        "143.2 × 10³"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "601f6f8e1f29",
+      "stem": "The value of n in 0.00000000001 = 1 × 10ⁿ is:",
+      "options": [
+        "10",
+        "−10",
+        "−11",
+        "11"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "d108c8909d38",
+      "stem": "(0.023 × 10²) ÷ 10⁻² in standard notation equals:",
+      "options": [
+        "230",
+        "2300",
+        "23",
+        "0.23"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "86ea51b5833d",
+      "stem": "log₂ (log₃ 81) = ?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "509c3430f32f",
+      "stem": "The number of digits in 1.5 × 10⁸ written in standard form is:",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "3e08bb3f7d31",
+      "stem": "log₂ 128 = ?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "b8ff1f3c2393",
+      "stem": "125^(1/3) = 5 in logarithmic form is:",
+      "options": [
+        "log₅ 125 = 3",
+        "log₁₂₅ 5 = 1/3",
+        "log₅ 125 = 1/3",
+        "log₃ 5= 125"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "48abc7f9357f",
+      "stem": "log₅ (-1) is :",
+      "options": [
+        "−1",
+        "1",
+        "0",
+        "Undefined"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "15f64c395c44",
+      "stem": "If log₂ (4-2x) = y, for which value of x is y undefined?",
+      "options": [
+        "x = 0",
+        "x = 1",
+        "x = 2",
+        "x = −1"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "a51f0d8e92f8",
+      "stem": "The exponential form of log₈₁ (1/3) = −1/4 is:",
+      "options": [
+        "81^(1/4) = 3",
+        "81^(-1/4)= 1/3",
+        "(1/3)⁸¹ = −1/4",
+        "3⁸¹ = 1/4"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "2b70c8fdee32",
+      "stem": "If log_b b⁵ = x, then x = ?",
+      "options": [
+        "b",
+        "5b",
+        "5",
+        "1/5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "2ff2ca088dcf",
+      "stem": "The characteristic of log 3.3 × 10² is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "6921342a6152",
+      "stem": "Mantissa is always:",
+      "options": [
+        "Negative",
+        "An integer",
+        "Non-negative",
+        "Greater than 1"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "d99a068c8a07",
+      "stem": "If log_b x = log_b y, then which must be true?",
+      "options": [
+        "b = 1",
+        "x = y",
+        "x + y = 0",
+        "b = x"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "8974ee91fb34",
+      "stem": "If ln e⁴ = x, then x = ?",
+      "options": [
+        "e",
+        "4",
+        "e⁴",
+        "1/4"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "13fe189420e2",
+      "stem": "log 0.0123 = ?",
+      "options": [
+        "2.0908",
+        "2̄.0899",
+        "2̅.0899",
+        "−2.899"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx",
+      "rejected": "Two correct options: B and C are both 2̄.0899, written with different bar characters."
+    },
+    {
+      "id": "c861eed610a7",
+      "stem": "Number of digits in a whole number = characteristic + ?",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "−1"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "dcc14bdf1fad",
+      "stem": "If characteristic of log of a number is 3, how many digits does that number have?",
+      "options": [
+        "3",
+        "5",
+        "4",
+        "2"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "bec30ae85d39",
+      "stem": "In log 0.00532, the reference position is between digits 5 and 3. The characteristic is:",
+      "options": [
+        "3",
+        "−3",
+        "3̄",
+        "2"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx",
+      "rejected": "Two correct options: −3 and 3̄ are the same characteristic written two ways."
+    },
+    {
+      "id": "86576d8a11b5",
+      "stem": "Which expression equals 1?",
+      "options": [
+        "log_b ( m+n )",
+        "log_b b",
+        "log_b 0",
+        "log_b ( b+1 )"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "f83431650b1d",
+      "stem": "log (x²y³z) expanded equals:",
+      "options": [
+        "2 log x + 3 log y + log z",
+        "2 log x · 3 log y · log z",
+        "log 2x + log 3y + log z",
+        "6 log xyz"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "986a36a8af8c",
+      "stem": "log₃ 5 × log₅ 27 = ?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "1b1fc38f4353",
+      "stem": "log_b a × logₐ b = ?",
+      "options": [
+        "0",
+        "log_b a",
+        "1",
+        "logₐ b"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "868b37db0d8f",
+      "stem": "log₃ 536 converted to base 10 is:",
+      "options": [
+        "log 536 × log 3",
+        "log 536 / log 3",
+        "log 3 / log 536",
+        "log ( 536/3)"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "ee8e0fe759e9",
+      "stem": "log_b (50-5)equals:",
+      "options": [
+        "log_b 50- log_b 5",
+        "log_b 45",
+        "log_b 50+ log_b 5",
+        "log_b 5 × log_b 10"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "e8cb84c6f552",
+      "stem": "log (5p²q^(1/2))/(4√s t³) expanded fully is:",
+      "options": [
+        "log 5 + 2logp + ½logq − log4 − ½logs − 3logt",
+        "log 5 + 2logp + ½logq + log4 + ½logs + 3logt",
+        "log 5 − 2logp − ½logq − log4 + ½logs − 3logt",
+        "log 5 + 2logp + ½logq − log4 + ½logs + 3logt"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    },
+    {
+      "id": "deaea1918c73",
+      "stem": "The natural logarithm uses base:",
+      "options": [
+        "10",
+        "2",
+        "e",
+        "π"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Maths-Unit = 2 (Set 01).docx"
+    }
+  ]
+}

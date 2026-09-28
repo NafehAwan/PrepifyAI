@@ -1,0 +1,15 @@
+# subject: Computer Science
+# chapter: 5
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A company keeps sensitive records on its own private servers but uses a public provider's servers for its website. This is a: | public cloud | private cloud | hybrid cloud | community cloud | C | s v:671fd6e17480
+An AI model learns to recognise cats after being trained on thousands of photos already labelled "cat" or "not cat". This is: | unsupervised learning | supervised learning | reinforcement learning | rule-based programming | B | s v:7475c7f494c9
+A bank website has a program that answers customers' typed questions at any hour. This is a: | chatbot | expert system | computer virus | spreadsheet | A | s e v:baef3d64379c
+Google Drive and Dropbox, which anyone can sign up for over the Internet, are examples of: | private cloud | public cloud | hybrid cloud | local storage | B | v:a2b377aef259
+Which is a limitation of AI systems? | They are always 100% accurate | They can give wrong results and their decisions are hard to explain | They never need data | They cannot run on computers | B | v:b11964f84d63
+A factory replaces many workers with AI-controlled robots. Which negative impact of AI does this show? | Job losses | Better medical diagnosis | Faster translation | Fewer road accidents | A | s v:2c3e6ea0a949
+Building an expert system begins with: | gathering knowledge from human experts into a knowledge base | selling the software | testing it with users | printing the results | A | v:a16968ce5a9c
+Turning spoken words into written text is called: | speech recognition | computer vision | data mining | encryption | A | e v:d3a8d738a170

@@ -1,0 +1,1030 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "2bdbedf0b8b0",
+      "stem": "A cylinder is resting on its flat circular base on a level table. When it is pushed slightly, it tips but its center of mass rises. If the same cylinder is placed on its curved side, displacing it horizontally causes its center of mass to neither rise nor fall. What is the equilibrium state on the curved side?",
+      "options": [
+        "Neutral equilibrium",
+        "Stable equilibrium",
+        "Unstable equilibrium",
+        "Thermal equilibrium"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "8ee9a9132ed5",
+      "stem": "A uniform plank of length L is supported at its midpoint. A block of mass M is placed at a distance of L/4 to the left of the pivot. Where should a second block of mass 2M be placed to maintain static equilibrium?",
+      "options": [
+        "At a distance of L/8 to the right of the pivot",
+        "At a distance of L/4 to the right of the pivot",
+        "At a distance of L/2 to the right of the pivot",
+        "At a distance of L/16 to the right of the pivot"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "27cca1bc8a1d",
+      "stem": "A tightrope walker carries a long, heavy, downward-curved pole. How does this pole help the walker maintain stable equilibrium?",
+      "options": [
+        "It lowers the overall center of gravity of the walker-pole system, potentially below the wire.",
+        "It completely eliminates the action of gravitational forces on the walker.",
+        "It decreases the rotational inertia of the walker so they can swing faster.",
+        "It creates an aerodynamic lift force that pushes the walker upward."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "9046d02b3586",
+      "stem": "An irregularly shaped cardboard sheet is suspended freely from a pinhole near its edge. When it comes to rest, where must its center of gravity lie?",
+      "options": [
+        "Directly vertically below the point of suspension",
+        "At the exact geometric center of the cardboard",
+        "Directly horizontally adjacent to the pinhole",
+        "Outside the boundary of the cardboard material entirely"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e6bea19d9bce",
+      "stem": "A marble is placed at the bottom of a perfectly hemispherical bowl. If it is displaced slightly to the side and released, it rolls back toward the bottom. What type of equilibrium does this position represent?",
+      "options": [
+        "Stable equilibrium",
+        "Unstable equilibrium",
+        "Neutral equilibrium",
+        "Dynamic equilibrium"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c63cd98b5c1d",
+      "stem": "A uniform ladder leans against a frictionless vertical wall and rests on a rough horizontal floor. Which force provides the counter-torque to prevent the ladder from sliding outward at the base?",
+      "options": [
+        "The static frictional force acting horizontally inward at the base of the ladder",
+        "The normal force exerted by the frictionless vertical wall",
+        "The weight of the ladder acting vertically downward from its center of mass",
+        "The normal force of the floor pushing vertically upward"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "0b73fea1a6d0",
+      "stem": "What are the two formal conditions required for a rigid body to be in complete static equilibrium?",
+      "options": [
+        "The vector sum of all external forces is zero, and the sum of all external torques about any pivot is zero.",
+        "The object must be moving at a constant high velocity and rotating at a constant angular speed.",
+        "The kinetic energy must equal the potential energy, and net internal force must vanish.",
+        "The mass must be evenly distributed around a single geometric point, and friction must be absent."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "16615cd3b076",
+      "stem": "A mechanic uses a long wrench to loosen a stuck bolt. If they apply a perpendicular force F at a distance d from the bolt, which configuration yields the largest moment?",
+      "options": [
+        "Applying force F at a distance 2d perpendicularly",
+        "Applying force 2F at an angle of 30° at a distance d",
+        "Applying force F at a distance d perpendicularly",
+        "Applying force 2F directly parallel to the wrench arm"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e8889ca05ff6",
+      "stem": "Which of the following statements correctly distinguishes between the center of mass and the center of gravity?",
+      "options": [
+        "Center of mass depends purely on matter distribution, while center of gravity depends on the local gravitational field.",
+        "They are always located at completely different points for any everyday object.",
+        "Center of gravity cannot change if the object is taken to the Moon, but center of mass will change.",
+        "Center of mass applies only to solids, while center of gravity applies only to liquids."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "9f32b9c0ad55",
+      "stem": "A solid block rests on a horizontal table. A horizontal force is slowly applied to its top edge until it begins to tip over rather than slide. At the precise moment it begins to tilt, what is true about its base of support?",
+      "options": [
+        "The normal reaction force shifts entirely to the pivoting edge of the base.",
+        "The center of gravity drops significantly to maintain a lower potential energy.",
+        "The line of action of its weight still passes perfectly through the middle of the base.",
+        "Friction completely vanishes at the interface."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "df8510bbcc6f",
+      "stem": "Why do racing cars feature an exceptionally wide wheel track (width) and a very low chassis profile?",
+      "options": [
+        "To ensure the line of action of the weight stays within the base of support even during severe tilts and cornering.",
+        "To maximize the coefficient of kinetic friction with the air.",
+        "To increase the total mass of the vehicle and slow it down.",
+        "To convert stable equilibrium into neutral equilibrium during high-speed tracks."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c3dbd0a8f8d9",
+      "stem": "A heavy crate is at rest on a rough inclined plane. As the angle of inclination is slowly increased, the crate remains stationary. What happens to the magnitude of the static frictional force during this process?",
+      "options": [
+        "It increases continuously to match the increasing parallel component of the crate's weight.",
+        "It decreases because the normal force is decreasing.",
+        "It remains completely constant because the mass of the crate is constant.",
+        "It abruptly drops to zero the moment the inclination starts."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "66182a11e7a4",
+      "stem": "Which of the following scenarios highlights a major engineering disadvantage of friction?",
+      "options": [
+        "The overheating and degradation of moving pistons inside an internal combustion engine",
+        "The capability of a braking system to halt a speeding train safely",
+        "The ability of a person to walk across a polished floor without slipping",
+        "The transmission of power via conveyor belts in a manufacturing facility"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "2534f1962fff",
+      "stem": "How do ball bearings significantly reduce mechanical friction inside industrial rotating machinery axles?",
+      "options": [
+        "They substitute sliding friction with rolling friction, which typically features a much smaller coefficient.",
+        "They alter the gravitational field surrounding the moving axle components.",
+        "They increase the microscopic contact area to spread out the kinetic energy.",
+        "They chemically dissolve surface asperities on the structural metal."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "95a4ff31351f",
+      "stem": "What is the ultimate fate of the mechanical energy lost during frictional dissipation in a braking system?",
+      "options": [
+        "It is transformed entirely into thermal energy, sound, and microscopic material wear.",
+        "It is completely destroyed and vanishes permanently from the universe.",
+        "It is stored as elastic potential energy within the atomic structure for infinite reuse.",
+        "It converts into extra gravitational mass inside the braking pads"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "3e33274ab14d",
+      "stem": "A car travels around a flat, unbanked circular curve at a constant speed. What specific real force supplies the required centripetal acceleration to keep the car on its circular path?",
+      "options": [
+        "The static friction force between the tires and the road surface pointing toward the center",
+        "An outward centrifugal force pushing the car away from the curve",
+        "The downward gravitational force of the Earth",
+        "The forward thrust provided by the car's engine"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "2223b58eafb9",
+      "stem": "A satellite moves in a stable circular orbit around the Earth at a constant altitude. If the radius of its orbit is increased to a larger value, what happens to its required average orbital speed?",
+      "options": [
+        "The required speed decreases because orbital speed is inversely proportional to the square root of the orbital radius.",
+        "The required speed must increase to overcome the extra distance.",
+        "The speed remains exactly the same because the satellite's mass hasn't changed.",
+        "The speed drops immediately to zero, causing it to hover perfectly stationary"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "0a9f36f2b568",
+      "stem": "A heavy stone tied to a string is whirled in a vertical circle. At which point in the path is the tension in the string at its absolute maximum value?",
+      "options": [
+        "At the lowest point of the circular path",
+        "At the highest point of the circular path",
+        "At the horizontally midway points where the string is horizontal",
+        "The tension remains uniform throughout the entire rotation."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "df4783fa2bc1",
+      "stem": "A box is placed on the flat bed of a truck. The truck accelerates forward quickly, and the box does not slip. In which direction does the static frictional force act on the box?",
+      "options": [
+        "In the forward direction, matching the truck's acceleration",
+        "In the backward direction, opposing the truck's motion",
+        "Vertically downward, increasing the normal force",
+        "Friction is entirely absent because the box isn't moving relative to the truck"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "71ac611ddf2f",
+      "stem": "A non-uniform rod of length 1.0 m has its center of gravity located 0.3 m from its left end. If it is balanced horizontally on a single knife-edge pivot, where must that pivot be placed?",
+      "options": [
+        "0.3 m from the left end",
+        "0.5 m from the left end",
+        "0.7 m from the left end",
+        "At either extreme end of the rod"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c93dae2e3654",
+      "stem": "A designer builds a toy with a heavy lead weight concentrated at the very base of a lightweight plastic dome. Why this toy upright itself does instantly when knocked over?",
+      "options": [
+        "Any tilt raises its center of gravity, creating a restoring torque that pulls it back up.",
+        "The plastic dome generates a magnetic field that repels the floor.",
+        "The configuration acts as an unstable equilibrium state.",
+        "The weight increases rolling fluid friction with the surrounding air."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "7fdcd6db01f2",
+      "stem": "Two blocks made of identical wood are resting on the same horizontal metal plate. Block A has a flat contact surface area of 10 square cm and mass M. Block B has a contact area of 40 square cm and mass M. How do their maximum limiting static frictional forces compare?",
+      "options": [
+        "They are exactly equal.",
+        "Block B has four times the frictional force of Block A.",
+        "Block A has four times the frictional force of Block B.",
+        "Friction cannot be compared without knowing the velocity of the blocks."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "d440644f534b",
+      "stem": "A modern maglev (magnetic levitation) train hovers slightly above its track, completely eliminating physical contact. Which type of friction does this design eliminate, and which type remains?",
+      "options": [
+        "It eliminates solid sliding friction but still faces fluid friction from the air.",
+        "It eliminates fluid friction but retains rolling friction.",
+        "It completely eliminates all forms of friction, allowing infinite coasting without power.",
+        "It replaces fluid friction with limiting static friction."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "03148a29d106",
+      "stem": "A pilot pulls a jet aircraft into a tight circular loop. If they double the speed of the aircraft while maintaining the exact same radius of the loop, the centripetal force required on the pilot increases by what factor?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "It remains unchanged"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "fd1dfb1776a7",
+      "stem": "What happens to the average orbital speed of a space station if its internal payload mass is doubled while keeping its orbital altitude around Earth constant?",
+      "options": [
+        "It remains exactly the same.",
+        "It drops to half its original value.",
+        "It doubles to support the extra weight.",
+        "It increases by a factor of √2"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "32c2d4fd5049",
+      "stem": "A uniform beam of weight W is supported at both ends by vertical wires. If a heavy box is placed on the beam closer to the left wire than the right wire, how do the tensions in the two wires compare?",
+      "options": [
+        "The left wire experiences higher tension than the right wire.",
+        "The right wire experiences higher tension than the left wire.",
+        "The tensions remain perfectly identical to preserve symmetry.",
+        "Both tensions drop down to zero."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "b43d5aa34522",
+      "stem": "Why does a wet, rainy day significantly increase the stopping distance of a vehicle applying its brakes?",
+      "options": [
+        "Water acts as a lubricant, separating the surfaces and reducing the coefficient of friction.",
+        "Rain increases the mass of the car, which significantly boosts its momentum.",
+        "The liquid increases the normal force pushing upward from the asphalt.",
+        "Fluid friction from rainwater is much higher than dry sliding friction."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "99dc8c0a86d4",
+      "stem": "An object travels in a circle at a constant speed. Which statement accurately describes its acceleration vector?",
+      "options": [
+        "The acceleration is non-zero, constant in magnitude, and continually changes direction to point toward the center.",
+        "The acceleration is exactly zero because the speed is constant.",
+        "The acceleration vector points tangentially along the path of motion.",
+        "The acceleration vector points directly away from the center of rotation."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "a404245f3888",
+      "stem": "If a satellite moving in a stable circular orbit around Earth is suddenly moved to a new orbit with a larger radius, what will happen to its required orbital speed?",
+      "options": [
+        "It will increase",
+        "It will decrease",
+        "It will remain exactly the same",
+        "It will drop immediately to zero"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "81af95f3cbcd",
+      "stem": "The direction of centripetal force is:",
+      "options": [
+        "Tangential to the circle",
+        "Away from the center",
+        "Towards the center",
+        "Upward"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "b757eac75cfe",
+      "stem": "A 300 N boy sits 2 m from the pivot of a seesaw. A 200 N boy can balance it by sitting:",
+      "options": [
+        "2 m away",
+        "3 m away",
+        "1.5 m away",
+        "4 m away"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "5fa3b61fe9ab",
+      "stem": "A door opens more easily when pushed far from the hinge because:",
+      "options": [
+        "Friction decreases",
+        "Torque increases due to larger moment arm",
+        "Force increases automatically",
+        "Weight decreases"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "69ff3962eec3",
+      "stem": "A force is applied directly through the pivot point of a lever. The torque produced is:",
+      "options": [
+        "Maximum",
+        "Minimum but non-zero",
+        "Zero",
+        "Depends on mass"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "b7ba5c3412e0",
+      "stem": "A 2 kg ball moves in a circle of radius 4 m with speed 8 m/s. Centripetal force is:",
+      "options": [
+        "16 N",
+        "24 N",
+        "32 N",
+        "48 N"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "fcc37a0a85a9",
+      "stem": "When a stone tied to a string is whirled in a circle and the string breaks, the stone moves:",
+      "options": [
+        "Toward the center",
+        "In a circular path",
+        "Along the tangent to the circle",
+        "Backward"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "31cb7aaaba9c",
+      "stem": "A body topples when:",
+      "options": [
+        "Its center of gravity falls outside its base",
+        "Its weight increases",
+        "Friction decreases",
+        "Its mass decreases"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "614e69e88e76",
+      "stem": "A body will be most stable when it has:",
+      "options": [
+        "High center of mass and narrow base",
+        "Low center of mass and wide base",
+        "High center of mass and wide base",
+        "Low center of mass and narrow base"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "27ddef55b37e",
+      "stem": "A bus is more likely to overturn while turning if:",
+      "options": [
+        "It has a low center of gravity",
+        "It moves slowly",
+        "It has a high center of gravity",
+        "Its wheels are wide apart"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "7fe0a24a69e4",
+      "stem": "The center of gravity of a body is the point where:",
+      "options": [
+        "All forces act",
+        "Entire weight appears to act",
+        "Friction acts",
+        "Torque is maximum"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "58d28d9e5a7e",
+      "stem": "Why are ball bearings used in machines?",
+      "options": [
+        "Increase friction",
+        "Reduce weight",
+        "Convert sliding friction into rolling friction",
+        "Increase torque"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "f5f8fcf7f948",
+      "stem": "The friction acting between a moving box and the floor is:",
+      "options": [
+        "Static friction",
+        "Rolling friction",
+        "Sliding friction",
+        "Magnetic friction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "cfd4c29c09eb",
+      "stem": "A parachutist falling downward at constant velocity is in:",
+      "options": [
+        "Static equilibrium",
+        "Dynamic translational equilibrium",
+        "Rotational equilibrium only",
+        "Accelerated motion"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "15951f3ad360",
+      "stem": "A body can be in equilibrium even when several forces act on it because:",
+      "options": [
+        "All forces are equal",
+        "Net force and net torque are zero",
+        "No motion occurs",
+        "Gravity is absent"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "b1c2c952b644",
+      "stem": "A 50 N force acts at a perpendicular distance of 0.4 m from the pivot. The torque is:",
+      "options": [
+        "10 N·m",
+        "20 N·m",
+        "25 N·m",
+        "125 N·m"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "ea245805000f",
+      "stem": "A force of 20 N is applied to a door. Which action produces the greatest torque?",
+      "options": [
+        "Push at the hinge",
+        "Push halfway from the hinge",
+        "Push at the edge of the door perpendicular to it",
+        "Push at the edge parallel to the door"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "38990b184eeb",
+      "stem": "The SI unit of moment of force is:",
+      "options": [
+        "N/m",
+        "Nm",
+        "kgm/s²",
+        "Joule only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "0817c16c1920",
+      "stem": "If the line of action of force passes through the pivot, the turning effect is:",
+      "options": [
+        "Maximum",
+        "Minimum",
+        "Zero",
+        "Infinite"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "f3674b3f6aa5",
+      "stem": "A body moving with uniform velocity in a straight line is:",
+      "options": [
+        "Not in equilibrium",
+        "In translational equilibrium",
+        "In rotational equilibrium only",
+        "Accelerating"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "eed37807735a",
+      "stem": "A picture hanging motionless on a wall is an example of:",
+      "options": [
+        "Dynamic equilibrium",
+        "Static equilibrium",
+        "Rotational motion",
+        "Circular motion"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "f0167c6664fc",
+      "stem": "A body can rotate without translating when:",
+      "options": [
+        "Net force = 0 and torque ≠ 0",
+        "Net force ≠ 0 and torque = 0",
+        "Both are zero",
+        "Neither exists"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "54e8cdab3cb7",
+      "stem": "Why are racing cars built very close to the ground?",
+      "options": [
+        "To reduce mass",
+        "To increase speed only",
+        "To lower center of gravity",
+        "To reduce torque"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "a0d7f317a260",
+      "stem": "Which statement is correct?",
+      "options": [
+        "Rolling friction > Sliding friction",
+        "Sliding friction > Rolling friction",
+        "Both are always equal",
+        "Friction never depends on surface type"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "682e7f4ab3fa",
+      "stem": "Which force acts as centripetal force for the Moon revolving around Earth?",
+      "options": [
+        "Magnetic force",
+        "Tension force",
+        "Gravitational force",
+        "Frictional force"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "2b1bd282aafb",
+      "stem": "A feather and a stone are dropped in air. Which will achieve terminal velocity first?",
+      "options": [
+        "Stone",
+        "Feather",
+        "Both together",
+        "Neither"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "015d1f0392a7",
+      "stem": "A skydiver of mass 80 kg and another of mass 60 kg use identical parachutes. Which has the greater terminal velocity?",
+      "options": [
+        "60 kg diver",
+        "80 kg diver",
+        "Same terminal velocity",
+        "Depends on height"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "e95a16b20de0",
+      "stem": "If Earth's gravitational force suddenly disappeared, a satellite would:",
+      "options": [
+        "Fall to Earth",
+        "Stop immediately",
+        "Move in a straight line tangential to its orbit",
+        "Move toward the Sun"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "da6c80027e63",
+      "stem": "A satellite in a circular orbit is accelerating because:",
+      "options": [
+        "Its speed is increasing",
+        "Its velocity direction is continuously changing",
+        "Its mass is changing",
+        "Gravity is increasing"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "26b951f294b8",
+      "stem": "Two satellites orbit Earth at different altitudes. Which has the greater orbital speed?",
+      "options": [
+        "The one closer to Earth",
+        "The one farther from Earth",
+        "Both have same speed",
+        "Depends on mass"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "962b6e805fb2",
+      "stem": "Two satellites of masses 500 kg and 1000 kg orbit Earth at the same height. Which has the greater orbital speed?",
+      "options": [
+        "1000 kg satellite",
+        "500 kg satellite",
+        "Both have same speed",
+        "Cannot be determined"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "04832b3066ce",
+      "stem": "If the distance from the pivot is doubled while the force remains constant, the turning effect will:",
+      "options": [
+        "Halve",
+        "Double",
+        "Remain unchanged",
+        "Become zero"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "1435d3d5ddba",
+      "stem": "A light child and a heavy child are balancing a seesaw. If the light child moves farther from the pivot, the seesaw will:",
+      "options": [
+        "Remain balanced",
+        "Tilt toward the lighter child",
+        "Tilt toward the heavier child",
+        "Stop moving"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "a5b76d71a55b",
+      "stem": "Frictional force always acts:",
+      "options": [
+        "In the direction of motion",
+        "Opposite to the direction of motion",
+        "Vertically upward",
+        "Toward the center of the Earth"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "488247942263",
+      "stem": "When a falling object reaches terminal velocity, the drag force becomes:",
+      "options": [
+        "Greater than its weight",
+        "Less than its weight",
+        "Equal to its weight",
+        "Zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    },
+    {
+      "id": "0ec8a3be29c3",
+      "stem": "Drag force depends on:",
+      "options": [
+        "Shape of the object only",
+        "Speed of the object only",
+        "Nature of the fluid only",
+        "All of the above"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Phy-Unit 4 MCQS.docx"
+    }
+  ]
+}

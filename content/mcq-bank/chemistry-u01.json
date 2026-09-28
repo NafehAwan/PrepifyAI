@@ -1,0 +1,935 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "463ab4d1666f",
+      "stem": "A chemist is studying the metabolic reactions in a human cell. What is this branch of chemistry called?",
+      "options": [
+        "inorganic Chemistry",
+        "Biochemistry",
+        "Physical Chemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "143ccbe6a8c3",
+      "stem": "Organic chemistry is defined as the study of substances containing carbon, but which of these is usually excluded?",
+      "options": [
+        "Proteins",
+        "Carbohydrates",
+        "Synthetic Polymers",
+        "Carbonates and Bicarbonates"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "8eea81e1a73a",
+      "stem": "Which of these is a primary goal of chemistry?",
+      "options": [
+        "Only studying living things",
+        "Avoiding the use of technology",
+        "Ignoring the study of energy",
+        "Investigating the changes that materials undergo"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "32e098ce7d6e",
+      "stem": "A scientist is looking at the chemical changes that occur in the human body. This falls under:",
+      "options": [
+        "Physical Chemistry",
+        "Organic Chemistry",
+        "Biochemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "4465c786f8ce",
+      "stem": "If a substance contains carbon but is an oxide, it is typically classified under:",
+      "options": [
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Geochemistry",
+        "Nuclear Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "d948f757e20c",
+      "stem": "Environmental Chemistry is closely linked to studying:",
+      "options": [
+        "How to create more hazardous waste",
+        "Toxic substances that pollute the environment",
+        "Only nuclear reactions",
+        "Physical laws of motion"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "c48c61baba6b",
+      "stem": "Chemistry helps us understand:",
+      "options": [
+        "Natural phenomena",
+        "How to avoid chemical changes",
+        "Only the study of math",
+        "How to ignore properties of matter"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "be2e67fdce56",
+      "stem": "\"Green chemistry\" models processes that:",
+      "options": [
+        "Reduce the use of hazardous substances",
+        "Use hazardous substances",
+        "Increase pollution",
+        "Only focus on biochemistry"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "67c8a6076a7d",
+      "stem": "What does chemistry investigate regarding matter?",
+      "options": [
+        "Only its composition",
+        "Only its structure",
+        "Only its interactions with energy",
+        "Its composition, structure, properties, and interactions"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "ff065a04e5c9",
+      "stem": "A pharmaceutical company is developing a new medicine to target a specific protein in the body. Which branch is most involved?",
+      "options": [
+        "Geochemistry",
+        "Medicinal Chemistry",
+        "Analytical Chemistry",
+        "Nuclear Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "5d0908fcd631",
+      "stem": "A scientist discovers a new reaction in the laboratory. Turning that discovery into a useful product is mainly an example of:",
+      "options": [
+        "Technology using scientific knowledge",
+        "Science only",
+        "Engineering only",
+        "Technology only"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "508018a0311b",
+      "stem": "Designing machinery for manufacturing detergents is mainly the work of:",
+      "options": [
+        "Astronomers",
+        "Scientists",
+        "Engineers",
+        "Biochemists"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "e315475080ca",
+      "stem": "A company develops a stronger plastic for packaging materials. Which branch is most directly involved?",
+      "options": [
+        "Biochemistry",
+        "Polymer Chemistry",
+        "Geochemistry",
+        "Nuclear Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "f5eb3e230b39",
+      "stem": "Why would a chemist use analytical instruments?",
+      "options": [
+        "To increase production only",
+        "To identify and measure substances",
+        "To study stars",
+        "To design bridges"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "3df6e46dacaf",
+      "stem": "Which activity represents engineering rather than science?",
+      "options": [
+        "Studying atomic structure",
+        "Investigating bond formation",
+        "Designing a chemical manufacturing plant",
+        "Discovering a new chemical reaction"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "7288438803ec",
+      "stem": "A team of researchers is investigating how a new type of plastic waste interacts with seawater minerals over time. Which interdisciplinary field of chemistry would be most appropriate to categorize this study?",
+      "options": [
+        "Nuclear Chemistry",
+        "Geochemistry",
+        "Organic Chemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "f7f396d438da",
+      "stem": "A researcher investigates why iron rusts in the presence of air and moisture. This activity represents:",
+      "options": [
+        "Science",
+        "Engineering",
+        "Marketing",
+        "Technology"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "dd0ef2fdc924",
+      "stem": "A student wants to determine whether a new fertilizer increases crop yield. Which factor should remain constant throughout the experiment?",
+      "options": [
+        "Type of fertilizer",
+        "Amount of crop produced",
+        "Soil type and water supply",
+        "Experimental conclusion"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "8ebd920f13de",
+      "stem": "Which situation best shows science, technology, and engineering working together?",
+      "options": [
+        "Memorizing chemical formulas",
+        "Building a water filtration system",
+        "Reading a chemistry book",
+        "Naming laboratory apparatus"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "d2a1b2f3b517",
+      "stem": "A chemist studying greenhouse gases and their effects on climate is working in:",
+      "options": [
+        "Organic Chemistry",
+        "Nuclear Chemistry",
+        "Astrochemistry",
+        "Environmental Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "8e463f8850bf",
+      "stem": "An engineer designing the structure of a solar power plant is mainly applying:",
+      "options": [
+        "Engineering principles",
+        "Nuclear reactions",
+        "Organic reactions",
+        "Scientific investigation"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "e8947f2d8165",
+      "stem": "The relationship between atoms, bonds, and matter is primarily investigated in:",
+      "options": [
+        "Polymer Chemistry",
+        "Geochemistry",
+        "Industrial Chemistry",
+        "Physical Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "514e2e96cd45",
+      "stem": "Which branch of chemistry deals with instruments and methods for identifying substances?",
+      "options": [
+        "Geochemistry",
+        "Analytical Chemistry",
+        "Astrochemistry",
+        "Polymer Chemistry"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "8db3d3ef7cc8",
+      "stem": "When frying potatoes, a food technologist analyzes the oil to understand how it breaks down. How is this an example of chemistry in action?",
+      "options": [
+        "It utilizes engineering to change the taste of potatoes",
+        "It is an example of nuclear chemistry altering food",
+        "It proves that oil is an inorganic substance",
+        "It uses analytical methods to monitor the quality of organic molecules"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "cb6dd852baf3",
+      "stem": "Which of these is an example of an inorganic compound?",
+      "options": [
+        "Salt (NaCl)",
+        "A Carbohydrate",
+        "Plastic bag",
+        "A protein"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "c64f3cffc3aa",
+      "stem": "If you are researching how greenhouse gases contribute to climate change, what is your primary field of study?",
+      "options": [
+        "Polymer Chemistry",
+        "Medicinal Chemistry",
+        "Nuclear Chemistry",
+        "Environmental Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "2d81e176265f",
+      "stem": "Why do we study chemistry?",
+      "options": [
+        "To apply concepts to new substances and technologies",
+        "To stop using all technology",
+        "To only study carbon compounds",
+        "To avoid studying matter"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "bfdfe00c89af",
+      "stem": "How does technology improve the work of a chemist in the pharmaceutical industry?",
+      "options": [
+        "By reducing the need for chemical Knowledge",
+        "By removing the need for scientists to conduct research",
+        "By automatically making every medicine safe",
+        "By allowing for the creation of completely new medicines using advanced analytical and identifying tools"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "5742cfc87aae",
+      "stem": "A student claims that chemistry is important only in laboratories. Which example best disproves this claim?",
+      "options": [
+        "Using a telescope",
+        "Cooking food at home",
+        "Reading a history book",
+        "Playing football"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "2f2e48319868",
+      "stem": "Which activity demonstrates the role of chemistry in agriculture?",
+      "options": [
+        "Producing fertilizers to improve crop yield",
+        "Designing road networks",
+        "Constructing buildings",
+        "Manufacturing furniture"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "ac24c0d3a301",
+      "stem": "Which of these is a valid interpretation of the \"Nature of Science\" in Chemistry?",
+      "options": [
+        "Science is purely for building machines",
+        "Science provides the foundational understanding to explain phenomena, while technology applies this to solve problems",
+        "Chemistry is a stagnant field with no interdisciplinary potential",
+        "Engineering is the study of matter and energy changes"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "7b45365d6e55",
+      "stem": "Which of this best describes the \"Interdisciplinary\" nature of modern chemistry?",
+      "options": [
+        "It uses concepts from other fields like physics, biology, and environmental science",
+        "It refuses to use outside information",
+        "It only uses math",
+        "It is strictly limited to one textbook"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "0d1b2786b578",
+      "stem": "Why is the study of 'matter's interactions' essential to modern medicine?",
+      "options": [
+        "It helps in avoiding all chemical changes",
+        "It is only concerned with identifying carbon",
+        "It is irrelevant to energy considerations",
+        "It helps in understanding how drugs bond with biological targets"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "b250053290cc",
+      "stem": "Which branch would be most concerned with the toxicological pathways of heavy metal accumulation in organisms?",
+      "options": [
+        "Biochemistry",
+        "Organic Chemistry",
+        "Environmental Chemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "add2967af34f",
+      "stem": "Why would a scientist investigating the \"Middle Ages\" of chemical history need to distinguish between science and engineering?",
+      "options": [
+        "To prove engineering is older than science",
+        "To understand the evolution of how we explored nature versus how we built tools",
+        "To show that chemistry didn't exist in the past",
+        "It is not important"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "c6bb14edf0b6",
+      "stem": "Which branch of chemistry essentially dictates the \"how and why\" of chemical reactions?",
+      "options": [
+        "Many inorganic compounds would be wrongly classified as organic",
+        "The branch would disappear",
+        "Nothing would change",
+        "Biochemistry would be renamed"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx",
+      "rejected": "The options belong to a different question in the source (they answer what would happen if a definition changed), so none answers the stem."
+    },
+    {
+      "id": "057235b16582",
+      "stem": "Why would a study on the effect of volcanic gases on Earth's atmosphere be categorized as Geochemistry?",
+      "options": [
+        "Because volcanoes are only organic",
+        "Because it doesn't involve energy",
+        "Because it involves Earth materials and their chemical transformations",
+        "Because it uses only hand tools"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "958a99a52240",
+      "stem": "A student concludes that a fertilizer is effective after testing it on only one plant. What is the major weakness in this conclusion?",
+      "options": [
+        "Lack of observation",
+        "Insufficient evidence",
+        "Incorrect measurements",
+        "Excessive experimentation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "9deb52b68b6a",
+      "stem": "If a substance is used as a medicine, which sub-fields of chemistry are likely to have collaborated on its development?",
+      "options": [
+        "Inorganic Chemistry and Engineering",
+        "Physical Chemistry",
+        "Organic Chemistry and Biochemistry",
+        "Only Analytical Chemistry"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "381a651be6d4",
+      "stem": "Which branch of chemistry provides the \"tools\" to verify that a manufacturer is not putting toxic chemicals in drinking water?",
+      "options": [
+        "Analytical Chemistry",
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Physical Chemistry"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "ecb5343396f4",
+      "stem": "A scientist records all observations, including unexpected ones. This practice mainly helps to:",
+      "options": [
+        "Eliminate experimentation",
+        "Increase objectivity",
+        "Reduce accuracy",
+        "Save time"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "1c3a69fefb76",
+      "stem": "Why are scientific conclusions often considered tentative?",
+      "options": [
+        "Scientists lack confidence",
+        "Experiments are unnecessary",
+        "Observations are always incorrect",
+        "New evidence can refine existing knowledge"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "c6f80fdd41c1",
+      "stem": "A chemist studies the effect of temperature on reaction rates. The primary objective is to understand:",
+      "options": [
+        "Composition of matter",
+        "Chemical behavior of matter",
+        "Origin of the universe",
+        "Manufacturing processes"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "3132803ec152",
+      "stem": "Which characteristic distinguishes science from personal opinion?",
+      "options": [
+        "Evidence-based reasoning",
+        "Imagination",
+        "Creativity",
+        "Observation alone"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "6abf335367fc",
+      "stem": "A researcher finds that repeated experiments produce conflicting results. The most appropriate action is to:",
+      "options": [
+        "Ignore the unusual results",
+        "Reevaluate the procedure and collect more data",
+        "Publish the first result obtained",
+        "Select the result that supports the hypothesis"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "17132357d1a4",
+      "stem": "Which branch would be least involved in investigating the composition of a newly discovered meteorite?",
+      "options": [
+        "Astrochemistry",
+        "Analytical Chemistry",
+        "Geochemistry",
+        "Medicinal Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "f12b0bd2a016",
+      "stem": "A chemist develops a new drug, an engineer designs a machine to manufacture it, and a company produces it on a large scale. Which sequence correctly represents the process?",
+      "options": [
+        "Technology → Science → Engineering",
+        "Science → Engineering → Technology",
+        "Engineering → Technology → Science",
+        "Technology → Engineering → Science"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "a1e9e20f8c0e",
+      "stem": "Which branch of chemistry would be most useful for a geologist analyzing the composition of ores?",
+      "options": [
+        "Geochemistry",
+        "Biochemistry",
+        "Organic Chemistry",
+        "Theoretical Chemistry"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "343ef78588b4",
+      "stem": "Which situation best demonstrates that chemistry contributes to the quality of human life?",
+      "options": [
+        "Discovery of a distant galaxy",
+        "Development of water purification techniques",
+        "Mapping ocean currents",
+        "Measuring earthquake intensity"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "423f3f24df1f",
+      "stem": "Which branch of chemistry would most likely cooperate with environmental scientists to monitor toxic substances in a river?",
+      "options": [
+        "Astrochemistry",
+        "Polymer Chemistry",
+        "Industrial Chemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "2c4b02d14387",
+      "stem": "A chemical process works well in the laboratory but fails during large-scale production. The problem is most likely addressed by:",
+      "options": [
+        "Historians",
+        "Chemical Engineers",
+        "Geologists",
+        "Astronomers"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "f585ee54702d",
+      "stem": "Why is it important for scientific experiments to be reproducible?",
+      "options": [
+        "To verify the reliability of results",
+        "To reduce the need for observations",
+        "To eliminate hypotheses",
+        "To increase the cost of research"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "c5bd3b36d856",
+      "stem": "A scientist studies the chemicals present in ancient fossils to understand past life on Earth. This investigation combines chemistry with:",
+      "options": [
+        "Literature and Art",
+        "Astronomy and Music",
+        "Archaeology and Biology",
+        "Economics and Commerce"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "ab9eebd1d251",
+      "stem": "A researcher investigating a disease first identifies the chemicals involved and then develops a treatment. This sequence shows that:",
+      "options": [
+        "Discoveries occur without research",
+        "Technology always comes before science",
+        "Engineering replaces chemistry",
+        "Application often follows scientific understanding"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "3ff0126ad594",
+      "stem": "Which characteristic of science allows knowledge to improve over time?",
+      "options": [
+        "Refusal to accept new ideas",
+        "Dependence on authority",
+        "Continuous testing and evaluation of evidence",
+        "Memorization of facts"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "a3e1aa28660f",
+      "stem": "A team of scientists from different fields works together to solve a water contamination problem. This approach highlights:",
+      "options": [
+        "The importance of interdisciplinary collaboration",
+        "The independence of scientific disciplines",
+        "The replacement of science by technology",
+        "The limitations of chemistry"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "5b53e83636d9",
+      "stem": "The discovery of synthetic fertilizers has significantly increased food production. This example best illustrates the impact of chemistry on:",
+      "options": [
+        "Astronomy",
+        "Agriculture",
+        "Literature",
+        "Transportation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    },
+    {
+      "id": "99e2df45e6ee",
+      "stem": "A scientist proposes an explanation for a phenomenon. Before it can be widely accepted, it must:",
+      "options": [
+        "Be memorized by students",
+        "Be approved by engineers",
+        "Be tested repeatedly",
+        "Be printed in textbooks"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Chem unit#1 MCQs.docx"
+    }
+  ]
+}

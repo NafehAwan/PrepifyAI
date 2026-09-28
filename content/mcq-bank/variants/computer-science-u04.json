@@ -1,0 +1,176 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "f195b56d4be3",
+      "stem": "A video platform receives millions of hours of uploads every day. This huge amount of data describes which characteristic of Big Data?",
+      "options": [
+        "Velocity",
+        "Volume",
+        "Variety",
+        "Veracity"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a0c45df9cfaa"
+    },
+    {
+      "id": "a87e64e0df44",
+      "stem": "A student surveys classmates about their favourite subject using a questionnaire. The data collected is:",
+      "options": [
+        "primary data",
+        "secondary data",
+        "metadata",
+        "derived data"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "baf4b5d065e0"
+    },
+    {
+      "id": "b08fa53346f9",
+      "stem": "The heights of students measured in centimetres are an example of:",
+      "options": [
+        "nominal data",
+        "ordinal data",
+        "continuous quantitative data",
+        "discrete quantitative data"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "5a609473c9eb"
+    },
+    {
+      "id": "dc72a4ed7f87",
+      "stem": "The number of students present in each class is an example of:",
+      "options": [
+        "continuous quantitative data",
+        "discrete quantitative data",
+        "nominal data",
+        "ordinal data"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "5a609473c9eb"
+    },
+    {
+      "id": "51414712b019",
+      "stem": "An online shop shows \"Customers who bought this also bought…\". This is an example of a:",
+      "options": [
+        "recommendation system",
+        "fraud-detection system",
+        "search engine",
+        "spam filter"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "909f6ebf2a6c"
+    },
+    {
+      "id": "07a59093279e",
+      "stem": "Which of these is quantitative data?",
+      "options": [
+        "Favourite colour of students",
+        "Eye colour",
+        "Number of books in a school bag",
+        "Name of a city"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "c0fa9b48c277"
+    },
+    {
+      "id": "e6161f1e84ff",
+      "stem": "A voice assistant understands the spoken command \"set an alarm for 6 am\". Which field makes this possible?",
+      "options": [
+        "Data mining",
+        "Natural Language Processing",
+        "Data cleaning",
+        "Data visualization"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a2aac8c3ee4b"
+    },
+    {
+      "id": "12c1c458b0da",
+      "stem": "A database that stores data in fixed tables of rows and columns is a:",
+      "options": [
+        "NoSQL database",
+        "relational database",
+        "flat image file",
+        "graph drawing"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "bceede344b6c"
+    },
+    {
+      "id": "60da7083ff3a",
+      "stem": "Analysing sales records shows that customers who buy bread often also buy eggs. This is an example of:",
+      "options": [
+        "data mining",
+        "data entry",
+        "data backup",
+        "data encryption"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "fc4f9a79c4eb"
+    },
+    {
+      "id": "940cb4836b4a",
+      "stem": "A collection of related records, such as the marks of all students in a class, is called a:",
+      "options": [
+        "dataset",
+        "program",
+        "chart",
+        "protocol"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "150f5d22343a"
+    }
+  ]
+}

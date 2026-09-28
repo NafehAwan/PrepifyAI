@@ -1,0 +1,486 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 15,
+  "questions": [
+    {
+      "id": "8e9496d8777d",
+      "stem": "Biochemistry is the study of:",
+      "options": [
+        "chemical processes in living things",
+        "rocks and minerals",
+        "stars",
+        "metals only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "7446a668a98a",
+      "stem": "The molecular formula of glucose is:",
+      "options": [
+        "C₆H₁₂O₆",
+        "C₁₂H₂₂O₁₁",
+        "CH₄",
+        "C₂H₅OH"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "6ec0a643da44",
+      "stem": "Glucose is an example of a:",
+      "options": [
+        "monosaccharide",
+        "disaccharide",
+        "polysaccharide",
+        "protein"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "bc0c5d90c846",
+      "stem": "Sucrose (table sugar) is a:",
+      "options": [
+        "monosaccharide",
+        "disaccharide",
+        "polysaccharide",
+        "lipid"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "9812bb7eefce",
+      "stem": "Starch and cellulose are:",
+      "options": [
+        "monosaccharides",
+        "disaccharides",
+        "polysaccharides",
+        "vitamins"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "7db0b34b1b1b",
+      "stem": "Proteins are made of long chains of:",
+      "options": [
+        "glucose",
+        "amino acids",
+        "fatty acids",
+        "nucleotides"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "6263078ec070",
+      "stem": "The bond that joins amino acids in a protein is the:",
+      "options": [
+        "peptide bond",
+        "ionic bond",
+        "hydrogen bond only",
+        "glycosidic bond"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "042e1fd7ffe3",
+      "stem": "Fats and oils belong to the group of:",
+      "options": [
+        "carbohydrates",
+        "proteins",
+        "lipids",
+        "vitamins"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "6f464f69b7e8",
+      "stem": "Fats are formed from glycerol and:",
+      "options": [
+        "amino acids",
+        "fatty acids",
+        "glucose",
+        "nucleic acids"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "5c37be37f60b",
+      "stem": "Enzymes are biological catalysts that are mostly made of:",
+      "options": [
+        "carbohydrates",
+        "proteins",
+        "lipids",
+        "minerals"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "9f650397d3dc",
+      "stem": "DNA and RNA are:",
+      "options": [
+        "carbohydrates",
+        "nucleic acids",
+        "lipids",
+        "vitamins"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "0423d67aded9",
+      "stem": "A student adds iodine solution to a food sample and it turns blue-black. The food contains:",
+      "options": [
+        "starch",
+        "protein",
+        "fat",
+        "vitamin C"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "0c90a03e6c0d",
+      "stem": "Benedict's solution turns brick-red when heated with:",
+      "options": [
+        "starch",
+        "a reducing sugar such as glucose",
+        "fat",
+        "protein"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "6580adf62e98",
+      "stem": "The biuret test gives a violet (purple) colour with:",
+      "options": [
+        "proteins",
+        "starch",
+        "fats",
+        "glucose"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "dd77547a0e5d",
+      "stem": "A food sample leaves a translucent grease spot on paper. It contains:",
+      "options": [
+        "lipids",
+        "protein",
+        "starch",
+        "vitamin C"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "70a0062721ec",
+      "stem": "Vitamin C deficiency causes:",
+      "options": [
+        "rickets",
+        "scurvy",
+        "night blindness",
+        "anaemia"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "cfb5a29b47a6",
+      "stem": "Vitamin D deficiency in children causes:",
+      "options": [
+        "scurvy",
+        "rickets",
+        "goitre",
+        "beriberi"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "bbd73dc627f7",
+      "stem": "Night blindness is caused by a lack of:",
+      "options": [
+        "Vitamin A",
+        "Vitamin B",
+        "Vitamin C",
+        "Vitamin D"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "f7f3dd97726b",
+      "stem": "Which vitamins are fat-soluble?",
+      "options": [
+        "A, D, E and K",
+        "B and C",
+        "C only",
+        "B only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "0ac9cf87c7fb",
+      "stem": "Sunlight helps the skin produce:",
+      "options": [
+        "Vitamin A",
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin K"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "a357f3246da1",
+      "stem": "A sailor on a long voyage without fresh fruit develops bleeding gums. The most likely cause is a lack of:",
+      "options": [
+        "vitamin C",
+        "vitamin D",
+        "protein",
+        "fat"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "17a60bffe2c0",
+      "stem": "The main function of carbohydrates in the body is to:",
+      "options": [
+        "provide energy",
+        "build muscles",
+        "carry genetic information",
+        "fight infection only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "ad4cffdc4fa6",
+      "stem": "Proteins are needed mainly for:",
+      "options": [
+        "growth and repair of body tissues",
+        "quick energy only",
+        "making bones soft",
+        "storing genetic code"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "d7a614aec803",
+      "stem": "Which food is a good source of protein?",
+      "options": [
+        "Eggs",
+        "Sugar",
+        "Butter",
+        "Rice"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "8773c36fddb8",
+      "stem": "Cellulose in our diet mainly provides:",
+      "options": [
+        "fibre (roughage) that helps digestion",
+        "quick energy",
+        "vitamins",
+        "protein"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "928e49555665",
+      "stem": "Glycogen is the form in which animals store:",
+      "options": [
+        "glucose",
+        "fat",
+        "protein",
+        "vitamins"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "cb98634875d7",
+      "stem": "An enzyme stops working at very high temperatures because it:",
+      "options": [
+        "becomes denatured",
+        "turns into a vitamin",
+        "gains energy",
+        "dissolves in fat"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "3e97f95e8622",
+      "stem": "Plants make glucose by photosynthesis using carbon dioxide, water and:",
+      "options": [
+        "sunlight",
+        "oxygen only",
+        "nitrogen",
+        "fat"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "ea2fac1bdf22",
+      "stem": "Which is a disaccharide found in milk?",
+      "options": [
+        "Lactose",
+        "Starch",
+        "Glucose",
+        "Cellulose"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    },
+    {
+      "id": "9b17a31f4dfb",
+      "stem": "A person on a diet of only white rice for months is at risk of lacking:",
+      "options": [
+        "protein and vitamins",
+        "carbohydrates",
+        "energy",
+        "starch"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Written for Prepify from the FBISE Class 9 Chemistry syllabus (Biochemistry)"
+    }
+  ]
+}

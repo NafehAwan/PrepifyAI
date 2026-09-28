@@ -1,0 +1,486 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "74cad95e587f",
+      "stem": "One article is deliberately created to make people believe something false; another wrong report is shared without any intent to harm. Which option explains the difference?",
+      "options": [
+        "Disinformation is always political",
+        "Disinformation involves intentional deception, while fake news may be false without deliberate intent to harm",
+        "Fake news spreads only on social media",
+        "Both terms mean exactly the same"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ee368aa5aaf8",
+      "stem": "A website collects personal details from children. What does a children's online privacy law specifically control?",
+      "options": [
+        "Every type of cyber attack on all users",
+        "The online collection of personal information from children under 13",
+        "Hacking of government systems",
+        "Security standards for all business networks"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "afc522fbfe4d",
+      "stem": "A user finds that unknown software is secretly monitoring activity and collecting personal information without permission. Which malware is responsible?",
+      "options": [
+        "A virus that attaches itself to programs",
+        "Ransomware that locks data for payment",
+        "Spyware that secretly gathers information",
+        "A Trojan horse disguised as a useful program"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "eac66556acff",
+      "stem": "A student sees that a website's address begins with HTTPS instead of HTTP. What does this mainly indicate?",
+      "options": [
+        "The site is faster than every HTTP site",
+        "Communication with the site is protected by encryption",
+        "The site is government approved",
+        "The site has no adverts or harmful content"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "4c03f025a16d",
+      "stem": "A Canadian company collects and uses customers' personal information. Which law sets the rules for protecting this information in the private sector?",
+      "options": [
+        "A cybersecurity law covering all internet crime",
+        "The Telecommunications Act",
+        "The Personal Information Protection and Electronic Documents Act (PIPEDA)",
+        "A computer crimes act about illegal access"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "d1f47c090efd",
+      "stem": "What security feature does HTTPS provide?",
+      "options": [
+        "Faster internet speed",
+        "Encryption of communication between user and server",
+        "Automatic blocking of all viruses",
+        "Removal of website adverts"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "05cbeae974a8",
+      "stem": "A user types the correct address of a banking website but is secretly redirected to a fake site. Which attack is this?",
+      "options": [
+        "Phishing, using fake messages to steal information",
+        "Pharming, redirecting users to fraudulent websites",
+        "Spyware, monitoring the user secretly",
+        "Spam, sending unwanted messages"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "efa6b2ba40ce",
+      "stem": "A user cannot use online resources because their area lacks internet facilities and technology. This situation represents the:",
+      "options": [
+        "Cybercrime",
+        "Digital divide",
+        "Data privacy",
+        "Digital footprint"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "c7e03ecdcf37",
+      "stem": "A company invents a new device and wants the legal right to stop others making or selling it for a limited time. Which protection should it apply for?",
+      "options": [
+        "Trademark",
+        "Copyright",
+        "Patent",
+        "Trade secret"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "80a8d2b41ea0",
+      "stem": "What is the main function of cookies on websites?",
+      "options": [
+        "To delete browsing history",
+        "To store small text files about a user's interactions with the site",
+        "To encrypt all transmitted data",
+        "To block unauthorized access"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "2eea4312f915",
+      "stem": "A user is creating a password for an online account. Which practice is most secure?",
+      "options": [
+        "Only small letters, to remember it easily",
+        "Personal details such as name and birth date",
+        "A mix of uppercase and lowercase letters, numbers and symbols",
+        "Common dictionary words"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "e9f4c974f4fb",
+      "stem": "A government law allows authorities to monitor communication channels under specific conditions and controls access to communication records. Which area does it mainly address?",
+      "options": [
+        "Children's online activity",
+        "Interception of telecommunications and access to communication data",
+        "Prevention of computer viruses",
+        "Business data storage"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ea8e9b1ee3d5",
+      "stem": "A company wants to improve system security while protecting user privacy. Which statement best explains the relationship?",
+      "options": [
+        "Security and privacy are unrelated",
+        "Stronger privacy protection can need controls that affect convenience and usability",
+        "Better security always reduces privacy",
+        "Privacy removes the need for security"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "dc4a881638dd",
+      "stem": "One program can be used free forever; another can be used free only for a limited trial. What is the difference?",
+      "options": [
+        "Freeware is always open source",
+        "Freeware is free permanently, while shareware is usually a limited trial",
+        "Shareware is always more secure",
+        "Freeware needs payment"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "0e09d6abfb88",
+      "stem": "A new computing innovation improves communication, automates tasks and increases efficiency. Which is NOT one of its benefits?",
+      "options": [
+        "Improved productivity",
+        "Automated repetitive work",
+        "Completely removing all cybersecurity threats",
+        "Better communication"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "21da561b6770",
+      "stem": "A student searches websites, posts comments and uploads pictures. The trail of information these activities create is the:",
+      "options": [
+        "Storage capacity of the computer",
+        "Digital footprint",
+        "Number of devices owned",
+        "Internet speed"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "96edbe61ea1c",
+      "stem": "Which practice shows responsible software use?",
+      "options": [
+        "Using illegally modified software to avoid payment",
+        "Sharing one licensed copy with unlimited users",
+        "Following software licences and respecting copyright",
+        "Turning off security software to speed up"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "031b5aa84505",
+      "stem": "A school network administrator wants to protect computers by monitoring and controlling network connections. Which tool should be used?",
+      "options": [
+        "Antivirus that only removes infected files",
+        "A firewall that controls incoming and outgoing traffic",
+        "A password generator",
+        "Backup software"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "077f5db8cb8a",
+      "stem": "Aisha gets an email that looks like it is from her bank, asking her to click a link and verify her account; the sender's address is slightly different from the bank's. What threat is this?",
+      "options": [
+        "Phishing",
+        "Pharming",
+        "Spyware",
+        "Ransomware"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "9b4f0646c4ba",
+      "stem": "A company develops new software and automatically holds the right to control how it is copied and distributed. Which protection applies?",
+      "options": [
+        "Patent",
+        "Trademark",
+        "Copyright",
+        "Trade secret"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "21f1bf6295bb",
+      "stem": "Ali posts his address, phone number and daily schedule on social media and uses the same password for every account. Which safety practice is he violating?",
+      "options": [
+        "He is being too social",
+        "He overshares personal information and uses weak password practices",
+        "He should post more to be safe",
+        "Reusing one password is recommended"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "6e6c7120060a",
+      "stem": "A person gains unauthorized access to a company's database and steals customers' credit card details. What is this called?",
+      "options": [
+        "Spam",
+        "Phishing",
+        "Hacking",
+        "Pharming"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "a35f594e5068",
+      "stem": "Fatima copies her important files to an external drive and cloud storage in case her laptop is stolen or damaged. Which security measure is this?",
+      "options": [
+        "Strong passwords",
+        "A firewall",
+        "Backing up data",
+        "Updating software"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "fe66c37722c1",
+      "stem": "A site shows \"Your connection is not secure\" beside the URL just as users are about to enter card details. What should they do?",
+      "options": [
+        "Continue, it is probably a mistake",
+        "Avoid entering sensitive information and leave the site",
+        "Ignore the warning",
+        "Refresh until it disappears"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "275b8895f9d7",
+      "stem": "Ahmed's antivirus warns that a file from an untrusted site contains a virus, but he opens it anyway. What is the most likely result?",
+      "options": [
+        "His computer runs faster",
+        "His computer may be infected with malware",
+        "The file becomes safe",
+        "His antivirus stops working"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "77b3db90edf1",
+      "stem": "A rural school has limited internet, while a city school has fast connections and the latest computers, so rural students cannot use online resources well. This illustrates the:",
+      "options": [
+        "Phishing",
+        "Digital divide",
+        "Cyberbullying",
+        "Malware"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "51cc0e7ff8bc",
+      "stem": "Zara uses a coffee shop's public Wi-Fi for online banking and sees suspicious account activity the next day. What was the risk?",
+      "options": [
+        "Sensitive transactions over public Wi-Fi can be intercepted by hackers",
+        "Coffee shop Wi-Fi is always secure",
+        "Banking must be done on desktops only",
+        "She needed a shorter password"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "d08abe69895b",
+      "stem": "A completely false story that a celebrity has died spreads quickly online; its creator made it to get more views and traffic. This is an example of:",
+      "options": [
+        "Disinformation",
+        "Factual reporting",
+        "Educational content",
+        "Scientific research"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "386a4f403cfb",
+      "stem": "Hassan finds paid software offered free on an unofficial website and wants to download it to save money. What should he consider?",
+      "options": [
+        "Free downloads from unofficial sources often contain malware",
+        "All free software is safe",
+        "Unofficial downloads are always legal",
+        "Price is the only factor"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    },
+    {
+      "id": "ee5ae57321e1",
+      "stem": "Sarah posted a holiday photo showing her house number and street while she was away, and her home was broken into a week later. What could have prevented this?",
+      "options": [
+        "Strong passwords",
+        "Privacy settings and not sharing location details publicly",
+        "Antivirus software",
+        "Backing up her data"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "MCQs chapter # (1-7) final done new.pdf"
+    }
+  ]
+}

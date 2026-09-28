@@ -1,0 +1,516 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "4d85a0626ef7",
+      "stem": "The value of log₃ 27 is:",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "4"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "ba4e9eb72479",
+      "stem": "The value of log₃ 9 is:",
+      "options": [
+        "1",
+        "4",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "7507dcf5f487",
+      "stem": "The value of log₄ 64 is:",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "4"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "6ac3e2d68326",
+      "stem": "The value of log₅ 125 is:",
+      "options": [
+        "2",
+        "3",
+        "6",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "06a42c741254",
+      "stem": "The value of log₁₀ 10000 is:",
+      "options": [
+        "5",
+        "3",
+        "8",
+        "4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "9523ebd1f8fa",
+      "stem": "The value of log₂ 8 is:",
+      "options": [
+        "6",
+        "4",
+        "3",
+        "2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-value",
+      "family": "gen-maths-m2-log-value"
+    },
+    {
+      "id": "17383f8bd231",
+      "stem": "The logarithmic form of 5³ = 125 is:",
+      "options": [
+        "log₅ 3 = 125",
+        "log₃ 125 = 5",
+        "log₁₂₅ 5 = 3",
+        "log₅ 125 = 3"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "52310e6f0d81",
+      "stem": "The logarithmic form of 3⁴ = 81 is:",
+      "options": [
+        "log₈₁ 3 = 4",
+        "log₄ 81 = 3",
+        "log₃ 81 = 4",
+        "log₃ 4 = 81"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "494b788b4a2f",
+      "stem": "The logarithmic form of 7² = 49 is:",
+      "options": [
+        "log₄₉ 7 = 2",
+        "log₂ 49 = 7",
+        "log₇ 49 = 2",
+        "log₇ 2 = 49"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "339a37ad6ffe",
+      "stem": "The logarithmic form of 10² = 100 is:",
+      "options": [
+        "log₂ 100 = 10",
+        "log₁₀ 2 = 100",
+        "log₁₀₀ 10 = 2",
+        "log₁₀ 100 = 2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "6698d4e70322",
+      "stem": "The logarithmic form of 2⁷ = 128 is:",
+      "options": [
+        "log₁₂₈ 2 = 7",
+        "log₂ 7 = 128",
+        "log₂ 128 = 7",
+        "log₇ 128 = 2"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "8652d5eb083f",
+      "stem": "The logarithmic form of 4³ = 64 is:",
+      "options": [
+        "log₃ 64 = 4",
+        "log₄ 3 = 64",
+        "log₄ 64 = 3",
+        "log₆₄ 4 = 3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-form",
+      "family": "gen-maths-m2-log-form"
+    },
+    {
+      "id": "f4d04926dcf2",
+      "stem": "log 20 + log 5 is equal to:",
+      "options": [
+        "3",
+        "2",
+        "100",
+        "log 25"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "aee56b7a87f3",
+      "stem": "log 8 + log 125 is equal to:",
+      "options": [
+        "3",
+        "log 133",
+        "4",
+        "1000"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "6dc2a732c964",
+      "stem": "log 200 − log 2 is equal to:",
+      "options": [
+        "2",
+        "log 198",
+        "3",
+        "100"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "99d1e4c91911",
+      "stem": "log 50 − log 5 is equal to:",
+      "options": [
+        "1",
+        "10",
+        "2",
+        "log 45"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "8804e428bd11",
+      "stem": "log 50 + log 2 is equal to:",
+      "options": [
+        "log 52",
+        "2",
+        "3",
+        "100"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "b193eb6be0fc",
+      "stem": "log 2 + log 5 is equal to:",
+      "options": [
+        "1",
+        "log 7",
+        "10",
+        "2"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-log-laws",
+      "family": "gen-maths-m2-log-laws"
+    },
+    {
+      "id": "1bb8547ea88a",
+      "stem": "210,000 in scientific notation is:",
+      "options": [
+        "2.1 × 10⁵",
+        "2.1 × 10⁶",
+        "2.1 × 10⁻⁵",
+        "2.1 × 10⁴"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "6d2669355c8d",
+      "stem": "0.0000014 in scientific notation is:",
+      "options": [
+        "1.4 × 10⁶",
+        "1.4 × 10⁻⁷",
+        "1.4 × 10⁻⁵",
+        "1.4 × 10⁻⁶"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "91a5f05c128b",
+      "stem": "0.00046 in scientific notation is:",
+      "options": [
+        "4.6 × 10⁻⁵",
+        "4.6 × 10⁴",
+        "4.6 × 10⁻⁴",
+        "4.6 × 10⁻³"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "18b4d83cc061",
+      "stem": "1700 in scientific notation is:",
+      "options": [
+        "1.7 × 10⁻³",
+        "1.7 × 10²",
+        "1.7 × 10³",
+        "1.7 × 10⁴"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "41d52486a374",
+      "stem": "0.0000025 in scientific notation is:",
+      "options": [
+        "2.5 × 10⁻⁷",
+        "2.5 × 10⁻⁶",
+        "2.5 × 10⁶",
+        "2.5 × 10⁻⁵"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "f58a3153857c",
+      "stem": "0.000047 in scientific notation is:",
+      "options": [
+        "4.7 × 10⁵",
+        "4.7 × 10⁻⁵",
+        "4.7 × 10⁻⁶",
+        "4.7 × 10⁻⁴"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-scientific",
+      "family": "gen-maths-m2-scientific"
+    },
+    {
+      "id": "bcf543fc2c4b",
+      "stem": "The characteristic of log 45678 is:",
+      "options": [
+        "4",
+        "3",
+        "−5",
+        "5"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    },
+    {
+      "id": "73d467f315c8",
+      "stem": "The characteristic of log 3.52 is:",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "0"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    },
+    {
+      "id": "98477beccdd1",
+      "stem": "The characteristic of log 47.3 is:",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "2"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    },
+    {
+      "id": "1ecc40d40620",
+      "stem": "The characteristic of log 586.1 is:",
+      "options": [
+        "3",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    },
+    {
+      "id": "61fda86e70e9",
+      "stem": "The characteristic of log 2915 is:",
+      "options": [
+        "−4",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    },
+    {
+      "id": "2b793943d36d",
+      "stem": "The characteristic of log 123.4 is:",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "template:m2-characteristic",
+      "family": "gen-maths-m2-characteristic"
+    }
+  ]
+}

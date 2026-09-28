@@ -1,0 +1,193 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "8f877bcb45f9",
+      "stem": "Planning a school sports day is split into smaller tasks: booking the ground, making teams and arranging prizes. This skill is called:",
+      "options": [
+        "Abstraction",
+        "Decomposition",
+        "Pattern recognition",
+        "Debugging"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "bd8f75719ca5"
+    },
+    {
+      "id": "dc8f8469e08f",
+      "stem": "An algorithm must produce at least one result. This property is called:",
+      "options": [
+        "input",
+        "output",
+        "finiteness",
+        "definiteness"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "7ad02b928a02"
+    },
+    {
+      "id": "d0263f6c2197",
+      "stem": "A librarian wants to know how many books were borrowed this week. This is best classified as a:",
+      "options": [
+        "sorting problem",
+        "counting problem",
+        "searching problem",
+        "decision problem"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "6f2fc0bbc0fb"
+    },
+    {
+      "id": "b64c72e1c687",
+      "stem": "In a flowchart, the step \"Total = Price × Quantity\" is drawn inside a:",
+      "options": [
+        "diamond",
+        "rectangle",
+        "oval",
+        "parallelogram"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "d6b58b88e32c"
+    },
+    {
+      "id": "0b92803c894f",
+      "stem": "Which flowchart symbol is used for a question with a Yes/No answer, such as \"Is Age ≥ 18?\"",
+      "options": [
+        "Oval",
+        "Rectangle",
+        "Diamond",
+        "Parallelogram"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b597eab241a7"
+    },
+    {
+      "id": "c838ae98121f",
+      "stem": "A city map shows the roads but leaves out trees and buildings. Which computational thinking skill does this show?",
+      "options": [
+        "Decomposition",
+        "Abstraction",
+        "Pattern recognition",
+        "Algorithm design"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "5cffaee82f48"
+    },
+    {
+      "id": "f7f55c0a4925",
+      "stem": "A student notices that the method for finding the average of test marks also works for average temperatures. This is:",
+      "options": [
+        "abstraction",
+        "pattern recognition",
+        "decomposition",
+        "debugging"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "8f79bd880873"
+    },
+    {
+      "id": "d5aa6f9ac62a",
+      "stem": "A diagram that shows the steps of an algorithm using standard symbols joined by arrows is a:",
+      "options": [
+        "concept map",
+        "flowchart",
+        "pseudocode",
+        "source code"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "48f2b7f4cb63"
+    },
+    {
+      "id": "eceb26970e15",
+      "stem": "In a search problem, the state we want to reach is called the:",
+      "options": [
+        "initial state",
+        "goal",
+        "operation",
+        "path"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "042ebeb44932"
+    },
+    {
+      "id": "9bb01d43e502",
+      "stem": "In an I-P-O chart, the marks a student types into a result program are the:",
+      "options": [
+        "input",
+        "process",
+        "output",
+        "storage"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b2d4e93689d9"
+    },
+    {
+      "id": "adc44993ba09",
+      "stem": "Which flowchart symbol marks the Start and End of an algorithm?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Oval (terminal)",
+        "Parallelogram"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "48f2b7f4cb63"
+    }
+  ]
+}

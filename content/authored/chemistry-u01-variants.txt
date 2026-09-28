@@ -1,0 +1,15 @@
+# subject: Chemistry
+# chapter: 1
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A chemist measures how air pollutants from factories affect rainwater. This work belongs to: | Organic Chemistry | Nuclear Chemistry | Astrochemistry | Environmental Chemistry | D | s v:d2a1b2f3b517
+A medicine that works in a small lab trial must now be made in tonnes in a factory. Which experts mainly solve this scale-up problem? | Historians | Chemical engineers | Geologists | Astronomers | B | s v:2c4b02d14387
+Studying how enzymes break down food inside the stomach is part of: | Physical Chemistry | Inorganic Chemistry | Biochemistry | Analytical Chemistry | C | s v:32e098ce7d6e
+A scientist examines rocks and minerals to find which elements they contain. This branch is: | Geochemistry | Biochemistry | Polymer Chemistry | Theoretical Chemistry | A | v:a1e9e20f8c0e
+A laboratory tests a water sample to find exactly which metals are present and in what amounts. This is: | Analytical Chemistry | Astrochemistry | Organic Chemistry | Geochemistry | A | s v:514e2e96cd45
+Before a new scientific idea is accepted, other scientists must: | memorise it | test it repeatedly and get the same results | publish it in a newspaper | vote on it | B | v:99e2df45e6ee
+Modern chemistry uses ideas from physics, biology and environmental science. This shows that chemistry is: | interdisciplinary | outdated | limited to laboratories | only about metals | A | v:7b45365d6e55
+Studying the chemicals in meteorites and distant stars is called: | Astrochemistry | Biochemistry | Geochemistry | Food Chemistry | A | v:514e2e96cd45

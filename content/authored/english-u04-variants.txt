@@ -1,0 +1,16 @@
+# subject: English
+# chapter: 4
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The suffix in "enjoyment" turns the verb "enjoy" into a: | noun | adjective | adverb | verb | A | v:6c850df0013b
+Choose the indirect speech of: The workers said, "We can finish it." | The workers said that they could finish it. | The workers said that we can finish it. | The workers say that they could finish it. | The workers said that they can finished it. | A | h v:fc6e318a17d0
+Choose the synonym of "determined": | Unwilling | Persistent | Careless | Weak | B | v:6add08eb102e
+Fill in the blank: Never give ___ your dreams, however hard the road. | in | up | out | off | B | v:c6aa58f9af61
+Choose the synonym of "impressive": | Ordinary | Spectacular | Tiny | Dull | B | e v:2a60fb31ac9e
+In "The towers were built of granite", the verb phrase is in the: | active voice | passive voice | imperative mood | future tense | B | v:091f9dd307f4
+Choose the antonym of "impossible": | Unlikely | Hopeless | Possible | Difficult | C | e v:b39eba87829b
+Choose the correct form: If the engineers had stopped, the bridge ___ never been finished. | will have | would have | has | had | B | h v:c39023ce684d
+People doubted the plan, but the builders kept faith in it. This shows the builders had: | a strong vision | no plan | weak confidence | little interest | A | s v:459f90e3f433

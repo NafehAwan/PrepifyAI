@@ -1,0 +1,486 @@
+{
+  "subject": "English",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "59ab844af148",
+      "stem": "\"Globalization\" means:",
+      "options": [
+        "the growing connection of countries through trade, technology and culture",
+        "the separation of countries from each other",
+        "the study of maps",
+        "building walls between nations"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "6ecb95f3b9e8",
+      "stem": "The expression \"global village\" suggests that:",
+      "options": [
+        "the world has become closely connected through communication",
+        "everyone lives in villages",
+        "villages are growing larger",
+        "cities are disappearing"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "a574f22e8fbc",
+      "stem": "Choose the synonym of \"connect\":",
+      "options": [
+        "Link",
+        "Break",
+        "Divide",
+        "Separate"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "79a22c5b4017",
+      "stem": "Choose the antonym of \"modern\":",
+      "options": [
+        "New",
+        "Recent",
+        "Ancient",
+        "Current"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "d375851dce8c",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Technology",
+        "Tecnology",
+        "Technolegy",
+        "Tecknology"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "153b0c420ddc",
+      "stem": "Buying and selling goods over the internet is called:",
+      "options": [
+        "e-commerce",
+        "e-mail",
+        "e-book",
+        "e-learning"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "8edb9ec3cbbd",
+      "stem": "In \"The internet has changed our lives\", the tense is:",
+      "options": [
+        "simple past",
+        "present perfect",
+        "past perfect",
+        "simple present"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "b598451c545c",
+      "stem": "Choose the passive voice of \"People use smartphones everywhere.\":",
+      "options": [
+        "Smartphones are used everywhere by people.",
+        "Smartphones were used everywhere by people.",
+        "Smartphones used everywhere by people.",
+        "Smartphones are using everywhere by people."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "26777c68741a",
+      "stem": "Hamza orders a book from another country and receives it at home in a week. Which feature of the modern world makes this possible?",
+      "options": [
+        "Global trade and online shopping",
+        "Letter writing",
+        "Barter system",
+        "Local markets only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "bf96e0ad229a",
+      "stem": "Fill in the blank: We are connected ___ the whole world through the internet.",
+      "options": [
+        "at",
+        "with",
+        "on",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "e12bd9ea42fb",
+      "stem": "The gap between people who have access to modern technology and those who do not is called the:",
+      "options": [
+        "digital divide",
+        "digital age",
+        "global village",
+        "information highway"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "aba908588eef",
+      "stem": "Choose the word that is an adverb:",
+      "options": [
+        "Rapid",
+        "Rapidly",
+        "Rapidity",
+        "Rapidness"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "7dcd1de071fd",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Technology make life easier.",
+        "Technology makes life easier.",
+        "Technology making life easier.",
+        "Technology have made life easier."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "eff5f7aa12b9",
+      "stem": "Choose the synonym of \"rapid\":",
+      "options": [
+        "Slow",
+        "Quick",
+        "Weak",
+        "Late"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "9334877cc276",
+      "stem": "Which word is a noun?",
+      "options": [
+        "Communicate",
+        "Communication",
+        "Communicative",
+        "Communicatively"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "d0068f394a15",
+      "stem": "Choose the indirect speech of: He said, \"The world is changing fast.\"",
+      "options": [
+        "He said that the world was changing fast.",
+        "He said that the world is changed fast.",
+        "He says that the world was changing fast.",
+        "He said the world changing fast."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "197950b23677",
+      "stem": "A student in Karachi attends a live online class taught by a teacher in London. This is an example of:",
+      "options": [
+        "distance learning made possible by technology",
+        "a traditional classroom",
+        "a postal service",
+        "a printed newspaper"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "b2b6027a4876",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "Did you check your email today?",
+        "did you check your email today?",
+        "Did you check your email today.",
+        "Did you check, your email today?"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "7cbd6b04f065",
+      "stem": "Choose the correct article: The internet is ___ useful invention.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "c33a9f37244a",
+      "stem": "Choose the antonym of \"advantage\":",
+      "options": [
+        "Benefit",
+        "Profit",
+        "Disadvantage",
+        "Gain"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "e52c85b159b8",
+      "stem": "Fill in the blank: Social media has both benefits ___ drawbacks.",
+      "options": [
+        "or",
+        "and",
+        "but",
+        "nor"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "1fe04934e823",
+      "stem": "Choose the correct form: By next year, more people ___ online shopping.",
+      "options": [
+        "will have used",
+        "have used",
+        "had used",
+        "using"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "28725de1eb71",
+      "stem": "The prefix \"inter-\" in \"international\" means:",
+      "options": [
+        "between",
+        "under",
+        "against",
+        "without"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "deb42b328803",
+      "stem": "Nida spends so many hours on social media that she neglects her studies. This shows a:",
+      "options": [
+        "negative effect of technology misuse",
+        "benefit of technology",
+        "healthy habit",
+        "study technique"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "981d11b39e34",
+      "stem": "Choose the plural of \"medium\" as used in \"mass media\":",
+      "options": [
+        "mediums only",
+        "media",
+        "medias",
+        "mediumes"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "9a80d476764f",
+      "stem": "Choose the synonym of \"information\":",
+      "options": [
+        "Knowledge",
+        "Ignorance",
+        "Silence",
+        "Confusion"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "ce162a7fa2e4",
+      "stem": "Which sentence is in the future continuous tense?",
+      "options": [
+        "We will use robots.",
+        "We will be using robots.",
+        "We will have used robots.",
+        "We are using robots."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "71b3f4223c5b",
+      "stem": "Choose the word that best completes the sentence: Online banking is fast and ___.",
+      "options": [
+        "convenient",
+        "convenience",
+        "conveniently",
+        "convene"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "8d134d54a135",
+      "stem": "An online shop in Lahore sells its products to customers in Dubai and Toronto. This shows that modern businesses can reach:",
+      "options": [
+        "a global market",
+        "only local customers",
+        "only relatives",
+        "no customers"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    },
+    {
+      "id": "5cbb2ecfb0fb",
+      "stem": "Choose the adjective in: \"Smart devices are changing the world.\"",
+      "options": [
+        "Smart",
+        "devices",
+        "changing",
+        "world"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 3)"
+    }
+  ]
+}

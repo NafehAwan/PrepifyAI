@@ -1,0 +1,108 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "601123cbafcc",
+      "stem": "If the HCF of two polynomials is H and their LCM is L, then their product equals:",
+      "options": [
+        "H + L",
+        "H × L",
+        "L ÷ H",
+        "H ÷ L"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bbfd0e0315e9"
+    },
+    {
+      "id": "384049f67c31",
+      "stem": "The factored form of x² + 2x − 8 is:",
+      "options": [
+        "(x + 4)(x − 2)",
+        "(x − 4)(x + 2)",
+        "(x + 4)(x + 2)",
+        "(x − 4)(x − 2)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2c1b851194c2"
+    },
+    {
+      "id": "dfcd2af4845a",
+      "stem": "The HCF of x³y² and x²y⁵ is:",
+      "options": [
+        "x³y⁵",
+        "x²y²",
+        "xy",
+        "x⁵y⁷"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9824922dbad8"
+    },
+    {
+      "id": "12f52252ce85",
+      "stem": "The factored form of 27x³ − 8 is:",
+      "options": [
+        "(3x − 2)(9x² + 6x + 4)",
+        "(3x + 2)(9x² − 6x + 4)",
+        "(3x − 2)³",
+        "(3x − 2)(9x² − 4)"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "0f7ce9503ecc"
+    },
+    {
+      "id": "efa2487ad695",
+      "stem": "To subtract algebraic fractions with different denominators, we first find their:",
+      "options": [
+        "HCF",
+        "LCM",
+        "product of numerators",
+        "sum of denominators"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "24298dc47de8"
+    },
+    {
+      "id": "bc148df392a1",
+      "stem": "The factored form of 8a³ + 12a² + 6a + 1 is:",
+      "options": [
+        "(2a + 1)³",
+        "(2a − 1)³",
+        "(2a + 1)(4a² − 2a + 1)",
+        "8a³ + 1"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4020eaadc9c4"
+    }
+  ]
+}

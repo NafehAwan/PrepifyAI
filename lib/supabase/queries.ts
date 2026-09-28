@@ -1,6 +1,7 @@
 import type { SupabaseClient, User } from "@supabase/supabase-js";
 import type { AppState } from "@/lib/types";
 import type { ProfileRow } from "@/lib/database.types";
+import { isAiConfigured } from "@/lib/ai/config";
 import {
   LEVEL_TO_CLASS,
   displayNameFromEmail,
@@ -52,6 +53,7 @@ export async function loadUserContext(
   const initial: Partial<AppState> = {
     authed: true,
     supabaseConfigured: true,
+    aiConfigured: isAiConfigured(),
     userName,
     userEmail,
     screen: onboarded ? "home" : "onboarding",

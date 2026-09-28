@@ -1,0 +1,486 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "596a1f0356f8",
+      "stem": "Which one is the standard form of a linear equation in one variable?",
+      "options": [
+        "ax² + b = 0",
+        "ax + b = 0",
+        "ax + by = 0",
+        "ax² + bx + c = 0"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "40498be07b83",
+      "stem": "What is the exponent of the variable in a linear equation?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "-1"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "abe040216f74",
+      "stem": "Which of the following is a linear equation in one variable?",
+      "options": [
+        "x² + 3 = 0",
+        "xy + 3 = 0",
+        "2x + 3 = 0",
+        "x² + 2x = 0"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "1cba84b04bd1",
+      "stem": "Two or more equations that have the same solution are called:",
+      "options": [
+        "Compound equations",
+        "Equivalent equations",
+        "Radical equations",
+        "Absolute equations"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "b652175e4339",
+      "stem": "What is the solution of 5x − 2 − x = 4 − 3x − 27?",
+      "options": [
+        "x = −3",
+        "x = −5",
+        "x = 5",
+        "x = 3"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "40a8d751c0e3",
+      "stem": "Solve for x: 0.5x = 6.3 − 0.2x",
+      "options": [
+        "x = 6",
+        "x = 7",
+        "x = 8",
+        "x = 9"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "aeaede00854e",
+      "stem": "To clear fractions while solving a linear equation, all terms are multiplied by the:",
+      "options": [
+        "GCF of denominators",
+        "Product of denominators",
+        "LCM of denominators",
+        "Sum of denominators"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "4835aa917b62",
+      "stem": "What is the solution of (x-2)/2 + (x+10)/9 = 5?",
+      "options": [
+        "x = 4",
+        "x = 6",
+        "x = 8",
+        "x = 10"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "fd25be2d2ebe",
+      "stem": "Which property of equality is applied when both sides of −2x = 2/5 are divided by −2 to solve for x?",
+      "options": [
+        "Addition property",
+        "Subtraction property",
+        "Division property",
+        "Multiplication property"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "f47f1a8262a4",
+      "stem": "An equation in which the variable appears under a radical sign is called a:",
+      "options": [
+        "Linear equation",
+        "Radical equation",
+        "Absolute value equation",
+        "Compound equation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "5f96c3f073dd",
+      "stem": "What is the solution set of √2x = 4?",
+      "options": [
+        "{2}",
+        "{4}",
+        "{8}",
+        "{16}"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "b7e7ce2d04ec",
+      "stem": "What is the solution set of √(x-3)= 2?",
+      "options": [
+        "{1}",
+        "{5}",
+        "{7}",
+        "{9}"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "25aacb4a93d2",
+      "stem": "While solving a radical equation, both sides of the equation are:",
+      "options": [
+        "Added",
+        "Subtracted",
+        "Squared",
+        "Divided"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "bc0beafc94f5",
+      "stem": "A root obtained after squaring that does not satisfy the original radical equation is called:",
+      "options": [
+        "A rational root",
+        "An extraneous root",
+        "An equivalent root",
+        "A compound root"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "7b87b274fc0b",
+      "stem": "What is the solution set of √(5x-4)= -14?",
+      "options": [
+        "{4}",
+        "{8}",
+        "{40}",
+        "φ (no solution)"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "3d42cc5d7fb4",
+      "stem": "The absolute value of a real number x represents its distance from:",
+      "options": [
+        "1 on the number line",
+        "x on the number line",
+        "0 on the number line",
+        "−1 on the number line"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "97768792a9a1",
+      "stem": "What is the solution set of |x| = 8?",
+      "options": [
+        "{8}",
+        "{−8}",
+        "{−8, 8}",
+        "φ"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "15b63513664e",
+      "stem": "What is the solution set of |x| = −6?",
+      "options": [
+        "{6}",
+        "{−6}",
+        "{−6, 6}",
+        "φ"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "fd37607b7138",
+      "stem": "What is the solution set of |x + 2| = 6?",
+      "options": [
+        "{4, −8}",
+        "{4, 8}",
+        "{−4, −8}",
+        "{−4, 8}"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "6ec7a3f84a14",
+      "stem": "If |x| = k where k < 0, then the solution set of the equation is:",
+      "options": [
+        "{k}",
+        "{−k, k}",
+        "{0}",
+        "φ"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "ed80b739ef44",
+      "stem": "What is the solution set of |2x − 1| = 5?",
+      "options": [
+        "{−2, 3}",
+        "{2, −3}",
+        "{2, 3}",
+        "{−2, −3}"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "75e3dc9f04b0",
+      "stem": "A statement that two algebraic expressions are not equal is called:",
+      "options": [
+        "An equation",
+        "An inequality",
+        "An identity",
+        "A radical"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "f1a905ecf2e6",
+      "stem": "Which one of the following is a strict inequality?",
+      "options": [
+        "x + 3 ≠ 0",
+        "12x > 5",
+        "2y − 3 ≤ 0",
+        "4x + 5 ≥ 0"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "8536c6d17448",
+      "stem": "When both sides of an inequality are multiplied or divided by a negative number, the inequality symbol:",
+      "options": [
+        "Remains the same",
+        "Is reversed",
+        "Becomes an equality",
+        "Is removed"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "5486297e9c34",
+      "stem": "What is the solution set of 8x + 9 < 6x − 7?",
+      "options": [
+        "{x | x ∈ R ∧ x < −8}",
+        "{x | x ∈ R ∧ x > −8}",
+        "{x | x ∈ R ∧ x < 8}",
+        "{x | x ∈ R ∧ x > 8}"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "904558db995c",
+      "stem": "A compound inequality formed by joining two inequalities with the word “and” is true when:",
+      "options": [
+        "At least one inequality is true",
+        "Both inequalities are true",
+        "Exactly one inequality is true",
+        "Neither inequality is true"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "240c48f893b4",
+      "stem": "For a compound inequality joined by “or”, the solution set is the:",
+      "options": [
+        "Union of both solution sets",
+        "Intersection of both solution sets",
+        "Difference of both solution sets",
+        "Product of both solution sets"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "1c4fa394b052",
+      "stem": "What is the solution set of the compound inequality x − 5 ≥ −1 and x + 3 ≤ 10, x ∈ R?",
+      "options": [
+        "{x | x ∈ R ∧ 4 ≤ x ≤ 7}",
+        "{x | x ∈ R ∧ x ≤ 7}",
+        "{x | x ∈ R ∧ x ≥ 4}",
+        "{x | x ∈ R ∧ x < 4}"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "15e3a0f0c940",
+      "stem": "If 5 ≥ 1 and 1 ≥ 1 are both true, then by the transitive property, which statement must also be true?",
+      "options": [
+        "5 ≤ 1",
+        "1 ≥ 5",
+        "5 ≥ 1",
+        "5 = 1"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    },
+    {
+      "id": "d70076d53488",
+      "stem": "The sum of five times a number x and 10 is less than −35. What inequality represents this statement?",
+      "options": [
+        "5x + 10 < −35",
+        "5x − 10 < −35",
+        "5(x + 10) < −35",
+        "5x + 10 > −35"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Maths-UNIT 5 SET # 1.docx"
+    }
+  ]
+}

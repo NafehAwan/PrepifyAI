@@ -1,0 +1,618 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "f86a3f28a1ad",
+      "stem": "30° in radians is:",
+      "options": [
+        "π/3",
+        "π/6",
+        "3π/2",
+        "5π/6"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "a079648e8ec3",
+      "stem": "60° in radians is:",
+      "options": [
+        "π",
+        "π/3",
+        "π/2",
+        "π/4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "030cde2bbf67",
+      "stem": "90° in radians is:",
+      "options": [
+        "2π/3",
+        "π/2",
+        "π/4",
+        "2π"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "55a383e16144",
+      "stem": "45° in radians is:",
+      "options": [
+        "π/6",
+        "π/4",
+        "π/3",
+        "2π/3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "c6912b006cab",
+      "stem": "5π/6 radians in degrees is:",
+      "options": [
+        "30°",
+        "150°",
+        "45°",
+        "120°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "bbc2d24bb056",
+      "stem": "120° in radians is:",
+      "options": [
+        "3π/4",
+        "π",
+        "2π",
+        "2π/3"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-degrees-radians",
+      "family": "gen-maths-m6-degrees-radians"
+    },
+    {
+      "id": "205f2621149e",
+      "stem": "The value of sin 45° is:",
+      "options": [
+        "1/2",
+        "1/√2",
+        "2",
+        "√3"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "78fe8427daf0",
+      "stem": "The value of tan 0° is:",
+      "options": [
+        "1",
+        "2",
+        "0",
+        "1/√3"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "9baa3c80c8bf",
+      "stem": "The value of cos 30° is:",
+      "options": [
+        "√3/2",
+        "2",
+        "1/2",
+        "1/√3"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "946cccfc2432",
+      "stem": "The value of tan 30° is:",
+      "options": [
+        "1/√3",
+        "1/2",
+        "1",
+        "√3"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "e4dd1bf5d2c4",
+      "stem": "The value of sin 0° is:",
+      "options": [
+        "1",
+        "2",
+        "1/√3",
+        "0"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "eb3ab7afa60e",
+      "stem": "The value of tan 60° is:",
+      "options": [
+        "√3/2",
+        "0",
+        "2",
+        "√3"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-special-values",
+      "family": "gen-maths-m6-special-values"
+    },
+    {
+      "id": "cca9bead25cc",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 8 cm, the adjacent side is 15 cm and the hypotenuse is 17 cm. The value of tan θ is:",
+      "options": [
+        "15/8",
+        "15/17",
+        "8/17",
+        "8/15"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "7be4ca85cd7d",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 3 cm, the adjacent side is 4 cm and the hypotenuse is 5 cm. The value of cos θ is:",
+      "options": [
+        "3/4",
+        "3/5",
+        "4/3",
+        "4/5"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "0a5b96a54a9a",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 8 cm, the adjacent side is 15 cm and the hypotenuse is 17 cm. The value of sin θ is:",
+      "options": [
+        "15/17",
+        "8/17",
+        "15/8",
+        "8/15"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "641d3fb42b49",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 9 cm, the adjacent side is 12 cm and the hypotenuse is 15 cm. The value of tan θ is:",
+      "options": [
+        "4/5",
+        "3/5",
+        "4/3",
+        "3/4"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "0c4170c8d9b4",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 9 cm, the adjacent side is 12 cm and the hypotenuse is 15 cm. The value of cos θ is:",
+      "options": [
+        "4/3",
+        "4/5",
+        "3/5",
+        "3/4"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "dc9edaa8bd10",
+      "stem": "In a right-angled triangle, the side opposite angle θ is 7 cm, the adjacent side is 24 cm and the hypotenuse is 25 cm. The value of sin θ is:",
+      "options": [
+        "7/24",
+        "7/25",
+        "24/25",
+        "24/7"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-triangle-ratio",
+      "family": "gen-maths-m6-triangle-ratio"
+    },
+    {
+      "id": "5892991edcff",
+      "stem": "A ship sails from port A to port B on a bearing of 345°. The bearing of A from B is:",
+      "options": [
+        "015°",
+        "165°",
+        "345°",
+        "075°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "da1270c35217",
+      "stem": "A ship sails from port A to port B on a bearing of 295°. The bearing of A from B is:",
+      "options": [
+        "295°",
+        "065°",
+        "025°",
+        "115°"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "af40d828accf",
+      "stem": "A ship sails from port A to port B on a bearing of 195°. The bearing of A from B is:",
+      "options": [
+        "165°",
+        "015°",
+        "285°",
+        "195°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "7a1c57aa04df",
+      "stem": "A ship sails from port A to port B on a bearing of 010°. The bearing of A from B is:",
+      "options": [
+        "170°",
+        "010°",
+        "350°",
+        "190°"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "c659c1f6538e",
+      "stem": "A ship sails from port A to port B on a bearing of 100°. The bearing of A from B is:",
+      "options": [
+        "260°",
+        "100°",
+        "280°",
+        "080°"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "9d7c63fe7ff7",
+      "stem": "A ship sails from port A to port B on a bearing of 190°. The bearing of A from B is:",
+      "options": [
+        "280°",
+        "010°",
+        "170°",
+        "190°"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "template:m6-back-bearing",
+      "variant_of": "d4097edc799d"
+    },
+    {
+      "id": "5034ac8c86ae",
+      "stem": "The direction N60°E written as a three-figure bearing is:",
+      "options": [
+        "060°",
+        "120°",
+        "240°",
+        "300°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "bbec97481f92",
+      "stem": "The direction N20°W written as a three-figure bearing is:",
+      "options": [
+        "340°",
+        "020°",
+        "160°",
+        "200°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "f10d02155f73",
+      "stem": "The direction N15°E written as a three-figure bearing is:",
+      "options": [
+        "015°",
+        "345°",
+        "165°",
+        "195°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "364365bf3159",
+      "stem": "The direction S40°E written as a three-figure bearing is:",
+      "options": [
+        "140°",
+        "040°",
+        "320°",
+        "220°"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "eb9b3f4b1e87",
+      "stem": "The direction S70°W written as a three-figure bearing is:",
+      "options": [
+        "290°",
+        "110°",
+        "250°",
+        "070°"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "3063e790c4bd",
+      "stem": "The direction S20°W written as a three-figure bearing is:",
+      "options": [
+        "160°",
+        "340°",
+        "200°",
+        "020°"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-compass-bearing",
+      "family": "gen-maths-m6-compass-bearing"
+    },
+    {
+      "id": "fef07cdd5e64",
+      "stem": "A circle has radius 3 cm. The length of the arc cut off by a central angle of 0.5 radians is:",
+      "options": [
+        "1.5 cm",
+        "6 cm",
+        "3.5 cm",
+        "2.25 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    },
+    {
+      "id": "44c813435fda",
+      "stem": "A circle has radius 3 cm. The length of the arc cut off by a central angle of 2.5 radians is:",
+      "options": [
+        "7.5 cm",
+        "1.2 cm",
+        "5.5 cm",
+        "11.25 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    },
+    {
+      "id": "35484e0f950a",
+      "stem": "A circle has radius 10 cm. The length of the arc cut off by a central angle of 1.5 radians is:",
+      "options": [
+        "6.67 cm",
+        "11.5 cm",
+        "15 cm",
+        "75 cm"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    },
+    {
+      "id": "1f77206e5e52",
+      "stem": "A circle has radius 12 cm. The length of the arc cut off by a central angle of 2.5 radians is:",
+      "options": [
+        "30 cm",
+        "14.5 cm",
+        "180 cm",
+        "4.8 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    },
+    {
+      "id": "e8716a82880a",
+      "stem": "A circle has radius 8 cm. The length of the arc cut off by a central angle of 3 radians is:",
+      "options": [
+        "96 cm",
+        "24 cm",
+        "2.67 cm",
+        "11 cm"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    },
+    {
+      "id": "ed1209353d90",
+      "stem": "A circle has radius 12 cm. The length of the arc cut off by a central angle of 0.5 radians is:",
+      "options": [
+        "6 cm",
+        "24 cm",
+        "12.5 cm",
+        "36 cm"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "template:m6-arc-length",
+      "family": "gen-maths-m6-arc-length"
+    }
+  ]
+}

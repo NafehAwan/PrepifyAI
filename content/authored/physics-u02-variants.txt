@@ -1,0 +1,14 @@
+# subject: Physics
+# chapter: 2
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A car moving north applies its brakes and slows down. The directions of its velocity and acceleration are: | north and north | north and south | south and north | south and south | B | h v:7a5f5ae8bc01
+A football kicked into the air follows a curved path before landing. This is: | circular motion | projectile motion | rotatory motion | vibratory motion | B | s e v:24c8c18a8b6a
+The pendulum of a wall clock moving to and fro about its mean position is an example of: | translatory motion | rotatory motion | vibratory motion | random motion | C | e v:29c53d356815
+A lift moving straight up its shaft without turning shows: | rectilinear (translatory) motion | projectile motion | rotatory motion | vibratory motion | A | s v:a6ca7012bfc6
+A car that is speeding up in the direction of its motion has an acceleration that is: | positive | negative | zero | undefined | A | v:e956605f6462
+A ball thrown vertically upward is momentarily at rest at the top. Its velocity at that point is: | maximum | zero | equal to g | negative 10 m/s | B | v:22959966ca87
+The total length of the path travelled by a body, whatever its direction, is called: | displacement | distance | velocity | acceleration | B | e v:baea97e6f2b5

@@ -1,0 +1,486 @@
+{
+  "subject": "English",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "cad806b6eedb",
+      "stem": "\"Tourism\" means:",
+      "options": [
+        "travelling to places for pleasure, learning or leisure",
+        "staying at home all year",
+        "working in a factory",
+        "studying at school"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "32e9ecb9c27c",
+      "stem": "K2, the second-highest mountain in the world, is located in:",
+      "options": [
+        "Pakistan",
+        "Nepal",
+        "China only",
+        "India"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "9d8835875df3",
+      "stem": "The ancient city of Mohenjo-daro belongs to the:",
+      "options": [
+        "Indus Valley Civilization",
+        "Roman Empire",
+        "Mughal Empire",
+        "Greek civilization"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "749ad8d9d710",
+      "stem": "The Badshahi Mosque and the Lahore Fort are both in:",
+      "options": [
+        "Karachi",
+        "Lahore",
+        "Peshawar",
+        "Quetta"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "173bdade579c",
+      "stem": "A \"souvenir\" is:",
+      "options": [
+        "something bought to remember a place",
+        "a type of hotel",
+        "a travel ticket",
+        "a tour guide"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "24d26a42473f",
+      "stem": "An \"itinerary\" is:",
+      "options": [
+        "a planned route or schedule of a journey",
+        "a travel bag",
+        "a hotel bill",
+        "a foreign coin"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "eac1df867c64",
+      "stem": "Choose the synonym of \"journey\":",
+      "options": [
+        "Trip",
+        "Rest",
+        "Stay",
+        "Halt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "5574a4c63be0",
+      "stem": "Choose the antonym of \"arrival\":",
+      "options": [
+        "Coming",
+        "Entry",
+        "Departure",
+        "Landing"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "cd0737d3b69c",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Accommodation",
+        "Accomodation",
+        "Acommodation",
+        "Accommadation"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "ea91c4d37234",
+      "stem": "Hina plans a trip to Hunza, books a hotel, and lists places to visit each day. The list she makes is her:",
+      "options": [
+        "itinerary",
+        "souvenir",
+        "passport",
+        "receipt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "557e457a86f0",
+      "stem": "\"Hospitality\" means:",
+      "options": [
+        "a friendly and generous welcome to guests",
+        "a hospital visit",
+        "a travel document",
+        "a hotel room"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "d98e5250c99e",
+      "stem": "Tourism helps a country's economy mainly by:",
+      "options": [
+        "bringing income and creating jobs",
+        "reducing all trade",
+        "closing businesses",
+        "increasing pollution only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "6e503c7062ff",
+      "stem": "Choose the passive voice of \"Tourists visit the northern areas every summer.\":",
+      "options": [
+        "The northern areas are visited by tourists every summer.",
+        "The northern areas were visited by tourists every summer.",
+        "The northern areas visited by tourists every summer.",
+        "The northern areas are visiting by tourists every summer."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "7c087090b931",
+      "stem": "Fill in the blank: We are going ___ a trip to Swat.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "79e438d947b3",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "We visited Naran last year.",
+        "We visit Naran last year.",
+        "We have visited Naran last year.",
+        "We visiting Naran last year."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "39b7e339f01e",
+      "stem": "Which sentence is in the future tense?",
+      "options": [
+        "They travelled to Skardu.",
+        "They will travel to Skardu.",
+        "They travel to Skardu.",
+        "They are travelling to Skardu now."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "f3c454d65952",
+      "stem": "In \"The valley is beautiful\", the word \"beautiful\" is:",
+      "options": [
+        "a noun",
+        "an adjective",
+        "an adverb",
+        "a verb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "b6b9ffee420c",
+      "stem": "A group of tourists leaves plastic bottles along a mountain trail. Which responsible-tourism rule are they breaking?",
+      "options": [
+        "Keep the environment clean",
+        "Respect local culture",
+        "Book hotels early",
+        "Carry a map"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "bde570dee600",
+      "stem": "Choose the synonym of \"destination\":",
+      "options": [
+        "Starting point",
+        "Place one is travelling to",
+        "Hotel",
+        "Luggage"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "9a085cd4c299",
+      "stem": "Choose the indirect speech of: The guide said, \"The lake is very deep.\"",
+      "options": [
+        "The guide said that the lake was very deep.",
+        "The guide said that the lake is very deeply.",
+        "The guide says that the lake was very deep.",
+        "The guide said the lake being very deep."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "df69c5d16d81",
+      "stem": "Choose the correct article: Murree is ___ popular hill station.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "1ea05248bfac",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "We visited Hunza, Skardu, and Gilgit.",
+        "We visited Hunza Skardu and Gilgit.",
+        "We visited, Hunza, Skardu and Gilgit.",
+        "we visited Hunza, Skardu, and Gilgit."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "4a0c595f8647",
+      "stem": "Choose the plural of \"journey\":",
+      "options": [
+        "journies",
+        "journeys",
+        "journeyes",
+        "journys"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "e61d052e6fef",
+      "stem": "Choose the synonym of \"scenic\":",
+      "options": [
+        "Picturesque",
+        "Ugly",
+        "Dull",
+        "Crowded"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "b0fe6f5e59cb",
+      "stem": "Fill in the blank: Pakistan is rich ___ natural beauty.",
+      "options": [
+        "with",
+        "in",
+        "at",
+        "of"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "9518068eb348",
+      "stem": "A foreign tourist dresses modestly and learns a few words of Urdu before visiting a village. She is showing:",
+      "options": [
+        "respect for local culture",
+        "carelessness",
+        "rudeness",
+        "fear"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "deebd68b4469",
+      "stem": "In \"They travel north every summer\", the word \"travel\" is:",
+      "options": [
+        "a noun",
+        "a verb",
+        "an adjective",
+        "an adverb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "156efdfa006f",
+      "stem": "The word \"adventure\" means:",
+      "options": [
+        "an exciting and unusual experience",
+        "a boring routine",
+        "a hotel booking",
+        "a lost ticket"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "e67764e4f396",
+      "stem": "Choose the antonym of \"ancient\":",
+      "options": [
+        "Old",
+        "Historic",
+        "Modern",
+        "Aged"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    },
+    {
+      "id": "1a826aa1d7f4",
+      "stem": "Which sentence is in the present perfect tense?",
+      "options": [
+        "I have seen the Shalimar Gardens.",
+        "I saw the Shalimar Gardens.",
+        "I see the Shalimar Gardens.",
+        "I will see the Shalimar Gardens."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 9)"
+    }
+  ]
+}

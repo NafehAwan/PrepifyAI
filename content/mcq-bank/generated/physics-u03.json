@@ -1,0 +1,805 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "6a8d92d2936f",
+      "stem": "A net force gives a 3 kg trolley an acceleration of 7 m/s². The force is:",
+      "options": [
+        "42 N",
+        "21 N",
+        "0.43 N",
+        "10 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "7fde6b374c7a",
+      "stem": "A net force gives a 6 kg crate an acceleration of 6 m/s². The force is:",
+      "options": [
+        "12 N",
+        "72 N",
+        "1 N",
+        "36 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "1af59199dd62",
+      "stem": "A net force gives a 5 kg box an acceleration of 7 m/s². The force is:",
+      "options": [
+        "0.71 N",
+        "35 N",
+        "12 N",
+        "70 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "b0d9728cf66b",
+      "stem": "A net force gives a 15 kg cart an acceleration of 6 m/s². The force is:",
+      "options": [
+        "21 N",
+        "180 N",
+        "2.5 N",
+        "90 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "6f99342f74fb",
+      "stem": "A net force gives a 4 kg box an acceleration of 5 m/s². The force is:",
+      "options": [
+        "20 N",
+        "0.8 N",
+        "9 N",
+        "40 N"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "29a12d25b446",
+      "stem": "A net force gives a 3 kg crate an acceleration of 6 m/s². The force is:",
+      "options": [
+        "36 N",
+        "0.5 N",
+        "18 N",
+        "9 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-force",
+      "family": "gen-physics-p3-force"
+    },
+    {
+      "id": "466892b498ec",
+      "stem": "A force of 24 N acts on a body of mass 12 kg. The acceleration produced is:",
+      "options": [
+        "2 m/s²",
+        "0.5 m/s²",
+        "288 m/s²",
+        "12 m/s²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "a2ae626fe1b4",
+      "stem": "A force of 77 N acts on a body of mass 11 kg. The acceleration produced is:",
+      "options": [
+        "0.14 m/s²",
+        "847 m/s²",
+        "66 m/s²",
+        "7 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "96722a581f4a",
+      "stem": "A force of 14 N acts on a body of mass 7 kg. The acceleration produced is:",
+      "options": [
+        "0.5 m/s²",
+        "2 m/s²",
+        "98 m/s²",
+        "7 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "b75d632a1a6b",
+      "stem": "A force of 20 N acts on a body of mass 4 kg. The acceleration produced is:",
+      "options": [
+        "0.2 m/s²",
+        "5 m/s²",
+        "80 m/s²",
+        "16 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "1b52526f41b1",
+      "stem": "A force of 56 N acts on a body of mass 8 kg. The acceleration produced is:",
+      "options": [
+        "0.14 m/s²",
+        "48 m/s²",
+        "7 m/s²",
+        "448 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "d37424fbcdf1",
+      "stem": "A force of 30 N acts on a body of mass 6 kg. The acceleration produced is:",
+      "options": [
+        "180 m/s²",
+        "0.2 m/s²",
+        "5 m/s²",
+        "24 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-acceleration",
+      "family": "gen-physics-p3-acceleration"
+    },
+    {
+      "id": "b7e514e0f47b",
+      "stem": "A force of 40 N gives a body an acceleration of 6 m/s². The same force acting on a body of twice the mass produces an acceleration of:",
+      "options": [
+        "12 m/s²",
+        "1.5 m/s²",
+        "3 m/s²",
+        "6 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "46a0aac1ba54",
+      "stem": "A force of 40 N gives a body an acceleration of 12 m/s². The same force acting on a body of three times the mass produces an acceleration of:",
+      "options": [
+        "1.33 m/s²",
+        "12 m/s²",
+        "4 m/s²",
+        "36 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "09fec89956cd",
+      "stem": "A force of 20 N gives a body an acceleration of 6 m/s². The same force acting on a body of twice the mass produces an acceleration of:",
+      "options": [
+        "1.5 m/s²",
+        "12 m/s²",
+        "6 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "fd02ca3946fd",
+      "stem": "A force of 30 N gives a body an acceleration of 4 m/s². The same force acting on a body of twice the mass produces an acceleration of:",
+      "options": [
+        "1 m/s²",
+        "4 m/s²",
+        "2 m/s²",
+        "8 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "18502f95e2e5",
+      "stem": "A force of 10 N gives a body an acceleration of 10 m/s². The same force acting on a body of twice the mass produces an acceleration of:",
+      "options": [
+        "2.5 m/s²",
+        "5 m/s²",
+        "10 m/s²",
+        "20 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "ce726b947055",
+      "stem": "A force of 10 N gives a body an acceleration of 15 m/s². The same force acting on a body of three times the mass produces an acceleration of:",
+      "options": [
+        "45 m/s²",
+        "1.67 m/s²",
+        "5 m/s²",
+        "15 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-mass-ratio",
+      "variant_of": "1ad44ae6550d"
+    },
+    {
+      "id": "073f2bd55ad9",
+      "stem": "The mass of a child is 40 kg. Taking g = 10 m/s², the child's weight is:",
+      "options": [
+        "40 N",
+        "400 N",
+        "4 N",
+        "400 kg"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "147ad2029d6a",
+      "stem": "A parcel weighs 80 N. Taking g = 10 m/s², its mass is:",
+      "options": [
+        "80 kg",
+        "800 kg",
+        "8 N",
+        "8 kg"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "6410209a0af9",
+      "stem": "The mass of a child is 5 kg. Taking g = 10 m/s², the child's weight is:",
+      "options": [
+        "50 kg",
+        "0.5 N",
+        "50 N",
+        "5 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "d3dca9a6693a",
+      "stem": "A parcel weighs 750 N. Taking g = 10 m/s², its mass is:",
+      "options": [
+        "75 kg",
+        "75 N",
+        "750 kg",
+        "7500 kg"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "8834332f6277",
+      "stem": "A parcel weighs 400 N. Taking g = 10 m/s², its mass is:",
+      "options": [
+        "40 N",
+        "40 kg",
+        "4000 kg",
+        "400 kg"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "d6edc1c67a67",
+      "stem": "The mass of a child is 50 kg. Taking g = 10 m/s², the child's weight is:",
+      "options": [
+        "5 N",
+        "50 N",
+        "500 N",
+        "500 kg"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-weight",
+      "family": "gen-physics-p3-weight"
+    },
+    {
+      "id": "a5cf88da0687",
+      "stem": "A 0.5 kg ball moves at 4 m/s. Its momentum is:",
+      "options": [
+        "4.5 kg m/s",
+        "4 kg m/s",
+        "0.13 kg m/s",
+        "2 kg m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "0be3e7d7eb11",
+      "stem": "A 60 kg runner moves at 9 m/s. Its momentum is:",
+      "options": [
+        "540 kg m/s",
+        "2430 kg m/s",
+        "69 kg m/s",
+        "6.67 kg m/s"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "43d9d4fa6029",
+      "stem": "A 4 kg trolley moves at 7 m/s. Its momentum is:",
+      "options": [
+        "0.57 kg m/s",
+        "11 kg m/s",
+        "28 kg m/s",
+        "98 kg m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "7850127a33c3",
+      "stem": "A 2 kg trolley moves at 3 m/s. Its momentum is:",
+      "options": [
+        "5 kg m/s",
+        "9 kg m/s",
+        "6 kg m/s",
+        "0.67 kg m/s"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "800df9e67c36",
+      "stem": "A 60 kg runner moves at 5 m/s. Its momentum is:",
+      "options": [
+        "65 kg m/s",
+        "300 kg m/s",
+        "750 kg m/s",
+        "12 kg m/s"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "0dfb52e8bf5e",
+      "stem": "A 50 kg runner moves at 6 m/s. Its momentum is:",
+      "options": [
+        "56 kg m/s",
+        "8.33 kg m/s",
+        "900 kg m/s",
+        "300 kg m/s"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-momentum",
+      "family": "gen-physics-p3-momentum"
+    },
+    {
+      "id": "c1ee816c00bb",
+      "stem": "Two children pull a 2 kg box in opposite directions with forces of 41 N and 35 N. The acceleration of the box is:",
+      "options": [
+        "20.5 m/s²",
+        "38 m/s²",
+        "12 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "290523d6cacd",
+      "stem": "Two children pull a 5 kg box in opposite directions with forces of 35 N and 25 N. The acceleration of the box is:",
+      "options": [
+        "12 m/s²",
+        "7 m/s²",
+        "2 m/s²",
+        "50 m/s²"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "d3924c651fa1",
+      "stem": "Two children pull a 6 kg box in opposite directions with forces of 27 N and 15 N. The acceleration of the box is:",
+      "options": [
+        "7 m/s²",
+        "4.5 m/s²",
+        "72 m/s²",
+        "2 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "10a812d7ce6d",
+      "stem": "Two children pull a 8 kg box in opposite directions with forces of 52 N and 20 N. The acceleration of the box is:",
+      "options": [
+        "9 m/s²",
+        "6.5 m/s²",
+        "256 m/s²",
+        "4 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "46bda679db36",
+      "stem": "Two children pull a 9 kg box in opposite directions with forces of 67 N and 40 N. The acceleration of the box is:",
+      "options": [
+        "243 m/s²",
+        "7.44 m/s²",
+        "11.89 m/s²",
+        "3 m/s²"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "07863ad0f861",
+      "stem": "Two children pull a 5 kg box in opposite directions with forces of 45 N and 20 N. The acceleration of the box is:",
+      "options": [
+        "9 m/s²",
+        "5 m/s²",
+        "125 m/s²",
+        "13 m/s²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-net-force",
+      "family": "gen-physics-p3-net-force"
+    },
+    {
+      "id": "2b22f4118eea",
+      "stem": "A block weighing 200 N rests on a floor. If the coefficient of friction between them is 0.5, the force needed to just make it slide is:",
+      "options": [
+        "0.5 N",
+        "200 N",
+        "400 N",
+        "100 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "29eabef34147",
+      "stem": "A block weighing 80 N rests on a floor. If the coefficient of friction between them is 0.25, the force needed to just make it slide is:",
+      "options": [
+        "60 N",
+        "320 N",
+        "80 N",
+        "20 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "659f823cd5db",
+      "stem": "A block weighing 60 N rests on a floor. If the coefficient of friction between them is 0.5, the force needed to just make it slide is:",
+      "options": [
+        "120 N",
+        "60 N",
+        "0.5 N",
+        "30 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "29c1f227bebe",
+      "stem": "A block weighing 80 N rests on a floor. If the coefficient of friction between them is 0.5, the force needed to just make it slide is:",
+      "options": [
+        "160 N",
+        "80 N",
+        "40 N",
+        "0.5 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "97fef8fc01ae",
+      "stem": "A block weighing 100 N rests on a floor. If the coefficient of friction between them is 0.2, the force needed to just make it slide is:",
+      "options": [
+        "80 N",
+        "500 N",
+        "100 N",
+        "20 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "edfe16996485",
+      "stem": "A block weighing 120 N rests on a floor. If the coefficient of friction between them is 0.5, the force needed to just make it slide is:",
+      "options": [
+        "120 N",
+        "240 N",
+        "60 N",
+        "0.5 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "template:p3-friction",
+      "family": "gen-physics-p3-friction"
+    },
+    {
+      "id": "07b3a813bbb1",
+      "stem": "An astronaut has a mass of 60 kg. On the Moon, where g = 1.6 m/s², the astronaut's weight is:",
+      "options": [
+        "600 N",
+        "37.5 N",
+        "96 N",
+        "60 N"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-moon-weight",
+      "family": "gen-physics-p3-moon-weight"
+    },
+    {
+      "id": "d0242c314c97",
+      "stem": "An astronaut has a mass of 50 kg. On the Moon, where g = 1.6 m/s², the astronaut's weight is:",
+      "options": [
+        "500 N",
+        "80 N",
+        "31.3 N",
+        "50 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-moon-weight",
+      "family": "gen-physics-p3-moon-weight"
+    },
+    {
+      "id": "1a42771a49b4",
+      "stem": "An astronaut has a mass of 80 kg. On the Moon, where g = 1.6 m/s², the astronaut's weight is:",
+      "options": [
+        "80 N",
+        "128 N",
+        "800 N",
+        "50 N"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-moon-weight",
+      "family": "gen-physics-p3-moon-weight"
+    },
+    {
+      "id": "6e6b8f2db580",
+      "stem": "An astronaut has a mass of 90 kg. On the Moon, where g = 1.6 m/s², the astronaut's weight is:",
+      "options": [
+        "144 N",
+        "900 N",
+        "56.3 N",
+        "90 N"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-moon-weight",
+      "family": "gen-physics-p3-moon-weight"
+    },
+    {
+      "id": "1220852e0f81",
+      "stem": "An astronaut has a mass of 70 kg. On the Moon, where g = 1.6 m/s², the astronaut's weight is:",
+      "options": [
+        "700 N",
+        "70 N",
+        "43.8 N",
+        "112 N"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "template:p3-moon-weight",
+      "family": "gen-physics-p3-moon-weight"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/login/` | Email/password sign in / sign up UI + server actions |
 | `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
+| `supabase/challenges.sql` | Friend challenges: tables with no RLS policies plus the security-definer functions that are the only way in (re-runnable) |
 | `content/physics-9.curriculum.json` | Curriculum JSON seed — Physics IX chapters + topics + textbook text (tests are generated from that text at runtime, not pre-seeded) |
 | `scripts/seed.mjs` | Loads the curriculum into Supabase (`npm run seed`) |
 | `Prepify AI.dc.html` | The original design prototype this app reproduces |
@@ -39,7 +40,7 @@ npm run seed       # load the curriculum into Supabase (needs env, see below)
 The app has real email/password auth and persists your profile. To turn it on:
 
 1. Create a Supabase project.
-2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper).
+2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper), then `supabase/challenges.sql` for friend challenges.
 3. Copy `.env.local.example` → `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY`.
 4. `npm run seed` to load the Physics IX curriculum (also creates all nine subject rows so enrolments resolve).
 5. For the smoothest local dev, disable “Confirm email” in Supabase → Authentication → Providers → Email (otherwise new sign-ups must confirm before signing in).
@@ -58,19 +59,32 @@ If Supabase isn't configured, all of the above degrade gracefully to the demo ex
 
 `.mcp.json` registers the [Supabase MCP server](https://supabase.com/docs/guides/getting-started/mcp) for this project so a local Claude Code session can apply migrations, run SQL, and manage the linked project directly (it authorises over OAuth on first use). Open the project in Claude Code and approve the `supabase` server when prompted.
 
-## AI backend — bring your own Groq key
+## AI backend — one shared Groq key
 
-The tutor chat and the practice examiner call **Groq** (OpenAI-compatible Chat Completions) through server-side Next.js route handlers (`app/api/ai/`), using the grounded teaching + strict-grading system prompts from the spec:
+The "Ask Prepify" chatbot calls **Groq** (OpenAI-compatible Chat Completions) through server-side
+Next.js route handlers under `app/api/ai/`:
 
-- **`POST /api/ai/teach`** — the grounded tutor. Answers only from the supplied ground-truth chunks + SLOs and cites SLO codes. Powers the Topic-workspace chat.
-- **`POST /api/ai/grade`** — the brutally-honest examiner. Grades a written answer point-by-point against the marking scheme and returns structured JSON (`{awarded, outOf, hits[], missed[], keyword_gaps[], feedback_md, slo_code}`) via Groq's JSON mode. Powers the Practice screen's live feedback.
-- **`POST /api/ai/ping`** — validates a key for the Settings "Test connection" button.
+- **`POST /api/ai/chat`** — the study assistant behind the chat bubble. Throttled per student
+  (`lib/ai/rateLimit.ts`) because the shared key's rate limit is per key.
+- **`POST /api/ai/quiz`** — MCQ generation. Only used as a fallback; normal tests come from the
+  question bank.
+- **`POST /api/ai/ping`** — a tiny request that confirms the key works, behind the Settings button.
 
-**Each student brings their own free Groq key.** In the app, go to **Settings → Connect your AI**, follow the one-minute guide to create a free key at [console.groq.com](https://console.groq.com/keys), and paste it in. The key is stored **only in that browser** (localStorage) and sent per-request in the `x-groq-key` header straight to Groq — it is never written to our database or logged server-side.
+**The owner sets one `GROQ_API_KEY` on the server** and every student gets the chatbot with zero
+setup. `isAiConfigured()` surfaces this to the UI as `AppState.aiConfigured`, which suppresses all
+"connect your key" prompts. A browser may still override with its own key via the `x-groq-key`
+header, which is handy for local development; that key is never stored server-side.
 
-For local dev you can instead set a shared fallback `GROQ_API_KEY` in `.env.local` (server-side only). Optionally set `PREPIFY_MODEL` — it defaults to `llama-3.3-70b-versatile`; use `llama-3.1-8b-instant` for faster/cheaper, or any current Groq model id.
+`PREPIFY_MODEL` is optional — leave it unset and `pickModel()` discovers the best model the key can
+actually reach (Groq retires model ids, so pinning one is a liability).
 
-Without any key all routes return `{configured:false}` and the UI falls back to canned tutor replies / static examiner feedback, so the demo keeps working with zero setup.
+### What this costs at ~100 students
+
+Tests cost **nothing**: questions are sampled from the `questions` table in Postgres, so test-taking
+scales independently of any API limit and keeps working with no key at all. The chatbot is the only
+runtime consumer. Groq's free tier is rate-limited per key, so a class chatting at once will hit it;
+the per-student throttle softens that, and Groq's pay-as-you-go tier costs a few dollars a month at
+this scale.
 
 ## Live curriculum (DB-driven loop)
 

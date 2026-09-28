@@ -1,0 +1,116 @@
+# subject: Computer Science
+# chapter: 4
+# source: Chapter 4 MCQ's - Class 9th computer.pdf
+# answer_source: file
+# difficulty: easy
+
+// Transcribed from the owner's PDF; answers are the PDF's "Correct" column.
+What is data? | A collection of facts or information | A type of computer program | A mathematical equation | A graphical representation | A
+What is the purpose of data analytics? | To collect data | To analyze data and extract meaningful insights | To create hardware devices | To write computer programs | B
+Which of the following is an example of data? | A computer program | Temperature readings in an experiment | A programming language | A mathematical formula | B
+What is data science? | A branch of computer hardware | An interdisciplinary field that uses mathematics, statistics and machine learning to analyze data | A type of programming language | A method for creating graphical designs | B
+Which of the following is a key component of data science? | Data collection | Data cleaning | Data visualization | All of the above | D
+What is the purpose of data visualization? | To collect data | To clean data | To represent data graphically for better understanding | To write computer programs | C
+Which of the following is used in data science to build predictive models? | Data collection | Machine learning | Data cleaning | Data visualization | B
+What is the role of domain knowledge in data science? | To write computer programs | To understand the specific field and interpret data effectively | To clean data | To collect data | B
+Which of the following is an example of qualitative data? | Temperature readings | Survey responses about preferences | Sales numbers | Website traffic statistics | B
+What is the final goal of data science? | To collect data | To clean data | To make informed decisions using insights from data | To write computer programs | C
+What is a dataset? | A single piece of data | A structured collection of related data | A type of machine learning algorithm | A graphical representation of data | B
+What is the purpose of statistics in data science? | To predict future events | To analyze the frequency of past events | To create graphical representations | To clean data | B
+Which of the following is a subset of machine learning? | Data mining | Deep learning | Data visualization | Big Data | B
+What is the primary focus of data mining? | To create graphical representations | To discover patterns and relationships in datasets | To predict future events | To clean data | B
+What is Big Data? | A type of machine learning algorithm | Handling large volumes of data | A graphical representation of data | A type of data cleaning technique | B
+What is predictive analysis? | Analyzing past events | Predicting future trends based on historical data | Cleaning data | Creating graphical representations | B
+What is Natural Language Processing (NLP)? | The study of interaction between human language and computers | A type of data visualization technique | A subset of data mining | A type of machine learning algorithm | A
+Which of the following is an example of unstructured data? | Tables | Databases | Audio files | Spreadsheets | C
+What is the role of mathematics in data science? | To clean data | To solve problems and interpret complex data | To create graphical representations | To collect data | B
+Which of the following is an application of deep learning? | Data cleaning | Image recognition | Data visualization | Data mining | B
+Which of the following is an example of a recommendation system? | Predicting flight delays | Suggesting movies on Netflix | Detecting credit card fraud | Analyzing customer reviews | B
+What is sentiment analysis used for? | To predict future trends | To identify customer sentiment (positive, negative or neutral) | To create graphical representations | To clean data | B
+Which industry uses data science to optimize shipping routes? | Healthcare | Finance | Transportation | Marketing | C
+Which of the following is an application of data science in healthcare? | Predicting disease outbreaks | Recommending products | Detecting credit card fraud | Creating promotional offers | A
+What is the purpose of fraud detection in data science? | To predict future trends | To identify unusual patterns or behaviors | To create graphical representations | To clean data | B
+Which of the following is an example of a business problem solved by data science? | Choosing the best shipping routes | Writing computer programs | Creating hardware devices | Designing websites | A
+What is the primary use of machine learning in data science? | To clean data | To build models for automation and pattern recognition | To create graphical representations | To collect data | B
+Which of the following is an example of sentiment analysis? | Predicting election outcomes | Analyzing customer reviews to determine satisfaction | Forecasting revenue | Detecting fraudulent transactions | B
+How does data science help in the consumer goods industry? | By predicting stock market trends | By optimizing inventory based on demand forecasting | By creating recommendation systems | By detecting fraudulent transactions | B
+What is the role of data science in logistics companies? | To predict election outcomes | To analyze customer sentiment | To optimize delivery routes and reduce costs | To create graphical representations | C
+Which of the following is an application of data science in e-commerce? | Route optimization | Fraud detection | Market sentiment analysis | Quality control | B
+What is the primary use of data science in stock markets? | To optimize inventory | To predict stock price movements and manage risks | To create recommendation systems | To analyze customer reviews | B
+How does data science improve quality control in industries? | By predicting stock market trends | By analyzing historical data to identify defects and improve processes | By creating recommendation systems | By optimizing delivery routes | B
+What is qualitative data? | Data that describes objects or groups using categories | Data that deals with numeric values | Data that can be divided into smaller units | Data that represents measurements | A
+Which of the following is an example of ordinal data? | Gender | Test grades (A, B, C) | City names | Colors | B
+What is nominal data? | Data with a specific order or ranking | Data without any order, grouped into categories | Data that can be counted | Data that represents measurements | B
+Which of the following is an example of nominal data? | Military ranks | Temperature | Gender | Number of students | C
+What is quantitative data? | Data that describes objects or groups using categories | Data that deals with numeric values | Data that cannot be computed mathematically | Data that represents categories | B
+Which of the following is an example of discrete data? | Weight | Temperature | Number of employees | Height | C
+What is continuous data? | Data that can only take specific, countable values | Data that can take any value within a range | Data that describes categories | Data that represents rankings | B
+Which of the following is an example of continuous data? | Number of computers | Number of tickets sold | Daily wind speed | Number of employees | C
+What is the key difference between ordinal and nominal data? | Ordinal data has a specific order, while nominal data does not | Ordinal data is numeric, while nominal data is categorical | Ordinal data is continuous, while nominal data is discrete | Ordinal data is countable, while nominal data is not | A
+Which of the following is an example of quantitative data? | Colors | Gender | Height | City names | C
+What is primary data? | Data collected from existing sources | Data collected directly from original sources | Data collected from websites | Data collected from sensors | B
+Which of the following is a method of collecting primary data? | Analyzing tweets | Using seismic data | Conducting surveys | Accessing databases | C
+What is secondary data? | Data collected directly from original sources | Data collected from previously recorded sources | Data collected through experiments | Data collected through observations | B
+Which of the following is an example of secondary data? | Survey results | Interview transcripts | Tweets about a trending topic | Experimental data | C
+What is the purpose of using sensors as a data source? | To conduct surveys | To collect real-time data (e.g. seismic data) | To analyze customer preferences | To perform experiments | B
+Which of the following is an example of primary data collection? | Analyzing sales data from a company's database | Conducting interviews with employees | Collecting tweets about a political event | Using seismic data from sensors | B
+What is a database? | A single collection of data | A type of dataset | An organized collection of multiple datasets or tables | A software for data visualization | C
+What is the role of a Database Management System (DBMS)? | To analyze data | To collect data | To visualize data | To create, modify and retrieve data from a database | D
+Which of the following is a relational DBMS? | MongoDB | Cassandra | MySQL | All of the above | C
+Which of the following is a non-relational (NoSQL) DBMS? | Oracle | MS-Access | MongoDB | IBM Db2 | C
+Which of the following is an example of a dataset? | A database with tables for customers and orders | A DBMS like MySQL | A CSV file of student grades | A NoSQL database like MongoDB | C
+What was used to store data before the advent of databases? | Spreadsheets | File management systems | Cloud storage | Data warehouses | B
+What is the primary role of databases in data science? | To visualize data | To analyze data | To store, manage and retrieve large volumes of data | To collect data | C
+Why have databases become popular in recent years? | Due to the rapid increase in data generation | Due to the dependence of data science on data | Both (a) and (b) | None of the above | C
+How do supermarkets use databases and data science? | To create graphical representations of data | To manage inventory and analyze customer shopping patterns | To collect data from social media | To perform sentiment analysis | B
+What is one key advantage of databases over file management systems? | They are unstructured | They are less secure | They cannot handle large volumes of data | They provide efficient data storage and retrieval | D
+What ensures data accuracy and consistency in databases? | Data visualization | File management systems | Constraints and validation rules | Spreadsheets | C
+Which of the following is NOT a benefit of databases in data science? | Efficient data storage | Data accessibility for multiple users | Data integrity | Unstructured data management | D
+What is the first step in a statistical investigation? | Data analysis | Data visualization | Data collection | Data interpretation | C
+Which of the following is an example of secondary data from official records? | Survey results | Interview transcripts | Sensor data | Government census data | D
+What is the role of an investigator in data collection? | To analyze data | To conduct the statistical inquiry | To visualize data | To interpret data | B
+What are enumerators? | People who analyze data | People who interpret data | People who assist in collecting data | People who visualize data | C
+Which of the following is a method of secondary data collection? | Interviews | Observations | Experiments | Online databases | D
+What is the advantage of using secondary data? | It is always more accurate than primary data | It is easier and faster to collect | It requires direct interaction with respondents | It is always up-to-date | B
+What is a data warehouse? | A decentralized storage system | A type of NoSQL database | A centralized repository for integrated data | A cloud-based storage system | C
+Which of the following is an example of a distributed file system? | MySQL | Hadoop Distributed File System (HDFS) | MongoDB | Blockchain | B
+What is cloud-based data storage? | Storing data on physical servers | Storing data on decentralized networks | Storing data in relational databases | Storing data on remote servers accessed via the internet | D
+Which of the following is a visual element used in data visualization? | Charts | Databases | Sensors | Blockchain | A
+What is summary statistics? | A graphical representation of data | A method of storing data | A quick overview of the characteristics of a dataset | A type of database | C
+Which of the following is NOT a metric in summary statistics? | Mean | Standard deviation | Total number of values | Data visualization | D
+What is blockchain in data storage? | A centralized storage system | A type of relational database | A cloud-based storage system | A decentralized and secure method of storing data | D
+What are the three Vs of Big Data? | Volume, Velocity, Variety | Volume, Value, Variety | Velocity, Value, Volume | Variety, Value, Velocity | A
+What does "Volume" in Big Data refer to? | The speed of data generation | The types of data | The amount of data | The value of data | C
+What does "Velocity" in Big Data refer to? | The amount of data | The types of data | The value of data | The speed at which data is generated and processed | D
+What does "Variety" in Big Data refer to? | The amount of data | The speed of data generation | The different types and formats of data | The value of data | C
+Which of the following is an example of unstructured data found online? | Database tables | JSON files | XML files | Social media posts | D
+Which of the following is an example of semi-structured data? | Database tables | JSON files | Social media posts | Images | B
+What is a challenge of Big Data? | Traditional tools can easily process it | It has low volume | It requires advanced tools and technologies | It is always structured | C
+Which of the following is a tool used for Big Data processing? | MySQL | Hadoop | MS-Access | Oracle | B
+What is an application of Big Data in healthcare? | Customer behavior analysis | Fraud detection | Traffic optimization | Disease prediction | D
+What is an application of Big Data in finance? | Disease prediction | Traffic optimization | Fraud detection | Personalized marketing | C
+Which of the following is NOT a characteristic of Big Data? | Volume | Velocity | Variety | Simplicity | D
+What is the importance of real-time processing in Big Data? | To handle large volumes of data | To process data at high speed | To manage different types of data | To store data securely | B
+When did the term Big Data emerge? | 1990s | Early 2000s | 2010s | 1980s | B
+What is Hadoop? | A social media platform | An open-source framework for storing and analyzing big datasets | A type of IoT device | A machine learning algorithm | B
+What role does IoT play in Big Data? | It reduces the amount of data generated | It replaces traditional data storage methods | It simplifies data analysis | It connects devices to the internet, generating more data | D
+What is the primary benefit of Big Data in product development? | Reducing costs | Simplifying data storage | Anticipating customer demand and creating data-driven products | Eliminating the need for customer feedback | C
+What is predictive maintenance? | A strategy to reduce customer complaints | A proactive maintenance strategy using data analysis to predict equipment failures | A method to increase data storage capacity | A technique to improve data visualization | B
+How does Big Data improve customer experience? | By reducing the need for customer feedback | By eliminating customer complaints | By simplifying product design | By analyzing data from social media, web visits and call logs | D
+What is the significance of machine learning in Big Data? | It reduces the amount of data generated | It produces more data for analysis | It replaces traditional data storage methods | It simplifies data visualization | B
+Which of the following is an example of predictive maintenance? | Analyzing customer feedback | Simplifying product design | Reducing data storage costs | Predicting equipment failures using data analysis | D
+How does Big Data enhance cybersecurity? | By reducing the amount of data generated | By simplifying data storage | By identifying unusual patterns and anomalies to detect fraud | By eliminating the need for customer feedback | C
+What is a major challenge of Big Data related to data quality? | Ensuring compatibility between tools | Poor-quality data leading to errors and inefficiency | Rapid growth of data | Data integration | B
+What is the challenge of data security and privacy in Big Data? | Ensuring compatibility between tools | Rapid growth of data | Data integration | Protecting massive datasets from unauthorized access | D
+What is the impact of poor data quality in Big Data? | Improved decision-making | Enhanced data security | Errors, inefficiency and misleading insights | Simplified data integration | C
+What is the challenge of ensuring compatibility between Big Data tools called? | Data quality | Data security and privacy | Data integration | Big Data tool selection | D
+What is the challenge of harmonizing diverse data formats called? | Data quality | Rapid growth of data | Data security and privacy | Data integration | D
+What is the role of Big Data in media and entertainment? | To reduce the need for content creation | To predict viewer preferences and target ads effectively | To eliminate the need for audience analysis | To simplify data visualization | B
+How does Big Data enhance IoT capabilities? | By reducing the amount of data generated | By eliminating the need for IoT devices | By providing meaningful insights from IoT-generated data | By simplifying data storage | C
+How does Big Data help governments? | By increasing system errors | By eliminating the need for data analysis | By simplifying data storage | By understanding citizen needs and improving services | D
+Which of the following is an application of Big Data in agriculture? | Predicting machine failures | Optimizing crop yields and resource usage | Personalizing customer experiences | Detecting cyber threats | B
+What is the role of Big Data in cybersecurity? | To reduce the need for data analysis | To eliminate the need for data storage | To simplify data visualization | To detect and prevent cyber threats | D
+How does Big Data improve e-commerce? | By reducing the need for customer data | By eliminating the need for product recommendations | By personalizing recommendations and improving customer experience | By simplifying data storage | C
+What is the application of Big Data in weather forecasting? | To reduce the need for data analysis | To predict weather patterns accurately | To eliminate the need for weather sensors | To simplify data storage | B
+Which of the following is NOT an application of Big Data? | Reducing the need for data analysis | Predictive maintenance in manufacturing | Fraud detection in government | Personalized customer experience in IoT | A
+What is the challenge of data integration in Big Data? | Harmonizing diverse data formats and structures | Ensuring compatibility between tools | Protecting data from unauthorized access | Handling increasing data volumes | A

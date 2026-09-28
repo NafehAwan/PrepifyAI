@@ -1,0 +1,486 @@
+{
+  "subject": "English",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "22f3ca58ddda",
+      "stem": "Jeff Bezos is best known as the founder of:",
+      "options": [
+        "Microsoft",
+        "Amazon",
+        "Facebook",
+        "Apple"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "05f5bf1be9b4",
+      "stem": "Amazon began as an online store selling:",
+      "options": [
+        "books",
+        "cars",
+        "medicines",
+        "furniture"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "453e31f303b4",
+      "stem": "Amazon was founded in:",
+      "options": [
+        "1974",
+        "1984",
+        "1994",
+        "2004"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "0987bec39f11",
+      "stem": "A lesson often linked with Jeff Bezos is to focus first on:",
+      "options": [
+        "the customer",
+        "the competitor",
+        "shortcuts",
+        "luck"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "59f7cc294624",
+      "stem": "Thinking \"long-term\" in business means:",
+      "options": [
+        "planning for results years ahead rather than quick gains",
+        "wanting results today only",
+        "avoiding all planning",
+        "copying others"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "bb0fc0cbc32f",
+      "stem": "Choose the synonym of \"success\":",
+      "options": [
+        "Failure",
+        "Achievement",
+        "Loss",
+        "Defeat"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "4b3c36dfa542",
+      "stem": "Choose the antonym of \"failure\":",
+      "options": [
+        "Success",
+        "Mistake",
+        "Loss",
+        "Fall"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "a17b03798a16",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Succesful",
+        "Successful",
+        "Sucessful",
+        "Successfull"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "b7160b365808",
+      "stem": "Bilal's first online shop fails, but he studies his mistakes and tries again with a better plan. Which lesson is he following?",
+      "options": [
+        "Learn from failure and keep trying",
+        "Never start anything new",
+        "Blame others",
+        "Give up after one attempt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "2a1b99208f71",
+      "stem": "In \"Bezos worked patiently for years\", the word \"patiently\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a pronoun"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "ae8c3da2f4b4",
+      "stem": "Choose the passive voice of \"He founded a company.\":",
+      "options": [
+        "A company is founded by him.",
+        "A company was founded by him.",
+        "A company had founded him.",
+        "A company was founding by him."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "9865a95e108a",
+      "stem": "Fill in the blank: Success depends ___ hard work.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "7f2179df7151",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "He have many ideas.",
+        "He has many ideas.",
+        "He having many ideas.",
+        "He hasing many ideas."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "e5173e5edf95",
+      "stem": "Which sentence is in the simple future tense?",
+      "options": [
+        "He will start a company.",
+        "He starts a company.",
+        "He started a company.",
+        "He is starting a company."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "a1c9574a664c",
+      "stem": "Choose the synonym of \"innovation\":",
+      "options": [
+        "New idea",
+        "Old habit",
+        "Copy",
+        "Delay"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "a3ad272f077e",
+      "stem": "Choose the indirect speech of: He said, \"Customers come first.\"",
+      "options": [
+        "He said that customers came first.",
+        "He said that customers come firstly.",
+        "He says that customers came first.",
+        "He said customers coming first."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "2bc2de940c0d",
+      "stem": "A shop owner listens to complaints and quickly improves his service. He is showing:",
+      "options": [
+        "customer focus",
+        "carelessness",
+        "pride",
+        "laziness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "52f7aa99e669",
+      "stem": "Choose the word that is a noun:",
+      "options": [
+        "Ambitious",
+        "Ambition",
+        "Ambitiously",
+        "Ambit"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "c3480298ee05",
+      "stem": "Choose the antonym of \"risky\":",
+      "options": [
+        "Dangerous",
+        "Safe",
+        "Bold",
+        "Uncertain"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "92492177ca91",
+      "stem": "Choose the correct article: He had ___ idea to sell books online.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "895cc719a13e",
+      "stem": "Fill in the blank: He was ready ___ take risks.",
+      "options": [
+        "for",
+        "to",
+        "at",
+        "on"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "ffdcc285e820",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "\"Work hard,\" he said, \"and never give up.\"",
+        "\"Work hard\" he said \"and never give up.\"",
+        "\"Work hard, he said, and never give up.\"",
+        "Work hard, he said, \"and never give up\"."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "9b6c69a6da67",
+      "stem": "Which sentence is in the present continuous tense?",
+      "options": [
+        "Amazon grows fast.",
+        "Amazon is growing fast.",
+        "Amazon grew fast.",
+        "Amazon has grown fast."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "a244676f91a8",
+      "stem": "Choose the synonym of \"persistent\":",
+      "options": [
+        "Stubbornly determined",
+        "Easily discouraged",
+        "Lazy",
+        "Forgetful"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "7a8877262d46",
+      "stem": "Two students start small businesses. One gives up after a bad month; the other adjusts her prices and continues. Who is showing the entrepreneurial mindset?",
+      "options": [
+        "The one who adjusts and continues",
+        "The one who gives up",
+        "Both equally",
+        "Neither"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "1afffe380957",
+      "stem": "Choose the correct form of the verb: If you work hard, you ___ succeed.",
+      "options": [
+        "will",
+        "would",
+        "had",
+        "were"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "528d73e3c8d6",
+      "stem": "The prefix \"re-\" in \"rethink\" means:",
+      "options": [
+        "again",
+        "not",
+        "before",
+        "against"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "fb4565b435da",
+      "stem": "Choose the adjective in: \"He made a bold decision.\"",
+      "options": [
+        "He",
+        "made",
+        "bold",
+        "decision"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "a963bca62657",
+      "stem": "Choose the plural of \"company\":",
+      "options": [
+        "companys",
+        "companies",
+        "companyes",
+        "companis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    },
+    {
+      "id": "3fae6af431b3",
+      "stem": "\"Regret\" means:",
+      "options": [
+        "a feeling of sadness about something done or not done",
+        "a feeling of great joy",
+        "a kind of reward",
+        "a type of business"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 5)"
+    }
+  ]
+}

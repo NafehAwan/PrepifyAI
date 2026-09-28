@@ -1,0 +1,486 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "9870c0b760e2",
+      "stem": "Physics is the branch of science that deals with:",
+      "options": [
+        "living things",
+        "matter, energy and their interactions",
+        "the Earth's rocks",
+        "chemical reactions only"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "004e29d3d8a1",
+      "stem": "The study of heat and temperature is a branch of physics called:",
+      "options": [
+        "optics",
+        "thermodynamics",
+        "acoustics",
+        "mechanics"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "d52860c4b673",
+      "stem": "The branch of physics that deals with light is:",
+      "options": [
+        "optics",
+        "mechanics",
+        "nuclear physics",
+        "electricity"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "50c76c19abdc",
+      "stem": "The study of sound is called:",
+      "options": [
+        "acoustics",
+        "optics",
+        "astronomy",
+        "geology"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "588295b39572",
+      "stem": "The branch of physics that deals with the nucleus of the atom is:",
+      "options": [
+        "atomic physics",
+        "nuclear physics",
+        "plasma physics",
+        "mechanics"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "633966863980",
+      "stem": "The study of motion and forces is called:",
+      "options": [
+        "mechanics",
+        "optics",
+        "electronics",
+        "thermodynamics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "64b53074a5f6",
+      "stem": "A scientist suggests a possible explanation that can be tested by experiment. This explanation is called a:",
+      "options": [
+        "law",
+        "hypothesis",
+        "theory proven forever",
+        "conclusion"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "81deb39805b0",
+      "stem": "A hypothesis that has been tested and supported by a lot of evidence may become a:",
+      "options": [
+        "guess",
+        "theory",
+        "myth",
+        "question"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "6a36cf9bc706",
+      "stem": "The scientific method usually begins with:",
+      "options": [
+        "observation",
+        "a final conclusion",
+        "publishing results",
+        "a guess without evidence"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "62765160fbb5",
+      "stem": "A student tests whether plant height depends on the amount of water. The amount of water given is the:",
+      "options": [
+        "independent variable",
+        "dependent variable",
+        "control",
+        "constant"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "3dedb68a9231",
+      "stem": "In the same plant experiment, the height of the plant is the:",
+      "options": [
+        "independent variable",
+        "dependent variable",
+        "constant",
+        "hypothesis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "5dc702f40115",
+      "stem": "In a fair test, the variables kept the same are called:",
+      "options": [
+        "controlled variables",
+        "independent variables",
+        "dependent variables",
+        "results"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "a1ed36e670c2",
+      "stem": "Why do scientists repeat an experiment several times?",
+      "options": [
+        "To make the results more reliable",
+        "To use more equipment",
+        "To change the hypothesis each time",
+        "To avoid writing a report"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "b9b5f5ca69ff",
+      "stem": "Physics contributes to technology because:",
+      "options": [
+        "many devices are built on physics principles",
+        "technology has nothing to do with science",
+        "physics only studies the past",
+        "physics is only theoretical"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "85a8953dde47",
+      "stem": "The technology behind X-ray and MRI machines in hospitals comes mainly from:",
+      "options": [
+        "physics",
+        "geography",
+        "history",
+        "literature"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "e0b5ef49c503",
+      "stem": "A mobile phone works using principles of electromagnetic waves. This shows the link between physics and:",
+      "options": [
+        "technology",
+        "art",
+        "music",
+        "sports"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "0eef43a4473b",
+      "stem": "A scientific theory is different from a guess because it:",
+      "options": [
+        "is supported by evidence and can be tested",
+        "is just an opinion",
+        "can never be changed",
+        "has no evidence"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "c5df98cdd10d",
+      "stem": "Scientific knowledge can change over time because:",
+      "options": [
+        "new evidence may improve or correct it",
+        "scientists are careless",
+        "science has no rules",
+        "facts never matter"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "1b83f56baab7",
+      "stem": "Which field combines physics with the study of living things?",
+      "options": [
+        "Biophysics",
+        "Astrophysics",
+        "Geophysics",
+        "Nuclear physics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "767127b38140",
+      "stem": "The study of the Earth using physics, such as earthquakes, is called:",
+      "options": [
+        "geophysics",
+        "biophysics",
+        "acoustics",
+        "optics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "461d765bec71",
+      "stem": "The study of stars and planets using physics is:",
+      "options": [
+        "astrophysics",
+        "biophysics",
+        "thermodynamics",
+        "electronics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "0356f9e4e673",
+      "stem": "A researcher wants to know whether a new material is a good conductor of heat. The best first step is to:",
+      "options": [
+        "design and carry out a fair experiment",
+        "announce the result without testing",
+        "ask friends to guess",
+        "ignore the material"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "894618e452a4",
+      "stem": "Which of these is a quantitative observation?",
+      "options": [
+        "The liquid is blue",
+        "The rod is 25 cm long",
+        "The flower smells sweet",
+        "The sound is pleasant"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "d68fcd857444",
+      "stem": "Which of these is a qualitative observation?",
+      "options": [
+        "The mass is 5 kg",
+        "The temperature is 30 °C",
+        "The solution is cloudy",
+        "The time is 10 s"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "ad07d9af2b96",
+      "stem": "A scientist records data in a table and then draws a graph. The main purpose of the graph is to:",
+      "options": [
+        "show the relationship between variables clearly",
+        "hide the data",
+        "replace the experiment",
+        "make the report longer"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "58cf75c87565",
+      "stem": "Solar panels convert light energy into electrical energy. This technology is based on:",
+      "options": [
+        "physics",
+        "poetry",
+        "economics",
+        "history"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "84a58f43a5bb",
+      "stem": "When results of an experiment do not support the hypothesis, a scientist should:",
+      "options": [
+        "reject or modify the hypothesis",
+        "change the data",
+        "ignore the results",
+        "stop doing science"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "b9c67d760af8",
+      "stem": "Engineering differs from science because engineering mainly:",
+      "options": [
+        "applies scientific knowledge to design solutions",
+        "discovers laws of nature only",
+        "studies ancient history",
+        "avoids using science"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "2b536b7871ec",
+      "stem": "A physicist studies electrons flowing through circuits. This branch is:",
+      "options": [
+        "electricity and electronics",
+        "optics",
+        "acoustics",
+        "thermodynamics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    },
+    {
+      "id": "aba41fe7aa5f",
+      "stem": "Ethics in science means scientists should:",
+      "options": [
+        "report results honestly",
+        "copy others' work",
+        "change results to look better",
+        "hide mistakes"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Nature of Science and Physics)"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "subject": "English",
+  "chapter_seq": 12,
+  "questions": [
+    {
+      "id": "77e1af14ab35",
+      "stem": "\"Good Health and Well-being\" is which United Nations Sustainable Development Goal?",
+      "options": [
+        "Goal 1",
+        "Goal 3",
+        "Goal 5",
+        "Goal 10"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "3b1ce173db3d",
+      "stem": "A \"balanced diet\" is one that:",
+      "options": [
+        "contains the right amounts of all nutrients",
+        "contains only sweets",
+        "skips all meals",
+        "contains only meat"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "95ab123b4ff6",
+      "stem": "Regular physical exercise mainly helps to:",
+      "options": [
+        "keep the body fit and healthy",
+        "make people lazy",
+        "weaken the heart",
+        "cause illness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "ab9d1673f7e2",
+      "stem": "\"Hygiene\" means:",
+      "options": [
+        "practices that keep us clean and prevent disease",
+        "a type of medicine",
+        "a kind of sport",
+        "a hospital building"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "6307e2444809",
+      "stem": "Washing hands before eating mainly helps to:",
+      "options": [
+        "prevent the spread of germs",
+        "make food taste better",
+        "save water",
+        "cool the body"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "c1bca18df7d0",
+      "stem": "\"Well-being\" means:",
+      "options": [
+        "the state of being healthy, comfortable and happy",
+        "a type of well for water",
+        "a kind of illness",
+        "a hospital ward"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "e785683b06b7",
+      "stem": "Vaccination protects people by:",
+      "options": [
+        "helping the body build immunity against diseases",
+        "causing diseases",
+        "replacing food",
+        "curing broken bones"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "53134f315ce9",
+      "stem": "Hassan sleeps only four hours a night, eats junk food and never exercises. He often feels tired. What should he change first?",
+      "options": [
+        "Get enough sleep, eat healthy food and exercise",
+        "Eat more junk food",
+        "Sleep even less",
+        "Stop drinking water"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "d67c8894446b",
+      "stem": "Choose the synonym of \"fit\":",
+      "options": [
+        "Healthy",
+        "Weak",
+        "Ill",
+        "Tired"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "4d1ec5901c60",
+      "stem": "Choose the antonym of \"healthy\":",
+      "options": [
+        "Sick",
+        "Strong",
+        "Active",
+        "Fresh"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "039984ef6d12",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Nutrition",
+        "Nutricion",
+        "Nutritian",
+        "Nutrishun"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "7abcb1329ab1",
+      "stem": "In \"Exercise daily to stay healthy\", the sentence is:",
+      "options": [
+        "a command",
+        "a question",
+        "an exclamation",
+        "a statement of the past"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "d6aa0d4f7887",
+      "stem": "Choose the passive voice of \"Doctors treat patients.\":",
+      "options": [
+        "Patients are treated by doctors.",
+        "Patients were treated by doctors.",
+        "Patients treated by doctors.",
+        "Patients are treating by doctors."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "296be7b52166",
+      "stem": "Fill in the blank: Smoking is harmful ___ health.",
+      "options": [
+        "at",
+        "to",
+        "for",
+        "on"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "075834a87bd1",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Fruits is good for health.",
+        "Fruits are good for health.",
+        "Fruits be good for health.",
+        "Fruits was good for health."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "f9f25401d75a",
+      "stem": "Which sentence is in the present continuous tense?",
+      "options": [
+        "She exercises daily.",
+        "She is exercising now.",
+        "She exercised yesterday.",
+        "She will exercise tomorrow."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "41962eebf5bd",
+      "stem": "\"Mental health\" refers to a person's:",
+      "options": [
+        "emotional and psychological well-being",
+        "height and weight only",
+        "eyesight",
+        "physical strength only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "f55249e456dc",
+      "stem": "A student feels stressed before exams and talks to a counsellor, sleeps well and takes short breaks. She is looking after her:",
+      "options": [
+        "mental health",
+        "eyesight only",
+        "teeth",
+        "posture"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "44a0ab94bed0",
+      "stem": "Choose the synonym of \"nutritious\":",
+      "options": [
+        "Healthy and nourishing",
+        "Harmful",
+        "Tasteless",
+        "Spoiled"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "6ea3cec569ca",
+      "stem": "Choose the indirect speech of: The doctor said, \"Drink plenty of water.\"",
+      "options": [
+        "The doctor advised us to drink plenty of water.",
+        "The doctor said that drink plenty of water.",
+        "The doctor says to drank plenty of water.",
+        "The doctor advised that we drank plenty of water always."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "102ff32870e4",
+      "stem": "Choose the word that is an adjective:",
+      "options": [
+        "Health",
+        "Healthy",
+        "Healthily",
+        "Heal"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "8034eb279728",
+      "stem": "Choose the antonym of \"cure\":",
+      "options": [
+        "Heal",
+        "Treat",
+        "Cause disease",
+        "Remedy"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "517f73e28af8",
+      "stem": "Choose the correct article: An apple ___ day keeps the doctor away.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "61140fc16936",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "Eat fruits, vegetables, and whole grains.",
+        "Eat fruits vegetables and whole grains.",
+        "Eat, fruits, vegetables and whole grains",
+        "eat fruits, vegetables, and whole grains."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "1a35cc804074",
+      "stem": "Choose the plural of \"tooth\":",
+      "options": [
+        "tooths",
+        "teeth",
+        "teeths",
+        "toothes"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "8563c03ff850",
+      "stem": "A town has dirty drinking water and many children fall ill with diarrhoea. Which step would best improve their health?",
+      "options": [
+        "Providing clean, safe drinking water",
+        "Building more shops",
+        "Closing the schools",
+        "Selling more soft drinks"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "50dcc0440e5a",
+      "stem": "Choose the synonym of \"prevent\":",
+      "options": [
+        "Stop",
+        "Allow",
+        "Encourage",
+        "Cause"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "f704a3c1ec95",
+      "stem": "Which word is an adverb?",
+      "options": [
+        "Regular",
+        "Regularly",
+        "Regularity",
+        "Regulate"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "0024cb228203",
+      "stem": "Fill in the blank: Prevention is better ___ cure.",
+      "options": [
+        "then",
+        "than",
+        "that",
+        "from"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    },
+    {
+      "id": "831c92e5a535",
+      "stem": "\"Sedentary lifestyle\" means a life with:",
+      "options": [
+        "very little physical activity",
+        "a lot of sports",
+        "frequent travel",
+        "healthy eating"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 12)"
+    }
+  ]
+}

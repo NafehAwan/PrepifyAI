@@ -1,0 +1,176 @@
+{
+  "subject": "English",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "9466e13a3337",
+      "stem": "Choose the plural of \"knife\":",
+      "options": [
+        "knifes",
+        "knives",
+        "knifs",
+        "knivies"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fbdb9159765c"
+    },
+    {
+      "id": "8d0ac5862e9b",
+      "stem": "Which sentence is an exclamation?",
+      "options": [
+        "Smoking is harmful.",
+        "Stop smoking now.",
+        "How harmful smoking is!",
+        "Is smoking harmful?"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5ed1f439a7f3"
+    },
+    {
+      "id": "a12d3706e7d7",
+      "stem": "Choose the correct form: If you ___ bad company, you will regret it.",
+      "options": [
+        "keep",
+        "kept",
+        "kept up",
+        "keeping"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "420a40859792"
+    },
+    {
+      "id": "6a9a5589b85b",
+      "stem": "Which sentence is in the present perfect tense?",
+      "options": [
+        "She leaves the gang.",
+        "She has left the gang.",
+        "She left the gang.",
+        "She will leave the gang."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4268041322b0"
+    },
+    {
+      "id": "d15530b4eb3e",
+      "stem": "Choose the passive voice of \"Drugs destroy families.\":",
+      "options": [
+        "Families are destroyed by drugs.",
+        "Families were destroyed by drugs.",
+        "Families destroyed by drugs.",
+        "Families have destroyed drugs."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5d1d49d64f9c"
+    },
+    {
+      "id": "8ec9613507ae",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Rehabilitasion",
+        "Rehabilitation",
+        "Rehabbilitation",
+        "Rehabilitaton"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a3a6995907ad"
+    },
+    {
+      "id": "3c7742cef191",
+      "stem": "The prefix \"anti-\" in \"antisocial\" means:",
+      "options": [
+        "against",
+        "for",
+        "before",
+        "after"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "3113b81358aa"
+    },
+    {
+      "id": "815b31525db8",
+      "stem": "Which word is an adjective?",
+      "options": [
+        "Harm",
+        "Harmful",
+        "Harmfully",
+        "Harming"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "129f6894010c"
+    },
+    {
+      "id": "becc1b8f3fb2",
+      "stem": "Fill in the blank: Young people should stay away ___ drugs.",
+      "options": [
+        "at",
+        "from",
+        "on",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8a08e02b614a"
+    },
+    {
+      "id": "3e201f137a0b",
+      "stem": "Ali stops meeting friends who use drugs and joins a cricket team instead. This shows:",
+      "options": [
+        "choosing a healthy lifestyle",
+        "peer pressure",
+        "addiction",
+        "withdrawal"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bc9ed2415576"
+    }
+  ]
+}

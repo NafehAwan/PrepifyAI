@@ -1,0 +1,38 @@
+# subject: Maths
+# chapter: 9
+# source: Written for Prepify from the FBISE Class 9 Mathematics syllabus (Geometry and Polygons)
+# answer_source: authored
+# difficulty: medium
+
+The sum of the interior angles of a triangle is: | 90° | 180° | 270° | 360° | B | e
+The sum of the interior angles of a hexagon is: | 540° | 720° | 900° | 1080° | B
+Each interior angle of a regular pentagon is: | 72° | 100° | 108° | 120° | C
+Each exterior angle of a regular octagon is: | 30° | 40° | 45° | 60° | C
+Each exterior angle of a regular polygon is 30°. The number of sides is: | 6 | 10 | 12 | 15 | C | h
+The number of diagonals of a hexagon is: | 6 | 9 | 12 | 15 | B | h
+Two angles of a triangle are 50° and 60°. The third angle is: | 60° | 70° | 80° | 90° | B | e
+In a triangle, the two interior opposite angles are 40° and 65°. The exterior angle formed at the third vertex is: | 75° | 105° | 115° | 140° | B
+The legs of a right-angled triangle are 6 cm and 8 cm. The hypotenuse is: | 10 cm | 12 cm | 14 cm | 48 cm | A | e
+The hypotenuse of a right-angled triangle is 13 cm and one leg is 5 cm. The other leg is: | 8 cm | 10 cm | 12 cm | 18 cm | C
+In a parallelogram, opposite angles are: | equal | supplementary | complementary | always right angles | A
+The diagonals of a rhombus: | bisect each other at right angles | are always equal | never meet | are parallel | A
+The diagonals of a rectangle are: | equal in length | perpendicular to each other | parallel | unequal | A
+Two triangles are congruent when two sides and the included angle of one equal those of the other. This is the: | SSS rule | SAS rule | ASA rule | RHS rule | B
+Two right-angled triangles with equal hypotenuses and one pair of equal legs are congruent by the: | SAS rule | ASA rule | RHS rule | AAA rule | C
+One of two angles on a straight line is 115°. The other is: | 55° | 65° | 75° | 245° | B | e
+When two straight lines intersect, the vertically opposite angles are: | equal | supplementary | complementary | always 90° | A | e
+When a transversal cuts two parallel lines, the alternate angles are: | equal | supplementary | complementary | unequal | A
+A transversal cuts two parallel lines. One of the co-interior angles is 110°. The other is: | 70° | 80° | 110° | 250° | A
+Three angles of a quadrilateral are 80°, 95° and 105°. The fourth angle is: | 70° | 80° | 90° | 100° | B
+A tiler wants to cover a floor with identical regular hexagonal tiles leaving no gaps. This works because at each corner three angles of 120° make: | 180° | 270° | 360° | 540° | C | s
+The vertex angle of an isosceles triangle is 40°. Each base angle is: | 40° | 60° | 70° | 140° | C
+Each angle of an equilateral triangle is: | 45° | 60° | 90° | 120° | B | e
+A 10 m ladder leans against a wall with its foot 6 m from the wall. How high up the wall does it reach? | 4 m | 8 m | 12 m | 16 m | B | s
+The sum of the exterior angles of any convex polygon is: | 180° | 360° | 540° | depends on the number of sides | B
+Each interior angle of a regular polygon is 150°. The number of sides is: | 10 | 12 | 15 | 18 | B | h
+A triangle with sides 3 cm, 4 cm and 5 cm is: | acute-angled | right-angled | obtuse-angled | equilateral | B
+Two similar triangles have corresponding sides 5 cm and 10 cm. The scale factor from the smaller to the larger is: | 1/2 | 2 | 5 | 10 | B
+A polygon with all sides equal and all angles equal is called a: | regular polygon | irregular polygon | trapezium | concave polygon | A | e
+The sum of the interior angles of a polygon with n sides is: | (n − 2) × 180° | n × 180° | (n − 1) × 90° | 360° ÷ n | A | e
+A garden gate is braced with a diagonal strut, splitting the rectangular frame into two triangles. Triangles are used because a triangle: | is a rigid shape that cannot change shape without changing side lengths | has four sides | uses less wood than any other shape | has no angles | A | s
+A kite-shaped quadrilateral has one pair of opposite angles equal to 100° each and a third angle of 70°. The fourth angle is: | 70° | 80° | 90° | 100° | C | s h

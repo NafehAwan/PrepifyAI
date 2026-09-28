@@ -1,0 +1,20 @@
+# subject: Computer Science
+# chapter: 3
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+How many times does the loop for (let i = 1; i <= 5; i++) run? | 4 | 5 | 6 | 1 | B | h v:fda711a785a2
+How many times does the loop for (let i = 0; i < 10; i += 2) run? | 4 | 5 | 10 | 6 | B | h v:fda711a785a2
+In the JavaScript array let colours = ["red", "green", "blue"];, the value of colours[1] is: | "red" | "green" | "blue" | undefined | B | h v:b5bd5bd70780
+A shop uses the code: var amount = 500; if (amount >= 500) { document.write("Discount!"); }. What happens? | "Discount!" is printed | Nothing is printed | An error occurs | "500" is printed | A | s h v:c4af6131f557
+What is the value of 17 % 5 in JavaScript? | 3 | 2 | 3.4 | 12 | B | h v:c8978f8a2222
+Which JavaScript function shows a dialog box with a text field so that the user can type a value? | alert() | confirm() | prompt() | document.write() | C | v:ecd7ce965e64
+To show a message inside the web page itself rather than in a pop-up, a beginner can use: | alert() | document.write() | prompt() | confirm() | B | v:333343382470
+Which HTML heading tag displays the smallest heading? | <h1> | <h3> | <h6> | <h10> | C | v:4ec49e071ef5
+A program must print "A", "B", "C" or "Fail" depending on a student's marks. Which structure is most suitable? | A single if statement | An if-else statement | An if-else if-else statement | A for loop | C | s v:ef48c42d5189
+Given function square(n) { return n * n; }, what does square(4) send back to the caller? | 8 | 16 | 4 | Nothing | B | h v:7723e867ac4b
+In the page <html><head><title>Home</title></head><body><p>Hi</p></body></html>, the parent of the <p> element is: | <html> | <head> | <body> | <title> | C | h v:31265308ffb8
+A news website shows each reader different stories based on the reader's choices. This kind of website is: | static | dynamic | offline | read-only | B | s v:fc9aaa3168ff
+Finding and fixing the mistakes in a program after it has been written is called: | compiling | debugging | designing | uploading | B | e v:bde8534ce3a8

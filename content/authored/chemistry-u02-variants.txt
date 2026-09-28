@@ -1,0 +1,15 @@
+# subject: Chemistry
+# chapter: 2
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Chalk powder stirred into water settles at the bottom after some time. This mixture is a: | true solution | suspension | colloid | compound | B | s e v:934630e027ce
+In which state are the particles most widely spaced and least ordered? | Ice | Liquid water | Steam | Iron | C | e v:345d99898525
+A torch beam becomes visible when it passes through fog, but not through salt water. Fog is therefore a: | true solution | colloid | compound | pure element | B | s v:78313328aa2e
+Unlike diamond, graphite is used in electrodes because it: | is harder | conducts electricity | has no carbon | is transparent | B | v:d1356997af2c
+A balloon becomes firm when air is blown into it. This shows that the air particles: | are stationary | collide continuously with the walls and exert pressure | have no mass | turn into liquid | B | s v:09a7088b46db
+A pumped-up football is heavier than a flat one. This observation shows that air: | has mass and is matter | is invisible | is a colour | is not matter | A | s v:20872f815397
+In a saturated solution at a fixed temperature, adding more solute: | makes it dissolve completely | leaves the extra solute undissolved | turns the solution into a gas | removes the solvent | B | v:3e57d7961dbf
+Liquids can flow and take the shape of their container because their particles: | are held in fixed positions | can slide past each other while staying close | have no forces between them | do not move | B | v:827c29660e04

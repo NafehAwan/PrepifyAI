@@ -1,0 +1,454 @@
+{
+  "subject": "English",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "id": "6cb83e4803ba",
+      "stem": "\"The Metamorphosis\" was written by:",
+      "options": [
+        "Franz Kafka",
+        "Charles Dickens",
+        "Leo Tolstoy",
+        "Mark Twain"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "45a1f9bc7745",
+      "stem": "The main character of \"The Metamorphosis\" is:",
+      "options": [
+        "Gregor Samsa",
+        "Oliver Twist",
+        "Tom Sawyer",
+        "Robinson Crusoe"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "abe48195ba1e",
+      "stem": "At the start of the story, Gregor wakes up to find that he has turned into:",
+      "options": [
+        "a giant insect",
+        "a bird",
+        "a dog",
+        "a stone statue"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "2288666d9751",
+      "stem": "Before his transformation, Gregor worked as a:",
+      "options": [
+        "travelling salesman",
+        "doctor",
+        "teacher",
+        "farmer"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "2d50b0727491",
+      "stem": "Gregor worked hard mainly to:",
+      "options": [
+        "support his family and pay off their debts",
+        "become famous",
+        "travel the world",
+        "buy a new house for himself"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "cdedf89bc2bd",
+      "stem": "\"Metamorphosis\" means:",
+      "options": [
+        "a complete change of form",
+        "a long journey",
+        "a family meeting",
+        "a business trip"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "8e7179d501f2",
+      "stem": "Gregor's sister, who cares for him at first, is named:",
+      "options": [
+        "Grete",
+        "Anna",
+        "Maria",
+        "Clara"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "ba876a264d95",
+      "stem": "Gregor's father injures him by throwing:",
+      "options": [
+        "apples",
+        "stones",
+        "books",
+        "shoes"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "1f2b4be0ab47",
+      "stem": "The story mainly shows how Gregor's family:",
+      "options": [
+        "slowly stops caring for him once he can no longer support them",
+        "becomes richer because of him",
+        "takes him to a doctor at once",
+        "moves to another country with him"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "75b863ed9eeb",
+      "stem": "\"The Metamorphosis\" was originally written in:",
+      "options": [
+        "German",
+        "French",
+        "English",
+        "Russian"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "03223de32f91",
+      "stem": "A worker who supported his family is ignored by them once he falls ill and cannot earn. This situation is most like the story of:",
+      "options": [
+        "Gregor Samsa",
+        "the eagle",
+        "the Brooklyn Bridge",
+        "Jeff Bezos"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "40328069a840",
+      "stem": "Choose the synonym of \"transform\":",
+      "options": [
+        "Change",
+        "Remain",
+        "Stay",
+        "Keep"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "15f1ffcaf399",
+      "stem": "Choose the antonym of \"sympathy\":",
+      "options": [
+        "Pity",
+        "Kindness",
+        "Indifference",
+        "Care"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "dd53a1208300",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Metamorphosis",
+        "Metamorfosis",
+        "Metamorphasis",
+        "Metammorphosis"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "e972604f5f2a",
+      "stem": "In \"Gregor woke up suddenly\", \"suddenly\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a verb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "694d990fe202",
+      "stem": "Choose the passive voice of \"The family locked the door.\":",
+      "options": [
+        "The door is locked by the family.",
+        "The door was locked by the family.",
+        "The door has locked the family.",
+        "The door was locking by the family."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "83cbbbf6dd05",
+      "stem": "Fill in the blank: Gregor was worried ___ his job.",
+      "options": [
+        "at",
+        "about",
+        "on",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "a2a4b52e247c",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Gregor were a salesman.",
+        "Gregor was a salesman.",
+        "Gregor be a salesman.",
+        "Gregor are a salesman."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "db5001001184",
+      "stem": "Which sentence is in the past perfect tense?",
+      "options": [
+        "Gregor had turned into an insect.",
+        "Gregor turns into an insect.",
+        "Gregor is turning into an insect.",
+        "Gregor will turn into an insect."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "9f9bafca4259",
+      "stem": "Choose the synonym of \"burden\":",
+      "options": [
+        "Load",
+        "Gift",
+        "Relief",
+        "Joy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "488d6292fd2d",
+      "stem": "Choose the indirect speech of: Grete said, \"We must get rid of it.\"",
+      "options": [
+        "Grete said that they had to get rid of it.",
+        "Grete said that we must get rid of it.",
+        "Grete says that they had to get rid of it.",
+        "Grete said that they must got rid of it."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "84a372aa747a",
+      "stem": "\"Alienation\" in the story refers to Gregor feeling:",
+      "options": [
+        "isolated and cut off from others",
+        "very popular",
+        "rich and powerful",
+        "brave and strong"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "1dfe9afc22f4",
+      "stem": "Choose the adjective in: \"Gregor felt a sharp pain.\"",
+      "options": [
+        "Gregor",
+        "felt",
+        "sharp",
+        "pain"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "4640742cda71",
+      "stem": "Choose the antonym of \"cruel\":",
+      "options": [
+        "Harsh",
+        "Kind",
+        "Rough",
+        "Mean"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "e90a362f500b",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "\"What has happened to me?\" he thought.",
+        "\"What has happened to me.\" he thought?",
+        "What has happened to me? he thought.",
+        "\"what has happened to me?\" he thought."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "8a687bc24b8c",
+      "stem": "A reader feels sad for Gregor because his family treats him coldly after he changes. The reader is feeling:",
+      "options": [
+        "sympathy",
+        "jealousy",
+        "anger at Gregor",
+        "boredom"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "00322657022f",
+      "stem": "Choose the plural of \"family\":",
+      "options": [
+        "familys",
+        "families",
+        "familyes",
+        "familis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    },
+    {
+      "id": "30d99313c51e",
+      "stem": "The word \"vermin\" in the story describes:",
+      "options": [
+        "small harmful creatures such as insects",
+        "a kind of fruit",
+        "a family member",
+        "a room in the house"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 11)"
+    }
+  ]
+}

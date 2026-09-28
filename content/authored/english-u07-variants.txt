@@ -1,0 +1,15 @@
+# subject: English
+# chapter: 7
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The word "idle" in "an idle afternoon" means: | busy | not working or doing nothing useful | angry | noisy | B | v:8179e808cc1e
+Choose the indirect speech of: The gardener said, "I enjoy my work." | The gardener said that he enjoyed his work. | The gardener said that I enjoy my work. | The gardener says that he enjoyed his work. | The gardener said that he enjoys my work. | A | h v:13f887f228b5
+A poem of fourteen lines, such as Robert Frost's "Mowing", is called a: | ballad | sonnet | limerick | haiku | B | e v:1c5bfceb3c2e
+Choose the synonym of "sincere": | Earnest | Careless | Funny | Lazy | A | v:9a10fc7b7bf7
+Choose the antonym of "strong": | Mighty | Powerful | Feeble | Sturdy | C | e v:9643b40eb88b
+Choose the synonym of "work": | Labour | Rest | Sleep | Play | A | e v:5eb549a5df47
+The central message of "Mowing" is: | the dignity of honest hard work | the excitement of city life | the value of money | the joy of travelling | A | v:b203a53eeef9
+In "Mowing", the scythe is said to "whisper". Giving a tool a human action like this is: | personification | simile | alliteration | exaggeration | A | h v:ce4daa85cabd

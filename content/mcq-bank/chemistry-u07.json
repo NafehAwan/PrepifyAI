@@ -1,0 +1,1206 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "a43268c5546c",
+      "stem": "A reaction in which oxidation and reduction occur simultaneously is called:",
+      "options": [
+        "Neutralization reaction",
+        "Decomposition reaction",
+        "Redox reaction",
+        "Displacement reaction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "f33cd78ca9f7",
+      "stem": "The oxidation number of an element in its free state is:",
+      "options": [
+        "+1",
+        "–1",
+        "0",
+        "+2"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "c7646430203d",
+      "stem": "Which of the following is oxidized in the reaction Zn + CuSO₄ → ZnSO₄ + Cu?",
+      "options": [
+        "Copper",
+        "Sulphate ion",
+        "Zinc",
+        "Oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "25915bf5f6be",
+      "stem": "The substance that gains electrons is called:",
+      "options": [
+        "Oxidizing agent",
+        "Reducing agent",
+        "Catalyst",
+        "Electrolyte"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "974fe16ae4b7",
+      "stem": "The oxidation number of sodium in NaCl is:",
+      "options": [
+        "–1",
+        "0",
+        "+1",
+        "+2"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "953f56e89a16",
+      "stem": "In a neutral compound, the sum of oxidation numbers is:",
+      "options": [
+        "+1",
+        "–1",
+        "0",
+        "+2"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "491e86f05e5e",
+      "stem": "Which process causes rusting of iron?",
+      "options": [
+        "Reduction",
+        "Corrosion",
+        "Neutralization",
+        "Distillation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "af429de15706",
+      "stem": "Rust mainly consists of:",
+      "options": [
+        "Iron sulphide",
+        "Hydrated iron oxide",
+        "Iron chloride",
+        "Iron carbonate"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "11fdec8c938c",
+      "stem": "The oxidation number of oxygen is usually:",
+      "options": [
+        "+2",
+        "–2",
+        "+1",
+        "0"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "0aa72e225dfd",
+      "stem": "Which substance acts as a reducing agent?",
+      "options": [
+        "One that loses electrons",
+        "One that gains electrons",
+        "One that gains oxygen",
+        "One that loses hydrogen"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "767d0d2cb6d1",
+      "stem": "The oxidation number of hydrogen in most compounds is:",
+      "options": [
+        "–1",
+        "+1",
+        "0",
+        "+2"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "dbef28025ab1",
+      "stem": "Which of the following is a method to prevent corrosion?",
+      "options": [
+        "Heating",
+        "Painting",
+        "Grinding",
+        "Washing with water"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "7d3ff8def404",
+      "stem": "Galvanization involves coating iron with:",
+      "options": [
+        "Copper",
+        "Aluminium",
+        "Zinc",
+        "Silver"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "69a8f9d97f08",
+      "stem": "Which metal is commonly used for sacrificial protection of ships?",
+      "options": [
+        "Silver",
+        "Gold",
+        "Magnesium",
+        "Copper"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "57ba243b126b",
+      "stem": "In electroplating, the object to be plated acts as:",
+      "options": [
+        "Cathode",
+        "Anode",
+        "Electrolyte",
+        "Salt bridge"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "99fea1fa7af1",
+      "stem": "The oxidation number of chlorine in NaCl is:",
+      "options": [
+        "+1",
+        "–1",
+        "0",
+        "+2"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "308b7dd3e853",
+      "stem": "Which statement is true about oxidation?",
+      "options": [
+        "Gain of electrons",
+        "Decrease in oxidation number",
+        "Loss of electrons",
+        "Gain of hydrogen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "59798bce7efb",
+      "stem": "Which of the following is reduced?",
+      "options": [
+        "Substance losing electrons",
+        "Substance gaining electrons",
+        "Substance gaining oxygen",
+        "Substance losing hydrogen"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "cc3ca01c21fe",
+      "stem": "Corrosion of iron requires:",
+      "options": [
+        "Water only",
+        "Oxygen only",
+        "Air and moisture",
+        "Sunlight only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "305049c316b3",
+      "stem": "Which compound has oxygen with oxidation number –1?",
+      "options": [
+        "H₂O",
+        "Na₂O",
+        "H₂O₂",
+        "CO₂"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "223f7504e1b5",
+      "stem": "The oxidation number of calcium in CaCl₂ is:",
+      "options": [
+        "–2",
+        "+1",
+        "+2",
+        "0"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "2edf87ce6cd5",
+      "stem": "The process of coating one metal with another using electricity is:",
+      "options": [
+        "Galvanization",
+        "Electroplating",
+        "Distillation",
+        "Sublimation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "1592ef162740",
+      "stem": "Which gas is involved in rust formation?",
+      "options": [
+        "Nitrogen",
+        "Hydrogen",
+        "Oxygen",
+        "Chlorine"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "a5163d4bb938",
+      "stem": "In the reaction CuO + H₂ → Cu + H₂O, CuO is:",
+      "options": [
+        "Oxidized",
+        "Reduced",
+        "Neutralized",
+        "Hydrolyzed"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "61202632772f",
+      "stem": "The oxidation number of sulphur in H₂SO₄ is:",
+      "options": [
+        "+6",
+        "+4",
+        "–2",
+        "0"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "9f8a920adec3",
+      "stem": "Which of the following prevents direct contact of iron with air?",
+      "options": [
+        "Rusting",
+        "Corrosion",
+        "Painting",
+        "Heating"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "f83868e3a987",
+      "stem": "The oxidation number of aluminium in Al₂O₃ is:",
+      "options": [
+        "+3",
+        "–3",
+        "+2",
+        "0"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "880f54b758e8",
+      "stem": "Which reaction is a redox reaction?",
+      "options": [
+        "HCl + NaOH → NaCl + H₂O",
+        "Zn + CuSO₄ → ZnSO₄ + Cu",
+        "AgNO₃ + NaCl → AgCl + NaNO₃",
+        "CaCO₃ → CaO + CO₂"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "2df8fd9ebd53",
+      "stem": "Which of the following is not a method of corrosion prevention?",
+      "options": [
+        "Painting",
+        "Oiling",
+        "Galvanizing",
+        "Rusting"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "34434cd503f8",
+      "stem": "In electrochemistry, electron transfer takes place during:",
+      "options": [
+        "Physical changes",
+        "Redox reactions",
+        "Boiling",
+        "Melting"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "30ca144973bf",
+      "stem": "The oxidation number of potassium in KNO₃ is:",
+      "options": [
+        "–1",
+        "+1",
+        "+2",
+        "0"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "bff67362b1cb",
+      "stem": "Which substance is oxidized in the reaction 2Mg + O₂ → 2MgO?",
+      "options": [
+        "Oxygen",
+        "Magnesium",
+        "Magnesium oxide",
+        "None"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "01ca9af36f30",
+      "stem": "The oxidation number of fluorine is always:",
+      "options": [
+        "+1",
+        "–1",
+        "0",
+        "+2"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "9b5a6c9a87ea",
+      "stem": "Which metal corrodes to form a green layer?",
+      "options": [
+        "Iron",
+        "Zinc",
+        "Copper",
+        "Silver"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "bd604bb016d2",
+      "stem": "The sum of oxidation numbers in an ion is equal to:",
+      "options": [
+        "Zero",
+        "Number of atoms",
+        "Charge on the ion",
+        "Number of electrons"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "4f0f4dcec1f2",
+      "stem": "In the reaction Fe₂O₃ + 3CO → 2Fe + 3CO₂, CO acts as:",
+      "options": [
+        "Oxidizing agent",
+        "Reducing agent",
+        "Catalyst",
+        "Electrolyte"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "7567f2eb5fad",
+      "stem": "The brown coating formed on iron is called:",
+      "options": [
+        "Tarnish",
+        "Scale",
+        "Rust",
+        "Slag"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "ec3f6942e2f8",
+      "stem": "The oxidation number of nitrogen in NH₃ is:",
+      "options": [
+        "–3",
+        "+3",
+        "+5",
+        "0"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "3a93e56d8a1f",
+      "stem": "Which method uses a more reactive metal for protection?",
+      "options": [
+        "Electroplating",
+        "Sacrificial protection",
+        "Painting",
+        "Oiling"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "4a23a2300841",
+      "stem": "In electroplating of silver, the electrolyte contains:",
+      "options": [
+        "Silver ions",
+        "Iron ions",
+        "Copper ions",
+        "Zinc ions"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "729a4efd6114",
+      "stem": "Which one is an example of oxidation?",
+      "options": [
+        "CuO → Cu",
+        "H₂ → 2H⁺ + 2e⁻",
+        "Cl₂ + 2e⁻ → 2Cl⁻",
+        "N₂ + 3H₂ → 2NH₃"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "3e4e1b040060",
+      "stem": "The Roman numeral in iron (III) oxide shows:",
+      "options": [
+        "Atomic mass",
+        "Number of atoms",
+        "Oxidation number",
+        "Valency of oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "e830242b013c",
+      "stem": "Electrochemistry mainly deals with:",
+      "options": [
+        "Heat changes",
+        "Light energy",
+        "Chemical reactions involving electricity",
+        "Nuclear reactions"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "b6ac330d53a1",
+      "stem": "In which reaction is oxygen removed from a compound?",
+      "options": [
+        "2Mg + O₂ → 2MgO",
+        "CuO + H₂ → Cu + H₂O",
+        "Fe + S → FeS",
+        "Na + Cl₂ → NaCl"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "f02477634a89",
+      "stem": "A reducing agent in a reaction:",
+      "options": [
+        "Gains electrons itself",
+        "Causes another substance to lose electrons",
+        "Causes reduction of another substance",
+        "Always contains oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (A).docx"
+    },
+    {
+      "id": "540c8e21dc80",
+      "stem": "An iron gate near the sea rusts faster than the same gate in a dry city. The main reason is:",
+      "options": [
+        "Higher temperature near sea",
+        "Presence of salty moisture",
+        "Lack of oxygen",
+        "Excess sunlight"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "448f0a87946d",
+      "stem": "A student places a clean iron nail in copper sulphate solution. After some time, a brown layer appears on the nail. This shows that iron:",
+      "options": [
+        "Is reduced",
+        "Is less reactive than copper",
+        "Displaces copper from solution",
+        "Prevents oxidation"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "913b54bd356a",
+      "stem": "During electroplating of a spoon with silver, the spoon is connected to the:",
+      "options": [
+        "Anode",
+        "Cathode",
+        "Salt bridge",
+        "Positive terminal only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "4fe69711a56e",
+      "stem": "A metal object is painted before being used outdoors. The paint mainly:",
+      "options": [
+        "Increases conductivity",
+        "Prevents contact with air and moisture",
+        "Speeds up oxidation",
+        "Reduces weight of metal"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "ec549825df0a",
+      "stem": "A ship made of iron is protected by attaching blocks of magnesium. Magnesium protects iron because it:",
+      "options": [
+        "Is less reactive than iron",
+        "Reacts first with oxygen",
+        "Prevents water evaporation",
+        "Forms alloy with iron"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "39f635fd2537",
+      "stem": "A student observes that copper metal does not react with zinc sulphate solution. This indicates that copper is:",
+      "options": [
+        "More reactive than zinc",
+        "Less reactive than zinc",
+        "Equal in reactivity to zinc",
+        "An oxidizing agent"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "c04c200cb875",
+      "stem": "During rusting, iron undergoes:",
+      "options": [
+        "Reduction",
+        "Oxidation",
+        "Neutralization",
+        "Polymerization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "897dc40f4809",
+      "stem": "A silver ring becomes black after long exposure to air. This is an example of:",
+      "options": [
+        "Distillation",
+        "Corrosion",
+        "Neutralization",
+        "Electrolysis"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "63bd96fbfeea",
+      "stem": "A reaction vessel contains hydrogen gas reacting with copper oxide. If copper oxide changes into copper, copper oxide has:",
+      "options": [
+        "Been oxidized",
+        "Lost oxygen",
+        "Gained electrons from copper",
+        "Increased oxidation number"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "488157943b0c",
+      "stem": "A student accidentally scratches the zinc coating on galvanized iron. The iron still remains protected because zinc:",
+      "options": [
+        "Is decorative",
+        "Acts as sacrificial metal",
+        "Is non-reactive",
+        "Absorbs moisture"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "ed03119666c3",
+      "stem": "Which situation best represents oxidation?",
+      "options": [
+        "Gain of electrons by chlorine",
+        "Removal of oxygen from copper oxide",
+        "Loss of electrons by magnesium",
+        "Formation of water"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "7c87a3050358",
+      "stem": "An electroplated object receives metal coating because metal ions:",
+      "options": [
+        "Move toward cathode and gain electrons",
+        "Move toward anode and lose electrons",
+        "React with oxygen",
+        "Evaporate during process"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "10091c0b877d",
+      "stem": "A chemical reaction increases the oxidation number of sulphur from +4 to +6. Sulphur has:",
+      "options": [
+        "Been reduced",
+        "Been oxidized",
+        "Lost oxygen",
+        "Gained hydrogen"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "d586d692f857",
+      "stem": "A student keeps one iron nail in dry air and another in moist air. Which nail rusts faster?",
+      "options": [
+        "Nail in dry air",
+        "Nail in moist air",
+        "Both equally",
+        "Neither rusts"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "9f7ba74f5608",
+      "stem": "In electrochemistry, the movement of electrons takes place:",
+      "options": [
+        "Through solution only",
+        "From cathode to anode inside solution",
+        "During redox reactions",
+        "Only in acids"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "b55004131843",
+      "stem": "A laboratory technician coats iron with chromium to make it shiny and corrosion resistant. This process is:",
+      "options": [
+        "Rusting",
+        "Distillation",
+        "Electroplating",
+        "Refining"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "e19716e8cf8f",
+      "stem": "Iron pipes buried underground are often attached with magnesium strips. This method is called:",
+      "options": [
+        "Galvanization",
+        "Electrolysis",
+        "Sacrificial protection",
+        "Neutralization"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "0a3e6f715ac2",
+      "stem": "A student notices bubbles during an electrochemical experiment. The bubbles indicate:",
+      "options": [
+        "Gas formation due to chemical reaction",
+        "Melting of metal",
+        "Rust prevention",
+        "Physical change only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "4d8e0386d1bf",
+      "stem": "A student wants to protect an iron bicycle from rusting. Which method is most suitable?",
+      "options": [
+        "Heating regularly",
+        "Keeping in sunlight",
+        "Painting surface",
+        "Washing with salt water"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "573d3ee44508",
+      "stem": "A reaction causes copper ions to gain electrons and form copper metal. Copper ions are:",
+      "options": [
+        "Oxidized",
+        "Reduced",
+        "Neutralized",
+        "Corroded"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "ae4ba6c1b5db",
+      "stem": "A student compares rusting in distilled water and salty water. Rusting is faster in salty water because:",
+      "options": [
+        "Salt decreases conductivity",
+        "Salt increases chemical activity",
+        "Salt removes oxygen",
+        "Salt prevents oxidation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "de3fd83e1842",
+      "stem": "A metal spoon coated with silver becomes shiny because silver:",
+      "options": [
+        "Absorbs light",
+        "Is highly reflective",
+        "Prevents oxidation completely",
+        "Removes impurities"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "7c062937057c",
+      "stem": "A chemical engineer wants to prevent corrosion in machinery. Which method is least effective?",
+      "options": [
+        "Painting",
+        "Oiling",
+        "Exposure to moisture",
+        "Galvanization"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "c76f723ef9ae",
+      "stem": "Which statement best explains sacrificial protection?",
+      "options": [
+        "Less reactive metal protects more reactive metal",
+        "More reactive metal corrodes instead of iron",
+        "Iron reacts first with oxygen",
+        "Oxygen is removed from atmosphere"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "72f0876d7526",
+      "stem": "A student heats copper oxide with carbon. Copper oxide changes into copper because carbon:",
+      "options": [
+        "Oxidizes copper",
+        "Acts as reducing agent",
+        "Prevents electron transfer",
+        "Absorbs copper"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "7022995953fc",
+      "stem": "During electroplating of gold on jewelry, gold ions:",
+      "options": [
+        "Lose electrons and deposit",
+        "Gain electrons and deposit",
+        "React with oxygen first",
+        "Evaporate from solution"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "5132e632e064",
+      "stem": "A student notices that aluminium does not corrode quickly despite being reactive. This is because aluminium:",
+      "options": [
+        "Is non-metallic",
+        "Forms protective oxide layer",
+        "Does not react with oxygen",
+        "Is less reactive than iron"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "9171c93509bd",
+      "stem": "A student passes hydrogen gas over hot copper oxide and notices formation of reddish-brown copper. Which statement is correct?",
+      "options": [
+        "Hydrogen is reduced",
+        "Copper oxide is oxidized",
+        "Hydrogen acts as reducing agent",
+        "Copper gains oxygen"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "f3933eadd542",
+      "stem": "During electroplating of a bicycle handle with chromium, the handle is connected to the negative terminal of the battery. Why?",
+      "options": [
+        "To allow chromium ions to gain electrons",
+        "To oxidize chromium metal",
+        "To remove electrons from handle",
+        "To increase rusting speed"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    },
+    {
+      "id": "bc0cd30c4697",
+      "stem": "CuO+CO→Cu+CO₂ carbon monoxide is called a reducing agent because it:",
+      "options": [
+        "Gains oxygen",
+        "Removes oxygen from CuO",
+        "Loses electrons to oxygen only",
+        "Changes into copper"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "chem unit#7 MCQs (D).docx"
+    }
+  ]
+}

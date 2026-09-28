@@ -1,0 +1,618 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "af05845cc103",
+      "stem": "The expansion of (y + 8)² is:",
+      "options": [
+        "y² + 64",
+        "y² + 16y + 16",
+        "y² + 16y + 64",
+        "y² + 8y + 64"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "3a9b0e688874",
+      "stem": "The expansion of (y − 3)² is:",
+      "options": [
+        "y² − 3y + 9",
+        "y² − 6y + 9",
+        "y² − 6y − 6",
+        "y² + 9"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "f2f5dbf3a6cf",
+      "stem": "The expansion of (x − 6)² is:",
+      "options": [
+        "x² + 36",
+        "x² − 12x − 12",
+        "x² − 6x + 36",
+        "x² − 12x + 36"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "8658c1bed409",
+      "stem": "The expansion of (a + 4)² is:",
+      "options": [
+        "a² + 8a + 8",
+        "a² + 4a + 16",
+        "a² + 8a + 16",
+        "a² + 16"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "6a3f8f3ac1cc",
+      "stem": "The expansion of (x + 3)² is:",
+      "options": [
+        "x² + 3x + 9",
+        "x² + 6x + 9",
+        "x² + 9",
+        "x² + 6x + 6"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "8de2f86e2155",
+      "stem": "The expansion of (a − 8)² is:",
+      "options": [
+        "a² − 8a + 64",
+        "a² − 16a + 64",
+        "a² + 64",
+        "a² − 16a − 16"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-expand-square",
+      "family": "gen-maths-m4-expand-square"
+    },
+    {
+      "id": "5184f2ca274d",
+      "stem": "The factors of x² + 12x + 35 are:",
+      "options": [
+        "(x + 7)(x − 5)",
+        "(x − 7)(x + 5)",
+        "(x − 7)(x − 5)",
+        "(x + 7)(x + 5)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "e87d3e2f533a",
+      "stem": "The factors of x² − 3x + 2 are:",
+      "options": [
+        "(x − 2)(x + 1)",
+        "(x + 2)(x − 1)",
+        "(x + 2)(x + 1)",
+        "(x − 2)(x − 1)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "9cc8a8198a20",
+      "stem": "The factors of x² + 3x − 40 are:",
+      "options": [
+        "(x − 5)(x + 8)",
+        "(x + 5)(x + 8)",
+        "(x + 5)(x − 8)",
+        "(x − 5)(x − 8)"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "8444a842445b",
+      "stem": "The factors of x² + 8x + 12 are:",
+      "options": [
+        "(x + 6)(x − 2)",
+        "(x − 6)(x + 2)",
+        "(x + 6)(x + 2)",
+        "(x − 6)(x − 2)"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "a2fe0632380f",
+      "stem": "The factors of x² + x − 30 are:",
+      "options": [
+        "(x + 6)(x − 5)",
+        "(x + 6)(x + 5)",
+        "(x − 6)(x + 5)",
+        "(x − 6)(x − 5)"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "dd4d0f104b48",
+      "stem": "The factors of x² − 2x − 3 are:",
+      "options": [
+        "(x − 1)(x − 3)",
+        "(x − 1)(x + 3)",
+        "(x + 1)(x + 3)",
+        "(x + 1)(x − 3)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-factor-trinomial",
+      "family": "gen-maths-m4-factor-trinomial"
+    },
+    {
+      "id": "59544029c3b1",
+      "stem": "The factors of x² − 16 are:",
+      "options": [
+        "(x − 4)(x + 4)",
+        "(x + 4)²",
+        "(x − 4)²",
+        "(x − 16)(x + 1)"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "d8feafb5ba00",
+      "stem": "The factors of x² − 64 are:",
+      "options": [
+        "(x + 8)²",
+        "(x − 8)(x + 8)",
+        "(x − 8)²",
+        "(x − 64)(x + 1)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "384c43144221",
+      "stem": "The factors of 9x² − 1 are:",
+      "options": [
+        "(3x − 1)(3x + 1)",
+        "(3x + 1)²",
+        "(9x − 1)(x + 1)",
+        "(3x − 1)²"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "17e12864996a",
+      "stem": "The factors of x² − 49 are:",
+      "options": [
+        "(x − 49)(x + 1)",
+        "(x − 7)(x + 7)",
+        "(x − 7)²",
+        "(x + 7)²"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "cbf9a8585845",
+      "stem": "The factors of 16x² − 9 are:",
+      "options": [
+        "(16x − 3)(x + 3)",
+        "(4x − 3)²",
+        "(4x + 3)²",
+        "(4x − 3)(4x + 3)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "87c76697d8cb",
+      "stem": "The factors of 4x² − 49 are:",
+      "options": [
+        "(2x + 7)²",
+        "(2x − 7)²",
+        "(4x − 7)(x + 7)",
+        "(2x − 7)(2x + 7)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-difference-of-squares",
+      "family": "gen-maths-m4-difference-of-squares"
+    },
+    {
+      "id": "e2845b3674ed",
+      "stem": "If a + b = 13 and ab = 40, then a² + b² is:",
+      "options": [
+        "129",
+        "169",
+        "89",
+        "249"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "d855500694bf",
+      "stem": "If a + b = 10 and ab = 21, then a² + b² is:",
+      "options": [
+        "58",
+        "79",
+        "142",
+        "100"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "eff6669087fd",
+      "stem": "If a + b = 11 and ab = 24, then a² + b² is:",
+      "options": [
+        "97",
+        "169",
+        "73",
+        "121"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "82b5d4f53cfd",
+      "stem": "If a + b = 16 and ab = 64, then a² + b² is:",
+      "options": [
+        "192",
+        "128",
+        "256",
+        "384"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "6e9042e013ac",
+      "stem": "If a + b = 8 and ab = 15, then a² + b² is:",
+      "options": [
+        "64",
+        "34",
+        "49",
+        "94"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "a7f1360b73f2",
+      "stem": "If a + b = 8 and ab = 12, then a² + b² is:",
+      "options": [
+        "64",
+        "40",
+        "88",
+        "52"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-squares",
+      "family": "gen-maths-m4-sum-of-squares"
+    },
+    {
+      "id": "4a7324435e76",
+      "stem": "If x + 1/x = 2, then x² + 1/x² is:",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "2"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "84e3fd4f60cd",
+      "stem": "If x + 1/x = 3, then x² + 1/x² is:",
+      "options": [
+        "11",
+        "9",
+        "6",
+        "7"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "fb698d388fa1",
+      "stem": "If x + 1/x = 9, then x² + 1/x² is:",
+      "options": [
+        "18",
+        "83",
+        "79",
+        "81"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "9d4708915a25",
+      "stem": "If x + 1/x = 6, then x² + 1/x² is:",
+      "options": [
+        "34",
+        "36",
+        "38",
+        "12"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "d5e0f34c17b6",
+      "stem": "If x + 1/x = 8, then x² + 1/x² is:",
+      "options": [
+        "16",
+        "64",
+        "66",
+        "62"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "9b93c4ac065d",
+      "stem": "If x + 1/x = 5, then x² + 1/x² is:",
+      "options": [
+        "23",
+        "27",
+        "10",
+        "25"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-reciprocal-square",
+      "family": "gen-maths-m4-reciprocal-square"
+    },
+    {
+      "id": "4262a16e30c3",
+      "stem": "If a + b = 4 and ab = 3, then a³ + b³ is:",
+      "options": [
+        "52",
+        "100",
+        "28",
+        "64"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    },
+    {
+      "id": "654b4981ebfa",
+      "stem": "If a + b = 9 and ab = 20, then a³ + b³ is:",
+      "options": [
+        "189",
+        "729",
+        "549",
+        "1269"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    },
+    {
+      "id": "6924c8d9fdac",
+      "stem": "If a + b = 6 and ab = 9, then a³ + b³ is:",
+      "options": [
+        "54",
+        "162",
+        "216",
+        "378"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    },
+    {
+      "id": "1c0dc6f7b316",
+      "stem": "If a + b = 7 and ab = 10, then a³ + b³ is:",
+      "options": [
+        "553",
+        "273",
+        "133",
+        "343"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    },
+    {
+      "id": "c6deb112cdaf",
+      "stem": "If a + b = 8 and ab = 15, then a³ + b³ is:",
+      "options": [
+        "872",
+        "392",
+        "152",
+        "512"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    },
+    {
+      "id": "be10a0b45ff6",
+      "stem": "If a + b = 8 and ab = 16, then a³ + b³ is:",
+      "options": [
+        "128",
+        "512",
+        "384",
+        "896"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "template:m4-sum-of-cubes",
+      "family": "gen-maths-m4-sum-of-cubes"
+    }
+  ]
+}

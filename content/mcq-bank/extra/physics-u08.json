@@ -1,0 +1,486 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "a770c340d6d5",
+      "stem": "Like magnetic poles:",
+      "options": [
+        "attract each other",
+        "repel each other",
+        "have no effect on each other",
+        "cancel each other's magnetism"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "07536ad27846",
+      "stem": "Which of these is a magnetic material?",
+      "options": [
+        "Copper",
+        "Aluminium",
+        "Iron",
+        "Wood"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "59c6fe0b2e7e",
+      "stem": "Which group contains only magnetic materials?",
+      "options": [
+        "Iron, nickel, cobalt",
+        "Iron, copper, zinc",
+        "Nickel, gold, silver",
+        "Cobalt, aluminium, tin"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "c9274736d248",
+      "stem": "Outside a bar magnet, magnetic field lines go from:",
+      "options": [
+        "south pole to north pole",
+        "north pole to south pole",
+        "the middle to both ends",
+        "both ends to the middle"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "066c6988fc71",
+      "stem": "A freely suspended bar magnet comes to rest pointing:",
+      "options": [
+        "east–west",
+        "north–south",
+        "up–down",
+        "in any direction"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "96935460aeda",
+      "stem": "The Earth's geographic North Pole is near a magnetic:",
+      "options": [
+        "north pole",
+        "south pole",
+        "equator",
+        "neutral point"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "4b0e4a48de61",
+      "stem": "Soft iron is used in electromagnets because it:",
+      "options": [
+        "is easily magnetized and easily loses its magnetism",
+        "keeps its magnetism permanently",
+        "is not magnetic",
+        "is very heavy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "cf905c137944",
+      "stem": "Steel is used for permanent magnets because it:",
+      "options": [
+        "keeps its magnetism for a long time",
+        "loses its magnetism quickly",
+        "is non-magnetic",
+        "is a good insulator"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "943ac07b3d40",
+      "stem": "A student strokes an iron nail many times in one direction with a magnet. The nail:",
+      "options": [
+        "becomes magnetized",
+        "becomes electrically charged",
+        "melts",
+        "loses its mass"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "32b269efa87c",
+      "stem": "Which of these will destroy a magnet's magnetism?",
+      "options": [
+        "Heating it strongly or hammering it",
+        "Keeping it with a keeper",
+        "Storing it in pairs",
+        "Cooling it slightly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "525247330e21",
+      "stem": "According to domain theory, an unmagnetized piece of iron has domains that are:",
+      "options": [
+        "all aligned in one direction",
+        "randomly arranged",
+        "absent",
+        "all pointing south"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "87dce209bdcc",
+      "stem": "Field lines close together show that the magnetic field is:",
+      "options": [
+        "weak",
+        "strong",
+        "zero",
+        "reversed"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "7e19392c6421",
+      "stem": "A crane at a scrapyard lifts iron scrap and drops it when switched off. It uses:",
+      "options": [
+        "a permanent magnet",
+        "an electromagnet",
+        "a bar of copper",
+        "a compass"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "f3ca79e9d622",
+      "stem": "The strength of an electromagnet can be increased by:",
+      "options": [
+        "increasing the current and the number of turns",
+        "decreasing the current",
+        "removing the iron core",
+        "using fewer turns"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "4f3af355276c",
+      "stem": "A magnetic compass needle is:",
+      "options": [
+        "a small magnet",
+        "a piece of copper",
+        "a charged plastic strip",
+        "a piece of glass"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "9131237ac267",
+      "stem": "A current-carrying straight wire produces a magnetic field that is:",
+      "options": [
+        "in straight lines along the wire",
+        "in circles around the wire",
+        "zero",
+        "only at the ends of the wire"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "ea4650f6abc8",
+      "stem": "The direction of the magnetic field around a current-carrying wire is given by the:",
+      "options": [
+        "right-hand grip rule",
+        "left-hand rule for motors only",
+        "head-to-tail rule",
+        "parallelogram law"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "94e6834c33a5",
+      "stem": "A student brings a magnet near a paper clip without touching it and the clip is attracted. This shows magnetism can act:",
+      "options": [
+        "only by contact",
+        "at a distance",
+        "only in water",
+        "only on plastics"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "5717920dc372",
+      "stem": "Which device uses an electromagnet?",
+      "options": [
+        "Electric bell",
+        "Torch bulb",
+        "Candle",
+        "Mirror"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "e813ea90a30d",
+      "stem": "A magnet is broken into two pieces. Each piece:",
+      "options": [
+        "has only one pole",
+        "becomes a complete magnet with a north and a south pole",
+        "loses all magnetism",
+        "becomes a south pole only"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "46b753f6234f",
+      "stem": "Iron filings sprinkled around a bar magnet gather most thickly:",
+      "options": [
+        "at the middle",
+        "near the poles",
+        "nowhere",
+        "in a straight line"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "001b60eb60cc",
+      "stem": "Which method can make a temporary magnet from an iron bar?",
+      "options": [
+        "Placing it near a strong magnet (induction)",
+        "Painting it",
+        "Cooling it",
+        "Wrapping it in cloth"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "0c0e48bdc8c4",
+      "stem": "A sensitive watch is kept inside a soft iron box near strong magnets. The box:",
+      "options": [
+        "shields the watch from magnetic fields",
+        "magnetizes the watch",
+        "charges the watch",
+        "heats the watch"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "9156a2ed167a",
+      "stem": "Which is NOT a use of magnets?",
+      "options": [
+        "Loudspeakers",
+        "MRI machines",
+        "Compasses",
+        "Measuring temperature"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "abdae0963ba4",
+      "stem": "A magnet attracts:",
+      "options": [
+        "wood",
+        "iron",
+        "plastic",
+        "rubber"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "834e9ed2bec9",
+      "stem": "Two magnets are placed with a north pole facing a south pole. They will:",
+      "options": [
+        "repel",
+        "attract",
+        "rotate away",
+        "lose magnetism"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "30104bcc0231",
+      "stem": "The region around a magnet where its magnetic force can be felt is called its:",
+      "options": [
+        "magnetic field",
+        "electric field",
+        "gravitational field",
+        "domain"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "f6e2857922c3",
+      "stem": "A hiker's compass points wrongly when held next to a steel knife. This is because:",
+      "options": [
+        "the steel's magnetic field disturbs the needle",
+        "the knife is charged",
+        "steel is non-magnetic",
+        "the Earth's field has disappeared"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "f44cb7d4fc89",
+      "stem": "Reversing the direction of current in an electromagnet:",
+      "options": [
+        "reverses its poles",
+        "destroys it",
+        "doubles its strength",
+        "has no effect"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    },
+    {
+      "id": "18a1937d888e",
+      "stem": "Magnetic field lines of a magnet:",
+      "options": [
+        "never cross each other",
+        "always cross at the poles",
+        "form straight parallel lines everywhere",
+        "start and end at the middle"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Written for Prepify from the FBISE Class 9 Physics syllabus (Magnetism)"
+    }
+  ]
+}

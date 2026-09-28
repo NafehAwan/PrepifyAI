@@ -1,0 +1,176 @@
+{
+  "subject": "English",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "1e7298fe6461",
+      "stem": "Hina's bakery gains loyal customers because she never sells stale bread. Which quality helps her business most?",
+      "options": [
+        "Honesty and quality",
+        "Rudeness",
+        "Delay",
+        "High prices"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8be6f25f5f4f"
+    },
+    {
+      "id": "a7ff85e28711",
+      "stem": "The prefix in \"unhappy\" means:",
+      "options": [
+        "again",
+        "not",
+        "before",
+        "after"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "effac9fd4964"
+    },
+    {
+      "id": "7d35124c1eee",
+      "stem": "Choose the synonym of \"prosper\":",
+      "options": [
+        "Fail",
+        "Flourish",
+        "Shrink",
+        "Collapse"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6fc35586982b"
+    },
+    {
+      "id": "a90c553d0b79",
+      "stem": "Fill in the blank: He invested his money ___ a clothing shop.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "71108b6f76c6"
+    },
+    {
+      "id": "5fbf29394e57",
+      "stem": "Choose the antonym of \"nervous\":",
+      "options": [
+        "Anxious",
+        "Worried",
+        "Confident",
+        "Afraid"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9915270eaf64"
+    },
+    {
+      "id": "a6b19059d29f",
+      "stem": "The noun form of \"succeed\" is:",
+      "options": [
+        "Successful",
+        "Success",
+        "Successfully",
+        "Succeeding"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1ee45a4d8490"
+    },
+    {
+      "id": "874f43a18998",
+      "stem": "Choose the correct form: If he saves money, he ___ buy a sewing machine.",
+      "options": [
+        "will",
+        "would",
+        "had",
+        "was"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a4acd6ee43f5"
+    },
+    {
+      "id": "e0ddef2ccda2",
+      "stem": "Choose the passive voice of \"She opened a new shop.\":",
+      "options": [
+        "A new shop is opened by her.",
+        "A new shop was opened by her.",
+        "A new shop has been opened by her.",
+        "A new shop was open by her."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fd2ecfd51cda"
+    },
+    {
+      "id": "de5517c86853",
+      "stem": "Zara bakes cakes at home and sells them to neighbours, keeping her own accounts. She is best described as:",
+      "options": [
+        "an employee",
+        "a home-based entrepreneur",
+        "a customer",
+        "a supplier"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2380e6bf99ca"
+    },
+    {
+      "id": "17eead49b08a",
+      "stem": "Before starting a tailoring shop, Rabia writes down her costs, prices and target customers. She is preparing:",
+      "options": [
+        "a business plan",
+        "a recipe",
+        "a travel plan",
+        "a complaint"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "971ff47c97a3"
+    }
+  ]
+}

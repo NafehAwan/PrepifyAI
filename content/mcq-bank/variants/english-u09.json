@@ -1,0 +1,159 @@
+{
+  "subject": "English",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "27f6a4580546",
+      "stem": "Choose the indirect speech of: The guide said, \"The fort is very old.\"",
+      "options": [
+        "The guide said that the fort was very old.",
+        "The guide said that the fort is very oldly.",
+        "The guide says that the fort was very old.",
+        "The guide said that the fort will be old."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9a085cd4c299"
+    },
+    {
+      "id": "430c6edf75e4",
+      "stem": "Which sentence is in the future tense?",
+      "options": [
+        "We visited Murree.",
+        "We will visit Murree.",
+        "We visit Murree.",
+        "We are visiting Murree now."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "39b7e339f01e"
+    },
+    {
+      "id": "f538a7037d56",
+      "stem": "Choose the passive voice of \"Tourists admire the Faisal Mosque.\":",
+      "options": [
+        "The Faisal Mosque is admired by tourists.",
+        "The Faisal Mosque was admired by tourists.",
+        "The Faisal Mosque admired by tourists.",
+        "The Faisal Mosque has admired tourists."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6e503c7062ff"
+    },
+    {
+      "id": "6db8842ad765",
+      "stem": "In \"Tourists enjoy the view\", the word \"enjoy\" is:",
+      "options": [
+        "a noun",
+        "a verb",
+        "an adjective",
+        "an adverb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "deebd68b4469"
+    },
+    {
+      "id": "8cbf3ca27c21",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "We went to Swat last summer.",
+        "We go to Swat last summer.",
+        "We have gone to Swat last summer.",
+        "We going to Swat last summer."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "79e438d947b3"
+    },
+    {
+      "id": "abf64934f664",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Itinerary",
+        "Itinerery",
+        "Itenerary",
+        "Itinirary"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cd0737d3b69c"
+    },
+    {
+      "id": "fd29a51df841",
+      "stem": "Choose the synonym of \"trip\":",
+      "options": [
+        "Journey",
+        "Rest",
+        "Stay",
+        "Halt"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "eac1df867c64"
+    },
+    {
+      "id": "3b14bf845997",
+      "stem": "Which sentence is in the present perfect tense?",
+      "options": [
+        "I have visited Mohenjo-daro.",
+        "I visited Mohenjo-daro.",
+        "I visit Mohenjo-daro.",
+        "I will visit Mohenjo-daro."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1a826aa1d7f4"
+    },
+    {
+      "id": "6efb0d85573b",
+      "stem": "Choose the plural of \"valley\":",
+      "options": [
+        "vallies",
+        "valleys",
+        "valleyes",
+        "vallys"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4a0c595f8647"
+    }
+  ]
+}

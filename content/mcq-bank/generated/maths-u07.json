@@ -1,0 +1,414 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "800beb1c4714",
+      "stem": "The distance between the points (0, −1) and (−12, −6) is:",
+      "options": [
+        "169",
+        "17",
+        "7",
+        "13"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "d8ca63c33f2c",
+      "stem": "The distance between the points (−5, 0) and (−17, −9) is:",
+      "options": [
+        "15",
+        "3",
+        "21",
+        "225"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "944770428c3a",
+      "stem": "The distance between the points (−3, 0) and (−11, −6) is:",
+      "options": [
+        "100",
+        "2",
+        "10",
+        "14"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "0bded57b3d45",
+      "stem": "The distance between the points (−4, −1) and (−16, −10) is:",
+      "options": [
+        "3",
+        "15",
+        "21",
+        "225"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "b472fbe28a14",
+      "stem": "The distance between the points (1, −2) and (−3, −5) is:",
+      "options": [
+        "5",
+        "1",
+        "25",
+        "7"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "48d2040e6466",
+      "stem": "The distance between the points (−5, −1) and (−2, −5) is:",
+      "options": [
+        "25",
+        "7",
+        "5",
+        "1"
+      ],
+      "answer": 2,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-distance",
+      "family": "gen-maths-m7-distance"
+    },
+    {
+      "id": "f253f426fdcc",
+      "stem": "The midpoint of the segment joining (8, −5) and (12, 5) is:",
+      "options": [
+        "(20, 0)",
+        "(0, 10)",
+        "(2, 5)",
+        "(10, 0)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "06b3a96a75f0",
+      "stem": "The midpoint of the segment joining (0, −5) and (−2, 1) is:",
+      "options": [
+        "(−2, −1)",
+        "(−1, −2)",
+        "(−2, −4)",
+        "(−1, 3)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "fc4194c4a786",
+      "stem": "The midpoint of the segment joining (−2, −7) and (0, 3) is:",
+      "options": [
+        "(−2, −1)",
+        "(−2, −4)",
+        "(1, 5)",
+        "(−1, −2)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "598b3ecd72f3",
+      "stem": "The midpoint of the segment joining (−1, −8) and (−5, 0) is:",
+      "options": [
+        "(−2, 4)",
+        "(−4, −3)",
+        "(−6, −8)",
+        "(−3, −4)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "5daee61e585f",
+      "stem": "The midpoint of the segment joining (2, 8) and (−6, 4) is:",
+      "options": [
+        "(6, −2)",
+        "(−2, 6)",
+        "(−4, 12)",
+        "(−4, −2)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "2c2c269bd9ba",
+      "stem": "The midpoint of the segment joining (−8, 8) and (−8, 18) is:",
+      "options": [
+        "(0, 5)",
+        "(−16, 26)",
+        "(13, −8)",
+        "(−8, 13)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-midpoint",
+      "family": "gen-maths-m7-midpoint"
+    },
+    {
+      "id": "8019ede70a9c",
+      "stem": "The point (−8, 8) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "26602189ec3a",
+      "stem": "The point (−8, 4) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "df2052b4c10d",
+      "stem": "The point (9, −2) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "37f1cddf9c00",
+      "stem": "The point (−3, 2) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "b5bdd1633286",
+      "stem": "The point (8, 7) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "b0d005d12674",
+      "stem": "The point (7, −1) lies in the:",
+      "options": [
+        "first quadrant",
+        "second quadrant",
+        "third quadrant",
+        "fourth quadrant"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-quadrant",
+      "family": "gen-maths-m7-quadrant"
+    },
+    {
+      "id": "a4dd141427c4",
+      "stem": "M(−4, 4) is the midpoint of AB and A is (2, 1). The coordinates of B are:",
+      "options": [
+        "(−6, 3)",
+        "(−10, 7)",
+        "(8, −2)",
+        "(−1, 2.5)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    },
+    {
+      "id": "3d63a09fab9d",
+      "stem": "M(3, −4) is the midpoint of AB and A is (0, 1). The coordinates of B are:",
+      "options": [
+        "(1.5, −1.5)",
+        "(6, −9)",
+        "(−3, 6)",
+        "(3, −5)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    },
+    {
+      "id": "4ac4a4151169",
+      "stem": "M(5, 0) is the midpoint of AB and A is (1, −3). The coordinates of B are:",
+      "options": [
+        "(3, −1.5)",
+        "(4, 3)",
+        "(−3, −6)",
+        "(9, 3)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    },
+    {
+      "id": "10d185ba175a",
+      "stem": "M(5, −4) is the midpoint of AB and A is (5, −1). The coordinates of B are:",
+      "options": [
+        "(5, −7)",
+        "(5, −2.5)",
+        "(5, 2)",
+        "(0, −3)"
+      ],
+      "answer": 0,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    },
+    {
+      "id": "645ab3c2d3d8",
+      "stem": "M(−5, 3) is the midpoint of AB and A is (0, 6). The coordinates of B are:",
+      "options": [
+        "(−2.5, 4.5)",
+        "(5, 9)",
+        "(−5, −3)",
+        "(−10, 0)"
+      ],
+      "answer": 3,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    },
+    {
+      "id": "a5ce99a70106",
+      "stem": "M(0, −2) is the midpoint of AB and A is (3, 4). The coordinates of B are:",
+      "options": [
+        "(1.5, 1)",
+        "(−3, −8)",
+        "(6, 10)",
+        "(−3, −6)"
+      ],
+      "answer": 1,
+      "answer_source": "computed",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "template:m7-other-endpoint",
+      "family": "gen-maths-m7-other-endpoint"
+    }
+  ]
+}

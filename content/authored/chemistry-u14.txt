@@ -1,0 +1,36 @@
+# subject: Chemistry
+# chapter: 14
+# source: Written for Prepify from the FBISE Class 9 Chemistry syllabus (Hydrocarbons)
+# answer_source: authored
+# difficulty: medium
+
+Hydrocarbons are compounds made of: | carbon and oxygen | carbon and hydrogen | hydrogen and oxygen | carbon, hydrogen and nitrogen | B | e
+The general formula of alkanes is: | CₙH₂ₙ₊₂ | CₙH₂ₙ | CₙH₂ₙ₋₂ | CₙHₙ | A | e
+The general formula of alkenes is: | CₙH₂ₙ₊₂ | CₙH₂ₙ | CₙH₂ₙ₋₂ | CₙH₂ₙ₊₁ | B | e
+The general formula of alkynes is: | CₙH₂ₙ₊₂ | CₙH₂ₙ | CₙH₂ₙ₋₂ | CₙH₂ₙ₊₄ | C
+Alkanes are called saturated hydrocarbons because they contain: | only single bonds between carbon atoms | at least one double bond | a triple bond | no hydrogen | A
+The simplest alkane is: | ethane | methane | ethene | ethyne | B | e
+The molecular formula of an alkane with 5 carbon atoms is: | C₅H₁₀ | C₅H₁₂ | C₅H₈ | C₅H₁₄ | B | h
+The molecular formula of an alkene with 3 carbon atoms is: | C₃H₈ | C₃H₆ | C₃H₄ | C₃H₃ | B | h
+The molecular formula of an alkyne with 4 carbon atoms is: | C₄H₁₀ | C₄H₈ | C₄H₆ | C₄H₄ | C | h
+Ethene (C₂H₄) contains a: | single bond only | carbon–carbon double bond | carbon–carbon triple bond | benzene ring | B
+Ethyne (C₂H₂) is commonly called: | methane | acetylene | propane | butane | B
+The gas used with oxygen in welding torches is: | methane | ethyne (acetylene) | propane | ethane | B | s
+When bromine water is shaken with an alkene, it: | turns from orange-brown to colourless | turns blue | turns red | stays orange-brown | A
+A student shakes two gases with bromine water. Gas X decolourizes it; gas Y does not. Which statement is correct? | X is unsaturated and Y is saturated | X is saturated and Y is unsaturated | Both are alkanes | Both are alkenes | A | s h
+Alkanes react with chlorine in sunlight by: | addition | substitution | polymerization | neutralization | B
+Alkenes typically undergo: | addition reactions | substitution reactions only | no reactions | neutralization | A
+Adding hydrogen to an alkene in the presence of a nickel catalyst is called: | hydration | hydrogenation | halogenation | cracking | B
+Vegetable ghee (margarine) is made from vegetable oils by: | hydrogenation | dehydration | combustion | fermentation | A | s
+Complete combustion of methane produces: | carbon monoxide and water | carbon dioxide and water | carbon and hydrogen | methanol | B | e
+The balanced equation for complete combustion of methane is: | CH₄ + O₂ → CO₂ + H₂O | CH₄ + 2O₂ → CO₂ + 2H₂O | 2CH₄ + O₂ → 2CO + 4H₂ | CH₄ + 3O₂ → CO₂ + 3H₂O | B | h
+A gas heater in a closed room burns fuel with too little oxygen and produces a poisonous gas. The gas is: | carbon dioxide | carbon monoxide | nitrogen | water vapour | B | s
+The main component of natural gas is: | ethane | methane | propane | butane | B | e
+LPG (liquefied petroleum gas) used in cylinders is mainly: | methane and ethane | propane and butane | ethene and ethyne | hydrogen | B
+Breaking large hydrocarbon molecules into smaller, more useful ones is called: | cracking | polymerization | distillation | condensation | A
+Polythene is made by joining many ethene molecules together. This process is: | cracking | polymerization | hydrogenation | combustion | B
+The molar mass of propane (C₃H₈) is (C = 12, H = 1): | 36 g mol⁻¹ | 44 g mol⁻¹ | 42 g mol⁻¹ | 48 g mol⁻¹ | B | h
+Which is the next member after propane in the alkane series? | Butane | Ethane | Pentane | Propene | A | e
+Methane is formed naturally in marshes and by animal digestion. It is also called: | marsh gas | laughing gas | water gas | noble gas | A
+Alkynes are more reactive than alkanes because they contain: | only single bonds | a triple bond | no carbon | ionic bonds | B
+A student burns a hydrocarbon and gets a sooty yellow flame. This suggests: | incomplete combustion | complete combustion | no combustion | the fuel is water | A | s

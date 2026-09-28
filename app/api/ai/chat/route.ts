@@ -2,8 +2,15 @@ import { NextResponse } from "next/server";
 import { resolveGroqKey } from "@/lib/ai/config";
 import { groqChat, type GroqMessage } from "@/lib/ai/client";
 import { CHAT_SYSTEM_PROMPT } from "@/lib/ai/prompts";
+import { callerId, checkRateLimit } from "@/lib/ai/rateLimit";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { createClient } from "@/lib/supabase/server";
 
 export const runtime = "nodejs";
+
+// The shared key's rate limit is per key, so one student can't be allowed to
+// spend it all. Generous enough that normal use never notices.
+const MESSAGES_PER_MINUTE = 12;
 
 interface InMsg {
   role: "me" | "ai";
@@ -11,10 +18,41 @@ interface InMsg {
 }
 
 // General "Ask Prepify" study assistant — a friendly helper for anything the
-// student doesn't understand. Uses the student's own Groq key.
+// student doesn't understand. Runs on the shared server key.
 export async function POST(req: Request) {
   const key = resolveGroqKey(req);
   if (!key) return NextResponse.json({ configured: false }, { status: 503 });
+
+  let userId: string | null = null;
+  if (isSupabaseConfigured()) {
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    userId = user?.id ?? null;
+
+    // The chatbot is off while the student is in a running friend challenge —
+    // checked here as well as hidden in the UI, so another tab doesn't help.
+    if (userId) {
+      const { data: busy } = await supabase.rpc("in_active_challenge");
+      if (busy === true) {
+        return NextResponse.json(
+          { error: "Prepi is switched off during a challenge. Finish your answers first — good luck!" },
+          { status: 423 },
+        );
+      }
+    }
+  }
+  const limit = checkRateLimit(callerId(req, userId), MESSAGES_PER_MINUTE);
+  if (!limit.ok) {
+    return NextResponse.json(
+      {
+        error: `Prepi is catching up with everyone right now — try again in ${limit.retryAfterSeconds}s.`,
+        rateLimited: true,
+      },
+      { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } },
+    );
+  }
 
   let body: { messages?: InMsg[] };
   try {

@@ -1,0 +1,142 @@
+{
+  "subject": "English",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "7e2430bad2af",
+      "stem": "The word \"idle\" in \"an idle afternoon\" means:",
+      "options": [
+        "busy",
+        "not working or doing nothing useful",
+        "angry",
+        "noisy"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8179e808cc1e"
+    },
+    {
+      "id": "c4487d1fd506",
+      "stem": "Choose the indirect speech of: The gardener said, \"I enjoy my work.\"",
+      "options": [
+        "The gardener said that he enjoyed his work.",
+        "The gardener said that I enjoy my work.",
+        "The gardener says that he enjoyed his work.",
+        "The gardener said that he enjoys my work."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "13f887f228b5"
+    },
+    {
+      "id": "4bb0e2387b6e",
+      "stem": "A poem of fourteen lines, such as Robert Frost's \"Mowing\", is called a:",
+      "options": [
+        "ballad",
+        "sonnet",
+        "limerick",
+        "haiku"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1c5bfceb3c2e"
+    },
+    {
+      "id": "9144aad7560a",
+      "stem": "Choose the synonym of \"sincere\":",
+      "options": [
+        "Earnest",
+        "Careless",
+        "Funny",
+        "Lazy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9a10fc7b7bf7"
+    },
+    {
+      "id": "65a49df9ac53",
+      "stem": "Choose the antonym of \"strong\":",
+      "options": [
+        "Mighty",
+        "Powerful",
+        "Feeble",
+        "Sturdy"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9643b40eb88b"
+    },
+    {
+      "id": "4b23bb9f7481",
+      "stem": "Choose the synonym of \"work\":",
+      "options": [
+        "Labour",
+        "Rest",
+        "Sleep",
+        "Play"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5eb549a5df47"
+    },
+    {
+      "id": "6133b5826472",
+      "stem": "The central message of \"Mowing\" is:",
+      "options": [
+        "the dignity of honest hard work",
+        "the excitement of city life",
+        "the value of money",
+        "the joy of travelling"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b203a53eeef9"
+    },
+    {
+      "id": "9f2ad5b9002c",
+      "stem": "In \"Mowing\", the scythe is said to \"whisper\". Giving a tool a human action like this is:",
+      "options": [
+        "personification",
+        "simile",
+        "alliteration",
+        "exaggeration"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ce4daa85cabd"
+    }
+  ]
+}

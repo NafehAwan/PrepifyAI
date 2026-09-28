@@ -1,0 +1,904 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "2a70d361ff7e",
+      "stem": "If you are in chemistry lab which device help to calculate mass",
+      "options": [
+        "Stop watch",
+        "Calculator",
+        "Physical balance",
+        "Vernier caliper"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "b5e8205d0e0e",
+      "stem": "The SI unit of luminous intensity is",
+      "options": [
+        "Newton",
+        "Kelvin",
+        "Kilogram",
+        "Candela"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "3eebba22b906",
+      "stem": "What is the name of unit written as MW",
+      "options": [
+        "Milli watt",
+        "Mega watt",
+        "Million watt",
+        "Kilowatt"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "cdb26f72bcb3",
+      "stem": "The upper jaws of vernier caliper is used to calculate",
+      "options": [
+        "Volume",
+        "Internal diameter",
+        "External diameter",
+        "Area"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "809a51256de5",
+      "stem": "The most precise device in vernier caliper and screw Gauge is",
+      "options": [
+        "Screw Gauge",
+        "Vernier caliper",
+        "Both",
+        "None"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "3628a0d0c56d",
+      "stem": "The doubts present in our measurements is known as",
+      "options": [
+        "Precision",
+        "Accuracy",
+        "Errors",
+        "Significant digits"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "e89a99c7ba52",
+      "stem": "The least count for digital stop watch is",
+      "options": [
+        "1s",
+        "0.1s",
+        "0.01s",
+        "0.001s"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "d8a1c70ea8a7",
+      "stem": "Measuring cylinder is used to calculate",
+      "options": [
+        "Length",
+        "Volume",
+        "Area",
+        "Mass"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "9f48ed2f145a",
+      "stem": "If the car is crashed in west with 30m/s the quantity is",
+      "options": [
+        "Scalar",
+        "Base",
+        "Non physical",
+        "Vector"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "5af6be11cb19",
+      "stem": "Which type of quantity momentum is",
+      "options": [
+        "Vector",
+        "Scalar",
+        "Base",
+        "Non physical"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c7a5b11664a6",
+      "stem": "Quantity that represent with letter and arrow head over it is",
+      "options": [
+        "Base",
+        "Derived",
+        "Scalar",
+        "Vector"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "58c8777d5851",
+      "stem": "The proper way to represent vectors is",
+      "options": [
+        "Sketch",
+        "Graph",
+        "Multiplication",
+        "Subtraction"
+      ],
+      "answer": null,
+      "answer_source": null,
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "rejected": "No clearly correct option: a vector is drawn as a directed line segment, and both Sketch and Graph describe that loosely."
+    },
+    {
+      "id": "9d94488ee64c",
+      "stem": "The rule used to calculate the sum of vectors is",
+      "options": [
+        "Subtraction",
+        "Graphical analysis",
+        "Head to tail rule",
+        "Cramer's rule"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "75be44190557",
+      "stem": "The frame of reference that describe the position of point or object",
+      "options": [
+        "Origin system",
+        "Coordinate system",
+        "SI system",
+        "None of these"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "2cf2f5fb27c6",
+      "stem": "A meter ruler has 100 cm divisions.Each centimeter is further subdivided into",
+      "options": [
+        "1 millimeters",
+        "10 millimeters",
+        "50 millimeters",
+        "100 millimeters"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "f33b3822a97e",
+      "stem": "You have a page and beaker which device is used to calculate thickness",
+      "options": [
+        "Vernier caliper",
+        "Screw Gauge",
+        "Meter ruler",
+        "Measuring tape"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "53a2262672b4",
+      "stem": "The prefix tera is equal to",
+      "options": [
+        "10¹²",
+        "10¹⁰",
+        "10¹⁵",
+        "10¹⁶"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "5b924310cfb3",
+      "stem": "We use measuring cylinder to calculate volume. Which method is used in it?",
+      "options": [
+        "Head to tail",
+        "Displacement",
+        "Scalar",
+        "Significant digits"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "a6d3e760a028",
+      "stem": "Measured and exact values are the types of",
+      "options": [
+        "Measurements",
+        "Scalar",
+        "Errors",
+        "Vectors"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
+      "answer_confidence": "low"
+    },
+    {
+      "id": "63612ba6011a",
+      "stem": "Which type of error is removed by calibration of an instrument",
+      "options": [
+        "Random",
+        "Systematic",
+        "Personal",
+        "External"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "3447578fffe4",
+      "stem": "For scientific notation international accepted practice is that their should be how many digits before the decimal point",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "One"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "50e62f2afb5c",
+      "stem": "The term used internationally for multiples and submultiples of various units are known as",
+      "options": [
+        "Standard",
+        "Scientific notation",
+        "Prefixes",
+        "All of above"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "2a0fdc298ab3",
+      "stem": "Separation between division on the vernier scale of vernier caliper is",
+      "options": [
+        "1cm",
+        "1mm",
+        "0.9mm",
+        "All of them"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "486a5f83d379",
+      "stem": "Which type of error is often described as 'bias'",
+      "options": [
+        "Random",
+        "Systematic",
+        "Measurement",
+        "Human"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
+    },
+    {
+      "id": "c3e18b647b2e",
+      "stem": "Which quantity is largest?",
+      "options": [
+        "5 mm",
+        "5000 μm",
+        "0.005 m",
+        "All are equal"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "bca1a6548740",
+      "stem": "Which reading has four significant figures?",
+      "options": [
+        "0.0205",
+        "2.05",
+        "205",
+        "20.50"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "7e3593634563",
+      "stem": "This means it can measure:",
+      "options": [
+        "Only whole millimetres",
+        "Up to 0.1 mm",
+        "Up to 0.01 mm",
+        "Up to 1 mm"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "b167de7020d3",
+      "stem": "The volume of the stone is:",
+      "options": [
+        "15 cm³",
+        "40 cm³",
+        "55 cm³",
+        "95 cm³"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "694a91744839",
+      "stem": "To reduce random error, he should:",
+      "options": [
+        "Measure one oscillation only.",
+        "Measure many oscillations and find the average.",
+        "Use a larger pendulum.",
+        "Use a ruler."
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "65e5d63bbf7c",
+      "stem": "A scale always shows 0.2 kg more than the true value. This is an example of:",
+      "options": [
+        "Random error",
+        "Systematic error",
+        "Human error",
+        "Percentage error"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "85507b0ba132",
+      "stem": "How many base SI units are there?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "36a561420846",
+      "stem": "Round off 5.886 to two decimal places.",
+      "options": [
+        "5.87",
+        "5.89",
+        "5.80",
+        "5.90"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "a0770e87795a",
+      "stem": "A screw gauge is more precise than a vernier caliper because it has:",
+      "options": [
+        "greater size",
+        "more scales",
+        "smaller least count",
+        "longer spindle"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "e6c623a91033",
+      "stem": "A reading is written as 8.05 cm. Which digit is uncertain according to the idea of significant figures?",
+      "options": [
+        "8",
+        "5",
+        "0",
+        "All digits equally"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "ed2a7f170076",
+      "stem": "Which instrument is most suitable for measuring the internal diameter of a hollow tube?",
+      "options": [
+        "Measuring tape",
+        "Meter rule",
+        "Vernier caliper",
+        "Stopwatch"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "e4473686cd25",
+      "stem": "Which pair contains one scalar and one vector quantity?",
+      "options": [
+        "Speed and velocity",
+        "Force and weight",
+        "Distance and time",
+        "Mass and energy"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "f86564e3a80f",
+      "stem": "The number 3.45 × 10⁷ contains:",
+      "options": [
+        "7 significant figures",
+        "3 significant figures",
+        "2 significant figures",
+        "45 significant figures"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "212356466f6e",
+      "stem": "Its diameter in millimeters is:",
+      "options": [
+        "0.2 mm",
+        "2 mm",
+        "20 mm",
+        "200 mm"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "b6080be9e37b",
+      "stem": "The value 5 × 10⁶ m can be written as:",
+      "options": [
+        "5 km",
+        "5 Mm",
+        "5 μm",
+        "5 nm"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "7213464ab3b6",
+      "stem": "The number 0.00072 is written in scientific notation as:",
+      "options": [
+        "7.2 × 10⁻⁵",
+        "7.2 × 10⁻⁴",
+        "72 × 10⁻⁵",
+        "0.72 × 10⁻³"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "e35a41bab742",
+      "stem": "A student writes 56000 = 5.6 × 10⁻⁴. What is wrong?",
+      "options": [
+        "The coefficient is wrong.",
+        "The power of 10 should be positive.",
+        "Scientific notation cannot be used.",
+        "Nothing is wrong."
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "5a03e9031f5c",
+      "stem": "Which of the following is a physical quantity?",
+      "options": [
+        "Honesty",
+        "Happiness",
+        "Intelligence",
+        "Length"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "e0d6ffd19939",
+      "stem": "A measurement without a unit is:",
+      "options": [
+        "Complete",
+        "Incomplete",
+        "Accurate",
+        "Precise"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "607d1dde7e6f",
+      "stem": "This quantity is most likely:",
+      "options": [
+        "Base quantity",
+        "Derived quantity",
+        "Non-physical quantity",
+        "Fundamental quantity"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "2f6802e6fbdd",
+      "stem": "Which part of the measurement changes when the same length is expressed in cm instead of m?",
+      "options": [
+        "Unit only",
+        "Numerical magnitude only",
+        "Both magnitude and unit",
+        "Neither"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "5b3b58e01611",
+      "stem": "A measurement is meaningful only when:",
+      "options": [
+        "It has a large numerical value.",
+        "It has a unit.",
+        "It has a numerical magnitude and a unit.",
+        "It has direction."
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "07ffba4c57d3",
+      "stem": "In vector addition, the tail of the second vector is joined to the:",
+      "options": [
+        "Tail of first vector",
+        "Head of first vector",
+        "Midpoint of first vector",
+        "Origin"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "6dad38c704a4",
+      "stem": "The length of a vector arrow represents its:",
+      "options": [
+        "direction",
+        "unit",
+        "magnitude",
+        "position"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "1f8b1a043032",
+      "stem": "Which one of the following has SI unit m²?",
+      "options": [
+        "area",
+        "volume",
+        "speed",
+        "density"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "074ebf192d75",
+      "stem": "The least count of a measuring instrument tells us:",
+      "options": [
+        "its length",
+        "its maximum reading",
+        "the smallest measurement it can measure",
+        "its weight"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "56ff49232b83",
+      "stem": "Which instrument is most suitable for measuring the thickness of a sheet of paper?",
+      "options": [
+        "Measuring tape",
+        "Screw gauge",
+        "Vernier caliper",
+        "Stopwatch"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "411540de471e",
+      "stem": "A measurement taken with a vernier caliper is 6.24 cm. If the main scale reading is 6.2 cm, the coinciding vernier division is:",
+      "options": [
+        "2nd",
+        "4th",
+        "24th",
+        "6th"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "fc871e622035",
+      "stem": "If the zero of the vernier scale is to the right of the zero of the main scale, the zero error is",
+      "options": [
+        "Positive",
+        "Negative",
+        "infinite",
+        "zero"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "198c063e0fa2",
+      "stem": "Which one of the following is NOT a derived unit?",
+      "options": [
+        "pascal",
+        "μm (micrometer)",
+        "joule",
+        "Newton"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "930bafc0e6b2",
+      "stem": "Arrange the following SI prefixes in increasing order of magnitude: Pico, Nano, Milli, Micro",
+      "options": [
+        "Milli, Micro, Nano, Pico",
+        "Pico, Nano, Micro, Milli",
+        "Nano, Pico, Micro, Milli",
+        "Micro, Milli, Nano, Pico"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    },
+    {
+      "id": "44d115ed2575",
+      "stem": "What is the \"head-to-tail rule\" used for?",
+      "options": [
+        "Subtracting vectors",
+        "Multiplying vectors",
+        "Adding vectors",
+        "Finding the magnitude of a single vector"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Phy-Unit 1 MCQS.docx"
+    }
+  ]
+}

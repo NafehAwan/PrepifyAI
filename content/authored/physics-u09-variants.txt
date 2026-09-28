@@ -1,0 +1,15 @@
+# subject: Physics
+# chapter: 9
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The study of light and how it behaves is called: | acoustics | optics | geology | astronomy | B | e v:50c76c19abdc
+Using physics to study the Earth's interior and earthquakes is called: | geophysics | biophysics | astrophysics | acoustics | A | v:1b83f56baab7
+A tested explanation that has been supported by many experiments over time becomes a: | guess | theory | hypothesis only | opinion | B | v:64b53074a5f6
+Which of these is a quantitative observation? | The liquid is blue | The metal is shiny | The rod is 25 cm long | The smell is strong | C | h v:d68fcd857444
+A student tests how the height of a ramp affects a ball's speed. The speed measured is the: | independent variable | dependent variable | controlled variable | constant | B | s v:62765160fbb5
+Solar panels that turn sunlight into electricity show the link between physics and: | technology | poetry | history | sport | A | s e v:e0b5ef49c503
+Earlier ideas in science are sometimes changed because: | new evidence can improve or correct them | scientists enjoy changing them | science has no rules | old books are lost | A | v:c5df98cdd10d
+The study of heat and its conversion into other forms of energy is: | thermodynamics | optics | acoustics | electronics | A | v:2b536b7871ec

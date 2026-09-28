@@ -1,0 +1,125 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "5a3906979245",
+      "stem": "Which scientist discovered the neutron?",
+      "options": [
+        "Thomson",
+        "Chadwick",
+        "Rutherford",
+        "Dalton"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "af15e1f36f60"
+    },
+    {
+      "id": "cc8e540a1499",
+      "stem": "Which scientist proposed the nuclear model of the atom after the gold-foil experiment?",
+      "options": [
+        "Dalton",
+        "Thomson",
+        "Rutherford",
+        "Bohr"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7b1344020967"
+    },
+    {
+      "id": "b83a56207845",
+      "stem": "An electron falls from the third shell back to the first shell. According to Bohr's theory, it:",
+      "options": [
+        "absorbs energy",
+        "releases energy",
+        "gains mass",
+        "loses its charge"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d8ddab8db7ed"
+    },
+    {
+      "id": "bd5c2db4857d",
+      "stem": "In an electric field, a beam of neutrons:",
+      "options": [
+        "bends towards the positive plate",
+        "bends towards the negative plate",
+        "passes straight through",
+        "stops completely"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cfe19fb153ba"
+    },
+    {
+      "id": "7b6a817f22cd",
+      "stem": "The mass of a proton is about the same as the mass of a:",
+      "options": [
+        "neutron",
+        "electron",
+        "photon",
+        "positron only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "44264e75721f"
+    },
+    {
+      "id": "94c24097a95a",
+      "stem": "The number of protons in an atom is called its:",
+      "options": [
+        "mass number",
+        "atomic number",
+        "neutron number",
+        "valency"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "46d1d0bfa7eb"
+    },
+    {
+      "id": "86417bfcb6c4",
+      "stem": "Both Rutherford's and Bohr's atomic models include:",
+      "options": [
+        "electrons embedded in a positive sphere",
+        "a small, dense central nucleus",
+        "no electrons",
+        "atoms that cannot be divided"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "47b55ca89314"
+    }
+  ]
+}

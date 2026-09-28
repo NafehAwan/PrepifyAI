@@ -1,0 +1,159 @@
+{
+  "subject": "English",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "ab3653395a5d",
+      "stem": "Choose the noun related to \"generous\":",
+      "options": [
+        "Generously",
+        "Generosity",
+        "General",
+        "Generate"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1e98c9a0aabd"
+    },
+    {
+      "id": "cb6cfbdbb1c3",
+      "stem": "Which sentence expresses thanks?",
+      "options": [
+        "I am so grateful for your help.",
+        "Go away.",
+        "I don't mind.",
+        "Who asked you?"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f7a1211a9b76"
+    },
+    {
+      "id": "fa9f70cd2243",
+      "stem": "Choose the synonym of \"love\":",
+      "options": [
+        "Affection",
+        "Hatred",
+        "Anger",
+        "Envy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a98895b4a04f"
+    },
+    {
+      "id": "74869b3752ed",
+      "stem": "Choose the antonym of \"selfish\":",
+      "options": [
+        "Greedy",
+        "Mean",
+        "Selfless",
+        "Proud"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "361d828c1764"
+    },
+    {
+      "id": "c5902a00640a",
+      "stem": "Choose the antonym of \"forget\":",
+      "options": [
+        "Ignore",
+        "Lose",
+        "Remember",
+        "Neglect"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "216809873a8e"
+    },
+    {
+      "id": "e5710715e6ba",
+      "stem": "The feeling that runs through \"Two Mothers Remembered\" is one of:",
+      "options": [
+        "gratitude and love",
+        "anger",
+        "fear",
+        "jealousy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cebb13ce1f3e"
+    },
+    {
+      "id": "a71f000dca55",
+      "stem": "Choose the indirect speech of: He said, \"I will always help you.\"",
+      "options": [
+        "He said that he would always help me.",
+        "He said that I will always help you.",
+        "He says that he would always help me.",
+        "He said that he will always helped me."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2ac39a323428"
+    },
+    {
+      "id": "bdf7430619bc",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "A father's care are precious.",
+        "A father's care is precious.",
+        "A father's care be precious.",
+        "A father's care were precious."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fa13d229dd58"
+    },
+    {
+      "id": "7196df433790",
+      "stem": "A boy writes to his grandmother, \"I can never repay your kindness.\" Here \"repay\" means:",
+      "options": [
+        "pay back",
+        "take away",
+        "borrow",
+        "forget"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "540955e3a495"
+    }
+  ]
+}

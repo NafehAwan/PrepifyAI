@@ -1,0 +1,176 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 15,
+  "questions": [
+    {
+      "id": "6840734d21fc",
+      "stem": "Table sugar (sucrose) is made of two sugar units joined together. It is a:",
+      "options": [
+        "monosaccharide",
+        "disaccharide",
+        "polysaccharide",
+        "protein"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bc0c5d90c846"
+    },
+    {
+      "id": "c4fbed953d5f",
+      "stem": "Rice, bread and potatoes are rich in starch, which is a:",
+      "options": [
+        "monosaccharide",
+        "disaccharide",
+        "polysaccharide",
+        "lipid"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9812bb7eefce"
+    },
+    {
+      "id": "dfe6a0705760",
+      "stem": "A food sample turns violet when biuret reagent is added. It contains:",
+      "options": [
+        "starch",
+        "protein",
+        "fat",
+        "glucose"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6580adf62e98"
+    },
+    {
+      "id": "e0d7add4e3c4",
+      "stem": "A sample of fruit juice turns Benedict's solution brick-red on heating. It contains:",
+      "options": [
+        "a reducing sugar such as glucose",
+        "starch only",
+        "protein",
+        "fat"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "0c90a03e6c0d"
+    },
+    {
+      "id": "76b1b9a5b99a",
+      "stem": "Children who get little sunlight and no milk may develop soft, bent bones. This disease is:",
+      "options": [
+        "scurvy",
+        "rickets",
+        "goitre",
+        "night blindness"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cfb5a29b47a6"
+    },
+    {
+      "id": "cad280a45d71",
+      "stem": "Bleeding gums caused by a lack of fresh fruit and vegetables is the disease:",
+      "options": [
+        "scurvy",
+        "rickets",
+        "anaemia",
+        "beriberi"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "70a0062721ec"
+    },
+    {
+      "id": "fc4b9c931291",
+      "stem": "Amino acids join together to form:",
+      "options": [
+        "carbohydrates",
+        "proteins",
+        "fats",
+        "vitamins"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7db0b34b1b1b"
+    },
+    {
+      "id": "d39e9ea40028",
+      "stem": "Athletes eat pasta before a race because carbohydrates mainly:",
+      "options": [
+        "provide energy",
+        "repair bones",
+        "carry genes",
+        "fight infection"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "17a60bffe2c0"
+    },
+    {
+      "id": "6c369cf68524",
+      "stem": "Milk sugar is called:",
+      "options": [
+        "sucrose",
+        "lactose",
+        "starch",
+        "cellulose"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ea2fac1bdf22"
+    },
+    {
+      "id": "6479491efd26",
+      "stem": "Heating an enzyme to 90 °C destroys its shape so it stops working. The enzyme has been:",
+      "options": [
+        "denatured",
+        "activated",
+        "multiplied",
+        "frozen"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 15,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cb98634875d7"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "7e52c585aecd",
+      "stem": "The study of light and how it behaves is called:",
+      "options": [
+        "acoustics",
+        "optics",
+        "geology",
+        "astronomy"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "50c76c19abdc"
+    },
+    {
+      "id": "b39f2fa7d0b6",
+      "stem": "Using physics to study the Earth's interior and earthquakes is called:",
+      "options": [
+        "geophysics",
+        "biophysics",
+        "astrophysics",
+        "acoustics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1b83f56baab7"
+    },
+    {
+      "id": "36625090101a",
+      "stem": "A tested explanation that has been supported by many experiments over time becomes a:",
+      "options": [
+        "guess",
+        "theory",
+        "hypothesis only",
+        "opinion"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "64b53074a5f6"
+    },
+    {
+      "id": "d83511409a85",
+      "stem": "Which of these is a quantitative observation?",
+      "options": [
+        "The liquid is blue",
+        "The metal is shiny",
+        "The rod is 25 cm long",
+        "The smell is strong"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d68fcd857444"
+    },
+    {
+      "id": "971ff7d0db03",
+      "stem": "A student tests how the height of a ramp affects a ball's speed. The speed measured is the:",
+      "options": [
+        "independent variable",
+        "dependent variable",
+        "controlled variable",
+        "constant"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "62765160fbb5"
+    },
+    {
+      "id": "8e4f551fb05c",
+      "stem": "Solar panels that turn sunlight into electricity show the link between physics and:",
+      "options": [
+        "technology",
+        "poetry",
+        "history",
+        "sport"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e0b5ef49c503"
+    },
+    {
+      "id": "9d85684bb69e",
+      "stem": "Earlier ideas in science are sometimes changed because:",
+      "options": [
+        "new evidence can improve or correct them",
+        "scientists enjoy changing them",
+        "science has no rules",
+        "old books are lost"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c5df98cdd10d"
+    },
+    {
+      "id": "c50517435221",
+      "stem": "The study of heat and its conversion into other forms of energy is:",
+      "options": [
+        "thermodynamics",
+        "optics",
+        "acoustics",
+        "electronics"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2b536b7871ec"
+    }
+  ]
+}

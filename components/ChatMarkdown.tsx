@@ -6,6 +6,7 @@
 // raw asterisks. Also supports a `limit` (visible character count) so the text
 // can be revealed with a typewriter effect without ever flashing markup.
 
+import { memo } from "react";
 import { C } from "@/lib/theme";
 
 type Seg = { t: "text" | "b" | "i" | "code"; s: string };
@@ -90,7 +91,9 @@ function renderSegs(segs: Seg[], budget: { n: number }, keyBase: string): React.
   return out;
 }
 
-export function ChatMarkdown({ text, limit }: { text: string; limit?: number }) {
+// Memoised: during the typewriter reveal the widget re-renders on every tick,
+// and without this every settled message re-parsed its markdown each time.
+export const ChatMarkdown = memo(function ChatMarkdown({ text, limit }: { text: string; limit?: number }) {
   const blocks = parse(text);
   const budget = { n: limit ?? Number.POSITIVE_INFINITY };
   const out: React.ReactNode[] = [];
@@ -133,7 +136,7 @@ export function ChatMarkdown({ text, limit }: { text: string; limit?: number }) 
     }
   }
   return <>{out}</>;
-}
+});
 
 // Plain-text length of a reply (used to time the typewriter reveal).
 export function plainLength(md: string): number {

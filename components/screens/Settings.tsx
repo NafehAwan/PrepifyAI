@@ -6,14 +6,17 @@ import { C, pill } from "@/lib/theme";
 import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
 import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
+import { OFFERED_SUBJECTS } from "@/lib/data";
 import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
+import { useReducedMotion, setReducedMotion } from "@/lib/motion";
 import type { AppState } from "@/lib/types";
 
-const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
+const ALL_SUBJECTS = OFFERED_SUBJECTS;
 
 export function Settings() {
   const { s, set, patch } = useApp();
   const muted = useMuted();
+  const reduceMotion = useReducedMotion();
 
   // Apply a change locally and persist it (persist is a no-op in demo mode).
   const saveProfile = (partial: Partial<AppState>) => {
@@ -74,13 +77,6 @@ export function Settings() {
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
         <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Study preferences</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <Row title="Study mode" desc="Guided locks topics until mastered. Free roam opens everything.">
-            <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
-              <button onClick={() => saveProfile({ mode: "guided" })} style={pill(s.mode === "guided")}>Guided</button>
-              <button onClick={() => saveProfile({ mode: "free" })} style={pill(s.mode === "free")}>Free roam</button>
-            </div>
-          </Row>
-          <Divider />
           <Row title="Language" desc="Tutor explanations and feedback follow this. Textbook stays in the board's language.">
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
               <button onClick={() => saveProfile({ lang: "EN" })} style={pill(s.lang === "EN")}>English</button>
@@ -99,16 +95,69 @@ export function Settings() {
           <Row title="Sound effects" desc="Little chimes when you answer questions and pass a quiz.">
             <Toggle on={!muted} onClick={() => { const nextMuted = !muted; setMuted(nextMuted); if (!nextMuted) sfxCorrect(); }} />
           </Row>
+          <Divider />
+          <Row title="Reduce animations" desc="Turn off Prepi's movement and screen transitions. Try this if the app feels slow on your computer.">
+            <Toggle on={reduceMotion} onClick={() => setReducedMotion(!reduceMotion)} />
+          </Row>
         </div>
       </div>
     </div>
   );
 }
 
-// "Bring your own key" card: paste a free Groq key, test it, and learn how to
-// get one. The key is stored only in this browser and powers the AI tutor +
-// examiner. Without it the app falls back to canned responses.
+// Prepify runs on one shared server key, so the normal card is a read-only
+// "AI is ready" note. The bring-your-own-key form below is only shown when the
+// server has no key — a local dev build, or before the owner has set one.
 function ConnectAI() {
+  const { s } = useApp();
+  return s.aiConfigured ? <AiReady /> : <BringYourOwnKey />;
+}
+
+function AiReady() {
+  const [testing, setTesting] = useState(false);
+  const [result, setResult] = useState<{ ok: boolean; msg: string } | null>(null);
+
+  const test = async () => {
+    setTesting(true);
+    setResult(null);
+    try {
+      const res = await fetch("/api/ai/ping", { method: "POST", headers: { "Content-Type": "application/json" } });
+      const data = (await res.json()) as { ok?: boolean; model?: string; error?: string };
+      if (res.ok && data.ok) setResult({ ok: true, msg: `Working — model ${data.model}.` });
+      else setResult({ ok: false, msg: data.error || "The AI service didn't respond. Try again in a moment." });
+    } catch {
+      setResult({ ok: false, msg: "Couldn't reach the AI service. Check your connection." });
+    }
+    setTesting(false);
+  };
+
+  return (
+    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+        <div style={{ fontWeight: 700, fontSize: 16 }}>Ask Prepify</div>
+        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sageT, color: C.sageD }}>
+          ✓ Ready
+        </span>
+      </div>
+      <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 16 }}>
+        The AI chatbot is set up for you — nothing to connect. Tap the chat bubble any time you&apos;re stuck on a question.
+        Your tests don&apos;t use the AI at all: they come from the real question bank, so they always work.
+      </div>
+      <button onClick={test} disabled={testing} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing ? 0.6 : 1 }}>
+        {testing ? "Checking…" : "Check it's working"}
+      </button>
+      {result && (
+        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginTop: 12, background: result.ok ? C.sageT : "#fdf1e6", color: result.ok ? C.sageD : C.accentD }}>
+          {result.ok ? "✓ " : "✕ "}{result.msg}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// "Bring your own key" card: paste a free Groq key, test it, and learn how to
+// get one. Only reachable when the server has no shared key.
+function BringYourOwnKey() {
   const { s, setGroqKey } = useApp();
   const [draft, setDraft] = useState(s.groqKey);
   const [show, setShow] = useState(false);

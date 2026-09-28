@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { buildDiagnostic } from "@/lib/data";
+import { buildDiagnostic, OFFERED_SUBJECTS } from "@/lib/data";
 import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
 import { LogoMark } from "./Logo";
 
@@ -11,7 +11,7 @@ const CLASSES: ReadonlyArray<readonly [string, string]> = [
   ["9th", "Matric part I"],
 ];
 
-const ALL_SUBJECTS = ["Physics", "Chemistry", "Computer Science", "English"];
+const ALL_SUBJECTS = OFFERED_SUBJECTS;
 
 const STEP_LABELS = ["Name", "Class", "Subjects", "Exam date", "Connect AI", "Placement"];
 const LAST = STEP_LABELS.length; // 6
@@ -36,7 +36,7 @@ export function Onboarding() {
     void persistName(s.userName);
     void persistProfile(s);
     void persistEnrollments(s);
-    go("home");
+    go(s.activeChallengeCode ? "challengeRoom" : "home");
   };
   const back = () => set("ob", Math.max(1, s.ob - 1));
   const next = () => {
@@ -50,7 +50,7 @@ export function Onboarding() {
   const nextDisabled =
     (s.ob === 1 && s.userName.trim().length === 0) ||
     (s.ob === 3 && s.subs.length === 0) ||
-    (s.ob === AI_STEP && keyDraft.trim().length === 0 && s.groqKey.length === 0);
+    (s.ob === AI_STEP && !s.aiConfigured && keyDraft.trim().length === 0 && s.groqKey.length === 0);
   const nextLabel = s.ob === LAST ? (s.dq >= diag.length ? "Go to my dashboard →" : "Skip diagnostic") : "Continue →";
 
   return (
@@ -73,7 +73,7 @@ export function Onboarding() {
                 Let&apos;s set up<br />your board year.
               </div>
               <div style={{ color: C.muted, fontSize: 14, marginBottom: 28, maxWidth: 250 }}>
-                A few quick steps. We&apos;ll pull the exact FBISE textbooks for your subjects and build a plan around your paper date.
+                A few quick steps, then you can start taking tests on your real FBISE syllabus.
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {STEP_LABELS.map((label, i) => {
@@ -127,7 +127,7 @@ export function Onboarding() {
               {s.ob === 2 && (
                 <>
                   <H>Which class are you in?</H>
-                  <Sub>We load the exact FBISE textbooks and past papers for that year.</Sub>
+                  <Sub>Your questions come from the real FBISE syllabus for that year.</Sub>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
                     {CLASSES.map(([name, sub]) => {
                       const on = s.cls === name;
@@ -168,7 +168,7 @@ export function Onboarding() {
                       <path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" />
                     </svg>
                     <div style={{ fontSize: 13.5, color: C.sageD, lineHeight: 1.45 }}>
-                      For each subject Prepify fetches the full FBISE textbook, chapter by chapter, plus the last 8 years of board papers — so the tutor answers from <em>your</em> book, not the internet.
+                      Every subject has a bank of real FBISE-style MCQs, unit by unit — including the scenario questions the board actually asks. Your tests are drawn from <em>your</em> syllabus, not the internet.
                     </div>
                   </div>
                 </>
@@ -194,7 +194,22 @@ export function Onboarding() {
                 </>
               )}
 
-              {s.ob === AI_STEP && (
+              {s.ob === AI_STEP && s.aiConfigured && (
+                <>
+                  <H>Your AI study buddy is ready</H>
+                  <Sub>Nothing to set up — Prepi is already connected. Ask it anything you&apos;re stuck on, any time, from the chat bubble in the corner.</Sub>
+                  <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
+                    <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>What Prepi is good at</div>
+                    <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#3a4327", lineHeight: 1.5 }}>
+                      <li>Explaining a question you got wrong, in simple words.</li>
+                      <li>Breaking down a formula or a definition step by step.</li>
+                      <li>Answering &quot;why is the answer C?&quot; after a test.</li>
+                    </ul>
+                  </div>
+                </>
+              )}
+
+              {s.ob === AI_STEP && !s.aiConfigured && (
                 <>
                   <H>Connect your AI tutor</H>
                   <Sub>Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it&apos;s required to set up.</Sub>
@@ -257,7 +272,7 @@ export function Onboarding() {
                       </div>
                       <div style={{ fontFamily: "Caprasimo", fontSize: 28, marginBottom: 6 }}>You&apos;re all set</div>
                       <div style={{ color: C.muted, maxWidth: 440, margin: "0 auto 22px" }}>
-                        We&apos;ll start you at a comfortable level in each subject and adjust the difficulty as you go. Your plan begins with your weakest topics.
+                        This just gives us a starting point. You pick the difficulty on every test anyway — easy all the way to hard.
                       </div>
                       <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
                         {s.subs.slice(0, 6).map((name) => (

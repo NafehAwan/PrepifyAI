@@ -1,0 +1,502 @@
+{
+  "subject": "English",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "34e0fb56ae45",
+      "stem": "The Brooklyn Bridge connects Brooklyn with:",
+      "options": [
+        "Manhattan",
+        "Queens",
+        "New Jersey",
+        "Staten Island"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "74f27cdf5fe7",
+      "stem": "The Brooklyn Bridge crosses the:",
+      "options": [
+        "Hudson River",
+        "East River",
+        "Thames",
+        "Mississippi"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "17147c3a102f",
+      "stem": "The engineer who first designed the Brooklyn Bridge was:",
+      "options": [
+        "Washington Roebling",
+        "John A. Roebling",
+        "Emily Roebling",
+        "Thomas Edison"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "b9791cbb8558",
+      "stem": "After John Roebling's death, the work was continued by his son:",
+      "options": [
+        "Washington Roebling",
+        "George Roebling",
+        "Henry Roebling",
+        "James Roebling"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "8acb646f03c5",
+      "stem": "Emily Roebling is remembered because she:",
+      "options": [
+        "helped her injured husband complete the bridge",
+        "designed the Eiffel Tower",
+        "was the first mayor of New York",
+        "opposed the bridge"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "2faa0a6dc5d7",
+      "stem": "The Brooklyn Bridge is a:",
+      "options": [
+        "suspension bridge",
+        "wooden footbridge",
+        "floating bridge",
+        "drawbridge"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "298cd041143c",
+      "stem": "The Brooklyn Bridge was opened in:",
+      "options": [
+        "1783",
+        "1883",
+        "1933",
+        "1983"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "8223131e0778",
+      "stem": "The main lesson of the story \"Nothing is Impossible\" is that:",
+      "options": [
+        "determination can overcome great obstacles",
+        "bridges are dangerous",
+        "engineers should give up",
+        "rivers cannot be crossed"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "2a60fb31ac9e",
+      "stem": "Choose the synonym of \"spectacular\":",
+      "options": [
+        "Ordinary",
+        "Impressive",
+        "Tiny",
+        "Dull"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "b39eba87829b",
+      "stem": "Choose the antonym of \"possible\":",
+      "options": [
+        "Probable",
+        "Likely",
+        "Impossible",
+        "Easy"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "f9fd29960b0d",
+      "stem": "Choose the correct spelling:",
+      "options": [
+        "Perseverance",
+        "Perseverence",
+        "Persevarance",
+        "Perserverance"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "091f9dd307f4",
+      "stem": "In \"The bridge was completed after many years\", the verb phrase is in the:",
+      "options": [
+        "active voice",
+        "passive voice",
+        "imperative mood",
+        "future tense"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "d29a67f4ef55",
+      "stem": "Choose the passive voice of \"Workers built the towers.\":",
+      "options": [
+        "The towers are built by workers.",
+        "The towers were built by workers.",
+        "The towers have been built by workers.",
+        "The towers were building by workers."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "7acf8261af41",
+      "stem": "Although badly injured, Washington Roebling kept guiding the project from his room. Which quality does this show?",
+      "options": [
+        "Determination",
+        "Laziness",
+        "Fear",
+        "Carelessness"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "bd7c34d6319d",
+      "stem": "Choose the synonym of \"obstacle\":",
+      "options": [
+        "Hurdle",
+        "Help",
+        "Reward",
+        "Path"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "c6aa58f9af61",
+      "stem": "Fill in the blank: The engineers did not give ___ despite many problems.",
+      "options": [
+        "in",
+        "up",
+        "out",
+        "off"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "cd73a2a6b25a",
+      "stem": "In \"The determined engineer never quit\", the word \"determined\" is:",
+      "options": [
+        "a noun",
+        "a verb",
+        "an adjective",
+        "an adverb"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "c257d82d91ec",
+      "stem": "Choose the correct sentence:",
+      "options": [
+        "Nothing are impossible.",
+        "Nothing is impossible.",
+        "Nothing be impossible.",
+        "Nothing were impossible."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "fc6e318a17d0",
+      "stem": "Choose the indirect speech of: The engineer said, \"We can build it.\"",
+      "options": [
+        "The engineer said that they could build it.",
+        "The engineer said that we can build it.",
+        "The engineer says that they could build it.",
+        "The engineer said that they can built it."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "c45dc0a295ba",
+      "stem": "Which sentence is in the past continuous tense?",
+      "options": [
+        "They built a bridge.",
+        "They were building a bridge.",
+        "They have built a bridge.",
+        "They build a bridge."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "459f90e3f433",
+      "stem": "Many people laughed at the idea of the bridge, but the Roeblings believed in it. This shows the Roeblings had:",
+      "options": [
+        "a strong vision",
+        "no plan",
+        "weak confidence",
+        "little interest"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "463548f2d9b0",
+      "stem": "Choose the correct article: It was ___ unique project in history.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "9be6a7ec878f",
+      "stem": "Choose the antonym of \"courage\":",
+      "options": [
+        "Bravery",
+        "Fear",
+        "Boldness",
+        "Valour"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "6c850df0013b",
+      "stem": "The suffix in \"achievement\" turns the verb \"achieve\" into a:",
+      "options": [
+        "noun",
+        "adjective",
+        "adverb",
+        "verb"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "6add08eb102e",
+      "stem": "Choose the synonym of \"persistent\":",
+      "options": [
+        "Unwilling",
+        "Determined",
+        "Careless",
+        "Weak"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "e00aadcae012",
+      "stem": "Fill in the blank: The bridge is famous ___ its beautiful design.",
+      "options": [
+        "at",
+        "for",
+        "with",
+        "by"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "8c5c14cf9022",
+      "stem": "Choose the correctly punctuated sentence:",
+      "options": [
+        "The bridge, which opened in 1883, is still in use.",
+        "The bridge which opened in 1883, is still in use.",
+        "The bridge, which opened in 1883 is still in use.",
+        "The bridge which, opened in 1883 is still in use."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "9f9ca9c3659b",
+      "stem": "Which word is an adverb?",
+      "options": [
+        "Careful",
+        "Carefully",
+        "Care",
+        "Caring"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "e92dcd5150ca",
+      "stem": "If someone tells you a task is \"impossible\" and you keep trying until you succeed, you are proving that:",
+      "options": [
+        "hard work and patience can make the impossible possible",
+        "trying is useless",
+        "others are always right",
+        "success comes without effort"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "3dc6730c691f",
+      "stem": "Choose the plural of \"bridge\":",
+      "options": [
+        "bridgs",
+        "bridges",
+        "bridgies",
+        "bridgez"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    },
+    {
+      "id": "c39023ce684d",
+      "stem": "Choose the correct form: If they had given up, the bridge ___ never been built.",
+      "options": [
+        "will have",
+        "would have",
+        "has",
+        "had"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Written for Prepify from the FBISE Class 9 English syllabus (Unit 4)"
+    }
+  ]
+}
