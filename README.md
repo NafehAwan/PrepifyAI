@@ -13,6 +13,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/login/` | Email/password sign in / sign up UI + server actions |
 | `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
+| `supabase/challenges.sql` | Friend challenges: tables with no RLS policies plus the security-definer functions that are the only way in (re-runnable) |
 | `content/physics-9.curriculum.json` | Curriculum JSON seed — Physics IX chapters + topics + textbook text (tests are generated from that text at runtime, not pre-seeded) |
 | `scripts/seed.mjs` | Loads the curriculum into Supabase (`npm run seed`) |
 | `Prepify AI.dc.html` | The original design prototype this app reproduces |
@@ -39,7 +40,7 @@ npm run seed       # load the curriculum into Supabase (needs env, see below)
 The app has real email/password auth and persists your profile. To turn it on:
 
 1. Create a Supabase project.
-2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper).
+2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper), then `supabase/challenges.sql` for friend challenges.
 3. Copy `.env.local.example` → `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY`.
 4. `npm run seed` to load the Physics IX curriculum (also creates all nine subject rows so enrolments resolve).
 5. For the smoothest local dev, disable “Confirm email” in Supabase → Authentication → Providers → Email (otherwise new sign-ups must confirm before signing in).

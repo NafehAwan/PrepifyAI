@@ -4,7 +4,7 @@ import { LogoMark } from "@/components/Logo";
 import { C } from "@/lib/theme";
 import Link from "next/link";
 
-export default function LoginPage({ searchParams }: { searchParams?: { error?: string } }) {
+export default function LoginPage({ searchParams }: { searchParams?: { error?: string; next?: string } }) {
   const configured = isSupabaseConfigured();
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 24, background: C.bg }}>
@@ -14,7 +14,7 @@ export default function LoginPage({ searchParams }: { searchParams?: { error?: s
       </div>
 
       {configured ? (
-        <LoginForm initialError={searchParams?.error} />
+        <LoginForm initialError={searchParams?.error} next={searchParams?.next} />
       ) : (
         <div style={{ maxWidth: 460, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 30, textAlign: "center" }}>
           <div style={{ fontFamily: "Caprasimo", fontSize: 22, marginBottom: 8 }}>Running in demo mode</div>

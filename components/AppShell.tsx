@@ -18,6 +18,8 @@ import { Subjects } from "./screens/Subjects";
 import { SubjectTests } from "./screens/SubjectTests";
 import { NewTest } from "./screens/NewTest";
 import { TestRunner } from "./TestRunner";
+import { NewChallenge } from "./screens/NewChallenge";
+import { ChallengeRoom } from "./ChallengeRoom";
 import { Progress } from "./screens/Progress";
 import { Settings } from "./screens/Settings";
 
@@ -34,7 +36,7 @@ export function AppShell() {
 
   // "My Subjects" stays highlighted through the whole test flow, which lives
   // underneath it.
-  const SUBJECT_FLOW = ["subjectTests", "newTest", "testRun", "testReview"];
+  const SUBJECT_FLOW = ["subjectTests", "newTest", "testRun", "testReview", "newChallenge", "challengeRoom"];
   const isSubjectsActive = (id: string) =>
     s.screen === id || (id === "subjects" && SUBJECT_FLOW.includes(s.screen));
 
@@ -139,7 +141,9 @@ export function AppShell() {
           <ScreenBody screen={s.screen} />
         </div>
       </div>
-      <ChatWidget />
+      {/* No chatbot anywhere near a challenge — the chat route also refuses
+          messages while one is running, so another tab doesn't help either. */}
+      {s.screen !== "challengeRoom" && <ChatWidget />}
     </div>
   );
 }
@@ -152,6 +156,8 @@ function ScreenBody({ screen }: { screen: Screen }) {
     case "newTest": return <NewTest />;
     case "testRun": return <TestRunner />;
     case "testReview": return <TestRunner readOnly />;
+    case "newChallenge": return <NewChallenge />;
+    case "challengeRoom": return <ChallengeRoom />;
     case "progress": return <Progress />;
     case "settings": return <Settings />;
     default: return <Home />;

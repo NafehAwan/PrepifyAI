@@ -25,10 +25,23 @@ export async function POST(req: Request) {
 
   let userId: string | null = null;
   if (isSupabaseConfigured()) {
+    const supabase = createClient();
     const {
       data: { user },
-    } = await createClient().auth.getUser();
+    } = await supabase.auth.getUser();
     userId = user?.id ?? null;
+
+    // The chatbot is off while the student is in a running friend challenge —
+    // checked here as well as hidden in the UI, so another tab doesn't help.
+    if (userId) {
+      const { data: busy } = await supabase.rpc("in_active_challenge");
+      if (busy === true) {
+        return NextResponse.json(
+          { error: "Prepi is switched off during a challenge. Finish your answers first — good luck!" },
+          { status: 423 },
+        );
+      }
+    }
   }
   const limit = checkRateLimit(callerId(req, userId), MESSAGES_PER_MINUTE);
   if (!limit.ok) {

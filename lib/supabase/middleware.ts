@@ -35,6 +35,11 @@ export async function updateSession(request: NextRequest): Promise<NextResponse>
   if (!user && !isAuthRoute) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
+    url.search = "";
+    // Remember where they were going (e.g. a challenge invite link) so
+    // signing in brings them straight back.
+    const wanted = path + request.nextUrl.search;
+    if (wanted !== "/") url.searchParams.set("next", wanted);
     return NextResponse.redirect(url);
   }
 

@@ -172,7 +172,7 @@ function Results({ test, picks, onBack }: { test: TestDetail; picks: (number | n
   );
 }
 
-function ReviewRow({ q, index, pick, first }: { q: DBMcq; index: number; pick: number | null; first: boolean }) {
+export function ReviewRow({ q, index, pick, first }: { q: DBMcq; index: number; pick: number | null; first: boolean }) {
   const right = pick === q.answer;
   return (
     <div style={{ borderTop: first ? "none" : "1px solid #ece0c8", paddingTop: first ? 0 : 14 }}>

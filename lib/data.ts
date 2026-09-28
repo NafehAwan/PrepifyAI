@@ -20,6 +20,8 @@ export const TITLES: Record<string, string> = {
   newTest: "New Test",
   testRun: "Test",
   testReview: "Test Review",
+  newChallenge: "Challenge Friends",
+  challengeRoom: "Challenge",
   progress: "Progress",
   settings: "Settings",
 };

@@ -5,6 +5,7 @@ import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { listTests, type TestRow } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
+import { challengeTitle, listMyChallenges, ordinal, type ChallengeCard } from "@/lib/challenges";
 
 // One subject's dashboard: a prominent "New test" button and a card per test
 // taken, showing the marks, the percentage and a remark.
@@ -14,6 +15,7 @@ export function SubjectTests() {
   const subjectName = s.selectedSubjectName ?? "Subject";
 
   const [tests, setTests] = useState<TestRow[]>([]);
+  const [challenges, setChallenges] = useState<ChallengeCard[]>([]);
   const [loading, setLoading] = useState(true);
 
   const load = useCallback(async () => {
@@ -27,7 +29,9 @@ export function SubjectTests() {
       setLoading(false);
       return;
     }
-    setTests(await listTests(userId, subjectId));
+    const [t, c] = await Promise.all([listTests(userId, subjectId), listMyChallenges(subjectId)]);
+    setTests(t);
+    setChallenges(c);
     setLoading(false);
   }, [subjectId]);
 
@@ -44,6 +48,11 @@ export function SubjectTests() {
     patch({ activeTestId: t.id });
     // An unfinished test resumes rather than opening its (empty) review.
     go(t.status === "submitted" ? "testReview" : "testRun");
+  };
+
+  const openChallenge = (c: ChallengeCard) => {
+    patch({ activeChallengeCode: c.code });
+    go("challengeRoom");
   };
 
   const submitted = tests.filter((t) => t.status === "submitted");
@@ -64,12 +73,20 @@ export function SubjectTests() {
                 : `${submitted.length} test${submitted.length === 1 ? "" : "s"} taken · best ${best}%`}
             </div>
           </div>
-          <button
-            onClick={() => go("newTest")}
-            style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15, boxShadow: "0 10px 24px rgba(198,113,57,.25)" }}
-          >
-            + New test
-          </button>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <button
+              onClick={() => go("newChallenge")}
+              style={{ borderRadius: 999, background: C.card, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "13px 22px", fontSize: 15 }}
+            >
+              ⚔ Challenge friends
+            </button>
+            <button
+              onClick={() => go("newTest")}
+              style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15, boxShadow: "0 10px 24px rgba(198,113,57,.25)" }}
+            >
+              + New test
+            </button>
+          </div>
         </div>
       </div>
 
@@ -90,6 +107,17 @@ export function SubjectTests() {
             <TestCard key={t.id} test={t} onOpen={() => openTest(t)} />
           ))}
         </div>
+      )}
+
+      {!loading && challenges.length > 0 && (
+        <>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 22, margin: "30px 0 12px" }}>Challenges</div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))", gap: 16 }}>
+            {challenges.map((c) => (
+              <ChallengeCardView key={c.code} challenge={c} onOpen={() => openChallenge(c)} />
+            ))}
+          </div>
+        </>
       )}
     </>
   );
@@ -135,6 +163,58 @@ function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
       <div style={{ fontSize: 12, color: "#9a8d78" }}>
         {test.scope ?? "Whole book"} · {test.questionCount} question{test.questionCount === 1 ? "" : "s"} ·{" "}
         {new Date(test.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
+      </div>
+    </button>
+  );
+}
+
+function ChallengeCardView({ challenge: c, onOpen }: { challenge: ChallengeCard; onOpen: () => void }) {
+  const finished = c.status === "finished";
+  const pct = c.scorePct ?? 0;
+  const won = finished && c.rank === 1;
+  const fg = !finished ? C.muted : won ? C.sageD : pct >= 50 ? C.accentD : C.danger;
+  const bg = !finished ? C.sand : won ? C.sageT : C.tint;
+  const status =
+    c.status === "lobby"
+      ? `Waiting for friends · ${c.joinedCount}/${c.playerCount} joined`
+      : c.status === "running"
+        ? c.submitted
+          ? "Waiting for the others to finish"
+          : "In progress — tap to continue"
+        : null;
+
+  return (
+    <button
+      onClick={onOpen}
+      className="pf-lift"
+      style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: 20 }}
+    >
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 14 }}>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>{challengeTitle(c.seq)}</div>
+        <span style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "3px 9px", background: bg, color: fg, flex: "none" }}>
+          {finished && c.rank ? (won ? "🏆 1st" : ordinal(c.rank)) : `${c.playerCount} players`}
+        </span>
+      </div>
+
+      {finished ? (
+        <>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
+            <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
+            <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600 }}>
+              {c.correct ?? 0}/{c.questionCount}
+            </div>
+          </div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: fg, marginBottom: 10 }}>
+            {c.rank ? `${ordinal(c.rank)} of ${c.playerCount}` : ""} · {c.remarks}
+          </div>
+        </>
+      ) : (
+        <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 700, marginBottom: 10 }}>{status}</div>
+      )}
+
+      <div style={{ fontSize: 12, color: "#9a8d78" }}>
+        {c.scope} · {c.questionCount} questions · {c.difficulty} ·{" "}
+        {new Date(c.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
       </div>
     </button>
   );

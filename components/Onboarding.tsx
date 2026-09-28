@@ -36,7 +36,7 @@ export function Onboarding() {
     void persistName(s.userName);
     void persistProfile(s);
     void persistEnrollments(s);
-    go("home");
+    go(s.activeChallengeCode ? "challengeRoom" : "home");
   };
   const back = () => set("ob", Math.max(1, s.ob - 1));
   const next = () => {

@@ -23,6 +23,7 @@ const INITIAL: AppState = {
   selectedSubjectId: null,
   selectedSubjectName: null,
   activeTestId: null,
+  activeChallengeCode: null,
   aiConfigured: false,
   groqKey: "",
 };

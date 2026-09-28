@@ -6,6 +6,7 @@ import { C } from "@/lib/theme";
 import { OFFERED_SUBJECTS } from "@/lib/data";
 import { listSubjects } from "@/lib/curriculum";
 import { getSubjectStats, type SubjectStats } from "@/lib/analytics";
+import { parseChallengeCode } from "@/lib/challenges";
 
 // My Subjects: one card per enrolled subject showing how many tests the student
 // has taken and their best score. Tapping a card opens that subject's tests.
@@ -13,6 +14,19 @@ export function Subjects() {
   const { s, patch, go } = useApp();
   const [subjectIds, setSubjectIds] = useState<Record<string, string>>({});
   const [stats, setStats] = useState<Record<string, SubjectStats>>({});
+  const [joinDraft, setJoinDraft] = useState("");
+  const [joinError, setJoinError] = useState(false);
+
+  // A friend may send the 6-letter code instead of the link — both work here.
+  const joinByCode = () => {
+    const code = parseChallengeCode(joinDraft);
+    if (!code) {
+      setJoinError(true);
+      return;
+    }
+    patch({ activeChallengeCode: code });
+    go("challengeRoom");
+  };
 
   useEffect(() => {
     let active = true;
@@ -42,8 +56,33 @@ export function Subjects() {
 
   return (
     <>
-      <div style={{ color: C.muted, marginBottom: 20, maxWidth: 620 }}>
-        Pick a subject to start a new test or look back at the ones you&apos;ve taken.
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
+        <div style={{ color: C.muted, maxWidth: 520 }}>
+          Pick a subject to start a new test, challenge friends, or look back at the ones you&apos;ve taken.
+        </div>
+        {s.authed && (
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              joinByCode();
+            }}
+            style={{ display: "flex", gap: 8, alignItems: "center" }}
+          >
+            <input
+              value={joinDraft}
+              onChange={(e) => {
+                setJoinDraft(e.target.value);
+                setJoinError(false);
+              }}
+              placeholder="Challenge code"
+              aria-label="Challenge code or link"
+              style={{ width: 150, borderRadius: 999, border: `1.5px solid ${joinError ? C.accent : C.line}`, background: C.card, padding: "9px 14px", fontSize: 13.5, fontWeight: 600, textTransform: "uppercase" }}
+            />
+            <button type="submit" style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 16px", fontSize: 13.5 }}>
+              Join
+            </button>
+          </form>
+        )}
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
         {list.map((name) => {
