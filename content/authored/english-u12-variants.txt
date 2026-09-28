@@ -1,0 +1,15 @@
+# subject: English
+# chapter: 12
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: The coach said, "Warm up before running." | The coach advised us to warm up before running. | The coach said that warm up before running. | The coach says to warmed up before running. | The coach said that we warm up before running yesterday. | A | h v:6ea3cec569ca
+Which sentence is in the present continuous tense? | He jogs daily. | He is jogging now. | He jogged yesterday. | He will jog tomorrow. | B | e v:f9f25401d75a
+Choose the passive voice of "Nurses care for patients.": | Patients are cared for by nurses. | Patients were cared for by nurses. | Patients cared for by nurses. | Patients are care for by nurses. | A | v:d6aa0d4f7887
+Choose the synonym of "stop": | Prevent | Allow | Encourage | Cause | A | e v:50dcc0440e5a
+Choose the correct sentence: | Vegetables is good for health. | Vegetables are good for health. | Vegetables be good for health. | Vegetables was good for health. | B | e v:075834a87bd1
+A person who sits at a desk all day and rarely walks or exercises has a: | sedentary lifestyle | active lifestyle | balanced diet | healthy routine | A | s h v:831c92e5a535
+Washing hands before eating is an example of good: | hygiene | exercise | medicine | sleep | A | e v:ab9d1673f7e2
+Choose the correct article: She eats ___ orange every morning. | a | an | the | no article | B | e v:517f73e28af8

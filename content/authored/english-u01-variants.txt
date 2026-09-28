@@ -1,0 +1,17 @@
+# subject: English
+# chapter: 1
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: She said, "I help my neighbours." | She said that she helped her neighbours. | She said that I help my neighbours. | She says that she helped her neighbours. | She said that she helps my neighbours. | A | h v:7831c62d2ca9
+A student returns a lost wallet to its owner without taking anything. Which word best describes the student? | Honest | Greedy | Lazy | Rude | A | s e v:03db0f93e358
+Fill in the blank with the correct article: She is ___ obedient daughter. | a | an | the | no article | B | v:574f6cdf51cd
+Choose the correctly spelled word: | Forgivness | Forgiveness | Forgiviness | Forgivenes | B | v:220821433d08
+Choose the passive voice of "He helped the poor.": | The poor are helped by him. | The poor were helped by him. | The poor had helped him. | The poor was helped by him. | B | v:603dff3cffb5
+Choose the correct sentence: | She don't waste food. | She doesn't wastes food. | She doesn't waste food. | She not waste food. | C | v:2467a7b71b0e
+Choose the antonym of "kindness": | Gentleness | Care | Cruelty | Mercy | C | e v:13abbc9478cc
+In "The Prophet ﷺ forgave the people of Makkah", the tense of "forgave" is: | simple present | simple past | past continuous | present perfect | B | v:8114a3a6da73
+The adjective form of "mercy" is: | Merciful | Mercifully | Mercies | Mercy | A | v:7f26a53851fe
+A person who stays calm and does not complain while waiting is: | patient | proud | jealous | careless | A | s e v:50c0627f9a45

@@ -1,0 +1,13 @@
+# subject: Chemistry
+# chapter: 12
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+After floods, many people in a town drink water from dirty ponds. Which disease is most likely to spread? | Cholera | Asthma | Diabetes | Arthritis | A | s v:f4cdb4953c6c
+A student uses distilled water to prepare a salt solution in the lab because distilled water: | is coloured | contains no dissolved impurities | is salty | has extra minerals | B | v:4033453eb9cd
+Waste oil from a workshop is poured into a river. The most likely effect is: | more oxygen in the water | harm to fish and water plants | cleaner water | more drinking water | B | s v:6fccbf208357
+Proper sanitation, such as covered drains and clean toilets, mainly helps to prevent: | water-borne diseases | earthquakes | sunburn | tooth decay | A | e v:ca96aa50d8fa
+Water purification is carried out so that water becomes: | safe to drink and use | coloured | salty | radioactive | A | e v:6b34bcf2dc72
+Water from a tap has an unusual smell and a brown colour. This shows that it contains: | impurities | pure hydrogen | only oxygen | distilled vapour | A | s v:231f1bad1624

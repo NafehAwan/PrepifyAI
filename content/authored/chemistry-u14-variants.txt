@@ -1,0 +1,16 @@
+# subject: Chemistry
+# chapter: 14
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The general formula CₙH₂ₙ₋₂ belongs to the: | alkanes | alkenes | alkynes | alcohols | C | v:a8226fbd4fc2
+Alkenes are called unsaturated hydrocarbons because they contain: | only single bonds | at least one carbon–carbon double bond | no hydrogen | oxygen atoms | B | v:fef0018be32e
+Bromine water is shaken with hexane (an alkane). The orange-brown colour: | disappears quickly | remains | turns blue | turns green | B | h v:1ba3013fe8b5
+Methane reacts with chlorine in sunlight and a hydrogen atom is replaced by chlorine. This is: | addition | substitution | polymerization | cracking | B | v:2e132f4ecc12
+Margarine is made by passing hydrogen through vegetable oil with a nickel catalyst. This reaction is: | hydrogenation | dehydration | fermentation | combustion | A | s v:597a617139c2
+Burning a fuel in too little oxygen can produce the poisonous gas: | carbon monoxide | oxygen | nitrogen | helium | A | s v:430259d1706f
+Plastic shopping bags made of polythene are formed by: | cracking | polymerization of ethene | hydrogenation | fermentation | B | v:2f4f05e4336b
+The gas supplied to homes through pipes in Pakistan (Sui gas) is mainly: | methane | propane | butane | ethyne | A | s e v:2c66c407247e
+The alkane that comes just before butane in the series is: | Methane | Ethane | Propane | Pentane | C | e v:855c9506f83a

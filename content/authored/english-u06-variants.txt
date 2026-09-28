@@ -1,0 +1,17 @@
+# subject: English
+# chapter: 6
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the plural of "knife": | knifes | knives | knifs | knivies | B | e v:fbdb9159765c
+Which sentence is an exclamation? | Smoking is harmful. | Stop smoking now. | How harmful smoking is! | Is smoking harmful? | C | e v:5ed1f439a7f3
+Choose the correct form: If you ___ bad company, you will regret it. | keep | kept | kept up | keeping | A | h v:420a40859792
+Which sentence is in the present perfect tense? | She leaves the gang. | She has left the gang. | She left the gang. | She will leave the gang. | B | v:4268041322b0
+Choose the passive voice of "Drugs destroy families.": | Families are destroyed by drugs. | Families were destroyed by drugs. | Families destroyed by drugs. | Families have destroyed drugs. | A | v:5d1d49d64f9c
+Choose the correct spelling: | Rehabilitasion | Rehabilitation | Rehabbilitation | Rehabilitaton | B | e v:a3a6995907ad
+The prefix "anti-" in "antisocial" means: | against | for | before | after | A | e v:3113b81358aa
+Which word is an adjective? | Harm | Harmful | Harmfully | Harming | B | e v:129f6894010c
+Fill in the blank: Young people should stay away ___ drugs. | at | from | on | with | B | e v:8a08e02b614a
+Ali stops meeting friends who use drugs and joins a cricket team instead. This shows: | choosing a healthy lifestyle | peer pressure | addiction | withdrawal | A | s e v:bc9ed2415576

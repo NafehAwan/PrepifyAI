@@ -1,0 +1,125 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "ffdde6fde713",
+      "stem": "Two teams pull a rope with equal forces in opposite directions and the rope does not move. This is because:",
+      "options": [
+        "no force acts",
+        "the resultant force is zero",
+        "friction is absent",
+        "the rope has no mass"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "987867e2d03b"
+    },
+    {
+      "id": "5cfdee8cf980",
+      "stem": "A body moves with constant velocity. The net force acting on it is:",
+      "options": [
+        "maximum",
+        "zero",
+        "increasing",
+        "equal to its weight"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "49980edc90fc"
+    },
+    {
+      "id": "998bc779af04",
+      "stem": "To make a resting football start moving, the forces on it must be:",
+      "options": [
+        "balanced",
+        "unbalanced",
+        "zero",
+        "internal only"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "45e3c4c7cfe4"
+    },
+    {
+      "id": "a7bfa6eadd2b",
+      "stem": "An astronaut travels from Earth to the Moon. Which of these stays the same?",
+      "options": [
+        "Weight",
+        "Mass",
+        "The pull of gravity",
+        "The reading on a spring balance"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1155f5c9ffbf"
+    },
+    {
+      "id": "60a7bf10682e",
+      "stem": "A cricketer pulls his hands back while catching a fast ball. This reduces the force because it:",
+      "options": [
+        "increases the time taken to stop the ball",
+        "increases the ball's mass",
+        "increases the ball's speed",
+        "removes friction"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1299f1b42622"
+    },
+    {
+      "id": "b548c9530b18",
+      "stem": "A net unbalanced force always changes a body's:",
+      "options": [
+        "mass",
+        "velocity",
+        "volume",
+        "colour"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c8302f092997"
+    },
+    {
+      "id": "5bf7c8775078",
+      "stem": "In deep space, far from any planet or star, an object's weight becomes:",
+      "options": [
+        "the same as on Earth",
+        "zero",
+        "double",
+        "negative"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "623d5f305c5c"
+    }
+  ]
+}

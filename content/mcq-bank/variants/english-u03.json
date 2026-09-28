@@ -1,0 +1,159 @@
+{
+  "subject": "English",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "e0e5dc73206d",
+      "stem": "Choose the indirect speech of: She said, \"Technology is useful.\"",
+      "options": [
+        "She said that technology was useful.",
+        "She said that technology is used.",
+        "She says that technology was useful.",
+        "She said that technology will be useful."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d0068f394a15"
+    },
+    {
+      "id": "785cd9155b9e",
+      "stem": "In \"Mobile phones have made life easier\", the tense is:",
+      "options": [
+        "simple past",
+        "present perfect",
+        "past perfect",
+        "simple present"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8edb9ec3cbbd"
+    },
+    {
+      "id": "166e151bc389",
+      "stem": "Choose the antonym of \"ancient\":",
+      "options": [
+        "Old",
+        "Historic",
+        "Modern",
+        "Aged"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "79a22c5b4017"
+    },
+    {
+      "id": "dbfdf3f9b217",
+      "stem": "Choose the correct article: A computer is ___ amazing machine.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7cbd6b04f065"
+    },
+    {
+      "id": "8134b41c4e75",
+      "stem": "Fill in the blank: The internet has advantages ___ disadvantages.",
+      "options": [
+        "or",
+        "and",
+        "but",
+        "nor"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e52c85b159b8"
+    },
+    {
+      "id": "e07fc7a6d375",
+      "stem": "Choose the word that is an adverb:",
+      "options": [
+        "Quick",
+        "Quickly",
+        "Quickness",
+        "Quicken"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "aba908588eef"
+    },
+    {
+      "id": "9b1025bec2bb",
+      "stem": "A student spends all night playing online games and falls asleep in class. This shows a:",
+      "options": [
+        "negative effect of technology misuse",
+        "benefit of technology",
+        "healthy habit",
+        "study technique"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "deb42b328803"
+    },
+    {
+      "id": "eae6896d5b16",
+      "stem": "A small Sialkot company sells footballs to buyers in Europe through its website. This shows businesses can reach:",
+      "options": [
+        "a global market",
+        "only local customers",
+        "only relatives",
+        "nobody"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8d134d54a135"
+    },
+    {
+      "id": "d2c78921f14a",
+      "stem": "Choose the plural of \"phenomenon\":",
+      "options": [
+        "phenomenons",
+        "phenomena",
+        "phenomenas",
+        "phenomenon"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "981d11b39e34"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "a513c89a84e9",
+      "stem": "An element has the electronic configuration 2, 8. It is expected to be:",
+      "options": [
+        "highly reactive",
+        "very unreactive",
+        "a soft metal",
+        "a strong reducing agent"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "baad6d45cd9c"
+    },
+    {
+      "id": "ad8cf1707b00",
+      "stem": "Which element belongs to the same group as chlorine?",
+      "options": [
+        "Sulphur",
+        "Argon",
+        "Bromine",
+        "Sodium"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "41698b9ade75"
+    },
+    {
+      "id": "389083e2ead0",
+      "stem": "Which element belongs to the same group as magnesium?",
+      "options": [
+        "Sodium",
+        "Calcium",
+        "Aluminium",
+        "Silicon"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "41698b9ade75"
+    },
+    {
+      "id": "503e8ff8c604",
+      "stem": "Copper sulphate is blue and iron(III) chloride is yellow-brown. Coloured compounds like these are typical of:",
+      "options": [
+        "alkali metals",
+        "noble gases",
+        "transition metals",
+        "halogens"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d6708ae94d82"
+    },
+    {
+      "id": "a26cce6b8600",
+      "stem": "Alkali metals react vigorously with water mainly because they:",
+      "options": [
+        "have high density",
+        "lose their single valence electron easily",
+        "have full valence shells",
+        "are non-metals"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "673b6844a9a4"
+    },
+    {
+      "id": "83da0d397196",
+      "stem": "Going down Group 1 from lithium to potassium, reactivity:",
+      "options": [
+        "decreases",
+        "increases",
+        "stays the same",
+        "becomes zero"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2cac0c7c76b9"
+    },
+    {
+      "id": "47dadeb4bf3a",
+      "stem": "From left to right across a period, metallic character:",
+      "options": [
+        "increases",
+        "decreases",
+        "stays the same",
+        "first rises then falls sharply"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d29bc2c1c852"
+    },
+    {
+      "id": "a26dbea063ff",
+      "stem": "Which period has only two elements?",
+      "options": [
+        "Period 1",
+        "Period 2",
+        "Period 3",
+        "Period 7"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ecbd4e3a207d"
+    }
+  ]
+}

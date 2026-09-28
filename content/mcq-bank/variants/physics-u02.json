@@ -1,0 +1,125 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 2,
+  "questions": [
+    {
+      "id": "fbbb2b7292a4",
+      "stem": "A car moving north applies its brakes and slows down. The directions of its velocity and acceleration are:",
+      "options": [
+        "north and north",
+        "north and south",
+        "south and north",
+        "south and south"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7a5f5ae8bc01"
+    },
+    {
+      "id": "620c97491479",
+      "stem": "A football kicked into the air follows a curved path before landing. This is:",
+      "options": [
+        "circular motion",
+        "projectile motion",
+        "rotatory motion",
+        "vibratory motion"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "24c8c18a8b6a"
+    },
+    {
+      "id": "59a9dd6cf9d3",
+      "stem": "The pendulum of a wall clock moving to and fro about its mean position is an example of:",
+      "options": [
+        "translatory motion",
+        "rotatory motion",
+        "vibratory motion",
+        "random motion"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "29c53d356815"
+    },
+    {
+      "id": "086da223156f",
+      "stem": "A lift moving straight up its shaft without turning shows:",
+      "options": [
+        "rectilinear (translatory) motion",
+        "projectile motion",
+        "rotatory motion",
+        "vibratory motion"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a6ca7012bfc6"
+    },
+    {
+      "id": "bccad6b5a928",
+      "stem": "A car that is speeding up in the direction of its motion has an acceleration that is:",
+      "options": [
+        "positive",
+        "negative",
+        "zero",
+        "undefined"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e956605f6462"
+    },
+    {
+      "id": "e4b99dae5ee4",
+      "stem": "A ball thrown vertically upward is momentarily at rest at the top. Its velocity at that point is:",
+      "options": [
+        "maximum",
+        "zero",
+        "equal to g",
+        "negative 10 m/s"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "22959966ca87"
+    },
+    {
+      "id": "f5054c7b3f3e",
+      "stem": "The total length of the path travelled by a body, whatever its direction, is called:",
+      "options": [
+        "displacement",
+        "distance",
+        "velocity",
+        "acceleration"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 2,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "baea97e6f2b5"
+    }
+  ]
+}

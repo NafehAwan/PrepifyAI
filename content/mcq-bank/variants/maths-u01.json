@@ -1,0 +1,108 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "f551163fe828",
+      "stem": "The multiplicative identity of real numbers is:",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "It does not exist"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e1c17ccd6a5e"
+    },
+    {
+      "id": "a73b4c868322",
+      "stem": "The step (3 × x) × y = 3 × (x × y) uses the:",
+      "options": [
+        "commutative property of multiplication",
+        "associative property of multiplication",
+        "distributive property",
+        "closure property"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9d3dd2c4ce83"
+    },
+    {
+      "id": "29291d751b78",
+      "stem": "Since 7 + (−7) = 0, the numbers 7 and −7 are:",
+      "options": [
+        "additive inverses",
+        "multiplicative inverses",
+        "additive identities",
+        "reciprocals"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "233af3dc499b"
+    },
+    {
+      "id": "75a3703edfea",
+      "stem": "If (0.25) × 4 = 1, then 0.25 and 4 are:",
+      "options": [
+        "additive inverses",
+        "multiplicative inverses",
+        "additive identities",
+        "equal numbers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4e66cf9cdf6f"
+    },
+    {
+      "id": "b45192a37f01",
+      "stem": "Any real number multiplied by 0 gives:",
+      "options": [
+        "the number itself",
+        "1",
+        "0",
+        "its negative"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7b81fc806139"
+    },
+    {
+      "id": "7b9ac65ec1eb",
+      "stem": "Multiplying any two real numbers always gives a real number. This is the:",
+      "options": [
+        "identity property",
+        "closure property of multiplication",
+        "inverse property",
+        "commutative property"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7205fdc361f3"
+    }
+  ]
+}

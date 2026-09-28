@@ -1,0 +1,17 @@
+# subject: Computer Science
+# chapter: 6
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Bilal receives a message claiming he has won a prize and must enter his bank PIN on a link. This is an example of: | phishing | a firewall | a backup | a cookie | A | s e v:077f5db8cb8a
+A user types the correct web address of a shopping site but is secretly sent to a fake copy of it. This attack is: | phishing | pharming | spam | a backup | B | h v:05cbeae974a8
+Small text files that a website stores on your device to remember your preferences are called: | viruses | cookies | patches | firewalls | B | e v:e920e696c40a
+Software that secretly records a user's online activity and sends it to others without permission is: | freeware | spyware | a firewall | a browser | B | v:023708328fc0
+An inventor wants the legal right to stop others copying her new machine for a number of years. She should apply for a: | trademark | copyright | patent | licence to drive | C | s v:c7e03ecdcf37
+The golden "M" logo of a fast-food chain is protected by a: | patent | copyright | trademark | firewall | C | v:35000a8480bd
+Which tool monitors and controls the traffic entering and leaving a school network? | A firewall | A printer driver | A spreadsheet | A cookie | A | v:031b5aa84505
+Viruses, worms and trojan horses all belong to the general category of: | malware | cookies | freeware | hardware | A | e v:5e0ba7ac93f9
+Hamza keeps copies of his project files on a USB drive and in cloud storage in case his computer fails. This is: | backing up data | hacking | pharming | encryption | A | s e v:a35f594e5068
+Someone breaks into a school's computer system without permission and changes students' marks. This is: | hacking | spam | a backup | a trademark | A | s v:6e6c7120060a

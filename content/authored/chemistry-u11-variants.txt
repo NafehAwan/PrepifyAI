@@ -1,0 +1,14 @@
+# subject: Chemistry
+# chapter: 11
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Clean, dry air is best described as: | a compound of nitrogen and oxygen | a mixture of gases | pure nitrogen | pure oxygen | B | e v:b25bab4f9e3c
+Nitrogen dioxide dissolving in rainwater can produce: | nitric acid | citric acid | acetic acid | hydrochloric acid | A | v:b8cd63eec6a4
+Farmers burning crop waste and cars burning petrol both add to: | air pollution and global warming | ozone layer repair | cleaner air | cooler temperatures | A | s v:84f8714e200d
+Melting of glaciers is a result of: | global warming | acid rain only | lower temperatures | more polar ice | A | e v:a4c2c2914dd9
+A traffic jam in a busy city releases large amounts of: | nitrogen oxides and carbon monoxide | pure oxygen | gold dust | water only | A | s e v:9d9adac14fb5
+The formula of carbon monoxide is: | CO | CO₂ | C₂O | CH₄ | A | e v:52d33034668b
+Rotting waste in a landfill site releases a greenhouse gas. The gas is: | methane | oxygen | nitrogen | helium | A | s v:faa093e163ea

@@ -1,0 +1,13 @@
+# subject: Maths
+# chapter: 5
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+What is the solution set of |x| = −3? | {3} | {−3} | {−3, 3} | φ | D | v:15b63513664e
+An equation such as √(x + 1) = 4, where the variable is under a root sign, is a: | linear equation | radical equation | absolute value equation | compound equation | B | v:f47f1a8262a4
+|x| measures the distance of x from: | 1 | x | 0 | −1 | C | e v:3d42cc5d7fb4
+What is the solution set of 5x + 4 < 3x − 6? | {x : x < −5} | {x : x > −5} | {x : x < 5} | {x : x > 5} | A | h v:5486297e9c34
+A mathematical statement such as 2x + 1 > 7 is called: | an equation | an inequality | an identity | a radical | B | e v:75e3dc9f04b0
+What is the solution set of x − 2 ≥ 1 and x + 4 ≤ 12? | {x : 3 ≤ x ≤ 8} | {x : x ≤ 8} | {x : x ≥ 3} | {x : −3 ≤ x ≤ 8} | A | h v:1c4fa394b052

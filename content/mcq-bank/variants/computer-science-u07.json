@@ -1,0 +1,159 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "3b0cce80c043",
+      "stem": "When a product is popular but only a few are available, an entrepreneur can usually:",
+      "options": [
+        "lower the price",
+        "raise the price and increase the profit margin",
+        "stop selling it",
+        "give it away free"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a2d25a2af9eb"
+    },
+    {
+      "id": "c5fb7cb93a81",
+      "stem": "The first phase of Design Thinking is:",
+      "options": [
+        "Prototype",
+        "Test",
+        "Empathize",
+        "Ideate"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "28cf716861c5"
+    },
+    {
+      "id": "80b3ecde5cc2",
+      "stem": "In the SMART goal framework, the \"M\" stands for:",
+      "options": [
+        "Measurable",
+        "Modern",
+        "Monthly",
+        "Manual"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "7e4ef18c70d7"
+    },
+    {
+      "id": "23635918f7b4",
+      "stem": "Which option carries the LOWEST level of financial risk?",
+      "options": [
+        "Buying government savings bonds",
+        "Investing all savings in a new, untested business",
+        "Opening a shop in an area with no customers",
+        "Borrowing heavily to start a factory"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "191cb5594f6a"
+    },
+    {
+      "id": "58dea30c6ee3",
+      "stem": "WordPress is widely used to build and manage websites. It is a:",
+      "options": [
+        "Content Management System",
+        "Database Management System",
+        "operating system",
+        "spreadsheet"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "99e25af8d7d2"
+    },
+    {
+      "id": "684732a3631e",
+      "stem": "Before opening a juice stall, Sana counts how many people pass her street every day who might buy juice. She is estimating her:",
+      "options": [
+        "profit margin",
+        "market size",
+        "production cost",
+        "tax"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "92a88b1816fa"
+    },
+    {
+      "id": "56e6c3387982",
+      "stem": "The cost of making a bag is Rs 400, overheads are Rs 100 and the desired profit is Rs 150. Using selling price = cost + overheads + profit, the selling price is:",
+      "options": [
+        "Rs 450",
+        "Rs 500",
+        "Rs 650",
+        "Rs 550"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "8892dbc7607f"
+    },
+    {
+      "id": "8585183ec3b2",
+      "stem": "In Design Thinking, the phase where you build a simple model of your idea to try out is:",
+      "options": [
+        "Empathize",
+        "Define",
+        "Prototype",
+        "Ideate"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "4d91131d07f1"
+    },
+    {
+      "id": "b34ffd36ea4d",
+      "stem": "Introducing a new product or method that creates value for customers is called:",
+      "options": [
+        "imitation",
+        "innovation",
+        "inflation",
+        "investment"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "119bd46dd796"
+    }
+  ]
+}

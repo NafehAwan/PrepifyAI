@@ -1,0 +1,15 @@
+# subject: Chemistry
+# chapter: 4
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+An element has the electronic configuration 2, 8. It is expected to be: | highly reactive | very unreactive | a soft metal | a strong reducing agent | B | v:baad6d45cd9c
+Which element belongs to the same group as chlorine? | Sulphur | Argon | Bromine | Sodium | C | v:41698b9ade75
+Which element belongs to the same group as magnesium? | Sodium | Calcium | Aluminium | Silicon | B | v:41698b9ade75
+Copper sulphate is blue and iron(III) chloride is yellow-brown. Coloured compounds like these are typical of: | alkali metals | noble gases | transition metals | halogens | C | v:d6708ae94d82
+Alkali metals react vigorously with water mainly because they: | have high density | lose their single valence electron easily | have full valence shells | are non-metals | B | v:673b6844a9a4
+Going down Group 1 from lithium to potassium, reactivity: | decreases | increases | stays the same | becomes zero | B | v:2cac0c7c76b9
+From left to right across a period, metallic character: | increases | decreases | stays the same | first rises then falls sharply | B | v:d29bc2c1c852
+Which period has only two elements? | Period 1 | Period 2 | Period 3 | Period 7 | A | h v:ecbd4e3a207d

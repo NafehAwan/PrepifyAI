@@ -1,0 +1,15 @@
+# subject: English
+# chapter: 8
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: The teacher said, "The sun rises in the east." | The teacher said that the sun rises in the east. | The teacher said that the sun rose in the east always. | The teacher says that the sun rose in the east. | The teacher said that the sun will rise in the east. | A | h v:75202d606105
+A poet writes, "Her smile was as bright as the sun." Which device is this? | Simile | Alliteration | Personification | Rhyme | A | s v:eedc09739965
+"The wind howled angrily at the window" gives the wind a human feeling. This is: | personification | simile | alliteration | a question | A | s v:a7faa7117f04
+Choose the passive voice of "The eagle watched the sea.": | The sea is watched by the eagle. | The sea was watched by the eagle. | The sea has watched the eagle. | The sea was watch by the eagle. | B | v:6e2c06a64152
+In "The Eagle", the "azure world" around the bird is the: | blue sky | green forest | dark night | snowy mountain | A | v:6781e9baaea4
+Choose the synonym of "solitary": | Lonely | Crowded | Busy | Cheerful | A | e v:438c2d9da94e
+Fill in the blank: Pakistan is famous ___ its mountains. | for | of | at | by | A | e v:4f43b8dd54d2
+"He clasps the crag with crooked hands" describes the eagle's claws as hands. This is an example of: | personification | simile | alliteration only | a question | A | v:0450496afddc

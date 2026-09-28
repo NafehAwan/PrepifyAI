@@ -1,0 +1,125 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "id": "1ce73d6ad092",
+      "stem": "Clean, dry air is best described as:",
+      "options": [
+        "a compound of nitrogen and oxygen",
+        "a mixture of gases",
+        "pure nitrogen",
+        "pure oxygen"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b25bab4f9e3c"
+    },
+    {
+      "id": "bd293a9c26c2",
+      "stem": "Nitrogen dioxide dissolving in rainwater can produce:",
+      "options": [
+        "nitric acid",
+        "citric acid",
+        "acetic acid",
+        "hydrochloric acid"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b8cd63eec6a4"
+    },
+    {
+      "id": "4679fea05fea",
+      "stem": "Farmers burning crop waste and cars burning petrol both add to:",
+      "options": [
+        "air pollution and global warming",
+        "ozone layer repair",
+        "cleaner air",
+        "cooler temperatures"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "84f8714e200d"
+    },
+    {
+      "id": "f45fc357a541",
+      "stem": "Melting of glaciers is a result of:",
+      "options": [
+        "global warming",
+        "acid rain only",
+        "lower temperatures",
+        "more polar ice"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a4c2c2914dd9"
+    },
+    {
+      "id": "9805064c59f2",
+      "stem": "A traffic jam in a busy city releases large amounts of:",
+      "options": [
+        "nitrogen oxides and carbon monoxide",
+        "pure oxygen",
+        "gold dust",
+        "water only"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9d9adac14fb5"
+    },
+    {
+      "id": "31b9481408cf",
+      "stem": "The formula of carbon monoxide is:",
+      "options": [
+        "CO",
+        "CO₂",
+        "C₂O",
+        "CH₄"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "52d33034668b"
+    },
+    {
+      "id": "b9d1b9d807ec",
+      "stem": "Rotting waste in a landfill site releases a greenhouse gas. The gas is:",
+      "options": [
+        "methane",
+        "oxygen",
+        "nitrogen",
+        "helium"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "faa093e163ea"
+    }
+  ]
+}

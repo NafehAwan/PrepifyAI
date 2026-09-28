@@ -1,0 +1,13 @@
+# subject: Maths
+# chapter: 6
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+The value of cos 0° is: | 0 | 1 | −1 | undefined | B | e v:ff98d204c60a
+sec θ is equal to: | 1/(cos θ) | 1/(sin θ) | (sin θ)/(cos θ) | cos θ | A | v:d3385d137e7e
+In a right-angled triangle, cos θ is defined as: | Base / Hypotenuse | Perpendicular / Hypotenuse | Perpendicular / Base | Hypotenuse / Base | A | v:cfd5bcb15327
+The three-figure bearing of South-East is: | 045° | 135° | 225° | 315° | B | v:3f42983f2610
+Which of these is a Pythagorean identity? | 1 + tan²θ = sec²θ | 1 − tan²θ = sec²θ | tan θ + sec θ = 1 | tan²θ = 1 + sec²θ | A | h v:b55a241505d0
+In the fourth quadrant, which trigonometric ratio is positive? | sin θ | tan θ | cos θ | cot θ | C | v:f823c28607a6

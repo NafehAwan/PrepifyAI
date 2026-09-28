@@ -1,0 +1,108 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "97d65075c53c",
+      "stem": "The value of cos 0° is:",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "undefined"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ff98d204c60a"
+    },
+    {
+      "id": "d738f98638ee",
+      "stem": "sec θ is equal to:",
+      "options": [
+        "1/(cos θ)",
+        "1/(sin θ)",
+        "(sin θ)/(cos θ)",
+        "cos θ"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d3385d137e7e"
+    },
+    {
+      "id": "451737184b9d",
+      "stem": "In a right-angled triangle, cos θ is defined as:",
+      "options": [
+        "Base / Hypotenuse",
+        "Perpendicular / Hypotenuse",
+        "Perpendicular / Base",
+        "Hypotenuse / Base"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cfd5bcb15327"
+    },
+    {
+      "id": "b58efe22239b",
+      "stem": "The three-figure bearing of South-East is:",
+      "options": [
+        "045°",
+        "135°",
+        "225°",
+        "315°"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "3f42983f2610"
+    },
+    {
+      "id": "c8c7c38d59b6",
+      "stem": "Which of these is a Pythagorean identity?",
+      "options": [
+        "1 + tan²θ = sec²θ",
+        "1 − tan²θ = sec²θ",
+        "tan θ + sec θ = 1",
+        "tan²θ = 1 + sec²θ"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b55a241505d0"
+    },
+    {
+      "id": "d48a444d2a05",
+      "stem": "In the fourth quadrant, which trigonometric ratio is positive?",
+      "options": [
+        "sin θ",
+        "tan θ",
+        "cos θ",
+        "cot θ"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f823c28607a6"
+    }
+  ]
+}

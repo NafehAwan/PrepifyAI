@@ -1,0 +1,16 @@
+# subject: English
+# chapter: 5
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: She said, "Hard work pays." | She said that hard work paid. | She said that hard work pays hardly. | She says that hard work paid. | She said that hard work will pay. | A | h v:a3ad272f077e
+In "She listened carefully to her customers", the word "carefully" is: | an adjective | an adverb | a noun | a pronoun | B | e v:2a1b99208f71
+Choose the antonym of "success": | Failure | Victory | Win | Gain | A | e v:4b3c36dfa542
+Choose the plural of "opportunity": | opportunitys | opportunities | opportunityes | opportunitis | B | e v:a963bca62657
+Choose the antonym of "safe": | Secure | Protected | Risky | Calm | C | e v:c3480298ee05
+Fill in the blank: She was eager ___ learn new skills. | for | to | at | on | B | e v:895cc719a13e
+Fill in the blank: Good results depend ___ regular practice. | at | on | in | with | B | v:9865a95e108a
+Usman's first food stall loses money, so he studies what went wrong and opens a better one. Which lesson is he following? | Learn from failure and keep trying | Never start again | Blame others | Copy competitors exactly | A | s v:b7160b365808
+A shopkeeper changes his stock after listening to what his buyers want. He is focusing first on: | the customer | the competitor | shortcuts | luck | A | s v:0987bec39f11

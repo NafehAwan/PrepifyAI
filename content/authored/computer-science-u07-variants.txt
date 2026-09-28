@@ -1,0 +1,16 @@
+# subject: Computer Science
+# chapter: 7
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+When a product is popular but only a few are available, an entrepreneur can usually: | lower the price | raise the price and increase the profit margin | stop selling it | give it away free | B | s v:a2d25a2af9eb
+The first phase of Design Thinking is: | Prototype | Test | Empathize | Ideate | C | e v:28cf716861c5
+In the SMART goal framework, the "M" stands for: | Measurable | Modern | Monthly | Manual | A | v:7e4ef18c70d7
+Which option carries the LOWEST level of financial risk? | Buying government savings bonds | Investing all savings in a new, untested business | Opening a shop in an area with no customers | Borrowing heavily to start a factory | A | s v:191cb5594f6a
+WordPress is widely used to build and manage websites. It is a: | Content Management System | Database Management System | operating system | spreadsheet | A | v:99e25af8d7d2
+Before opening a juice stall, Sana counts how many people pass her street every day who might buy juice. She is estimating her: | profit margin | market size | production cost | tax | B | s v:92a88b1816fa
+The cost of making a bag is Rs 400, overheads are Rs 100 and the desired profit is Rs 150. Using selling price = cost + overheads + profit, the selling price is: | Rs 450 | Rs 500 | Rs 650 | Rs 550 | C | s h v:8892dbc7607f
+In Design Thinking, the phase where you build a simple model of your idea to try out is: | Empathize | Define | Prototype | Ideate | C | v:4d91131d07f1
+Introducing a new product or method that creates value for customers is called: | imitation | innovation | inflation | investment | B | e v:119bd46dd796

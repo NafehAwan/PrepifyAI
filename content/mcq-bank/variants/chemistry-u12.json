@@ -1,0 +1,108 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 12,
+  "questions": [
+    {
+      "id": "ba8b720a068d",
+      "stem": "After floods, many people in a town drink water from dirty ponds. Which disease is most likely to spread?",
+      "options": [
+        "Cholera",
+        "Asthma",
+        "Diabetes",
+        "Arthritis"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f4cdb4953c6c"
+    },
+    {
+      "id": "7364802385d2",
+      "stem": "A student uses distilled water to prepare a salt solution in the lab because distilled water:",
+      "options": [
+        "is coloured",
+        "contains no dissolved impurities",
+        "is salty",
+        "has extra minerals"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4033453eb9cd"
+    },
+    {
+      "id": "7aa8bfe68fdd",
+      "stem": "Waste oil from a workshop is poured into a river. The most likely effect is:",
+      "options": [
+        "more oxygen in the water",
+        "harm to fish and water plants",
+        "cleaner water",
+        "more drinking water"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6fccbf208357"
+    },
+    {
+      "id": "ae81c173b51b",
+      "stem": "Proper sanitation, such as covered drains and clean toilets, mainly helps to prevent:",
+      "options": [
+        "water-borne diseases",
+        "earthquakes",
+        "sunburn",
+        "tooth decay"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ca96aa50d8fa"
+    },
+    {
+      "id": "ba486e0a162e",
+      "stem": "Water purification is carried out so that water becomes:",
+      "options": [
+        "safe to drink and use",
+        "coloured",
+        "salty",
+        "radioactive"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6b34bcf2dc72"
+    },
+    {
+      "id": "24d0fb80d1cd",
+      "stem": "Water from a tap has an unusual smell and a brown colour. This shows that it contains:",
+      "options": [
+        "impurities",
+        "pure hydrogen",
+        "only oxygen",
+        "distilled vapour"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 12,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "231f1bad1624"
+    }
+  ]
+}

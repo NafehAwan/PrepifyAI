@@ -1,0 +1,227 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "3f1c66161778",
+      "stem": "How many times does the loop for (let i = 1; i <= 5; i++) run?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "1"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "fda711a785a2"
+    },
+    {
+      "id": "e33a740c9414",
+      "stem": "How many times does the loop for (let i = 0; i < 10; i += 2) run?",
+      "options": [
+        "4",
+        "5",
+        "10",
+        "6"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "fda711a785a2"
+    },
+    {
+      "id": "64f13cf8987d",
+      "stem": "In the JavaScript array let colours = [\"red\", \"green\", \"blue\"];, the value of colours[1] is:",
+      "options": [
+        "\"red\"",
+        "\"green\"",
+        "\"blue\"",
+        "undefined"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b5bd5bd70780"
+    },
+    {
+      "id": "6fc8cf16d6ff",
+      "stem": "A shop uses the code: var amount = 500; if (amount >= 500) { document.write(\"Discount!\"); }. What happens?",
+      "options": [
+        "\"Discount!\" is printed",
+        "Nothing is printed",
+        "An error occurs",
+        "\"500\" is printed"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "c4af6131f557"
+    },
+    {
+      "id": "a191849171c9",
+      "stem": "What is the value of 17 % 5 in JavaScript?",
+      "options": [
+        "3",
+        "2",
+        "3.4",
+        "12"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "c8978f8a2222"
+    },
+    {
+      "id": "ccad456bb88c",
+      "stem": "Which JavaScript function shows a dialog box with a text field so that the user can type a value?",
+      "options": [
+        "alert()",
+        "confirm()",
+        "prompt()",
+        "document.write()"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "ecd7ce965e64"
+    },
+    {
+      "id": "bcf54b894c3b",
+      "stem": "To show a message inside the web page itself rather than in a pop-up, a beginner can use:",
+      "options": [
+        "alert()",
+        "document.write()",
+        "prompt()",
+        "confirm()"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "333343382470"
+    },
+    {
+      "id": "922ef6556301",
+      "stem": "Which HTML heading tag displays the smallest heading?",
+      "options": [
+        "<h1>",
+        "<h3>",
+        "<h6>",
+        "<h10>"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "4ec49e071ef5"
+    },
+    {
+      "id": "d166a2954ce2",
+      "stem": "A program must print \"A\", \"B\", \"C\" or \"Fail\" depending on a student's marks. Which structure is most suitable?",
+      "options": [
+        "A single if statement",
+        "An if-else statement",
+        "An if-else if-else statement",
+        "A for loop"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "ef48c42d5189"
+    },
+    {
+      "id": "444068f24aaa",
+      "stem": "Given function square(n) { return n * n; }, what does square(4) send back to the caller?",
+      "options": [
+        "8",
+        "16",
+        "4",
+        "Nothing"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "7723e867ac4b"
+    },
+    {
+      "id": "e291d946ab34",
+      "stem": "In the page <html><head><title>Home</title></head><body><p>Hi</p></body></html>, the parent of the <p> element is:",
+      "options": [
+        "<html>",
+        "<head>",
+        "<body>",
+        "<title>"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "31265308ffb8"
+    },
+    {
+      "id": "e05b6e394750",
+      "stem": "A news website shows each reader different stories based on the reader's choices. This kind of website is:",
+      "options": [
+        "static",
+        "dynamic",
+        "offline",
+        "read-only"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "fc9aaa3168ff"
+    },
+    {
+      "id": "f7131c2da94e",
+      "stem": "Finding and fixing the mistakes in a program after it has been written is called:",
+      "options": [
+        "compiling",
+        "debugging",
+        "designing",
+        "uploading"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "bde8534ce3a8"
+    }
+  ]
+}

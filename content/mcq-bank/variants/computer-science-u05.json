@@ -1,0 +1,142 @@
+{
+  "subject": "Computer Science",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "6a8475562bf2",
+      "stem": "A company keeps sensitive records on its own private servers but uses a public provider's servers for its website. This is a:",
+      "options": [
+        "public cloud",
+        "private cloud",
+        "hybrid cloud",
+        "community cloud"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "671fd6e17480"
+    },
+    {
+      "id": "009b520186df",
+      "stem": "An AI model learns to recognise cats after being trained on thousands of photos already labelled \"cat\" or \"not cat\". This is:",
+      "options": [
+        "unsupervised learning",
+        "supervised learning",
+        "reinforcement learning",
+        "rule-based programming"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "7475c7f494c9"
+    },
+    {
+      "id": "e331f94fb0a2",
+      "stem": "A bank website has a program that answers customers' typed questions at any hour. This is a:",
+      "options": [
+        "chatbot",
+        "expert system",
+        "computer virus",
+        "spreadsheet"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "baef3d64379c"
+    },
+    {
+      "id": "4765a2c94bd8",
+      "stem": "Google Drive and Dropbox, which anyone can sign up for over the Internet, are examples of:",
+      "options": [
+        "private cloud",
+        "public cloud",
+        "hybrid cloud",
+        "local storage"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a2b377aef259"
+    },
+    {
+      "id": "5de4042dcc3d",
+      "stem": "Which is a limitation of AI systems?",
+      "options": [
+        "They are always 100% accurate",
+        "They can give wrong results and their decisions are hard to explain",
+        "They never need data",
+        "They cannot run on computers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "b11964f84d63"
+    },
+    {
+      "id": "c41c58a2320d",
+      "stem": "A factory replaces many workers with AI-controlled robots. Which negative impact of AI does this show?",
+      "options": [
+        "Job losses",
+        "Better medical diagnosis",
+        "Faster translation",
+        "Fewer road accidents"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "2c3e6ea0a949"
+    },
+    {
+      "id": "753c911db0c8",
+      "stem": "Building an expert system begins with:",
+      "options": [
+        "gathering knowledge from human experts into a knowledge base",
+        "selling the software",
+        "testing it with users",
+        "printing the results"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "a16968ce5a9c"
+    },
+    {
+      "id": "dafce7d664f2",
+      "stem": "Turning spoken words into written text is called:",
+      "options": [
+        "speech recognition",
+        "computer vision",
+        "data mining",
+        "encryption"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded and re-valued versions of bank questions, written for Prepify",
+      "variant_of": "d3a8d738a170"
+    }
+  ]
+}

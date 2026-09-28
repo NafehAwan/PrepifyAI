@@ -1,0 +1,108 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "c3cd2b7c4f40",
+      "stem": "What is the solution set of |x| = −3?",
+      "options": [
+        "{3}",
+        "{−3}",
+        "{−3, 3}",
+        "φ"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "15b63513664e"
+    },
+    {
+      "id": "bfee6cf051d2",
+      "stem": "An equation such as √(x + 1) = 4, where the variable is under a root sign, is a:",
+      "options": [
+        "linear equation",
+        "radical equation",
+        "absolute value equation",
+        "compound equation"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f47f1a8262a4"
+    },
+    {
+      "id": "7544e24a9014",
+      "stem": "|x| measures the distance of x from:",
+      "options": [
+        "1",
+        "x",
+        "0",
+        "−1"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "3d42cc5d7fb4"
+    },
+    {
+      "id": "6f8e880a7d70",
+      "stem": "What is the solution set of 5x + 4 < 3x − 6?",
+      "options": [
+        "{x : x < −5}",
+        "{x : x > −5}",
+        "{x : x < 5}",
+        "{x : x > 5}"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5486297e9c34"
+    },
+    {
+      "id": "2dc69454092d",
+      "stem": "A mathematical statement such as 2x + 1 > 7 is called:",
+      "options": [
+        "an equation",
+        "an inequality",
+        "an identity",
+        "a radical"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "75e3dc9f04b0"
+    },
+    {
+      "id": "c73ba33192a0",
+      "stem": "What is the solution set of x − 2 ≥ 1 and x + 4 ≤ 12?",
+      "options": [
+        "{x : 3 ≤ x ≤ 8}",
+        "{x : x ≤ 8}",
+        "{x : x ≥ 3}",
+        "{x : −3 ≤ x ≤ 8}"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1c4fa394b052"
+    }
+  ]
+}

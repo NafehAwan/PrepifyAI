@@ -1,0 +1,142 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "23e864bca407",
+      "stem": "A camel walks easily on sand because its wide feet:",
+      "options": [
+        "increase the pressure on the sand",
+        "spread its weight over a large area and reduce pressure",
+        "reduce its weight",
+        "increase its mass"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a3e7c46d21fc"
+    },
+    {
+      "id": "97821084af10",
+      "stem": "A dentist's chair is raised by pressing a small pedal because of:",
+      "options": [
+        "Hooke's law",
+        "Pascal's law",
+        "Newton's first law",
+        "Archimedes' principle"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8ef6234ae857"
+    },
+    {
+      "id": "944c83e72688",
+      "stem": "If the force on a surface is doubled and the area is halved, the pressure becomes:",
+      "options": [
+        "the same",
+        "double",
+        "four times",
+        "half"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "823d8d209ba1"
+    },
+    {
+      "id": "14fe58eb6d27",
+      "stem": "A person lies flat on thin ice instead of standing on it. This reduces the risk of breaking the ice because:",
+      "options": [
+        "the weight decreases",
+        "the pressure on the ice decreases",
+        "the mass decreases",
+        "the ice becomes thicker"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5458096b75a0"
+    },
+    {
+      "id": "342e2f47236c",
+      "stem": "A dam is built much thicker at the bottom than at the top because water pressure:",
+      "options": [
+        "increases with depth",
+        "decreases with depth",
+        "is the same at all depths",
+        "depends only on the dam's colour"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d4fa60e09a63"
+    },
+    {
+      "id": "38590e723b81",
+      "stem": "The pressure at a point in a liquid depends on the liquid's density and the:",
+      "options": [
+        "depth of the point",
+        "shape of the container",
+        "total volume of liquid",
+        "colour of the liquid"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "3261c5af9a2b"
+    },
+    {
+      "id": "4d80033ddae6",
+      "stem": "Sucking air out of a straw lowers the pressure inside it, so the drink is pushed up by:",
+      "options": [
+        "atmospheric pressure",
+        "gravity",
+        "friction",
+        "magnetism"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e0336a9f5b0a"
+    },
+    {
+      "id": "ca8aa9ee50fd",
+      "stem": "A spring is stretched beyond its limit of proportionality. Its force–extension graph then:",
+      "options": [
+        "stays a straight line",
+        "becomes a curve",
+        "becomes a horizontal line",
+        "disappears"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "14cc121c2bca"
+    }
+  ]
+}

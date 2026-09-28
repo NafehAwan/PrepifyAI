@@ -1,0 +1,125 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 10,
+  "questions": [
+    {
+      "id": "d1414dc68114",
+      "stem": "A person with indigestion takes an antacid tablet. The tablet helps because it is a:",
+      "options": [
+        "strong acid",
+        "base that neutralizes excess acid",
+        "salt with no effect",
+        "metal"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5852f2912f75"
+    },
+    {
+      "id": "b9c9e91a7892",
+      "stem": "Which ion gives acids their acidic properties in water?",
+      "options": [
+        "OH⁻",
+        "H⁺",
+        "Na⁺",
+        "Cl⁻"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d617d5f8bd2a"
+    },
+    {
+      "id": "25f5db4bd227",
+      "stem": "Which of these is a common base?",
+      "options": [
+        "HCl",
+        "HNO₃",
+        "NaOH",
+        "H₂SO₄"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bf23faf0a3b3"
+    },
+    {
+      "id": "d6d97c3b72a6",
+      "stem": "HCl dissolves in water to form:",
+      "options": [
+        "H⁺ and Cl⁻",
+        "Na⁺ and OH⁻",
+        "H⁺ and OH⁻",
+        "Na⁺ and Cl⁻"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "de87d8d59088"
+    },
+    {
+      "id": "b09f909706e6",
+      "stem": "Four unlabelled bottles contain HCl, HNO₃, NaOH and KOH. Which two turn blue litmus paper red?",
+      "options": [
+        "NaOH and KOH",
+        "HCl and HNO₃",
+        "HCl and NaOH",
+        "HNO₃ and KOH"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "6ab2846d1612"
+    },
+    {
+      "id": "2968f530ccc5",
+      "stem": "A gas that turns moist red litmus blue is:",
+      "options": [
+        "alkaline",
+        "acidic",
+        "neutral",
+        "a noble gas"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8618923d472b"
+    },
+    {
+      "id": "0a1f05fcd517",
+      "stem": "Sulphuric acid is used on a large scale in the manufacture of:",
+      "options": [
+        "fertilizers",
+        "glass only",
+        "table salt",
+        "sugar"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 10,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a15bac98cd8e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# subject: English
+# chapter: 10
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the noun related to "generous": | Generously | Generosity | General | Generate | B | h v:1e98c9a0aabd
+Which sentence expresses thanks? | I am so grateful for your help. | Go away. | I don't mind. | Who asked you? | A | e v:f7a1211a9b76
+Choose the synonym of "love": | Affection | Hatred | Anger | Envy | A | e v:a98895b4a04f
+Choose the antonym of "selfish": | Greedy | Mean | Selfless | Proud | C | e v:361d828c1764
+Choose the antonym of "forget": | Ignore | Lose | Remember | Neglect | C | e v:216809873a8e
+The feeling that runs through "Two Mothers Remembered" is one of: | gratitude and love | anger | fear | jealousy | A | e v:cebb13ce1f3e
+Choose the indirect speech of: He said, "I will always help you." | He said that he would always help me. | He said that I will always help you. | He says that he would always help me. | He said that he will always helped me. | A | h v:2ac39a323428
+Choose the correct sentence: | A father's care are precious. | A father's care is precious. | A father's care be precious. | A father's care were precious. | B | e v:fa13d229dd58
+A boy writes to his grandmother, "I can never repay your kindness." Here "repay" means: | pay back | take away | borrow | forget | A | s v:540955e3a495

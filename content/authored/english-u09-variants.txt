@@ -1,0 +1,16 @@
+# subject: English
+# chapter: 9
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the indirect speech of: The guide said, "The fort is very old." | The guide said that the fort was very old. | The guide said that the fort is very oldly. | The guide says that the fort was very old. | The guide said that the fort will be old. | A | h v:9a085cd4c299
+Which sentence is in the future tense? | We visited Murree. | We will visit Murree. | We visit Murree. | We are visiting Murree now. | B | e v:39b7e339f01e
+Choose the passive voice of "Tourists admire the Faisal Mosque.": | The Faisal Mosque is admired by tourists. | The Faisal Mosque was admired by tourists. | The Faisal Mosque admired by tourists. | The Faisal Mosque has admired tourists. | A | v:6e503c7062ff
+In "Tourists enjoy the view", the word "enjoy" is: | a noun | a verb | an adjective | an adverb | B | e v:deebd68b4469
+Choose the correct sentence: | We went to Swat last summer. | We go to Swat last summer. | We have gone to Swat last summer. | We going to Swat last summer. | A | h v:79e438d947b3
+Choose the correct spelling: | Itinerary | Itinerery | Itenerary | Itinirary | A | h v:cd0737d3b69c
+Choose the synonym of "trip": | Journey | Rest | Stay | Halt | A | e v:eac1df867c64
+Which sentence is in the present perfect tense? | I have visited Mohenjo-daro. | I visited Mohenjo-daro. | I visit Mohenjo-daro. | I will visit Mohenjo-daro. | A | e v:1a826aa1d7f4
+Choose the plural of "valley": | vallies | valleys | valleyes | vallys | B | h v:4a0c595f8647

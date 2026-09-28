@@ -1,0 +1,17 @@
+# subject: Physics
+# chapter: 1
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Which instrument is most suitable for measuring the diameter of a thin wire? | Metre rule | Screw gauge | Measuring tape | Stopwatch | B | v:56ff49232b83
+The smallest reading that an instrument can measure accurately is its: | range | least count | zero error | maximum reading | B | e v:074ebf192d75
+Which quantity has the SI unit m³? | area | volume | speed | density | B | e v:1f8b1a043032
+Arrange these prefixes from largest to smallest: kilo, mega, milli, centi | mega, kilo, centi, milli | kilo, mega, milli, centi | milli, centi, kilo, mega | centi, milli, mega, kilo | A | h v:930bafc0e6b2
+The inside jaws of a vernier caliper are used to measure the: | length of a rod | internal diameter of a pipe | mass of a cylinder | thickness of paper | B | v:cdb26f72bcb3
+The number 0.00056 in scientific notation is: | 5.6 × 10⁻⁵ | 5.6 × 10⁻⁴ | 56 × 10⁻³ | 0.56 × 10⁻² | B | v:7213464ab3b6
+When the jaws of a vernier caliper are closed, the vernier zero lies to the left of the main-scale zero. The zero error is: | positive | negative | zero | infinite | B | h v:fc871e622035
+Which one of these is a base unit, not a derived unit? | newton | joule | kilogram | pascal | C | v:198c063e0fa2
+Which of these is a scalar quantity? | Velocity | Force | Mass | Displacement | C | e v:5af6be11cb19
+A student writes "the length of the table is 2". The measurement is incomplete because it has no: | number | unit | direction | error | B | s e v:5b3b58e01611

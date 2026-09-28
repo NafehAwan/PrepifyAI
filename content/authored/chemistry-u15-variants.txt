@@ -1,0 +1,17 @@
+# subject: Chemistry
+# chapter: 15
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Table sugar (sucrose) is made of two sugar units joined together. It is a: | monosaccharide | disaccharide | polysaccharide | protein | B | v:bc0c5d90c846
+Rice, bread and potatoes are rich in starch, which is a: | monosaccharide | disaccharide | polysaccharide | lipid | C | e v:9812bb7eefce
+A food sample turns violet when biuret reagent is added. It contains: | starch | protein | fat | glucose | B | s v:6580adf62e98
+A sample of fruit juice turns Benedict's solution brick-red on heating. It contains: | a reducing sugar such as glucose | starch only | protein | fat | A | s v:0c90a03e6c0d
+Children who get little sunlight and no milk may develop soft, bent bones. This disease is: | scurvy | rickets | goitre | night blindness | B | s v:cfb5a29b47a6
+Bleeding gums caused by a lack of fresh fruit and vegetables is the disease: | scurvy | rickets | anaemia | beriberi | A | v:70a0062721ec
+Amino acids join together to form: | carbohydrates | proteins | fats | vitamins | B | e v:7db0b34b1b1b
+Athletes eat pasta before a race because carbohydrates mainly: | provide energy | repair bones | carry genes | fight infection | A | s e v:17a60bffe2c0
+Milk sugar is called: | sucrose | lactose | starch | cellulose | B | v:ea2fac1bdf22
+Heating an enzyme to 90 °C destroys its shape so it stops working. The enzyme has been: | denatured | activated | multiplied | frozen | A | h v:cb98634875d7

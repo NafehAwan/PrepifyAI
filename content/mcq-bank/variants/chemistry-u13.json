@@ -1,0 +1,159 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 13,
+  "questions": [
+    {
+      "id": "9afccf67c6e2",
+      "stem": "Which group is present in every alcohol, such as methanol and ethanol?",
+      "options": [
+        "–OH",
+        "–COOH",
+        "–CHO",
+        "–NH₂"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5719467b486c"
+    },
+    {
+      "id": "bd0bb467e379",
+      "stem": "Ethanoic acid (CH₃COOH) belongs to the class of:",
+      "options": [
+        "alcohols",
+        "aldehydes",
+        "carboxylic acids",
+        "ketones"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "226c43827bdc"
+    },
+    {
+      "id": "193b2c2fb83c",
+      "stem": "Glucose and fructose both have the formula C₆H₁₂O₆ but different structures. They are:",
+      "options": [
+        "isotopes",
+        "isomers",
+        "allotropes",
+        "polymers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d423c8a36dd1"
+    },
+    {
+      "id": "69fa00f2571a",
+      "stem": "The prefix \"but-\" in butane shows a chain of:",
+      "options": [
+        "2 carbons",
+        "3 carbons",
+        "4 carbons",
+        "5 carbons"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1cba8e974b02"
+    },
+    {
+      "id": "fc93fb8b41c2",
+      "stem": "Petrol, diesel and kerosene are obtained from crude oil by:",
+      "options": [
+        "filtration",
+        "fractional distillation",
+        "crystallization",
+        "chromatography"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "35addaefa5d5"
+    },
+    {
+      "id": "4de050064a7f",
+      "stem": "Coke, coal gas and coal tar are produced when coal is:",
+      "options": [
+        "burnt in plenty of air",
+        "heated strongly without air",
+        "dissolved in water",
+        "cracked with a catalyst"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "18796891034b"
+    },
+    {
+      "id": "250337660a39",
+      "stem": "Carbon atoms can link together to form very long chains. This property is called:",
+      "options": [
+        "isomerism",
+        "catenation",
+        "hydrolysis",
+        "oxidation"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "46ee475fd03a"
+    },
+    {
+      "id": "58989767038e",
+      "stem": "Which of these is an inorganic compound?",
+      "options": [
+        "Ethanol",
+        "Methane",
+        "Sodium chloride",
+        "Glucose"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "540bd5c456b2"
+    },
+    {
+      "id": "85cbae0a5e0e",
+      "stem": "The pleasant smells of many fruits and perfumes come from compounds called:",
+      "options": [
+        "esters",
+        "alkanes",
+        "amines",
+        "acids"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a1407758c2d9"
+    }
+  ]
+}

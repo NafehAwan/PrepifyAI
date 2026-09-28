@@ -1,0 +1,20 @@
+# subject: Computer Science
+# chapter: 1
+# kind: variants
+# source: Reworded and re-valued versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A student records a voice note for an assignment. Which input device turns the student's voice into digital signals? | Scanner | Microphone | Speaker | Webcam | B | s e v:2112edea75a6
+A cable company links its offices spread across one city, about 30 km apart. This network is a: | LAN | MAN | WAN | PAN | B | s v:756b184c515d
+Which register holds the address of the instruction to be fetched next? | Accumulator | Program Counter | Instruction Register | Memory Data Register | B | v:8819ee05fd3c
+Short symbolic codes such as MOV, ADD and SUB are used in: | machine language | assembly language | high-level languages only | HTML | B | e v:4abcc84f95f4
+During a phone call both people can talk and listen at the same time. This uses which transmission mode? | Simplex | Half-duplex | Full-duplex | Broadcast | C | s v:b414f31fa08c
+Data that flows in only one direction, as from a keyboard to a computer, uses which mode? | Simplex | Half-duplex | Full-duplex | Multiplex | A | v:9a06fde71277
+The part of the CPU that directs the flow of data and tells the other components what to do is the: | ALU | Control Unit | Cache | Hard disk | B | v:381d8782c7a0
+Which protocol does a web browser use to request and load web pages? | SMTP | FTP | HTTP | POP3 | C | v:ce3fcabcfa9e
+The key idea of the Von Neumann architecture is that: | instructions and data are stored together in the same memory | instructions are stored only on paper | data is kept only in registers | each program needs its own CPU | A | v:9572ac25cbc0
+The Internet grew out of a 1960s U.S. research network called: | ARPANET | Ethernet | World Wide Web | Bluetooth | A | e v:4e5c563ff66c
+A shopkeeper wants to turn a printed price list into a digital image on the computer. Which device should be used? | Printer | Scanner | Plotter | Projector | B | s e v:f1ee72d031d4
+Which component is called the "brain" of the computer because it processes all instructions? | RAM | Hard disk | CPU | Monitor | C | e v:80bf1e7151f5
+A walkie-talkie lets only one person speak at a time, although both can speak. This is: | simplex mode | half-duplex mode | full-duplex mode | broadcast mode | B | s v:b414f31fa08c

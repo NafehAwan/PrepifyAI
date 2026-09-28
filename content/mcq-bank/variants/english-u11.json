@@ -1,0 +1,142 @@
+{
+  "subject": "English",
+  "chapter_seq": 11,
+  "questions": [
+    {
+      "id": "69f60ccb7605",
+      "stem": "Choose the plural of \"story\":",
+      "options": [
+        "storys",
+        "stories",
+        "storyes",
+        "storis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "00322657022f"
+    },
+    {
+      "id": "6c190d0b897d",
+      "stem": "In \"Grete opened the door quietly\", the word \"quietly\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a verb"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e972604f5f2a"
+    },
+    {
+      "id": "7c370f482888",
+      "stem": "Choose the synonym of \"load\":",
+      "options": [
+        "Burden",
+        "Gift",
+        "Relief",
+        "Joy"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9f9bafca4259"
+    },
+    {
+      "id": "5aa79913be89",
+      "stem": "Choose the adjective in: \"The family lived in a small flat.\"",
+      "options": [
+        "family",
+        "lived",
+        "small",
+        "flat"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1dfe9afc22f4"
+    },
+    {
+      "id": "e78793e20b55",
+      "stem": "Choose the passive voice of \"Grete fed Gregor.\":",
+      "options": [
+        "Gregor is fed by Grete.",
+        "Gregor was fed by Grete.",
+        "Gregor has fed Grete.",
+        "Gregor was feed by Grete."
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "694d990fe202"
+    },
+    {
+      "id": "cad028a0b8ed",
+      "stem": "Choose the antonym of \"indifference\":",
+      "options": [
+        "Coldness",
+        "Neglect",
+        "Sympathy",
+        "Boredom"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "15f1ffcaf399"
+    },
+    {
+      "id": "d4fb6d409884",
+      "stem": "In \"The Metamorphosis\", Gregor supported his family by working as a:",
+      "options": [
+        "travelling salesman",
+        "doctor",
+        "teacher",
+        "farmer"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2288666d9751"
+    },
+    {
+      "id": "a038c0918115",
+      "stem": "A reader feels pity for Gregor when his family shuts him away. This feeling is:",
+      "options": [
+        "sympathy",
+        "jealousy",
+        "pride",
+        "boredom"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 11,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "8a687bc24b8c"
+    }
+  ]
+}

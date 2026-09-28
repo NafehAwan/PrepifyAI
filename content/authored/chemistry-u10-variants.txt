@@ -1,0 +1,14 @@
+# subject: Chemistry
+# chapter: 10
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+A person with indigestion takes an antacid tablet. The tablet helps because it is a: | strong acid | base that neutralizes excess acid | salt with no effect | metal | B | s v:5852f2912f75
+Which ion gives acids their acidic properties in water? | OH⁻ | H⁺ | Na⁺ | Cl⁻ | B | e v:d617d5f8bd2a
+Which of these is a common base? | HCl | HNO₃ | NaOH | H₂SO₄ | C | e v:bf23faf0a3b3
+HCl dissolves in water to form: | H⁺ and Cl⁻ | Na⁺ and OH⁻ | H⁺ and OH⁻ | Na⁺ and Cl⁻ | A | v:de87d8d59088
+Four unlabelled bottles contain HCl, HNO₃, NaOH and KOH. Which two turn blue litmus paper red? | NaOH and KOH | HCl and HNO₃ | HCl and NaOH | HNO₃ and KOH | B | s v:6ab2846d1612
+A gas that turns moist red litmus blue is: | alkaline | acidic | neutral | a noble gas | A | h v:8618923d472b
+Sulphuric acid is used on a large scale in the manufacture of: | fertilizers | glass only | table salt | sugar | A | v:a15bac98cd8e

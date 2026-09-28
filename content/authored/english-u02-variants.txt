@@ -1,0 +1,17 @@
+# subject: English
+# chapter: 2
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Hina's bakery gains loyal customers because she never sells stale bread. Which quality helps her business most? | Honesty and quality | Rudeness | Delay | High prices | A | s e v:8be6f25f5f4f
+The prefix in "unhappy" means: | again | not | before | after | B | e v:effac9fd4964
+Choose the synonym of "prosper": | Fail | Flourish | Shrink | Collapse | B | v:6fc35586982b
+Fill in the blank: He invested his money ___ a clothing shop. | at | in | on | by | B | v:71108b6f76c6
+Choose the antonym of "nervous": | Anxious | Worried | Confident | Afraid | C | v:9915270eaf64
+The noun form of "succeed" is: | Successful | Success | Successfully | Succeeding | B | v:1ee45a4d8490
+Choose the correct form: If he saves money, he ___ buy a sewing machine. | will | would | had | was | A | h v:a4acd6ee43f5
+Choose the passive voice of "She opened a new shop.": | A new shop is opened by her. | A new shop was opened by her. | A new shop has been opened by her. | A new shop was open by her. | B | v:fd2ecfd51cda
+Zara bakes cakes at home and sells them to neighbours, keeping her own accounts. She is best described as: | an employee | a home-based entrepreneur | a customer | a supplier | B | s v:2380e6bf99ca
+Before starting a tailoring shop, Rabia writes down her costs, prices and target customers. She is preparing: | a business plan | a recipe | a travel plan | a complaint | A | s e v:971ff47c97a3

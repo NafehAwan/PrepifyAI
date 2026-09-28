@@ -1,0 +1,142 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "aaaad96ecd88",
+      "stem": "A chemist measures how air pollutants from factories affect rainwater. This work belongs to:",
+      "options": [
+        "Organic Chemistry",
+        "Nuclear Chemistry",
+        "Astrochemistry",
+        "Environmental Chemistry"
+      ],
+      "answer": 3,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "d2a1b2f3b517"
+    },
+    {
+      "id": "1f12147a6b9a",
+      "stem": "A medicine that works in a small lab trial must now be made in tonnes in a factory. Which experts mainly solve this scale-up problem?",
+      "options": [
+        "Historians",
+        "Chemical engineers",
+        "Geologists",
+        "Astronomers"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2c4b02d14387"
+    },
+    {
+      "id": "2f974aefe4cf",
+      "stem": "Studying how enzymes break down food inside the stomach is part of:",
+      "options": [
+        "Physical Chemistry",
+        "Inorganic Chemistry",
+        "Biochemistry",
+        "Analytical Chemistry"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "32e098ce7d6e"
+    },
+    {
+      "id": "73eaa9bd2e77",
+      "stem": "A scientist examines rocks and minerals to find which elements they contain. This branch is:",
+      "options": [
+        "Geochemistry",
+        "Biochemistry",
+        "Polymer Chemistry",
+        "Theoretical Chemistry"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a1e9e20f8c0e"
+    },
+    {
+      "id": "731ccf936313",
+      "stem": "A laboratory tests a water sample to find exactly which metals are present and in what amounts. This is:",
+      "options": [
+        "Analytical Chemistry",
+        "Astrochemistry",
+        "Organic Chemistry",
+        "Geochemistry"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "514e2e96cd45"
+    },
+    {
+      "id": "5fd39210b583",
+      "stem": "Before a new scientific idea is accepted, other scientists must:",
+      "options": [
+        "memorise it",
+        "test it repeatedly and get the same results",
+        "publish it in a newspaper",
+        "vote on it"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "99e2df45e6ee"
+    },
+    {
+      "id": "06d6f5380dc7",
+      "stem": "Modern chemistry uses ideas from physics, biology and environmental science. This shows that chemistry is:",
+      "options": [
+        "interdisciplinary",
+        "outdated",
+        "limited to laboratories",
+        "only about metals"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7b45365d6e55"
+    },
+    {
+      "id": "d5dbaee7b201",
+      "stem": "Studying the chemicals in meteorites and distant stars is called:",
+      "options": [
+        "Astrochemistry",
+        "Biochemistry",
+        "Geochemistry",
+        "Food Chemistry"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "514e2e96cd45"
+    }
+  ]
+}

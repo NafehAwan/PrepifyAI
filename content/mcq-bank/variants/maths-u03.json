@@ -1,0 +1,108 @@
+{
+  "subject": "Maths",
+  "chapter_seq": 3,
+  "questions": [
+    {
+      "id": "cb83f0c811ce",
+      "stem": "If U = {1, 2, 3, 4, 5, 6} and A = {1, 3, 5}, then A′ is:",
+      "options": [
+        "{2, 4, 6}",
+        "{1, 3, 5}",
+        "{1, 2, 3, 4, 5, 6}",
+        "∅"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "0edd1700f188"
+    },
+    {
+      "id": "48e98bec67dc",
+      "stem": "In a Venn diagram, shading only the overlapping region of circles A and B represents:",
+      "options": [
+        "A ∪ B",
+        "A ∩ B",
+        "A − B",
+        "B − A"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a4dfcd4fda74"
+    },
+    {
+      "id": "a655920cf929",
+      "stem": "If A = {x : x ∈ N and x² = 9}, then A is:",
+      "options": [
+        "{3, −3}",
+        "{3}",
+        "{9}",
+        "{ }"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "00ede88842a8"
+    },
+    {
+      "id": "34deb86b85e1",
+      "stem": "A set containing exactly one element, such as {0}, is called a:",
+      "options": [
+        "empty set",
+        "singleton set",
+        "universal set",
+        "infinite set"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4e6241caffd1"
+    },
+    {
+      "id": "e9b9435c94bf",
+      "stem": "If L × M = {(a, 1), (a, 2), (b, 1), (b, 2)}, then set M is:",
+      "options": [
+        "{a, b}",
+        "{1, 2}",
+        "{a, 1}",
+        "{a, b, 1, 2}"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "40193037816e"
+    },
+    {
+      "id": "f263580ad8a5",
+      "stem": "If A = {1, 2} and B = {x}, then A × B is:",
+      "options": [
+        "{(1, x), (2, x)}",
+        "{(x, 1), (x, 2)}",
+        "{(1, 2)}",
+        "{1, 2, x}"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 3,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "dd0fcab9e502"
+    }
+  ]
+}

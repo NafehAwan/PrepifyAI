@@ -1,0 +1,15 @@
+# subject: Chemistry
+# chapter: 5
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+In the ammonium ion, NH₃ donates both electrons of a bond to H⁺. This bond is a: | coordinate covalent bond | ionic bond | metallic bond | hydrogen bond | A | v:aeaf06fcf0f4
+Atoms tend to gain, lose or share electrons so that their outer shell holds eight electrons. This is the: | duplet rule | octet rule | Hund's rule | Aufbau rule | B | e v:b7ab9e0afc93
+Which substance conducts electricity in the solid state? | Sugar | Aluminium | Sulphur | Ice | B | v:bc3218a1f372
+Element X has 1 valence electron and element Y has 6. The compound they form is most likely: | XY₂, covalent | X₂Y, ionic | XY, covalent | XY₆, ionic | B | h v:86cff65a999f
+Which bond is the most polar? | H–H | H–Cl | H–F | Cl–Cl | C | h v:37aefda6494f
+A white solid has a high melting point, does not conduct as a solid, but conducts when dissolved in water. It is most likely: | an ionic compound | a metal | a covalent gas | graphite | A | s v:5ac5eeed921a
+Nitrogen usually forms three covalent bonds because it: | needs three more electrons to complete its octet | has three shells | is a metal | has no valence electrons | A | v:536db92cc178
+A covalent bond forms when the orbitals of two atoms: | overlap and share a pair of electrons | move apart | transfer all electrons | become ions | A | v:8c19d73fcd23

@@ -1,0 +1,14 @@
+# subject: Chemistry
+# chapter: 3
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Which scientist discovered the neutron? | Thomson | Chadwick | Rutherford | Dalton | B | v:af15e1f36f60
+Which scientist proposed the nuclear model of the atom after the gold-foil experiment? | Dalton | Thomson | Rutherford | Bohr | C | v:7b1344020967
+An electron falls from the third shell back to the first shell. According to Bohr's theory, it: | absorbs energy | releases energy | gains mass | loses its charge | B | s v:d8ddab8db7ed
+In an electric field, a beam of neutrons: | bends towards the positive plate | bends towards the negative plate | passes straight through | stops completely | C | v:cfe19fb153ba
+The mass of a proton is about the same as the mass of a: | neutron | electron | photon | positron only | A | v:44264e75721f
+The number of protons in an atom is called its: | mass number | atomic number | neutron number | valency | B | e v:46d1d0bfa7eb
+Both Rutherford's and Bohr's atomic models include: | electrons embedded in a positive sphere | a small, dense central nucleus | no electrons | atoms that cannot be divided | B | v:47b55ca89314

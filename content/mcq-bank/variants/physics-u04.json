@@ -1,0 +1,108 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 4,
+  "questions": [
+    {
+      "id": "7a37f3c73038",
+      "stem": "A racing car goes round a circular track. If its speed is doubled on the same track, the centripetal force needed becomes:",
+      "options": [
+        "half",
+        "double",
+        "four times",
+        "the same"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "03148a29d106"
+    },
+    {
+      "id": "b6a37934ffc1",
+      "stem": "A bus overturns on a sharp turn when it is loaded high on the roof because:",
+      "options": [
+        "its centre of gravity rises and can fall outside its base",
+        "its mass decreases",
+        "friction increases",
+        "its wheels get bigger"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "31cb7aaaba9c"
+    },
+    {
+      "id": "8e24048849e8",
+      "stem": "Oil on a road increases a car's braking distance because oil:",
+      "options": [
+        "increases friction",
+        "acts as a lubricant and reduces friction",
+        "adds weight to the car",
+        "makes the road rougher"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b43d5aa34522"
+    },
+    {
+      "id": "6deaa1ec13f7",
+      "stem": "A door is easiest to open when you push:",
+      "options": [
+        "at the hinge",
+        "at the middle",
+        "at the edge farthest from the hinge, perpendicular to the door",
+        "along the door towards the hinge"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "16615cd3b076"
+    },
+    {
+      "id": "72c9bba96fe9",
+      "stem": "A ball resting at the bottom of a bowl returns there when pushed slightly. This is:",
+      "options": [
+        "stable equilibrium",
+        "unstable equilibrium",
+        "neutral equilibrium",
+        "no equilibrium"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "e6bea19d9bce"
+    },
+    {
+      "id": "1e2039ce9282",
+      "stem": "A body moving in a circle at constant speed is accelerating because its:",
+      "options": [
+        "mass changes",
+        "direction of motion keeps changing",
+        "speed increases",
+        "weight changes"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 4,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "99dc8c0a86d4"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# subject: English
+# chapter: 11
+# kind: variants
+# source: Reworded versions of bank questions, written for Prepify
+# answer_source: authored
+# difficulty: medium
+
+Choose the plural of "story": | storys | stories | storyes | storis | B | e v:00322657022f
+In "Grete opened the door quietly", the word "quietly" is: | an adjective | an adverb | a noun | a verb | B | e v:e972604f5f2a
+Choose the synonym of "load": | Burden | Gift | Relief | Joy | A | e v:9f9bafca4259
+Choose the adjective in: "The family lived in a small flat." | family | lived | small | flat | C | e v:1dfe9afc22f4
+Choose the passive voice of "Grete fed Gregor.": | Gregor is fed by Grete. | Gregor was fed by Grete. | Gregor has fed Grete. | Gregor was feed by Grete. | B | v:694d990fe202
+Choose the antonym of "indifference": | Coldness | Neglect | Sympathy | Boredom | C | v:15f1ffcaf399
+In "The Metamorphosis", Gregor supported his family by working as a: | travelling salesman | doctor | teacher | farmer | A | e v:2288666d9751
+A reader feels pity for Gregor when his family shuts him away. This feeling is: | sympathy | jealousy | pride | boredom | A | s v:8a687bc24b8c

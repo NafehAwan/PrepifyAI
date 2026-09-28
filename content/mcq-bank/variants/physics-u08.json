@@ -1,0 +1,159 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "3c6464601ba6",
+      "stem": "Around a long straight wire carrying current, the magnetic field lines form:",
+      "options": [
+        "straight lines parallel to the wire",
+        "concentric circles around the wire",
+        "no pattern",
+        "lines only at the ends"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9131237ac267"
+    },
+    {
+      "id": "e132c2cc4ec6",
+      "stem": "A compass needle points wrongly when placed near a steel scissors. This happens because:",
+      "options": [
+        "the steel's magnetic field affects the needle",
+        "the scissors are charged",
+        "steel is non-magnetic",
+        "the compass is broken"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f6e2857922c3"
+    },
+    {
+      "id": "c80b97c36cf9",
+      "stem": "Iron filings sprinkled around a bar magnet are least crowded:",
+      "options": [
+        "near the north pole",
+        "near the south pole",
+        "near the middle of the magnet",
+        "at both ends"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "46b753f6234f"
+    },
+    {
+      "id": "cc3bcb5d2582",
+      "stem": "Inside a bar magnet, magnetic field lines run from:",
+      "options": [
+        "north pole to south pole",
+        "south pole to north pole",
+        "the middle outwards",
+        "nowhere"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c9274736d248"
+    },
+    {
+      "id": "a3e591474ae5",
+      "stem": "The core of an electromagnet in a scrapyard crane is made of soft iron because soft iron:",
+      "options": [
+        "is easily magnetized and demagnetized",
+        "keeps its magnetism forever",
+        "is non-magnetic",
+        "is very light"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4b0e4a48de61"
+    },
+    {
+      "id": "5cd50071af1a",
+      "stem": "A magnet picks up a steel pin through a sheet of paper. This shows that magnetic force:",
+      "options": [
+        "acts only by contact",
+        "can act at a distance and through paper",
+        "needs air",
+        "works only in water"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "94e6834c33a5"
+    },
+    {
+      "id": "c0c5a9956700",
+      "stem": "Where magnetic field lines are far apart, the field is:",
+      "options": [
+        "strong",
+        "weak",
+        "zero",
+        "reversed"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "87dce209bdcc"
+    },
+    {
+      "id": "5fc086db4c71",
+      "stem": "A magnet loses its magnetism if it is:",
+      "options": [
+        "stored with keepers",
+        "dropped repeatedly or heated strongly",
+        "kept in pairs",
+        "kept in a dry place"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "32b269efa87c"
+    },
+    {
+      "id": "db2268c8f20c",
+      "stem": "Which of these uses an electromagnet?",
+      "options": [
+        "Candle",
+        "Door bell",
+        "Mirror",
+        "Glass jar"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5717920dc372"
+    }
+  ]
+}

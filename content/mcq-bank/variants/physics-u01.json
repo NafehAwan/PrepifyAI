@@ -1,0 +1,176 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 1,
+  "questions": [
+    {
+      "id": "3c5a8e6c407b",
+      "stem": "Which instrument is most suitable for measuring the diameter of a thin wire?",
+      "options": [
+        "Metre rule",
+        "Screw gauge",
+        "Measuring tape",
+        "Stopwatch"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "56ff49232b83"
+    },
+    {
+      "id": "0150e2fedbe4",
+      "stem": "The smallest reading that an instrument can measure accurately is its:",
+      "options": [
+        "range",
+        "least count",
+        "zero error",
+        "maximum reading"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "074ebf192d75"
+    },
+    {
+      "id": "baa77526c213",
+      "stem": "Which quantity has the SI unit m³?",
+      "options": [
+        "area",
+        "volume",
+        "speed",
+        "density"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1f8b1a043032"
+    },
+    {
+      "id": "c1568d899d1a",
+      "stem": "Arrange these prefixes from largest to smallest: kilo, mega, milli, centi",
+      "options": [
+        "mega, kilo, centi, milli",
+        "kilo, mega, milli, centi",
+        "milli, centi, kilo, mega",
+        "centi, milli, mega, kilo"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "930bafc0e6b2"
+    },
+    {
+      "id": "1cd24a71098b",
+      "stem": "The inside jaws of a vernier caliper are used to measure the:",
+      "options": [
+        "length of a rod",
+        "internal diameter of a pipe",
+        "mass of a cylinder",
+        "thickness of paper"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "cdb26f72bcb3"
+    },
+    {
+      "id": "f3c86dd6e335",
+      "stem": "The number 0.00056 in scientific notation is:",
+      "options": [
+        "5.6 × 10⁻⁵",
+        "5.6 × 10⁻⁴",
+        "56 × 10⁻³",
+        "0.56 × 10⁻²"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "7213464ab3b6"
+    },
+    {
+      "id": "86e69a5f893b",
+      "stem": "When the jaws of a vernier caliper are closed, the vernier zero lies to the left of the main-scale zero. The zero error is:",
+      "options": [
+        "positive",
+        "negative",
+        "zero",
+        "infinite"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "fc871e622035"
+    },
+    {
+      "id": "37029a00bec3",
+      "stem": "Which one of these is a base unit, not a derived unit?",
+      "options": [
+        "newton",
+        "joule",
+        "kilogram",
+        "pascal"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "198c063e0fa2"
+    },
+    {
+      "id": "250f6737b02d",
+      "stem": "Which of these is a scalar quantity?",
+      "options": [
+        "Velocity",
+        "Force",
+        "Mass",
+        "Displacement"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5af6be11cb19"
+    },
+    {
+      "id": "910d9fab4059",
+      "stem": "A student writes \"the length of the table is 2\". The measurement is incomplete because it has no:",
+      "options": [
+        "number",
+        "unit",
+        "direction",
+        "error"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 1,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "5b3b58e01611"
+    }
+  ]
+}

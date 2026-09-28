@@ -1,0 +1,159 @@
+{
+  "subject": "English",
+  "chapter_seq": 5,
+  "questions": [
+    {
+      "id": "5b524564fadb",
+      "stem": "Choose the indirect speech of: She said, \"Hard work pays.\"",
+      "options": [
+        "She said that hard work paid.",
+        "She said that hard work pays hardly.",
+        "She says that hard work paid.",
+        "She said that hard work will pay."
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a3ad272f077e"
+    },
+    {
+      "id": "1ed6284accab",
+      "stem": "In \"She listened carefully to her customers\", the word \"carefully\" is:",
+      "options": [
+        "an adjective",
+        "an adverb",
+        "a noun",
+        "a pronoun"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "2a1b99208f71"
+    },
+    {
+      "id": "067dd9eefe63",
+      "stem": "Choose the antonym of \"success\":",
+      "options": [
+        "Failure",
+        "Victory",
+        "Win",
+        "Gain"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "4b3c36dfa542"
+    },
+    {
+      "id": "de83947721a7",
+      "stem": "Choose the plural of \"opportunity\":",
+      "options": [
+        "opportunitys",
+        "opportunities",
+        "opportunityes",
+        "opportunitis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "a963bca62657"
+    },
+    {
+      "id": "7d0ef7b05596",
+      "stem": "Choose the antonym of \"safe\":",
+      "options": [
+        "Secure",
+        "Protected",
+        "Risky",
+        "Calm"
+      ],
+      "answer": 2,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "c3480298ee05"
+    },
+    {
+      "id": "398f5acc5533",
+      "stem": "Fill in the blank: She was eager ___ learn new skills.",
+      "options": [
+        "for",
+        "to",
+        "at",
+        "on"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "895cc719a13e"
+    },
+    {
+      "id": "85849f361901",
+      "stem": "Fill in the blank: Good results depend ___ regular practice.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "with"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "9865a95e108a"
+    },
+    {
+      "id": "fb2c9c9fc8c9",
+      "stem": "Usman's first food stall loses money, so he studies what went wrong and opens a better one. Which lesson is he following?",
+      "options": [
+        "Learn from failure and keep trying",
+        "Never start again",
+        "Blame others",
+        "Copy competitors exactly"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "b7160b365808"
+    },
+    {
+      "id": "9da6a5a84010",
+      "stem": "A shopkeeper changes his stock after listening to what his buyers want. He is focusing first on:",
+      "options": [
+        "the customer",
+        "the competitor",
+        "shortcuts",
+        "luck"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 5,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "0987bec39f11"
+    }
+  ]
+}

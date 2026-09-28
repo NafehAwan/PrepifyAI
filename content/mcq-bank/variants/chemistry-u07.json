@@ -1,0 +1,142 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "69347df219c2",
+      "stem": "In ZnO + C → Zn + CO, carbon acts as a reducing agent because it:",
+      "options": [
+        "gains oxygen by removing it from ZnO",
+        "loses mass",
+        "is a metal",
+        "turns into zinc"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "bc0cd30c4697"
+    },
+    {
+      "id": "baeb4f7f671c",
+      "stem": "A copper roof slowly turns green after years in the open air. This is an example of:",
+      "options": [
+        "distillation",
+        "corrosion",
+        "neutralization",
+        "electrolysis"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "897dc40f4809"
+    },
+    {
+      "id": "86b5e5ead372",
+      "stem": "The oxidation number of magnesium in MgO is:",
+      "options": [
+        "+2",
+        "−2",
+        "+1",
+        "0"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "f83868e3a987"
+    },
+    {
+      "id": "dd1d1981a5f0",
+      "stem": "An iron pipeline buried underground is joined to blocks of zinc. The zinc protects the iron because it:",
+      "options": [
+        "is less reactive than iron",
+        "corrodes first instead of the iron",
+        "stops water reaching the soil",
+        "is a non-metal"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "ec549825df0a"
+    },
+    {
+      "id": "1f3a08d78122",
+      "stem": "The substance that loses electrons in a redox reaction is the:",
+      "options": [
+        "oxidizing agent",
+        "reducing agent",
+        "catalyst",
+        "electrolyte"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "25915bf5f6be"
+    },
+    {
+      "id": "2e43de02cffd",
+      "stem": "A zinc strip is placed in copper sulphate solution and a brown coating forms on it. This shows that zinc:",
+      "options": [
+        "is more reactive than copper and displaces it",
+        "is less reactive than copper",
+        "is reduced",
+        "does not react"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "448f0a87946d"
+    },
+    {
+      "id": "47742de73a9d",
+      "stem": "The oxidation number of oxygen in H₂O is:",
+      "options": [
+        "+2",
+        "−2",
+        "−1",
+        "0"
+      ],
+      "answer": 1,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "99fea1fa7af1"
+    },
+    {
+      "id": "4b67cacaf9a4",
+      "stem": "For iron to rust, it must be exposed to:",
+      "options": [
+        "oxygen and water",
+        "nitrogen only",
+        "dry air only",
+        "hydrogen"
+      ],
+      "answer": 0,
+      "answer_source": "authored",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Reworded versions of bank questions, written for Prepify",
+      "variant_of": "1592ef162740"
+    }
+  ]
+}
