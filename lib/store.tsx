@@ -20,6 +20,7 @@ const INITIAL: AppState = {
   supabaseConfigured: false,
   userName: "Areeba",
   userEmail: "areeba.r@example.com",
+  username: null,
   selectedSubjectId: null,
   selectedSubjectName: null,
   activeTestId: null,

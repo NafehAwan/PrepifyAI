@@ -16,6 +16,7 @@ export interface ProfileRow {
   exam_date: string | null; // ISO date
   locale: string | null;
   mode: StudyMode | null;
+  username: string | null; // sign-in handle, lowercase; null until chosen
 }
 
 export interface SubjectRow {

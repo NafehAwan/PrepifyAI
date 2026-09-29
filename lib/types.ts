@@ -32,6 +32,8 @@ export interface AppState {
   supabaseConfigured: boolean;
   userName: string;
   userEmail: string;
+  // Sign-in handle; null for accounts that haven't chosen one (e.g. Google).
+  username: string | null;
   // Live curriculum navigation (set when browsing real DB content).
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;
