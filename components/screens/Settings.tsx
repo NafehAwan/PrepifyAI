@@ -94,6 +94,22 @@ export function Settings() {
           </Row>
         </div>
       </div>
+
+      {s.authed && (
+        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 26px", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: 200 }}>
+            <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 3 }}>Log out</div>
+            <div style={{ fontSize: 13, color: C.muted }}>
+              Signed in as {s.username ? `@${s.username}` : s.userEmail}. Your tests and challenges stay saved to your account.
+            </div>
+          </div>
+          <form action={signOut}>
+            <button type="submit" style={{ borderRadius: 999, background: C.danger, color: "#fff", fontWeight: 700, padding: "12px 26px", fontSize: 14.5 }}>
+              ⎋ Log out
+            </button>
+          </form>
+        </div>
+      )}
     </div>
   );
 }

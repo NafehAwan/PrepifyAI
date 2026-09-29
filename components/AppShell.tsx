@@ -134,7 +134,14 @@ export function AppShell() {
               </Chip>
             </>
           )}
-          <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>{initialsFromName(s.userName)}</div>
+          <button
+            onClick={() => navGo("settings")}
+            aria-label="Open settings"
+            title="Settings"
+            style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, cursor: "pointer", boxShadow: s.screen === "settings" ? `0 0 0 3px ${C.sageT}` : "none" }}
+          >
+            {initialsFromName(s.userName)}
+          </button>
         </div>
 
         <div style={{ flex: 1, padding: isMobile ? "16px 14px" : 26, animation: "pf-in .5s var(--ease-out) both" }}>
