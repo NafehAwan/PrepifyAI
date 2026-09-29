@@ -10,6 +10,8 @@ import { OFFERED_SUBJECTS } from "@/lib/data";
 import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
 import { useReducedMotion, setReducedMotion } from "@/lib/motion";
 import type { AppState } from "@/lib/types";
+import { signOut } from "@/app/login/actions";
+import { createClient } from "@/lib/supabase/client";
 
 const ALL_SUBJECTS = OFFERED_SUBJECTS;
 
@@ -32,16 +34,7 @@ export function Settings() {
 
   return (
     <div style={{ maxWidth: 820, display: "flex", flexDirection: "column", gap: 16 }}>
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div style={{ width: 64, height: 64, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 26 }}>{initialsFromName(s.userName)}</div>
-          <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 22 }}>{s.userName}</div>
-            <div style={{ color: C.muted, fontSize: 14 }}>{s.userEmail || "areeba.r@example.com"}</div>
-          </div>
-          <button style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "11px 20px", fontSize: 14 }}>Edit profile</button>
-        </div>
-      </div>
+      <AccountCard />
 
       <ConnectAI />
 
@@ -286,5 +279,106 @@ function Toggle({ on, onClick }: { on: boolean; onClick: () => void }) {
     <button onClick={onClick} style={{ width: 56, height: 32, borderRadius: 999, background: on ? C.sage : "#d8c8ab", position: "relative", flex: "none" }}>
       <div style={{ position: "absolute", top: 4, left: on ? 28 : 4, width: 24, height: 24, borderRadius: 999, background: "#fff", transition: "left .18s ease" }} />
     </button>
+  );
+}
+
+// Who is signed in, their username, and the way out. Accounts made before
+// usernames existed (and Google accounts) can pick one here, then sign in
+// with it next time — or just use it as their name in challenges.
+function AccountCard() {
+  const { s, patch } = useApp();
+  const [draft, setDraft] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  const [editing, setEditing] = useState(false);
+
+  const saveUsername = async () => {
+    const name = draft.trim().toLowerCase();
+    if (!/^[a-z0-9_.]{3,20}$/.test(name)) {
+      setMsg({ ok: false, text: "3-20 characters: letters, numbers, _ and . only." });
+      return;
+    }
+    setSaving(true);
+    setMsg(null);
+    const { data, error } = await createClient().rpc("set_username", { p_username: name });
+    setSaving(false);
+    if (error || data === "invalid") {
+      setMsg({ ok: false, text: error ? "Couldn't save — check your connection." : "3-20 characters: letters, numbers, _ and . only." });
+    } else if (data === "taken") {
+      setMsg({ ok: false, text: `"${name}" is taken — try another.` });
+    } else {
+      patch({ username: name });
+      setEditing(false);
+      setDraft("");
+      setMsg({ ok: true, text: "Saved." });
+    }
+  };
+
+  const showForm = s.authed && (editing || !s.username);
+
+  return (
+    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+        <div style={{ width: 64, height: 64, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 26 }}>{initialsFromName(s.userName)}</div>
+        <div style={{ flex: 1, minWidth: 180 }}>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 22 }}>{s.userName}</div>
+          {s.username && (
+            <div style={{ fontSize: 14, fontWeight: 700, color: C.accentD }}>
+              @{s.username}
+              {s.authed && !editing && (
+                <button onClick={() => { setEditing(true); setDraft(s.username ?? ""); setMsg(null); }} style={{ marginLeft: 10, fontSize: 12.5, fontWeight: 700, color: C.muted }}>
+                  Change
+                </button>
+              )}
+            </div>
+          )}
+          <div style={{ color: C.muted, fontSize: 14 }}>{s.userEmail || "areeba.r@example.com"}</div>
+        </div>
+        {s.authed && (
+          <form action={signOut}>
+            <button type="submit" style={{ borderRadius: 999, background: C.tint, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>
+              ⎋ Log out
+            </button>
+          </form>
+        )}
+      </div>
+
+      {showForm && (
+        <div style={{ marginTop: 18, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>
+          <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 3 }}>{s.username ? "Change your username" : "Choose a username"}</div>
+          <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
+            Friends see it in challenges. If you signed up with a password, you can also sign in with it.
+          </div>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              void saveUsername();
+            }}
+            style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}
+          >
+            <input
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              placeholder="e.g. ali_khan"
+              aria-label="Username"
+              autoCapitalize="none"
+              spellCheck={false}
+              style={{ flex: "1 1 200px", maxWidth: 280, borderRadius: 999, border: "1.5px solid #e0d0b4", background: "#fff", padding: "10px 16px", fontSize: 14, fontWeight: 600 }}
+            />
+            <button type="submit" disabled={saving} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "10px 20px", fontSize: 14, opacity: saving ? 0.7 : 1 }}>
+              {saving ? "Saving…" : "Save"}
+            </button>
+            {editing && (
+              <button type="button" onClick={() => { setEditing(false); setMsg(null); }} style={{ fontSize: 13, fontWeight: 700, color: C.muted, padding: "10px 8px" }}>
+                Cancel
+              </button>
+            )}
+          </form>
+        </div>
+      )}
+      {msg && (
+        <div style={{ marginTop: 10, fontSize: 13, fontWeight: 700, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>
+      )}
+    </div>
   );
 }

@@ -13,14 +13,21 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
   const [signupState, signupAction] = useFormState(signup, EMPTY);
 
   const isLogin = mode === "login";
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const switchTo = (m: "login" | "signup") => {
+    setMode(m);
+    setPassword("");
+    setConfirm("");
+  };
   const state = isLogin ? loginState : signupState;
   const errorText = state.error ?? initialError;
 
   return (
     <div style={{ width: "100%", maxWidth: 400, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 30, boxShadow: "0 10px 30px rgba(90,62,30,.07)" }}>
       <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3, marginBottom: 22 }}>
-        <button onClick={() => setMode("login")} style={tab(isLogin)}>Sign in</button>
-        <button onClick={() => setMode("signup")} style={tab(!isLogin)}>Create account</button>
+        <button onClick={() => switchTo("login")} style={tab(isLogin)}>Sign in</button>
+        <button onClick={() => switchTo("signup")} style={tab(!isLogin)}>Create account</button>
       </div>
 
       <div style={{ fontFamily: "Caprasimo", fontSize: 24, marginBottom: 4 }}>
@@ -44,16 +51,31 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
         <div style={{ flex: 1, height: 1, background: "#ece0c8" }} />
       </div>
 
-      <form action={isLogin ? loginAction : signupAction} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      <form key={mode} action={isLogin ? loginAction : signupAction} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <input type="hidden" name="next" value={next ?? "/"} />
-        <Field label="Email" name="email" type="email" placeholder="you@example.com" autoComplete="email" />
-        <Field
-          label="Password"
-          name="password"
-          type="password"
-          placeholder={isLogin ? "Your password" : "At least 6 characters"}
-          autoComplete={isLogin ? "current-password" : "new-password"}
-        />
+        {isLogin ? (
+          <>
+            <Field label="Username or email" name="identifier" type="text" placeholder="e.g. ali_khan" autoComplete="username" />
+            <Field label="Password" name="password" type="password" placeholder="Your password" autoComplete="current-password" />
+          </>
+        ) : (
+          <>
+            <Field
+              label="Username"
+              name="username"
+              type="text"
+              placeholder="e.g. ali_khan"
+              autoComplete="username"
+              hint="3-20 characters: letters, numbers, _ and . — you'll sign in with this."
+            />
+            <Field label="Email" name="email" type="email" placeholder="you@example.com" autoComplete="email" hint="Used once to confirm your account, and to reset your password." />
+            <Field label="Password" name="password" type="password" placeholder="At least 6 characters" autoComplete="new-password" onValue={setPassword} />
+            <Field label="Confirm password" name="confirm" type="password" placeholder="Type it again" autoComplete="new-password" onValue={setConfirm} />
+            {confirm.length > 0 && confirm !== password && (
+              <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: -4 }}>The passwords don&apos;t match yet.</div>
+            )}
+          </>
+        )}
 
         {errorText && (
           <div style={{ background: C.tint, color: C.accentD, borderRadius: 12, padding: "10px 14px", fontSize: 13.5, fontWeight: 600 }}>
@@ -70,11 +92,38 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
   );
 }
 
-function Field({ label, name, type, placeholder, autoComplete }: { label: string; name: string; type: string; placeholder: string; autoComplete: string }) {
+function Field({
+  label,
+  name,
+  type,
+  placeholder,
+  autoComplete,
+  hint,
+  onValue,
+}: {
+  label: string;
+  name: string;
+  type: string;
+  placeholder: string;
+  autoComplete: string;
+  hint?: string;
+  onValue?: (v: string) => void;
+}) {
   return (
     <label style={{ display: "flex", flexDirection: "column", gap: 6 }}>
       <span style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>{label}</span>
-      <input name={name} type={type} placeholder={placeholder} autoComplete={autoComplete} required style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "12px 16px", fontSize: 15, color: C.ink, outline: "none" }} />
+      <input
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        autoComplete={autoComplete}
+        autoCapitalize="none"
+        spellCheck={false}
+        required
+        onChange={onValue ? (e) => onValue(e.target.value) : undefined}
+        style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "12px 16px", fontSize: 15, color: C.ink, outline: "none" }}
+      />
+      {hint && <span style={{ fontSize: 11.5, color: "#9a8d78", lineHeight: 1.4 }}>{hint}</span>}
     </label>
   );
 }

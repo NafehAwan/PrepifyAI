@@ -22,16 +22,18 @@ export async function loadUserContext(
   supabase: SupabaseClient,
   user: User,
 ): Promise<UserContext> {
-  const userName =
-    (user.user_metadata?.full_name as string | undefined) ??
-    displayNameFromEmail(user.email);
   const userEmail = user.email ?? "";
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("id, class_level, medium, exam_date, locale, mode")
+    .select("id, class_level, medium, exam_date, locale, mode, username")
     .eq("id", user.id)
     .maybeSingle<ProfileRow>();
+  const username = profile?.username ?? null;
+  const userName =
+    (user.user_metadata?.full_name as string | undefined) ??
+    username ??
+    displayNameFromEmail(user.email);
 
   const { data: enrols } = await supabase
     .from("enrollments")
@@ -56,6 +58,7 @@ export async function loadUserContext(
     aiConfigured: isAiConfigured(),
     userName,
     userEmail,
+    username,
     screen: onboarded ? "home" : "onboarding",
     ob: onboarded ? 5 : 1,
   };
