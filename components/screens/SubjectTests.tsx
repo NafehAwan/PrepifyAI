@@ -5,14 +5,14 @@ import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { listTests, type TestRow } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
+import { useSelectedSubject } from "@/lib/useSubject";
 import { challengeTitle, listMyChallenges, ordinal, type ChallengeCard } from "@/lib/challenges";
 
 // One subject's dashboard: a prominent "New test" button and a card per test
 // taken, showing the marks, the percentage and a remark.
 export function SubjectTests() {
-  const { s, patch, go } = useApp();
-  const subjectId = s.selectedSubjectId;
-  const subjectName = s.selectedSubjectName ?? "Subject";
+  const { patch, go } = useApp();
+  const { subjectId, subjectName } = useSelectedSubject();
 
   const [tests, setTests] = useState<TestRow[]>([]);
   const [challenges, setChallenges] = useState<ChallengeCard[]>([]);

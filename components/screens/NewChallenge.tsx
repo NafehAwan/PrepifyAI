@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { listSubjectChapters, scopeLabel, type SubjectChapter } from "@/lib/tests/build";
+import { scopeLabel } from "@/lib/tests/build";
+import { useSelectedSubject, useSubjectChapters } from "@/lib/useSubject";
 import { createChallenge } from "@/lib/challenges";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 import { ChapterPicker, ChipRow, CountPicker, DifficultyPicker, OptionCard } from "../TestOptions";
@@ -16,10 +17,9 @@ const MINUTES = [5, 10, 15, 20, 30, 45, 60] as const;
 // picks the questions on the server and opens the lobby with the invite link.
 export function NewChallenge() {
   const { s, patch, go } = useApp();
-  const subjectId = s.selectedSubjectId;
-  const subjectName = s.selectedSubjectName ?? "Subject";
+  const { subjectId, subjectName, lookupFailed, retryLookup } = useSelectedSubject();
+  const { chapters, status: chaptersStatus, retry: retryChapters } = useSubjectChapters(subjectId);
 
-  const [chapters, setChapters] = useState<SubjectChapter[]>([]);
   const [picked, setPicked] = useState<string[]>([]);
   const [count, setCount] = useState(15);
   const [difficulty, setDifficulty] = useState<McqDifficulty>("mixed");
@@ -28,14 +28,6 @@ export function NewChallenge() {
   const [creating, setCreating] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    let active = true;
-    if (subjectId) listSubjectChapters(subjectId).then((c) => active && setChapters(c));
-    return () => {
-      active = false;
-    };
-  }, [subjectId]);
-
   const scope = scopeLabel(chapters.filter((c) => picked.includes(c.id)), chapters.length);
   const scopeChapters = picked.length > 0 ? chapters.filter((c) => picked.includes(c.id)) : chapters;
   const available = scopeChapters.reduce((n, c) => n + c.mcqCount, 0);
@@ -43,7 +35,7 @@ export function NewChallenge() {
   const create = async () => {
     setError(null);
     if (!subjectId) {
-      setError("This subject isn't set up yet. Go back and pick another one.");
+      setError("Still loading this subject — give it a second and try again.");
       return;
     }
     setCreating(true);
@@ -80,7 +72,7 @@ export function NewChallenge() {
       </div>
 
       <div style={{ maxWidth: 680, display: "flex", flexDirection: "column", gap: 16 }}>
-        <ChapterPicker chapters={chapters} picked={picked} onChange={setPicked} />
+        <ChapterPicker chapters={chapters} picked={picked} onChange={setPicked} status={lookupFailed ? "error" : chaptersStatus} onRetry={lookupFailed ? retryLookup : retryChapters} />
 
         <OptionCard title="How many friends?" hint="Not counting you. The challenge waits until all of them are in.">
           <ChipRow options={FRIENDS} value={friends} onChange={setFriends} label={(n) => String(n)} />

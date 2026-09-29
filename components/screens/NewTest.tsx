@@ -3,24 +3,24 @@
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { buildTest, listSubjectChapters, scopeLabel, type SubjectChapter } from "@/lib/tests/build";
+import { buildTest, scopeLabel } from "@/lib/tests/build";
 import { createTest, listTests, titleForSeq } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 import { ChapterPicker, CountPicker, DifficultyPicker } from "../TestOptions";
+import { useSelectedSubject, useSubjectChapters } from "@/lib/useSubject";
 
 // Set up a test: which chapters (or the whole book), how many questions (1-30)
 // and how hard. The name is generated and shown read-only, because a test the
 // student can rename stops being a reliable record of their progress.
 export function NewTest() {
   const { s, patch, go } = useApp();
-  const subjectId = s.selectedSubjectId;
-  const subjectName = s.selectedSubjectName ?? "Subject";
+  const { subjectId, subjectName, lookupFailed, retryLookup } = useSelectedSubject();
+  const { chapters, status: chaptersStatus, retry: retryChapters } = useSubjectChapters(subjectId);
 
   const [count, setCount] = useState(15);
   const [difficulty, setDifficulty] = useState<McqDifficulty>("mixed");
   const [nextSeq, setNextSeq] = useState<number | null>(null);
-  const [chapters, setChapters] = useState<SubjectChapter[]>([]);
   // Empty = whole book.
   const [picked, setPicked] = useState<string[]>([]);
   const [building, setBuilding] = useState(false);
@@ -38,11 +38,6 @@ export function NewTest() {
       const taken = await listTests(userId, subjectId);
       if (active) setNextSeq(taken.reduce((max, t) => Math.max(max, t.seq), 0) + 1);
     })();
-    if (subjectId) {
-      listSubjectChapters(subjectId).then((c) => {
-        if (active) setChapters(c);
-      });
-    }
     return () => {
       active = false;
     };
@@ -51,7 +46,7 @@ export function NewTest() {
   const start = async () => {
     setError(null);
     if (!subjectId) {
-      setError("This subject isn't set up yet. Go back and pick another one.");
+      setError("Still loading this subject — give it a second and try again.");
       return;
     }
     setBuilding(true);
@@ -109,7 +104,7 @@ export function NewTest() {
           </div>
         </div>
 
-        <ChapterPicker chapters={chapters} picked={picked} onChange={setPicked} />
+        <ChapterPicker chapters={chapters} picked={picked} onChange={setPicked} status={lookupFailed ? "error" : chaptersStatus} onRetry={lookupFailed ? retryLookup : retryChapters} />
         <CountPicker count={count} onChange={setCount} />
         <DifficultyPicker difficulty={difficulty} onChange={setDifficulty} />
 

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { OFFERED_SUBJECTS } from "@/lib/data";
-import { listSubjects } from "@/lib/curriculum";
+import { listSubjects, subjectIdByName } from "@/lib/curriculum";
 import { getSubjectStats, type SubjectStats } from "@/lib/analytics";
 import { parseChallengeCode } from "@/lib/challenges";
 
@@ -44,8 +44,11 @@ export function Subjects() {
     };
   }, [s.subs]);
 
-  const openSubject = (name: string) => {
-    patch({ selectedSubjectId: subjectIds[name] ?? null, selectedSubjectName: name });
+  // The subject list loads in the background; a card tapped before it
+  // arrives looks the id up rather than opening the subject without one.
+  const openSubject = async (name: string) => {
+    const id = subjectIds[name] ?? (await subjectIdByName(name));
+    patch({ selectedSubjectId: id, selectedSubjectName: name });
     go("subjectTests");
   };
 
@@ -95,7 +98,7 @@ export function Subjects() {
           return (
             <button
               key={name}
-              onClick={() => openSubject(name)}
+              onClick={() => void openSubject(name)}
               className="pf-lift"
               style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}
             >

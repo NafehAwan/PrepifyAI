@@ -36,6 +36,14 @@ export async function listSubjects(): Promise<DBSubject[]> {
   }
 }
 
+// A subject's id from its name ("Physics" → uuid), or null when it can't be
+// found. Screens use it when they were opened with only the name — e.g. a
+// subject card tapped before the subject list had finished loading.
+export async function subjectIdByName(name: string): Promise<string | null> {
+  const rows = await listSubjects();
+  return rows.find((r) => r.name === name)?.id ?? null;
+}
+
 // Combined grounding for a whole chapter (all its topics' SLO text), so the AI
 // can generate a fresh test from the book. Null when the chapter has no content.
 export interface ChapterGrounding {
