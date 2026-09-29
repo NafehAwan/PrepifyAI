@@ -6,6 +6,7 @@
 import { C } from "@/lib/theme";
 import type { SubjectChapter } from "@/lib/tests/build";
 import type { McqDifficulty } from "@/lib/ai/prompts";
+import type { ChaptersStatus } from "@/lib/useSubject";
 
 const PRESETS = [5, 10, 15, 20, 25, 30];
 
@@ -31,12 +32,35 @@ export function ChapterPicker({
   chapters,
   picked,
   onChange,
+  status = "ready",
+  onRetry,
 }: {
   chapters: SubjectChapter[];
   picked: string[];
   onChange: (next: string[]) => void;
+  status?: ChaptersStatus;
+  onRetry?: () => void;
 }) {
   const toggle = (id: string) => onChange(picked.includes(id) ? picked.filter((x) => x !== id) : [...picked, id]);
+
+  if (status !== "ready") {
+    return (
+      <OptionCard title="Which chapters?" hint="The whole book, or pick one or more chapters to focus on.">
+        {status === "loading" ? (
+          <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600, padding: "10px 2px" }}>Loading chapters…</div>
+        ) : (
+          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 14, padding: "12px 14px" }}>
+            <span style={{ flex: 1, minWidth: 180 }}>Couldn&apos;t load the chapters. Check your connection.</span>
+            {onRetry && (
+              <button onClick={onRetry} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+                Try again
+              </button>
+            )}
+          </div>
+        )}
+      </OptionCard>
+    );
+  }
 
   return (
     <OptionCard title="Which chapters?" hint="The whole book, or pick one or more chapters to focus on.">
