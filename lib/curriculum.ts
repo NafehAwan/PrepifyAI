@@ -8,6 +8,7 @@
 
 import { createClient } from "./supabase/client";
 import { isSupabaseConfigured } from "./supabase/config";
+import { readCache, retry, timeoutSignal, writeCache } from "./net";
 
 export interface DBSubject {
   id: string;
@@ -25,23 +26,56 @@ export interface DBMcq {
   family?: string | null;
 }
 
+// The subject list rarely changes, so it is kept on the device: a returning
+// student gets it instantly (refreshed quietly in the background), and a slow
+// connection is retried rather than showing an empty list.
+let subjectsInFlight: Promise<DBSubject[]> | null = null;
+
+function fetchSubjects(): Promise<DBSubject[]> {
+  if (!subjectsInFlight) {
+    subjectsInFlight = retry(async () => {
+      const q = createClient().from("subjects").select("id, name").order("name");
+      const signal = timeoutSignal();
+      const { data, error } = await (signal ? q.abortSignal(signal) : q);
+      if (error || !data || data.length === 0) throw new Error(error?.message ?? "no subjects");
+      return data as DBSubject[];
+    })
+      .then((rows) => {
+        writeCache("subjects", rows);
+        return rows;
+      })
+      .finally(() => {
+        subjectsInFlight = null;
+      });
+  }
+  return subjectsInFlight;
+}
+
 export async function listSubjects(): Promise<DBSubject[]> {
   if (!isSupabaseConfigured()) return [];
+  const cached = readCache<DBSubject[]>("subjects");
+  if (cached && cached.length > 0) {
+    void fetchSubjects().catch(() => undefined); // keep the copy fresh
+    return cached;
+  }
   try {
-    const supabase = createClient();
-    const { data } = await supabase.from("subjects").select("id, name").order("name");
-    return (data ?? []) as DBSubject[];
+    return await fetchSubjects();
   } catch {
     return [];
   }
 }
 
 // A subject's id from its name ("Physics" → uuid), or null when it can't be
-// found. Screens use it when they were opened with only the name — e.g. a
-// subject card tapped before the subject list had finished loading.
+// found. Screens use it when they were opened with only the name — a web
+// address like /subjects/physics, or a card tapped before the list loaded.
 export async function subjectIdByName(name: string): Promise<string | null> {
   const rows = await listSubjects();
   return rows.find((r) => r.name === name)?.id ?? null;
+}
+
+export async function subjectNameById(id: string): Promise<string | null> {
+  const rows = await listSubjects();
+  return rows.find((r) => r.id === id)?.name ?? null;
 }
 
 // Combined grounding for a whole chapter (all its topics' SLO text), so the AI

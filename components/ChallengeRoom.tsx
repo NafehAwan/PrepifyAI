@@ -19,6 +19,7 @@ import {
   challengeLink,
   challengeTitle,
   clearDraft,
+  forceStartChallenge,
   formatClock,
   getChallengeState,
   joinChallenge,
@@ -76,12 +77,6 @@ export function ChallengeRoom() {
     setState(null);
     void refresh();
   }, [refresh]);
-
-  // Arrived from an invite (/?join=CODE): tidy the address bar so a later
-  // reload of the home page doesn't reopen this challenge.
-  useEffect(() => {
-    if (window.location.search.includes("join=")) window.history.replaceState(null, "", "/");
-  }, []);
 
   // Keep the subject in the store so "back" lands on the right subject.
   useEffect(() => {
@@ -294,9 +289,11 @@ function Lobby({
   onLeft: () => void;
 }) {
   const [copied, setCopied] = useState(false);
+  const [forceMsg, setForceMsg] = useState<string | null>(null);
   const link = challengeLink(state.code);
   const joined = state.players.length;
   const ready = state.players.filter((p) => p.ready).length;
+  const everyoneReady = joined === state.playerCount && ready === state.playerCount;
   const message = `${me?.name ?? "I"} challenged you to a ${state.subjectName} test on Prepify! Join here: ${link}`;
 
   const copy = async () => {
@@ -352,6 +349,38 @@ function Lobby({
       </div>
 
       {notice && <Note>{notice}</Note>}
+      {forceMsg && <Note>{forceMsg}</Note>}
+
+      {/* The host needn't wait for every seat or every Ready: once at least one
+          friend is in, they can start with whoever is here. */}
+      {state.isHost && !everyoneReady && (
+        <div style={{ background: C.card, border: `1.5px dashed ${C.accent}`, borderRadius: 20, padding: "14px 16px", display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          <div style={{ flex: 1, minWidth: 200, fontSize: 13, color: "#5d5648", lineHeight: 1.5 }}>
+            <strong>Don&apos;t want to wait?</strong>{" "}
+            {joined >= 2
+              ? `Start now with the ${joined} player${joined === 1 ? "" : "s"} who ${joined === 1 ? "is" : "are"} here — empty seats are dropped.`
+              : "Force start unlocks as soon as one friend joins."}
+          </div>
+          <button
+            onClick={async () => {
+              if (!window.confirm(`Start now with ${joined} players? Nobody else can join after this.`)) return;
+              setForceMsg(null);
+              await act(async () => {
+                const res = await forceStartChallenge(state.code);
+                if (res === "need_friend") setForceMsg("At least one friend has to join first.");
+                else if (res !== "ok" && res !== "not_waiting") setForceMsg("Couldn't start — check your connection and try again.");
+              });
+            }}
+            disabled={busy || joined < 2}
+            style={{ borderRadius: 999, background: joined >= 2 ? C.accentD : C.sand, color: joined >= 2 ? "#fff" : C.muted, fontWeight: 700, padding: "11px 20px", fontSize: 14, opacity: busy ? 0.7 : 1, flex: "none" }}
+          >
+            ⚡ Force start
+          </button>
+        </div>
+      )}
+      {!state.isHost && joined >= 2 && !everyoneReady && (
+        <div style={{ fontSize: 12.5, color: C.muted }}>The host can also start early with whoever has joined.</div>
+      )}
 
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
         <button

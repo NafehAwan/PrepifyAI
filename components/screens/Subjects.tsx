@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { OFFERED_SUBJECTS } from "@/lib/data";
-import { listSubjects, subjectIdByName } from "@/lib/curriculum";
+import { listSubjects } from "@/lib/curriculum";
 import { getSubjectStats, type SubjectStats } from "@/lib/analytics";
 import { parseChallengeCode } from "@/lib/challenges";
 
@@ -44,11 +44,10 @@ export function Subjects() {
     };
   }, [s.subs]);
 
-  // The subject list loads in the background; a card tapped before it
-  // arrives looks the id up rather than opening the subject without one.
-  const openSubject = async (name: string) => {
-    const id = subjectIds[name] ?? (await subjectIdByName(name));
-    patch({ selectedSubjectId: id, selectedSubjectName: name });
+  // Opens straight away. If the subject list hasn't arrived yet the id is
+  // null, and the subject screen looks it up from the name itself.
+  const openSubject = (name: string) => {
+    patch({ selectedSubjectId: subjectIds[name] ?? null, selectedSubjectName: name });
     go("subjectTests");
   };
 
@@ -98,7 +97,7 @@ export function Subjects() {
           return (
             <button
               key={name}
-              onClick={() => void openSubject(name)}
+              onClick={() => openSubject(name)}
               className="pf-lift"
               style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}
             >

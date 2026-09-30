@@ -26,6 +26,7 @@ export interface TestRow {
 }
 
 export interface TestDetail extends TestRow {
+  subjectId: string;
   mcqs: DBMcq[];
   answers: (number | null)[];
 }
@@ -101,13 +102,14 @@ export async function getTest(testId: string): Promise<TestDetail | null> {
   if (!isSupabaseConfigured()) return null;
   const { data } = await createClient()
     .from("tests")
-    .select(`${CARD_COLUMNS}, questions_json, answers_json`)
+    .select(`${CARD_COLUMNS}, subject_id, questions_json, answers_json`)
     .eq("id", testId)
     .maybeSingle();
   if (!data) return null;
-  const raw = data as RawTest;
+  const raw = data as RawTest & { subject_id: string };
   return {
     ...toRow(raw),
+    subjectId: raw.subject_id,
     mcqs: Array.isArray(raw.questions_json) ? (raw.questions_json as DBMcq[]) : [],
     answers: Array.isArray(raw.answers_json) ? (raw.answers_json as (number | null)[]) : [],
   };

@@ -1,9 +1,10 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { AppState } from "./types";
 import { daysUntil } from "./data";
 import { getGroqKey, setGroqKey as persistGroqKey } from "./ai/key";
+import { pathFor, stateFromPath } from "./routes";
 
 const INITIAL: AppState = {
   screen: "home",
@@ -72,6 +73,46 @@ export function AppProvider({
   useEffect(() => {
     const saved = getGroqKey();
     if (saved) setState((prev) => ({ ...prev, groqKey: saved }));
+  }, []);
+
+  // Keep the address bar in step with the screen. Moving to a new screen adds
+  // a history entry, so the browser's Back button (or a phone's back gesture)
+  // returns to the previous screen instead of leaving the site. The first
+  // render only tidies the address (e.g. /?join=CODE → /challenges/CODE).
+  const firstSync = useRef(true);
+  const { screen, selectedSubjectName, activeTestId, activeChallengeCode } = s;
+  useEffect(() => {
+    const path = pathFor({ screen, selectedSubjectName, activeTestId, activeChallengeCode });
+    const here = window.location.pathname;
+    if (firstSync.current) {
+      firstSync.current = false;
+      if (path && here + window.location.search !== path) window.history.replaceState(null, "", path);
+      return;
+    }
+    // After Back/Forward the address already matches, so nothing is pushed.
+    if (path && here !== path) window.history.pushState(null, "", path);
+  }, [screen, selectedSubjectName, activeTestId, activeChallengeCode]);
+
+  // Back / Forward: show the screen for the address we've landed on.
+  useEffect(() => {
+    const onPop = () => {
+      const next = stateFromPath(window.location.pathname);
+      if (!next) return;
+      setState((prev) => {
+        if (prev.screen === "onboarding") return prev;
+        const sameSubject = next.selectedSubjectName === undefined || next.selectedSubjectName === prev.selectedSubjectName;
+        return {
+          ...prev,
+          ...next,
+          // Keep the subject's id when the subject hasn't changed; otherwise
+          // the screen looks it up from the name.
+          selectedSubjectId: sameSubject ? prev.selectedSubjectId : null,
+        };
+      });
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
   }, []);
 
   const value = useMemo<AppStore>(

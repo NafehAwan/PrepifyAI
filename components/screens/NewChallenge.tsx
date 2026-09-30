@@ -67,14 +67,14 @@ export function NewChallenge() {
         <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>Challenge friends</div>
         <div style={{ color: C.muted, marginTop: 4, fontSize: 14, maxWidth: 620 }}>
           Everyone gets the same {subjectName} questions and the same clock. You&apos;ll get a link to send — the
-          challenge starts when every friend has joined and tapped Ready.
+          challenge starts when every friend has joined and tapped Ready — or earlier if you tap Force start once a friend is in.
         </div>
       </div>
 
       <div style={{ maxWidth: 680, display: "flex", flexDirection: "column", gap: 16 }}>
         <ChapterPicker chapters={chapters} picked={picked} onChange={setPicked} status={lookupFailed ? "error" : chaptersStatus} onRetry={lookupFailed ? retryLookup : retryChapters} />
 
-        <OptionCard title="How many friends?" hint="Not counting you. The challenge waits until all of them are in.">
+        <OptionCard title="How many friends?" hint="Not counting you. You can force start once at least one has joined.">
           <ChipRow options={FRIENDS} value={friends} onChange={setFriends} label={(n) => String(n)} />
         </OptionCard>
 

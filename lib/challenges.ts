@@ -154,6 +154,14 @@ export async function setChallengeReady(code: string, ready: boolean): Promise<b
   return !error;
 }
 
+// The host starts right away with whoever has joined (at least one friend),
+// without waiting for empty seats or for everyone to tap Ready.
+export async function forceStartChallenge(code: string): Promise<"ok" | "not_host" | "need_friend" | "not_waiting" | "error"> {
+  const { data, error } = await createClient().rpc("force_start_challenge", { p_code: code });
+  if (error || typeof data !== "string") return "error";
+  return data as "ok" | "not_host" | "need_friend" | "not_waiting";
+}
+
 export async function leaveChallenge(code: string): Promise<boolean> {
   const { error } = await createClient().rpc("leave_challenge", { p_code: code });
   return !error;

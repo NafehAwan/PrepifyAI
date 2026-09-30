@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useApp } from "./store";
 import { subjectIdByName } from "./curriculum";
-import { listSubjectChapters, type SubjectChapter } from "./tests/build";
+import { cachedSubjectChapters, listSubjectChapters, type SubjectChapter } from "./tests/build";
 
 // The subject the student is looking at. If a screen was opened with the name
 // but not the id (a card tapped before the subject list loaded), the id is
@@ -46,8 +46,8 @@ export type ChaptersStatus = "loading" | "ready" | "error";
 
 // A subject's chapters with their question counts, plus whether they are
 // still loading or failed — so the picker never shows a false "0 questions".
-// Every offered subject has chapters, so an empty answer is treated as a
-// failed load and offered a retry.
+// A copy saved on this device is shown straight away (and refreshed behind
+// it), so a slow connection only matters the very first time.
 export function useSubjectChapters(subjectId: string | null): {
   chapters: SubjectChapter[];
   status: ChaptersStatus;
@@ -63,14 +63,24 @@ export function useSubjectChapters(subjectId: string | null): {
       return;
     }
     let active = true;
-    setStatus("loading");
+    const cached = cachedSubjectChapters(subjectId);
+    if (cached && cached.length > 0) {
+      setChapters(cached);
+      setStatus("ready");
+    } else {
+      setChapters([]);
+      setStatus("loading");
+    }
     listSubjectChapters(subjectId)
       .then((rows) => {
         if (!active) return;
         setChapters(rows);
         setStatus(rows.length > 0 ? "ready" : "error");
       })
-      .catch(() => active && setStatus("error"));
+      .catch(() => {
+        // Keep showing the saved copy if there is one; otherwise offer a retry.
+        if (active && !(cached && cached.length > 0)) setStatus("error");
+      });
     return () => {
       active = false;
     };

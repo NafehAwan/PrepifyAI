@@ -12,17 +12,16 @@ import { challengeTitle, listMyChallenges, ordinal, type ChallengeCard } from "@
 // taken, showing the marks, the percentage and a remark.
 export function SubjectTests() {
   const { patch, go } = useApp();
-  const { subjectId, subjectName } = useSelectedSubject();
+  const { subjectId, subjectName, lookupFailed, retryLookup } = useSelectedSubject();
 
   const [tests, setTests] = useState<TestRow[]>([]);
   const [challenges, setChallenges] = useState<ChallengeCard[]>([]);
   const [loading, setLoading] = useState(true);
 
   const load = useCallback(async () => {
-    if (!subjectId) {
-      setLoading(false);
-      return;
-    }
+    // Still working out which subject this is (e.g. opened from its web
+    // address): keep showing "Loading" rather than a false "No tests yet".
+    if (!subjectId) return;
     const userId = await currentUserId();
     if (!userId) {
       setTests([]);
@@ -90,7 +89,14 @@ export function SubjectTests() {
         </div>
       </div>
 
-      {loading ? (
+      {lookupFailed ? (
+        <div style={{ maxWidth: 560, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 16, padding: "14px 16px" }}>
+          <span style={{ flex: 1, minWidth: 200 }}>Couldn&apos;t load this subject. Check your connection.</span>
+          <button onClick={retryLookup} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+            Try again
+          </button>
+        </div>
+      ) : loading ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading your tests…</div>
       ) : tests.length === 0 ? (
         <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
