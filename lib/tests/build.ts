@@ -21,6 +21,7 @@
 
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { readCache, retry, timeoutSignal, writeCache } from "@/lib/net";
 import { shuffleMcqs } from "@/lib/quizUtil";
 import { getChapterGrounding, type DBMcq } from "@/lib/curriculum";
 import { generateQuiz } from "@/lib/ai/generate";
@@ -86,33 +87,48 @@ function toMcq(row: QuestionRow): DBMcq | null {
 const familyOf = (q: DBMcq) => q.family || q.id;
 
 // The subject's chapters in book order, with how many answerable MCQs each has,
-// for the chapter picker on the New Test screen.
+// for the chapter pickers. Throws if any of its three reads fails — a failed
+// count must never be shown as "0 questions" — and retries a slow connection a
+// few times first. A good answer is kept on the device for next time.
 export async function listSubjectChapters(subjectId: string): Promise<SubjectChapter[]> {
   if (!isSupabaseConfigured()) return [];
-  const supabase = createClient();
-  const { data: books } = await supabase.from("books").select("id").eq("subject_id", subjectId);
-  const bookIds = ((books ?? []) as Array<{ id: string }>).map((b) => b.id);
-  if (bookIds.length === 0) return [];
+  const rows = await retry(async () => {
+    const supabase = createClient();
+    const signal = timeoutSignal();
+    const withSignal = <Q extends { abortSignal: (s: AbortSignal) => Q }>(q: Q): Q => (signal ? q.abortSignal(signal) : q);
 
-  const { data: chapters } = await supabase
-    .from("chapters")
-    .select("id, seq, title")
-    .in("book_id", bookIds)
-    .order("seq");
-  const rows = (chapters ?? []) as Array<{ id: string; seq: number; title: string }>;
+    const books = await withSignal(supabase.from("books").select("id").eq("subject_id", subjectId));
+    if (books.error) throw new Error(books.error.message);
+    const bookIds = ((books.data ?? []) as Array<{ id: string }>).map((b) => b.id);
+    if (bookIds.length === 0) throw new Error("no books");
 
-  const { data: counts } = await supabase
-    .from("chapter_mcq_counts")
-    .select("chapter_id, mcq_count")
-    .in(
-      "chapter_id",
-      rows.map((r) => r.id),
+    const chapters = await withSignal(supabase.from("chapters").select("id, seq, title").in("book_id", bookIds).order("seq"));
+    if (chapters.error) throw new Error(chapters.error.message);
+    const list = (chapters.data ?? []) as Array<{ id: string; seq: number; title: string }>;
+    if (list.length === 0) throw new Error("no chapters");
+
+    const counts = await withSignal(
+      supabase
+        .from("chapter_mcq_counts")
+        .select("chapter_id, mcq_count")
+        .in(
+          "chapter_id",
+          list.map((r) => r.id),
+        ),
     );
-  const countById = new Map(
-    ((counts ?? []) as Array<{ chapter_id: string; mcq_count: number }>).map((c) => [c.chapter_id, Number(c.mcq_count)]),
-  );
+    if (counts.error) throw new Error(counts.error.message);
+    const countById = new Map(
+      ((counts.data ?? []) as Array<{ chapter_id: string; mcq_count: number }>).map((c) => [c.chapter_id, Number(c.mcq_count)]),
+    );
+    return list.map((r) => ({ id: r.id, seq: r.seq, title: r.title, mcqCount: countById.get(r.id) ?? 0 }));
+  });
+  writeCache(`chapters:${subjectId}`, rows);
+  return rows;
+}
 
-  return rows.map((r) => ({ id: r.id, seq: r.seq, title: r.title, mcqCount: countById.get(r.id) ?? 0 }));
+// The last good chapter list for a subject on this device, if any.
+export function cachedSubjectChapters(subjectId: string): SubjectChapter[] | null {
+  return readCache<SubjectChapter[]>(`chapters:${subjectId}`);
 }
 
 // What the student was asked in their last few tests of this subject.
@@ -191,7 +207,10 @@ export async function buildTest(opts: {
   if (!isSupabaseConfigured()) return { mcqs: [], source: "short" };
 
   let chapterIds = opts.chapterIds ?? [];
-  if (chapterIds.length === 0) chapterIds = (await listSubjectChapters(opts.subjectId)).map((c) => c.id);
+  if (chapterIds.length === 0) {
+    const all = cachedSubjectChapters(opts.subjectId) ?? (await listSubjectChapters(opts.subjectId).catch(() => []));
+    chapterIds = all.map((c) => c.id);
+  }
   if (chapterIds.length === 0) return { mcqs: [], source: "short" };
 
   const supabase = createClient();

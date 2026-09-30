@@ -250,9 +250,39 @@ begin
 end;
 $$;
 
+-- Starts a waiting challenge: the shared clock begins after a 5-second
+-- countdown, the seats shrink to whoever is actually in (so a force start
+-- doesn't wait on empty seats), and each player's challenge is numbered
+-- ("Challenge #01" per subject). Internal — called by the two functions below.
+create or replace function public.prepify_challenge_start(p_id uuid)
+returns void
+language plpgsql security definer set search_path = public
+as $$
+declare
+  c challenges;
+  n int;
+begin
+  select * into c from challenges where id = p_id for update;
+  if c.id is null or c.status <> 'lobby' then return; end if;
+  select count(*) into n from challenge_players where challenge_id = p_id;
+  if n < 2 then return; end if;
+
+  update challenges
+     set status       = 'running',
+         player_count = n,
+         started_at   = now() + interval '5 seconds',
+         ends_at      = now() + interval '5 seconds' + make_interval(secs => c.time_limit_sec)
+   where id = p_id;
+  update challenge_players set ready = true where challenge_id = p_id;
+  update challenge_players p
+     set seq = coalesce((select max(p2.seq) from challenge_players p2
+                          where p2.user_id = p.user_id and p2.subject_id = p.subject_id), 0) + 1
+   where p.challenge_id = p_id;
+end;
+$$;
+
 -- Marks the caller ready (or not). When every seat is taken and everyone is
--- ready, starts the shared clock after a 5-second countdown and numbers the
--- challenge for each player ("Challenge #01" per subject).
+-- ready, the challenge starts.
 create or replace function public.set_challenge_ready(p_code text, p_ready boolean)
 returns void
 language plpgsql security definer set search_path = public
@@ -274,16 +304,31 @@ begin
     from challenge_players where challenge_id = c.id;
 
   if n = c.player_count and n_ready = n then
-    update challenges
-       set status     = 'running',
-           started_at = now() + interval '5 seconds',
-           ends_at    = now() + interval '5 seconds' + make_interval(secs => c.time_limit_sec)
-     where id = c.id;
-    update challenge_players p
-       set seq = coalesce((select max(p2.seq) from challenge_players p2
-                            where p2.user_id = p.user_id and p2.subject_id = p.subject_id), 0) + 1
-     where p.challenge_id = c.id;
+    perform prepify_challenge_start(c.id);
   end if;
+end;
+$$;
+
+-- The host starts now with whoever has joined, without waiting for empty
+-- seats or for everyone to tap Ready. Needs at least one friend in.
+-- Returns 'ok', 'not_host', 'need_friend' or 'not_waiting'.
+create or replace function public.force_start_challenge(p_code text)
+returns text
+language plpgsql security definer set search_path = public
+as $$
+declare
+  v_uid uuid := auth.uid();
+  c     challenges;
+  n     int;
+begin
+  if v_uid is null then raise exception 'not signed in'; end if;
+  select * into c from challenges where code = upper(trim(p_code)) for update;
+  if c.id is null or c.status <> 'lobby' then return 'not_waiting'; end if;
+  if c.host_id <> v_uid then return 'not_host'; end if;
+  select count(*) into n from challenge_players where challenge_id = c.id;
+  if n < 2 then return 'need_friend'; end if;
+  perform prepify_challenge_start(c.id);
+  return 'ok';
 end;
 $$;
 
@@ -505,6 +550,8 @@ $$;
 -- internal and callable by nobody directly.
 revoke all on function public.prepify_remark(int)                  from public, anon, authenticated;
 revoke all on function public.prepify_challenge_settle(uuid)       from public, anon, authenticated;
+revoke all on function public.prepify_challenge_start(uuid)        from public, anon, authenticated;
+revoke all on function public.force_start_challenge(text)          from public, anon;
 revoke all on function public.create_challenge(uuid, uuid[], text, text, int, int, int, text) from public, anon;
 revoke all on function public.join_challenge(text, text)           from public, anon;
 revoke all on function public.set_challenge_ready(text, boolean)   from public, anon;
@@ -516,6 +563,7 @@ revoke all on function public.in_active_challenge()                from public, 
 grant execute on function public.create_challenge(uuid, uuid[], text, text, int, int, int, text) to authenticated;
 grant execute on function public.join_challenge(text, text)         to authenticated;
 grant execute on function public.set_challenge_ready(text, boolean) to authenticated;
+grant execute on function public.force_start_challenge(text)        to authenticated;
 grant execute on function public.leave_challenge(text)              to authenticated;
 grant execute on function public.submit_challenge(text, jsonb)      to authenticated;
 grant execute on function public.challenge_state(text)              to authenticated;

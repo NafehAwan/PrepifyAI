@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { getTest, submitTest, type TestDetail } from "@/lib/tests/store";
+import { subjectNameById } from "@/lib/curriculum";
 import { sfxWin, sfxTryAgain } from "@/lib/sfx";
 import { Mascot } from "./Mascot";
 import type { DBMcq } from "@/lib/curriculum";
@@ -34,6 +35,13 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
       .then((t) => {
         if (!active) return;
         setTest(t);
+        // Opened straight from its address (/tests/…): learn which subject it
+        // belongs to, so "back" returns to that subject.
+        if (t && s.selectedSubjectId !== t.subjectId) {
+          void subjectNameById(t.subjectId).then((name) => {
+            if (active && name) patch({ selectedSubjectId: t.subjectId, selectedSubjectName: name });
+          });
+        }
         setPicks(t && t.answers.length === t.mcqs.length ? t.answers : new Array(t?.mcqs.length ?? 0).fill(null));
         setShowResults(!!readOnly || t?.status === "submitted");
         setLoading(false);
