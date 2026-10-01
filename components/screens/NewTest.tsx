@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
-import { buildTest, scopeLabel } from "@/lib/tests/build";
-import { createTest, listTests, titleForSeq } from "@/lib/tests/store";
+import { scopeLabel } from "@/lib/tests/build";
+import { listTests, startTest, titleForSeq } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 import { ChapterPicker, CountPicker, DifficultyPicker } from "../TestOptions";
@@ -14,7 +14,7 @@ import { useSelectedSubject, useSubjectChapters } from "@/lib/useSubject";
 // and how hard. The name is generated and shown read-only, because a test the
 // student can rename stops being a reliable record of their progress.
 export function NewTest() {
-  const { s, patch, go } = useApp();
+  const { patch, go } = useApp();
   const { subjectId, subjectName, lookupFailed, retryLookup } = useSelectedSubject();
   const { chapters, status: chaptersStatus, retry: retryChapters } = useSubjectChapters(subjectId);
 
@@ -57,25 +57,22 @@ export function NewTest() {
       return;
     }
 
-    const built = await buildTest({ userId, subjectId, count, difficulty, chapterIds: picked, aiKey: s.groqKey });
-    if (built.mcqs.length === 0) {
-      setBuilding(false);
+    const scope = scopeLabel(chapters.filter((c) => picked.includes(c.id)), chapters.length);
+    const res = await startTest({ subjectId, count, difficulty, chapterIds: picked, scope });
+    setBuilding(false);
+    if ("error" in res) {
       setError(
-        picked.length > 0
-          ? "Those chapters don't have questions loaded yet. Pick others, or use the whole book."
-          : `There are no ${subjectName} questions loaded yet. Try another subject for now.`,
+        res.error === "empty"
+          ? picked.length > 0
+            ? "Those chapters don't have questions loaded yet. Pick others, or use the whole book."
+            : `There are no ${subjectName} questions loaded yet. Try another subject for now.`
+          : res.error === "limit"
+            ? "You've started a lot of tests today — finish one you've already started, or try again tomorrow."
+            : "Couldn't start the test. Check your connection and try again.",
       );
       return;
     }
-
-    const scope = scopeLabel(chapters.filter((c) => picked.includes(c.id)), chapters.length);
-    const row = await createTest({ userId, subjectId, difficulty, mcqs: built.mcqs, scope });
-    setBuilding(false);
-    if (!row) {
-      setError("Couldn't start the test. Check your connection and try again.");
-      return;
-    }
-    patch({ activeTestId: row.id });
+    patch({ activeTestId: res.id });
     go("testRun");
   };
 

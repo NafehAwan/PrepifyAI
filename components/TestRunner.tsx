@@ -23,6 +23,7 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
   const [loading, setLoading] = useState(true);
   const [picks, setPicks] = useState<(number | null)[]>([]);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [showResults, setShowResults] = useState(!!readOnly);
 
   useEffect(() => {
@@ -61,10 +62,17 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
   const submit = async () => {
     if (!test) return;
     setSubmitting(true);
-    const res = await submitTest(test.id, test.mcqs, picks);
+    const res = await submitTest(test.id, picks);
+    if (!res) {
+      setSubmitting(false);
+      setSubmitError(true);
+      return;
+    }
+    setSubmitError(false);
+    // The answers and explanations are only released once the test is marked.
+    const marked = await getTest(test.id).catch(() => null);
     setSubmitting(false);
-    if (!res) return;
-    setTest({ ...test, ...{ correctCount: res.correctCount, scorePct: res.scorePct, remarks: res.remarks, status: "submitted" } });
+    setTest({ ...(marked ?? test), correctCount: res.correctCount, scorePct: res.scorePct, remarks: res.remarks, status: "submitted" });
     setShowResults(true);
     (res.scorePct >= PASS_BAR ? sfxWin : sfxTryAgain)();
     if (typeof window !== "undefined") window.scrollTo(0, 0);
@@ -129,7 +137,9 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
         >
           {submitting ? "Marking…" : "Submit test"}
         </button>
-        <div style={{ fontSize: 12.5, color: C.muted }}>Unanswered questions count as wrong.</div>
+        <div style={{ fontSize: 12.5, color: submitError ? C.accentD : C.muted, fontWeight: submitError ? 600 : 400 }}>
+          {submitError ? "Couldn't submit — check your connection and try again. Your answers are still here." : "Unanswered questions count as wrong."}
+        </div>
       </div>
     </Frame>
   );

@@ -1,4 +1,4 @@
-// AI backend config. The chatbot and the MCQ generator call Groq's
+// AI backend config (server only). The chatbot calls Groq's
 // OpenAI-compatible API.
 //
 // Prepify runs on ONE shared `GROQ_API_KEY` that the owner sets on the server,
@@ -8,6 +8,9 @@
 //
 // Note that tests themselves cost no API calls — questions are sampled from the
 // `questions` table. The chatbot is the only runtime consumer of this key.
+
+import "server-only"; // the build fails if browser code ever imports this file
+import { GROQ_KEY_HEADER } from "./header";
 
 export const GROQ_BASE_URL = process.env.GROQ_BASE_URL ?? "https://api.groq.com/openai/v1";
 
@@ -22,8 +25,6 @@ export const GROQ_MODEL_PINNED = !!process.env.PREPIFY_MODEL;
 // The shared server key. This is the normal path for every signed-in student.
 export const GROQ_ENV_KEY = process.env.GROQ_API_KEY ?? "";
 
-// The header a browser request may carry an overriding key in.
-export const GROQ_KEY_HEADER = "x-groq-key";
 
 // Resolve the key for a given request: an explicit per-request key wins,
 // otherwise the shared server key.

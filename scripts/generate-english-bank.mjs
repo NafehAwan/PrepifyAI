@@ -52,9 +52,9 @@ if (!english) {
   process.exit(1);
 }
 
-// Mirrors MCQ_STYLE_GUIDE in lib/ai/prompts.ts. Kept as its own copy because a
-// Node script cannot import the TypeScript module, and drifting apart is less
-// harmful than adding a build step for one string.
+// The house style for every MCQ Prepify writes, derived from the owner's own
+// FBISE Class 9 bank: short parallel options, and difficult sets that are
+// almost entirely scenario questions.
 const STYLE = `HOUSE STYLE — match the FBISE Class 9 board paper:
 1. Exactly 4 options. Exactly one is correct.
 2. Options are short, parallel and the same grammatical shape — a phrase or a

@@ -9,8 +9,7 @@ import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { listSubjects } from "@/lib/curriculum";
 import { currentUserId } from "@/lib/analytics";
-import { buildTest } from "@/lib/tests/build";
-import { createTest } from "@/lib/tests/store";
+import { startTest } from "@/lib/tests/store";
 import { listChapterStats, weakChapters, WEAK_BELOW_PCT, WEAK_MIN_ATTEMPTED, type ChapterStat } from "@/lib/engagement";
 
 const PRACTICE_QUESTIONS = 15;
@@ -53,21 +52,19 @@ export function WeakChapters() {
       return;
     }
     const picked = chapters.slice(0, MAX_CHAPTERS_PER_TEST);
-    const built = await buildTest({ userId, subjectId, count: PRACTICE_QUESTIONS, difficulty: "mixed", chapterIds: picked.map((c) => c.chapterId) });
-    if (built.mcqs.length === 0) {
-      setBusy(null);
-      setError("Couldn't build that test — check your connection and try again.");
-      return;
-    }
     const seqs = picked.map((c) => c.seq).sort((a, b) => a - b);
     const scope = `Weak spots · Ch ${seqs.join(", ")}`;
-    const row = await createTest({ userId, subjectId, difficulty: "mixed", mcqs: built.mcqs, scope });
+    const res = await startTest({ subjectId, count: PRACTICE_QUESTIONS, difficulty: "mixed", chapterIds: picked.map((c) => c.chapterId), scope });
     setBusy(null);
-    if (!row) {
-      setError("Couldn't start the test — check your connection and try again.");
+    if ("error" in res) {
+      setError(
+        res.error === "limit"
+          ? "You've started a lot of tests today — try again tomorrow."
+          : "Couldn't start the test — check your connection and try again.",
+      );
       return;
     }
-    patch({ activeTestId: row.id, selectedSubjectId: subjectId, selectedSubjectName: name });
+    patch({ activeTestId: res.id, selectedSubjectId: subjectId, selectedSubjectName: name });
     go("testRun");
   };
 

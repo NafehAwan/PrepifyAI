@@ -208,7 +208,7 @@ export function AppShell() {
         </div>
 
         <div style={{ flex: 1, padding: isMobile ? "16px 14px" : 26, animation: "pf-in .5s var(--ease-out) both" }}>
-          <ScreenBody screen={s.screen} />
+          <ScreenBody screen={s.screen} isAdmin={s.isAdmin} />
         </div>
       </div>
       {/* No chatbot anywhere near a challenge — the chat route also refuses
@@ -218,7 +218,7 @@ export function AppShell() {
   );
 }
 
-function ScreenBody({ screen }: { screen: Screen }) {
+function ScreenBody({ screen, isAdmin }: { screen: Screen; isAdmin: boolean }) {
   switch (screen) {
     case "home": return <Home />;
     case "subjects": return <Subjects />;
@@ -232,7 +232,8 @@ function ScreenBody({ screen }: { screen: Screen }) {
     case "leaderboard": return <Leaderboard />;
     case "support": return <Support />;
     case "supportTicket": return <SupportTicket />;
-    case "admin": return <Admin />;
+    // Admin calls are refused by the database for anyone else anyway.
+    case "admin": return isAdmin ? <Admin /> : <Home />;
     case "settings": return <Settings />;
     default: return <Home />;
   }

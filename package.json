@@ -2,26 +2,26 @@
   "name": "prepify-ai",
   "version": "0.1.0",
   "private": true,
-  "description": "Prepify AI — an FBISE study platform. Teach-then-test core learning loop with a warm, board-year dashboard.",
+  "description": "Prepify AI — FBISE Class 9 MCQ tests from a real question bank, friend challenges, a leaderboard and an AI study buddy.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "seed": "node scripts/seed.mjs"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.12.4",
-    "@supabase/supabase-js": "^2.112.3",
-    "next": "^14.2.35",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
-    "@types/node": "20.14.10",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
-    "typescript": "5.5.3"
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
   }
 }

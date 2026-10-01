@@ -22,7 +22,7 @@ export async function renderApp(pathname: string, join?: string) {
     return <PrepifyApp initial={{ aiConfigured: isAiConfigured(), ...target }} />;
   }
 
-  const supabase = createClient();
+  const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
@@ -31,6 +31,10 @@ export async function renderApp(pathname: string, join?: string) {
   if (!user) redirect("/login");
 
   const ctx = await loadUserContext(supabase, user);
+
+  // /admin is for the Prepify team only. Every admin action is also checked in
+  // the database (app_admins), so this just keeps everyone else off the page.
+  if (target.screen === "admin" && !ctx.initial.isAdmin) redirect("/");
   if (ctx.onboarded) {
     Object.assign(ctx.initial, target);
   } else if (target.activeChallengeCode) {

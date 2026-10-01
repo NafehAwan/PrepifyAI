@@ -1,12 +1,13 @@
 "use client";
 
-// Reads and writes the `tests` table. Owner-only RLS means the browser client
-// can only ever see the signed-in student's own rows, so no query here filters
-// on user_id for safety — it does so to keep the indexes useful.
+// Reads the `tests` table and starts/submits tests through the database
+// functions in supabase/security.sql. Owner-only RLS means the browser client
+// can only ever see the signed-in student's own rows (and can't write them at
+// all), so no query here filters on user_id for safety — it does so to keep the
+// indexes useful.
 
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
-import { remarkFor } from "./build";
 import type { DBMcq } from "@/lib/curriculum";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 
@@ -110,57 +111,45 @@ export async function getTest(testId: string): Promise<TestDetail | null> {
   return {
     ...toRow(raw),
     subjectId: raw.subject_id,
-    mcqs: Array.isArray(raw.questions_json) ? (raw.questions_json as DBMcq[]) : [],
+    // Before submitting, questions carry no answer (the key is on the server).
+    mcqs: Array.isArray(raw.questions_json)
+      ? (raw.questions_json as DBMcq[]).map((q) => ({ ...q, answer: typeof q.answer === "number" ? q.answer : -1 }))
+      : [],
     answers: Array.isArray(raw.answers_json) ? (raw.answers_json as (number | null)[]) : [],
   };
 }
 
-// Creates the row for a freshly built test. `seq` is one past the student's
-// highest for this subject; a unique (user_id, subject_id, seq) constraint means
-// two tabs racing produce a duplicate-key error rather than two "Test #03"s, so
-// the insert is retried with the next number.
-export async function createTest(opts: {
-  userId: string;
+// Builds and saves a new test on the server (supabase/security.sql:
+// create_test). The questions arrive without their answers; the key stays in
+// the database until the test is submitted, so it can't be read mid-test.
+export type StartTestResult =
+  | { id: string; questionCount: number; requested: number }
+  | { error: "empty" | "limit" | "failed" };
+
+export async function startTest(opts: {
   subjectId: string;
   difficulty: McqDifficulty;
-  mcqs: DBMcq[];
+  count: number;
+  // Restrict to these chapters. Empty or omitted means the whole book.
+  chapterIds?: string[];
   scope?: string;
-}): Promise<TestRow | null> {
-  if (!isSupabaseConfigured()) return null;
-  const supabase = createClient();
-
-  const { data: last } = await supabase
-    .from("tests")
-    .select("seq")
-    .eq("user_id", opts.userId)
-    .eq("subject_id", opts.subjectId)
-    .order("seq", { ascending: false })
-    .limit(1);
-  let seq = (((last ?? []) as Array<{ seq: number }>)[0]?.seq ?? 0) + 1;
-
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const { data, error } = await supabase
-      .from("tests")
-      .insert({
-        user_id: opts.userId,
-        subject_id: opts.subjectId,
-        seq,
-        title: titleForSeq(seq),
-        difficulty: opts.difficulty,
-        question_count: opts.mcqs.length,
-        questions_json: opts.mcqs,
-        status: "in_progress",
-        scope: opts.scope ?? "Whole book",
-      })
-      .select(CARD_COLUMNS)
-      .maybeSingle();
-
-    if (!error && data) return toRow(data as RawTest);
-    // 23505 = unique violation: another tab took this number.
-    if (error?.code !== "23505") return null;
-    seq++;
+}): Promise<StartTestResult> {
+  if (!isSupabaseConfigured()) return { error: "failed" };
+  const { data, error } = await createClient().rpc("create_test", {
+    p_subject_id: opts.subjectId,
+    p_chapter_ids: opts.chapterIds && opts.chapterIds.length > 0 ? opts.chapterIds : null,
+    p_difficulty: opts.difficulty,
+    p_count: Math.min(Math.max(Math.round(opts.count), 1), 30),
+    p_scope: opts.scope ?? "Whole book",
+  });
+  if (error) {
+    if (/no questions available|no chapters/i.test(error.message)) return { error: "empty" };
+    if (/daily test limit/i.test(error.message)) return { error: "limit" };
+    return { error: "failed" };
   }
-  return null;
+  const r = data as { id?: string; questionCount?: number; requested?: number } | null;
+  if (!r?.id) return { error: "failed" };
+  return { id: r.id, questionCount: Number(r.questionCount ?? 0), requested: Number(r.requested ?? opts.count) };
 }
 
 export interface SubmitResult {
@@ -169,30 +158,13 @@ export interface SubmitResult {
   remarks: string;
 }
 
-// Grades and stores a submission. Unanswered questions count as wrong, matching
-// how the board marks a paper.
-export async function submitTest(
-  testId: string,
-  mcqs: DBMcq[],
-  answers: (number | null)[],
-): Promise<SubmitResult | null> {
-  const correctCount = mcqs.reduce((n, q, i) => n + (answers[i] === q.answer ? 1 : 0), 0);
-  const scorePct = mcqs.length === 0 ? 0 : Math.round((correctCount / mcqs.length) * 100);
-  const remarks = remarkFor(scorePct);
-
-  if (isSupabaseConfigured()) {
-    const { error } = await createClient()
-      .from("tests")
-      .update({
-        answers_json: answers,
-        correct_count: correctCount,
-        score_pct: scorePct,
-        remarks,
-        status: "submitted",
-        submitted_at: new Date().toISOString(),
-      })
-      .eq("id", testId);
-    if (error) return null;
-  }
-  return { correctCount, scorePct, remarks };
+// Marks a submission on the server against the hidden key (submit_test).
+// Unanswered questions count as wrong, matching how the board marks a paper.
+// Submitting twice returns the first result.
+export async function submitTest(testId: string, answers: (number | null)[]): Promise<SubmitResult | null> {
+  if (!isSupabaseConfigured()) return null;
+  const { data, error } = await createClient().rpc("submit_test", { p_test_id: testId, p_answers: answers });
+  if (error || !data) return null;
+  const r = data as { correctCount: number; scorePct: number; remarks: string };
+  return { correctCount: Number(r.correctCount), scorePct: Number(r.scorePct), remarks: String(r.remarks) };
 }

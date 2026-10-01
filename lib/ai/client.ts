@@ -22,7 +22,10 @@ export async function pickModel(key: string): Promise<string> {
   if (GROQ_MODEL_PINNED) return GROQ_MODEL; // developer pinned via PREPIFY_MODEL
   if (cachedModel) return cachedModel;
   try {
-    const res = await fetch(`${GROQ_BASE_URL}/models`, { headers: { Authorization: `Bearer ${key}` } });
+    const res = await fetch(`${GROQ_BASE_URL}/models`, {
+      headers: { Authorization: `Bearer ${key}` },
+      signal: AbortSignal.timeout(10_000),
+    });
     if (res.ok) {
       const data = (await res.json()) as { data?: Array<{ id: string; active?: boolean }> };
       const ids = (data.data ?? [])
@@ -77,44 +80,59 @@ interface GroqResponse {
   error?: { message?: string };
 }
 
+// A failed Groq call. `status` is the upstream HTTP status (0 for a network
+// failure), so routes can choose a friendly message without echoing Groq's own
+// error text to the browser.
+export class GroqError extends Error {
+  constructor(message: string, readonly status: number) {
+    super(message);
+    this.name = "GroqError";
+  }
+}
+
 export interface GroqChatResult {
   text: string;
   model: string;
 }
 
-// Calls Groq and returns the assistant's text. Throws a friendly Error on
-// failure (invalid key, rate limit, bad model, network) so callers can surface
-// it or fall back to canned content.
+// Calls Groq and returns the assistant's text. Throws a GroqError on failure
+// (invalid key, rate limit, bad model, network); its message is for the server
+// log, not the browser.
 export async function groqChat(opts: GroqChatOptions): Promise<GroqChatResult> {
   const model = opts.model ?? (await pickModel(opts.key));
-  const res = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${opts.key}`,
-    },
-    body: JSON.stringify({
-      model,
-      messages: opts.messages,
-      max_tokens: opts.maxTokens ?? 2048,
-      temperature: opts.temperature ?? 0.4,
-      ...(opts.jsonMode ? { response_format: { type: "json_object" } } : {}),
-    }),
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${GROQ_BASE_URL}/chat/completions`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${opts.key}`,
+      },
+      body: JSON.stringify({
+        model,
+        messages: opts.messages,
+        max_tokens: opts.maxTokens ?? 2048,
+        temperature: opts.temperature ?? 0.4,
+        ...(opts.jsonMode ? { response_format: { type: "json_object" } } : {}),
+      }),
+      signal: AbortSignal.timeout(45_000),
+    });
+  } catch (err) {
+    throw new GroqError(`Groq request failed: ${err instanceof Error ? err.message : String(err)}`, 0);
+  }
 
   let data: GroqResponse;
   try {
     data = (await res.json()) as GroqResponse;
   } catch {
-    throw new Error(`Groq returned a non-JSON response (HTTP ${res.status}).`);
+    throw new GroqError(`Groq returned a non-JSON response (HTTP ${res.status}).`, res.status);
   }
 
   if (!res.ok) {
-    const msg = data.error?.message ?? `Groq request failed (HTTP ${res.status}).`;
-    throw new Error(msg);
+    throw new GroqError(data.error?.message ?? `Groq request failed (HTTP ${res.status}).`, res.status);
   }
 
   const text = data.choices?.[0]?.message?.content?.trim() ?? "";
-  if (!text) throw new Error("Groq returned an empty response.");
+  if (!text) throw new GroqError("Groq returned an empty response.", 502);
   return { text, model: data.model ?? model };
 }

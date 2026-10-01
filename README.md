@@ -13,6 +13,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/login/` | Email/password sign in / sign up UI + server actions |
 | `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
+| `supabase/security.sql` | Server-side test building and marking (answer keys never reach the browser), the API rate limiter, and the table lockdown (re-runnable) |
 | `supabase/support.sql` | Help & Feedback tickets and the /admin portal; admins live in the locked `app_admins` table (re-runnable) |
 | `supabase/engagement.sql` | Question reports (read them via the `question_report_summary` view), per-chapter results, XP, streaks and the global leaderboard (re-runnable) |
 | `supabase/usernames.sql` | Usernames on profiles, plus sign-in by username without exposing emails (re-runnable) |
@@ -43,7 +44,7 @@ npm run seed       # load the curriculum into Supabase (needs env, see below)
 The app has real email/password auth and persists your profile. To turn it on:
 
 1. Create a Supabase project.
-2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper), then `supabase/challenges.sql` for friend challenges `supabase/usernames.sql` for username sign-in, `supabase/engagement.sql` for question reports, weak-chapter stats, XP, streaks and the leaderboard, and `supabase/support.sql` for Help & Feedback tickets and the admin portal (then add yourself as admin — see the top of that file).
+2. Run `supabase/schema.sql` in the SQL editor (creates tables, RLS, pgvector, the `handle_new_user` trigger and the RAG helper), then `supabase/challenges.sql` for friend challenges `supabase/usernames.sql` for username sign-in, `supabase/engagement.sql` for question reports, weak-chapter stats, XP, streaks and the leaderboard, `supabase/support.sql` for Help & Feedback tickets and the admin portal (then add yourself as admin — see the top of that file), and finally `supabase/security.sql` (then its LOCKDOWN section) so tests are built and marked on the server.
 3. Copy `.env.local.example` → `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY`.
 4. `npm run seed` to load the Physics IX curriculum (also creates all nine subject rows so enrolments resolve).
 5. For the smoothest local dev, disable “Confirm email” in Supabase → Authentication → Providers → Email (otherwise new sign-ups must confirm before signing in).
@@ -67,11 +68,13 @@ If Supabase isn't configured, all of the above degrade gracefully to the demo ex
 The "Ask Prepify" chatbot calls **Groq** (OpenAI-compatible Chat Completions) through server-side
 Next.js route handlers under `app/api/ai/`:
 
-- **`POST /api/ai/chat`** — the study assistant behind the chat bubble. Throttled per student
-  (`lib/ai/rateLimit.ts`) because the shared key's rate limit is per key.
-- **`POST /api/ai/quiz`** — MCQ generation. Only used as a fallback; normal tests come from the
-  question bank.
+- **`POST /api/ai/chat`** — the study assistant behind the chat bubble.
 - **`POST /api/ai/ping`** — a tiny request that confirms the key works, behind the Settings button.
+
+Both need a signed-in student (401 otherwise), refuse cross-site requests, cap the request size,
+and are rate-limited per student in the database (`rate_limit_hit` in `supabase/security.sql`;
+chat: 12 a minute and 200 a day) because the shared key's rate limit is per key. Errors from Groq
+are logged on the server and the browser gets a plain message instead.
 
 **The owner sets one `GROQ_API_KEY` on the server** and every student gets the chatbot with zero
 setup. `isAiConfigured()` surfaces this to the UI as `AppState.aiConfigured`, which suppresses all
@@ -89,19 +92,17 @@ runtime consumer. Groq's free tier is rate-limited per key, so a class chatting 
 the per-student throttle softens that, and Groq's pay-as-you-go tier costs a few dollars a month at
 this scale.
 
-## Live curriculum (DB-driven loop)
+## Tests (DB-driven)
 
-When Supabase is configured, the core loop reads real content from the database (`lib/curriculum.ts`, browser client under public-read RLS):
+When Supabase is configured, a test is built on the server by `create_test`
+(`supabase/security.sql`) from the `questions` bank: one version per question family, in the
+chosen difficulty band first, avoiding what the student met in their last five tests, with
+questions and options shuffled. The browser receives the questions without answers;
+`submit_test` marks them against the hidden key, saves the score and only then releases the
+answers and explanations for the review. Nothing here calls the AI.
 
-- **My Subjects → Chapters** — opening a subject loads its real chapter tree (chapters + topics) from the DB. Subjects without seeded content show a friendly "still ingesting" state; Physics IX has textbook content seeded.
-- **Topic workspace** — the reading pane renders the topic's real SLOs and textbook `content_md`, SLO by SLO. The **AI tutor is grounded on that topic's real text**, and the **quiz is generated on demand from that same text** (no pre-seeded question bank), scored against a 70% pass bar.
-- **Mastery persistence + unlocking** — passing a topic quiz writes to `topic_progress`. The chapter tree then shows real mastery states, and in guided mode a topic stays locked until every earlier topic is passed. (`lib/supabase/persist.ts`, `computeTopicStates`.)
-- **Live analytics** — for a signed-in student the My Subjects grid, Progress coverage heat-map + predicted grades, and Home gauges/weak-spots are computed from saved mastery (`lib/analytics.ts`), not hardcoded.
-- **Chapter tests** — MCQ-only (new FBISE pattern), generated fresh from the chapter's textbook text every time (`getChapterGrounding` + `/api/ai/quiz`, using the student's key), with a "New test" regenerate. Auto-marked, pass at 50%. Results roll into `chapter_attempts` + `chapter_progress`, and the chapter tree shows a passed badge with your best score.
-
-In demo mode (no Supabase) these screens fall back to the static Physics sample, so everything still runs with zero setup. All persistence + analytics are gated on being signed in.
-
-Still on demo data (pending further build-out): spaced-repetition reviews, streak/XP, the study-plan queue, DB-backed mock-exam scoring, and RAG retrieval of chunks from the DB (the tutor currently grounds on the topic's supplied text; the `match_topic_chunks()` helper + embeddings are ready to wire in).
+In demo mode (no Supabase) the screens fall back to sample data, so everything still runs with
+zero setup.
 
 ## The dashboard
 
@@ -141,3 +142,19 @@ The dashboard UI plus **real Supabase auth and profile/onboarding/settings persi
 ## Content note
 
 The seed in `content/physics-9.curriculum.json` is **AI-drafted** and, per the content pipeline, must be **human-verified before it is shown to students** — never ship unverified exam content.
+
+## Security
+
+- **Secrets** — `GROQ_API_KEY` and `SUPABASE_SERVICE_ROLE_KEY` are server-only (no `NEXT_PUBLIC_`
+  prefix) and `.env*` files are git-ignored. Only the Supabase URL and anon key reach the browser,
+  which is what they're designed for: every table is behind row-level security.
+- **Data access** — students read and write only their own rows. Tests are created and marked by
+  `create_test` / `submit_test` on the server, so answers stay hidden until submitting and scores
+  can't be forged; challenges, tickets, reports and the leaderboard go through security-definer
+  functions too. The question bank itself isn't readable from the browser.
+- **Admin** — admins are listed in the locked `app_admins` table; every admin function checks it,
+  and `/admin` redirects anyone else home.
+- **Passwords** — handled entirely by Supabase Auth (bcrypt-hashed; the app never stores one).
+  Sign-up asks for 8+ characters.
+- **Headers** — a Content-Security-Policy, `X-Frame-Options: DENY`, `nosniff`, HSTS, a strict
+  referrer policy and a Permissions-Policy are set in `next.config.mjs`; `X-Powered-By` is off.

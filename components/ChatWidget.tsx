@@ -117,7 +117,7 @@ export function ChatWidget() {
       else if (res.ok) reply = ((await res.json()) as { reply?: string }).reply ?? "Sorry, I couldn't answer that — try again.";
       else {
         const err = ((await res.json().catch(() => ({}))) as { error?: string }).error;
-        reply = err ? `Couldn't answer: ${err}` : "Something went wrong. Please try again in a moment.";
+        reply = err || "Something went wrong. Please try again in a moment.";
       }
     } catch {
       reply = "I couldn't reach the AI service. Check your connection and try again.";
