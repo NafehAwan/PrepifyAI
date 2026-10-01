@@ -23,6 +23,8 @@ const INITIAL: AppState = {
   userEmail: "areeba.r@example.com",
   username: null,
   hideFromLeaderboard: false,
+  isAdmin: false,
+  activeTicketNumber: null,
   selectedSubjectId: null,
   selectedSubjectName: null,
   activeTestId: null,
@@ -81,9 +83,9 @@ export function AppProvider({
   // returns to the previous screen instead of leaving the site. The first
   // render only tidies the address (e.g. /?join=CODE → /challenges/CODE).
   const firstSync = useRef(true);
-  const { screen, selectedSubjectName, activeTestId, activeChallengeCode } = s;
+  const { screen, selectedSubjectName, activeTestId, activeChallengeCode, activeTicketNumber } = s;
   useEffect(() => {
-    const path = pathFor({ screen, selectedSubjectName, activeTestId, activeChallengeCode });
+    const path = pathFor({ screen, selectedSubjectName, activeTestId, activeChallengeCode, activeTicketNumber });
     const here = window.location.pathname;
     if (firstSync.current) {
       firstSync.current = false;
@@ -92,7 +94,7 @@ export function AppProvider({
     }
     // After Back/Forward the address already matches, so nothing is pushed.
     if (path && here !== path) window.history.pushState(null, "", path);
-  }, [screen, selectedSubjectName, activeTestId, activeChallengeCode]);
+  }, [screen, selectedSubjectName, activeTestId, activeChallengeCode, activeTicketNumber]);
 
   // Back / Forward: show the screen for the address we've landed on.
   useEffect(() => {

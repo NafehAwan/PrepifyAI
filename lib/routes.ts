@@ -9,6 +9,8 @@
 //   /subjects/physics/challenge    Challenge friends
 //   /tests/<id>                    taking or reviewing a test
 //   /challenges/<CODE>             a challenge (lobby, test or results)
+//   /support, /support/<number>    Help & Feedback tickets
+//   /admin                         the owner's portal
 //   /progress, /leaderboard, /settings
 //
 // Shared by the server (to open the right screen on a fresh load) and the
@@ -18,7 +20,7 @@
 import type { AppState } from "./types";
 import { OFFERED_SUBJECTS } from "./data";
 
-type RouteState = Pick<AppState, "screen" | "selectedSubjectName" | "activeTestId" | "activeChallengeCode">;
+type RouteState = Pick<AppState, "screen" | "selectedSubjectName" | "activeTestId" | "activeChallengeCode" | "activeTicketNumber">;
 
 export function subjectSlug(name: string): string {
   return name.toLowerCase().trim().replace(/\s+/g, "-");
@@ -44,6 +46,12 @@ export function pathFor(s: RouteState): string | null {
       return "/progress";
     case "leaderboard":
       return "/leaderboard";
+    case "support":
+      return "/support";
+    case "supportTicket":
+      return s.activeTicketNumber ? `/support/${s.activeTicketNumber}` : "/support";
+    case "admin":
+      return "/admin";
     case "settings":
       return "/settings";
     case "subjectTests":
@@ -72,6 +80,12 @@ export function stateFromPath(pathname: string): Partial<AppState> | null {
   if (!a) return { screen: "home" };
   if (a === "progress" && !b) return { screen: "progress" };
   if (a === "leaderboard" && !b) return { screen: "leaderboard" };
+  if (a === "admin" && !b) return { screen: "admin" };
+  if (a === "support") {
+    if (!b) return { screen: "support" };
+    if (!c && /^[1-9][0-9]{0,9}$/.test(b)) return { screen: "supportTicket", activeTicketNumber: Number(b) };
+    return null;
+  }
   if (a === "settings" && !b) return { screen: "settings" };
 
   if (a === "subjects") {

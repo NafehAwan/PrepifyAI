@@ -21,6 +21,10 @@ import { TestRunner } from "./TestRunner";
 import { NewChallenge } from "./screens/NewChallenge";
 import { ChallengeRoom } from "./ChallengeRoom";
 import { Leaderboard } from "./screens/Leaderboard";
+import { Support } from "./screens/Support";
+import { SupportTicket } from "./screens/SupportTicket";
+import { Admin } from "./screens/Admin";
+import { countUnreadTickets, getAdminOverview } from "@/lib/support";
 import { getMyStats, type MyStats } from "@/lib/engagement";
 import { Progress } from "./screens/Progress";
 import { Settings } from "./screens/Settings";
@@ -30,6 +34,8 @@ export function AppShell() {
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
   const [stats, setStats] = useState<MyStats | null>(null);
+  // Menu badges: replies a student hasn't read; for admins, what's waiting.
+  const [badges, setBadges] = useState<Record<string, number>>({});
 
   // The student's streak and weekly XP for the top bar, refreshed as they move
   // between screens so a just-finished test shows up straight away.
@@ -42,6 +48,20 @@ export function AppShell() {
     };
   }, [s.authed, s.screen]);
 
+  useEffect(() => {
+    if (!s.authed) return;
+    let active = true;
+    (async () => {
+      const unread = await countUnreadTickets();
+      const admin = s.isAdmin ? await getAdminOverview() : null;
+      if (!active) return;
+      setBadges({ support: unread, admin: admin ? admin.openTickets + admin.openReports : 0 });
+    })();
+    return () => {
+      active = false;
+    };
+  }, [s.authed, s.isAdmin, s.screen]);
+
   // Re-apply the student's "Reduce animations" choice on mount (localStorage is
   // only readable client-side, so the root attribute can't be server-rendered).
   useEffect(() => {
@@ -52,7 +72,9 @@ export function AppShell() {
   // underneath it.
   const SUBJECT_FLOW = ["subjectTests", "newTest", "testRun", "testReview", "newChallenge", "challengeRoom"];
   const isSubjectsActive = (id: string) =>
-    s.screen === id || (id === "subjects" && SUBJECT_FLOW.includes(s.screen));
+    s.screen === id ||
+    (id === "subjects" && SUBJECT_FLOW.includes(s.screen)) ||
+    (id === "support" && s.screen === "supportTicket");
 
   const navGo = (screen: Screen) => {
     go(screen);
@@ -84,12 +106,18 @@ export function AppShell() {
           </button>
         )}
       </div>
-      {NAV.map(([id, label, d]) => {
+      {NAV.filter(([id]) => id !== "admin" || s.isAdmin).map(([id, label, d]) => {
         const active = isSubjectsActive(id);
+        const badge = badges[id] ?? 0;
         return (
           <button key={id} onClick={() => navGo(id as Screen)} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 14, textAlign: "left", fontWeight: 600, fontSize: 14.5, background: active ? C.accent : "transparent", color: active ? "#fff" : "#5d5648" }}>
             <StrokeIcon d={d} style={{ flex: "none" }} />
             <span style={{ flex: 1 }}>{label}</span>
+            {badge > 0 && (
+              <span style={{ minWidth: 20, height: 20, borderRadius: 999, background: active ? "#fff" : C.danger, color: active ? C.accentD : "#fff", fontSize: 11.5, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 6px" }}>
+                {badge > 99 ? "99+" : badge}
+              </span>
+            )}
           </button>
         );
       })}
@@ -119,8 +147,11 @@ export function AppShell() {
         {/* topbar */}
         <div style={{ height: 62, flex: "none", borderBottom: `1px solid ${C.line}`, background: C.topbar, display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, padding: isMobile ? "0 14px" : "0 26px", position: "sticky", top: 0, zIndex: 20 }}>
           {isMobile && (
-            <button onClick={() => setMenuOpen(true)} aria-label="Open menu" style={{ width: 38, height: 38, flex: "none", borderRadius: 12, background: C.sand, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <button onClick={() => setMenuOpen(true)} aria-label="Open menu" style={{ position: "relative", width: 38, height: 38, flex: "none", borderRadius: 12, background: C.sand, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <StrokeIcon d="M4 7h16M4 12h16M4 17h16" size={18} stroke="#5d5648" width={2.4} />
+              {Object.values(badges).some((n) => n > 0) && (
+                <span aria-label="New activity" style={{ position: "absolute", top: 6, right: 6, width: 9, height: 9, borderRadius: 999, background: C.danger, border: `2px solid ${C.sand}` }} />
+              )}
             </button>
           )}
           <div style={{ fontFamily: "Caprasimo", fontSize: isMobile ? 17 : 19, flex: 1, minWidth: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
@@ -199,6 +230,9 @@ function ScreenBody({ screen }: { screen: Screen }) {
     case "challengeRoom": return <ChallengeRoom />;
     case "progress": return <Progress />;
     case "leaderboard": return <Leaderboard />;
+    case "support": return <Support />;
+    case "supportTicket": return <SupportTicket />;
+    case "admin": return <Admin />;
     case "settings": return <Settings />;
     default: return <Home />;
   }
