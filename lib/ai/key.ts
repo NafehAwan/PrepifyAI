@@ -4,7 +4,7 @@
 // requests via the `x-groq-key` header and forwarded straight to Groq; it is
 // never written to our database or logged server-side.
 
-import { GROQ_KEY_HEADER } from "./config";
+import { GROQ_KEY_HEADER } from "./header";
 
 const STORAGE_KEY = "prepify.groqKey";
 

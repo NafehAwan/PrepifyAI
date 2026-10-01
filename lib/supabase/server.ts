@@ -5,8 +5,8 @@ import { SUPABASE_ANON_KEY, SUPABASE_URL } from "./config";
 // Server-side client for Server Components, Route Handlers and Server Actions.
 // Reads/writes the session cookie. In a Server Component the cookie `set` calls
 // are no-ops (middleware refreshes the session there), which is expected.
-export function createClient() {
-  const cookieStore = cookies();
+export async function createClient() {
+  const cookieStore = await cookies();
   return createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     cookies: {
       getAll() {

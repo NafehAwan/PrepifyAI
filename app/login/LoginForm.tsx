@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { useFormState, useFormStatus } from "react-dom";
+import { startTransition, useActionState, useState } from "react";
 import { login, signup, signInWithGoogle, type AuthState } from "./actions";
 import { C } from "@/lib/theme";
 
@@ -9,8 +8,8 @@ const EMPTY: AuthState = {};
 
 export function LoginForm({ initialError, next }: { initialError?: string; next?: string }) {
   const [mode, setMode] = useState<"login" | "signup">("login");
-  const [loginState, loginAction] = useFormState(login, EMPTY);
-  const [signupState, signupAction] = useFormState(signup, EMPTY);
+  const [loginState, loginAction, loginPending] = useActionState(login, EMPTY);
+  const [signupState, signupAction, signupPending] = useActionState(signup, EMPTY);
 
   const isLogin = mode === "login";
   const [password, setPassword] = useState("");
@@ -21,6 +20,16 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
     setConfirm("");
   };
   const state = isLogin ? loginState : signupState;
+  const pending = isLogin ? loginPending : signupPending;
+
+  // Runs the action without React 19's automatic form reset, so a "passwords
+  // don't match" message doesn't also wipe what the student typed. The form's
+  // `action` stays as the no-JavaScript fallback (a POST, never a GET).
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    startTransition(() => (isLogin ? loginAction : signupAction)(data));
+  };
   const errorText = state.error ?? initialError;
 
   return (
@@ -51,7 +60,7 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
         <div style={{ flex: 1, height: 1, background: "#ece0c8" }} />
       </div>
 
-      <form key={mode} action={isLogin ? loginAction : signupAction} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      <form key={mode} action={isLogin ? loginAction : signupAction} onSubmit={onSubmit} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <input type="hidden" name="next" value={next ?? "/"} />
         {isLogin ? (
           <>
@@ -79,14 +88,14 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
 
         {errorText && (
           <div style={{ background: C.tint, color: C.accentD, borderRadius: 12, padding: "10px 14px", fontSize: 13.5, fontWeight: 600 }}>
-            {errorText === "oauth" ? "Google sign-in didn't complete. Please try again." : errorText === "not-configured" ? "Supabase is not configured." : errorText}
+            {errorText}
           </div>
         )}
         {state.message && (
           <div style={{ background: C.sageT, color: C.sageD, borderRadius: 12, padding: "10px 14px", fontSize: 13.5, fontWeight: 600 }}>{state.message}</div>
         )}
 
-        <Submit isLogin={isLogin} />
+        <Submit isLogin={isLogin} pending={pending} />
       </form>
     </div>
   );
@@ -128,8 +137,7 @@ function Field({
   );
 }
 
-function Submit({ isLogin }: { isLogin: boolean }) {
-  const { pending } = useFormStatus();
+function Submit({ isLogin, pending }: { isLogin: boolean; pending: boolean }) {
   return (
     <button type="submit" disabled={pending} style={{ marginTop: 6, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 0", fontSize: 15, opacity: pending ? 0.7 : 1, boxShadow: "0 6px 16px rgba(198,113,57,.3)" }}>
       {pending ? "Please wait…" : isLogin ? "Sign in" : "Create account"}

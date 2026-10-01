@@ -22,7 +22,7 @@ export async function renderApp(pathname: string, join?: string) {
     return <PrepifyApp initial={{ aiConfigured: isAiConfigured(), ...target }} />;
   }
 
-  const supabase = createClient();
+  const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();

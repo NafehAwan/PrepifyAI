@@ -276,8 +276,8 @@ revoke all on function public.handle_new_user() from public, anon, authenticated
 -- The chapter question counts read `questions` as the view's owner, so they
 -- keep working once students can no longer read answer columns themselves.
 alter view chapter_mcq_counts set (security_invoker = false);
+revoke all on chapter_mcq_counts from anon, authenticated;
 grant select on chapter_mcq_counts to authenticated;
-revoke all on chapter_mcq_counts from anon;
 
 revoke all on function public.create_test(uuid, uuid[], text, int, text) from public, anon;
 revoke all on function public.submit_test(uuid, jsonb)                   from public, anon;

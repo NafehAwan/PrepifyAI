@@ -46,7 +46,7 @@ function ipOf(req: Request): string {
 
 // ---- Route guard -------------------------------------------------------------
 
-export type Guarded = { userId: string | null; supabase: ReturnType<typeof createClient> | null } | NextResponse;
+export type Guarded = { userId: string | null; supabase: Awaited<ReturnType<typeof createClient>> | null } | NextResponse;
 
 // Requires a signed-in user (when accounts are switched on) and applies the
 // rate rules in order. Returns the caller, or the response to send instead:
@@ -60,7 +60,7 @@ export async function guardAiRoute(req: Request, rules: RateRule[], limitMessage
     return { userId: null, supabase: null };
   }
 
-  const supabase = createClient();
+  const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();

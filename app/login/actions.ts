@@ -27,7 +27,7 @@ export async function login(_prev: AuthState, formData: FormData): Promise<AuthS
   if (!identifier || !password) return { error: "Enter your username (or email) and password." };
   if (identifier.length > 254 || password.length > 72) return { error: "Wrong username or password." };
 
-  const supabase = createClient();
+  const supabase = await createClient();
   let email = identifier;
   if (!identifier.includes("@")) {
     const { data } = await supabase.rpc("login_email", { p_username: identifier, p_password: password });
@@ -61,7 +61,7 @@ export async function signup(_prev: AuthState, formData: FormData): Promise<Auth
   if (password.toLowerCase().includes(username)) return { error: "Your password can't contain your username." };
   if (password !== confirm) return { error: "The two passwords don't match." };
 
-  const supabase = createClient();
+  const supabase = await createClient();
   const { data: available } = await supabase.rpc("username_available", { p_username: username });
   if (available === false) return { error: `The username "${username}" is taken — try another.` };
 
@@ -95,10 +95,10 @@ export async function signup(_prev: AuthState, formData: FormData): Promise<Auth
 export async function signInWithGoogle(formData: FormData): Promise<void> {
   if (!isSupabaseConfigured()) redirect("/login?error=not-configured");
 
-  const h = headers();
+  const h = await headers();
   const origin = h.get("origin") ?? `https://${h.get("host") ?? ""}`;
 
-  const supabase = createClient();
+  const supabase = await createClient();
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: { redirectTo: `${origin}/auth/callback?next=${encodeURIComponent(safeNext(formData.get("next")))}` },
@@ -109,7 +109,7 @@ export async function signInWithGoogle(formData: FormData): Promise<void> {
 
 export async function signOut(): Promise<void> {
   if (isSupabaseConfigured()) {
-    const supabase = createClient();
+    const supabase = await createClient();
     await supabase.auth.signOut();
   }
   revalidatePath("/", "layout");
