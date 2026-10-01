@@ -6,6 +6,7 @@ import { C } from "@/lib/theme";
 import { getTest, submitTest, type TestDetail } from "@/lib/tests/store";
 import { subjectNameById } from "@/lib/curriculum";
 import { sfxWin, sfxTryAgain } from "@/lib/sfx";
+import { REPORT_REASONS, reportQuestion, type ReportReason } from "@/lib/engagement";
 import { Mascot } from "./Mascot";
 import type { DBMcq } from "@/lib/curriculum";
 
@@ -171,7 +172,7 @@ function Results({ test, picks, onBack }: { test: TestDetail; picks: (number | n
           <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Answer review</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {test.mcqs.map((q, qi) => (
-              <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={answers[qi] ?? null} first={qi === 0} />
+              <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={answers[qi] ?? null} first={qi === 0} source="test" />
             ))}
           </div>
         </div>
@@ -180,7 +181,20 @@ function Results({ test, picks, onBack }: { test: TestDetail; picks: (number | n
   );
 }
 
-export function ReviewRow({ q, index, pick, first }: { q: DBMcq; index: number; pick: number | null; first: boolean }) {
+export function ReviewRow({
+  q,
+  index,
+  pick,
+  first,
+  source,
+}: {
+  q: DBMcq;
+  index: number;
+  pick: number | null;
+  first: boolean;
+  // Where the review is shown; enables the Report button.
+  source?: "test" | "challenge";
+}) {
   const right = pick === q.answer;
   return (
     <div style={{ borderTop: first ? "none" : "1px solid #ece0c8", paddingTop: first ? 0 : 14 }}>
@@ -201,6 +215,74 @@ export function ReviewRow({ q, index, pick, first }: { q: DBMcq; index: number; 
         {pick === null && <span style={{ color: C.muted }}> · you left this blank</span>}
       </div>
       {q.explanation && <div style={{ fontSize: 12.5, color: "#7a6f5d", lineHeight: 1.5, marginTop: 4 }}>{q.explanation}</div>}
+      {source && q.id && <ReportQuestion q={q} pick={pick} source={source} />}
+    </div>
+  );
+}
+
+// "Report" under a reviewed question: a student who thinks the answer key is
+// wrong (or spots a typo) can flag it in two taps. What they saw is sent with
+// the report, because options are shuffled differently in every test.
+function ReportQuestion({ q, pick, source }: { q: DBMcq; pick: number | null; source: "test" | "challenge" }) {
+  const [open, setOpen] = useState(false);
+  const [reason, setReason] = useState<ReportReason>("wrong_answer");
+  const [note, setNote] = useState("");
+  const [state, setState] = useState<"idle" | "sending" | "sent" | "error" | "limit">("idle");
+
+  const send = async () => {
+    setState("sending");
+    const res = await reportQuestion({
+      questionId: q.id,
+      reason,
+      note,
+      shown: { stem: q.stem, options: q.options, markedAnswer: q.answer, picked: pick },
+      source,
+    });
+    setState(res === "ok" ? "sent" : res);
+  };
+
+  if (state === "sent") {
+    return <div style={{ fontSize: 12, fontWeight: 700, color: C.sageD, marginTop: 6 }}>✓ Reported — thanks! We&apos;ll check this question.</div>;
+  }
+  if (!open) {
+    return (
+      <button onClick={() => setOpen(true)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, marginTop: 6, padding: "2px 0" }}>
+        ⚑ Report this question
+      </button>
+    );
+  }
+  return (
+    <div style={{ marginTop: 8, background: C.bg, borderRadius: 14, padding: "12px 14px" }}>
+      <div style={{ fontSize: 12.5, fontWeight: 700, marginBottom: 8 }}>What&apos;s wrong with it?</div>
+      <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}>
+        {REPORT_REASONS.map((r) => (
+          <button
+            key={r.id}
+            onClick={() => setReason(r.id)}
+            style={{ borderRadius: 999, padding: "6px 12px", fontSize: 12.5, fontWeight: 700, background: reason === r.id ? C.accent : C.card, color: reason === r.id ? "#fff" : "#5d5648", border: `1.5px solid ${reason === r.id ? C.accent : C.line}` }}
+          >
+            {r.label}
+          </button>
+        ))}
+      </div>
+      <input
+        value={note}
+        onChange={(e) => setNote(e.target.value)}
+        maxLength={500}
+        placeholder={reason === "wrong_answer" ? "Optional: what should the answer be, and why?" : "Optional: tell us more"}
+        aria-label="Details"
+        style={{ width: "100%", borderRadius: 10, border: `1.5px solid ${C.line}`, background: "#fff", padding: "8px 12px", fontSize: 13, marginBottom: 8 }}
+      />
+      <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+        <button onClick={send} disabled={state === "sending"} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "7px 16px", fontSize: 12.5, opacity: state === "sending" ? 0.7 : 1 }}>
+          {state === "sending" ? "Sending…" : "Send report"}
+        </button>
+        <button onClick={() => setOpen(false)} style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, padding: "7px 6px" }}>
+          Cancel
+        </button>
+        {state === "error" && <span style={{ fontSize: 12, fontWeight: 700, color: C.accentD }}>Couldn&apos;t send — check your connection.</span>}
+        {state === "limit" && <span style={{ fontSize: 12, fontWeight: 700, color: C.accentD }}>You&apos;ve sent a lot of reports today — thanks! Try again tomorrow.</span>}
+      </div>
     </div>
   );
 }

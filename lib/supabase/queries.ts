@@ -26,7 +26,7 @@ export async function loadUserContext(
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("id, class_level, medium, exam_date, locale, mode, username")
+    .select("id, class_level, medium, exam_date, locale, mode, username, hide_from_leaderboard")
     .eq("id", user.id)
     .maybeSingle<ProfileRow>();
   const username = profile?.username ?? null;
@@ -59,6 +59,7 @@ export async function loadUserContext(
     userName,
     userEmail,
     username,
+    hideFromLeaderboard: profile?.hide_from_leaderboard ?? false,
     screen: onboarded ? "home" : "onboarding",
     ob: onboarded ? 5 : 1,
   };

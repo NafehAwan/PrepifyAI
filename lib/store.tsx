@@ -22,6 +22,7 @@ const INITIAL: AppState = {
   userName: "Areeba",
   userEmail: "areeba.r@example.com",
   username: null,
+  hideFromLeaderboard: false,
   selectedSubjectId: null,
   selectedSubjectName: null,
   activeTestId: null,

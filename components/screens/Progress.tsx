@@ -5,6 +5,7 @@ import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
 import { getSubjectStats, currentUserId, type SubjectStats } from "@/lib/analytics";
 import { listAllTests, type TestRow } from "@/lib/tests/store";
+import { WeakChapters } from "../WeakChapters";
 
 type Row = TestRow & { subjectId: string };
 
@@ -79,6 +80,8 @@ export function Progress() {
           })}
         </div>
       </div>
+
+      <WeakChapters />
 
       <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
         <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Every test</div>

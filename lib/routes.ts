@@ -9,7 +9,7 @@
 //   /subjects/physics/challenge    Challenge friends
 //   /tests/<id>                    taking or reviewing a test
 //   /challenges/<CODE>             a challenge (lobby, test or results)
-//   /progress, /settings
+//   /progress, /leaderboard, /settings
 //
 // Shared by the server (to open the right screen on a fresh load) and the
 // browser (to keep the address bar in step), so it must stay free of
@@ -42,6 +42,8 @@ export function pathFor(s: RouteState): string | null {
       return "/subjects";
     case "progress":
       return "/progress";
+    case "leaderboard":
+      return "/leaderboard";
     case "settings":
       return "/settings";
     case "subjectTests":
@@ -69,6 +71,7 @@ export function stateFromPath(pathname: string): Partial<AppState> | null {
 
   if (!a) return { screen: "home" };
   if (a === "progress" && !b) return { screen: "progress" };
+  if (a === "leaderboard" && !b) return { screen: "leaderboard" };
   if (a === "settings" && !b) return { screen: "settings" };
 
   if (a === "subjects") {

@@ -8,6 +8,7 @@ import { listAllTests, type TestRow } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
 import { Mascot, type Mood } from "../Mascot";
 import { useIsMobile } from "@/lib/useIsMobile";
+import { getMyStats, type MyStats } from "@/lib/engagement";
 
 type Stats = Record<string, SubjectStats>;
 
@@ -61,6 +62,8 @@ export function Home() {
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 16, alignItems: "start" }}>
         <StartCard fresh={fresh} />
+
+        {s.authed && <StreakCard />}
 
         <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
           <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Your average</div>
@@ -211,5 +214,35 @@ function HomeGreeter({ mood, text }: { mood: Mood; text: string }) {
           mascot's own transform animation caused layer thrash on hover. */}
       <Mascot mood={mood} size={isMobile ? 68 : 92} />
     </div>
+  );
+}
+
+// Streak and this week's XP, with the way to the leaderboard. On phones the
+// top bar has no room for these, so this card is where they live.
+function StreakCard() {
+  const { go } = useApp();
+  const [stats, setStats] = useState<MyStats | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    getMyStats().then((m) => active && setStats(m));
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const streak = stats?.streak ?? 0;
+  return (
+    <button onClick={() => go("leaderboard")} className="pf-lift" style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
+      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Streak &amp; XP</div>
+      <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 12 }}>
+        {stats === null ? "Loading…" : streak === 0 ? "Finish a test today to start a streak." : "Finish a test or challenge today to keep it going."}
+      </div>
+      <div style={{ display: "flex", gap: 18, alignItems: "baseline", flexWrap: "wrap" }}>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: streak > 0 ? C.accent : C.muted }}>🔥 {streak}</div>
+        <div style={{ fontSize: 13, fontWeight: 700, color: C.sageD }}>{stats?.xpWeek ?? 0} XP this week</div>
+      </div>
+      <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: 12 }}>See the leaderboard →</div>
+    </button>
   );
 }
