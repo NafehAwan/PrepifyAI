@@ -11,6 +11,7 @@ import { useMuted, setMuted, sfxCorrect } from "@/lib/sfx";
 import { useReducedMotion, setReducedMotion } from "@/lib/motion";
 import type { AppState } from "@/lib/types";
 import { signOut } from "@/app/login/actions";
+import { setHiddenFromLeaderboard } from "@/lib/engagement";
 import { createClient } from "@/lib/supabase/client";
 
 const ALL_SUBJECTS = OFFERED_SUBJECTS;
@@ -89,6 +90,23 @@ export function Settings() {
             <Toggle on={!muted} onClick={() => { const nextMuted = !muted; setMuted(nextMuted); if (!nextMuted) sfxCorrect(); }} />
           </Row>
           <Divider />
+          {s.authed && (
+            <>
+              <Row title="Show me on the leaderboard" desc="Others see your username (or first name and initial) with your XP and streak. Turn off to stay private — your own rank still shows to you.">
+                <Toggle
+                  on={!s.hideFromLeaderboard}
+                  onClick={() => {
+                    const hidden = !s.hideFromLeaderboard;
+                    patch({ hideFromLeaderboard: hidden });
+                    void setHiddenFromLeaderboard(hidden).then((ok) => {
+                      if (!ok) patch({ hideFromLeaderboard: !hidden });
+                    });
+                  }}
+                />
+              </Row>
+              <Divider />
+            </>
+          )}
           <Row title="Reduce animations" desc="Turn off Prepi's movement and screen transitions. Try this if the app feels slow on your computer.">
             <Toggle on={reduceMotion} onClick={() => setReducedMotion(!reduceMotion)} />
           </Row>

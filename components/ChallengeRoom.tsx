@@ -612,7 +612,7 @@ function Results({ state }: { state: ChallengeState }) {
           <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Your answers</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {review.map((q, qi) => (
-              <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={typeof answers[qi] === "number" ? answers[qi] : null} first={qi === 0} />
+              <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={typeof answers[qi] === "number" ? answers[qi] : null} first={qi === 0} source="challenge" />
             ))}
           </div>
         </div>

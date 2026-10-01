@@ -9,6 +9,7 @@ export type Screen =
   | "newChallenge" // set up a challenge against friends
   | "challengeRoom" // lobby → shared-clock test → leaderboard
   | "progress"
+  | "leaderboard" // global XP leaderboard + streaks
   | "settings";
 
 export type Lang = "EN" | "UR";
@@ -34,6 +35,8 @@ export interface AppState {
   userEmail: string;
   // Sign-in handle; null for accounts that haven't chosen one (e.g. Google).
   username: string | null;
+  // The student chose to be left off the public leaderboard.
+  hideFromLeaderboard: boolean;
   // Live curriculum navigation (set when browsing real DB content).
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;

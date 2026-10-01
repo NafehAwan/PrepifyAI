@@ -20,6 +20,8 @@ import { NewTest } from "./screens/NewTest";
 import { TestRunner } from "./TestRunner";
 import { NewChallenge } from "./screens/NewChallenge";
 import { ChallengeRoom } from "./ChallengeRoom";
+import { Leaderboard } from "./screens/Leaderboard";
+import { getMyStats, type MyStats } from "@/lib/engagement";
 import { Progress } from "./screens/Progress";
 import { Settings } from "./screens/Settings";
 
@@ -27,6 +29,18 @@ export function AppShell() {
   const { s, go, patch, daysLeft } = useApp();
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [stats, setStats] = useState<MyStats | null>(null);
+
+  // The student's streak and weekly XP for the top bar, refreshed as they move
+  // between screens so a just-finished test shows up straight away.
+  useEffect(() => {
+    if (!s.authed) return;
+    let active = true;
+    getMyStats().then((m) => active && m && setStats(m));
+    return () => {
+      active = false;
+    };
+  }, [s.authed, s.screen]);
 
   // Re-apply the student's "Reduce animations" choice on mount (localStorage is
   // only readable client-side, so the root attribute can't be server-rendered).
@@ -128,6 +142,24 @@ export function AppShell() {
                   </Chip>
                 </>
               )}
+              {s.authed && stats && (
+                <>
+                  <button onClick={() => navGo("leaderboard")} title="Your streak — see the leaderboard" style={{ flex: "none" }}>
+                    <Chip bg={C.tint}>
+                      <FillIcon d={PATH.flame} fill={C.accent} />
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>
+                        {stats.streak} day streak
+                      </span>
+                    </Chip>
+                  </button>
+                  <button onClick={() => navGo("leaderboard")} title="XP this week — see the leaderboard" style={{ flex: "none" }}>
+                    <Chip bg={C.sageT}>
+                      <FillIcon d={PATH.bolt} size={15} fill="#7a8a5e" />
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>{stats.xpWeek} XP this week</span>
+                    </Chip>
+                  </button>
+                </>
+              )}
               <Chip bg={C.sand}>
                 <StrokeIcon d={PATH.clock} size={15} stroke={C.muted} width={2.6} />
                 <span style={{ fontWeight: 700, fontSize: 13.5, color: "#5d5648", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>
@@ -166,6 +198,7 @@ function ScreenBody({ screen }: { screen: Screen }) {
     case "newChallenge": return <NewChallenge />;
     case "challengeRoom": return <ChallengeRoom />;
     case "progress": return <Progress />;
+    case "leaderboard": return <Leaderboard />;
     case "settings": return <Settings />;
     default: return <Home />;
   }

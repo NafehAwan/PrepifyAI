@@ -17,6 +17,7 @@ export interface ProfileRow {
   locale: string | null;
   mode: StudyMode | null;
   username: string | null; // sign-in handle, lowercase; null until chosen
+  hide_from_leaderboard: boolean | null;
 }
 
 export interface SubjectRow {
