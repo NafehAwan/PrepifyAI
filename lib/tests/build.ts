@@ -43,13 +43,7 @@ export async function listSubjectChapters(subjectId: string): Promise<SubjectCha
     if (list.length === 0) throw new Error("no chapters");
 
     const counts = await withSignal(
-      supabase
-        .from("chapter_mcq_counts")
-        .select("chapter_id, mcq_count")
-        .in(
-          "chapter_id",
-          list.map((r) => r.id),
-        ),
+      supabase.rpc("chapter_question_counts", { p_chapter_ids: list.map((r) => r.id) }),
     );
     if (counts.error) throw new Error(counts.error.message);
     const countById = new Map(

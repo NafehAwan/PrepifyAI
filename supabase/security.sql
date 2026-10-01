@@ -273,11 +273,23 @@ alter function public.match_topic_chunks(uuid, vector, int) set search_path = pu
 -- The sign-up trigger runs as a trigger only; nobody should call it directly.
 revoke all on function public.handle_new_user() from public, anon, authenticated;
 
--- The chapter question counts read `questions` as the view's owner, so they
--- keep working once students can no longer read answer columns themselves.
-alter view chapter_mcq_counts set (security_invoker = false);
-revoke all on chapter_mcq_counts from anon, authenticated;
-grant select on chapter_mcq_counts to authenticated;
+-- Answerable MCQs per chapter, for the chapter pickers. A function rather than
+-- a security-definer view, so it keeps working once students can't read the
+-- questions table, without exposing anything but the counts.
+create or replace function public.chapter_question_counts(p_chapter_ids uuid[])
+returns table (chapter_id uuid, mcq_count int)
+language sql stable security definer set search_path = public
+as $$
+  select q.chapter_id, count(*)::int
+    from questions q
+   where q.chapter_id = any(p_chapter_ids)
+     and q.type = 'mcq'
+     and q.answer_key_md in ('A', 'B', 'C', 'D')
+   group by q.chapter_id;
+$$;
+revoke all on function public.chapter_question_counts(uuid[]) from public, anon;
+grant execute on function public.chapter_question_counts(uuid[]) to authenticated;
+alter view chapter_mcq_counts set (security_invoker = true);
 
 revoke all on function public.create_test(uuid, uuid[], text, int, text) from public, anon;
 revoke all on function public.submit_test(uuid, jsonb)                   from public, anon;
