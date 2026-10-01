@@ -46,7 +46,9 @@ declare
 begin
   if v_uid is null then raise exception 'not signed in'; end if;
   if p_reason not in ('wrong_answer', 'typo', 'unclear', 'other') then return 'invalid'; end if;
-  if coalesce(trim(p_question_id), '') = '' then return 'invalid'; end if;
+  if coalesce(trim(p_question_id), '') = '' or char_length(p_question_id) > 64 then return 'invalid'; end if;
+  -- `shown` is a small snapshot; anything bigger isn't from the app.
+  if p_shown is not null and octet_length(p_shown::text) > 8000 then return 'invalid'; end if;
   -- A light brake on spam: 40 reports a day is far more than honest use.
   if (select count(*) from question_reports
        where user_id = v_uid and created_at > now() - interval '1 day') >= 40 then

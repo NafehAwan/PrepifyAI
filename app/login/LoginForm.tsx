@@ -69,7 +69,7 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
               hint="3-20 characters: letters, numbers, _ and . — you'll sign in with this."
             />
             <Field label="Email" name="email" type="email" placeholder="you@example.com" autoComplete="email" hint="Used once to confirm your account, and to reset your password." />
-            <Field label="Password" name="password" type="password" placeholder="At least 6 characters" autoComplete="new-password" onValue={setPassword} />
+            <Field label="Password" name="password" type="password" placeholder="At least 8 characters" autoComplete="new-password" onValue={setPassword} />
             <Field label="Confirm password" name="confirm" type="password" placeholder="Type it again" autoComplete="new-password" onValue={setConfirm} />
             {confirm.length > 0 && confirm !== password && (
               <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: -4 }}>The passwords don&apos;t match yet.</div>

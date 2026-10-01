@@ -78,7 +78,9 @@ begin
   end if;
 
   insert into tickets (user_id, category, title, context)
-  values (v_uid, p_category, left(trim(p_title), 120), p_context)
+  values (v_uid, p_category, left(trim(p_title), 120),
+          -- The page/device note is small; drop anything oversized.
+          case when p_context is not null and octet_length(p_context::text) <= 2000 then p_context end)
   returning id, number into v_id, v_num;
   insert into ticket_messages (ticket_id, author_id, is_admin, body)
   values (v_id, v_uid, false, left(trim(p_body), 4000));
