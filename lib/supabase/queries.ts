@@ -30,6 +30,7 @@ export async function loadUserContext(
     .eq("id", user.id)
     .maybeSingle<ProfileRow>();
   const username = profile?.username ?? null;
+  const { data: isAdmin } = await supabase.rpc("is_admin");
   const userName =
     (user.user_metadata?.full_name as string | undefined) ??
     username ??
@@ -60,6 +61,7 @@ export async function loadUserContext(
     userEmail,
     username,
     hideFromLeaderboard: profile?.hide_from_leaderboard ?? false,
+    isAdmin: isAdmin === true,
     screen: onboarded ? "home" : "onboarding",
     ob: onboarded ? 5 : 1,
   };

@@ -10,6 +10,9 @@ export type Screen =
   | "challengeRoom" // lobby → shared-clock test → leaderboard
   | "progress"
   | "leaderboard" // global XP leaderboard + streaks
+  | "support" // Help & Feedback: the student's tickets + a new one
+  | "supportTicket" // one ticket's conversation
+  | "admin" // owner's portal: overview, tickets, reported questions
   | "settings";
 
 export type Lang = "EN" | "UR";
@@ -37,6 +40,11 @@ export interface AppState {
   username: string | null;
   // The student chose to be left off the public leaderboard.
   hideFromLeaderboard: boolean;
+  // Owner/admin (from the locked app_admins table, set server-side). Only
+  // shows the Admin menu; every admin action is checked again in the database.
+  isAdmin: boolean;
+  // The ticket open in "supportTicket" (its #number).
+  activeTicketNumber: number | null;
   // Live curriculum navigation (set when browsing real DB content).
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;

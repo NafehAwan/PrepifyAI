@@ -7,6 +7,8 @@ export const NAV: ReadonlyArray<readonly [id: string, label: string, iconPath: s
   ["subjects", "My Subjects", "M4 4a2 2 0 0 1 2-2h13v18H6a2 2 0 0 0-2 2z"],
   ["progress", "Progress", "M4 20V10M10 20V4M16 20v-7M22 20H2"],
   ["leaderboard", "Leaderboard", "M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"],
+  ["support", "Help & Feedback", "M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12zM9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5M12 16.5h.01"],
+  ["admin", "Admin", "M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4"],
   [
     "settings",
     "Settings",
@@ -25,6 +27,9 @@ export const TITLES: Record<string, string> = {
   challengeRoom: "Challenge",
   progress: "Progress",
   leaderboard: "Leaderboard",
+  support: "Help & Feedback",
+  supportTicket: "Help & Feedback",
+  admin: "Admin",
   settings: "Settings",
 };
 
