@@ -204,20 +204,40 @@ export async function updateQuestion(opts: {
 
 export interface AdminPlayer {
   id: string;
-  username: string | null;
+  isFake: boolean; // a made-up leaderboard player
   name: string; // what the leaderboard shows (before the 10-character cut)
-  customName: string | null; // a name an admin set, if any
-  email: string | null;
   joined: string;
-  lastActive: string | null;
-  papers: number;
   xp: number;
   xpMonth: number;
+  wins: number;
+  papers: number;
+  streak: number;
+  removed: boolean; // off the leaderboard (an admin's choice)
   hidden: boolean; // the student hid themselves in Settings
-  removed: boolean; // an admin took them off the leaderboard
-  resetAt: string | null;
   isAdmin: boolean;
   isMe: boolean;
+  // Real players only:
+  username?: string | null;
+  customName?: string | null; // a name an admin set, if any
+  email?: string | null;
+  lastSignIn?: string | null;
+  lastActive?: string | null;
+  realWins?: number;
+  realPapers?: number;
+  realStreak?: number;
+  streakOverride?: boolean;
+  resetAt?: string | null;
+  classLevel?: number | null;
+  track?: string | null;
+  medium?: string | null;
+  examDate?: string | null;
+  provider?: string | null;
+  subjects?: string[];
+  tests?: number;
+  avgScore?: number | null;
+  bestScore?: number | null;
+  challenges?: number;
+  tickets?: number;
 }
 
 export async function listAdminPlayers(query: string): Promise<AdminPlayer[] | null> {
@@ -231,13 +251,64 @@ export async function updateAdminPlayer(userId: string, name: string, removed: b
   return (["ok", "bad_name", "not_found"].includes(String(data)) ? data : "error") as "ok" | "bad_name" | "not_found" | "error";
 }
 
-export async function setAdminPlayerXp(userId: string, xp: number): Promise<"ok" | "bad_value" | "not_found" | "error"> {
-  const { data, error } = await rpc().rpc("admin_set_xp", { p_user: userId, p_target: xp });
+export async function resetAdminPlayerScores(userId: string, on: boolean): Promise<boolean> {
+  const { data, error } = await rpc().rpc("admin_reset_scores", { p_user: userId, p_on: on });
+  return !error && data === "ok";
+}
+
+// Sets a real player's numbers; leave a value null to keep it. A streak of -1
+// goes back to their real streak.
+export async function setAdminPlayerStats(
+  userId: string,
+  stats: { xp: number | null; wins: number | null; papers: number | null; streak: number | null },
+): Promise<"ok" | "bad_value" | "not_found" | "error"> {
+  const { data, error } = await rpc().rpc("admin_set_player_stats", {
+    p_user: userId,
+    p_xp: stats.xp,
+    p_wins: stats.wins,
+    p_papers: stats.papers,
+    p_streak: stats.streak,
+  });
   if (error) return "error";
   return (["ok", "bad_value", "not_found"].includes(String(data)) ? data : "error") as "ok" | "bad_value" | "not_found" | "error";
 }
 
-export async function resetAdminPlayerScores(userId: string, on: boolean): Promise<boolean> {
-  const { data, error } = await rpc().rpc("admin_reset_scores", { p_user: userId, p_on: on });
-  return !error && data === "ok";
+export interface FakePlayerInput {
+  name: string;
+  xp: number;
+  xpMonth: number;
+  wins: number;
+  papers: number;
+  streak: number;
+}
+
+// Makes a fake leaderboard player. Returns its id, or what was wrong.
+export async function createFakePlayer(f: FakePlayerInput): Promise<{ id: string } | { error: "bad_name" | "bad_value" | "limit" | "error" }> {
+  const { data, error } = await rpc().rpc("admin_create_fake_player", {
+    p_name: f.name,
+    p_xp: f.xp,
+    p_month_xp: f.xpMonth,
+    p_wins: f.wins,
+    p_papers: f.papers,
+    p_streak: f.streak,
+  });
+  if (error) return { error: "error" };
+  const res = String(data);
+  if (res === "bad_name" || res === "bad_value" || res === "limit") return { error: res };
+  return /^[0-9a-f-]{36}$/.test(res) ? { id: res } : { error: "error" };
+}
+
+export async function updateFakePlayer(id: string, f: FakePlayerInput, active: boolean): Promise<"ok" | "bad_name" | "bad_value" | "not_found" | "error"> {
+  const { data, error } = await rpc().rpc("admin_update_fake_player", {
+    p_id: id,
+    p_name: f.name,
+    p_xp: f.xp,
+    p_month_xp: f.xpMonth,
+    p_wins: f.wins,
+    p_papers: f.papers,
+    p_streak: f.streak,
+    p_active: active,
+  });
+  if (error) return "error";
+  return (["ok", "bad_name", "bad_value", "not_found"].includes(String(data)) ? data : "error") as "ok" | "bad_name" | "bad_value" | "not_found" | "error";
 }
