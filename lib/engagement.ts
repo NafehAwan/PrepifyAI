@@ -104,12 +104,15 @@ export interface LeaderRow {
 }
 
 export interface Leaderboard {
-  period: "week" | "all";
+  period: LeaderboardPeriod;
   rows: LeaderRow[];
-  me: { rank: number | null; name: string; xp: number; wins: number; papers: number; streak: number; hidden: boolean };
+  me: { rank: number | null; name: string; xp: number; wins: number; papers: number; streak: number; hidden: boolean; removed?: boolean };
 }
 
-export async function getLeaderboard(period: "week" | "all"): Promise<Leaderboard | null> {
+// All time is the default view; Monthly counts from the 1st (Pakistan time).
+export type LeaderboardPeriod = "all" | "month";
+
+export async function getLeaderboard(period: LeaderboardPeriod): Promise<Leaderboard | null> {
   if (!isSupabaseConfigured()) return null;
   const { data, error } = await createClient().rpc("leaderboard", { p_period: period });
   if (error || !data) return null;
