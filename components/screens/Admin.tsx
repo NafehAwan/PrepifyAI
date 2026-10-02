@@ -16,8 +16,9 @@ import {
   type TicketSummary,
 } from "@/lib/support";
 import { TicketRow } from "./Support";
+import { AdminPlayers } from "./AdminPlayers";
 
-type Tab = "overview" | "tickets" | "reports";
+type Tab = "overview" | "tickets" | "reports" | "players";
 
 const REASON_LABEL: Record<string, string> = {
   wrong_answer: "Wrong answer",
@@ -26,8 +27,9 @@ const REASON_LABEL: Record<string, string> = {
   other: "Other",
 };
 
-// The owner's portal: site numbers, every Help & Feedback ticket, and reported
-// questions with an in-place editor to fix them. Hidden from the menu for
+// The owner's portal: site numbers, every Help & Feedback ticket, reported
+// questions with an in-place editor to fix them, and the players list (rename,
+// take off the leaderboard, set or reset scores). Hidden from the menu for
 // non-admins, and every call behind it is refused by the database for them.
 export function Admin() {
   const { s } = useApp();
@@ -61,11 +63,13 @@ export function Admin() {
         <button onClick={() => setTab("reports")} style={pill(tab === "reports")}>
           Reported questions{overview?.openReports ? ` (${overview.openReports})` : ""}
         </button>
+        <button onClick={() => setTab("players")} style={pill(tab === "players")}>Players</button>
       </div>
 
       {tab === "overview" && <Overview o={overview} go={setTab} />}
       {tab === "tickets" && <Tickets />}
       {tab === "reports" && <Reports />}
+      {tab === "players" && <AdminPlayers />}
     </div>
   );
 }
@@ -73,7 +77,7 @@ export function Admin() {
 function Overview({ o, go }: { o: AdminOverview | null; go: (t: Tab) => void }) {
   if (!o) return <div style={{ color: C.muted, fontSize: 14 }}>Loading…</div>;
   const tiles: Array<[string, number, string?, Tab?]> = [
-    ["Students", o.students, `+${o.newStudentsWeek} this week`],
+    ["Students", o.students, `+${o.newStudentsWeek} this week`, "players"],
     ["Active today", o.activeToday, `${o.activeWeek} this week`],
     ["Tests today", o.testsToday, `${o.testsWeek} this week · ${o.testsTotal} total`],
     ["Challenges this week", o.challengesWeek],

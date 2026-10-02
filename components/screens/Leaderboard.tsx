@@ -3,15 +3,16 @@
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
-import { getLeaderboard, type Leaderboard as Board } from "@/lib/engagement";
+import { getLeaderboard, type Leaderboard as Board, type LeaderboardPeriod } from "@/lib/engagement";
 import { ordinal } from "@/lib/challenges";
 
-// The global leaderboard: XP this week (from Monday, Pakistan time) or all
-// time, everyone's streak, and the student's own position even when they're
-// outside the top 50 or have hidden themselves.
+// The global leaderboard: XP all time (the default) or this month (from the
+// 1st, Pakistan time), everyone's streak, and the student's own position even
+// when they're outside the top 50 or have hidden themselves. Names show their
+// first 10 characters.
 export function Leaderboard() {
   const { s, go } = useApp();
-  const [period, setPeriod] = useState<"week" | "all">("week");
+  const [period, setPeriod] = useState<LeaderboardPeriod>("all");
   const [board, setBoard] = useState<Board | null>(null);
   const [state, setState] = useState<"loading" | "ready" | "error">("loading");
   const [attempt, setAttempt] = useState(0);
@@ -44,22 +45,24 @@ export function Leaderboard() {
     <div style={{ maxWidth: 820, display: "flex", flexDirection: "column", gap: 16 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
         <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 4 }}>
-          <button onClick={() => setPeriod("week")} style={pill(period === "week")}>This week</button>
           <button onClick={() => setPeriod("all")} style={pill(period === "all")}>All time</button>
+          <button onClick={() => setPeriod("month")} style={pill(period === "month")}>Monthly</button>
         </div>
         <div style={{ fontSize: 12.5, color: C.muted }}>
-          {period === "week" ? "Resets every Monday (Pakistan time)." : "Every test and challenge since you joined."}
+          {period === "month" ? "Resets on the 1st of every month (Pakistan time)." : "Every test and challenge since you joined."}
         </div>
       </div>
 
       {me && (
         <div style={{ background: C.tint, borderRadius: 24, padding: "20px 22px", display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap" }}>
           <Big label="Your rank" value={me.rank ? ordinal(me.rank) : "—"} />
-          <Big label={period === "week" ? "XP this week" : "XP all time"} value={String(me.xp)} />
+          <Big label={period === "month" ? "XP this month" : "XP all time"} value={String(me.xp)} />
           <Big label="Streak" value={`🔥 ${me.streak} day${me.streak === 1 ? "" : "s"}`} />
           <Big label="Challenge wins" value={String(me.wins)} />
           <div style={{ flex: "1 1 200px", fontSize: 12.5, color: "#5d5648", lineHeight: 1.5 }}>
-            {me.hidden ? (
+            {me.removed ? (
+              "You're not shown on the public list."
+            ) : me.hidden ? (
               <>You&apos;re hidden from the public list. <button onClick={() => go("settings")} style={{ fontWeight: 700, color: C.accentD, fontSize: 12.5 }}>Change in Settings</button></>
             ) : me.xp === 0 ? (
               "Finish a test or challenge to get on the board."
@@ -82,7 +85,7 @@ export function Leaderboard() {
         )}
         {state === "ready" && board && board.rows.length === 0 && (
           <div style={{ fontSize: 14, color: C.muted }}>
-            Nobody has scored {period === "week" ? "this week" : "yet"} — finish a test and you&apos;re first!
+            Nobody has scored {period === "month" ? "this month" : "yet"} — finish a test and you&apos;re first!
           </div>
         )}
         {state === "ready" && board && board.rows.length > 0 && (
@@ -111,7 +114,7 @@ export function Leaderboard() {
                     <td style={{ padding: "10px 8px", color: C.muted }}>{r.papers}</td>
                   </tr>
                 ))}
-                {me && !meInTop && !me.hidden && me.rank && (
+                {me && !meInTop && !me.hidden && !me.removed && me.rank && (
                   <tr style={{ borderTop: `2px dashed ${C.line}`, background: C.tint }}>
                     <td style={{ padding: "10px 8px", fontFamily: "Caprasimo", fontSize: 17, color: C.muted }}>{me.rank}</td>
                     <td style={{ padding: "10px 8px", fontWeight: 700 }}>{me.name} (you)</td>

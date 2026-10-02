@@ -197,3 +197,47 @@ export async function updateQuestion(opts: {
   if (error) return "error";
   return data as "ok" | "bad_answer" | "bad_options" | "bad_stem" | "not_found";
 }
+
+// ---- Admin: players ------------------------------------------------------------
+// supabase/players.sql. Renames, removal and score changes only affect the
+// leaderboard and XP; nothing a student did is deleted.
+
+export interface AdminPlayer {
+  id: string;
+  username: string | null;
+  name: string; // what the leaderboard shows (before the 10-character cut)
+  customName: string | null; // a name an admin set, if any
+  email: string | null;
+  joined: string;
+  lastActive: string | null;
+  papers: number;
+  xp: number;
+  xpMonth: number;
+  hidden: boolean; // the student hid themselves in Settings
+  removed: boolean; // an admin took them off the leaderboard
+  resetAt: string | null;
+  isAdmin: boolean;
+  isMe: boolean;
+}
+
+export async function listAdminPlayers(query: string): Promise<AdminPlayer[] | null> {
+  const { data, error } = await rpc().rpc("admin_players", { p_query: query });
+  return error || !Array.isArray(data) ? null : (data as AdminPlayer[]);
+}
+
+export async function updateAdminPlayer(userId: string, name: string, removed: boolean): Promise<"ok" | "bad_name" | "not_found" | "error"> {
+  const { data, error } = await rpc().rpc("admin_update_player", { p_user: userId, p_name: name, p_removed: removed });
+  if (error) return "error";
+  return (["ok", "bad_name", "not_found"].includes(String(data)) ? data : "error") as "ok" | "bad_name" | "not_found" | "error";
+}
+
+export async function setAdminPlayerXp(userId: string, xp: number): Promise<"ok" | "bad_value" | "not_found" | "error"> {
+  const { data, error } = await rpc().rpc("admin_set_xp", { p_user: userId, p_target: xp });
+  if (error) return "error";
+  return (["ok", "bad_value", "not_found"].includes(String(data)) ? data : "error") as "ok" | "bad_value" | "not_found" | "error";
+}
+
+export async function resetAdminPlayerScores(userId: string, on: boolean): Promise<boolean> {
+  const { data, error } = await rpc().rpc("admin_reset_scores", { p_user: userId, p_on: on });
+  return !error && data === "ok";
+}
