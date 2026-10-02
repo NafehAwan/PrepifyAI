@@ -30,19 +30,29 @@ After any edit run `npm run build`, then preview or render.
 
 ## Music
 
-Drop your track at `../video-reference/music.mp3` (that is
-`PrepifyAI/video-reference/music.mp3`) and run `npm run build`. It is copied
-in and used automatically, fading in over the first 0.5 s and out over the
-last 1.4 s (`musicFadeAt` in `timing.js`).
+Put your song in `../video-reference/` as `music.mp3`, `music.m4a` or
+`music.wav` (song files there are git-ignored, so it is never committed) and
+run `npm run build`. The video uses it from `musicFrom` seconds in (see
+`timing.js`). The current song is set to start at 12.02s so its two drops land
+on the product reveal and on the end card. Moments marked ♪ in `timing.js`
+sit on its beats.
 
-Until then a placeholder plays: "Happy Beats / Business Moves vol. 11" from
-[ende.app](https://ende.app/en). **Check that track's licence before
-publishing**, or use your own. Moments marked ♪ in `timing.js` are locked to
-the placeholder's beats; with your own track, move them freely.
+With no song in the slot, a placeholder plays ("Happy Beats / Business Moves
+vol. 11" from [ende.app](https://ende.app/en); check its licence before
+publishing).
 
-Sound effects are CC0: [Kenney.nl](https://kenney.nl/) clicks and drops, and
-keypresses from "Keyboard Soundpack #1" by unicae_games. The two whooshes were
-generated from filtered noise.
+Clicks and whooshes are CC0 ([Kenney.nl](https://kenney.nl/) and "Keyboard
+Soundpack #1" by unicae_games) plus two generated whooshes. `sfxVolume` in
+`timing.js` scales them all; set it to 0 for song and voice only.
+
+## Voice-over
+
+`voiceover.lines` in `timing.js` is the script: each line has a start time and
+text. The build speaks it with Kokoro, a free voice that runs locally through
+`npx hyperframes tts` (the first run downloads ~27 MB; it needs Python with
+`pip install kokoro-onnx soundfile`). Clips are cached in `assets/vo/`, so only
+changed lines are re-spoken. The music dips under each line (`duck`). Change
+`voice` or `speed`, or set `enabled: false` for no voice-over.
 
 ## Previewing and checking
 

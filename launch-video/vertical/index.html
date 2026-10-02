@@ -641,54 +641,58 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 <!-- hook cursor (screen space) -->
 <div id="hook-cursor"><div class="cscale"><svg class="cursor-svg" viewBox="0 0 50 56" fill="none"><path d="M15 4c-2.2 0-4 1.8-4 4v22.5l-3.3-3.4c-1.6-1.6-4.2-1.6-5.7 0-1.4 1.4-1.5 3.7-.2 5.2l9.9 11.6C15.1 48.6 19.4 52 25.5 52H30c8.3 0 15-6.7 15-15V25.5c0-2.2-1.8-4-4-4-.9 0-1.7.3-2.4.8v-.3c0-2.2-1.8-4-4-4-1 0-1.9.4-2.6 1v-.5c0-2.2-1.8-4-4-4-.9 0-1.8.3-2.4.8V8c0-2.2-1.8-4-4-4z" fill="#fff" stroke="#201e1d" stroke-width="2.6" stroke-linejoin="round"/><path d="M23.6 22v10M30.6 23.6V32M37.6 26v6" stroke="#201e1d" stroke-width="2.4" stroke-linecap="round"/></svg><div class="ripple" id="hook-ripple"></div></div></div>
 
-    <audio id="music" src="assets/music/placeholder-happy-beats-vol-11.mp3" data-start="0" data-duration="29" data-track-index="10" data-volume="1" data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":0},{"t":0.5,"v":0.6},{"t":27.6,"v":0.6},{"t":29,"v":0}]}]}'></audio>
-    <audio id="sfx-01" src="assets/sfx/key-001.wav" data-start="0.25" data-duration="0.25" data-track-index="11" data-volume="0.22"></audio>
-    <audio id="sfx-02" src="assets/sfx/key-004.wav" data-start="0.4" data-duration="0.25" data-track-index="12" data-volume="0.22"></audio>
-    <audio id="sfx-03" src="assets/sfx/key-007.wav" data-start="0.55" data-duration="0.25" data-track-index="11" data-volume="0.22"></audio>
-    <audio id="sfx-04" src="assets/sfx/key-010.wav" data-start="0.7" data-duration="0.25" data-track-index="12" data-volume="0.22"></audio>
-    <audio id="sfx-05" src="assets/sfx/key-001.wav" data-start="0.85" data-duration="0.25" data-track-index="11" data-volume="0.22"></audio>
-    <audio id="sfx-06" src="assets/sfx/key-004.wav" data-start="1" data-duration="0.25" data-track-index="12" data-volume="0.22"></audio>
-    <audio id="sfx-07" src="assets/sfx/key-007.wav" data-start="1.15" data-duration="0.25" data-track-index="11" data-volume="0.22"></audio>
-    <audio id="sfx-08" src="assets/sfx/key-010.wav" data-start="1.3" data-duration="0.25" data-track-index="12" data-volume="0.22"></audio>
-    <audio id="sfx-09" src="assets/sfx/click.ogg" data-start="2.72" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-10" src="assets/sfx/whoosh.wav" data-start="2.8" data-duration="0.75" data-track-index="11" data-volume="0.55"></audio>
-    <audio id="sfx-11" src="assets/sfx/whoosh-soft.wav" data-start="3.18" data-duration="0.5" data-track-index="12" data-volume="0.5"></audio>
-    <audio id="sfx-12" src="assets/sfx/drop-1.ogg" data-start="3.85" data-duration="0.11" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-13" src="assets/sfx/drop-2.ogg" data-start="4.25" data-duration="0.191" data-track-index="11" data-volume="0.4"></audio>
-    <audio id="sfx-14" src="assets/sfx/click.ogg" data-start="6.34" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-15" src="assets/sfx/whoosh-soft.wav" data-start="6.45" data-duration="0.5" data-track-index="11" data-volume="0.35"></audio>
-    <audio id="sfx-16" src="assets/sfx/click.ogg" data-start="7.3" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-17" src="assets/sfx/click.ogg" data-start="7.9" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-18" src="assets/sfx/click.ogg" data-start="8.44" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-19" src="assets/sfx/click.ogg" data-start="9.5" data-duration="0.05" data-track-index="11" data-volume="0.55"></audio>
-    <audio id="sfx-20" src="assets/sfx/toast.ogg" data-start="9.56" data-duration="0.05" data-track-index="11" data-volume="0.55"></audio>
-    <audio id="sfx-21" src="assets/sfx/whoosh.wav" data-start="10.3" data-duration="0.75" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-22" src="assets/sfx/key-004.wav" data-start="10.62" data-duration="0.25" data-track-index="12" data-volume="0.18"></audio>
-    <audio id="sfx-23" src="assets/sfx/key-007.wav" data-start="10.748" data-duration="0.25" data-track-index="13" data-volume="0.18"></audio>
-    <audio id="sfx-24" src="assets/sfx/key-010.wav" data-start="10.876" data-duration="0.25" data-track-index="14" data-volume="0.18"></audio>
-    <audio id="sfx-25" src="assets/sfx/key-001.wav" data-start="11.004" data-duration="0.25" data-track-index="12" data-volume="0.18"></audio>
-    <audio id="sfx-26" src="assets/sfx/key-004.wav" data-start="11.132" data-duration="0.25" data-track-index="11" data-volume="0.18"></audio>
-    <audio id="sfx-27" src="assets/sfx/key-007.wav" data-start="11.26" data-duration="0.25" data-track-index="13" data-volume="0.18"></audio>
-    <audio id="sfx-28" src="assets/sfx/key-010.wav" data-start="11.388" data-duration="0.25" data-track-index="12" data-volume="0.18"></audio>
-    <audio id="sfx-29" src="assets/sfx/key-001.wav" data-start="11.516" data-duration="0.25" data-track-index="11" data-volume="0.18"></audio>
-    <audio id="sfx-30" src="assets/sfx/key-004.wav" data-start="11.644" data-duration="0.25" data-track-index="13" data-volume="0.18"></audio>
-    <audio id="sfx-31" src="assets/sfx/key-007.wav" data-start="11.772" data-duration="0.25" data-track-index="12" data-volume="0.18"></audio>
-    <audio id="sfx-32" src="assets/sfx/whoosh-soft.wav" data-start="13.08" data-duration="0.5" data-track-index="11" data-volume="0.4"></audio>
-    <audio id="sfx-33" src="assets/sfx/click.ogg" data-start="14.22" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-34" src="assets/sfx/click.ogg" data-start="15" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-35" src="assets/sfx/chime.ogg" data-start="16.86" data-duration="1.48" data-track-index="11" data-volume="0.32"></audio>
-    <audio id="sfx-36" src="assets/sfx/toast.ogg" data-start="18.6" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-37" src="assets/sfx/toast.ogg" data-start="19.49" data-duration="0.05" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-38" src="assets/sfx/drop-1.ogg" data-start="20.54" data-duration="0.11" data-track-index="11" data-volume="0.5"></audio>
-    <audio id="sfx-39" src="assets/sfx/drop-1.ogg" data-start="21.59" data-duration="0.11" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-40" src="assets/sfx/drop-2.ogg" data-start="21.99" data-duration="0.191" data-track-index="11" data-volume="0.4"></audio>
-    <audio id="sfx-41" src="assets/sfx/whoosh-soft.wav" data-start="22.65" data-duration="0.5" data-track-index="11" data-volume="0.35"></audio>
-    <audio id="sfx-42" src="assets/sfx/drop-1.ogg" data-start="23.7" data-duration="0.11" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-43" src="assets/sfx/drop-1.ogg" data-start="24.23" data-duration="0.11" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-44" src="assets/sfx/drop-2.ogg" data-start="24.76" data-duration="0.191" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-45" src="assets/sfx/whoosh-soft.wav" data-start="25.81" data-duration="0.5" data-track-index="11" data-volume="0.4"></audio>
-    <audio id="sfx-46" src="assets/sfx/chime.ogg" data-start="26.33" data-duration="1.48" data-track-index="11" data-volume="0.45"></audio>
-    <audio id="sfx-47" src="assets/sfx/toast.ogg" data-start="27.91" data-duration="0.05" data-track-index="11" data-volume="0.45"></audio>
+    <audio id="music" src="assets/music/music.wav" data-start="0" data-duration="29" data-track-index="10" data-volume="1" data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":0},{"t":0.2,"v":0.3},{"t":0.35,"v":0.3},{"t":0.5,"v":0.3},{"t":1.822,"v":0.3},{"t":2.072,"v":0.75},{"t":3.3,"v":0.75},{"t":3.45,"v":0.3},{"t":4.602,"v":0.3},{"t":4.852,"v":0.75},{"t":6.45,"v":0.75},{"t":6.6,"v":0.3},{"t":8.52,"v":0.3},{"t":8.77,"v":0.75},{"t":10.5,"v":0.75},{"t":10.65,"v":0.3},{"t":13.103,"v":0.3},{"t":13.353,"v":0.75},{"t":15.3,"v":0.75},{"t":15.45,"v":0.3},{"t":17.178,"v":0.3},{"t":17.428,"v":0.75},{"t":18.25,"v":0.75},{"t":18.4,"v":0.3},{"t":19.531,"v":0.3},{"t":19.781,"v":0.75},{"t":21.15,"v":0.75},{"t":21.3,"v":0.3},{"t":22.559,"v":0.3},{"t":22.809,"v":0.75},{"t":23.6,"v":0.75},{"t":23.75,"v":0.3},{"t":25.926,"v":0.3},{"t":26.176,"v":0.75},{"t":26.7,"v":0.75},{"t":26.85,"v":0.3},{"t":27.6,"v":0.3},{"t":29,"v":0}]}]}'></audio>
+    <audio id="vo-01" src="assets/vo/2d01a8081369.wav" data-start="0.35" data-duration="1.472" data-track-index="40" data-volume="1"></audio>
+    <audio id="vo-02" src="assets/vo/ff868ea3cea4.wav" data-start="3.45" data-duration="1.152" data-track-index="41" data-volume="1"></audio>
+    <audio id="vo-03" src="assets/vo/504a220c23f7.wav" data-start="6.6" data-duration="1.92" data-track-index="40" data-volume="1"></audio>
+    <audio id="vo-04" src="assets/vo/fb4094aabb1f.wav" data-start="10.65" data-duration="2.453" data-track-index="41" data-volume="1"></audio>
+    <audio id="vo-05" src="assets/vo/35628112c986.wav" data-start="15.45" data-duration="1.728" data-track-index="40" data-volume="1"></audio>
+    <audio id="vo-06" src="assets/vo/78b261679268.wav" data-start="18.4" data-duration="1.131" data-track-index="41" data-volume="1"></audio>
+    <audio id="vo-07" src="assets/vo/e11ea4468a51.wav" data-start="21.3" data-duration="1.259" data-track-index="40" data-volume="1"></audio>
+    <audio id="vo-08" src="assets/vo/2996e825fda3.wav" data-start="23.75" data-duration="2.176" data-track-index="41" data-volume="1"></audio>
+    <audio id="vo-09" src="assets/vo/01ffe102be48.wav" data-start="26.85" data-duration="2.15" data-track-index="40" data-volume="1"></audio>
+    <audio id="sfx-01" src="assets/sfx/key-001.wav" data-start="0.25" data-duration="0.25" data-track-index="11" data-volume="0.13"></audio>
+    <audio id="sfx-02" src="assets/sfx/key-004.wav" data-start="0.37" data-duration="0.25" data-track-index="12" data-volume="0.13"></audio>
+    <audio id="sfx-03" src="assets/sfx/key-007.wav" data-start="0.49" data-duration="0.25" data-track-index="13" data-volume="0.13"></audio>
+    <audio id="sfx-04" src="assets/sfx/key-010.wav" data-start="0.61" data-duration="0.25" data-track-index="11" data-volume="0.13"></audio>
+    <audio id="sfx-05" src="assets/sfx/key-001.wav" data-start="0.73" data-duration="0.25" data-track-index="12" data-volume="0.13"></audio>
+    <audio id="sfx-06" src="assets/sfx/key-004.wav" data-start="0.85" data-duration="0.25" data-track-index="13" data-volume="0.13"></audio>
+    <audio id="sfx-07" src="assets/sfx/click.ogg" data-start="2.72" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-08" src="assets/sfx/whoosh.wav" data-start="2.8" data-duration="0.75" data-track-index="11" data-volume="0.33"></audio>
+    <audio id="sfx-09" src="assets/sfx/whoosh-soft.wav" data-start="3.18" data-duration="0.5" data-track-index="12" data-volume="0.3"></audio>
+    <audio id="sfx-10" src="assets/sfx/drop-1.ogg" data-start="3.85" data-duration="0.11" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-11" src="assets/sfx/drop-2.ogg" data-start="4.25" data-duration="0.191" data-track-index="11" data-volume="0.24"></audio>
+    <audio id="sfx-12" src="assets/sfx/click.ogg" data-start="6.34" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-13" src="assets/sfx/whoosh-soft.wav" data-start="6.45" data-duration="0.5" data-track-index="11" data-volume="0.21"></audio>
+    <audio id="sfx-14" src="assets/sfx/click.ogg" data-start="7.3" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-15" src="assets/sfx/click.ogg" data-start="7.9" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-16" src="assets/sfx/click.ogg" data-start="8.44" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-17" src="assets/sfx/click.ogg" data-start="9.36" data-duration="0.05" data-track-index="11" data-volume="0.33"></audio>
+    <audio id="sfx-18" src="assets/sfx/toast.ogg" data-start="9.42" data-duration="0.05" data-track-index="11" data-volume="0.33"></audio>
+    <audio id="sfx-19" src="assets/sfx/whoosh.wav" data-start="10.3" data-duration="0.75" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-20" src="assets/sfx/key-004.wav" data-start="10.62" data-duration="0.25" data-track-index="12" data-volume="0.11"></audio>
+    <audio id="sfx-21" src="assets/sfx/key-007.wav" data-start="10.74" data-duration="0.25" data-track-index="13" data-volume="0.11"></audio>
+    <audio id="sfx-22" src="assets/sfx/key-010.wav" data-start="10.86" data-duration="0.25" data-track-index="14" data-volume="0.11"></audio>
+    <audio id="sfx-23" src="assets/sfx/key-001.wav" data-start="10.98" data-duration="0.25" data-track-index="12" data-volume="0.11"></audio>
+    <audio id="sfx-24" src="assets/sfx/key-004.wav" data-start="11.1" data-duration="0.25" data-track-index="11" data-volume="0.11"></audio>
+    <audio id="sfx-25" src="assets/sfx/key-007.wav" data-start="11.22" data-duration="0.25" data-track-index="13" data-volume="0.11"></audio>
+    <audio id="sfx-26" src="assets/sfx/key-010.wav" data-start="11.34" data-duration="0.25" data-track-index="12" data-volume="0.11"></audio>
+    <audio id="sfx-27" src="assets/sfx/whoosh-soft.wav" data-start="13.08" data-duration="0.5" data-track-index="11" data-volume="0.24"></audio>
+    <audio id="sfx-28" src="assets/sfx/click.ogg" data-start="14.22" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-29" src="assets/sfx/click.ogg" data-start="15" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-30" src="assets/sfx/chime.ogg" data-start="16.71" data-duration="1.48" data-track-index="11" data-volume="0.19"></audio>
+    <audio id="sfx-31" src="assets/sfx/toast.ogg" data-start="18.6" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-32" src="assets/sfx/toast.ogg" data-start="19.53" data-duration="0.05" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-33" src="assets/sfx/drop-1.ogg" data-start="20.54" data-duration="0.11" data-track-index="11" data-volume="0.3"></audio>
+    <audio id="sfx-34" src="assets/sfx/drop-1.ogg" data-start="21.59" data-duration="0.11" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-35" src="assets/sfx/drop-2.ogg" data-start="21.99" data-duration="0.191" data-track-index="11" data-volume="0.24"></audio>
+    <audio id="sfx-36" src="assets/sfx/whoosh-soft.wav" data-start="22.65" data-duration="0.5" data-track-index="11" data-volume="0.21"></audio>
+    <audio id="sfx-37" src="assets/sfx/drop-1.ogg" data-start="23.7" data-duration="0.11" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-38" src="assets/sfx/drop-1.ogg" data-start="24.23" data-duration="0.11" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-39" src="assets/sfx/drop-2.ogg" data-start="24.76" data-duration="0.191" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-40" src="assets/sfx/whoosh-soft.wav" data-start="25.75" data-duration="0.5" data-track-index="11" data-volume="0.24"></audio>
+    <audio id="sfx-41" src="assets/sfx/chime.ogg" data-start="26.31" data-duration="1.48" data-track-index="11" data-volume="0.27"></audio>
+    <audio id="sfx-42" src="assets/sfx/toast.ogg" data-start="28.01" data-duration="0.05" data-track-index="11" data-volume="0.27"></audio>
     </div>
     <script>
 // =============================================================================
@@ -697,8 +701,9 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 //  from the start of the video. After editing, run:   npm run build
 //  (it rebuilds index.html = 16:9 and vertical/index.html = 9:16, sounds included).
 //
-//  ♪ = locked to a strong beat of the placeholder music (114.8 BPM). If you
-//      swap the music, those locks no longer matter — change them freely.
+//  ♪ = locked to a beat of the music in video-reference/ (106 BPM, starting
+//      musicFrom seconds into the song). Its two drops land on the product
+//      reveal (3.18s) and the end card (25.75s). New song? Re-time freely.
 // =============================================================================
 
 globalThis.LAUNCH = {
@@ -713,12 +718,35 @@ globalThis.LAUNCH = {
     ctaText: "Start practising free",
     // Your website, e.g. "yourdomain.com". Shown under the button; hidden while empty.
     ctaUrl: "prepifyaii.vercel.app",
-    // MUSIC SLOT — drop your track at ../video-reference/music.mp3 and run
-    // `npm run build`: it is copied in and used automatically. Until then a
-    // placeholder plays: "Happy Beats / Business Moves vol. 11" from ende.app.
-    // Check that track's licence before publishing, or use your own.
+    // MUSIC SLOT — ../video-reference/music.(mp3|m4a|wav) is used from
+    // musicFrom seconds in (never committed). Without it, this placeholder
+    // plays: "Happy Beats / Business Moves vol. 11" from ende.app.
     music: "assets/music/placeholder-happy-beats-vol-11.mp3",
-    musicVolume: 0.6,   // the export is then mastered to -14 LUFS (master.mjs)
+    musicFrom: 12.02,   // seconds into your track where the video starts
+    musicVolume: 0.75,  // the export is then mastered to -14 LUFS (master.mjs)
+    sfxVolume: 0.6,     // scales every click/whoosh; 0 = song + voice only
+
+    // VOICE-OVER — spoken locally by Kokoro (npx hyperframes tts), cached in
+    // assets/vo/. Change a line or the voice and `npm run build` re-speaks it.
+    // Voices: af_heart, af_nova, af_sky, am_adam, am_michael, bf_emma, bm_george…
+    voiceover: {
+      enabled: true,
+      voice: "af_heart",
+      speed: 1.12,
+      volume: 1,
+      duck: 0.4,         // music level under the voice (share of musicVolume)
+      lines: [
+        { at: 0.35, text: "Ace your Class 9 boards." },
+        { at: 3.45, text: "Meet Prepify A I." },
+        { at: 6.6, text: "Build a board-style test in seconds." },
+        { at: 10.65, text: "Real board questions. Marked instantly." },
+        { at: 15.45, text: "See your score the moment you submit." },
+        { at: 18.4, text: "Challenge your friends," },
+        { at: 21.3, text: "and climb the leaderboard." },
+        { at: 23.75, text: "Nearly four thousand practice questions." },
+        { at: 26.85, text: "Prepify A I. Start practising free." },
+      ],
+    },
   },
 
   // ---------------------------------------------------------------------------
@@ -732,7 +760,7 @@ globalThis.LAUNCH = {
     hook: {
       start: 0.0,
       typeStart: 0.25,
-      charStep: 0.05,     // seconds per typed character
+      charStep: 0.03,     // seconds per typed character
       dimOthersAt: 2.15,  // every word except the keyword blurs away
       cursorAt: 2.05,     // cursor starts gliding to the keyword
       clickAt: 2.72,
@@ -743,7 +771,7 @@ globalThis.LAUNCH = {
     // 2. Product reveal — the app window swings in, subject cards drop in
     reveal: {
       start: 3.1,
-      windowAt: 3.18,     // ♪ strong beat
+      windowAt: 3.18,     // ♪ first drop
       cardsAt: 3.85,
       cardStagger: 0.1,
       captionAt: 3.95,
@@ -755,7 +783,7 @@ globalThis.LAUNCH = {
     build: {
       start: 5.8,
       cursorAt: 5.85,
-      subjectClickAt: 6.34, // ♪
+      subjectClickAt: 6.34,
       screenAt: 6.42,       // My Subjects → New Test
       cameraAt: 6.45,
       captionAt: 6.65,
@@ -763,7 +791,7 @@ globalThis.LAUNCH = {
       chapterClickAt: 7.3,
       scrollAt: 7.42,
       countClickAt: 7.9,
-      hardClickAt: 8.44,    // ♪
+      hardClickAt: 8.44,
       end: 8.85,
     },
 
@@ -771,8 +799,8 @@ globalThis.LAUNCH = {
     start: {
       start: 8.6,
       scrollAt: 8.6,
-      clickAt: 9.5,         // ♪
-      toastAt: 9.56,
+      clickAt: 9.36,        // ♪
+      toastAt: 9.42,
       exitAt: 10.3,
       end: 10.75,
     },
@@ -781,7 +809,7 @@ globalThis.LAUNCH = {
     headline: {
       start: 10.45,
       typeStart: 10.62,
-      charStep: 0.032,
+      charStep: 0.02,
       exitAt: 12.95,
       end: 13.35,
     },
@@ -791,7 +819,7 @@ globalThis.LAUNCH = {
       start: 13.05,
       windowAt: 13.08,
       cursorAt: 13.75,
-      pickAt: 14.22,        // ♪
+      pickAt: 14.22,
       submitClickAt: 15.0,
       end: 15.45,
     },
@@ -802,7 +830,7 @@ globalThis.LAUNCH = {
       screenAt: 15.32,
       countAt: 15.62,
       countDur: 1.15,
-      remarkAt: 16.86,      // ♪
+      remarkAt: 16.71,      // ♪
       end: 18.25,
     },
 
@@ -814,9 +842,9 @@ globalThis.LAUNCH = {
       captionOut: 20.95,
       join1At: 18.6,
       ready1At: 19.15,
-      join2At: 19.49,       // ♪
-      ready2At: 20.02,      // ♪
-      countdownAt: 20.54,   // ♪
+      join2At: 19.53,       // ♪
+      ready2At: 20.1,       // ♪
+      countdownAt: 20.54,
       end: 21.15,
     },
 
@@ -826,17 +854,17 @@ globalThis.LAUNCH = {
       screenAt: 21.1,
       captionAt: 21.3,
       captionOut: 23.45,
-      rowsAt: 21.59,        // ♪
+      rowsAt: 21.59,
       rowStagger: 0.1,
-      pushAt: 22.65,        // ♪
+      pushAt: 22.65,
       end: 23.7,
     },
 
     // 10. Stats — three cards drop in and count up
     stats: {
       start: 23.62,
-      cardsAt: 23.7,        // ♪
-      cardStagger: 0.53,    // one beat apart
+      cardsAt: 23.7,
+      cardStagger: 0.53,
       countDur: 0.85,
       end: 25.8,
     },
@@ -844,11 +872,11 @@ globalThis.LAUNCH = {
     // 11. Outro — bar grows, becomes the logo, wordmark types, CTA
     outro: {
       start: 25.7,
-      barAt: 25.81,
-      morphAt: 26.33,       // ♪ logo lands
+      barAt: 25.75,         // ♪ second drop
+      morphAt: 26.31,       // ♪ logo lands
       wordAt: 26.85,
-      taglineAt: 27.39,     // ♪
-      ctaAt: 27.91,         // ♪
+      taglineAt: 27.44,     // ♪
+      ctaAt: 28.01,         // ♪
       musicFadeAt: 27.6,
     },
   },
@@ -860,12 +888,13 @@ globalThis.LAUNCH = {
 // -----------------------------------------------------------------------------
 globalThis.LAUNCH.sfx = (T, C) => {
   const cues = [];
-  const add = (file, at, vol) => cues.push({ file, at: Math.round(at * 1000) / 1000, vol });
+  const g = C.sfxVolume ?? 1;
+  const add = (file, at, vol) => { if (g > 0) cues.push({ file, at: Math.round(at * 1000) / 1000, vol: Math.round(vol * g * 100) / 100 }); };
 
   // hook: soft key ticks on every 3rd typed character, click, whoosh
   const hookLen = (C.hook.lead + C.hook.keyword).length;
   const keys = ["key-001.wav", "key-004.wav", "key-007.wav", "key-010.wav"];
-  for (let i = 0, k = 0; i < hookLen; i += 3, k++) add(keys[k % 4], T.hook.typeStart + i * T.hook.charStep, 0.22);
+  for (let i = 0, k = 0; i < hookLen; i += 4, k++) add(keys[k % 4], T.hook.typeStart + i * T.hook.charStep, 0.22);
   add("click.ogg", T.hook.clickAt, 0.5);
   add("whoosh.wav", T.hook.zoomAt, 0.55);
 
@@ -888,7 +917,7 @@ globalThis.LAUNCH.sfx = (T, C) => {
 
   // headline: sparse key ticks
   const headLen = (C.headline.line1 + C.headline.line2Lead + C.headline.line2Keyword).length;
-  for (let i = 0, k = 0; i < headLen; i += 4, k++) add(keys[(k + 1) % 4], T.headline.typeStart + i * T.headline.charStep, 0.18);
+  for (let i = 0, k = 0; i < headLen; i += 6, k++) add(keys[(k + 1) % 4], T.headline.typeStart + i * T.headline.charStep, 0.18);
 
   // question + results
   add("whoosh-soft.wav", T.question.windowAt, 0.4);
@@ -1360,7 +1389,7 @@ globalThis.LAUNCH.sfx = (T, C) => {
     // has cleared the first letter; in 9:16 it rises out of the word's way.
     const wordStart = O.wordAt + (P ? 0.18 : 0.45);
     $$("#wordmark .ch").forEach((c, i) => {
-      const at = wordStart + i * 0.05;
+      const at = wordStart + i * 0.035;
       tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, at);
       tl.set(c, { filter: "none" }, at + 0.32);
     });

@@ -442,7 +442,7 @@
     // has cleared the first letter; in 9:16 it rises out of the word's way.
     const wordStart = O.wordAt + (P ? 0.18 : 0.45);
     $$("#wordmark .ch").forEach((c, i) => {
-      const at = wordStart + i * 0.05;
+      const at = wordStart + i * 0.035;
       tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, at);
       tl.set(c, { filter: "none" }, at + 0.32);
     });

@@ -5,11 +5,14 @@
 //   → vertical/index.html  1080×1920 (9:16)
 // Run after editing timing.js or anything in src/:   npm run build
 //
-// Music slot: if ../video-reference/music.mp3 exists it is copied to
-// assets/music/music.mp3 and used instead of the placeholder in timing.js.
+// Music slot: if ../video-reference/music.(mp3|m4a|wav) exists, the part from
+// config.musicFrom onward is cut to assets/music/music.wav and used instead of
+// the placeholder. Voice-over lines in config.voiceover are spoken with the
+// local Kokoro voice (npx hyperframes tts) and cached in assets/vo/.
 
 import { readFileSync, writeFileSync, existsSync, copyFileSync, mkdirSync, statSync, symlinkSync, unlinkSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -21,13 +24,34 @@ const { config: C, timing: T, sfx: sfxCues } = globalThis.LAUNCH;
 
 // ---------------------------------------------------------------- music slot
 let music = C.music;
-const userMusic = join(DIR, "..", "video-reference", "music.mp3");
-if (existsSync(userMusic)) {
-  copyFileSync(userMusic, join(DIR, "assets", "music", "music.mp3"));
-  music = "assets/music/music.mp3";
-  console.log("♪ using your music: video-reference/music.mp3");
+const userMusic = ["mp3", "m4a", "wav"].map((x) => join(DIR, "..", "video-reference", `music.${x}`)).find(existsSync);
+if (userMusic) {
+  const from = C.musicFrom || 0;
+  execFileSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", String(from), "-t", String(T.total + 0.5),
+    "-i", userMusic, "-ac", "2", "-ar", "48000", join(DIR, "assets", "music", "music.wav")]);
+  music = "assets/music/music.wav";
+  console.log(`♪ using your music: video-reference/${userMusic.split(/[\\/]/).pop()} from ${from}s`);
 } else {
   console.log(`♪ music slot empty — using placeholder ${music}`);
+}
+
+// --------------------------------------------------------------- voice-over
+const VO = C.voiceover || {};
+const voLines = [];
+if (VO.enabled) {
+  const voDir = join(DIR, "assets", "vo");
+  mkdirSync(voDir, { recursive: true });
+  for (const line of VO.lines) {
+    const voice = line.voice || VO.voice, speed = line.speed || VO.speed || 1;
+    const key = createHash("sha1").update(`${voice}|${speed}|${line.text}`).digest("hex").slice(0, 12);
+    const file = `assets/vo/${key}.wav`;
+    if (!existsSync(join(DIR, file))) {
+      console.log(`🎙  speaking: "${line.text}"`);
+      execFileSync("npx", ["--yes", "hyperframes@0.8.111", "tts", line.text, "-v", voice, "-s", String(speed), "-o", join(DIR, file)],
+        { stdio: ["ignore", "ignore", "inherit"], shell: process.platform === "win32" });
+    }
+    voLines.push({ ...line, file });
+  }
 }
 
 // ------------------------------------------------------------------ helpers
@@ -92,8 +116,33 @@ function audioTags() {
   const total = T.total;
   const vol = C.musicVolume;
   const fadeOutAt = Math.min(T.outro.musicFadeAt, total - 0.3);
-  const lane = { version: 1, lanes: [{ target: "volume", points: [{ t: 0, v: 0 }, { t: 0.5, v: vol }, { t: fadeOutAt, v: vol }, { t: total, v: 0 }] }] };
-  const tags = [`<audio id="music" src="${music}" data-start="0" data-duration="${total}" data-track-index="10" data-volume="1" data-automation='${JSON.stringify(lane)}'></audio>`];
+  const r3 = (x) => Math.round(x * 1000) / 1000;
+
+  // voice-over clips; the music dips under each line (ducking)
+  const voTags = [], spans = [];
+  voLines.forEach((l, n) => {
+    const d = Math.min(durationOf(l.file), total - l.at);
+    const prev = spans[spans.length - 1];
+    if (prev && l.at < prev[1]) console.warn(`⚠ voice-over line ${n + 1} starts before line ${n} ends (${prev[1].toFixed(2)}s) — move it in timing.js`);
+    if (l.at + d > total) console.warn(`⚠ voice-over line ${n + 1} runs past the end`);
+    spans.push([l.at, l.at + d]);
+    voTags.push(`<audio id="vo-${String(n + 1).padStart(2, "0")}" src="${l.file}" data-start="${l.at}" data-duration="${r3(d)}" data-track-index="${40 + (n % 2)}" data-volume="${VO.volume ?? 1}"></audio>`);
+  });
+  const duck = vol * (VO.duck ?? 0.4);
+  const level = (t) => (t < 0.5 ? (vol * t) / 0.5 : t > fadeOutAt ? vol * Math.max(0, (total - t) / (total - fadeOutAt)) : vol);
+  const pts = [{ t: 0, v: 0 }, { t: 0.5, v: vol }, { t: fadeOutAt, v: vol }, { t: total, v: 0 }];
+  for (const [a, b] of spans) {
+    const s0 = Math.max(0, a - 0.15), e1 = Math.min(total, b + 0.25);
+    pts.push({ t: s0, v: level(s0) }, { t: a, v: Math.min(duck, level(a)) }, { t: b, v: Math.min(duck, level(b)) }, { t: e1, v: level(e1) });
+  }
+  // merge overlapping duck regions: keep the lowest value per time
+  const byT = new Map();
+  for (const p of pts) { const k = r3(p.t); byT.set(k, byT.has(k) ? Math.min(byT.get(k), p.v) : p.v); }
+  const inDuck = (t) => spans.some(([a, b]) => t >= a && t <= b);
+  const points = [...byT.entries()].sort((x, y) => x[0] - y[0])
+    .map(([t, v]) => ({ t, v: r3(inDuck(t) ? Math.min(v, duck) : v) }));
+  const lane = { version: 1, lanes: [{ target: "volume", points }] };
+  const tags = [`<audio id="music" src="${music}" data-start="0" data-duration="${total}" data-track-index="10" data-volume="1" data-automation='${JSON.stringify(lane)}'></audio>`, ...voTags];
   // give overlapping cues their own track (never share a track between overlaps)
   const cues = sfxCues(T, C).sort((a, b) => a.at - b.at);
   const trackEnds = [];

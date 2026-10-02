@@ -4,8 +4,9 @@
 //  from the start of the video. After editing, run:   npm run build
 //  (it rebuilds index.html = 16:9 and vertical/index.html = 9:16, sounds included).
 //
-//  ♪ = locked to a strong beat of the placeholder music (114.8 BPM). If you
-//      swap the music, those locks no longer matter — change them freely.
+//  ♪ = locked to a beat of the music in video-reference/ (106 BPM, starting
+//      musicFrom seconds into the song). Its two drops land on the product
+//      reveal (3.18s) and the end card (25.75s). New song? Re-time freely.
 // =============================================================================
 
 globalThis.LAUNCH = {
@@ -20,12 +21,35 @@ globalThis.LAUNCH = {
     ctaText: "Start practising free",
     // Your website, e.g. "yourdomain.com". Shown under the button; hidden while empty.
     ctaUrl: "prepifyaii.vercel.app",
-    // MUSIC SLOT — drop your track at ../video-reference/music.mp3 and run
-    // `npm run build`: it is copied in and used automatically. Until then a
-    // placeholder plays: "Happy Beats / Business Moves vol. 11" from ende.app.
-    // Check that track's licence before publishing, or use your own.
+    // MUSIC SLOT — ../video-reference/music.(mp3|m4a|wav) is used from
+    // musicFrom seconds in (never committed). Without it, this placeholder
+    // plays: "Happy Beats / Business Moves vol. 11" from ende.app.
     music: "assets/music/placeholder-happy-beats-vol-11.mp3",
-    musicVolume: 0.6,   // the export is then mastered to -14 LUFS (master.mjs)
+    musicFrom: 12.02,   // seconds into your track where the video starts
+    musicVolume: 0.75,  // the export is then mastered to -14 LUFS (master.mjs)
+    sfxVolume: 0.6,     // scales every click/whoosh; 0 = song + voice only
+
+    // VOICE-OVER — spoken locally by Kokoro (npx hyperframes tts), cached in
+    // assets/vo/. Change a line or the voice and `npm run build` re-speaks it.
+    // Voices: af_heart, af_nova, af_sky, am_adam, am_michael, bf_emma, bm_george…
+    voiceover: {
+      enabled: true,
+      voice: "af_heart",
+      speed: 1.12,
+      volume: 1,
+      duck: 0.4,         // music level under the voice (share of musicVolume)
+      lines: [
+        { at: 0.35, text: "Ace your Class 9 boards." },
+        { at: 3.45, text: "Meet Prepify A I." },
+        { at: 6.6, text: "Build a board-style test in seconds." },
+        { at: 10.65, text: "Real board questions. Marked instantly." },
+        { at: 15.45, text: "See your score the moment you submit." },
+        { at: 18.4, text: "Challenge your friends," },
+        { at: 21.3, text: "and climb the leaderboard." },
+        { at: 23.75, text: "Nearly four thousand practice questions." },
+        { at: 26.85, text: "Prepify A I. Start practising free." },
+      ],
+    },
   },
 
   // ---------------------------------------------------------------------------
@@ -39,7 +63,7 @@ globalThis.LAUNCH = {
     hook: {
       start: 0.0,
       typeStart: 0.25,
-      charStep: 0.05,     // seconds per typed character
+      charStep: 0.03,     // seconds per typed character
       dimOthersAt: 2.15,  // every word except the keyword blurs away
       cursorAt: 2.05,     // cursor starts gliding to the keyword
       clickAt: 2.72,
@@ -50,7 +74,7 @@ globalThis.LAUNCH = {
     // 2. Product reveal — the app window swings in, subject cards drop in
     reveal: {
       start: 3.1,
-      windowAt: 3.18,     // ♪ strong beat
+      windowAt: 3.18,     // ♪ first drop
       cardsAt: 3.85,
       cardStagger: 0.1,
       captionAt: 3.95,
@@ -62,7 +86,7 @@ globalThis.LAUNCH = {
     build: {
       start: 5.8,
       cursorAt: 5.85,
-      subjectClickAt: 6.34, // ♪
+      subjectClickAt: 6.34,
       screenAt: 6.42,       // My Subjects → New Test
       cameraAt: 6.45,
       captionAt: 6.65,
@@ -70,7 +94,7 @@ globalThis.LAUNCH = {
       chapterClickAt: 7.3,
       scrollAt: 7.42,
       countClickAt: 7.9,
-      hardClickAt: 8.44,    // ♪
+      hardClickAt: 8.44,
       end: 8.85,
     },
 
@@ -78,8 +102,8 @@ globalThis.LAUNCH = {
     start: {
       start: 8.6,
       scrollAt: 8.6,
-      clickAt: 9.5,         // ♪
-      toastAt: 9.56,
+      clickAt: 9.36,        // ♪
+      toastAt: 9.42,
       exitAt: 10.3,
       end: 10.75,
     },
@@ -88,7 +112,7 @@ globalThis.LAUNCH = {
     headline: {
       start: 10.45,
       typeStart: 10.62,
-      charStep: 0.032,
+      charStep: 0.02,
       exitAt: 12.95,
       end: 13.35,
     },
@@ -98,7 +122,7 @@ globalThis.LAUNCH = {
       start: 13.05,
       windowAt: 13.08,
       cursorAt: 13.75,
-      pickAt: 14.22,        // ♪
+      pickAt: 14.22,
       submitClickAt: 15.0,
       end: 15.45,
     },
@@ -109,7 +133,7 @@ globalThis.LAUNCH = {
       screenAt: 15.32,
       countAt: 15.62,
       countDur: 1.15,
-      remarkAt: 16.86,      // ♪
+      remarkAt: 16.71,      // ♪
       end: 18.25,
     },
 
@@ -121,9 +145,9 @@ globalThis.LAUNCH = {
       captionOut: 20.95,
       join1At: 18.6,
       ready1At: 19.15,
-      join2At: 19.49,       // ♪
-      ready2At: 20.02,      // ♪
-      countdownAt: 20.54,   // ♪
+      join2At: 19.53,       // ♪
+      ready2At: 20.1,       // ♪
+      countdownAt: 20.54,
       end: 21.15,
     },
 
@@ -133,17 +157,17 @@ globalThis.LAUNCH = {
       screenAt: 21.1,
       captionAt: 21.3,
       captionOut: 23.45,
-      rowsAt: 21.59,        // ♪
+      rowsAt: 21.59,
       rowStagger: 0.1,
-      pushAt: 22.65,        // ♪
+      pushAt: 22.65,
       end: 23.7,
     },
 
     // 10. Stats — three cards drop in and count up
     stats: {
       start: 23.62,
-      cardsAt: 23.7,        // ♪
-      cardStagger: 0.53,    // one beat apart
+      cardsAt: 23.7,
+      cardStagger: 0.53,
       countDur: 0.85,
       end: 25.8,
     },
@@ -151,11 +175,11 @@ globalThis.LAUNCH = {
     // 11. Outro — bar grows, becomes the logo, wordmark types, CTA
     outro: {
       start: 25.7,
-      barAt: 25.81,
-      morphAt: 26.33,       // ♪ logo lands
+      barAt: 25.75,         // ♪ second drop
+      morphAt: 26.31,       // ♪ logo lands
       wordAt: 26.85,
-      taglineAt: 27.39,     // ♪
-      ctaAt: 27.91,         // ♪
+      taglineAt: 27.44,     // ♪
+      ctaAt: 28.01,         // ♪
       musicFadeAt: 27.6,
     },
   },
@@ -167,12 +191,13 @@ globalThis.LAUNCH = {
 // -----------------------------------------------------------------------------
 globalThis.LAUNCH.sfx = (T, C) => {
   const cues = [];
-  const add = (file, at, vol) => cues.push({ file, at: Math.round(at * 1000) / 1000, vol });
+  const g = C.sfxVolume ?? 1;
+  const add = (file, at, vol) => { if (g > 0) cues.push({ file, at: Math.round(at * 1000) / 1000, vol: Math.round(vol * g * 100) / 100 }); };
 
   // hook: soft key ticks on every 3rd typed character, click, whoosh
   const hookLen = (C.hook.lead + C.hook.keyword).length;
   const keys = ["key-001.wav", "key-004.wav", "key-007.wav", "key-010.wav"];
-  for (let i = 0, k = 0; i < hookLen; i += 3, k++) add(keys[k % 4], T.hook.typeStart + i * T.hook.charStep, 0.22);
+  for (let i = 0, k = 0; i < hookLen; i += 4, k++) add(keys[k % 4], T.hook.typeStart + i * T.hook.charStep, 0.22);
   add("click.ogg", T.hook.clickAt, 0.5);
   add("whoosh.wav", T.hook.zoomAt, 0.55);
 
@@ -195,7 +220,7 @@ globalThis.LAUNCH.sfx = (T, C) => {
 
   // headline: sparse key ticks
   const headLen = (C.headline.line1 + C.headline.line2Lead + C.headline.line2Keyword).length;
-  for (let i = 0, k = 0; i < headLen; i += 4, k++) add(keys[(k + 1) % 4], T.headline.typeStart + i * T.headline.charStep, 0.18);
+  for (let i = 0, k = 0; i < headLen; i += 6, k++) add(keys[(k + 1) % 4], T.headline.typeStart + i * T.headline.charStep, 0.18);
 
   // question + results
   add("whoosh-soft.wav", T.question.windowAt, 0.4);

@@ -1,4 +1,4 @@
 # Made by build.mjs: the 9:16 project links to ../assets, and your track
-# from ../video-reference/music.mp3 is copied in.
+# from ../video-reference/ is cut in.
 vertical/assets
-assets/music/music.mp3
+assets/music/music.wav
