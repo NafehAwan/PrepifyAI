@@ -437,8 +437,15 @@
     tl.set(badge, { opacity: 0, x: dx, y: dy }, 0);
     tl.fromTo("#logo-glyph", { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, O.morphAt + 0.2);
     tl.to(badge, { x: 0, y: 0, duration: 0.65, ease: "power3.inOut" }, O.wordAt);
-    $$("#wordmark .ch").forEach((c, i) =>
-      tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, O.wordAt + 0.18 + i * 0.05));
+    // The wordmark types out from behind the badge (it sits above in z-order).
+    // In 16:9 the badge slides left across the word, so typing waits until it
+    // has cleared the first letter; in 9:16 it rises out of the word's way.
+    const wordStart = O.wordAt + (P ? 0.18 : 0.45);
+    $$("#wordmark .ch").forEach((c, i) => {
+      const at = wordStart + i * 0.05;
+      tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, at);
+      tl.set(c, { filter: "none" }, at + 0.32);
+    });
     tl.fromTo("#tagline", { opacity: 0, y: 22, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, O.taglineAt); // ♪ 27.39s
     tl.fromTo("#cta", { opacity: 0, y: 18, scale: 0.86 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.8)" }, O.ctaAt); // ♪ 27.91s
 

@@ -333,10 +333,10 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 .lockup { position: relative; display: flex; align-items: center; gap: 40px; }
 .fmt-portrait .lockup { flex-direction: column; gap: 34px; }
 .bar-grow { position: absolute; left: 50%; top: 50%; width: 40px; height: 250px; margin-left: -20px; margin-top: -125px; border-radius: 20px; background: var(--accent); transform-origin: 50% 100%; opacity: 0; }
-.badge { position: relative; width: 210px; height: 210px; flex: none; opacity: 0; }
+.badge { position: relative; z-index: 2; width: 210px; height: 210px; flex: none; opacity: 0; } /* the wordmark types out from behind it */
 .badge .disc { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); }
 .badge svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.wordmark { position: relative; font-family: "Caprasimo"; font-size: 150px; line-height: 1; white-space: nowrap; color: var(--ink); }
+.wordmark { position: relative; z-index: 1; font-family: "Caprasimo"; font-size: 150px; line-height: 1; white-space: nowrap; color: var(--ink); }
 .fmt-portrait .wordmark { font-size: 150px; }
 .under { position: absolute; left: 0; right: 0; top: 100%; margin-top: 70px; display: flex; flex-direction: column; align-items: center; gap: 34px; }
 .tagline { font-size: 46px; font-weight: 550; color: var(--brown); letter-spacing: -0.01em; opacity: 0; white-space: nowrap; }
@@ -353,5 +353,5 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 /* --- placement fixes --- */
 .type-row { display: block; }
 .start-row .toast { left: -8px; top: 50%; margin-top: -31px; }
-.lockup { margin-top: -190px; }
+.lockup { margin-top: -235px; } /* optical centre with the URL line under the button */
 .fmt-portrait .lockup { margin-top: -330px; }

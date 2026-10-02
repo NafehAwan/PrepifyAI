@@ -343,10 +343,10 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 .lockup { position: relative; display: flex; align-items: center; gap: 40px; }
 .fmt-portrait .lockup { flex-direction: column; gap: 34px; }
 .bar-grow { position: absolute; left: 50%; top: 50%; width: 40px; height: 250px; margin-left: -20px; margin-top: -125px; border-radius: 20px; background: var(--accent); transform-origin: 50% 100%; opacity: 0; }
-.badge { position: relative; width: 210px; height: 210px; flex: none; opacity: 0; }
+.badge { position: relative; z-index: 2; width: 210px; height: 210px; flex: none; opacity: 0; } /* the wordmark types out from behind it */
 .badge .disc { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); }
 .badge svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.wordmark { position: relative; font-family: "Caprasimo"; font-size: 150px; line-height: 1; white-space: nowrap; color: var(--ink); }
+.wordmark { position: relative; z-index: 1; font-family: "Caprasimo"; font-size: 150px; line-height: 1; white-space: nowrap; color: var(--ink); }
 .fmt-portrait .wordmark { font-size: 150px; }
 .under { position: absolute; left: 0; right: 0; top: 100%; margin-top: 70px; display: flex; flex-direction: column; align-items: center; gap: 34px; }
 .tagline { font-size: 46px; font-weight: 550; color: var(--brown); letter-spacing: -0.01em; opacity: 0; white-space: nowrap; }
@@ -363,7 +363,7 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
 /* --- placement fixes --- */
 .type-row { display: block; }
 .start-row .toast { left: -8px; top: 50%; margin-top: -31px; }
-.lockup { margin-top: -190px; }
+.lockup { margin-top: -235px; } /* optical centre with the URL line under the button */
 .fmt-portrait .lockup { margin-top: -330px; }
 
     </style>
@@ -383,7 +383,7 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
   <div id="rig">
     <div id="lens">
       <div id="win" class="win">
-        <div class="chrome"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="url"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7a6f5d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Prepify AI</span></div><div style="width:58px"></div></div>
+        <div class="chrome"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="url"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7a6f5d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4"/></svg><span>prepifyaii.vercel.app</span></div><div style="width:58px"></div></div>
         <div class="app">
           <aside class="sidebar">
             <div class="brand"><svg width="34" height="34" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#C67139"/><rect x="19" y="17" width="8" height="30" rx="4" fill="#fff"/><rect x="23" y="17" width="21" height="17" rx="8.5" fill="#fff"/><path d="M33 21.5c-2.6-1.5-5.4-1.5-8 0v8c2.6-1.5 5.4-1.5 8 0z" fill="#C67139"/><path d="M35 21.5c2.6-1.5 5.4-1.5 8 0v8c-2.6-1.5-5.4-1.5-8 0z" fill="#C67139"/></svg><div>Prepify <span class="ai">AI</span></div></div>
@@ -555,7 +555,7 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
                   <div class="card invite">
                     <div class="it">Invite your friends</div>
                     <div class="ih">Send them this link. They sign in, tap Join, then Ready. Code: <strong>K7Q2MX</strong></div>
-                    <div class="inv-row"><div class="inv-link">…/c/K7Q2MX</div><div class="pill-btn btn-sand">Copy link</div><div class="pill-btn btn-wa">WhatsApp</div></div>
+                    <div class="inv-row"><div class="inv-link">prepifyaii.vercel.app/c/K7Q2MX</div><div class="pill-btn btn-sand">Copy link</div><div class="pill-btn btn-wa">WhatsApp</div></div>
                   </div>
                   <div class="stats-row">
                     <div class="stat"><div class="sl">Joined</div><div class="sv"><span id="joined-1">1/3</span><span id="joined-2" style="opacity:0">2/3</span><span id="joined-3" style="opacity:0">3/3</span></div></div>
@@ -633,7 +633,7 @@ body { font-family: "Figtree", system-ui, sans-serif; color: var(--ink); -webkit
     <div class="wordmark" id="wordmark"><span class="ch">P</span><span class="ch">r</span><span class="ch">e</span><span class="ch">p</span><span class="ch">i</span><span class="ch">f</span><span class="ch">y</span><span class="ch">&nbsp;</span><span class="ch ai">A</span><span class="ch ai">I</span></div>
     <div class="under" id="under">
       <div class="tagline" id="tagline">Real board questions. Real results.</div>
-      <div class="cta" id="cta"><div class="cta-btn">Start practising free <span>→</span></div></div>
+      <div class="cta" id="cta"><div class="cta-btn">Start practising free <span>→</span></div><div class="cta-url">prepifyaii.vercel.app</div></div>
     </div>
   </div>
 </div>
@@ -712,7 +712,7 @@ globalThis.LAUNCH = {
     tagline: "Real board questions. Real results.",
     ctaText: "Start practising free",
     // Your website, e.g. "yourdomain.com". Shown under the button; hidden while empty.
-    ctaUrl: "",
+    ctaUrl: "prepifyaii.vercel.app",
     // MUSIC SLOT — drop your track at ../video-reference/music.mp3 and run
     // `npm run build`: it is copied in and used automatically. Until then a
     // placeholder plays: "Happy Beats / Business Moves vol. 11" from ende.app.
@@ -1355,8 +1355,15 @@ globalThis.LAUNCH.sfx = (T, C) => {
     tl.set(badge, { opacity: 0, x: dx, y: dy }, 0);
     tl.fromTo("#logo-glyph", { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, O.morphAt + 0.2);
     tl.to(badge, { x: 0, y: 0, duration: 0.65, ease: "power3.inOut" }, O.wordAt);
-    $$("#wordmark .ch").forEach((c, i) =>
-      tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, O.wordAt + 0.18 + i * 0.05));
+    // The wordmark types out from behind the badge (it sits above in z-order).
+    // In 16:9 the badge slides left across the word, so typing waits until it
+    // has cleared the first letter; in 9:16 it rises out of the word's way.
+    const wordStart = O.wordAt + (P ? 0.18 : 0.45);
+    $$("#wordmark .ch").forEach((c, i) => {
+      const at = wordStart + i * 0.05;
+      tl.fromTo(c, { opacity: 0, filter: "blur(12px)", x: -14 }, { opacity: 1, filter: "blur(0px)", x: 0, duration: 0.3, ease: "power2.out" }, at);
+      tl.set(c, { filter: "none" }, at + 0.32);
+    });
     tl.fromTo("#tagline", { opacity: 0, y: 22, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, O.taglineAt); // ♪ 27.39s
     tl.fromTo("#cta", { opacity: 0, y: 18, scale: 0.86 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.8)" }, O.ctaAt); // ♪ 27.91s
 

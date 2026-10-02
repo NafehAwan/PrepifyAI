@@ -19,7 +19,7 @@ globalThis.LAUNCH = {
     tagline: "Real board questions. Real results.",
     ctaText: "Start practising free",
     // Your website, e.g. "yourdomain.com". Shown under the button; hidden while empty.
-    ctaUrl: "",
+    ctaUrl: "prepifyaii.vercel.app",
     // MUSIC SLOT — drop your track at ../video-reference/music.mp3 and run
     // `npm run build`: it is copied in and used automatically. Until then a
     // placeholder plays: "Happy Beats / Business Moves vol. 11" from ende.app.
