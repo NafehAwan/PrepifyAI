@@ -1,0 +1,4 @@
+# Made by build.mjs: the 9:16 project links to ../assets, and your track
+# from ../video-reference/music.mp3 is copied in.
+vertical/assets
+assets/music/music.mp3

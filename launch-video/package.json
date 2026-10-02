@@ -1,0 +1,15 @@
+{
+  "name": "launch-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "npm run build && npx --yes hyperframes@0.8.111 preview",
+    "dev:vertical": "npm run build && npx --yes hyperframes@0.8.111 preview vertical",
+    "check": "npm run build && npx --yes hyperframes@0.8.111 check && npx --yes hyperframes@0.8.111 check vertical",
+    "render": "npm run build && npx --yes hyperframes@0.8.111 render --skill=product-launch-video --quality high -o ../out/launch-16x9.mp4 && node master.mjs ../out/launch-16x9.mp4",
+    "render:vertical": "npm run build && cd vertical && npx --yes hyperframes@0.8.111 render --skill=product-launch-video --quality high -o ../../out/launch-9x16.mp4 && cd .. && node master.mjs ../out/launch-9x16.mp4",
+    "render:all": "npm run render && npm run render:vertical",
+    "publish": "npx --yes hyperframes@0.8.111 publish"
+  }
+}
