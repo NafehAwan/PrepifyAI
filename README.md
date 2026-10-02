@@ -13,7 +13,7 @@ This repo contains a **working Next.js + TypeScript port of the full design prot
 | `app/login/` | Email/password sign in / sign up UI + server actions |
 | `app/api/ai/`, `lib/ai/` | AI backend — grounded tutor (`/api/ai/teach`) + brutally-honest examiner (`/api/ai/grade`) via the Claude API |
 | `supabase/schema.sql` | Postgres schema + RLS + pgvector, indexes, `handle_new_user` trigger and a RAG retrieval helper (Part A of the spec) |
-| `supabase/players.sql` | Leaderboard periods (All time / Monthly, names cut to 10 characters) and the admin Players tools: rename, remove from the leaderboard, set or reset XP (re-runnable) |
+| `supabase/players.sql` | Leaderboard periods (All time / Monthly, names cut to 10 characters) and the admin Players tools: player details, rename, remove from the leaderboard, set XP / wins / papers / streak, reset scores, and fake leaderboard players (re-runnable) |
 | `supabase/security.sql` | Server-side test building and marking (answer keys never reach the browser), the API rate limiter, and the table lockdown (re-runnable) |
 | `supabase/support.sql` | Help & Feedback tickets and the /admin portal; admins live in the locked `app_admins` table (re-runnable) |
 | `supabase/engagement.sql` | Question reports (read them via the `question_report_summary` view), per-chapter results, XP, streaks and the global leaderboard (re-runnable) |
@@ -154,10 +154,11 @@ The seed in `content/physics-9.curriculum.json` is **AI-drafted** and, per the c
   can't be forged; challenges, tickets, reports and the leaderboard go through security-definer
   functions too. The question bank itself isn't readable from the browser.
 - **Admin** — admins are listed in the locked `app_admins` table; every admin function checks it,
-  and `/admin` redirects anyone else home. Admin → Players renames a player on the leaderboard,
-  takes them off it, sets their XP or resets their scores (`player_overrides` and
-  `xp_adjustments`, which students can't read or write). Nothing is deleted, so every change can
-  be undone.
+  and `/admin` redirects anyone else home. Admin → Players shows each student's details and renames
+  them on the leaderboard, takes them off it, sets their XP, wins, papers or streak, or resets
+  their scores; it also makes and edits fake leaderboard players (`player_overrides`,
+  `xp_adjustments` and `fake_players`, which students can't read or write). Nothing is deleted,
+  so every change can be undone.
 - **Passwords** — handled entirely by Supabase Auth (bcrypt-hashed; the app never stores one).
   Sign-up asks for 8+ characters.
 - **Headers** — a Content-Security-Policy, `X-Frame-Options: DENY`, `nosniff`, HSTS, a strict
