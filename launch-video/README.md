@@ -54,6 +54,14 @@ text. The build speaks it with Kokoro, a free voice that runs locally through
 changed lines are re-spoken. The music dips under each line (`duck`). Change
 `voice` or `speed`, or set `enabled: false` for no voice-over.
 
+## UGC-style ad
+
+`npm run render:ugc` makes `../out/prepify-ugc-ad-9x16.mp4`: a 22-second faceless ad that looks
+like a screen recording of the app on a phone, with TikTok-style word-by-word captions, a
+casual voice-over and the song low underneath. Its script, captions and timings live in
+`ugc.timing.js`; the animation is `src/ugc.js` and the look `src/ugc.css`. Preview it with
+`npm run dev:ugc`.
+
 ## Previewing and checking
 
 ```bash

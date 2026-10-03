@@ -20,39 +20,37 @@ const DIR = dirname(fileURLToPath(import.meta.url));
 const read = (p) => readFileSync(join(DIR, p), "utf8");
 
 await import(pathToFileURL(join(DIR, "timing.js")).href);
+await import(pathToFileURL(join(DIR, "ugc.timing.js")).href);
 const { config: C, timing: T, sfx: sfxCues } = globalThis.LAUNCH;
 
 // ---------------------------------------------------------------- music slot
-let music = C.music;
 const userMusic = ["mp3", "m4a", "wav"].map((x) => join(DIR, "..", "video-reference", `music.${x}`)).find(existsSync);
-if (userMusic) {
-  const from = C.musicFrom || 0;
-  execFileSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", String(from), "-t", String(T.total + 0.5),
-    "-i", userMusic, "-ac", "2", "-ar", "48000", join(DIR, "assets", "music", "music.wav")]);
-  music = "assets/music/music.wav";
-  console.log(`♪ using your music: video-reference/${userMusic.split(/[\\/]/).pop()} from ${from}s`);
-} else {
-  console.log(`♪ music slot empty — using placeholder ${music}`);
+function cutMusic(name, from, seconds) {
+  if (!userMusic) return C.music;
+  execFileSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", String(from || 0), "-t", String(seconds + 0.5),
+    "-i", userMusic, "-ac", "2", "-ar", "48000", join(DIR, "assets", "music", `${name}.wav`)]);
+  return `assets/music/${name}.wav`;
 }
+const music = cutMusic("music", C.musicFrom, T.total);
+console.log(userMusic ? `♪ using your music: video-reference/${userMusic.split(/[\\/]/).pop()} from ${C.musicFrom || 0}s`
+  : `♪ music slot empty — using placeholder ${music}`);
 
 // --------------------------------------------------------------- voice-over
 const VO = C.voiceover || {};
-const voLines = [];
-if (VO.enabled) {
-  const voDir = join(DIR, "assets", "vo");
-  mkdirSync(voDir, { recursive: true });
-  for (const line of VO.lines) {
-    const voice = line.voice || VO.voice, speed = line.speed || VO.speed || 1;
-    const key = createHash("sha1").update(`${voice}|${speed}|${line.text}`).digest("hex").slice(0, 12);
-    const file = `assets/vo/${key}.wav`;
-    if (!existsSync(join(DIR, file))) {
-      console.log(`🎙  speaking: "${line.text}"`);
-      execFileSync("npx", ["--yes", "hyperframes@0.8.111", "tts", line.text, "-v", voice, "-s", String(speed), "-o", join(DIR, file)],
-        { stdio: ["ignore", "ignore", "inherit"], shell: process.platform === "win32" });
-    }
-    voLines.push({ ...line, file });
+mkdirSync(join(DIR, "assets", "vo"), { recursive: true });
+function speak(text, voice, speed) {
+  const key = createHash("sha1").update(`${voice}|${speed}|${text}`).digest("hex").slice(0, 12);
+  const file = `assets/vo/${key}.wav`;
+  if (!existsSync(join(DIR, file))) {
+    console.log(`🎙  speaking: "${text}"`);
+    execFileSync("npx", ["--yes", "hyperframes@0.8.111", "tts", text, "-v", voice, "-s", String(speed), "-o", join(DIR, file)],
+      { stdio: ["ignore", "ignore", "inherit"], shell: process.platform === "win32" });
   }
+  return file;
 }
+const voLines = VO.enabled
+  ? VO.lines.map((line) => ({ ...line, file: speak(line.text, line.voice || VO.voice, line.speed || VO.speed || 1) }))
+  : [];
 
 // ------------------------------------------------------------------ helpers
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -237,3 +235,121 @@ for (const f of ["hyperframes.json", "meta.json"]) {
 }
 if (existsSync(join(DIR, "vertical.html"))) unlinkSync(join(DIR, "vertical.html"));
 console.log(`built index.html (1920×1080) + vertical/index.html (1080×1920) — ${T.total}s @ ${T.fps}fps, ${AUDIO.split("<audio").length - 1} audio clips`);
+
+// ------------------------------------------------------------- UGC-style ad
+// A third project in ugc/: the same app screens as a flat 9:16 "screen
+// recording" with TikTok-style captions. Config + times: ugc.timing.js.
+const UG = globalThis.LAUNCH.ugc;
+const ugMusic = cutMusic("ugc", UG.musicFrom, UG.total);
+const ugLines = UG.lines.map((l) => {
+  const file = speak(l.text, l.voice || UG.voice, l.speed || UG.speed || 1);
+  return { ...l, file, dur: durationOf(file) };
+});
+
+// caption chunks of up to 3 words; each word lit in turn, timed across its
+// line in proportion to its length (+ a beat after commas and full stops)
+function captionHtml() {
+  const out = [];
+  ugLines.forEach((l, li) => {
+    const words = (l.caption || l.text).split(/\s+/).filter(Boolean);
+    const weight = words.map((w) => w.length + 1 + (/,$/.test(w) ? 3 : 0) + (/[.?!]$/.test(w) ? 5 : 0));
+    const sum = weight.reduce((a, b) => a + b, 0);
+    const t0 = l.at + 0.06, span = Math.max(0.3, l.dur - 0.2);
+    let acc = 0;
+    const timed = words.map((w, i) => { const t = t0 + (span * acc) / sum; acc += weight[i]; return { w, t: Math.round(t * 1000) / 1000 }; });
+    const chunks = [];
+    let cur = [];
+    timed.forEach((x) => {
+      cur.push(x);
+      if (cur.length === 3 || /[,.?!]$/.test(x.w) || cur.map((c) => c.w).join(" ").length > 16) { chunks.push(cur); cur = []; }
+    });
+    if (cur.length) chunks.push(cur);
+    const lineEnd = Math.min(UG.total, l.at + l.dur + 0.1);
+    chunks.forEach((c, ci) => {
+      const end = ci + 1 < chunks.length ? chunks[ci + 1][0].t : lineEnd;
+      const ws = c.map((x) => `<span class="w" data-layout-allow-overlap data-t="${x.t}">${esc(x.w)}</span>`).join(" ");
+      const top = l.captionTop ? ` style="top:${l.captionTop}px"` : "";
+      out.push(`<div class="ucap${li === 0 ? " big" : ""}"${top} data-layout-allow-overlap data-layout-allow-occlusion data-cap-in="${c[0].t}" data-cap-out="${end}">${ws}</div>`);
+    });
+  });
+  return out.join("\n  ");
+}
+
+function ugAudio() {
+  const total = UG.total, v = UG.musicVolume;
+  const lane = { version: 1, lanes: [{ target: "volume", points: [{ t: 0, v }, { t: total - 0.8, v }, { t: total, v: 0 }] }] };
+  const tags = [`<audio id="music" src="${ugMusic}" data-start="0" data-duration="${total}" data-track-index="10" data-volume="1" data-automation='${JSON.stringify(lane)}'></audio>`];
+  ugLines.forEach((l, n) => tags.push(`<audio id="vo-${n + 1}" src="${l.file}" data-start="${l.at}" data-duration="${Math.min(l.dur, total - l.at)}" data-track-index="${40 + (n % 2)}" data-volume="1"></audio>`));
+  if (UG.tapVolume > 0) {
+    const taps = ["physicsTap", "chapterTap", "countTap", "hardTap", "startTap", "inertiaTap", "submitTap"].map((k) => UG.t[k]);
+    const d = durationOf("assets/sfx/click.ogg");
+    taps.forEach((t, n) => tags.push(`<audio id="tap-${n + 1}" src="assets/sfx/click.ogg" data-start="${t}" data-duration="${d}" data-track-index="${20 + (n % 2)}" data-volume="${UG.tapVolume}"></audio>`));
+  }
+  return tags.join("\n    ");
+}
+
+function composeUgc() {
+  const scenes = read("src/scenes.html.tpl")
+    .replace("{{CHROME}}", CHROME.portrait).replace("{{LOGO_SVG_34}}", LOGO_SVG_34).replace("{{LOGO_GLYPH}}", LOGO_GLYPH)
+    .replace("{{CURSOR_SVG}}", CURSOR()).replace("{{CURSOR_SVG_HOOK}}", CURSOR()).replace("{{HOOK_LINE}}", HOOK)
+    .replace("{{HEADLINE_LINE}}", HEADLINE).replace("{{WORDMARK}}", WORDMARK).replace("{{PRODUCT}}", esc(C.productName))
+    .replace("{{TAGLINE}}", esc(C.tagline)).replace("{{CTA_TEXT}}", esc(C.ctaText)).replace("{{CTA_URL}}", "")
+    .replace("{{INVITE_LINK}}", esc(C.ctaUrl ? `${C.ctaUrl.replace(/\/$/, "")}/c/K7Q2MX` : "…/c/K7Q2MX"));
+  const [w1, ...w2] = C.productName.split(" ");
+  const overlay = `<div id="endcard" data-layout-allow-occlusion>
+  <div class="ec-badge">${LOGO_GLYPH.replace(' id="logo-glyph"', "")}</div>
+  <div class="ec-word" data-layout-allow-overlap>${esc(w1)} <span>${esc(w2.join(" "))}</span></div>
+  <div class="ec-sub" data-layout-allow-overlap>Free board-style MCQs for FBISE Class 9</div>
+  ${C.ctaUrl ? `<div class="ec-url" data-layout-allow-overlap>${esc(C.ctaUrl)}</div>` : ""}
+</div>
+  ${captionHtml()}`;
+  return `<!doctype html>
+<!-- GENERATED by build.mjs from ugc.timing.js + src/ — edit those, then run: npm run build -->
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>${esc(C.productName)} — UGC ad (9:16)</title>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      html, body { width: 1080px; height: 1920px; }
+${css}
+${read("src/ugc.css")}
+    </style>
+  </head>
+  <body>
+    <div id="root" class="fmt-portrait fmt-ugc" data-format="ugc" data-composition-id="main" data-start="0" data-duration="${UG.total}" data-fps="${UG.fps}" data-width="1080" data-height="1920">
+${scenes}
+${overlay}
+    ${ugAudio()}
+    </div>
+    <script>
+${read("ugc.timing.js")}
+    </script>
+    <script>
+${read("src/ugc.js")}
+    </script>
+  </body>
+</html>
+`;
+}
+
+const UDIR = join(DIR, "ugc");
+mkdirSync(UDIR, { recursive: true });
+writeFileSync(join(UDIR, "index.html"), composeUgc());
+const UASSETS = join(UDIR, "assets");
+let ulinked = false;
+try { ulinked = statSync(UASSETS).isDirectory(); } catch {}
+if (!ulinked) {
+  try { unlinkSync(UASSETS); } catch {}
+  if (process.platform === "win32") symlinkSync(join(DIR, "assets"), UASSETS, "junction");
+  else symlinkSync("../assets", UASSETS, "dir");
+}
+for (const f of ["hyperframes.json", "meta.json"]) {
+  if (!existsSync(join(UDIR, f))) {
+    const j = JSON.parse(read(f));
+    if (f === "meta.json") { j.id = "launch-video-ugc"; j.name = "launch-video-ugc"; }
+    writeFileSync(join(UDIR, f), JSON.stringify(j, null, 2) + "\n");
+  }
+}
+console.log(`built ugc/index.html (1080×1920) — ${UG.total}s UGC-style ad, ${ugLines.length} voice lines`);
