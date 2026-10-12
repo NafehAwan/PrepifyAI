@@ -27,6 +27,12 @@ create table if not exists test_keys (
 );
 alter table test_keys enable row level security;
 
+-- Mock exams (supabase/mock.sql) are tests too: kind 'mock', with a time limit
+-- and a deadline the server enforces in submit_test.
+alter table tests add column if not exists kind           text not null default 'test';
+alter table tests add column if not exists time_limit_min int;
+alter table tests add column if not exists deadline       timestamptz;
+
 -- Builds a test: one question per family (no two versions of the same
 -- question), in the difficulty band first, preferring questions the student
 -- hasn't met in their last five tests of this subject, topped up from any
@@ -134,7 +140,7 @@ begin
 
   -- "Test #NN" per subject; a unique index makes two racing tabs retry.
   for attempt in 1 .. 3 loop
-    select coalesce(max(seq), 0) + 1 into v_seq from tests where user_id = v_uid and subject_id = p_subject_id;
+    select coalesce(max(seq), 0) + 1 into v_seq from tests where user_id = v_uid and subject_id = p_subject_id and kind = 'test';
     begin
       insert into tests (user_id, subject_id, seq, title, difficulty, question_count, questions_json, status, scope)
       values (v_uid, p_subject_id, v_seq, 'Test #' || lpad(v_seq::text, 2, '0'), p_difficulty, v_n, v_qs,
@@ -154,7 +160,10 @@ $$;
 -- Marks a test against its hidden key, saves the result, and only now puts
 -- the answers and explanations into the test so the review can show them.
 -- Submitting twice returns the first result. Tests made before this change
--- (key inside questions_json) are marked from that snapshot.
+-- (key inside questions_json) are marked from that snapshot. A mock handed in
+-- more than two minutes after its deadline (time for a slow connection to
+-- deliver the automatic submit) is marked with no answers, so the clock can't
+-- be beaten by leaving the page and coming back later.
 create or replace function public.submit_test(p_test_id uuid, p_answers jsonb)
 returns jsonb
 language plpgsql security definer set search_path = public
@@ -171,12 +180,17 @@ declare
   v_pct     int;
   v_remarks text;
   v_merged  jsonb;
+  v_late    boolean := false;
 begin
   if v_uid is null then raise exception 'not signed in'; end if;
   select * into t from tests where id = p_test_id and user_id = v_uid for update;
   if t.id is null then raise exception 'test not found'; end if;
   if t.status = 'submitted' then
     return jsonb_build_object('correctCount', t.correct_count, 'scorePct', t.score_pct, 'remarks', t.remarks);
+  end if;
+  if t.kind = 'mock' and t.deadline is not null and now() > t.deadline + interval '2 minutes' then
+    v_late := true;
+    p_answers := '[]'::jsonb;
   end if;
 
   v_n := jsonb_array_length(t.questions_json);
@@ -201,7 +215,7 @@ begin
   end loop;
 
   v_pct := round(100.0 * v_correct / greatest(v_n, 1));
-  v_remarks := prepify_remark(v_pct);
+  v_remarks := case when v_late then 'Time ran out' else prepify_remark(v_pct) end;
 
   select jsonb_agg(
            x.e || jsonb_build_object('answer', v_key[x.i])
@@ -223,7 +237,7 @@ begin
          questions_json = coalesce(v_merged, questions_json)
    where id = t.id;
 
-  return jsonb_build_object('correctCount', v_correct, 'scorePct', v_pct, 'remarks', v_remarks);
+  return jsonb_build_object('correctCount', v_correct, 'scorePct', v_pct, 'remarks', v_remarks, 'late', v_late);
 end;
 $$;
 

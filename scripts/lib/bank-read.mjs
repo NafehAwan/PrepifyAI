@@ -1,7 +1,9 @@
 // Reads the whole question bank: the parsed originals in content/mcq-bank/,
 // new questions in content/mcq-bank/extra/, hand-reworded variants in
-// content/mcq-bank/variants/ and re-valued calculations generated from
-// templates in content/mcq-bank/generated/, grouped by subject and chapter.
+// content/mcq-bank/variants/, re-valued calculations generated from
+// templates in content/mcq-bank/generated/ and the mock-exam pool in
+// content/mcq-bank/mock/ (flagged `mock`, and asked in normal tests too),
+// grouped by subject and chapter.
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -14,20 +16,21 @@ function readDir(dir, kind) {
     .map((f) => ({ file: f, kind, ...JSON.parse(readFileSync(join(dir, f), "utf8")) }));
 }
 
-const FOLDER = { original: "", extra: "extra/", variant: "variants/", generated: "generated/" };
+const FOLDER = { original: "", extra: "extra/", variant: "variants/", generated: "generated/", mock: "mock/" };
 
 // A question's family: every version of one question shares it, and a test
 // asks at most one member of a family.
 export const familyOf = (q) => q.variant_of ?? q.family ?? q.id;
 
 // Returns [{ key, subject, chapter_seq, files, questions }] where every question
-// carries `kind` ("original" | "extra" | "variant" | "generated") and `file`.
+// carries `kind` ("original" | "extra" | "variant" | "generated" | "mock") and `file`.
 export function readBank(bankDir) {
   const all = [
     ...readDir(bankDir, "original"),
     ...readDir(join(bankDir, "extra"), "extra"),
     ...readDir(join(bankDir, "variants"), "variant"),
     ...readDir(join(bankDir, "generated"), "generated"),
+    ...readDir(join(bankDir, "mock"), "mock"),
   ];
   const byChapter = new Map();
   for (const b of all) {

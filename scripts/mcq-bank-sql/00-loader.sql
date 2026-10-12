@@ -6,11 +6,19 @@ begin
    where s.name = p_subject and c.seq = p_seq;
   if ch is null then raise exception 'no chapter % %', p_subject, p_seq; end if;
   if p_replace then delete from questions where chapter_id = ch and source = 'bank'; end if;
-  insert into questions (chapter_id, type, category, source, difficulty, stem_md, options_json, answer_key_md, marks, family)
+  insert into questions (chapter_id, type, category, source, difficulty, stem_md, options_json, answer_key_md, marks, family, mock)
   select ch, 'mcq', case when (r->>4)::int = 1 then 'scenario' else 'concept' end, 'bank', (r->>3)::int,
-         r->>0, r->1, r->>2, 1, r->>5
-    from jsonb_array_elements(p_rows) r;
+         r->>0, r->1, r->>2, 1, r->>5, coalesce((r->>6)::int, 0) = 1
+    from jsonb_array_elements(p_rows) r
+   -- Already there (an --only run, or a batch sent twice): leave it alone.
+   where not exists (select 1 from questions x
+                      where x.chapter_id = ch and x.source = 'bank' and x.stem_md = r->>0 and x.options_json = r->1);
   get diagnostics n = row_count;
+  -- Mock-pool questions that were already in the bank: flag them.
+  update questions x set mock = true
+    from jsonb_array_elements(p_rows) r
+   where coalesce((r->>6)::int, 0) = 1 and not x.mock
+     and x.chapter_id = ch and x.source = 'bank' and x.stem_md = r->>0 and x.options_json = r->1;
   return n;
 end $$;
 revoke all on function public.prepify_load_bank(text, int, jsonb, boolean) from public, anon, authenticated;

@@ -19,6 +19,7 @@ import { SubjectTests } from "./screens/SubjectTests";
 import { NewTest } from "./screens/NewTest";
 import { TestRunner } from "./TestRunner";
 import { NewChallenge } from "./screens/NewChallenge";
+import { MockExam } from "./screens/MockExam";
 import { ChallengeRoom } from "./ChallengeRoom";
 import { Leaderboard } from "./screens/Leaderboard";
 import { Support } from "./screens/Support";
@@ -71,9 +72,12 @@ export function AppShell() {
   // "My Subjects" stays highlighted through the whole test flow, which lives
   // underneath it.
   const SUBJECT_FLOW = ["subjectTests", "newTest", "testRun", "testReview", "newChallenge", "challengeRoom"];
+  // A mock exam is taken in the same runner as a test, but belongs under "Mock Exam".
+  const inMock = (s.screen === "testRun" || s.screen === "testReview") && s.activeTestKind === "mock";
   const isSubjectsActive = (id: string) =>
     s.screen === id ||
-    (id === "subjects" && SUBJECT_FLOW.includes(s.screen)) ||
+    (id === "mockExam" && inMock) ||
+    (id === "subjects" && SUBJECT_FLOW.includes(s.screen) && !inMock) ||
     (id === "support" && s.screen === "supportTicket");
 
   const navGo = (screen: Screen) => {
@@ -155,7 +159,7 @@ export function AppShell() {
             </button>
           )}
           <div style={{ fontFamily: "Caprasimo", fontSize: isMobile ? 17 : 19, flex: 1, minWidth: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-            {TITLES[s.screen] || "Prepify"}
+            {inMock ? "Mock Exam" : TITLES[s.screen] || "Prepify"}
           </div>
 
           {!isMobile && (
@@ -213,7 +217,8 @@ export function AppShell() {
       </div>
       {/* No chatbot anywhere near a challenge — the chat route also refuses
           messages while one is running, so another tab doesn't help either. */}
-      {s.screen !== "challengeRoom" && <ChatWidget />}
+      {/* Nor during a mock exam paper. */}
+      {s.screen !== "challengeRoom" && !(inMock && s.screen === "testRun") && <ChatWidget />}
     </div>
   );
 }
@@ -228,6 +233,7 @@ function ScreenBody({ screen, isAdmin }: { screen: Screen; isAdmin: boolean }) {
     case "testReview": return <TestRunner readOnly />;
     case "newChallenge": return <NewChallenge />;
     case "challengeRoom": return <ChallengeRoom />;
+    case "mockExam": return <MockExam />;
     case "progress": return <Progress />;
     case "leaderboard": return <Leaderboard />;
     case "support": return <Support />;

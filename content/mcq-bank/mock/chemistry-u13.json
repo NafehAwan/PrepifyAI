@@ -1,0 +1,1162 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 13,
+  "questions": [
+    {
+      "id": "ae9b7f1f3ca5",
+      "stem": "A compound has the molecular formula C₅H₁₂. Which statement about it is correct?",
+      "options": [
+        "It must contain a double bond",
+        "It is an unsaturated hydrocarbon",
+        "It belongs to the alkane homologous series",
+        "It contains a functional group"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "0d37bff04485",
+      "stem": "Which formula represents an alkene rather than an alkane?",
+      "options": [
+        "C₄H₁₀",
+        "C₅H₁₂",
+        "C₆H₁₂",
+        "C₃H₈"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a05b99e932b3",
+      "stem": "An unknown hydrocarbon contains 6 carbon atoms and 14 hydrogen atoms. Its classification is:",
+      "options": [
+        "Alkene",
+        "Alkyne",
+        "Alkane",
+        "Aromatic compound"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "55ce4f7a842a",
+      "stem": "Which pair belongs to the same homologous series?",
+      "options": [
+        "CH₄ and C₂H₄",
+        "C₂H₆ and C₃H₈",
+        "C₂H₄ and C₃H₈",
+        "C₂H₂ and C₃H₈"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "28ec355549e1",
+      "stem": "Two consecutive members of a homologous series differ by:",
+      "options": [
+        "CH₃",
+        "CH₂",
+        "C₂H₂",
+        "H₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "47ab2b66a3a0",
+      "stem": "A hydrocarbon has the general formula CₙH₂ₙ₋₂. It is most likely a:",
+      "options": [
+        "Alkane",
+        "Alkene",
+        "Alkyne",
+        "Cycloalkane"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "8d3907213bd3",
+      "stem": "Which molecular formula would not normally represent an open-chain alkane?",
+      "options": [
+        "C₃H₈",
+        "C₄H₁₀",
+        "C₅H₁₂",
+        "C₆H₁₂"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "59a028c6649b",
+      "stem": "If an alkane contains 7 carbon atoms, its molecular formula will be:",
+      "options": [
+        "C₇H₁₄",
+        "C₇H₁₆",
+        "C₇H₁₂",
+        "C₇H₈"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "5eaf24e8da7b",
+      "stem": "Which condensed structural formula represents pentane?",
+      "options": [
+        "CH₃CH₂CH₂CH₃",
+        "CH₃CH₂CH₂CH₂CH₃",
+        "CH₃CH₂CH₃",
+        "CH₃CH₂CH₂CH₂CH₂CH₃"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "62beaca8485d",
+      "stem": "A student writes CH₃–CH₂–CH₂–CH₃ and calls it pentane. What is the error?",
+      "options": [
+        "It contains a double bond",
+        "It has three carbon atoms",
+        "It has four carbon atoms and is butane",
+        "It contains a functional group"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "0009d5d9f360",
+      "stem": "Carbon forms millions of compounds mainly because it can:",
+      "options": [
+        "Form ionic bonds only",
+        "Form four bonds and undergo catenation",
+        "Lose all four electrons easily",
+        "Form bonds only with hydrogen"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "67bcfb985a7b",
+      "stem": "The ability of carbon atoms to bond with one another to form chains and rings is called:",
+      "options": [
+        "Isomerism",
+        "Polymerization",
+        "Catenation",
+        "Hydrogenation"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "3edd39d72621",
+      "stem": "Which arrangement represents a branched-chain compound?",
+      "options": [
+        "CH₃–CH₂–CH₂–CH₃",
+        "CH₃–CH₂–CH₂–CH₂–CH₃",
+        "CH₃–CH(CH₃)–CH₃",
+        "CH₃–CH₂–CH₃"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "2551a9084b6b",
+      "stem": "An organic compound contains a continuous carbon chain with no ring. It is classified as:",
+      "options": [
+        "Cyclic",
+        "Acyclic",
+        "Aromatic",
+        "Heterocyclic"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "85c48c9f39b4",
+      "stem": "Which structure represents a cyclic organic compound?",
+      "options": [
+        "CH₃CH₂CH₃",
+        "CH₃CH₂CH₂CH₃",
+        "A carbon chain joined to form a ring",
+        "CH₃CH(CH₃)CH₃"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9470fb36c546",
+      "stem": "Which feature distinguishes an unsaturated hydrocarbon from a saturated one?",
+      "options": [
+        "Presence of carbon",
+        "Presence of hydrogen",
+        "Presence of at least one C=C or C≡C bond",
+        "Presence of C–H bonds"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "b1c05d2076a0",
+      "stem": "A compound has the structure CH₂=CH–CH₃. Which description is correct?",
+      "options": [
+        "Saturated three-carbon hydrocarbon",
+        "Unsaturated three-carbon hydrocarbon",
+        "Four-carbon alkane",
+        "Three-carbon alcohol"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "ec1f5c2cf057",
+      "stem": "Which compound contains a triple bond?",
+      "options": [
+        "CH₄",
+        "C₂H₆",
+        "C₂H₄",
+        "C₂H₂"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9719f636d2e8",
+      "stem": "If an alkene contains 5 carbon atoms, its formula according to CₙH₂ₙ is:",
+      "options": [
+        "C₅H₈",
+        "C₅H₁₀",
+        "C₅H₁₂",
+        "C₅H₆"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "d514c18c0a90",
+      "stem": "If an alkyne contains 6 carbon atoms, its formula according to CₙH₂ₙ₋₂ is:",
+      "options": [
+        "C₆H₁₄",
+        "C₆H₁₂",
+        "C₆H₁₀",
+        "C₆H₈"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "3d2cf6c4a280",
+      "stem": "Two compounds have the same molecular formula but different structural formulas. They are:",
+      "options": [
+        "Isotopes",
+        "Allotropes",
+        "Isomers",
+        "Homologues"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "b546685e190f",
+      "stem": "Which pair demonstrates structural isomerism?",
+      "options": [
+        "CH₄ and C₂H₆",
+        "CH₃CH₂OH and CH₃OCH₃",
+        "CH₄ and CH₄",
+        "C₂H₄ and C₂H₆"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "3f59cfa08b21",
+      "stem": "The compounds CH₃CH₂OH and CH₃OCH₃ have:",
+      "options": [
+        "Different molecular formulas and same structure",
+        "Same molecular formula and different structures",
+        "Same molecular formula and same structure",
+        "Different molecular formulas and different structures"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "54721daaf3cb",
+      "stem": "Why can two structural isomers have different properties?",
+      "options": [
+        "They contain different elements",
+        "They have different atomic numbers",
+        "Their atoms are arranged differently",
+        "They always have different molecular masses"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "e83a5691034e",
+      "stem": "Which statement about molecular and structural formulas is correct?",
+      "options": [
+        "Both always show exactly the same information",
+        "Molecular formula shows arrangement of atoms",
+        "Structural formula shows how atoms are connected",
+        "Structural formula gives only the number of atoms"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a96ec63ab2e3",
+      "stem": "The group –OH attached to a carbon chain generally identifies:",
+      "options": [
+        "An amine",
+        "An alcohol",
+        "An aldehyde",
+        "A carboxylic acid"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "41ea234191cb",
+      "stem": "Which compound contains a carboxyl group?",
+      "options": [
+        "CH₃OH",
+        "CH₃CHO",
+        "CH₃COOH",
+        "CH₃NH₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a7e2c9dd554b",
+      "stem": "A compound has the functional group –NH₂. It belongs to the family of:",
+      "options": [
+        "Alcohols",
+        "Amines",
+        "Esters",
+        "Ethers"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "833250605746",
+      "stem": "Which structure represents an ether?",
+      "options": [
+        "R–OH",
+        "R–COOH",
+        "R–O–R′",
+        "R–NH₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9333ab79e1e0",
+      "stem": "Which functional group is characteristic of an aldehyde?",
+      "options": [
+        "–OH",
+        "–COOH",
+        "–CHO",
+        "–NH₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "517bfc4ef021",
+      "stem": "Which compound contains a ketone functional group?",
+      "options": [
+        "CH₃CH₂OH",
+        "CH₃COCH₃",
+        "CH₃COOH",
+        "CH₃CH₂NH₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "89e0a8a17c58",
+      "stem": "The group >C=O occurring between two carbon groups is characteristic of:",
+      "options": [
+        "Ketones",
+        "Alcohols",
+        "Amines",
+        "Ethers"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "1f5dab851112",
+      "stem": "Which compound contains an ester linkage?",
+      "options": [
+        "R–OH",
+        "R–COOH",
+        "R–COO–R′",
+        "R–NH₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "76d79d04c0fc",
+      "stem": "Which functional group is present in ethanoic acid, CH₃COOH?",
+      "options": [
+        "Hydroxyl",
+        "Amino",
+        "Carbonyl only",
+        "Carboxyl"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9970e186127f",
+      "stem": "A compound has the structure CH₃–O–CH₃. Its functional group identifies it as:",
+      "options": [
+        "Ether",
+        "Alcohol",
+        "Aldehyde",
+        "Ketone"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "6ed8d2b3f67f",
+      "stem": "Which pair contains compounds with the same functional group?",
+      "options": [
+        "Ethanol and ethanoic acid",
+        "Ethanol and propanol",
+        "Ethanol and ethanal",
+        "Ethanal and ethanoic acid"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "ca50d05f6635",
+      "stem": "Two compounds belong to the same homologous series. Which property should they normally share?",
+      "options": [
+        "Same molecular mass",
+        "Same number of carbon atoms",
+        "Same general formula and functional group",
+        "Exactly the same physical properties"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "8d08c84ee221",
+      "stem": "Which change occurs when moving from one member to the next in an alkane homologous series?",
+      "options": [
+        "Addition of CH₄",
+        "Addition of CH₂",
+        "Removal of H₂",
+        "Addition of C₂H₄"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "3658316a1e2e",
+      "stem": "A student compares methane, ethane, and propane. Which observation correctly describes them?",
+      "options": [
+        "They have identical molecular formulas",
+        "They belong to different homologous series",
+        "Each successive member differs by CH₂",
+        "They all contain double bonds"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "0c80cc915bdb",
+      "stem": "Which sequence is arranged correctly as consecutive members of the alkane series?",
+      "options": [
+        "CH₄ → C₂H₄ → C₃H₆",
+        "CH₄ → C₂H₆ → C₃H₈",
+        "CH₄ → C₂H₆ → C₃H₆",
+        "CH₄ → C₂H₂ → C₃H₄"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9373728560de",
+      "stem": "Which carbon-containing compound is generally classified as inorganic despite containing carbon?",
+      "options": [
+        "Methane",
+        "Ethanol",
+        "Carbon dioxide",
+        "Glucose"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "cd55987f0abc",
+      "stem": "Which statement gives the more useful definition of organic compounds at this level?",
+      "options": [
+        "All compounds containing carbon",
+        "Only compounds containing hydrogen",
+        "Hydrocarbons and their derivatives",
+        "Only compounds found in living organisms"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "7ffb9606e1ce",
+      "stem": "Which substance is not considered an organic compound?",
+      "options": [
+        "C₂H₅OH",
+        "CH₄",
+        "CO₂",
+        "C₆H₁₂O₆"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "7fc55fa95313",
+      "stem": "A researcher finds a compound containing carbon, hydrogen, and oxygen. Which conclusion is safest?",
+      "options": [
+        "It must be a hydrocarbon",
+        "It cannot be organic",
+        "It may be an organic compound, depending on its structure",
+        "It must be an alkane"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "893cd501509f",
+      "stem": "Which combination correctly matches the compound with its family?",
+      "options": [
+        "CH₃OH — amine",
+        "CH₃COOH — carboxylic acid",
+        "CH₃NH₂ — alcohol",
+        "CH₃OCH₃ — aldehyde"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "b88a2d4897f5",
+      "stem": "An unknown compound has formula C₄H₁₀. Which statement is most appropriate?",
+      "options": [
+        "It can be an alkane",
+        "It must be an alkene",
+        "It must contain a triple bond",
+        "It contains a carboxyl group"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "e89b267e91c9",
+      "stem": "An unknown hydrocarbon has formula C₄H₈ and is described as an open-chain compound. Which classification is most consistent?",
+      "options": [
+        "Alkane",
+        "Alkene",
+        "Alkyne",
+        "Alcohol"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "bfe4fe4b0f85",
+      "stem": "An unknown hydrocarbon has formula C₄H₆ and is an open-chain compound containing one triple bond. It belongs to:",
+      "options": [
+        "Alkanes",
+        "Alkenes",
+        "Alkynes",
+        "Alcohols"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "71195e8e75bc",
+      "stem": "Which sequence correctly represents increasing carbon-chain length within one alkane homologous series?",
+      "options": [
+        "Ethane → methane → propane",
+        "Methane → ethane → propane → butane",
+        "Methane → propane → ethane → butane",
+        "Ethane → propane → methane → pentane"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "ba9448768660",
+      "stem": "A student is given the following compounds:\nP = CH₃CH₂OH\nQ = CH₃OCH₃\nR = CH₃COOH\nS = CH₃CH₂CH₃\nWhich statement is correct?",
+      "options": [
+        "P and Q are functional-group isomers",
+        "P and R have the same functional group",
+        "Q and S belong to the same functional group family",
+        "R is a hydrocarbon"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "0e39eb7358c0",
+      "stem": "A student studies a group of organic compounds: methane (CH₄), ethane (C₂H₆), propane (C₃H₈), and butane (C₄H₁₀). He observes that each compound differs by one carbon atom and shows similar chemical behavior.\n\nIf the student wants to continue the study with the next compound in this exact same group, what should its chemical formula be?",
+      "options": [
+        "C₅H₁₀",
+        "C₄H₁₂",
+        "C₅H₁₂",
+        "C₆H₁₄"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "bdec16c637dc",
+      "stem": "A student studies a group of organic compounds: methane (CH₄), ethane (C₂H₆), propane (C₃H₈), and butane (C₄H₁₀). He observes that each compound differs by one carbon atom and shows similar chemical behavior.\n\nWhat is the common difference between successive members?",
+      "options": [
+        "CH₂ group",
+        "CH₃ group",
+        "C₂H₄ group",
+        "H₂ group"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "5a72d529aea2",
+      "stem": "A student studies a group of organic compounds: methane (CH₄), ethane (C₂H₆), propane (C₃H₈), and butane (C₄H₁₀). He observes that each compound differs by one carbon atom and shows similar chemical behavior.\n\nWhy do these compounds show similar chemical properties?",
+      "options": [
+        "Same molecular mass",
+        "Same functional group",
+        "Same number of atoms",
+        "Same physical state"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "1f0559e58fce",
+      "stem": "A student studies a group of organic compounds: methane (CH₄), ethane (C₂H₆), propane (C₃H₈), and butane (C₄H₁₀). He observes that each compound differs by one carbon atom and shows similar chemical behavior.\n\nWhich property shows a gradual change in a homologous series?",
+      "options": [
+        "Chemical reactivity",
+        "Functional group",
+        "Boiling point",
+        "Type of bonding"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a76487cb664f",
+      "stem": "The labels have fallen off four bottles in the school store. The stock list gives the condensed formula for each bottle. Bottle P is CH₃CH₂OH. Bottle Q is CH₃OCH₃. Bottle R is CH₃COOH. Bottle S is CH₃CHO. The table shows the same formulas.\n\nWhich functional group does bottle R contain?",
+      "options": [
+        "-OH",
+        "-CHO",
+        "-COOH",
+        "-O-"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "62f98c52d40d",
+      "stem": "The labels have fallen off four bottles in the school store. The stock list gives the condensed formula for each bottle. Bottle P is CH₃CH₂OH. Bottle Q is CH₃OCH₃. Bottle R is CH₃COOH. Bottle S is CH₃CHO. The table shows the same formulas.\n\nWhich bottle holds an aldehyde?",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "ee4cff114073",
+      "stem": "The labels have fallen off four bottles in the school store. The stock list gives the condensed formula for each bottle. Bottle P is CH₃CH₂OH. Bottle Q is CH₃OCH₃. Bottle R is CH₃COOH. Bottle S is CH₃CHO. The table shows the same formulas.\n\nCount the atoms in bottles P and Q. What is true about these two compounds?",
+      "options": [
+        "Same atoms, joined in a different way, so they are isomers",
+        "They are the same compound written in two ways",
+        "They are next to each other in a homologous series",
+        "They have different numbers of carbon atoms"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "78f50fecbc39",
+      "stem": "The labels have fallen off four bottles in the school store. The stock list gives the condensed formula for each bottle. Bottle P is CH₃CH₂OH. Bottle Q is CH₃OCH₃. Bottle R is CH₃COOH. Bottle S is CH₃CHO. The table shows the same formulas.\n\nBottles P and Q have the same atoms, but they do not behave the same way. Why?",
+      "options": [
+        "They are kept in different places",
+        "They have different functional groups",
+        "One of them has more oxygen atoms",
+        "They have different molecular masses"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "64122f055d5e",
+      "stem": "A chemistry teacher gives four compounds to a student:\n• P: CH₃–CH₂–CH₃\n• Q: CH₂=CH–CH₃\n• R: CH₃–CH₂–CH₂–CH₃\n• S: CH₃–CH(CH₃)–CH₃\nThe student must identify their structures and relationships. The teacher reminds the class that alkanes have the general formula CₙH₂ₙ₊₂, while compounds containing carbon-carbon multiple bonds are unsaturated.\n\nWhich pair represents compounds belonging to the same homologous series?",
+      "options": [
+        "P and Q",
+        "P and R",
+        "Q and R",
+        "Q and S"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "414fcbc4c852",
+      "stem": "A chemistry teacher gives four compounds to a student:\n• P: CH₃–CH₂–CH₃\n• Q: CH₂=CH–CH₃\n• R: CH₃–CH₂–CH₂–CH₃\n• S: CH₃–CH(CH₃)–CH₃\nThe student must identify their structures and relationships. The teacher reminds the class that alkanes have the general formula CₙH₂ₙ₊₂, while compounds containing carbon-carbon multiple bonds are unsaturated.\n\nWhich statement correctly compares R and S?",
+      "options": [
+        "They have different molecular formulas and are different compounds",
+        "They have the same molecular formula but different structural arrangements",
+        "They belong to different homologous series",
+        "R is unsaturated while S is saturated"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "cfc05079b320",
+      "stem": "A chemistry teacher gives four compounds to a student:\n• P: CH₃–CH₂–CH₃\n• Q: CH₂=CH–CH₃\n• R: CH₃–CH₂–CH₂–CH₃\n• S: CH₃–CH(CH₃)–CH₃\nThe student must identify their structures and relationships. The teacher reminds the class that alkanes have the general formula CₙH₂ₙ₊₂, while compounds containing carbon-carbon multiple bonds are unsaturated.\n\nWhich compound contains a carbon-carbon double bond?",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "9e8d439fa0e7",
+      "stem": "A chemistry teacher gives four compounds to a student:\n• P: CH₃–CH₂–CH₃\n• Q: CH₂=CH–CH₃\n• R: CH₃–CH₂–CH₂–CH₃\n• S: CH₃–CH(CH₃)–CH₃\nThe student must identify their structures and relationships. The teacher reminds the class that alkanes have the general formula CₙH₂ₙ₊₂, while compounds containing carbon-carbon multiple bonds are unsaturated.\n\nIf the next member after R is added to the same alkane homologous series, its molecular formula will be:",
+      "options": [
+        "C₄H₈",
+        "C₅H₁₀",
+        "C₅H₁₂",
+        "C₆H₁₄"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "4e66cb36614c",
+      "stem": "A chemistry teacher gives four compounds to a student:\n• P: CH₃–CH₂–CH₃\n• Q: CH₂=CH–CH₃\n• R: CH₃–CH₂–CH₂–CH₃\n• S: CH₃–CH(CH₃)–CH₃\nThe student must identify their structures and relationships. The teacher reminds the class that alkanes have the general formula CₙH₂ₙ₊₂, while compounds containing carbon-carbon multiple bonds are unsaturated.\n\nWhich conclusion best explains why R and S can have different properties despite having the same molecular formula?",
+      "options": [
+        "Their carbon atoms have different atomic numbers",
+        "Their structural arrangements are different",
+        "They contain different numbers of elements",
+        "One must contain a double bond"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "b2f78ec64cd7",
+      "stem": "A laboratory technician labels four organic compounds:\n• A: CH₃CH₂OH\n• B: CH₃CHO\n• C: CH₃COCH₃\n• D: CH₃COOH\nThe technician asks students to identify each compound from its functional group. In organic compounds, the functional group is the atom or group of atoms responsible for characteristic properties.\n\nWhich compound contains the hydroxyl functional group characteristic of alcohols?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a466d0484a97",
+      "stem": "A laboratory technician labels four organic compounds:\n• A: CH₃CH₂OH\n• B: CH₃CHO\n• C: CH₃COCH₃\n• D: CH₃COOH\nThe technician asks students to identify each compound from its functional group. In organic compounds, the functional group is the atom or group of atoms responsible for characteristic properties.\n\nWhich pair contains compounds having a carbonyl group, but belonging to different functional-group families?",
+      "options": [
+        "A and D",
+        "B and C",
+        "A and B",
+        "C and D"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "a2f50e3cd907",
+      "stem": "A laboratory technician labels four organic compounds:\n• A: CH₃CH₂OH\n• B: CH₃CHO\n• C: CH₃COCH₃\n• D: CH₃COOH\nThe technician asks students to identify each compound from its functional group. In organic compounds, the functional group is the atom or group of atoms responsible for characteristic properties.\n\nWhat distinguishes B from C?",
+      "options": [
+        "B has no oxygen, while C contains oxygen",
+        "B has the carbonyl group at the end of the carbon chain, while C has it between carbon atoms",
+        "B is an alcohol, while C is an acid",
+        "B is saturated, while C is unsaturated"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "82b5a56d2365",
+      "stem": "A laboratory technician labels four organic compounds:\n• A: CH₃CH₂OH\n• B: CH₃CHO\n• C: CH₃COCH₃\n• D: CH₃COOH\nThe technician asks students to identify each compound from its functional group. In organic compounds, the functional group is the atom or group of atoms responsible for characteristic properties.\n\nIf the hydrogen attached to the carboxyl group of D is removed, which part of the molecule has been affected?",
+      "options": [
+        "Amino group",
+        "Hydroxyl group only",
+        "Carboxyl functional group",
+        "Carbon-carbon backbone only"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    },
+    {
+      "id": "d63279c84fe9",
+      "stem": "A laboratory technician labels four organic compounds:\n• A: CH₃CH₂OH\n• B: CH₃CHO\n• C: CH₃COCH₃\n• D: CH₃COOH\nThe technician asks students to identify each compound from its functional group. In organic compounds, the functional group is the atom or group of atoms responsible for characteristic properties.\n\nWhich sequence correctly identifies A, B, C and D respectively?",
+      "options": [
+        "Alcohol, aldehyde, ketone, carboxylic acid",
+        "Alcohol, ketone, aldehyde, carboxylic acid",
+        "Ether, aldehyde, ketone, alcohol",
+        "Alcohol, amine, ketone, ester"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 13,
+      "source_file": "Chem U#13MCQs updated.docx",
+      "mock": true
+    }
+  ]
+}

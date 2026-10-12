@@ -15,6 +15,7 @@ TypeScript, Supabase (Postgres + Auth), Groq for the chatbot, hosted on Vercel.
 | Five subjects | `/subjects` | Physics, Chemistry, Maths, Computer Science, English |
 | New test | `/subjects/<subject>/new-test` | Whole book or chosen chapters, 1–30 questions, Easy / Medium / Hard / Mixed |
 | Take and review a test | `/tests/<id>` | Marked on the server; answers and explanations appear only after submitting |
+| Mock exam | `/mock-exam` | Timed Chemistry paper from the mock pool: chosen chapters, up to 60 MCQs, 15 min–2 hr; hands itself in at 0:00 |
 | Practise weak chapters | Subject page | Builds a test from the chapters the student scores lowest in |
 | Report a question | Test review | Flags a wrong or unclear question for the admin |
 | Friend challenges | `/subjects/<subject>/challenge`, `/challenges/<CODE>` | Invite link or code, lobby, same test on a shared clock, results |
@@ -33,7 +34,7 @@ in `supabase/schema.sql` are reserved for later and unused by the app.
 
 ## The question bank
 
-About 3,970 MCQs are loaded into the `questions` table (Chemistry 1,210, Physics 965, Maths 787,
+About 4,250 MCQs are loaded into the `questions` table (Chemistry 1,490, Physics 965, Maths 787,
 Computer Science 541, English 468). Their source files are in `content/mcq-bank/`. Each
 question records in its file where its answer came from:
 
@@ -43,6 +44,15 @@ question records in its file where its answer came from:
 | `computed`: numerical variants recalculated by script | about 920 | Calculated, not reviewed |
 | `derived`: no key in the file, so AI worked the answer out | about 970 | **No** |
 | `authored`: questions written by AI (all of English, plus variants) | about 1,070 | **No** |
+
+**Mock pool.** `content/mcq-bank/mock/` holds the newer Chemistry set (681 MCQs, chapters 1, 2,
+3, 4, 6, 8, 9, 13 and 14). These rows are flagged `mock` in the database: mock exams use only
+them, and normal tests use them too. 399 of them are word for word questions already in the
+bank, so those rows were flagged rather than copied; the rest were added. Chapter 9's first 64
+answers come from the file's key; the other answers were worked out by AI and then checked
+against the older bank wherever the same question appears there (they all agreed). To add
+chapters to mock exams, put their questions in `mock/` and load them with
+`node scripts/load-mcq-bank.mjs --sql --only=mock`, which adds rows and deletes nothing.
 
 So roughly half the bank still needs a human check before it can be trusted. List the
 AI-derived ones with `node scripts/check-bank.mjs --derived --sample=50`. The answer source
@@ -72,8 +82,8 @@ With no Supabase settings the app opens in demo mode with sample data.
 
 1. Create a Supabase project and run, in the SQL editor, in this order: `supabase/schema.sql`,
    `challenges.sql`, `usernames.sql`, `engagement.sql`, `support.sql` (then add yourself to
-   `app_admins`, as the top of the file explains), `players.sql`, `security.sql` and its
-   LOCKDOWN section last.
+   `app_admins`, as the top of the file explains), `players.sql`, `security.sql`, `mock.sql`,
+   and the LOCKDOWN section of `security.sql` last.
 2. Copy `.env.local.example` to `.env.local` and fill in `NEXT_PUBLIC_SUPABASE_URL`,
    `NEXT_PUBLIC_SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY`.
 3. `npm run seed` for the subjects and chapters, then `node scripts/load-mcq-bank.mjs` for the
@@ -95,6 +105,11 @@ migrations against the project.
   student's last five tests, with questions and options shuffled. The browser gets the
   questions without answers; `submit_test` marks them, saves the score and only then returns
   the answers. No AI is involved, so tests cost nothing to run.
+- **Mock exams** are rows in `tests` with `kind = 'mock'` (`supabase/mock.sql`): `create_mock`
+  draws up to 60 questions from the mock pool and stores a deadline; `submit_test` marks a mock
+  that arrives more than two minutes after its deadline as blank, so the clock can't be dodged
+  by leaving the page. The runner saves picks on the device as they're made and hands the
+  paper in at 0:00. Mocks count towards XP, streaks and progress like any test.
 - **Challenges, reports, tickets, XP and the leaderboard** go through security-definer
   functions in `supabase/*.sql`; students can't read or write those tables directly.
 - **Chatbot**: `POST /api/ai/chat` and `POST /api/ai/ping` (`app/api/ai/`, `lib/ai/`). They need

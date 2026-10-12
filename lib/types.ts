@@ -8,6 +8,7 @@ export type Screen =
   | "testReview" // read-only review of a submitted test
   | "newChallenge" // set up a challenge against friends
   | "challengeRoom" // lobby → shared-clock test → leaderboard
+  | "mockExam" // set up a timed mock exam + past mocks (taken in testRun)
   | "progress"
   | "leaderboard" // global XP leaderboard + streaks
   | "support" // Help & Feedback: the student's tickets + a new one
@@ -48,8 +49,10 @@ export interface AppState {
   // Live curriculum navigation (set when browsing real DB content).
   selectedSubjectId: string | null;
   selectedSubjectName: string | null;
-  // The test being taken or reviewed.
+  // The test being taken or reviewed, and whether it is a mock exam (set by
+  // the runner once it has loaded, so the menu and chat know).
   activeTestId: string | null;
+  activeTestKind: "test" | "mock" | null;
   // The friend challenge being joined, played or reviewed (its invite code).
   activeChallengeCode: string | null;
   // True when the server has a shared GROQ_API_KEY, so nobody has to supply

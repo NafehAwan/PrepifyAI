@@ -31,7 +31,7 @@ const chapters = readBank(bankDir);
 const problems = [];
 const all = [];
 for (const b of chapters) {
-  const seen = new Set();
+  const seen = new Map(); // question text -> kind
   for (const q of b.questions) {
     const where = `${q.kind === "original" ? "" : q.kind + "/"}${q.file}`;
     all.push({ file: where, subject: b.subject, q });
@@ -40,8 +40,12 @@ for (const b of chapters) {
     if (new Set(q.options).size !== q.options.length) problems.push(`${where}: repeated option — ${q.stem.slice(0, 50)}`);
     if (q.answer !== null && (q.answer < 0 || q.answer > 3 || !"ABCD"[q.answer])) problems.push(`${where}: answer ${q.answer} out of range`);
     const key = questionKey(q.stem, q.options);
-    if (seen.has(key)) problems.push(`${where}: duplicate question — ${q.stem.slice(0, 50)}`);
-    seen.add(key);
+    // The mock pool may repeat a bank question word for word: the loader keeps
+    // one row and flags it mock. Any other repeat is a mistake.
+    if (seen.has(key) && !(q.kind === "mock" && seen.get(key) !== "mock")) {
+      problems.push(`${where}: duplicate question — ${q.stem.slice(0, 50)}`);
+    }
+    if (!seen.has(key)) seen.set(key, q.kind);
   }
 }
 

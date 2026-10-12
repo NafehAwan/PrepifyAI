@@ -1,0 +1,1463 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "0f12ed3747a7",
+      "stem": "A student places water in a sealed flask. After some time, the water level remains unchanged although evaporation continues. This is because:",
+      "options": [
+        "Evaporation has stopped",
+        "Condensation has stopped",
+        "Evaporation and condensation occur at equal rates",
+        "Water molecules stop moving"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "f680f9a0d219"
+    },
+    {
+      "id": "acec02379a3d",
+      "stem": "A chemist observes that the concentration of reactants and products remain constant for several hours. Which conclusion is correct?",
+      "options": [
+        "The reaction has stopped",
+        "The reaction is irreversible",
+        "The system has reached equilibrium",
+        "All reactants are consumed"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "5282434008ab"
+    },
+    {
+      "id": "807e2d23efcd",
+      "stem": "In a closed vessel, nitrogen and hydrogen react to form ammonia. Initially, ammonia forms rapidly. After some time, the rate of ammonia formation decreases because:",
+      "options": [
+        "Reverse reaction begins to occur",
+        "Catalyst is consumed",
+        "Temperature decreases automatically",
+        "Pressure becomes zero"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "18e061bcf591"
+    },
+    {
+      "id": "e9d0bc6acae9",
+      "stem": "A student claims that no reaction occurs at equilibrium because concentrations remain constant. Why is the statement incorrect?",
+      "options": [
+        "Concentrations are not constant",
+        "Only reverse reaction occurs",
+        "Both forward and reverse reactions continue at equal rates",
+        "Products disappear completely"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "321770fcf098"
+    },
+    {
+      "id": "0b4658484fe5",
+      "stem": "Hydrated copper(II) sulphate crystals are heated until they become white. This colour change indicates:",
+      "options": [
+        "Formation of copper metal",
+        "Removal of water molecules",
+        "Addition of oxygen",
+        "Formation of a new element"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "0980a98b7ef7"
+    },
+    {
+      "id": "80927abfc811",
+      "stem": "A white sample of anhydrous copper(II) sulphate turns blue after exposure to moist air. This demonstrates:",
+      "options": [
+        "Dehydration",
+        "Oxidation",
+        "Reversible hydration",
+        "Neutralization"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "9be398229eea"
+    },
+    {
+      "id": "9dbc84eb60fa",
+      "stem": "A pink cobalt(II) chloride sample is heated and becomes blue. The heating process favors:",
+      "options": [
+        "Hydration",
+        "Dehydration",
+        "Condensation",
+        "Dissolution"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "3da85d8027e4"
+    },
+    {
+      "id": "323080445799",
+      "stem": "A sealed container contains liquid water and water vapour at equilibrium. If some vapour is removed, the system will:",
+      "options": [
+        "Remain unchanged",
+        "Produce more vapour through evaporation",
+        "Stop evaporating",
+        "Freeze immediately"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "3de082adebf7"
+    },
+    {
+      "id": "e73783f252ce",
+      "stem": "In an equilibrium system, a student observes millions of molecules reacting every second. This observation supports the concept of:",
+      "options": [
+        "Static equilibrium",
+        "Dynamic equilibrium",
+        "Irreversible change",
+        "Chemical inactivity"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "e625043830d3"
+    },
+    {
+      "id": "1ef5b871cca0",
+      "stem": "A reaction mixture at equilibrium contains 40% reactants and 60% products. Which statement is correct?",
+      "options": [
+        "Forward rate is greater than reverse rate",
+        "Reverse rate is greater than forward rate",
+        "Rates of both reactions are equal",
+        "Reaction has stopped"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "a298037f183a"
+    },
+    {
+      "id": "d8096764bd88",
+      "stem": "A student increases the temperature of an equilibrium system involving dehydration of hydrated copper sulphate. The equilibrium shifts toward:",
+      "options": [
+        "Hydrated salt",
+        "Water formation only",
+        "Anhydrous salt formation",
+        "No change"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "9da52cffcb18"
+    },
+    {
+      "id": "a2038cae9dcd",
+      "stem": "Why is a closed system necessary for establishing equilibrium?",
+      "options": [
+        "To prevent catalyst loss",
+        "To maintain colour changes",
+        "To prevent escape of reactants or products",
+        "To increase reaction speed only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "1178c4659b26"
+    },
+    {
+      "id": "0c73fa6f0948",
+      "stem": "A reaction reaches equilibrium after 30 minutes. After another hour, concentrations remain unchanged. This means:",
+      "options": [
+        "No molecules react anymore",
+        "Forward and reverse reactions continue equally",
+        "Products have disappeared",
+        "Temperature is increasing continuously"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "93bfd5ef3121"
+    },
+    {
+      "id": "3da53a37a220",
+      "stem": "A student notices that opening the lid of a bottle containing an equilibrium mixture disturbs the equilibrium because:",
+      "options": [
+        "The system is no longer closed",
+        "Temperature becomes zero",
+        "Molecules stop moving",
+        "Reverse reaction becomes impossible"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "c0549c12513a"
+    },
+    {
+      "id": "29eb80ad5f77",
+      "stem": "A sample of hydrated cobalt chloride is left in a dry environment and gradually turns blue. This happens because:",
+      "options": [
+        "It absorbs water",
+        "It loses water molecules",
+        "It forms cobalt metal",
+        "It reacts with oxygen only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "7414cac8e072"
+    },
+    {
+      "id": "9de1f988262a",
+      "stem": "Which observation best indicates equilibrium has been reached?",
+      "options": [
+        "Reactants disappear completely",
+        "Product concentration becomes zero",
+        "Measurable properties remain constant with time",
+        "Colour changes continuously"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "250ede59f20b"
+    },
+    {
+      "id": "c1eda641ada3",
+      "stem": "In a reversible reaction, the forward reaction rate initially decreases because:",
+      "options": [
+        "Product concentration increases",
+        "Catalyst is destroyed",
+        "Temperature becomes zero",
+        "Molecules stop colliding"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "2f1d03704789"
+    },
+    {
+      "id": "997d7e59ba8b",
+      "stem": "A student says equilibrium means equal amounts of reactants and products. The correct explanation is:",
+      "options": [
+        "Always true",
+        "True only in physical changes",
+        "Equilibrium requires equal rates, not necessarily equal amounts",
+        "Reactants must be absent"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "b04ba1339873"
+    },
+    {
+      "id": "1e9bb4e043d1",
+      "stem": "When water vapour condenses inside a sealed flask, the process represents:",
+      "options": [
+        "Forward reaction only",
+        "Reverse process of evaporation",
+        "Decomposition reaction",
+        "Neutralization"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "61dd7e76adbd"
+    },
+    {
+      "id": "e4ab3a45e3d7",
+      "stem": "The blue colour of hydrated copper sulphate reappears when:",
+      "options": [
+        "Water is added to the white anhydrous salt",
+        "The salt is heated strongly",
+        "Oxygen is removed",
+        "Copper is extracted"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "6b1db0a43f39"
+    },
+    {
+      "id": "27b174924ddc",
+      "stem": "Which situation best represents dynamic equilibrium?",
+      "options": [
+        "A stopped pendulum",
+        "Water continuously evaporating from an open dish",
+        "Liquid water and vapour in a sealed bottle",
+        "A burnt matchstick"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "0ad0951ee82d"
+    },
+    {
+      "id": "b013bb461a22",
+      "stem": "In a reaction at equilibrium, increasing the concentration of a reactant generally:",
+      "options": [
+        "Disturbs equilibrium",
+        "Stops both reactions",
+        "Makes the reaction irreversible",
+        "Removes products instantly"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "fc613f252475"
+    },
+    {
+      "id": "7313049f3e0a",
+      "stem": "A scientist records equal forward and reverse reaction rates. The system must:",
+      "options": [
+        "Be at equilibrium",
+        "Have no products present",
+        "Be irreversible",
+        "Have stopped reacting"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "b34c90304d4a"
+    },
+    {
+      "id": "b626420e161a",
+      "stem": "A reversible reaction reaches equilibrium faster when:",
+      "options": [
+        "Molecules collide more effectively",
+        "Container is opened",
+        "Products are removed continuously",
+        "Reactants are absent"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "11093b2d0042"
+    },
+    {
+      "id": "7e0f11d295a5",
+      "stem": "Which change clearly demonstrates a reversible reaction?",
+      "options": [
+        "Burning magnesium ribbon",
+        "Hydration and dehydration of copper sulphate",
+        "Rusting iron",
+        "Digestion of food"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "c30622fc45b1"
+    },
+    {
+      "id": "0baee2aa34cc",
+      "stem": "A student heats hydrated cobalt chloride and observes a colour change. Which evidence suggests equilibrium has shifted?",
+      "options": [
+        "Change in mass only",
+        "Change in colour only",
+        "Formation of a new element",
+        "Explosion occurs"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "59320645da40"
+    },
+    {
+      "id": "8c4e3f319341",
+      "stem": "A student heats blue hydrated copper sulphate repeatedly and then adds water. The colour alternates between blue and white. This demonstrates:",
+      "options": [
+        "Irreversible change",
+        "Reversible change",
+        "Oxidation only",
+        "Reduction only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "fc0333acd62d"
+    },
+    {
+      "id": "bf61d2e75978",
+      "stem": "A reaction is at equilibrium. Suddenly the forward rate becomes greater than the reverse rate. This means:",
+      "options": [
+        "Equilibrium is disturbed",
+        "Equilibrium remains unchanged",
+        "Reaction has stopped",
+        "Reverse reaction disappeared permanently"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "95b85680362a"
+    },
+    {
+      "id": "fabc33860eb2",
+      "stem": "A reaction vessel at equilibrium is shaken thoroughly. Assuming no temperature change, equilibrium:",
+      "options": [
+        "Is permanently destroyed",
+        "Remains established",
+        "Becomes irreversible",
+        "Eliminates products"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "263d30f22a29"
+    },
+    {
+      "id": "7244b71fdb22",
+      "stem": "The strongest evidence for dynamic equilibrium is that:",
+      "options": [
+        "Reactants disappear completely",
+        "Products stop forming",
+        "Opposing reactions continue at equal rates",
+        "The container becomes empty"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "636bba8b002d"
+    },
+    {
+      "id": "ffae2e7c6c77",
+      "stem": "A reaction in which products can reform the original reactants is called:",
+      "options": [
+        "Combination reaction",
+        "Irreversible reaction",
+        "Reversible reaction",
+        "Decomposition reaction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "52d0b6d59097"
+    },
+    {
+      "id": "dc2af6ec2751",
+      "stem": "Which symbol is used to represent a reversible reaction?",
+      "options": [
+        "→",
+        "←",
+        "⇌",
+        "="
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "dd38c2e7f302"
+    },
+    {
+      "id": "772a1e8f07a6",
+      "stem": "In a reversible reaction, the reaction proceeds:",
+      "options": [
+        "Only in forward direction",
+        "Only in reverse direction",
+        "In both forward and reverse directions",
+        "In neither direction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "69d7962a0e1a"
+    },
+    {
+      "id": "c1376b55b615",
+      "stem": "Chemical equilibrium is achieved when:",
+      "options": [
+        "Reactants are completely consumed",
+        "Products stop forming",
+        "Forward and reverse reaction rates become equal",
+        "Reaction stops completely"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "313d9005e76a"
+    },
+    {
+      "id": "3113332923b7",
+      "stem": "Chemical equilibrium can be established only in:",
+      "options": [
+        "Open system",
+        "Closed system",
+        "Isolated system only",
+        "Any container"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "76cd5e802029"
+    },
+    {
+      "id": "1425d9149640",
+      "stem": "In a closed container, liquid and vapour reach equilibrium when:",
+      "options": [
+        "Evaporation stops",
+        "Condensation stops",
+        "Evaporation and condensation occur at equal rates",
+        "All liquid evaporates"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "993d2a22e002"
+    },
+    {
+      "id": "f5c3c2cfe165",
+      "stem": "At equilibrium, the concentration of reactants and products:",
+      "options": [
+        "Continually increases",
+        "Continually decreases",
+        "Remains constant",
+        "Becomes zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "3d0fa1e83f60"
+    },
+    {
+      "id": "2b468e562214",
+      "stem": "Which reaction is an example of a reversible reaction?",
+      "options": [
+        "Burning of paper",
+        "Rusting of iron",
+        "N₂ + 3H₂ ⇌ 2NH₃",
+        "Explosion of firecrackers"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "56bce61a84c3"
+    },
+    {
+      "id": "55eed4256233",
+      "stem": "The conversion of reactants into products is called:",
+      "options": [
+        "Reverse reaction",
+        "Forward reaction",
+        "Neutralization",
+        "Condensation"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "4b96ba4d3a30"
+    },
+    {
+      "id": "533f29819e3e",
+      "stem": "The conversion of products back into reactants is called:",
+      "options": [
+        "Forward reaction",
+        "Combination reaction",
+        "Reverse reaction",
+        "Oxidation reaction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "e9ffaffd4aa1"
+    },
+    {
+      "id": "c5eaa21afd2d",
+      "stem": "At the beginning of a reversible reaction, the reverse reaction rate is often:",
+      "options": [
+        "Maximum",
+        "Equal to forward rate",
+        "Zero",
+        "Constant"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "48799ea0bc6f"
+    },
+    {
+      "id": "9c4b81dfb193",
+      "stem": "In the reaction 2SO₂ + O₂ ⇌ 2SO₃, SO₃ acts as:",
+      "options": [
+        "Reactant in forward reaction",
+        "Product in forward reaction",
+        "Catalyst",
+        "Solvent"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "859adaf84b68"
+    },
+    {
+      "id": "cc0d9d6bbf71",
+      "stem": "Dynamic equilibrium means:",
+      "options": [
+        "Reaction stops completely",
+        "Only forward reaction continues",
+        "Both reactions continue at equal rates",
+        "Only reverse reaction continues"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "424e9cedc13f"
+    },
+    {
+      "id": "c4c8bc7039cc",
+      "stem": "Which condition is necessary for equilibrium?",
+      "options": [
+        "Constant temperature",
+        "Constant concentration",
+        "Constant pressure or volume",
+        "All of these"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "7fae18741867"
+    },
+    {
+      "id": "76c9ad9bb63e",
+      "stem": "If temperature changes, equilibrium may:",
+      "options": [
+        "Remain unaffected",
+        "Shift to a new position",
+        "Stop permanently",
+        "Become irreversible"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "73edd804a8fb"
+    },
+    {
+      "id": "a4c118854bda",
+      "stem": "When hydrated copper(II) sulphate is heated, its colour changes from:",
+      "options": [
+        "White to blue",
+        "Pink to blue",
+        "Blue to white",
+        "Blue to pink"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "14c81b10d8ca"
+    },
+    {
+      "id": "0f5bcc11cffd",
+      "stem": "Hydrated copper(II) sulphate is:",
+      "options": [
+        "White solid",
+        "Blue solid",
+        "Pink solid",
+        "Green solid"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "bda152ed0839"
+    },
+    {
+      "id": "d4534b9ce38e",
+      "stem": "Anhydrous copper(II) sulphate is:",
+      "options": [
+        "Blue solid",
+        "Green solid",
+        "White solid",
+        "Pink solid"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "ac736ee45131"
+    },
+    {
+      "id": "f333ea93087e",
+      "stem": "Adding water to anhydrous copper(II) sulphate causes it to become:",
+      "options": [
+        "Black",
+        "White",
+        "Green",
+        "Blue"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "3c8a61bfe167"
+    },
+    {
+      "id": "45d2187d9d54",
+      "stem": "Heating hydrated copper(II) sulphate removes:",
+      "options": [
+        "Sulphur dioxide",
+        "Oxygen",
+        "Water of crystallization",
+        "Copper ions"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "1dcdaad6c607"
+    },
+    {
+      "id": "5cc66e11e45f",
+      "stem": "Hydrated cobalt(II) chloride is:",
+      "options": [
+        "Blue solid",
+        "Pink solid",
+        "White solid",
+        "Yellow solid"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "3048a70470fb"
+    },
+    {
+      "id": "be130f22fae0",
+      "stem": "Anhydrous cobalt(II) chloride is:",
+      "options": [
+        "Pink solid",
+        "Blue solid",
+        "Green solid",
+        "White solid"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "1a7e13ce5e76"
+    },
+    {
+      "id": "dc0a513a0f11",
+      "stem": "When hydrated cobalt(II) chloride is heated, it:",
+      "options": [
+        "Turns pink",
+        "Turns blue",
+        "Turns green",
+        "Melts"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "a3de346ecc97"
+    },
+    {
+      "id": "b9d8f63473e6",
+      "stem": "For the change CoCl₂·6H₂O ⇌ CoCl₂ + 6H₂O, adding water to anhydrous cobalt(II) chloride shifts the equilibrium:",
+      "options": [
+        "To the right",
+        "To the left",
+        "Upward",
+        "Downward"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "a6b546869678",
+      "stem": "Which reaction is favored when temperature increases?",
+      "options": [
+        "Exothermic reaction",
+        "Endothermic reaction",
+        "Neutralization reaction",
+        "Combustion reaction"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "c4d560bb66ce"
+    },
+    {
+      "id": "6ad406da1be3",
+      "stem": "At equilibrium, the amount of reactants:",
+      "options": [
+        "Continuously decreases",
+        "Continuously increases",
+        "Remains constant",
+        "Becomes zero"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "b61a748c45b7"
+    },
+    {
+      "id": "eb82090ffe24",
+      "stem": "Which statement is true at equilibrium?",
+      "options": [
+        "No molecules react",
+        "Only products are present",
+        "Reaction rates are equal",
+        "Reactants disappear completely"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "11f621f8d1da"
+    },
+    {
+      "id": "e2d381d7eae9",
+      "stem": "A reaction that goes to completion is called:",
+      "options": [
+        "Reversible reaction",
+        "Equilibrium reaction",
+        "Irreversible reaction",
+        "Dynamic reaction"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "d4168272b1f5"
+    },
+    {
+      "id": "1f253ba4a818",
+      "stem": "Equilibrium can be achieved when:",
+      "options": [
+        "Only reactants are placed in a closed container",
+        "Only products are placed in a closed container",
+        "Reactants and products are placed together",
+        "Any of these situations"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "11cc4c00c0cb"
+    },
+    {
+      "id": "d98ddf766855",
+      "stem": "Which process occurs simultaneously in a reversible reaction?",
+      "options": [
+        "Melting and freezing",
+        "Forward and reverse reactions",
+        "Oxidation only",
+        "Reduction only"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "4d7bbfc341f1"
+    },
+    {
+      "id": "015e7980740f",
+      "stem": "Sulphur trioxide can decompose into:",
+      "options": [
+        "SO₂ and O₂",
+        "S and O₂",
+        "SO₂ only",
+        "SO₄ only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "6282c4f35524"
+    },
+    {
+      "id": "8599859a4176",
+      "stem": "Which of the following is NOT true for equilibrium?",
+      "options": [
+        "Forward rate equals reverse rate",
+        "Concentrations remain constant",
+        "Reaction stops completely",
+        "Dynamic condition exists"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "6b092ee2bcf4"
+    },
+    {
+      "id": "d89ac934bd40",
+      "stem": "If the evaporation rate becomes equal to the condensation rate, the system is:",
+      "options": [
+        "Melting",
+        "Boiling",
+        "At equilibrium",
+        "Freezing"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "7f2bbe2112e9"
+    },
+    {
+      "id": "c717016d625d",
+      "stem": "Equilibrium is established in an irreversible reaction:",
+      "options": [
+        "Quickly",
+        "Slowly",
+        "Never",
+        "At high temperature only"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true,
+      "family": "949ef77c5a5a"
+    },
+    {
+      "id": "ed9c284205e7",
+      "stem": "Hina's teacher sets up two sealed flasks at the same temperature. Flask A starts with only hydrogen gas (H₂) and iodine gas (I₂). Flask B starts with only hydrogen iodide gas (HI). The reaction is reversible: H₂ + I₂ ⇌ 2HI. The diagram shows what each flask holds at the start.\n\nAt the very start, which reaction takes place in flask A?",
+      "options": [
+        "Only the reverse reaction",
+        "Only the forward reaction",
+        "Both reactions at the same rate",
+        "No reaction at all"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "10d2aa6ede21",
+      "stem": "Hina's teacher sets up two sealed flasks at the same temperature. Flask A starts with only hydrogen gas (H₂) and iodine gas (I₂). Flask B starts with only hydrogen iodide gas (HI). The reaction is reversible: H₂ + I₂ ⇌ 2HI. The diagram shows what each flask holds at the start.\n\nAs time passes in flask A, what happens to the speed of the forward reaction?",
+      "options": [
+        "It gets faster",
+        "It stays the same",
+        "It slows down",
+        "It stops at once"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "beda618e60ef",
+      "stem": "Hina's teacher sets up two sealed flasks at the same temperature. Flask A starts with only hydrogen gas (H₂) and iodine gas (I₂). Flask B starts with only hydrogen iodide gas (HI). The reaction is reversible: H₂ + I₂ ⇌ 2HI. The diagram shows what each flask holds at the start.\n\nFlask A reaches equilibrium. Which statement is true now?",
+      "options": [
+        "Both reactions have stopped",
+        "Only HI is left in the flask",
+        "The forward reaction is faster than the reverse reaction",
+        "Both reactions go on at the same rate"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "126fab35b9e4",
+      "stem": "Hina's teacher sets up two sealed flasks at the same temperature. Flask A starts with only hydrogen gas (H₂) and iodine gas (I₂). Flask B starts with only hydrogen iodide gas (HI). The reaction is reversible: H₂ + I₂ ⇌ 2HI. The diagram shows what each flask holds at the start.\n\nFlask B started with only HI. What will it hold after a long time?",
+      "options": [
+        "A mixture of H₂, I₂ and HI",
+        "Only HI, because no H₂ or I₂ was added",
+        "Only H₂ and I₂",
+        "Nothing, because all the gas breaks down"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e69742b5c88a",
+      "stem": "Bilal buys a cold bottle of soft drink. At the factory, carbon dioxide gas was forced into the drink under pressure. Then the bottle was sealed. The sealed bottle shows no bubbles. When Bilal opens the lid, bubbles of carbon dioxide rise quickly. He closes the lid again. After a while, the bubbles stop. The change is: CO₂(g) ⇌ CO₂(aq).\n\nWhat does the double arrow in the change show?",
+      "options": [
+        "The change is reversible",
+        "The change is complete",
+        "The gas is very light",
+        "Only the forward change happens"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e1308a844c78",
+      "stem": "Bilal buys a cold bottle of soft drink. At the factory, carbon dioxide gas was forced into the drink under pressure. Then the bottle was sealed. The sealed bottle shows no bubbles. When Bilal opens the lid, bubbles of carbon dioxide rise quickly. He closes the lid again. After a while, the bubbles stop. The change is: CO₂(g) ⇌ CO₂(aq).\n\nInside the sealed bottle, no bubbles are seen. What is happening?",
+      "options": [
+        "The carbon dioxide has stopped moving",
+        "All the carbon dioxide has left the drink",
+        "Carbon dioxide dissolves and comes out at the same rate",
+        "Only the reverse change is happening"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e8bd51e6df15",
+      "stem": "Bilal buys a cold bottle of soft drink. At the factory, carbon dioxide gas was forced into the drink under pressure. Then the bottle was sealed. The sealed bottle shows no bubbles. When Bilal opens the lid, bubbles of carbon dioxide rise quickly. He closes the lid again. After a while, the bubbles stop. The change is: CO₂(g) ⇌ CO₂(aq).\n\nWhen Bilal opens the lid, which change is favoured?",
+      "options": [
+        "CO₂(g) → CO₂(aq)",
+        "CO₂(aq) → CO₂(g)",
+        "Both changes at the same rate",
+        "Neither change"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "193825656418",
+      "stem": "Bilal buys a cold bottle of soft drink. At the factory, carbon dioxide gas was forced into the drink under pressure. Then the bottle was sealed. The sealed bottle shows no bubbles. When Bilal opens the lid, bubbles of carbon dioxide rise quickly. He closes the lid again. After a while, the bubbles stop. The change is: CO₂(g) ⇌ CO₂(aq).\n\nWhy do the bubbles stop after Bilal closes the lid again?",
+      "options": [
+        "All the carbon dioxide has gone from the drink",
+        "Closing the lid makes the drink hotter",
+        "The forward change stops for ever",
+        "The bottle is closed again, so the two changes reach the same rate"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "692dede8c3c8",
+      "stem": "A student places N₂O₄(g) in a closed container. The colourless gas undergoes the reversible reaction N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colourless, while NO₂ is brown. Initially, the container is almost colourless. With time, the brown colour becomes stronger and eventually remains constant. However, at the molecular level, both the forward and reverse reactions continue.\n\nWhen the brown colour becomes constant, the system has reached:",
+      "options": [
+        "Complete reaction",
+        "Static equilibrium",
+        "Dynamic equilibrium",
+        "Chemical decomposition"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1e33e11a942c",
+      "stem": "A student places N₂O₄(g) in a closed container. The colourless gas undergoes the reversible reaction N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colourless, while NO₂ is brown. Initially, the container is almost colourless. With time, the brown colour becomes stronger and eventually remains constant. However, at the molecular level, both the forward and reverse reactions continue.\n\nAt equilibrium, which statement is correct?",
+      "options": [
+        "The forward reaction has stopped",
+        "The reverse reaction has stopped",
+        "The concentrations of N₂O₄ and NO₂ become equal",
+        "The rates of the forward and reverse reactions become equal"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "01cba83b710a",
+      "stem": "A student places N₂O₄(g) in a closed container. The colourless gas undergoes the reversible reaction N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colourless, while NO₂ is brown. Initially, the container is almost colourless. With time, the brown colour becomes stronger and eventually remains constant. However, at the molecular level, both the forward and reverse reactions continue.\n\nWhy must the container be closed for equilibrium to be established?",
+      "options": [
+        "A closed container increases the temperature",
+        "Reactants and products cannot escape from the system",
+        "It prevents the reaction from becoming reversible",
+        "It makes the reaction exothermic"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "b6195c682030",
+      "stem": "A student places N₂O₄(g) in a closed container. The colourless gas undergoes the reversible reaction N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colourless, while NO₂ is brown. Initially, the container is almost colourless. With time, the brown colour becomes stronger and eventually remains constant. However, at the molecular level, both the forward and reverse reactions continue.\n\nA student observes that the concentration of NO₂ remains constant after equilibrium is reached. What does this actually mean?",
+      "options": [
+        "NO₂ molecules are no longer reacting",
+        "NO₂ has completely replaced N₂O₄",
+        "NO₂ is still being formed and consumed at equal rates",
+        "The reverse reaction has become faster than the forward reaction"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "248ac650a645",
+      "stem": "A student places N₂O₄(g) in a closed container. The colourless gas undergoes the reversible reaction N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colourless, while NO₂ is brown. Initially, the container is almost colourless. With time, the brown colour becomes stronger and eventually remains constant. However, at the molecular level, both the forward and reverse reactions continue.\n\nIf the forward reaction rate is 0.40 mol dm⁻³ s⁻¹ at equilibrium, the reverse reaction rate will be:",
+      "options": [
+        "0 mol dm⁻³ s⁻¹",
+        "0.20 mol dm⁻³ s⁻¹",
+        "0.40 mol dm⁻³ s⁻¹",
+        "0.80 mol dm⁻³ s⁻¹"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "20687781ddb6",
+      "stem": "In a closed vessel, hydrogen gas reacts reversibly with iodine vapour: H₂(g) + I₂(g) ⇌ 2HI(g). After some time, the system reaches equilibrium. At equilibrium, [H₂] = 0.20 mol dm⁻³, [I₂] = 0.10 mol dm⁻³ and [HI] = 0.40 mol dm⁻³.\n\nWhich expression correctly represents Kc for this reaction?",
+      "options": [
+        "Kc = [H₂][I₂] / [HI]²",
+        "Kc = [HI]² / [H₂][I₂]",
+        "Kc = [HI] / [H₂][I₂]",
+        "Kc = [H₂][I₂][HI]²"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "a75401acdd19",
+      "stem": "In a closed vessel, hydrogen gas reacts reversibly with iodine vapour: H₂(g) + I₂(g) ⇌ 2HI(g). After some time, the system reaches equilibrium. At equilibrium, [H₂] = 0.20 mol dm⁻³, [I₂] = 0.10 mol dm⁻³ and [HI] = 0.40 mol dm⁻³.\n\nUsing the given equilibrium concentrations, the value of Kc is:",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "2db4b4937e73",
+      "stem": "In a closed vessel, hydrogen gas reacts reversibly with iodine vapour: H₂(g) + I₂(g) ⇌ 2HI(g). After some time, the system reaches equilibrium. At equilibrium, [H₂] = 0.20 mol dm⁻³, [I₂] = 0.10 mol dm⁻³ and [HI] = 0.40 mol dm⁻³.\n\nWhy is the concentration of HI squared in the equilibrium expression?",
+      "options": [
+        "Because HI is a gas",
+        "Because HI is a product",
+        "Because its coefficient in the balanced equation is 2",
+        "Because its concentration is greater than H₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ff0cd6118484",
+      "stem": "In a closed vessel, hydrogen gas reacts reversibly with iodine vapour: H₂(g) + I₂(g) ⇌ 2HI(g). After some time, the system reaches equilibrium. At equilibrium, [H₂] = 0.20 mol dm⁻³, [I₂] = 0.10 mol dm⁻³ and [HI] = 0.40 mol dm⁻³.\n\nIf the concentration of HI increases while the concentrations of H₂ and I₂ remain unchanged, the calculated reaction quotient using the same expression will:",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Become zero",
+        "Remain exactly the same"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "387706549956",
+      "stem": "In a closed vessel, hydrogen gas reacts reversibly with iodine vapour: H₂(g) + I₂(g) ⇌ 2HI(g). After some time, the system reaches equilibrium. At equilibrium, [H₂] = 0.20 mol dm⁻³, [I₂] = 0.10 mol dm⁻³ and [HI] = 0.40 mol dm⁻³.\n\nWhich change would directly prevent this system from maintaining the same equilibrium conditions?",
+      "options": [
+        "Keeping the vessel closed",
+        "Allowing one of the gaseous substances to escape",
+        "Allowing forward and reverse reactions to continue",
+        "Keeping the temperature constant"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Chem U#9 MCQs.docx",
+      "mock": true
+    }
+  ]
+}

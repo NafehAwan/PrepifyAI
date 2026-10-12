@@ -1,0 +1,1162 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 14,
+  "questions": [
+    {
+      "id": "9b247da47370",
+      "stem": "A hydrocarbon has the molecular formula C₇H₁₆. Which conclusion is correct?",
+      "options": [
+        "It is an alkene",
+        "It is an alkyne",
+        "It is an alkane",
+        "It contains a double bond"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1a0a4e737623",
+      "stem": "A student is given C₆H₁₄. The number of hydrogen atoms required by the alkane general formula is:",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "3f92fa65e708",
+      "stem": "Which pair represents two consecutive members of the alkane homologous series?",
+      "options": [
+        "CH₄ and C₂H₄",
+        "C₂H₆ and C₃H₈",
+        "C₃H₈ and C₄H₈",
+        "C₄H₁₀ and C₆H₁₄"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1df1cf63ed0c",
+      "stem": "An unknown compound follows the formula CₙH₂ₙ₊₂. Which structural feature must it have?",
+      "options": [
+        "At least one C=C bond",
+        "At least one C≡C bond",
+        "Only C–C single bonds in an open-chain structure",
+        "A carbonyl group"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "33acb415d047",
+      "stem": "Which compound contains the greatest number of hydrogen atoms?",
+      "options": [
+        "C₃H₈",
+        "C₄H₁₀",
+        "C₅H₁₂",
+        "C₆H₁₄"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "308f8e600c36",
+      "stem": "A hydrocarbon contains 8 carbon atoms and belongs to the alkane series. Its molecular formula is:",
+      "options": [
+        "C₈H₁₆",
+        "C₈H₁₈",
+        "C₈H₁₄",
+        "C₈H₂₀"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "51f19f2c4923",
+      "stem": "Which statement best explains why alkanes are called saturated hydrocarbons?",
+      "options": [
+        "They contain maximum possible carbon atoms",
+        "They contain only single bonds and the maximum number of hydrogen atoms",
+        "They dissolve completely in water",
+        "They contain oxygen along with carbon and hydrogen"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "6cb8b5ce420a",
+      "stem": "Which of the following is not an alkane?",
+      "options": [
+        "CH₄",
+        "C₂H₆",
+        "C₃H₈",
+        "C₄H₈"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "2ddab9bce80d",
+      "stem": "A compound has the formula C₁₀H₂₂. According to the alkane formula, its carbon-to-hydrogen ratio is:",
+      "options": [
+        "1:2",
+        "5:11",
+        "10:11",
+        "11:5"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "246b1182ed76",
+      "stem": "If one CH₂ unit is added to propane while remaining within the same homologous series, the product is:",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Butane",
+        "Pentane"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "bdc1f3d61d37",
+      "stem": "Ethene is converted into ethane by adding:",
+      "options": [
+        "Cl₂",
+        "H₂",
+        "HCl",
+        "O₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "14163ec9c03e",
+      "stem": "The conversion C₂H₄ → C₂H₆ is an example of:",
+      "options": [
+        "Oxidation",
+        "Hydrogenation",
+        "Cracking",
+        "Halogenation"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "97f07f8ee033",
+      "stem": "During hydrogenation of an alkene, the hydrogen molecule is added across:",
+      "options": [
+        "A C–H single bond",
+        "A C=C double bond",
+        "A C–C single bond",
+        "A C–Cl bond"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "0c93a7c6e15a",
+      "stem": "A student carries out hydrogenation of ethene. Which combination is most appropriate?",
+      "options": [
+        "H₂ and Ni catalyst",
+        "Cl₂ and sunlight",
+        "O₂ and Zn",
+        "HCl and sunlight"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "b672e11b3ca0",
+      "stem": "Which equation represents complete hydrogenation of ethyne?",
+      "options": [
+        "C₂H₂ + H₂ → C₂H₄",
+        "C₂H₂ + 2H₂ → C₂H₆",
+        "C₂H₂ + 3H₂ → C₂H₈",
+        "C₂H₂ + H₂ → C₂H₆"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "f63c7e67c2b1",
+      "stem": "An alkyne requires two molecules of hydrogen for complete hydrogenation because it contains:",
+      "options": [
+        "Two carbon atoms",
+        "Two C–C single bonds",
+        "A C≡C triple bond",
+        "Two functional groups"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "136b6ead2095",
+      "stem": "Which product is formed when propene undergoes complete hydrogenation?",
+      "options": [
+        "Propane",
+        "Propanol",
+        "Propyne",
+        "Propanal"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ef05608a9e7b",
+      "stem": "A student uses nickel during hydrogenation but forgets to supply hydrogen gas. What is the major problem?",
+      "options": [
+        "Nickel becomes an alkene",
+        "Hydrogenation cannot occur because H₂ is required",
+        "The reaction automatically produces oxygen",
+        "Cracking takes place instead"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "0733ab19e33e",
+      "stem": "Reduction of an alkyl halide generally involves:",
+      "options": [
+        "Replacement of hydrogen by halogen",
+        "Replacement of halogen by hydrogen",
+        "Addition of oxygen",
+        "Removal of carbon atoms"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "dff402958a30",
+      "stem": "When CH₃Cl is reduced, the main organic product is:",
+      "options": [
+        "CH₃OH",
+        "CH₄",
+        "C₂H₆",
+        "C₂H₄"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "73c0ff82b1c2",
+      "stem": "Which reagent combination is associated with the reduction of an alkyl halide to an alkane?",
+      "options": [
+        "Zn/HCl",
+        "Ni/H₂",
+        "Cl₂/sunlight",
+        "O₂/heat"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "569d661111b6",
+      "stem": "In the reduction of an alkyl halide, nascent hydrogen is important because it:",
+      "options": [
+        "Adds chlorine to the molecule",
+        "Replaces the halogen atom with hydrogen",
+        "Breaks every C–C bond",
+        "Converts the alkane into an alkene"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "d52125cec5fe",
+      "stem": "Which statement about nascent hydrogen is correct?",
+      "options": [
+        "It refers to stable H₂ gas stored in a cylinder",
+        "It is atomic hydrogen produced at the moment of its formation",
+        "It is hydrogen peroxide",
+        "It is a hydrocarbon"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "cfced24bf737",
+      "stem": "A student wants to prepare an alkane from an alkyl halide. Which change should occur?",
+      "options": [
+        "X is replaced by H",
+        "H is replaced by X",
+        "C is replaced by O",
+        "H is replaced by OH"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "38e1cd73add3",
+      "stem": "A large hydrocarbon molecule is heated strongly and breaks into smaller hydrocarbons. This process is called:",
+      "options": [
+        "Hydrogenation",
+        "Cracking",
+        "Reduction",
+        "Neutralization"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "bb6d02ab0d48",
+      "stem": "The main purpose of cracking is to:",
+      "options": [
+        "Convert small hydrocarbons into metals",
+        "Produce smaller, more useful hydrocarbons from larger ones",
+        "Convert alkanes directly into alcohols",
+        "Remove all carbon atoms"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "85bec9163d0d",
+      "stem": "Which combination of products is commonly obtained during cracking?",
+      "options": [
+        "Alcohols and acids",
+        "Alkanes and alkenes",
+        "Acids and bases",
+        "Only water"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "65c54c70e70f",
+      "stem": "Consider the reaction:\nC₁₀H₂₂ → C₈H₁₈ + X\nWhat is X?",
+      "options": [
+        "C₂H₂",
+        "C₂H₄",
+        "C₂H₆",
+        "CH₄"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "86a65b5e0dc6",
+      "stem": "In the reaction:\nC₁₂H₂₆ → C₈H₁₈ + X\nthe formula of X is:",
+      "options": [
+        "C₄H₈",
+        "C₄H₁₀",
+        "C₄H₆",
+        "C₄H₁₂"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "714ec94d332e",
+      "stem": "Why is cracking important in petroleum processing?",
+      "options": [
+        "It converts all hydrocarbons into carbon dioxide",
+        "It produces smaller hydrocarbons that are more useful as fuels and raw materials",
+        "It removes hydrogen from every hydrocarbon",
+        "It produces only methane"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ab902d4bef82",
+      "stem": "A cracking reaction produces C₆H₁₄ and C₄H₈. The molecular formula of the original hydrocarbon could be:",
+      "options": [
+        "C₁₀H₂₂",
+        "C₁₀H₂₀",
+        "C₁₀H₂₄",
+        "C₁₀H₁₈"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "8d05bbf74a7a",
+      "stem": "Which observation indicates that one product of cracking is an alkene?",
+      "options": [
+        "It follows CₙH₂ₙ₊₂",
+        "It contains only single bonds",
+        "It follows CₙH₂ₙ for an open-chain compound",
+        "It contains no carbon"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "07b651150eed",
+      "stem": "Why are alkanes generally insoluble in water?",
+      "options": [
+        "They are ionic",
+        "They are largely non-polar",
+        "They contain oxygen",
+        "They react rapidly with water"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "2ae3c86086a7",
+      "stem": "When an alkane is added to water, it generally:",
+      "options": [
+        "Forms a true solution",
+        "Reacts to form an acid",
+        "Remains as a separate layer",
+        "Produces hydrogen gas"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1a09d4590840",
+      "stem": "Which statement about the boiling points of members of the alkane series is generally correct?",
+      "options": [
+        "They decrease continuously as chain length increases",
+        "They generally increase as molecular size increases",
+        "They remain exactly the same",
+        "They depend only on the number of hydrogen atoms"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "c90d84f9f7fd",
+      "stem": "Why does the boiling point generally increase from methane to higher alkanes?",
+      "options": [
+        "Carbon atoms become ionic",
+        "Intermolecular attractions generally become stronger with increasing molecular size",
+        "Hydrogen atoms become radioactive",
+        "Alkanes become more polar than water"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "f302c4b929c2",
+      "stem": "Which alkane is expected to have the highest boiling point?",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Propane",
+        "Pentane"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "a5400291d2eb",
+      "stem": "At room temperature, which physical state is expected for most alkanes containing 1–4 carbon atoms?",
+      "options": [
+        "Solid",
+        "Liquid",
+        "Gas",
+        "Plasma"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "c7c4991b18c5",
+      "stem": "A student compares methane and octane. Which statement is most reasonable?",
+      "options": [
+        "Methane has a higher boiling point than octane",
+        "Octane generally has a higher boiling point than methane",
+        "Both have identical boiling points",
+        "Octane is always a gas at room temperature"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "f7550f16af69",
+      "stem": "Which property is most closely related to the increasing molecular size of alkanes?",
+      "options": [
+        "Increasing boiling point",
+        "Increasing ionic character",
+        "Increasing solubility in water",
+        "Formation of hydrogen bonds"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ee3c59b62236",
+      "stem": "The complete combustion of methane produces:",
+      "options": [
+        "CO and H₂ only",
+        "CO₂ and H₂O",
+        "C and H₂",
+        "CH₃OH and O₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "86a6b188e6ba",
+      "stem": "Which equation is correctly balanced for complete combustion of methane?",
+      "options": [
+        "CH₄ + O₂ → CO₂ + H₂O",
+        "CH₄ + 2O₂ → CO₂ + 2H₂O",
+        "2CH₄ + O₂ → 2CO₂ + 2H₂O",
+        "CH₄ + 2O₂ → C + 2H₂O"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "6c16bf5ec913",
+      "stem": "Complete combustion of propane requires:",
+      "options": [
+        "3O₂",
+        "4O₂",
+        "5O₂",
+        "6O₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "0665ab4b0ea7",
+      "stem": "Which observation best indicates that an alkane is undergoing combustion?",
+      "options": [
+        "Heat is absorbed without any products",
+        "Heat and light are released while oxygen is consumed",
+        "Hydrogen is always produced",
+        "The compound becomes an alkene without oxygen"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ce75a45f9a44",
+      "stem": "When oxygen supply is insufficient during combustion of an alkane, which harmful product may form?",
+      "options": [
+        "Carbon monoxide",
+        "Hydrogen chloride",
+        "Nitrogen",
+        "Methane only"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "9892a707208a",
+      "stem": "Why are lighter alkanes commonly used as fuels?",
+      "options": [
+        "They cannot undergo combustion",
+        "Their combustion releases useful amounts of energy",
+        "They dissolve readily in water",
+        "They contain oxygen in their structures"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "9240d6b8a522",
+      "stem": "When methane reacts with chlorine in sunlight, the reaction is classified as:",
+      "options": [
+        "Addition",
+        "Substitution",
+        "Neutralization",
+        "Polymerization"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "752822af224e",
+      "stem": "In the reaction:\nCH₄ + Cl₂ → CH₃Cl + HCl\nwhich atom has been substituted in methane?",
+      "options": [
+        "Carbon",
+        "Hydrogen",
+        "Chlorine",
+        "None"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "6126d6637a80",
+      "stem": "Why are alkanes generally described as relatively unreactive?",
+      "options": [
+        "Their carbon atoms have no electrons",
+        "Their C–C and C–H bonds are relatively strong and they are non-polar",
+        "They contain ionic bonds",
+        "They react instantly with water"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "063c7b297fa5",
+      "stem": "A student is given the following processes:\nP: Ethene + H₂ → Ethane\nQ: Alkyl halide + nascent H → Alkane\nR: Large hydrocarbon → smaller hydrocarbons by heating\nS: Methane + Cl₂ → chloromethane + HCl in sunlight\nWhich option correctly identifies the processes?",
+      "options": [
+        "P—Hydrogenation, Q—Reduction, R—Cracking, S—Substitution",
+        "P—Reduction, Q—Hydrogenation, R—Substitution, S—Cracking",
+        "P—Cracking, Q—Substitution, R—Hydrogenation, S—Reduction",
+        "P—Substitution, Q—Cracking, R—Reduction, S—Hydrogenation"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "0f5f9d0fb148",
+      "stem": "Bilal's teacher writes a table about four alkanes. It gives each alkane's number of carbon atoms, its formula and its state at room temperature. Methane has 1 carbon atom. Its formula is CH₄, and it is a gas. Butane has 4 carbon atoms. Its formula is C₄H₁₀, and it is a gas. Hexane has 6 carbon atoms and is a liquid. Its formula is missing. Alkane X has 20 carbon atoms. Its formula and state are missing.\n\nWhat formula belongs in the empty box for hexane?",
+      "options": [
+        "C₆H₁₂",
+        "C₆H₁₄",
+        "C₆H₁₀",
+        "C₅H₁₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "b51becf7c969",
+      "stem": "Bilal's teacher writes a table about four alkanes. It gives each alkane's number of carbon atoms, its formula and its state at room temperature. Methane has 1 carbon atom. Its formula is CH₄, and it is a gas. Butane has 4 carbon atoms. Its formula is C₄H₁₀, and it is a gas. Hexane has 6 carbon atoms and is a liquid. Its formula is missing. Alkane X has 20 carbon atoms. Its formula and state are missing.\n\nWhat is the state of alkane X at room temperature?",
+      "options": [
+        "Gas",
+        "Liquid",
+        "It cannot be told from the table",
+        "Solid"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e2bbfbbab892",
+      "stem": "Bilal's teacher writes a table about four alkanes. It gives each alkane's number of carbon atoms, its formula and its state at room temperature. Methane has 1 carbon atom. Its formula is CH₄, and it is a gas. Butane has 4 carbon atoms. Its formula is C₄H₁₀, and it is a gas. Hexane has 6 carbon atoms and is a liquid. Its formula is missing. Alkane X has 20 carbon atoms. Its formula and state are missing.\n\nBilal pours a little hexane into a test tube of water. What will he see?",
+      "options": [
+        "The hexane forms a separate layer on top of the water",
+        "The hexane dissolves and the liquid looks clear",
+        "The hexane sinks to the bottom",
+        "The water turns into a gas"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e51d1c2ebae2",
+      "stem": "Bilal's teacher writes a table about four alkanes. It gives each alkane's number of carbon atoms, its formula and its state at room temperature. Methane has 1 carbon atom. Its formula is CH₄, and it is a gas. Butane has 4 carbon atoms. Its formula is C₄H₁₀, and it is a gas. Hexane has 6 carbon atoms and is a liquid. Its formula is missing. Alkane X has 20 carbon atoms. Its formula and state are missing.\n\nBilal learns that the hexane in his table gets oil out of cotton seeds. Why is it good for this?",
+      "options": [
+        "It reacts with the oil to make something new",
+        "It is an ionic compound",
+        "It does not react with most chemicals, so the oil is not changed",
+        "It is a solid at room temperature"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "413e732c2204",
+      "stem": "In winter, Hamza's family warms their room with a natural gas heater. Natural gas is mostly methane. With a window open, the heater burns with a blue flame. One cold night, the family shuts every door and window for hours. Black soot starts to collect on the wall above the heater.\n\nWhich equation shows the heater burning while the window is open?",
+      "options": [
+        "CH₄+O₂→CO₂+H₂O",
+        "3CH₄+4O₂→2CO+C+6H₂O",
+        "CH₄+2O₂→CO₂+2H₂O",
+        "CH₄+O₂→C+2H₂O"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ce8927a8976c",
+      "stem": "In winter, Hamza's family warms their room with a natural gas heater. Natural gas is mostly methane. With a window open, the heater burns with a blue flame. One cold night, the family shuts every door and window for hours. Black soot starts to collect on the wall above the heater.\n\nWhy does soot start to form once the room is shut?",
+      "options": [
+        "Too little oxygen is left, so some carbon does not burn",
+        "The gas turns into a solid in the cold",
+        "Shutting the room gives the flame more oxygen",
+        "Methane has no carbon in it"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "fdd1ae14ba57",
+      "stem": "In winter, Hamza's family warms their room with a natural gas heater. Natural gas is mostly methane. With a window open, the heater burns with a blue flame. One cold night, the family shuts every door and window for hours. Black soot starts to collect on the wall above the heater.\n\nWhich harmful gas also forms in the shut room?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen",
+        "Carbon monoxide"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "131b126eb994",
+      "stem": "In winter, Hamza's family warms their room with a natural gas heater. Natural gas is mostly methane. With a window open, the heater burns with a blue flame. One cold night, the family shuts every door and window for hours. Black soot starts to collect on the wall above the heater.\n\nWhat is the safest thing for Hamza's family to do?",
+      "options": [
+        "Move the heater into a smaller room",
+        "Keep a window a little open so fresh air reaches the flame",
+        "Turn the heater up higher",
+        "Cover the heater with a cloth"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "9edd65346c7f",
+      "stem": "A chemistry student is studying different methods for preparing alkanes. In one experiment, ethene (C₂H₄) is passed with hydrogen gas over finely divided nickel and heated. In another experiment, chloromethane (CH₃Cl) is treated with nascent hydrogen. The student also studies thermal cracking, in which a large hydrocarbon molecule breaks into smaller hydrocarbons. The teacher emphasizes that these reactions involve different chemical changes even though some of their products may be alkanes.\n\nWhat is the product formed when ethene reacts completely with hydrogen?",
+      "options": [
+        "Ethyne",
+        "Ethane",
+        "Ethanol",
+        "Methane"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1f3bf0de4c65",
+      "stem": "A chemistry student is studying different methods for preparing alkanes. In one experiment, ethene (C₂H₄) is passed with hydrogen gas over finely divided nickel and heated. In another experiment, chloromethane (CH₃Cl) is treated with nascent hydrogen. The student also studies thermal cracking, in which a large hydrocarbon molecule breaks into smaller hydrocarbons. The teacher emphasizes that these reactions involve different chemical changes even though some of their products may be alkanes.\n\nThe conversion of ethene into ethane in the experiment is best classified as:",
+      "options": [
+        "Substitution",
+        "Cracking",
+        "Hydrogenation",
+        "Combustion"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "00b05e8c939a",
+      "stem": "A chemistry student is studying different methods for preparing alkanes. In one experiment, ethene (C₂H₄) is passed with hydrogen gas over finely divided nickel and heated. In another experiment, chloromethane (CH₃Cl) is treated with nascent hydrogen. The student also studies thermal cracking, in which a large hydrocarbon molecule breaks into smaller hydrocarbons. The teacher emphasizes that these reactions involve different chemical changes even though some of their products may be alkanes.\n\nWhen CH₃Cl reacts with nascent hydrogen, which change occurs?",
+      "options": [
+        "Cl is replaced by H",
+        "H is replaced by Cl",
+        "C–C bond is formed",
+        "A double bond is introduced"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "af6c1011cad4",
+      "stem": "A chemistry student is studying different methods for preparing alkanes. In one experiment, ethene (C₂H₄) is passed with hydrogen gas over finely divided nickel and heated. In another experiment, chloromethane (CH₃Cl) is treated with nascent hydrogen. The student also studies thermal cracking, in which a large hydrocarbon molecule breaks into smaller hydrocarbons. The teacher emphasizes that these reactions involve different chemical changes even though some of their products may be alkanes.\n\nWhich equation correctly represents the reduction of chloromethane?",
+      "options": [
+        "CH₃Cl + 2[H] → CH₄ + HCl",
+        "CH₃Cl + [H] → C₂H₆ + HCl",
+        "CH₃Cl + H₂ → CH₃OH + Cl₂",
+        "CH₃Cl → C + H₂ + Cl₂"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "4b375be8d689",
+      "stem": "A chemistry student is studying different methods for preparing alkanes. In one experiment, ethene (C₂H₄) is passed with hydrogen gas over finely divided nickel and heated. In another experiment, chloromethane (CH₃Cl) is treated with nascent hydrogen. The student also studies thermal cracking, in which a large hydrocarbon molecule breaks into smaller hydrocarbons. The teacher emphasizes that these reactions involve different chemical changes even though some of their products may be alkanes.\n\nA large alkane undergoes thermal cracking and produces C₈H₁₈ and C₂H₄. What was the original hydrocarbon?",
+      "options": [
+        "C₁₀H₂₂",
+        "C₁₀H₂₀",
+        "C₁₀H₂₄",
+        "C₈H₁₈"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "9a10119d7174",
+      "stem": "A petroleum-processing plant separates several hydrocarbons for use as fuels. The chemist observes that smaller alkanes such as methane and propane are gases at room temperature, while larger alkanes may be liquids or solids. The hydrocarbons do not dissolve appreciably in water and generally have lower densities than water. During a combustion experiment, methane is burned with different amounts of oxygen. With sufficient oxygen, carbon dioxide and water are produced. When oxygen is limited, carbon monoxide may form.\n\nWhich property explains why these hydrocarbons do not dissolve appreciably in water?",
+      "options": [
+        "They are ionic",
+        "They are largely non-polar",
+        "They contain hydrogen bonds",
+        "They react rapidly with water"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "230dbc58e2b6",
+      "stem": "A petroleum-processing plant separates several hydrocarbons for use as fuels. The chemist observes that smaller alkanes such as methane and propane are gases at room temperature, while larger alkanes may be liquids or solids. The hydrocarbons do not dissolve appreciably in water and generally have lower densities than water. During a combustion experiment, methane is burned with different amounts of oxygen. With sufficient oxygen, carbon dioxide and water are produced. When oxygen is limited, carbon monoxide may form.\n\nWhich observation is most consistent with increasing alkane chain length?",
+      "options": [
+        "Boiling point generally decreases",
+        "Boiling point generally increases",
+        "All alkanes become gases",
+        "Solubility in water increases greatly"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "1b8d6afab93c",
+      "stem": "A petroleum-processing plant separates several hydrocarbons for use as fuels. The chemist observes that smaller alkanes such as methane and propane are gases at room temperature, while larger alkanes may be liquids or solids. The hydrocarbons do not dissolve appreciably in water and generally have lower densities than water. During a combustion experiment, methane is burned with different amounts of oxygen. With sufficient oxygen, carbon dioxide and water are produced. When oxygen is limited, carbon monoxide may form.\n\nWhich equation represents the complete combustion of methane?",
+      "options": [
+        "CH₄ + O₂ → CO + H₂O",
+        "CH₄ + 2O₂ → CO₂ + 2H₂O",
+        "CH₄ + 2O₂ → C + 2H₂O",
+        "2CH₄ + O₂ → 2CO₂ + 2H₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "10ddb734f330",
+      "stem": "A petroleum-processing plant separates several hydrocarbons for use as fuels. The chemist observes that smaller alkanes such as methane and propane are gases at room temperature, while larger alkanes may be liquids or solids. The hydrocarbons do not dissolve appreciably in water and generally have lower densities than water. During a combustion experiment, methane is burned with different amounts of oxygen. With sufficient oxygen, carbon dioxide and water are produced. When oxygen is limited, carbon monoxide may form.\n\nIf the oxygen supply becomes insufficient during methane combustion, which product may be formed?",
+      "options": [
+        "Carbon monoxide",
+        "Hydrogen chloride",
+        "Ethene",
+        "Nitrogen"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "2b1facf354d7",
+      "stem": "A petroleum-processing plant separates several hydrocarbons for use as fuels. The chemist observes that smaller alkanes such as methane and propane are gases at room temperature, while larger alkanes may be liquids or solids. The hydrocarbons do not dissolve appreciably in water and generally have lower densities than water. During a combustion experiment, methane is burned with different amounts of oxygen. With sufficient oxygen, carbon dioxide and water are produced. When oxygen is limited, carbon monoxide may form.\n\nThe main reason lighter alkanes are widely used as fuels is that they:",
+      "options": [
+        "Are highly soluble in water",
+        "Release considerable heat during combustion",
+        "Cannot undergo chemical reactions",
+        "Contain oxygen in their molecules"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 14,
+      "source_file": "Chem U#14 MCQs.docx",
+      "mock": true
+    }
+  ]
+}
