@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C, DISPLAY, SHADOW } from "@/lib/theme";
+import { C } from "@/lib/theme";
 import {
   getTicket,
   replyToTicket,
@@ -113,9 +113,9 @@ export function SupportTicket() {
     <Frame backLabel={backLabel} onBack={back} title={`#${thread.number} · ${thread.title}`}>
       <div style={{ maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-          <span style={{ fontSize: 12.5, fontWeight: 600, color: C.muted }}>{cat?.label ?? thread.category}</span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>{cat?.label ?? thread.category}</span>
           <StatusPill status={thread.status} />
-          <span style={{ fontSize: 12, color: "#8A8A80" }}>
+          <span style={{ fontSize: 12, color: "#9a8d78" }}>
             opened {new Date(thread.createdAt).toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}
           </span>
         </div>
@@ -136,13 +136,13 @@ export function SupportTicket() {
           </div>
         )}
 
-        <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 18px", display: "flex", flexDirection: "column", gap: 12 }}>
+        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "18px 18px", display: "flex", flexDirection: "column", gap: 12 }}>
           {thread.messages.map((m, i) => {
             const mine = m.isMe;
             const who = m.isAdmin ? (mine ? "You (Prepify team)" : "Prepify team") : mine ? "You" : thread.student?.name ?? "Student";
             return (
               <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: mine ? "flex-end" : "flex-start" }}>
-                <div style={{ fontSize: 11.5, fontWeight: 600, color: m.isAdmin ? C.sageD : C.muted, marginBottom: 3 }}>
+                <div style={{ fontSize: 11.5, fontWeight: 700, color: m.isAdmin ? C.sageD : C.muted, marginBottom: 3 }}>
                   {who} · {new Date(m.createdAt).toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}
                 </div>
                 <div
@@ -167,7 +167,7 @@ export function SupportTicket() {
         </div>
 
         {canReply ? (
-          <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "14px 16px", display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 20, padding: "14px 16px", display: "flex", flexDirection: "column", gap: 10 }}>
             <textarea
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
@@ -175,10 +175,10 @@ export function SupportTicket() {
               rows={3}
               placeholder={asAdmin ? "Reply to the student…" : "Write a reply…"}
               aria-label="Reply"
-              style={{ borderRadius: 12, border: "1px solid #D4D3CB", background: "#fff", padding: "10px 14px", fontSize: 14, fontFamily: "inherit", resize: "vertical" }}
+              style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "10px 14px", fontSize: 14, fontFamily: "inherit", resize: "vertical" }}
             />
             <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-              <button onClick={send} disabled={sending || !draft.trim()} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "10px 22px", fontSize: 14, opacity: sending || !draft.trim() ? 0.6 : 1 }}>
+              <button onClick={send} disabled={sending || !draft.trim()} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "10px 22px", fontSize: 14, opacity: sending || !draft.trim() ? 0.6 : 1 }}>
                 {sending ? "Sending…" : "Send"}
               </button>
               <div style={{ flex: 1 }} />
@@ -187,14 +187,14 @@ export function SupportTicket() {
                   {(["open", "answered", "closed"] as TicketStatus[])
                     .filter((st) => st !== thread.status)
                     .map((st) => (
-                      <button key={st} onClick={() => changeStatus(st)} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 600, padding: "8px 14px", fontSize: 12.5 }}>
+                      <button key={st} onClick={() => changeStatus(st)} style={{ borderRadius: 999, background: C.sand, color: "#5d5648", fontWeight: 700, padding: "8px 14px", fontSize: 12.5 }}>
                         Mark {st === "open" ? "open" : st === "answered" ? "replied" : "closed"}
                       </button>
                     ))}
                 </>
               ) : (
                 thread.status !== "closed" && (
-                  <button onClick={() => changeStatus("closed")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, padding: "8px 6px" }}>
+                  <button onClick={() => changeStatus("closed")} style={{ fontSize: 13, fontWeight: 700, color: C.muted, padding: "8px 6px" }}>
                     Close ticket
                   </button>
                 )
@@ -202,15 +202,15 @@ export function SupportTicket() {
             </div>
           </div>
         ) : (
-          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", background: C.sand, borderRadius: 16, padding: "12px 16px", fontSize: 13.5, color: "#4A4A42" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", background: C.sand, borderRadius: 16, padding: "12px 16px", fontSize: 13.5, color: "#5d5648" }}>
             <span style={{ flex: 1 }}>This ticket is closed. Need more help? Open a new one.</span>
-            <button onClick={() => { patch({ activeTicketNumber: null }); go("support"); }} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 }}>
+            <button onClick={() => { patch({ activeTicketNumber: null }); go("support"); }} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
               New ticket
             </button>
           </div>
         )}
 
-        {notice && <div style={{ fontSize: 13, fontWeight: 600, color: C.accentD, background: "#FBF0E7", borderRadius: 12, padding: "10px 14px" }}>{notice}</div>}
+        {notice && <div style={{ fontSize: 13, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 12, padding: "10px 14px" }}>{notice}</div>}
       </div>
     </Frame>
   );
@@ -223,7 +223,7 @@ function Frame({ title, backLabel, onBack, children }: { title: string; backLabe
         <button onClick={onBack} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
           {backLabel}
         </button>
-        <div style={{ fontFamily: DISPLAY, fontSize: 26, lineHeight: 1.2, wordBreak: "break-word" }}>{title}</div>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 26, lineHeight: 1.2, wordBreak: "break-word" }}>{title}</div>
       </div>
       {children}
     </>
@@ -232,7 +232,7 @@ function Frame({ title, backLabel, onBack, children }: { title: string; backLabe
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ maxWidth: 560, background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
+    <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
       {children}
     </div>
   );

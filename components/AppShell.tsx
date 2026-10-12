@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { applyReducedMotion, isReducedMotion } from "@/lib/motion";
-import { C, DISPLAY, SHADOW } from "@/lib/theme";
+import { C } from "@/lib/theme";
 import { NAV, TITLES } from "@/lib/data";
 import { StrokeIcon, FillIcon, PATH } from "./Icon";
 import { LogoMark } from "./Logo";
@@ -28,7 +28,6 @@ import { Admin } from "./screens/Admin";
 import { countUnreadTickets, getAdminOverview } from "@/lib/support";
 import { getMyStats, type MyStats } from "@/lib/engagement";
 import { Progress } from "./screens/Progress";
-import { PageTitle } from "./Em";
 import { Settings } from "./screens/Settings";
 
 export function AppShell() {
@@ -104,10 +103,10 @@ export function AppShell() {
     >
       <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "4px 6px 22px" }}>
         <LogoMark size={34} />
-        <div style={{ fontFamily: DISPLAY, fontSize: 19, flex: 1 }}>Prepify <em style={{ color: C.accent }}>AI</em></div>
+        <div style={{ fontFamily: "Caprasimo", fontSize: 19, flex: 1 }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
         {isMobile && (
           <button onClick={() => setMenuOpen(false)} aria-label="Close menu" style={{ width: 32, height: 32, borderRadius: 999, background: C.sand, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <StrokeIcon d="M6 6l12 12M18 6L6 18" size={16} stroke="#4A4A42" width={2.6} />
+            <StrokeIcon d="M6 6l12 12M18 6L6 18" size={16} stroke="#5d5648" width={2.6} />
           </button>
         )}
       </div>
@@ -115,11 +114,11 @@ export function AppShell() {
         const active = isSubjectsActive(id);
         const badge = badges[id] ?? 0;
         return (
-          <button key={id} onClick={() => navGo(id as Screen)} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 14, textAlign: "left", fontWeight: active ? 600 : 500, fontSize: 14.5, background: active ? C.card : "transparent", boxShadow: active ? `0 0 0 0.5px ${C.line}, ${SHADOW.s1}` : "none", color: active ? C.ink : C.body }}>
-            <StrokeIcon d={d} stroke={active ? C.accent : "currentColor"} style={{ flex: "none" }} />
+          <button key={id} onClick={() => navGo(id as Screen)} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 14, textAlign: "left", fontWeight: 600, fontSize: 14.5, background: active ? C.accent : "transparent", color: active ? "#fff" : "#5d5648" }}>
+            <StrokeIcon d={d} style={{ flex: "none" }} />
             <span style={{ flex: 1 }}>{label}</span>
             {badge > 0 && (
-              <span style={{ minWidth: 20, height: 20, borderRadius: 999, background: C.danger, color: "#fff", fontSize: 11.5, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 6px" }}>
+              <span style={{ minWidth: 20, height: 20, borderRadius: 999, background: active ? "#fff" : C.danger, color: active ? C.accentD : "#fff", fontSize: 11.5, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 6px" }}>
                 {badge > 99 ? "99+" : badge}
               </span>
             )}
@@ -150,16 +149,16 @@ export function AppShell() {
       {/* main */}
       <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column" }}>
         {/* topbar */}
-        <div style={{ height: 62, flex: "none", borderBottom: `0.5px solid ${C.line}`, background: C.topbar, backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, padding: isMobile ? "0 14px" : "0 26px", position: "sticky", top: 0, zIndex: 20 }}>
+        <div style={{ height: 62, flex: "none", borderBottom: `1px solid ${C.line}`, background: C.topbar, display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, padding: isMobile ? "0 14px" : "0 26px", position: "sticky", top: 0, zIndex: 20 }}>
           {isMobile && (
             <button onClick={() => setMenuOpen(true)} aria-label="Open menu" style={{ position: "relative", width: 38, height: 38, flex: "none", borderRadius: 12, background: C.sand, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <StrokeIcon d="M4 7h16M4 12h16M4 17h16" size={18} stroke="#4A4A42" width={2.4} />
+              <StrokeIcon d="M4 7h16M4 12h16M4 17h16" size={18} stroke="#5d5648" width={2.4} />
               {Object.values(badges).some((n) => n > 0) && (
                 <span aria-label="New activity" style={{ position: "absolute", top: 6, right: 6, width: 9, height: 9, borderRadius: 999, background: C.danger, border: `2px solid ${C.sand}` }} />
               )}
             </button>
           )}
-          <div style={{ fontSize: isMobile ? 15 : 14.5, fontWeight: 600, color: C.body, flex: 1, minWidth: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+          <div style={{ fontFamily: "Caprasimo", fontSize: isMobile ? 17 : 19, flex: 1, minWidth: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
             {inMock ? "Mock Exam" : TITLES[s.screen] || "Prepify"}
           </div>
 
@@ -170,11 +169,11 @@ export function AppShell() {
                 <>
                   <Chip bg={C.tint}>
                     <FillIcon d={PATH.flame} fill={C.accent} />
-                    <span style={{ fontWeight: 600, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
+                    <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
                   </Chip>
                   <Chip bg={C.sageT}>
-                    <FillIcon d={PATH.bolt} size={15} fill="#3CB89A" />
-                    <span style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
+                    <FillIcon d={PATH.bolt} size={15} fill="#7a8a5e" />
+                    <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
                   </Chip>
                 </>
               )}
@@ -183,22 +182,22 @@ export function AppShell() {
                   <button onClick={() => navGo("leaderboard")} title="Your streak — see the leaderboard" style={{ flex: "none" }}>
                     <Chip bg={C.tint}>
                       <FillIcon d={PATH.flame} fill={C.accent} />
-                      <span style={{ fontWeight: 600, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>
                         {stats.streak} day streak
                       </span>
                     </Chip>
                   </button>
                   <button onClick={() => navGo("leaderboard")} title="XP this week — see the leaderboard" style={{ flex: "none" }}>
                     <Chip bg={C.sageT}>
-                      <FillIcon d={PATH.bolt} size={15} fill="#3CB89A" />
-                      <span style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>{stats.xpWeek} XP this week</span>
+                      <FillIcon d={PATH.bolt} size={15} fill="#7a8a5e" />
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>{stats.xpWeek} XP this week</span>
                     </Chip>
                   </button>
                 </>
               )}
               <Chip bg={C.sand}>
                 <StrokeIcon d={PATH.clock} size={15} stroke={C.muted} width={2.6} />
-                <span style={{ fontWeight: 600, fontSize: 13.5, color: "#4A4A42", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>
+                <span style={{ fontWeight: 700, fontSize: 13.5, color: "#5d5648", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>
               </Chip>
             </>
           )}
@@ -206,7 +205,7 @@ export function AppShell() {
             onClick={() => navGo("settings")}
             aria-label="Open settings"
             title="Settings"
-            style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 14, cursor: "pointer", boxShadow: s.screen === "settings" ? `0 0 0 3px ${C.sageT}` : "none" }}
+            style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, cursor: "pointer", boxShadow: s.screen === "settings" ? `0 0 0 3px ${C.sageT}` : "none" }}
           >
             {initialsFromName(s.userName)}
           </button>
@@ -224,26 +223,7 @@ export function AppShell() {
   );
 }
 
-// Headlines for the screens that don't draw their own.
-const PAGE_TITLES: Partial<Record<Screen, { eyebrow: string; lead: string; em: string }>> = {
-  subjects: { eyebrow: "Pick one to practise", lead: "Your", em: "subjects." },
-  progress: { eyebrow: "How you're doing", lead: "Your", em: "progress." },
-  leaderboard: { eyebrow: "XP and streaks", lead: "The", em: "leaderboard." },
-  support: { eyebrow: "We reply right here", lead: "Help &", em: "feedback." },
-  settings: { eyebrow: "Your account", lead: "Your", em: "settings." },
-};
-
 function ScreenBody({ screen, isAdmin }: { screen: Screen; isAdmin: boolean }) {
-  const title = PAGE_TITLES[screen];
-  return (
-    <>
-      {title && <PageTitle eyebrow={title.eyebrow} lead={title.lead} em={title.em} />}
-      <ScreenContent screen={screen} isAdmin={isAdmin} />
-    </>
-  );
-}
-
-function ScreenContent({ screen, isAdmin }: { screen: Screen; isAdmin: boolean }) {
   switch (screen) {
     case "home": return <Home />;
     case "subjects": return <Subjects />;
