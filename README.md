@@ -116,9 +116,6 @@ migrations against the project.
   a signed-in student, refuse cross-site requests, cap request size, and are rate-limited per
   student in the database (`rate_limit_hit`: 12 messages a minute, 200 a day). If
   `PREPIFY_MODEL` is unset, the best model the key can reach is picked automatically.
-- **Look**: follows `niyyah/design.md` — warm off-white paper, one orange accent (`#E8854A`),
-  hairline borders, Playfair Display headlines with one italic orange phrase (`components/Em.tsx`),
-  DM Sans for everything else. All colours, shadows and the button style live in `lib/theme.ts`.
 - **Screens**: one component per screen in `components/screens/`, put together by
   `components/AppShell.tsx`; state lives in `lib/store.tsx`; `lib/routes.ts` maps every screen
   to a real URL so Back, refresh and shared links work.

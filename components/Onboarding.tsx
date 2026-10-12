@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useApp } from "@/lib/store";
-import { C, DISPLAY, SHADOW } from "@/lib/theme";
+import { C } from "@/lib/theme";
 import { buildDiagnostic, OFFERED_SUBJECTS } from "@/lib/data";
 import { persistEnrollments, persistProfile, persistName } from "@/lib/supabase/persist";
 import { LogoMark } from "./Logo";
@@ -58,7 +58,7 @@ export function Onboarding() {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 32px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Logo />
-          <div style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: ".2px" }}>Prepify <em style={{ color: C.accent }}>AI</em></div>
+          <div style={{ fontFamily: "Caprasimo", fontSize: 20, letterSpacing: ".2px" }}>Prepify <span style={{ color: C.sage }}>AI</span></div>
         </div>
         <button onClick={finish} style={{ borderRadius: 999, padding: "8px 16px", background: C.sand, fontWeight: 600, fontSize: 13 }}>
           Skip to app
@@ -69,7 +69,7 @@ export function Onboarding() {
         <div style={{ width: "100%", maxWidth: 1040, display: "flex", gap: 36 }}>
           {isB && (
             <div style={{ width: 290, flex: "none", paddingTop: 18 }}>
-              <div style={{ fontFamily: DISPLAY, fontSize: 34, lineHeight: 1.08, marginBottom: 10 }}>
+              <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1.08, marginBottom: 10 }}>
                 Let&apos;s set up<br />your board year.
               </div>
               <div style={{ color: C.muted, fontSize: 14, marginBottom: 28, maxWidth: 250 }}>
@@ -82,7 +82,7 @@ export function Onboarding() {
                   const cur = n === s.ob;
                   return (
                     <div key={label} style={{ display: "flex", alignItems: "center", gap: 12, padding: "9px 12px", borderRadius: 14, background: cur ? C.card : "transparent" }}>
-                      <div style={{ width: 26, height: 26, flex: "none", borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, background: done ? C.sage : cur ? C.accent : C.sand, color: done || cur ? "#fff" : "#8A8A80" }}>
+                      <div style={{ width: 26, height: 26, flex: "none", borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, background: done ? C.sage : cur ? C.accent : C.sand, color: done || cur ? "#fff" : "#9a8d78" }}>
                         {n}
                       </div>
                       <div style={{ fontWeight: 600, fontSize: 14, color: cur ? C.ink : C.muted }}>{label}</div>
@@ -108,7 +108,7 @@ export function Onboarding() {
               </div>
             )}
 
-            <div style={{ width: "100%", maxWidth: 660, background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 26, padding: "34px 34px 28px", boxShadow: "0 10px 30px rgba(90,62,30,.07)", animation: "pf-in .5s var(--ease-out) both" }}>
+            <div style={{ width: "100%", maxWidth: 660, background: C.card, border: `1px solid ${C.line}`, borderRadius: 26, padding: "34px 34px 28px", boxShadow: "0 10px 30px rgba(90,62,30,.07)", animation: "pf-in .5s var(--ease-out) both" }}>
               {s.ob === 1 && (
                 <>
                   <H>What should we call you?</H>
@@ -119,7 +119,7 @@ export function Onboarding() {
                     onChange={(e) => set("userName", e.target.value)}
                     onKeyDown={(e) => { if (e.key === "Enter" && s.userName.trim()) next(); }}
                     placeholder="Your name"
-                    style={{ width: "100%", borderRadius: 16, border: "1px solid #D4D3CB", background: "#fff", padding: "16px 20px", fontSize: 18, fontWeight: 600, color: C.ink, outline: "none" }}
+                    style={{ width: "100%", borderRadius: 16, border: "1.5px solid #e0d0b4", background: "#fff", padding: "16px 20px", fontSize: 18, fontWeight: 600, color: C.ink, outline: "none" }}
                   />
                 </>
               )}
@@ -133,7 +133,7 @@ export function Onboarding() {
                       const on = s.cls === name;
                       return (
                         <button key={name} onClick={() => set("cls", name)} style={{ textAlign: "left", borderRadius: 18, padding: "18px 20px", background: on ? C.tint : C.bg, border: `2px solid ${on ? C.accent : "transparent"}` }}>
-                          <div style={{ fontFamily: DISPLAY, fontSize: 22, color: on ? C.accentD : C.ink }}>{name}</div>
+                          <div style={{ fontFamily: "Caprasimo", fontSize: 22, color: on ? C.accentD : C.ink }}>{name}</div>
                           <div style={{ fontSize: 13, color: C.muted, marginTop: 2 }}>{sub}</div>
                         </button>
                       );
@@ -156,7 +156,7 @@ export function Onboarding() {
                         <button
                           key={name}
                           onClick={() => patch({ subs: on ? s.subs.filter((x) => x !== name) : [...s.subs, name] })}
-                          style={{ borderRadius: 999, padding: "10px 16px", fontWeight: 600, fontSize: 14, background: on ? C.ink : "transparent", color: on ? "#fff" : "#4A4A42", border: `1.5px solid ${on ? C.ink : "#D4D3CB"}` }}
+                          style={{ borderRadius: 999, padding: "10px 16px", fontWeight: 600, fontSize: 14, background: on ? C.accent : "transparent", color: on ? "#fff" : "#5d5648", border: `1.5px solid ${on ? C.accent : "#dfcfb2"}` }}
                         >
                           {on ? "✓ " : "+ "}{name}
                         </button>
@@ -164,7 +164,7 @@ export function Onboarding() {
                     })}
                   </div>
                   <div style={{ display: "flex", gap: 12, alignItems: "flex-start", background: C.sageT, borderRadius: 16, padding: "14px 16px" }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A8A50" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" style={{ flex: "none", marginTop: 1 }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f5c36" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" style={{ flex: "none", marginTop: 1 }}>
                       <path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" />
                     </svg>
                     <div style={{ fontSize: 13.5, color: C.sageD, lineHeight: 1.45 }}>
@@ -179,15 +179,15 @@ export function Onboarding() {
                   <H>When is your first paper?</H>
                   <Sub>Everything — daily plan, revision spacing, mock timing — works backwards from this date.</Sub>
                   <div style={{ display: "flex", gap: 14, alignItems: "center", marginBottom: 20 }}>
-                    <input type="date" value={s.examDate} onChange={(e) => set("examDate", e.target.value)} style={{ flex: 1, borderRadius: 999, border: "1px solid #D4D3CB", background: "#fff", padding: "14px 20px", fontSize: 16, fontWeight: 600, color: C.ink }} />
+                    <input type="date" value={s.examDate} onChange={(e) => set("examDate", e.target.value)} style={{ flex: 1, borderRadius: 999, border: "1.5px solid #e0d0b4", background: "#fff", padding: "14px 20px", fontSize: 16, fontWeight: 600, color: C.ink }} />
                   </div>
                   <div style={{ display: "flex", gap: 14 }}>
                     <div style={{ flex: 1, background: C.tint, borderRadius: 18, padding: "18px 20px" }}>
-                      <div style={{ fontFamily: DISPLAY, fontSize: 36, color: C.accentD, lineHeight: 1 }}>{daysLeft}</div>
+                      <div style={{ fontFamily: "Caprasimo", fontSize: 36, color: C.accentD, lineHeight: 1 }}>{daysLeft}</div>
                       <div style={{ fontSize: 13, color: C.accentD, fontWeight: 600 }}>days to prepare</div>
                     </div>
                     <div style={{ flex: 1, background: C.sageT, borderRadius: 18, padding: "18px 20px" }}>
-                      <div style={{ fontFamily: DISPLAY, fontSize: 36, color: C.sageD, lineHeight: 1 }}>42<span style={{ fontSize: 20 }}>min</span></div>
+                      <div style={{ fontFamily: "Caprasimo", fontSize: 36, color: C.sageD, lineHeight: 1 }}>42<span style={{ fontSize: 20 }}>min</span></div>
                       <div style={{ fontSize: 13, color: C.sageD, fontWeight: 600 }}>suggested daily study</div>
                     </div>
                   </div>
@@ -200,7 +200,7 @@ export function Onboarding() {
                   <Sub>Nothing to set up — Prepi is already connected. Ask it anything you&apos;re stuck on, any time, from the chat bubble in the corner.</Sub>
                   <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
                     <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>What Prepi is good at</div>
-                    <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#1A8A50", lineHeight: 1.5 }}>
+                    <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#3a4327", lineHeight: 1.5 }}>
                       <li>Explaining a question you got wrong, in simple words.</li>
                       <li>Breaking down a formula or a definition step by step.</li>
                       <li>Answering &quot;why is the answer C?&quot; after a test.</li>
@@ -213,7 +213,7 @@ export function Onboarding() {
                 <>
                   <H>Connect your AI tutor</H>
                   <Sub>Prepify runs on your own free Groq key — stored only in this browser, never on our servers. This powers the tutor and the examiner, so it&apos;s required to set up.</Sub>
-                  <div style={{ display: "flex", alignItems: "center", border: "1px solid #D4D3CB", borderRadius: 14, background: "#fff", paddingRight: 6, marginBottom: 14 }}>
+                  <div style={{ display: "flex", alignItems: "center", border: "1.5px solid #e0d0b4", borderRadius: 14, background: "#fff", paddingRight: 6, marginBottom: 14 }}>
                     <input
                       type={showKey ? "text" : "password"}
                       value={keyDraft}
@@ -230,7 +230,7 @@ export function Onboarding() {
                   )}
                   <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
                     <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>Get a free key in about a minute</div>
-                    <ol style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#1A8A50", lineHeight: 1.5 }}>
+                    <ol style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#3a4327", lineHeight: 1.5 }}>
                       <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com/keys</a> and sign in (free — Google or GitHub).</li>
                       <li>Click <strong>Create API Key</strong>, name it <em>Prepify</em>.</li>
                       <li>Copy the <code style={{ background: "rgba(255,255,255,.6)", padding: "1px 5px", borderRadius: 5 }}>gsk_…</code> key and paste it above.</li>
@@ -242,7 +242,7 @@ export function Onboarding() {
               {s.ob === LAST && (
                 <>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-                    <div style={{ fontFamily: DISPLAY, fontSize: 30, lineHeight: 1.15 }}>Quick placement check</div>
+                    <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.15 }}>Quick placement check</div>
                     <div style={{ fontSize: 13, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "6px 14px" }}>
                       {Math.min(s.dq + 1, diag.length)} of {diag.length}
                     </div>
@@ -257,7 +257,7 @@ export function Onboarding() {
                       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                         {q.options.map((text, i) => (
                           <button key={text} onClick={advanceDq} style={{ display: "flex", alignItems: "center", gap: 14, textAlign: "left", borderRadius: 16, padding: "14px 18px", background: C.bg, border: "1.5px solid transparent" }}>
-                            <div style={{ width: 28, height: 28, flex: "none", borderRadius: 999, background: C.sand, color: "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 13 }}>{"ABCD"[i]}</div>
+                            <div style={{ width: 28, height: 28, flex: "none", borderRadius: 999, background: C.sand, color: "#5d5648", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 13 }}>{"ABCD"[i]}</div>
                             <div style={{ fontWeight: 500 }}>{text}</div>
                           </button>
                         ))}
@@ -268,9 +268,9 @@ export function Onboarding() {
                   {dqDone && (
                     <div style={{ textAlign: "center", padding: "14px 0 4px" }}>
                       <div style={{ width: 96, height: 96, margin: "0 auto 18px", borderRadius: 999, background: C.sageT, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1A8A50" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4f5c36" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
                       </div>
-                      <div style={{ fontFamily: DISPLAY, fontSize: 28, marginBottom: 6 }}>You&apos;re all set</div>
+                      <div style={{ fontFamily: "Caprasimo", fontSize: 28, marginBottom: 6 }}>You&apos;re all set</div>
                       <div style={{ color: C.muted, maxWidth: 440, margin: "0 auto 22px" }}>
                         This just gives us a starting point. You pick the difficulty on every test anyway — easy all the way to hard.
                       </div>
@@ -284,9 +284,9 @@ export function Onboarding() {
                 </>
               )}
 
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 28, paddingTop: 20, borderTop: "0.5px solid #EEEDEA" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 28, paddingTop: 20, borderTop: "1px solid #ece0c8" }}>
                 <button onClick={back} style={{ fontWeight: 600, color: C.muted, padding: "10px 4px", fontSize: 14 }}>{backLabel}</button>
-                <button onClick={next} disabled={nextDisabled} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "13px 30px", fontSize: 15, opacity: nextDisabled ? 0.5 : 1 }}>{nextLabel}</button>
+                <button onClick={next} disabled={nextDisabled} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 30px", fontSize: 15, boxShadow: "0 6px 16px rgba(198,113,57,.3)", opacity: nextDisabled ? 0.5 : 1 }}>{nextLabel}</button>
               </div>
             </div>
           </div>
@@ -301,7 +301,7 @@ function Logo() {
 }
 
 function H({ children }: { children: React.ReactNode }) {
-  return <div style={{ fontFamily: DISPLAY, fontSize: 30, lineHeight: 1.15, marginBottom: 6 }}>{children}</div>;
+  return <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.15, marginBottom: 6 }}>{children}</div>;
 }
 
 function Sub({ children }: { children: React.ReactNode }) {
