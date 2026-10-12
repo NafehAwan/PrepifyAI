@@ -1,14 +1,6 @@
 /* Prepify AI — global styles. The look follows niyyah/design.md: warm off-white paper,
    one orange accent, hairlines, Playfair Display headlines, DM Sans everywhere else. */
 
-/* Fonts are self-hosted (public/fonts, SIL Open Font License): faster than a
-   round trip to Google from Pakistan, and nothing third-party on page load.
-   Latin subsets, variable weights. */
-@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/fonts/dm-sans.woff2") format("woff2"); }
-@font-face { font-family: "DM Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/dm-sans-italic.woff2") format("woff2"); }
-@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("/fonts/playfair-display.woff2") format("woff2"); }
-@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400 500; font-display: swap; src: url("/fonts/playfair-display-italic.woff2") format("woff2"); }
-
 * { box-sizing: border-box; }
 
 :root {
@@ -25,8 +17,8 @@ html, body {
   color: #1A1A18;
   font-family: "DM Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15.5px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.5;
   overflow-x: hidden;   /* keep phone layouts from scrolling sideways */
 }
 
@@ -53,7 +45,6 @@ a:hover { color: #E8854A; }
 html { scroll-behavior: auto; }
 
 ::selection { background: #F6D9C4; }
-strong, b { font-weight: 600; }  /* Niyyah never goes heavier than 600 */
 *:focus-visible { outline: 2px solid #E8854A; outline-offset: 2px; }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }

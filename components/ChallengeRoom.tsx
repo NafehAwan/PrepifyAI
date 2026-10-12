@@ -222,7 +222,7 @@ export function ChallengeRoom() {
     return (
       <Frame title={title} subtitle={subtitle} onBack={back}>
         <div style={{ maxWidth: 560, background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "40px 26px", textAlign: "center" }}>
-          <div style={{ fontSize: 15, fontWeight: 600, color: C.muted, marginBottom: 8 }}>Everyone&apos;s ready — get set!</div>
+          <div style={{ fontSize: 15, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Everyone&apos;s ready — get set!</div>
           <div style={{ fontFamily: DISPLAY, fontSize: 96, lineHeight: 1, color: C.accent }}>{left}</div>
           <div style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
             You&apos;ll have {Math.round(state.timeLimitSec / 60)} minutes. The chatbot is off until you finish.
@@ -317,7 +317,7 @@ function Lobby({
   return (
     <div style={{ maxWidth: 680, display: "flex", flexDirection: "column", gap: 16 }}>
       <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px" }}>
-        <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Invite your friends</div>
+        <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Invite your friends</div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
           Send them this link. They sign in, tap Join, then Ready. Code: <strong style={{ letterSpacing: 2, color: C.ink }}>{state.code}</strong>
         </div>
@@ -372,7 +372,7 @@ function Lobby({
               });
             }}
             disabled={busy || joined < 2}
-            style={{ borderRadius: 999, background: joined >= 2 ? C.accentD : C.sand, color: joined >= 2 ? "#fff" : C.muted, fontWeight: 600, padding: "11px 20px", fontSize: 14, opacity: busy ? 0.7 : 1, flex: "none" }}
+            style={{ borderRadius: 999, background: joined >= 2 ? C.accentD : C.sand, color: joined >= 2 ? "#fff" : C.muted, fontWeight: 700, padding: "11px 20px", fontSize: 14, opacity: busy ? 0.7 : 1, flex: "none" }}
           >
             ⚡ Force start
           </button>
@@ -398,7 +398,7 @@ function Lobby({
             onLeft();
           }}
           disabled={busy}
-          style={{ fontSize: 13.5, fontWeight: 600, color: C.muted, padding: "12px 14px" }}
+          style={{ fontSize: 13.5, fontWeight: 700, color: C.muted, padding: "12px 14px" }}
         >
           {state.isHost ? "Cancel challenge" : "Leave"}
         </button>
@@ -417,12 +417,12 @@ function Seats({ state, show }: { state: ChallengeState; show: "ready" | "submit
         return (
           <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 8px", borderTop: i === 0 ? "none" : `0.5px solid ${C.line}` }}>
             <Avatar name={p.name} />
-            <div style={{ flex: 1, minWidth: 0, fontWeight: 600, fontSize: 14 }}>
+            <div style={{ flex: 1, minWidth: 0, fontWeight: 700, fontSize: 14 }}>
               {p.name}
               {p.isMe && <span style={{ color: C.muted, fontWeight: 600 }}> (you)</span>}
-              {p.isHost && <span style={{ fontSize: 11, fontWeight: 600, color: C.accentD, background: C.tint, borderRadius: 999, padding: "2px 8px", marginLeft: 8 }}>host</span>}
+              {p.isHost && <span style={{ fontSize: 11, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "2px 8px", marginLeft: 8 }}>host</span>}
             </div>
-            <span style={{ fontSize: 12, fontWeight: 600, borderRadius: 999, padding: "4px 11px", background: on ? C.sageT : C.sand, color: on ? C.sageD : C.muted }}>
+            <span style={{ fontSize: 12, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: on ? C.sageT : C.sand, color: on ? C.sageD : C.muted }}>
               {show === "ready" ? (on ? "Ready" : "Not ready") : on ? "Finished" : "Answering…"}
             </span>
           </div>
@@ -496,7 +496,7 @@ function Play({ state, remainingMs, onSubmitted }: { state: ChallengeState; rema
                     onClick={() => setPicks((p) => p.map((v, k) => (k === qi ? i : v)))}
                     style={{ display: "flex", alignItems: "center", gap: 10, textAlign: "left", borderRadius: 12, padding: "10px 12px", background: picked ? C.tint : C.bg, border: `1.5px solid ${picked ? C.accent : "transparent"}` }}
                   >
-                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 11.5 }}>
+                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 11.5 }}>
                       {"ABCD"[i]}
                     </div>
                     <div style={{ fontSize: 13.5, fontWeight: 500 }}>{opt}</div>
@@ -577,18 +577,18 @@ function Results({ state }: { state: ChallengeState }) {
             {mine ? `You came ${ordinal(mine.rank)} of ${ranked.length} · ${mine.player.correct ?? 0}/${state.questionCount} correct · ${mine.player.scorePct ?? 0}% · ${mine.player.remarks ?? ""}` : ""}
           </div>
         </div>
-        <button onClick={() => go("newChallenge")} style={{ borderRadius: 999, background: "#fff", fontWeight: 600, padding: "10px 18px", fontSize: 13.5 }}>
+        <button onClick={() => go("newChallenge")} style={{ borderRadius: 999, background: "#fff", fontWeight: 700, padding: "10px 18px", fontSize: 13.5 }}>
           Rematch
         </button>
       </div>
 
       <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 20px", overflowX: "auto" }}>
-        <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 10 }}>Leaderboard</div>
+        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 10 }}>Leaderboard</div>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13.5, minWidth: 440 }}>
           <thead>
             <tr style={{ color: C.muted, textAlign: "left" }}>
               {["#", "Player", "Marks", "%", "Time", "Remarks"].map((h) => (
-                <th key={h} style={{ padding: "6px 8px", fontWeight: 600, fontSize: 12 }}>{h}</th>
+                <th key={h} style={{ padding: "6px 8px", fontWeight: 700, fontSize: 12 }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -596,8 +596,8 @@ function Results({ state }: { state: ChallengeState }) {
             {ranked.map(({ player: p, rank }, i) => (
               <tr key={i} style={{ borderTop: `0.5px solid ${C.line}`, background: p.isMe ? C.tint : "transparent" }}>
                 <td style={{ padding: "10px 8px", fontFamily: DISPLAY, fontSize: 17, color: rank === 1 ? C.accent : C.muted }}>{rank === 1 ? "🏆" : rank}</td>
-                <td style={{ padding: "10px 8px", fontWeight: 600 }}>{p.name}{p.isMe ? " (you)" : ""}</td>
-                <td style={{ padding: "10px 8px", fontWeight: 600 }}>{p.correct ?? 0}/{state.questionCount}</td>
+                <td style={{ padding: "10px 8px", fontWeight: 700 }}>{p.name}{p.isMe ? " (you)" : ""}</td>
+                <td style={{ padding: "10px 8px", fontWeight: 700 }}>{p.correct ?? 0}/{state.questionCount}</td>
                 <td style={{ padding: "10px 8px" }}>{p.scorePct ?? 0}%</td>
                 <td style={{ padding: "10px 8px" }}>{p.submitted ? formatClock(p.timeTakenSec ?? 0) : "—"}</td>
                 <td style={{ padding: "10px 8px", color: C.muted }}>{p.remarks ?? ""}</td>
@@ -609,7 +609,7 @@ function Results({ state }: { state: ChallengeState }) {
 
       {review.length > 0 && state.key && (
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
-          <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 16 }}>Your answers</div>
+          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Your answers</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {review.map((q, qi) => (
               <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={typeof answers[qi] === "number" ? answers[qi] : null} first={qi === 0} source="challenge" />
@@ -656,7 +656,7 @@ function Note({ children }: { children: React.ReactNode }) {
 function Stat({ label, value, strong }: { label: string; value: string; strong?: boolean }) {
   return (
     <div style={{ background: strong ? C.sageT : C.card, border: `0.5px solid ${C.line}`, borderRadius: 18, padding: "12px 18px", minWidth: 120 }}>
-      <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{label}</div>
+      <div style={{ fontSize: 12, color: C.muted, fontWeight: 700 }}>{label}</div>
       <div style={{ fontFamily: DISPLAY, fontSize: 26, color: strong ? C.sageD : C.ink }}>{value}</div>
     </div>
   );
@@ -664,7 +664,7 @@ function Stat({ label, value, strong }: { label: string; value: string; strong?:
 
 function Avatar({ name }: { name: string }) {
   return (
-    <div style={{ width: 34, height: 34, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 14 }}>
+    <div style={{ width: 34, height: 34, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>
       {(name.trim()[0] ?? "?").toUpperCase()}
     </div>
   );
@@ -674,7 +674,7 @@ const primaryBtn: React.CSSProperties = {
   borderRadius: 999,
   background: C.accent,
   color: "#fff",
-  fontWeight: 600,
+  fontWeight: 700,
   padding: "13px 28px",
   fontSize: 15,
 };
@@ -683,7 +683,7 @@ const secondaryBtn: React.CSSProperties = {
   borderRadius: 999,
   background: C.sand,
   color: "#4A4A42",
-  fontWeight: 600,
+  fontWeight: 700,
   padding: "10px 16px",
   fontSize: 13.5,
   flex: "none",

@@ -136,7 +136,7 @@ export function MockExam() {
             ) : (
               <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FBF0E7", borderRadius: 14, padding: "12px 14px" }}>
                 <span style={{ flex: 1, minWidth: 180 }}>Couldn&apos;t load the chapters. Check your connection.</span>
-                <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 }}>
+                <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
                   Try again
                 </button>
               </div>
@@ -168,7 +168,7 @@ export function MockExam() {
                 style={{ display: "flex", alignItems: "center", gap: 10, width: "100%", textAlign: "left", borderRadius: 14, padding: "12px 14px", marginBottom: 10, background: picked.length === 0 ? C.tint : C.bg, border: `1.5px solid ${picked.length === 0 ? C.accent : "transparent"}` }}
               >
                 <Check on={picked.length === 0} />
-                <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: picked.length === 0 ? C.accentD : C.ink }}>All mock chapters</div>
+                <div style={{ flex: 1, fontSize: 14, fontWeight: 700, color: picked.length === 0 ? C.accentD : C.ink }}>All mock chapters</div>
                 <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>{chapters.reduce((n, c) => n + c.mcqCount, 0)} questions</div>
               </button>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -181,7 +181,7 @@ export function MockExam() {
                       style={{ display: "flex", alignItems: "center", gap: 10, textAlign: "left", borderRadius: 12, padding: "10px 12px", background: on ? C.tint : "transparent", border: `1.5px solid ${on ? C.accent : C.line}` }}
                     >
                       <Check on={on} />
-                      <div style={{ width: 28, flex: "none", fontSize: 12.5, fontWeight: 600, color: C.muted }}>{c.seq}</div>
+                      <div style={{ width: 28, flex: "none", fontSize: 12.5, fontWeight: 700, color: C.muted }}>{c.seq}</div>
                       <div style={{ flex: 1, minWidth: 0, fontSize: 13.5, fontWeight: 600 }}>{c.title}</div>
                       <div style={{ fontSize: 12, color: C.muted, fontWeight: 600, flex: "none" }}>{c.mcqCount}</div>
                     </button>
@@ -196,7 +196,7 @@ export function MockExam() {
                   <button
                     key={n}
                     onClick={() => changeCount(n)}
-                    style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 600, background: effectiveCount === n ? C.ink : C.card, color: effectiveCount === n ? "#fff" : "#4A4A42", border: `1.5px solid ${effectiveCount === n ? C.ink : C.line}` }}
+                    style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: effectiveCount === n ? C.ink : C.card, color: effectiveCount === n ? "#fff" : "#4A4A42", border: `1.5px solid ${effectiveCount === n ? C.ink : C.line}` }}
                   >
                     {n}
                   </button>
@@ -238,7 +238,7 @@ export function MockExam() {
               <button
                 onClick={start}
                 disabled={building}
-                style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
+                style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
               >
                 {building ? "Building your paper…" : "Start the clock →"}
               </button>
@@ -275,7 +275,7 @@ export function MockExam() {
                     <div style={{ fontSize: 12.5, color: C.muted, marginTop: 3 }}>
                       {m.scope ?? "Mock"} · {m.questionCount} MCQs{m.timeLimitMin ? ` · ${m.timeLimitMin} min` : ""}
                     </div>
-                    <div style={{ fontSize: 12.5, fontWeight: 600, marginTop: 6, color: submitted ? "#4A4A42" : C.accentD }}>
+                    <div style={{ fontSize: 12.5, fontWeight: 700, marginTop: 6, color: submitted ? "#4A4A42" : C.accentD }}>
                       {submitted
                         ? `${m.correctCount ?? 0}/${m.questionCount} · ${m.remarks ?? ""}`
                         : msLeft > 0

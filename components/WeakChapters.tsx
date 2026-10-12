@@ -74,7 +74,7 @@ export function WeakChapters() {
 
   return (
     <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px" }}>
-      <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Weak chapters</div>
+      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Weak chapters</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
         From every test and challenge. A chapter shows here once you&apos;ve answered {WEAK_MIN_ATTEMPTED}+ of its questions and
         score under {WEAK_BELOW_PCT}% in it.
@@ -95,11 +95,11 @@ export function WeakChapters() {
             return (
               <div key={subjectId}>
                 <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", marginBottom: 8 }}>
-                  <div style={{ flex: 1, minWidth: 160, fontWeight: 600, fontSize: 14 }}>{name}</div>
+                  <div style={{ flex: 1, minWidth: 160, fontWeight: 700, fontSize: 14 }}>{name}</div>
                   <button
                     onClick={() => practise(subjectId, chapters, key)}
                     disabled={busy !== null}
-                    style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "9px 16px", fontSize: 13, opacity: busy && busy !== key ? 0.5 : 1 }}
+                    style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "9px 16px", fontSize: 13, opacity: busy && busy !== key ? 0.5 : 1 }}
                   >
                     {busy === key ? "Building…" : `🎯 Practise my weak chapters${n > 1 ? ` (${n})` : ""}`}
                   </button>
@@ -118,7 +118,7 @@ export function WeakChapters() {
                             <div style={{ flex: 1, height: 8, background: C.sand, borderRadius: 999, overflow: "hidden", maxWidth: 220 }}>
                               <div style={{ height: 8, width: `${c.pct}%`, background: fg, borderRadius: 999 }} />
                             </div>
-                            <div style={{ fontSize: 12, fontWeight: 600, color: fg }}>{c.pct}%</div>
+                            <div style={{ fontSize: 12, fontWeight: 700, color: fg }}>{c.pct}%</div>
                             <div style={{ fontSize: 12, color: C.muted }}>
                               {c.correct}/{c.attempted} right
                             </div>

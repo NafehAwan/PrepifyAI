@@ -70,7 +70,7 @@ export function Home() {
         {s.authed && <StreakCard />}
 
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
-          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Your average</div>
+          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Your average</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {overall === null ? "Take a test and it'll show here." : "Across every test you've taken."}
           </div>
@@ -80,7 +80,7 @@ export function Home() {
         </div>
 
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
-          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Needs work</div>
+          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Needs work</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {weak.length === 0 ? "Nothing yet — take a test in a couple of subjects." : "Your weakest subjects so far."}
           </div>
@@ -93,7 +93,7 @@ export function Home() {
 
         <div style={{ gridColumn: "span 2", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px" }}>
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 16 }}>
-            <div style={{ fontWeight: 600, fontSize: 15 }}>Average by subject</div>
+            <div style={{ fontWeight: 700, fontSize: 15 }}>Average by subject</div>
             <div style={{ fontSize: 12.5, color: C.muted }}>{fresh ? "Take a test to build these" : "Based on your test scores"}</div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(110px,1fr))", gap: 14 }}>
@@ -122,7 +122,7 @@ export function Home() {
         </div>
 
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
-          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Recent tests</div>
+          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Recent tests</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {recent.length === 0 ? "No tests yet." : "Your last few results."}
           </div>
@@ -131,7 +131,7 @@ export function Home() {
               const pct = t.scorePct ?? 0;
               return (
                 <div key={t.id} style={{ display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "11px 13px" }}>
-                  <div style={{ width: 40, height: 40, flex: "none", borderRadius: 999, background: pct >= 50 ? C.sageT : C.tint, color: pct >= 50 ? C.sageD : C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 12.5 }}>
+                  <div style={{ width: 40, height: 40, flex: "none", borderRadius: 999, background: pct >= 50 ? C.sageT : C.tint, color: pct >= 50 ? C.sageD : C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 12.5 }}>
                     {pct}%
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
@@ -185,7 +185,7 @@ function SubjectJump({ name, id, pct, note }: { name: string; id: string; pct: n
       }}
       style={{ width: "100%", textAlign: "left", display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "12px 14px" }}
     >
-      <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 12.5 }}>
+      <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 12.5 }}>
         {pct}%
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
@@ -201,7 +201,7 @@ function pickGreeting({ fresh, overall, weakest }: { fresh: boolean; overall: nu
   const hour = new Date().getHours();
   if (hour >= 23 || hour < 5) return { mood: "sleepy", text: "Studying late? Do one short test, then rest — a fresh brain scores better." };
   if (fresh) return { mood: "wave", text: "Salam! Pick a subject and I'll set you a test. Start with 10 questions if you're not sure." };
-  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — Masha'Allah. Try the hard level and see how you go.` };
+  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — mashallah. Try the hard level and see how you go.` };
   if (weakest) return { mood: "thinking", text: `${weakest} is your weakest right now. Want to do a short one on it?` };
   return { mood: "happy", text: "Ready for another test? Even 10 questions helps." };
 }
@@ -238,15 +238,15 @@ function StreakCard() {
   const streak = stats?.streak ?? 0;
   return (
     <button onClick={() => go("leaderboard")} className="pf-lift" style={{ textAlign: "left", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
-      <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Streak &amp; XP</div>
+      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Streak &amp; XP</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 12 }}>
         {stats === null ? "Loading…" : streak === 0 ? "Finish a test today to start a streak." : "Finish a test or challenge today to keep it going."}
       </div>
       <div style={{ display: "flex", gap: 18, alignItems: "baseline", flexWrap: "wrap" }}>
         <div style={{ fontFamily: DISPLAY, fontSize: 34, lineHeight: 1, color: streak > 0 ? C.accent : C.muted }}>🔥 {streak}</div>
-        <div style={{ fontSize: 13, fontWeight: 600, color: C.sageD }}>{stats?.xpWeek ?? 0} XP this week</div>
+        <div style={{ fontSize: 13, fontWeight: 700, color: C.sageD }}>{stats?.xpWeek ?? 0} XP this week</div>
       </div>
-      <div style={{ fontSize: 12.5, fontWeight: 600, color: C.accentD, marginTop: 12 }}>See the leaderboard →</div>
+      <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: 12 }}>See the leaderboard →</div>
     </button>
   );
 }

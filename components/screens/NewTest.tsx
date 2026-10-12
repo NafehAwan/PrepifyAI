@@ -124,7 +124,7 @@ export function NewTest() {
           <button
             onClick={start}
             disabled={building}
-            style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
+            style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
           >
             {building ? "Building your test…" : "Start test →"}
           </button>

@@ -126,7 +126,7 @@ export const ChatMarkdown = memo(function ChatMarkdown({ text, limit }: { text: 
           <ul key={b} style={{ margin: `${marginTop}px 0 0`, padding: 0, listStyle: "none" }}>
             {contents.map((c, k) => (
               <li key={k} style={{ display: "flex", gap: 8, margin: "3px 0", lineHeight: 1.5 }}>
-                <span style={{ color: C.accent, flex: "none", fontWeight: 600 }}>•</span>
+                <span style={{ color: C.accent, flex: "none", fontWeight: 700 }}>•</span>
                 <span style={{ flex: 1 }}>{c}</span>
               </li>
             ))}

@@ -104,7 +104,7 @@ export function NewChallenge() {
           <button
             onClick={create}
             disabled={creating}
-            style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "14px 32px", fontSize: 15, opacity: creating ? 0.7 : 1 }}
+            style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: creating ? 0.7 : 1 }}
           >
             {creating ? "Setting it up…" : "Create challenge →"}
           </button>

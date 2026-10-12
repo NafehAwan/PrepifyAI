@@ -96,7 +96,7 @@ function Overview({ o, go }: { o: AdminOverview | null; go: (t: Tab) => void }) 
             disabled={!tab}
             style={{ textAlign: "left", background: alert ? C.tint : C.card, border: `1.5px solid ${alert ? C.accent : C.line}`, borderRadius: 20, padding: "16px 18px", cursor: tab ? "pointer" : "default" }}
           >
-            <div style={{ fontSize: 12.5, fontWeight: 600, color: C.muted }}>{label}</div>
+            <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>{label}</div>
             <div style={{ fontFamily: DISPLAY, fontSize: 32, color: alert ? C.accentD : C.ink }}>{value.toLocaleString()}</div>
             {sub && <div style={{ fontSize: 12, color: "#8A8A80" }}>{sub}</div>}
           </button>
@@ -133,7 +133,7 @@ function Tickets() {
           </button>
         ))}
       </div>
-      {failed && <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 600 }}>Couldn&apos;t load tickets. <button onClick={() => void load()} style={{ fontWeight: 600, color: C.accent }}>Try again</button></div>}
+      {failed && <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 600 }}>Couldn&apos;t load tickets. <button onClick={() => void load()} style={{ fontWeight: 700, color: C.accent }}>Try again</button></div>}
       {tickets === null ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading…</div>
       ) : tickets.length === 0 ? (
@@ -183,7 +183,7 @@ function Reports() {
           </button>
         ))}
       </div>
-      {failed && <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 600 }}>Couldn&apos;t load reports. <button onClick={() => void load()} style={{ fontWeight: 600, color: C.accent }}>Try again</button></div>}
+      {failed && <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 600 }}>Couldn&apos;t load reports. <button onClick={() => void load()} style={{ fontWeight: 700, color: C.accent }}>Try again</button></div>}
       {items === null ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading…</div>
       ) : items.length === 0 ? (
@@ -214,10 +214,10 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
   return (
     <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 20px" }}>
       <div style={{ display: "flex", alignItems: "baseline", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
-        <span style={{ fontSize: 12, fontWeight: 600, color: "#fff", background: C.accent, borderRadius: 999, padding: "3px 10px" }}>
+        <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", background: C.accent, borderRadius: 999, padding: "3px 10px" }}>
           {q.reports} report{q.reports === 1 ? "" : "s"}
         </span>
-        <span style={{ fontSize: 13, fontWeight: 600, color: C.muted }}>
+        <span style={{ fontSize: 13, fontWeight: 700, color: C.muted }}>
           {q.subject ?? "Unknown subject"}
           {q.chapter ? ` · Chapter ${q.chapter}` : ""}
         </span>
@@ -268,21 +268,21 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
         })}
       </div>
 
-      {msg && <div style={{ fontSize: 12.5, color: C.accentD, fontWeight: 600, marginBottom: 8 }}>{msg}</div>}
+      {msg && <div style={{ fontSize: 12.5, color: C.accentD, fontWeight: 700, marginBottom: 8 }}>{msg}</div>}
       {!editing && (
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {q.editable && (
-            <button onClick={() => setEditing(true)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 }}>
+            <button onClick={() => setEditing(true)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
               ✏️ Fix question
             </button>
           )}
-          <button disabled={busy} onClick={() => mark("fixed")} style={{ borderRadius: 999, background: C.sageT, color: C.sageD, fontWeight: 600, padding: "8px 14px", fontSize: 13 }}>
+          <button disabled={busy} onClick={() => mark("fixed")} style={{ borderRadius: 999, background: C.sageT, color: C.sageD, fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
             Mark fixed
           </button>
-          <button disabled={busy} onClick={() => mark("dismissed")} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 600, padding: "8px 14px", fontSize: 13 }}>
+          <button disabled={busy} onClick={() => mark("dismissed")} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
             Dismiss (question is fine)
           </button>
-          <button disabled={busy} onClick={() => mark("open")} style={{ fontSize: 12.5, fontWeight: 600, color: C.muted, padding: "8px 6px" }}>
+          <button disabled={busy} onClick={() => mark("open")} style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, padding: "8px 6px" }}>
             Reopen
           </button>
         </div>
@@ -315,9 +315,9 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 8, background: C.bg, borderRadius: 16, padding: "14px 14px", marginBottom: 6 }}>
-      <label style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>Question</label>
+      <label style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>Question</label>
       <textarea value={stem} onChange={(e) => setStem(e.target.value)} rows={3} style={{ ...field, resize: "vertical" }} />
-      <div style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>Options — tap the letter of the correct one</div>
+      <div style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>Options — tap the letter of the correct one</div>
       {options.map((o, i) => {
         const letter = "ABCD"[i] as "A" | "B" | "C" | "D";
         const on = answer === letter;
@@ -326,7 +326,7 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
             <button
               onClick={() => setAnswer(letter)}
               aria-label={`Mark ${letter} correct`}
-              style={{ width: 32, height: 32, flex: "none", borderRadius: 999, fontWeight: 600, fontSize: 13, background: on ? C.sage : C.sand, color: on ? "#fff" : "#4A4A42" }}
+              style={{ width: 32, height: 32, flex: "none", borderRadius: 999, fontWeight: 700, fontSize: 13, background: on ? C.sage : C.sand, color: on ? "#fff" : "#4A4A42" }}
             >
               {on ? "✓" : letter}
             </button>
@@ -334,17 +334,17 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
           </div>
         );
       })}
-      <label style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>Explanation (optional, shown in reviews)</label>
+      <label style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>Explanation (optional, shown in reviews)</label>
       <textarea value={explanation} onChange={(e) => setExplanation(e.target.value)} rows={2} style={{ ...field, resize: "vertical" }} />
       <div style={{ fontSize: 12, color: "#8A8A80" }}>
         Saving changes this question for every future test, and marks its reports fixed. Correct answer: <strong>{answer}</strong>.
       </div>
-      {error && <div style={{ fontSize: 12.5, color: C.accentD, fontWeight: 600 }}>{error}</div>}
+      {error && <div style={{ fontSize: 12.5, color: C.accentD, fontWeight: 700 }}>{error}</div>}
       <div style={{ display: "flex", gap: 8 }}>
-        <button onClick={save} disabled={saving} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "9px 18px", fontSize: 13.5, opacity: saving ? 0.7 : 1 }}>
+        <button onClick={save} disabled={saving} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "9px 18px", fontSize: 13.5, opacity: saving ? 0.7 : 1 }}>
           {saving ? "Saving…" : "Save fix"}
         </button>
-        <button onClick={onCancel} style={{ fontSize: 13, fontWeight: 600, color: C.muted, padding: "9px 6px" }}>
+        <button onClick={onCancel} style={{ fontSize: 13, fontWeight: 700, color: C.muted, padding: "9px 6px" }}>
           Cancel
         </button>
       </div>

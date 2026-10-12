@@ -80,7 +80,7 @@ export function Subjects() {
               aria-label="Challenge code or link"
               style={{ width: 150, borderRadius: 999, border: `1.5px solid ${joinError ? C.accent : C.line}`, background: C.card, padding: "9px 14px", fontSize: 13.5, fontWeight: 600, textTransform: "uppercase" }}
             />
-            <button type="submit" style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "9px 16px", fontSize: 13.5 }}>
+            <button type="submit" style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "9px 16px", fontSize: 13.5 }}>
               Join
             </button>
           </form>
@@ -105,7 +105,7 @@ export function Subjects() {
                   {name[0]}
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontWeight: 600, fontSize: 16 }}>{name}</div>
+                  <div style={{ fontWeight: 700, fontSize: 16 }}>{name}</div>
                   <div style={{ fontSize: 12.5, color: "#8A8A80" }}>
                     {taken === 0 ? "No tests yet" : `${taken} test${taken === 1 ? "" : "s"} taken`}
                   </div>

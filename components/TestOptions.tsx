@@ -20,7 +20,7 @@ export const LEVELS: Array<{ id: McqDifficulty; label: string; blurb: string }> 
 export function OptionCard({ title, hint, children }: { title: string; hint: string; children: React.ReactNode }) {
   return (
     <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "20px 22px" }}>
-      <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>{title}</div>
+      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>{title}</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>{hint}</div>
       {children}
     </div>
@@ -52,7 +52,7 @@ export function ChapterPicker({
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FBF0E7", borderRadius: 14, padding: "12px 14px" }}>
             <span style={{ flex: 1, minWidth: 180 }}>Couldn&apos;t load the chapters. Check your connection.</span>
             {onRetry && (
-              <button onClick={onRetry} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 }}>
+              <button onClick={onRetry} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
                 Try again
               </button>
             )}
@@ -69,7 +69,7 @@ export function ChapterPicker({
         style={{ display: "flex", alignItems: "center", gap: 10, width: "100%", textAlign: "left", borderRadius: 14, padding: "12px 14px", marginBottom: 10, background: picked.length === 0 ? C.tint : C.bg, border: `1.5px solid ${picked.length === 0 ? C.accent : "transparent"}` }}
       >
         <Check on={picked.length === 0} />
-        <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: picked.length === 0 ? C.accentD : C.ink }}>Whole book</div>
+        <div style={{ flex: 1, fontSize: 14, fontWeight: 700, color: picked.length === 0 ? C.accentD : C.ink }}>Whole book</div>
         <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>
           {chapters.reduce((n, c) => n + c.mcqCount, 0)} questions
         </div>
@@ -87,7 +87,7 @@ export function ChapterPicker({
               style={{ display: "flex", alignItems: "center", gap: 10, textAlign: "left", borderRadius: 12, padding: "10px 12px", background: on ? C.tint : "transparent", border: `1.5px solid ${on ? C.accent : C.line}`, opacity: empty ? 0.45 : 1 }}
             >
               <Check on={on} />
-              <div style={{ width: 28, flex: "none", fontSize: 12.5, fontWeight: 600, color: C.muted }}>{c.seq}</div>
+              <div style={{ width: 28, flex: "none", fontSize: 12.5, fontWeight: 700, color: C.muted }}>{c.seq}</div>
               <div style={{ flex: 1, minWidth: 0, fontSize: 13.5, fontWeight: 600 }}>{c.title}</div>
               <div style={{ fontSize: 12, color: C.muted, fontWeight: 600, flex: "none" }}>
                 {empty ? "coming soon" : c.mcqCount}
@@ -108,7 +108,7 @@ export function CountPicker({ count, onChange }: { count: number; onChange: (n: 
           <button
             key={n}
             onClick={() => onChange(n)}
-            style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 600, background: count === n ? C.ink : C.card, color: count === n ? "#fff" : "#4A4A42", border: `1.5px solid ${count === n ? C.ink : C.line}` }}
+            style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: count === n ? C.ink : C.card, color: count === n ? "#fff" : "#4A4A42", border: `1.5px solid ${count === n ? C.ink : C.line}` }}
           >
             {n}
           </button>
@@ -143,7 +143,7 @@ export function DifficultyPicker({ difficulty, onChange }: { difficulty: McqDiff
               onClick={() => onChange(l.id)}
               style={{ textAlign: "left", borderRadius: 16, padding: "13px 15px", background: on ? C.tint : C.bg, border: `1.5px solid ${on ? C.accent : "transparent"}` }}
             >
-              <div style={{ fontSize: 14.5, fontWeight: 600, color: on ? C.accentD : C.ink, marginBottom: 3 }}>{l.label}</div>
+              <div style={{ fontSize: 14.5, fontWeight: 700, color: on ? C.accentD : C.ink, marginBottom: 3 }}>{l.label}</div>
               <div style={{ fontSize: 12, color: C.muted, lineHeight: 1.45 }}>{l.blurb}</div>
             </button>
           );
@@ -171,7 +171,7 @@ export function ChipRow<T extends string | number>({
         <button
           key={String(o)}
           onClick={() => onChange(o)}
-          style={{ borderRadius: 999, padding: "10px 18px", fontSize: 14, fontWeight: 600, background: value === o ? C.ink : C.card, color: value === o ? "#fff" : "#4A4A42", border: `1.5px solid ${value === o ? C.ink : C.line}` }}
+          style={{ borderRadius: 999, padding: "10px 18px", fontSize: 14, fontWeight: 700, background: value === o ? C.ink : C.card, color: value === o ? "#fff" : "#4A4A42", border: `1.5px solid ${value === o ? C.ink : C.line}` }}
         >
           {label(o)}
         </button>
@@ -182,7 +182,7 @@ export function ChipRow<T extends string | number>({
 
 export function Check({ on }: { on: boolean }) {
   return (
-    <div style={{ width: 20, height: 20, flex: "none", borderRadius: 6, border: `2px solid ${on ? C.accent : "#D4D3CB"}`, background: on ? C.accent : "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 600 }}>
+    <div style={{ width: 20, height: 20, flex: "none", borderRadius: 6, border: `2px solid ${on ? C.accent : "#D4D3CB"}`, background: on ? C.accent : "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700 }}>
       {on ? "✓" : ""}
     </div>
   );

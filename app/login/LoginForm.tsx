@@ -48,7 +48,7 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
 
       <form action={signInWithGoogle} style={{ marginBottom: 16 }}>
         <input type="hidden" name="next" value={next ?? "/"} />
-        <button type="submit" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderRadius: 999, background: "#fff", border: "1px solid #D4D3CB", padding: "12px 0", fontSize: 14.5, fontWeight: 600, color: C.ink }}>
+        <button type="submit" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderRadius: 999, background: "#fff", border: "1px solid #D4D3CB", padding: "12px 0", fontSize: 14.5, fontWeight: 700, color: C.ink }}>
           <GoogleG />
           Continue with Google
         </button>
@@ -81,7 +81,7 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
             <Field label="Password" name="password" type="password" placeholder="At least 8 characters" autoComplete="new-password" onValue={setPassword} />
             <Field label="Confirm password" name="confirm" type="password" placeholder="Type it again" autoComplete="new-password" onValue={setConfirm} />
             {confirm.length > 0 && confirm !== password && (
-              <div style={{ fontSize: 12.5, fontWeight: 600, color: C.accentD, marginTop: -4 }}>The passwords don&apos;t match yet.</div>
+              <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: -4 }}>The passwords don&apos;t match yet.</div>
             )}
           </>
         )}
@@ -120,7 +120,7 @@ function Field({
 }) {
   return (
     <label style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-      <span style={{ fontSize: 12.5, fontWeight: 600, color: C.muted }}>{label}</span>
+      <span style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>{label}</span>
       <input
         name={name}
         type={type}
@@ -139,7 +139,7 @@ function Field({
 
 function Submit({ isLogin, pending }: { isLogin: boolean; pending: boolean }) {
   return (
-    <button type="submit" disabled={pending} style={{ marginTop: 6, borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "13px 0", fontSize: 15, opacity: pending ? 0.7 : 1 }}>
+    <button type="submit" disabled={pending} style={{ marginTop: 6, borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "13px 0", fontSize: 15, opacity: pending ? 0.7 : 1 }}>
       {pending ? "Please wait…" : isLogin ? "Sign in" : "Create account"}
     </button>
   );
@@ -157,5 +157,5 @@ function GoogleG() {
 }
 
 function tab(on: boolean): React.CSSProperties {
-  return { flex: 1, borderRadius: 999, padding: "9px 0", fontSize: 13.5, fontWeight: 600, background: on ? C.ink : "transparent", color: on ? "#fff" : C.muted };
+  return { flex: 1, borderRadius: 999, padding: "9px 0", fontSize: 13.5, fontWeight: 700, background: on ? C.ink : "transparent", color: on ? "#fff" : C.muted };
 }

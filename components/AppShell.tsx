@@ -119,7 +119,7 @@ export function AppShell() {
             <StrokeIcon d={d} stroke={active ? C.accent : "currentColor"} style={{ flex: "none" }} />
             <span style={{ flex: 1 }}>{label}</span>
             {badge > 0 && (
-              <span style={{ minWidth: 20, height: 20, borderRadius: 999, background: C.danger, color: "#fff", fontSize: 11.5, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 6px" }}>
+              <span style={{ minWidth: 20, height: 20, borderRadius: 999, background: C.danger, color: "#fff", fontSize: 11.5, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", padding: "0 6px" }}>
                 {badge > 99 ? "99+" : badge}
               </span>
             )}
@@ -170,11 +170,11 @@ export function AppShell() {
                 <>
                   <Chip bg={C.tint}>
                     <FillIcon d={PATH.flame} fill={C.accent} />
-                    <span style={{ fontWeight: 600, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
+                    <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>17 day streak</span>
                   </Chip>
                   <Chip bg={C.sageT}>
                     <FillIcon d={PATH.bolt} size={15} fill="#3CB89A" />
-                    <span style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
+                    <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>Lv 12 · 3,840 XP</span>
                   </Chip>
                 </>
               )}
@@ -183,7 +183,7 @@ export function AppShell() {
                   <button onClick={() => navGo("leaderboard")} title="Your streak — see the leaderboard" style={{ flex: "none" }}>
                     <Chip bg={C.tint}>
                       <FillIcon d={PATH.flame} fill={C.accent} />
-                      <span style={{ fontWeight: 600, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.accentD, whiteSpace: "nowrap" }}>
                         {stats.streak} day streak
                       </span>
                     </Chip>
@@ -191,14 +191,14 @@ export function AppShell() {
                   <button onClick={() => navGo("leaderboard")} title="XP this week — see the leaderboard" style={{ flex: "none" }}>
                     <Chip bg={C.sageT}>
                       <FillIcon d={PATH.bolt} size={15} fill="#3CB89A" />
-                      <span style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>{stats.xpWeek} XP this week</span>
+                      <span style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, whiteSpace: "nowrap" }}>{stats.xpWeek} XP this week</span>
                     </Chip>
                   </button>
                 </>
               )}
               <Chip bg={C.sand}>
                 <StrokeIcon d={PATH.clock} size={15} stroke={C.muted} width={2.6} />
-                <span style={{ fontWeight: 600, fontSize: 13.5, color: "#4A4A42", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>
+                <span style={{ fontWeight: 700, fontSize: 13.5, color: "#4A4A42", whiteSpace: "nowrap" }}>{daysLeft} days to boards</span>
               </Chip>
             </>
           )}
@@ -206,7 +206,7 @@ export function AppShell() {
             onClick={() => navGo("settings")}
             aria-label="Open settings"
             title="Settings"
-            style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 14, cursor: "pointer", boxShadow: s.screen === "settings" ? `0 0 0 3px ${C.sageT}` : "none" }}
+            style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, cursor: "pointer", boxShadow: s.screen === "settings" ? `0 0 0 3px ${C.sageT}` : "none" }}
           >
             {initialsFromName(s.userName)}
           </button>

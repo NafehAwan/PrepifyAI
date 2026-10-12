@@ -169,7 +169,7 @@ export function ChatWidget() {
           <div style={{ padding: "12px 14px", background: C.accent, color: "#fff", display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,.25)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden" }}><Mascot mood={busy ? "thinking" : "happy"} size={30} /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 600, fontSize: 14.5 }}>Ask Prepify</div>
+              <div style={{ fontWeight: 700, fontSize: 14.5 }}>Ask Prepify</div>
               <div style={{ fontSize: 11.5, opacity: 0.9, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                 {showHistory ? "Your saved chats" : "Your study buddy — ask anything"}
               </div>
@@ -184,7 +184,7 @@ export function ChatWidget() {
 
           {showHistory ? (
             <div style={{ flex: 1, overflow: "auto", padding: 12, display: "flex", flexDirection: "column", gap: 8 }}>
-              <button onClick={startNewChat} style={{ display: "flex", alignItems: "center", gap: 8, width: "100%", textAlign: "left", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: C.tint, borderRadius: 12, padding: "11px 13px" }}>
+              <button onClick={startNewChat} style={{ display: "flex", alignItems: "center", gap: 8, width: "100%", textAlign: "left", fontSize: 13.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 12, padding: "11px 13px" }}>
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={C.accentD} strokeWidth="2.6" strokeLinecap="round"><path d="M12 5v14M5 12h14" /></svg>
                 Start a new chat
               </button>
@@ -238,7 +238,7 @@ export function ChatWidget() {
                   </div>
                 )}
                 {!s.aiConfigured && !s.groqKey && (
-                  <button onClick={() => { setOpen(false); go("settings"); }} style={{ width: "100%", marginBottom: 9, fontSize: 12.5, fontWeight: 600, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px" }}>
+                  <button onClick={() => { setOpen(false); go("settings"); }} style={{ width: "100%", marginBottom: 9, fontSize: 12.5, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 12, padding: "9px 12px" }}>
                     Connect your free AI key →
                   </button>
                 )}
