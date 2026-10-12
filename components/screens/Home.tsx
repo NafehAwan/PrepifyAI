@@ -197,7 +197,7 @@ function pickGreeting({ fresh, overall, weakest }: { fresh: boolean; overall: nu
   const hour = new Date().getHours();
   if (hour >= 23 || hour < 5) return { mood: "sleepy", text: "Studying late? Do one short test, then rest — a fresh brain scores better." };
   if (fresh) return { mood: "wave", text: "Salam! Pick a subject and I'll set you a test. Start with 10 questions if you're not sure." };
-  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — mashallah. Try the hard level and see how you go.` };
+  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — Masha'Allah. Try the hard level and see how you go.` };
   if (weakest) return { mood: "thinking", text: `${weakest} is your weakest right now. Want to do a short one on it?` };
   return { mood: "happy", text: "Ready for another test? Even 10 questions helps." };
 }
