@@ -1,0 +1,26 @@
+/* UGC ad: the app fills a 9:16 phone screen edge to edge, like a screen recording */
+.fmt-ugc #rig { width: 430px; height: 764px; margin-left: -215px; margin-top: -382px; }
+.fmt-ugc #lens { width: 430px; height: 764px; }
+.fmt-ugc .win { border-radius: 0; box-shadow: none; }
+.fmt-ugc #hook, .fmt-ugc #headline, .fmt-ugc #outro, .fmt-ugc #captions,
+.fmt-ugc #hook-cursor, .fmt-ugc #app-cursor, .fmt-ugc .stat-cards { display: none !important; }
+
+.fmt-ugc #bg { background: #14110f; } .fmt-ugc .blob { display: none; } /* behind the hook and the end card */
+#touch { position: absolute; left: 0; top: 0; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
+  background: rgba(30,30,30,.28); border: 2px solid rgba(255,255,255,.9); box-shadow: 0 0 0 1px rgba(0,0,0,.15); opacity: 0; z-index: 20; }
+
+/* TikTok-style captions: heavy white type, black outline, current word in yellow */
+.ucap { position: absolute; left: 80px; right: 80px; top: 1130px; text-align: center; font-family: "Figtree"; font-weight: 900;
+  font-size: 80px; line-height: 1.12; letter-spacing: -0.01em; color: #fff; -webkit-text-stroke: 16px #111; paint-order: stroke fill; opacity: 0; }
+.ucap.big { top: 700px; font-size: 98px; }
+.ucap .w { display: inline-block; margin: 0 0.06em; }
+
+/* end card */
+#endcard { position: absolute; left: 110px; right: 110px; top: 470px; background: #fff; border-radius: 48px; padding: 56px 40px 52px;
+  display: flex; flex-direction: column; align-items: center; gap: 18px; box-shadow: 0 40px 90px -30px rgba(0,0,0,.5); opacity: 0; }
+#endcard .ec-badge { width: 150px; height: 150px; border-radius: 50%; background: var(--accent); }
+#endcard .ec-badge svg { width: 150px; height: 150px; }
+#endcard .ec-word { font-family: "Caprasimo"; font-size: 96px; line-height: 1; color: var(--ink); }
+#endcard .ec-word span { color: var(--sage); }
+#endcard .ec-sub { font-size: 34px; font-weight: 650; color: var(--brown); text-align: center; }
+#endcard .ec-url { margin-top: 8px; font-size: 38px; font-weight: 800; color: #fff; background: var(--accentBtn); padding: 16px 34px; border-radius: 999px; }

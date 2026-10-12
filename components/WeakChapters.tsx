@@ -6,7 +6,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C } from "@/lib/theme";
+import { C, SHADOW } from "@/lib/theme";
 import { listSubjects } from "@/lib/curriculum";
 import { currentUserId } from "@/lib/analytics";
 import { startTest } from "@/lib/tests/store";
@@ -73,15 +73,15 @@ export function WeakChapters() {
   const judged = stats.filter((c) => c.attempted >= WEAK_MIN_ATTEMPTED);
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Weak chapters</div>
+    <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px" }}>
+      <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Weak chapters</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
         From every test and challenge. A chapter shows here once you&apos;ve answered {WEAK_MIN_ATTEMPTED}+ of its questions and
         score under {WEAK_BELOW_PCT}% in it.
       </div>
 
       {groups.length === 0 ? (
-        <div style={{ fontSize: 13.5, color: "#5d5648", lineHeight: 1.6, background: C.sageT, borderRadius: 16, padding: "12px 14px" }}>
+        <div style={{ fontSize: 13.5, color: "#4A4A42", lineHeight: 1.6, background: C.sageT, borderRadius: 16, padding: "12px 14px" }}>
           {judged.length === 0
             ? "Not enough answers yet to spot weak chapters — take a few more tests and they'll show up here."
             : "No weak chapters right now — every chapter you've practised is at 60% or more. Nice!"}
@@ -95,11 +95,11 @@ export function WeakChapters() {
             return (
               <div key={subjectId}>
                 <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", marginBottom: 8 }}>
-                  <div style={{ flex: 1, minWidth: 160, fontWeight: 700, fontSize: 14 }}>{name}</div>
+                  <div style={{ flex: 1, minWidth: 160, fontWeight: 600, fontSize: 14 }}>{name}</div>
                   <button
                     onClick={() => practise(subjectId, chapters, key)}
                     disabled={busy !== null}
-                    style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 16px", fontSize: 13, opacity: busy && busy !== key ? 0.5 : 1 }}
+                    style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "9px 16px", fontSize: 13, opacity: busy && busy !== key ? 0.5 : 1 }}
                   >
                     {busy === key ? "Building…" : `🎯 Practise my weak chapters${n > 1 ? ` (${n})` : ""}`}
                   </button>
@@ -118,7 +118,7 @@ export function WeakChapters() {
                             <div style={{ flex: 1, height: 8, background: C.sand, borderRadius: 999, overflow: "hidden", maxWidth: 220 }}>
                               <div style={{ height: 8, width: `${c.pct}%`, background: fg, borderRadius: 999 }} />
                             </div>
-                            <div style={{ fontSize: 12, fontWeight: 700, color: fg }}>{c.pct}%</div>
+                            <div style={{ fontSize: 12, fontWeight: 600, color: fg }}>{c.pct}%</div>
                             <div style={{ fontSize: 12, color: C.muted }}>
                               {c.correct}/{c.attempted} right
                             </div>
@@ -127,7 +127,7 @@ export function WeakChapters() {
                         <button
                           onClick={() => practise(subjectId, [c], ckey)}
                           disabled={busy !== null}
-                          style={{ borderRadius: 999, background: C.card, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "7px 14px", fontSize: 12.5, opacity: busy && busy !== ckey ? 0.5 : 1, flex: "none" }}
+                          style={{ borderRadius: 14, background: "transparent", color: C.ink, border: `1px solid ${C.lineStrong}`, fontWeight: 500, padding: "7px 14px", fontSize: 12.5, opacity: busy && busy !== ckey ? 0.5 : 1, flex: "none" }}
                         >
                           {busy === ckey ? "Building…" : "Practise"}
                         </button>
@@ -142,7 +142,7 @@ export function WeakChapters() {
       )}
 
       {error && (
-        <div style={{ marginTop: 12, fontSize: 13, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 14, padding: "10px 14px" }}>{error}</div>
+        <div style={{ marginTop: 12, fontSize: 13, fontWeight: 600, color: C.accentD, background: "#FBF0E7", borderRadius: 14, padding: "10px 14px" }}>{error}</div>
       )}
     </div>
   );

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C } from "@/lib/theme";
+import { C, DISPLAY, SHADOW, subjectColor } from "@/lib/theme";
 import { OFFERED_SUBJECTS } from "@/lib/data";
 import { listSubjects } from "@/lib/curriculum";
 import { getSubjectStats, type SubjectStats } from "@/lib/analytics";
@@ -80,7 +80,7 @@ export function Subjects() {
               aria-label="Challenge code or link"
               style={{ width: 150, borderRadius: 999, border: `1.5px solid ${joinError ? C.accent : C.line}`, background: C.card, padding: "9px 14px", fontSize: 13.5, fontWeight: 600, textTransform: "uppercase" }}
             />
-            <button type="submit" style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 16px", fontSize: 13.5 }}>
+            <button type="submit" style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "9px 16px", fontSize: 13.5 }}>
               Join
             </button>
           </form>
@@ -92,29 +92,28 @@ export function Subjects() {
           const taken = st?.testsTaken ?? 0;
           const best = st?.bestPct ?? null;
           const strong = (best ?? 0) >= 75;
-          const tint = strong ? C.sageT : C.tint;
-          const fg = strong ? C.sageD : C.accentD;
+                    const fg = strong ? C.sageD : C.accentD;
           return (
             <button
               key={name}
               onClick={() => openSubject(name)}
               className="pf-lift"
-              style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}
+              style={{ textAlign: "left", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 13, marginBottom: 16 }}>
-                <div style={{ width: 46, height: 46, flex: "none", borderRadius: 999, background: tint, color: fg, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 20 }}>
+                <div style={{ width: 44, height: 44, flex: "none", borderRadius: 12, background: subjectColor(name), color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: DISPLAY, fontSize: 21 }}>
                   {name[0]}
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontWeight: 700, fontSize: 16 }}>{name}</div>
-                  <div style={{ fontSize: 12.5, color: "#9a8d78" }}>
+                  <div style={{ fontWeight: 600, fontSize: 16 }}>{name}</div>
+                  <div style={{ fontSize: 12.5, color: "#8A8A80" }}>
                     {taken === 0 ? "No tests yet" : `${taken} test${taken === 1 ? "" : "s"} taken`}
                   </div>
                 </div>
-                <div style={{ fontFamily: "Caprasimo", fontSize: 22, color: fg }}>{st?.grade ?? "—"}</div>
+                <div style={{ fontFamily: DISPLAY, fontSize: 22, color: fg }}>{st?.grade ?? "—"}</div>
               </div>
-              <div style={{ height: 10, background: C.sand, borderRadius: 999, overflow: "hidden", marginBottom: 8 }}>
-                <div style={{ height: 10, width: `${best ?? 0}%`, background: fg, borderRadius: 999 }} />
+              <div style={{ height: 6, background: C.sand, borderRadius: 999, overflow: "hidden", marginBottom: 10 }}>
+                <div style={{ height: 6, width: `${best ?? 0}%`, background: fg, borderRadius: 999 }} />
               </div>
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12.5, color: C.muted, fontWeight: 600 }}>
                 <span>{best === null ? "Take your first test" : `Best ${best}%`}</span>

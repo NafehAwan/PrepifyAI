@@ -1,10 +1,19 @@
-/* Prepify AI — global styles. Warm "board year" palette, ported from the design prototype. */
+/* Prepify AI — global styles. The look follows niyyah/design.md: warm off-white paper,
+   one orange accent, hairlines, Playfair Display headlines, DM Sans everywhere else. */
+
+/* Fonts are self-hosted (public/fonts, SIL Open Font License): faster than a
+   round trip to Google from Pakistan, and nothing third-party on page load.
+   Latin subsets, variable weights. */
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/fonts/dm-sans.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/dm-sans-italic.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("/fonts/playfair-display.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400 500; font-display: swap; src: url("/fonts/playfair-display-italic.woff2") format("woff2"); }
 
 * { box-sizing: border-box; }
 
 :root {
   /* shared easing curves — smooth, natural motion everywhere */
-  --ease-out: cubic-bezier(.22, .61, .36, 1);   /* decelerate — entrances */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);      /* the one ease: fast out, long settle */
   --ease-soft: cubic-bezier(.34, 1.42, .64, 1);  /* gentle overshoot — pops */
   --ease-io: cubic-bezier(.65, 0, .35, 1);       /* smooth in-out — loops */
 }
@@ -12,12 +21,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #f5ead8;
-  color: #201e1d;
-  font-family: Figtree, system-ui, sans-serif;
+  background: #F9F8F4;
+  color: #1A1A18;
+  font-family: "DM Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 15.5px;
+  line-height: 1.6;
   overflow-x: hidden;   /* keep phone layouts from scrolling sideways */
 }
 
@@ -32,24 +41,30 @@ button {
      button, and a 30-question test renders ~120 option buttons. */
   transition: transform .22s var(--ease-soft), opacity .2s var(--ease-out), background-color .22s var(--ease-out), box-shadow .24s var(--ease-out), border-color .2s var(--ease-out);
 }
-button:hover:not(:disabled) { opacity: .92; }
-button:active:not(:disabled) { transform: scale(.96); }
+button:hover:not(:disabled) { opacity: .9; }
+button:active:not(:disabled) { transform: scale(.97); }
 button:disabled { cursor: default; }
 input, textarea { font-family: inherit; transition: border-color .2s var(--ease-out), box-shadow .2s var(--ease-out); }
-input:focus, textarea:focus { border-color: #c67139 !important; }
-a { color: #8f4a20; text-decoration: none; transition: color .2s var(--ease-out); }
-a:hover { color: #c67139; }
+input:focus, textarea:focus { border-color: #E8854A !important; box-shadow: 0 0 0 3px #E8854A1F; outline: none; }
+a { color: #C56A35; text-decoration: none; transition: color .2s var(--ease-out); }
+a:hover { color: #E8854A; }
 /* No smooth page scroll: every go() calls window.scrollTo(0,0), which would
    animate a full-page scroll on top of the screen's entrance animation. */
 html { scroll-behavior: auto; }
 
-::selection { background: #f0cdb1; }
-*:focus-visible { outline: 2px solid #c67139; outline-offset: 2px; }
+::selection { background: #F6D9C4; }
+strong, b { font-weight: 600; }  /* Niyyah never goes heavier than 600 */
+*:focus-visible { outline: 2px solid #E8854A; outline-offset: 2px; }
 
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-thumb { background: #dfcfb2; border-radius: 999px; border: 3px solid #f5ead8; }
+::-webkit-scrollbar-thumb { background: #D4D3CB; border-radius: 999px; border: 3px solid #F9F8F4; }
 
-@keyframes pf-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes pf-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+/* Headlines are set inline with fontFamily DISPLAY (lib/theme.ts). Playfair
+   Display reads best at weight 400 with slightly tight tracking, so every
+   Playfair element gets that unless it sets its own. */
+[style*="Playfair Display"] { font-weight: 400; letter-spacing: -0.015em; font-optical-sizing: auto; }
 @keyframes pf-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
 @keyframes pf-pop { 0% { opacity: 0; transform: scale(.92) translateY(10px); } 100% { opacity: 1; transform: none; } }
 @keyframes pf-slide-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }

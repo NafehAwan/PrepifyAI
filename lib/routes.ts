@@ -9,6 +9,7 @@
 //   /subjects/physics/challenge    Challenge friends
 //   /tests/<id>                    taking or reviewing a test
 //   /challenges/<CODE>             a challenge (lobby, test or results)
+//   /mock-exam                     set up a mock exam, past mocks
 //   /support, /support/<number>    Help & Feedback tickets
 //   /admin                         the owner's portal
 //   /progress, /leaderboard, /settings
@@ -46,6 +47,8 @@ export function pathFor(s: RouteState): string | null {
       return "/progress";
     case "leaderboard":
       return "/leaderboard";
+    case "mockExam":
+      return "/mock-exam";
     case "support":
       return "/support";
     case "supportTicket":
@@ -80,6 +83,7 @@ export function stateFromPath(pathname: string): Partial<AppState> | null {
   if (!a) return { screen: "home" };
   if (a === "progress" && !b) return { screen: "progress" };
   if (a === "leaderboard" && !b) return { screen: "leaderboard" };
+  if (a === "mock-exam" && !b) return { screen: "mockExam" };
   if (a === "admin" && !b) return { screen: "admin" };
   if (a === "support") {
     if (!b) return { screen: "support" };

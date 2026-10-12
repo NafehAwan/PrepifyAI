@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C } from "@/lib/theme";
+import { C, DISPLAY, cta } from "@/lib/theme";
+import { Em, Eyebrow } from "../Em";
 import { getSubjectStats, weakestSubjects, type SubjectStats } from "@/lib/analytics";
 import { listAllTests, type TestRow } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
@@ -51,8 +52,11 @@ export function Home() {
     <>
       <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
         <div>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 32, lineHeight: 1.1 }}>Assalam-o-Alaikum, {s.userName.split(" ")[0]}</div>
-          <div style={{ color: C.muted, marginTop: 4 }}>
+          <Eyebrow>Your dashboard</Eyebrow>
+          <div style={{ fontFamily: DISPLAY, fontSize: "clamp(30px, 3.6vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+            Assalam-o-Alaikum, <Em>{s.userName.split(" ")[0]}</Em>
+          </div>
+          <div style={{ color: C.body, marginTop: 6 }}>
             Class {s.cls.replace(/\D/g, "")} · {s.subs.length} subject{s.subs.length === 1 ? "" : "s"}
             {totalTests > 0 ? ` · ${totalTests} test${totalTests === 1 ? "" : "s"} taken` : ""}
           </div>
@@ -65,18 +69,18 @@ export function Home() {
 
         {s.authed && <StreakCard />}
 
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
-          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Your average</div>
+        <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
+          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Your average</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {overall === null ? "Take a test and it'll show here." : "Across every test you've taken."}
           </div>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 44, lineHeight: 1, color: overall === null ? C.muted : scoreColor(overall) }}>
+          <div style={{ fontFamily: DISPLAY, fontSize: 44, lineHeight: 1, color: overall === null ? C.muted : scoreColor(overall) }}>
             {overall === null ? "—" : `${overall}%`}
           </div>
         </div>
 
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
-          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Needs work</div>
+        <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
+          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Needs work</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {weak.length === 0 ? "Nothing yet — take a test in a couple of subjects." : "Your weakest subjects so far."}
           </div>
@@ -87,9 +91,9 @@ export function Home() {
           </div>
         </div>
 
-        <div style={{ gridColumn: "span 2", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
+        <div style={{ gridColumn: "span 2", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px" }}>
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 16 }}>
-            <div style={{ fontWeight: 700, fontSize: 15 }}>Average by subject</div>
+            <div style={{ fontWeight: 600, fontSize: 15 }}>Average by subject</div>
             <div style={{ fontSize: 12.5, color: C.muted }}>{fresh ? "Take a test to build these" : "Based on your test scores"}</div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(110px,1fr))", gap: 14 }}>
@@ -106,8 +110,8 @@ export function Home() {
                       <circle cx="44" cy="44" r="38" fill="none" stroke={color} strokeWidth="9" strokeLinecap="round" strokeDasharray={dash} transform="rotate(-90 44 44)" />
                     </svg>
                     <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                      <div style={{ fontFamily: "Caprasimo", fontSize: 24, lineHeight: 1, color: st?.avgPct === null ? C.muted : color }}>{st?.grade ?? "—"}</div>
-                      <div style={{ fontSize: 11, color: "#9a8d78", fontWeight: 600 }}>{st?.avgPct === null || st === undefined ? "" : `${pct}%`}</div>
+                      <div style={{ fontFamily: DISPLAY, fontSize: 24, lineHeight: 1, color: st?.avgPct === null ? C.muted : color }}>{st?.grade ?? "—"}</div>
+                      <div style={{ fontSize: 11, color: "#8A8A80", fontWeight: 600 }}>{st?.avgPct === null || st === undefined ? "" : `${pct}%`}</div>
                     </div>
                   </div>
                   <div style={{ fontSize: 13, fontWeight: 600, textAlign: "center" }}>{name}</div>
@@ -117,8 +121,8 @@ export function Home() {
           </div>
         </div>
 
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
-          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Recent tests</div>
+        <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
+          <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Recent tests</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
             {recent.length === 0 ? "No tests yet." : "Your last few results."}
           </div>
@@ -127,12 +131,12 @@ export function Home() {
               const pct = t.scorePct ?? 0;
               return (
                 <div key={t.id} style={{ display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "11px 13px" }}>
-                  <div style={{ width: 40, height: 40, flex: "none", borderRadius: 999, background: pct >= 50 ? C.sageT : C.tint, color: pct >= 50 ? C.sageD : C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 12.5 }}>
+                  <div style={{ width: 40, height: 40, flex: "none", borderRadius: 999, background: pct >= 50 ? C.sageT : C.tint, color: pct >= 50 ? C.sageD : C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 12.5 }}>
                     {pct}%
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: 13.5, fontWeight: 600 }}>{t.title}</div>
-                    <div style={{ fontSize: 12, color: "#9a8d78" }}>
+                    <div style={{ fontSize: 12, color: "#8A8A80" }}>
                       {t.correctCount}/{t.questionCount} · {t.remarks}
                     </div>
                   </div>
@@ -152,19 +156,19 @@ export function Home() {
 function StartCard({ fresh }: { fresh: boolean }) {
   const { go } = useApp();
   return (
-    <div style={{ gridColumn: "span 2", background: C.accent, borderRadius: 24, padding: "26px 28px", color: "#fff", display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap", boxShadow: "0 12px 28px rgba(198,113,57,.25)" }}>
-      <div style={{ flex: 1, minWidth: 220 }}>
-        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", opacity: 0.85, marginBottom: 6 }}>
-          {fresh ? "Start here" : "Keep going"}
+    <div style={{ gridColumn: "span 2", position: "relative", overflow: "hidden", background: C.cream, border: `0.5px solid ${C.goldLine}`, borderRadius: 20, padding: "28px 30px", display: "flex", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
+      {/* the soft orange → coral glow behind the copy */}
+      <div aria-hidden style={{ position: "absolute", inset: 0, background: "radial-gradient(420px circle at 18% 30%, #E8854A2E, #D4607A14 35%, transparent 70%)", pointerEvents: "none" }} />
+      <div style={{ flex: 1, minWidth: 220, position: "relative" }}>
+        <Eyebrow>{fresh ? "Start here" : "Keep going"}</Eyebrow>
+        <div style={{ fontFamily: DISPLAY, fontSize: 30, lineHeight: 1.12, letterSpacing: "-0.02em", marginBottom: 8 }}>
+          {fresh ? <>Take your <Em>first test.</Em></> : <>Take <Em>another test.</Em></>}
         </div>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 26, lineHeight: 1.15, marginBottom: 6 }}>
-          {fresh ? "Take your first test" : "Take another test"}
-        </div>
-        <div style={{ opacity: 0.9, fontSize: 14 }}>
+        <div style={{ color: C.body, fontSize: 15, lineHeight: 1.6, maxWidth: 460 }}>
           Pick a subject, choose 1 to 30 questions and how hard you want them. Every test is different.
         </div>
       </div>
-      <button onClick={() => go("subjects")} style={{ borderRadius: 999, background: "#fff", color: C.accentD, fontWeight: 700, padding: "14px 26px", fontSize: 15, flex: "none" }}>
+      <button onClick={() => go("subjects")} style={cta({ padding: "15px 28px", fontSize: 15, flex: "none", position: "relative" })}>
         My subjects →
       </button>
     </div>
@@ -181,12 +185,12 @@ function SubjectJump({ name, id, pct, note }: { name: string; id: string; pct: n
       }}
       style={{ width: "100%", textAlign: "left", display: "flex", alignItems: "center", gap: 12, background: C.bg, borderRadius: 16, padding: "12px 14px" }}
     >
-      <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 12.5 }}>
+      <div style={{ width: 36, height: 36, flex: "none", borderRadius: 999, background: C.tint, color: C.accentD, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 12.5 }}>
         {pct}%
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ fontSize: 13.5, fontWeight: 600 }}>{name}</div>
-        <div style={{ fontSize: 12, color: "#9a8d78" }}>{note}</div>
+        <div style={{ fontSize: 12, color: "#8A8A80" }}>{note}</div>
       </div>
     </button>
   );
@@ -197,7 +201,7 @@ function pickGreeting({ fresh, overall, weakest }: { fresh: boolean; overall: nu
   const hour = new Date().getHours();
   if (hour >= 23 || hour < 5) return { mood: "sleepy", text: "Studying late? Do one short test, then rest — a fresh brain scores better." };
   if (fresh) return { mood: "wave", text: "Salam! Pick a subject and I'll set you a test. Start with 10 questions if you're not sure." };
-  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — mashallah. Try the hard level and see how you go.` };
+  if (overall !== null && overall >= 80) return { mood: "proud", text: `${overall}% average — Masha'Allah. Try the hard level and see how you go.` };
   if (weakest) return { mood: "thinking", text: `${weakest} is your weakest right now. Want to do a short one on it?` };
   return { mood: "happy", text: "Ready for another test? Even 10 questions helps." };
 }
@@ -206,9 +210,9 @@ function HomeGreeter({ mood, text }: { mood: Mood; text: string }) {
   const isMobile = useIsMobile();
   return (
     <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 10 : 12, maxWidth: "100%" }}>
-      <div style={{ position: "relative", background: C.card, border: `1px solid ${C.line}`, borderRadius: 18, padding: "11px 15px", maxWidth: isMobile ? 200 : 250, fontSize: isMobile ? 12.5 : 13.5, lineHeight: 1.5, color: "#4a443c", boxShadow: "0 6px 18px rgba(90,62,30,.08)", animation: "pf-pop .5s var(--ease-soft) both" }}>
+      <div style={{ position: "relative", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 18, padding: "11px 15px", maxWidth: isMobile ? 200 : 250, fontSize: isMobile ? 12.5 : 13.5, lineHeight: 1.5, color: "#4A4A42", boxShadow: "0 6px 18px rgba(90,62,30,.08)", animation: "pf-pop .5s var(--ease-soft) both" }}>
         {text}
-        <div style={{ position: "absolute", right: -7, top: "50%", transform: "translateY(-50%) rotate(45deg)", width: 13, height: 13, background: C.card, borderRight: `1px solid ${C.line}`, borderTop: `1px solid ${C.line}` }} />
+        <div style={{ position: "absolute", right: -7, top: "50%", transform: "translateY(-50%) rotate(45deg)", width: 13, height: 13, background: C.card, borderRight: `0.5px solid ${C.line}`, borderTop: `0.5px solid ${C.line}` }} />
       </div>
       {/* No .pf-lift here — a transform transition on the wrapper fighting the
           mascot's own transform animation caused layer thrash on hover. */}
@@ -233,16 +237,16 @@ function StreakCard() {
 
   const streak = stats?.streak ?? 0;
   return (
-    <button onClick={() => go("leaderboard")} className="pf-lift" style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 22 }}>
-      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Streak &amp; XP</div>
+    <button onClick={() => go("leaderboard")} className="pf-lift" style={{ textAlign: "left", background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 22 }}>
+      <div style={{ fontWeight: 600, fontSize: 15, marginBottom: 3 }}>Streak &amp; XP</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 12 }}>
         {stats === null ? "Loading…" : streak === 0 ? "Finish a test today to start a streak." : "Finish a test or challenge today to keep it going."}
       </div>
       <div style={{ display: "flex", gap: 18, alignItems: "baseline", flexWrap: "wrap" }}>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: streak > 0 ? C.accent : C.muted }}>🔥 {streak}</div>
-        <div style={{ fontSize: 13, fontWeight: 700, color: C.sageD }}>{stats?.xpWeek ?? 0} XP this week</div>
+        <div style={{ fontFamily: DISPLAY, fontSize: 34, lineHeight: 1, color: streak > 0 ? C.accent : C.muted }}>🔥 {streak}</div>
+        <div style={{ fontSize: 13, fontWeight: 600, color: C.sageD }}>{stats?.xpWeek ?? 0} XP this week</div>
       </div>
-      <div style={{ fontSize: 12.5, fontWeight: 700, color: C.accentD, marginTop: 12 }}>See the leaderboard →</div>
+      <div style={{ fontSize: 12.5, fontWeight: 600, color: C.accentD, marginTop: 12 }}>See the leaderboard →</div>
     </button>
   );
 }

@@ -1,0 +1,994 @@
+{
+  "subject": "Chemistry",
+  "chapter_seq": 6,
+  "questions": [
+    {
+      "id": "d6ffa8c2fba2",
+      "stem": "How many particles are in one mole of a substance?",
+      "options": [
+        "6.022 x 10²³",
+        "6.022 x 10²²",
+        "1.66 x 10⁻²⁴",
+        "6.022 x10¹³"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "c727d91f6d11"
+    },
+    {
+      "id": "bd52ddf67e45",
+      "stem": "What is the relationship between mass, moles, and molar mass?",
+      "options": [
+        "Moles = Mass x Molar Mass",
+        "Molar Mass = Mass x Moles",
+        "Mass = Moles x Molar Mass",
+        "Mass = Moles / Molar Mass"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "eac8f1ecde64"
+    },
+    {
+      "id": "465d16da129e",
+      "stem": "What does a chemical equation with state symbols represent?",
+      "options": [
+        "Only the reactants.",
+        "The stoichiometry of the reaction and the physical state of all components.",
+        "The time taken for the reaction.",
+        "Only the products."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "8d26f9f40e8e"
+    },
+    {
+      "id": "3e7c384939d6",
+      "stem": "In a chemical equation, what do the coefficients indicate?",
+      "options": [
+        "The number of grams.",
+        "The molar mass.",
+        "The number of moles reacting.",
+        "The number of atoms."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "580c503093ad"
+    },
+    {
+      "id": "87b68e22788e",
+      "stem": "If a reaction has a reactant with the state symbol (aq), it means it is:",
+      "options": [
+        "A gas",
+        "A solid",
+        "Dissolved in water",
+        "A pure liquid"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "d0d9dc913355",
+      "stem": "What is the purpose of balancing a chemical equation?",
+      "options": [
+        "To make it look neat.",
+        "To satisfy the Law of Conservation of Mass.",
+        "To change the product.",
+        "To increase the energy of the reaction."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "e5116040173d",
+      "stem": "The molar mass of an element is numerically equal to:",
+      "options": [
+        "Its atomic number.",
+        "The density.",
+        "The number of protons.",
+        "Its relative atomic mass in g/mol."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "8f8ca0101861",
+      "stem": "To calculate the number of particles in 2 moles of substance, you:",
+      "options": [
+        "Divide by Avogadro's constant.",
+        "Multiply by molar mass.",
+        "Multiply by Avogadro's constant.",
+        "Divided by molar mass."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "33c823f109e0",
+      "stem": "Ionic equations exclude:",
+      "options": [
+        "Spectator ions.",
+        "Products.",
+        "Reactants.",
+        "State symbols."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "4d4331a01785",
+      "stem": "A binary compound is formed from ions Na⁺ and Cl⁻. What is its formula?",
+      "options": [
+        "Na₂Cl",
+        "NaCl",
+        "Na₂Cl₂",
+        "NaCl₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "7ed879e900cb"
+    },
+    {
+      "id": "09527717d20a",
+      "stem": "What is the molar mass of water (H₂O)?",
+      "options": [
+        "17.01 g/mol",
+        "18.02 g/mol",
+        "32.00 g/mol",
+        "16.00 g/mol"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "51fe0cb9a724"
+    },
+    {
+      "id": "03794c1ce023",
+      "stem": "What is the simplest formula of a molecule containing C₆H₁₂O₆?",
+      "options": [
+        "C₆H₁₂O₆",
+        "C₂H₄O₂",
+        "C₃H₆O₃",
+        "CH₂O"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "61b0efb3eafe"
+    },
+    {
+      "id": "07d2241bac55",
+      "stem": "Which of the following is an ionic equation?",
+      "options": [
+        "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+        "2H₂ + O₂ → 2H₂O",
+        "C + O₂ → CO₂",
+        "NaCl → Na + Cl"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "8c7637374515",
+      "stem": "If you have 0.5 moles of O₂, how many molecules of O₂ do you have?",
+      "options": [
+        "6.022×10²³",
+        "3.011×10²³",
+        "0.5",
+        "1.204×10²⁴"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "8677b0e49163"
+    },
+    {
+      "id": "63cc23e91eb1",
+      "stem": "What does the formula of a binary compound like MgCl₂ tell us?",
+      "options": [
+        "It has 2 Magnesium atoms.",
+        "Magnesium has a -2 charge.",
+        "It is a covalent molecule.",
+        "It has a ratio of 1 Magnesium ion to 2 Chloride ions."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "a301086574fc"
+    },
+    {
+      "id": "edc24e8a73c8",
+      "stem": "Which is a reactant in the following equation?\nC+O₂→CO₂",
+      "options": [
+        "CO₂",
+        "C and O₂",
+        "O₂",
+        "C"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "f63db279270c"
+    },
+    {
+      "id": "7994978638b0",
+      "stem": "Which of the following equations is balanced?",
+      "options": [
+        "N₂+H₂→NH₃",
+        "N₂+H₂→2NH₃",
+        "N₂+3H₂→2NH₃",
+        "2N₂+H₂→NH₃"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "027e8584a8b4"
+    },
+    {
+      "id": "558ad26110f0",
+      "stem": "What does the state symbol \"(s)\" indicate in a chemical equation?",
+      "options": [
+        "The substance is in a solid state.",
+        "The substance is dissolved in water.",
+        "The substance is in a liquid state.",
+        "The substance is a solution."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "4d2a8c4e79f1"
+    },
+    {
+      "id": "8d0f36039d3c",
+      "stem": "Why is the mole considered a \"bridge\" in stoichiometry?",
+      "options": [
+        "It counts electrons only.",
+        "It is used to balance ionic charges.",
+        "It connects the microscopic world of atoms/molecules to the macroscopic world of grams.",
+        "It is the only unit that measures volume."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "bb6319f602a7"
+    },
+    {
+      "id": "532a04a2b35a",
+      "stem": "If you double the amount of moles of a reactant in a balanced equation, what happens to the theoretical amount of product?",
+      "options": [
+        "It stays the same.",
+        "It doubles.",
+        "It is halved.",
+        "It becomes zero."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "93f70649d3eb"
+    },
+    {
+      "id": "e680bef791b0",
+      "stem": "How does the Law of Conservation of Mass dictate chemical equation balancing?",
+      "options": [
+        "Atoms must be created to balance charge.",
+        "Mass can be destroyed if the energy is high enough.",
+        "Only the products have mass.",
+        "The total mass of reactants must equal the total mass of products, requiring the same number of each type of atom on both sides."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "c72d0bc67487"
+    },
+    {
+      "id": "829c4e07352e",
+      "stem": "Which of these contains the largest number of atoms?",
+      "options": [
+        "1 mole of H₂O",
+        "1 mole of NaCl",
+        "1 mole of CH₄",
+        "1 mole of CO₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "f0b647fe306a"
+    },
+    {
+      "id": "7b423e92656e",
+      "stem": "Which measurement is not necessary to find the empirical formula of a compound?",
+      "options": [
+        "The mass percentage of each element.",
+        "The atomic masses of the elements.",
+        "The ratio of the moles of elements.",
+        "The molar mass of the compound."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "e0d780ac9561"
+    },
+    {
+      "id": "dd9c0c73525d",
+      "stem": "What does a molar mass of 18.02 g/mol tell you physically?",
+      "options": [
+        "That 1 molecule weighs 18.02g.",
+        "That the element is a solid.",
+        "That 6.022×10²³molecules weigh 18.02 g.",
+        "That 1 atom weighs 18.02 g."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "69d83d1c4130"
+    },
+    {
+      "id": "7f4fd6841bd3",
+      "stem": "How many grams of Carbon are in 1 mole of Carbon?",
+      "options": [
+        "1g",
+        "12g",
+        "6g",
+        "24g"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "f5bb5382b15b"
+    },
+    {
+      "id": "f2f3dedfc31c",
+      "stem": "How many atoms are in one molecule of H₂SO₄?",
+      "options": [
+        "3",
+        "6",
+        "7",
+        "4"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "82dd2662e8a0"
+    },
+    {
+      "id": "f84c025023d2",
+      "stem": "What is the formula mass of CuSO₄·5H₂O?",
+      "options": [
+        "159.5",
+        "149.5",
+        "249.5",
+        "185.5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "fa15ed42e0a0",
+      "stem": "What is the difference between a formula unit and a molecule?",
+      "options": [
+        "Molecule applies to ionic compounds.",
+        "A formula unit applies to ionic compounds; A molecule applies to covalent compounds.",
+        "No difference.",
+        "Molecules are always bigger."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "9dd1515092ca",
+      "stem": "Why is the \"mole\" a better unit than \"gram\" for chemical reactions?",
+      "options": [
+        "Moles represent the actual count of reactive units, whereas grams depend on atomic mass.",
+        "Grams are too small.",
+        "Moles are easier to measure.",
+        "Grams are not used in science."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "00deff44c2e5"
+    },
+    {
+      "id": "0b5516fe2e53",
+      "stem": "Why is an empirical formula used for ionic compounds?",
+      "options": [
+        "Because they are too heavy.",
+        "Because they have no ratio.",
+        "Because they are covalent.",
+        "Because they form infinite lattices, not discrete molecules."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "488dfde051a5"
+    },
+    {
+      "id": "19f79f6a65ab",
+      "stem": "Why do we use ionic equations instead of full molecular equations in aqueous reactions?",
+      "options": [
+        "Because state symbols are not used in ionic equations.",
+        "To save ink.",
+        "Because molecular equations are always wrong.",
+        "To highlight the specific ions that undergo chemical change, ignoring spectator ions."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "466b33793146"
+    },
+    {
+      "id": "9e038289d4da",
+      "stem": "You have a sample of H₂O and D₂O (Heavy water). They have the same number of moles, but different masses. Why?",
+      "options": [
+        "D₂O is a gas.",
+        "D₂O has more electrons.",
+        "H₂O Is ionic.",
+        "D₂O has more neutrons."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "4563b7178c05"
+    },
+    {
+      "id": "74ddafabd0df",
+      "stem": "What does the coefficient \"3\" in 3O₂ represent in a chemical equation?",
+      "options": [
+        "3 grams of oxygen.",
+        "3 moles of O₂ molecules.",
+        "3 atoms of oxygen.",
+        "3 moles of oxygen atoms."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "fea52515363a"
+    },
+    {
+      "id": "918146de37cc",
+      "stem": "Why is the equation H₂ + O₂ → H₂O considered incorrect?",
+      "options": [
+        "Hydrogen is a metal",
+        "Oxygen should be monatomic",
+        "Water cannot be formed",
+        "Atoms are not balanced"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "2f1ba227f69a"
+    },
+    {
+      "id": "9291e9ab5f71",
+      "stem": "During an experiment, a student balances the equation:\nFe + O₂ → Fe₂O₃\nWhich balanced equation is correct?",
+      "options": [
+        "Fe + O₂ → Fe₂O₃",
+        "4Fe + 3O₂ → 2Fe₂O₃",
+        "2Fe + O₂ → Fe₂O₃",
+        "2Fe + 3O₂ → 2Fe₂O₃"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "49818bc43bad",
+      "stem": "Which change would NOT affect the validity of a balanced equation?",
+      "options": [
+        "Multiplying all coefficients by the same number",
+        "Removing coefficients",
+        "Changing subscripts",
+        "Changing formulas"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "ab6eeda50741"
+    },
+    {
+      "id": "d1abc69cf846",
+      "stem": "A student calculates the molar mass of CaCO₃ as 100 g/mol. Which step is essential in this calculation?",
+      "options": [
+        "Using atomic numbers",
+        "Multiplying by Avogadro’s number",
+        "Adding the relative atomic masses of all atoms in the formula",
+        "Dividing by the number of atoms"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "e85a49772572"
+    },
+    {
+      "id": "80d36b0d011f",
+      "stem": "During a reaction, the total number of molecules changes, but the equation remains balanced. Which law is still obeyed?",
+      "options": [
+        "Conservation of energy",
+        "Boyle’s law",
+        "Charles’s law",
+        "Conservation of mass"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "19ff702f2b5e"
+    },
+    {
+      "id": "c9a1663f7f15",
+      "stem": "When balancing equations, why is it often useful to balance oxygen and hydrogen atoms last?",
+      "options": [
+        "They are usually monatomic.",
+        "They often appear in multiple compounds and are easier to adjust later.",
+        "They never affect the coefficients of other substances.",
+        "Their coefficients are always one."
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "e1e278026019"
+    },
+    {
+      "id": "fdb5c1cf407a",
+      "stem": "A compound contains calcium and nitrogen. Calcium forms Ca²⁺ ions, and nitrogen forms N³⁻ ions. What formula will the compound have?",
+      "options": [
+        "CaN",
+        "Ca₂N₃",
+        "CaN₂",
+        "Ca₃N₂"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "b998b56703d9"
+    },
+    {
+      "id": "5e93fd1879ac",
+      "stem": "A student notices that ionic equations include aqueous ions but omit solid precipitates. Why?",
+      "options": [
+        "Solids do not dissociate into ions in solution.",
+        "Solids do not participate in reactions.",
+        "Solids have no charge.",
+        "Solids are always spectator ions."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "08b0296256fa"
+    },
+    {
+      "id": "b40bf7569a14",
+      "stem": "A student balances the equation:\n__ C₂H₆ + __ O₂ → __ CO₂ + __ H₂O\nWhat coefficient should be placed before O₂?",
+      "options": [
+        "2",
+        "3",
+        "7/2",
+        "5"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "338104601936",
+      "stem": "A student balances the equation:\nP₄ + O₂ → P₂O₅\nWhich set of coefficients is correct?",
+      "options": [
+        "1, 5, 2",
+        "2, 5, 2",
+        "1, 3, 2",
+        "2, 3, 4"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "f1d1f812c821",
+      "stem": "A chemist needs to prepare a neutral compound from Al³⁺ and SO₄²⁻ ions. Which formula is correct?",
+      "options": [
+        "AlSO₄",
+        "Al₂(SO₄)₃",
+        "Al₃SO₄",
+        "Al(SO₄)₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "c84c4b1b9fe2"
+    },
+    {
+      "id": "437587fad556",
+      "stem": "A student compares one mole of oxygen gas with one mole of oxygen atoms. Which statement is correct?",
+      "options": [
+        "Both contain the same number of atoms.",
+        "Oxygen atoms contain twice as many molecules.",
+        "Both have different Avogadro numbers.",
+        "Oxygen gas contains twice as many oxygen atoms."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "1182b7baec33"
+    },
+    {
+      "id": "e2aed9d83c23",
+      "stem": "After balancing:\nAl + HCl → AlCl₃ + H₂\nThe sum of all coefficients is:",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "5c4d77186c5c",
+      "stem": "A chemist writes the molecular equation for a reaction, but the net ionic equation is much shorter. Why?",
+      "options": [
+        "Molecular equations are always incorrect.",
+        "Net ionic equations ignore charges.",
+        "Molecular equations contain only solids.",
+        "Net ionic equations include only substances that actually change during the reaction."
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "e50a69b42f22"
+    },
+    {
+      "id": "0d507ca4aa2b",
+      "stem": "Which statement best explains why coefficients are used instead of changing subscripts when balancing equations?",
+      "options": [
+        "Subscripts represent fixed chemical identities of substances",
+        "Coefficients cannot be changed",
+        "Subscripts represent masses only",
+        "Coefficients change the formula"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true,
+      "family": "5571e858e604"
+    },
+    {
+      "id": "05c64dae461d",
+      "stem": "Ayesha helps at her father's shop. She picks up two packets. The sugar packet holds 684 g of sucrose, C₁₂H₂₂O₁₁. The salt packet holds 117 g of sodium chloride, NaCl. Her chemistry book gives these atomic masses: H = 1, C = 12, O = 16, Na = 23 and Cl = 35.5.\n\nWhat is the molar mass of sucrose, C₁₂H₂₂O₁₁?",
+      "options": [
+        "29 g",
+        "180 g",
+        "342 g",
+        "684 g"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "ba8e981b8932",
+      "stem": "Ayesha helps at her father's shop. She picks up two packets. The sugar packet holds 684 g of sucrose, C₁₂H₂₂O₁₁. The salt packet holds 117 g of sodium chloride, NaCl. Her chemistry book gives these atomic masses: H = 1, C = 12, O = 16, Na = 23 and Cl = 35.5.\n\nHow many moles of sucrose are in the sugar packet?",
+      "options": [
+        "0.5 moles",
+        "2 moles",
+        "3 moles",
+        "4 moles"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "679d3b0d958a",
+      "stem": "Ayesha helps at her father's shop. She picks up two packets. The sugar packet holds 684 g of sucrose, C₁₂H₂₂O₁₁. The salt packet holds 117 g of sodium chloride, NaCl. Her chemistry book gives these atomic masses: H = 1, C = 12, O = 16, Na = 23 and Cl = 35.5.\n\nHow many sucrose molecules are in the sugar packet?",
+      "options": [
+        "3.011×10²³",
+        "6.022×10²³",
+        "4.119×10²⁶",
+        "1.2044×10²⁴"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "72ab455d84b9",
+      "stem": "Ayesha helps at her father's shop. She picks up two packets. The sugar packet holds 684 g of sucrose, C₁₂H₂₂O₁₁. The salt packet holds 117 g of sodium chloride, NaCl. Her chemistry book gives these atomic masses: H = 1, C = 12, O = 16, Na = 23 and Cl = 35.5.\n\nAyesha says the sugar packet must hold more particles, because it is heavier. Is she right?",
+      "options": [
+        "No. Both packets hold 2 moles, so they hold the same number of particles",
+        "Yes, because 684 g is more than 117 g",
+        "Yes, because each sucrose molecule has more atoms",
+        "No, the salt packet holds more particles because salt is lighter"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "c5385400088a",
+      "stem": "In a chemistry lesson, the teacher drops a small 2.3 g piece of sodium into a large bowl of water. The sodium fizzes and moves quickly over the water. Hydrogen gas is given off. Sodium hydroxide forms and dissolves in the water. The teacher writes the unbalanced equation on the board: Na + H₂O → NaOH + H₂. The atomic mass of sodium is 23.\n\nWhich is the balanced equation for this reaction?",
+      "options": [
+        "Na+H₂O→NaOH+H₂",
+        "2Na+2H₂O→2NaOH+H₂",
+        "Na+2H₂O→NaOH+2H₂",
+        "2Na+H₂O→2NaOH+H₂"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "eedcc090df6e",
+      "stem": "In a chemistry lesson, the teacher drops a small 2.3 g piece of sodium into a large bowl of water. The sodium fizzes and moves quickly over the water. Hydrogen gas is given off. Sodium hydroxide forms and dissolves in the water. The teacher writes the unbalanced equation on the board: Na + H₂O → NaOH + H₂. The atomic mass of sodium is 23.\n\nHow many moles of sodium did the teacher use?",
+      "options": [
+        "0.1 mole",
+        "1 mole",
+        "2.3 moles",
+        "10 moles"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "f4d57add03a9",
+      "stem": "In a chemistry lesson, the teacher drops a small 2.3 g piece of sodium into a large bowl of water. The sodium fizzes and moves quickly over the water. Hydrogen gas is given off. Sodium hydroxide forms and dissolves in the water. The teacher writes the unbalanced equation on the board: Na + H₂O → NaOH + H₂. The atomic mass of sodium is 23.\n\nHow many sodium atoms were in the piece?",
+      "options": [
+        "6.022×10²¹",
+        "1.385×10²⁴",
+        "6.022×10²³",
+        "6.022×10²²"
+      ],
+      "answer": 3,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    },
+    {
+      "id": "7533fe8b5e7b",
+      "stem": "In a chemistry lesson, the teacher drops a small 2.3 g piece of sodium into a large bowl of water. The sodium fizzes and moves quickly over the water. Hydrogen gas is given off. Sodium hydroxide forms and dissolves in the water. The teacher writes the unbalanced equation on the board: Na + H₂O → NaOH + H₂. The atomic mass of sodium is 23.\n\nThe teacher then asks for the ionic equation. Which one is correct?",
+      "options": [
+        "2Na+2H₂O→2NaOH+H₂",
+        "2Na+2H⁺+2OH⁻→2Na⁺+2OH⁻+H₂",
+        "2Na+2H₂O→2Na⁺+2OH⁻+H₂",
+        "2Na⁺+2H₂O→2NaOH+H₂"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 6,
+      "source_file": "chem U#6 MCQs.docx",
+      "mock": true
+    }
+  ]
+}

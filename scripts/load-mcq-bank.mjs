@@ -1,12 +1,15 @@
-// Loads content/mcq-bank/*.json (plus extra/, variants/ and generated/) into the
-// `questions` table.
+// Loads content/mcq-bank/*.json (plus extra/, variants/, generated/ and mock/)
+// into the `questions` table.
 //
 //   node scripts/load-mcq-bank.mjs                 # write via the service role
 //   node scripts/load-mcq-bank.mjs --sql           # emit batched SQL for a SQL console instead
 //   node scripts/load-mcq-bank.mjs --subject=Physics
+//   node scripts/load-mcq-bank.mjs --sql --only=mock    # just the mock pool
 //
 // Idempotent: every run first deletes the chapter's existing source='bank' rows,
-// so re-running after a bank edit replaces rather than duplicates.
+// so re-running after a bank edit replaces rather than duplicates. --only=mock
+// loads just the mock pool and deletes nothing: it adds the rows that aren't in
+// the database yet, so ids of questions already asked stay the same.
 //
 // Questions whose answer is still null are skipped — they cannot be asked until
 // scripts/derive-answers.mjs has filled them in.
@@ -50,7 +53,16 @@ function readBankForLoad() {
   return readBank(bankDir)
     .filter((c) => !args.subject || c.subject === args.subject)
     .map((c) => {
-      const usable = usableQuestions(c);
+      // A mock-pool question that is word for word one already in the bank is
+      // the same row, flagged mock — not a second copy.
+      const byText = new Map();
+      for (const q of usableQuestions(c)) {
+        const key = JSON.stringify([q.stem, q.options]);
+        const prev = byText.get(key);
+        if (prev) prev.mock = prev.mock || q.mock === true;
+        else byText.set(key, { ...q });
+      }
+      const usable = [...byText.values()].filter((q) => !args.only || q.mock === true);
       return {
         file: `${SLUG[c.subject]}-u${String(c.chapter_seq).padStart(2, "0")}.json`,
         subject: c.subject,
@@ -82,6 +94,8 @@ function toRow(q, chapterId) {
     // at most one member per family in a test.
     family: familyOf(q),
     explanation_md: q.explanation ?? null,
+    // In the mock-exam pool (supabase/mock.sql) as well as the normal bank.
+    mock: q.mock === true,
   };
 }
 
@@ -102,7 +116,7 @@ if (args.sql) {
   //                   deleting its old source='bank' rows
   //   99-verify.sql   per-chapter count and checksum, to compare with
   //                   expected.json, then drops the helper
-  // Every row is [stem, options, answer letter, difficulty 1-5, scenario 0/1, family].
+  // Every row is [stem, options, answer letter, difficulty 1-5, scenario 0/1, family, mock 0/1].
   const outDir = join(root, "scripts", "mcq-bank-sql");
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
@@ -117,11 +131,19 @@ begin
    where s.name = p_subject and c.seq = p_seq;
   if ch is null then raise exception 'no chapter % %', p_subject, p_seq; end if;
   if p_replace then delete from questions where chapter_id = ch and source = 'bank'; end if;
-  insert into questions (chapter_id, type, category, source, difficulty, stem_md, options_json, answer_key_md, marks, family)
+  insert into questions (chapter_id, type, category, source, difficulty, stem_md, options_json, answer_key_md, marks, family, mock)
   select ch, 'mcq', case when (r->>4)::int = 1 then 'scenario' else 'concept' end, 'bank', (r->>3)::int,
-         r->>0, r->1, r->>2, 1, r->>5
-    from jsonb_array_elements(p_rows) r;
+         r->>0, r->1, r->>2, 1, r->>5, coalesce((r->>6)::int, 0) = 1
+    from jsonb_array_elements(p_rows) r
+   -- Already there (an --only run, or a batch sent twice): leave it alone.
+   where not exists (select 1 from questions x
+                      where x.chapter_id = ch and x.source = 'bank' and x.stem_md = r->>0 and x.options_json = r->1);
   get diagnostics n = row_count;
+  -- Mock-pool questions that were already in the bank: flag them.
+  update questions x set mock = true
+    from jsonb_array_elements(p_rows) r
+   where coalesce((r->>6)::int, 0) = 1 and not x.mock
+     and x.chapter_id = ch and x.source = 'bank' and x.stem_md = r->>0 and x.options_json = r->1;
   return n;
 end $$;
 revoke all on function public.prepify_load_bank(text, int, jsonb, boolean) from public, anon, authenticated;
@@ -137,13 +159,13 @@ revoke all on function public.prepify_load_bank(text, int, jsonb, boolean) from 
     if (bank.questions.length === 0) continue;
     const rows = bank.questions.map((x) => {
       const r = toRow(x, null);
-      return [r.stem_md, r.options_json, r.answer_key_md, r.difficulty, r.category === "scenario" ? 1 : 0, r.family];
+      return [r.stem_md, r.options_json, r.answer_key_md, r.difficulty, r.category === "scenario" ? 1 : 0, r.family, r.mock ? 1 : 0];
     });
     // Checksum the database can reproduce: md5 over sorted md5(stem|A|B|C|D) || letter || family.
     const parts = rows.map((r) => createHash("md5").update([r[0], ...r[1]].join("|")).digest("hex") + r[2] + r[5]).sort();
     expected[`${bank.subject}::${bank.chapter_seq}`] = { count: rows.length, md5: createHash("md5").update(parts.join("")).digest("hex") };
     let chunk = [];
-    let first = true;
+    let first = !args.only; // a partial load must never clear the chapter
     const flush = () => {
       if (!chunk.length) return;
       const json = JSON.stringify(chunk);
@@ -229,7 +251,9 @@ for (const bank of banks) {
   }
   if (bank.questions.length === 0) continue;
 
-  const { error: delErr } = await db.from("questions").delete().eq("chapter_id", chapterId).eq("source", "bank");
+  const { error: delErr } = args.only
+    ? { error: null } // a partial load must never clear the chapter
+    : await db.from("questions").delete().eq("chapter_id", chapterId).eq("source", "bank");
   if (delErr) {
     console.error(`  delete failed for ${bank.file}: ${delErr.message}`);
     continue;

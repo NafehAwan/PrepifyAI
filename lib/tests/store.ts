@@ -24,6 +24,9 @@ export interface TestRow {
   scope: string | null; // "Whole book", "Chapter 7", "Ch 2, 5"
   createdAt: string;
   submittedAt: string | null;
+  kind: "test" | "mock";
+  timeLimitMin: number | null; // mocks only
+  deadline: string | null; // mocks only: when the clock runs out (server time)
 }
 
 export interface TestDetail extends TestRow {
@@ -45,6 +48,9 @@ interface RawTest {
   scope: string | null;
   created_at: string;
   submitted_at: string | null;
+  kind?: string | null;
+  time_limit_min?: number | null;
+  deadline?: string | null;
   questions_json?: unknown;
   answers_json?: unknown;
 }
@@ -63,24 +69,38 @@ function toRow(r: RawTest): TestRow {
     scope: r.scope ?? null,
     createdAt: r.created_at,
     submittedAt: r.submitted_at,
+    kind: r.kind === "mock" ? "mock" : "test",
+    timeLimitMin: r.time_limit_min ?? null,
+    deadline: r.deadline ?? null,
   };
 }
 
 const CARD_COLUMNS =
-  "id, seq, title, difficulty, question_count, correct_count, score_pct, remarks, status, scope, created_at, submitted_at";
+  "id, seq, title, difficulty, question_count, correct_count, score_pct, remarks, status, scope, created_at, submitted_at, kind, time_limit_min, deadline";
 
 // The test name is generated, never typed: "Test #01" numbered per subject.
 export function titleForSeq(seq: number): string {
   return `Test #${String(seq).padStart(2, "0")}`;
 }
 
+// A subject's tests (not its mock exams, which have their own screen).
 export async function listTests(userId: string, subjectId: string): Promise<TestRow[]> {
+  return listByKind(userId, subjectId, "test");
+}
+
+// A subject's mock exams, newest first.
+export async function listMocks(userId: string, subjectId: string): Promise<TestRow[]> {
+  return listByKind(userId, subjectId, "mock");
+}
+
+async function listByKind(userId: string, subjectId: string, kind: "test" | "mock"): Promise<TestRow[]> {
   if (!isSupabaseConfigured()) return [];
   const { data } = await createClient()
     .from("tests")
     .select(CARD_COLUMNS)
     .eq("user_id", userId)
     .eq("subject_id", subjectId)
+    .eq("kind", kind)
     .order("created_at", { ascending: false });
   return ((data ?? []) as RawTest[]).map(toRow);
 }
@@ -156,6 +176,8 @@ export interface SubmitResult {
   correctCount: number;
   scorePct: number;
   remarks: string;
+  // A mock handed in well after its deadline: marked with no answers.
+  late: boolean;
 }
 
 // Marks a submission on the server against the hidden key (submit_test).
@@ -165,6 +187,55 @@ export async function submitTest(testId: string, answers: (number | null)[]): Pr
   if (!isSupabaseConfigured()) return null;
   const { data, error } = await createClient().rpc("submit_test", { p_test_id: testId, p_answers: answers });
   if (error || !data) return null;
-  const r = data as { correctCount: number; scorePct: number; remarks: string };
-  return { correctCount: Number(r.correctCount), scorePct: Number(r.scorePct), remarks: String(r.remarks) };
+  const r = data as { correctCount: number; scorePct: number; remarks: string; late?: boolean };
+  return { correctCount: Number(r.correctCount), scorePct: Number(r.scorePct), remarks: String(r.remarks), late: r.late === true };
+}
+
+// --- Mock exams (supabase/mock.sql) ---------------------------------------
+
+// Mock exams draw only on the mock pool. Each chapter that has pool questions,
+// with how many different questions it can ask.
+export interface MockChapter {
+  subjectId: string;
+  subjectName: string;
+  chapterId: string;
+  seq: number;
+  title: string;
+  mcqCount: number;
+}
+
+export const MOCK_MAX_QUESTIONS = 60;
+
+export async function getMockPool(): Promise<MockChapter[]> {
+  if (!isSupabaseConfigured()) return [];
+  const { data, error } = await createClient().rpc("mock_pool");
+  if (error) throw new Error(error.message);
+  return ((data ?? []) as Array<{ subject_id: string; subject_name: string; chapter_id: string; seq: number; title: string; mcq_count: number }>).map(
+    (r) => ({ subjectId: r.subject_id, subjectName: r.subject_name, chapterId: r.chapter_id, seq: r.seq, title: r.title, mcqCount: Number(r.mcq_count) }),
+  );
+}
+
+// Builds a timed mock on the server. The clock starts now; the server keeps
+// the deadline and won't accept answers sent long after it.
+export async function startMock(opts: {
+  subjectId: string;
+  chapterIds: string[]; // empty = every mock chapter
+  count: number;
+  minutes: number;
+}): Promise<StartTestResult> {
+  if (!isSupabaseConfigured()) return { error: "failed" };
+  const { data, error } = await createClient().rpc("create_mock", {
+    p_subject_id: opts.subjectId,
+    p_chapter_ids: opts.chapterIds.length > 0 ? opts.chapterIds : null,
+    p_count: Math.min(Math.max(Math.round(opts.count), 1), MOCK_MAX_QUESTIONS),
+    p_minutes: Math.min(Math.max(Math.round(opts.minutes), 5), 180),
+  });
+  if (error) {
+    if (/no questions available/i.test(error.message)) return { error: "empty" };
+    if (/daily test limit/i.test(error.message)) return { error: "limit" };
+    return { error: "failed" };
+  }
+  const r = data as { id?: string; questionCount?: number; requested?: number } | null;
+  if (!r?.id) return { error: "failed" };
+  return { id: r.id, questionCount: Number(r.questionCount ?? 0), requested: Number(r.requested ?? opts.count) };
 }
