@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
-import { C, pill } from "@/lib/theme";
+import { C, pill, DISPLAY, SHADOW } from "@/lib/theme";
 import {
   getAdminOverview,
   listAdminTickets,
@@ -47,7 +47,7 @@ export function Admin() {
 
   if (!s.isAdmin) {
     return (
-      <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14 }}>
+      <div style={{ maxWidth: 560, background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 24px", color: C.muted, fontSize: 14 }}>
         This page is for Prepify admins only.
       </div>
     );
@@ -97,8 +97,8 @@ function Overview({ o, go }: { o: AdminOverview | null; go: (t: Tab) => void }) 
             style={{ textAlign: "left", background: alert ? C.tint : C.card, border: `1.5px solid ${alert ? C.accent : C.line}`, borderRadius: 20, padding: "16px 18px", cursor: tab ? "pointer" : "default" }}
           >
             <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted }}>{label}</div>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 32, color: alert ? C.accentD : C.ink }}>{value.toLocaleString()}</div>
-            {sub && <div style={{ fontSize: 12, color: "#9a8d78" }}>{sub}</div>}
+            <div style={{ fontFamily: DISPLAY, fontSize: 32, color: alert ? C.accentD : C.ink }}>{value.toLocaleString()}</div>
+            {sub && <div style={{ fontSize: 12, color: "#8A8A80" }}>{sub}</div>}
           </button>
         );
       })}
@@ -125,7 +125,7 @@ function Tickets() {
   }, [load]);
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "18px 20px" }}>
+    <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 20px" }}>
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 14 }}>
         {(["open", "answered", "closed", "all"] as const).map((st) => (
           <button key={st} onClick={() => setStatus(st)} style={{ ...pill(status === st), border: `1.5px solid ${status === st ? C.accent : C.line}` }}>
@@ -187,7 +187,7 @@ function Reports() {
       {items === null ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading…</div>
       ) : items.length === 0 ? (
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 20, padding: "18px 20px", color: C.muted, fontSize: 14 }}>
+        <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 20px", color: C.muted, fontSize: 14 }}>
           {status === "open" ? "No reported questions to check. 🎉" : "Nothing here."}
         </div>
       ) : (
@@ -212,16 +212,16 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
   };
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "18px 20px" }}>
+    <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "18px 20px" }}>
       <div style={{ display: "flex", alignItems: "baseline", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
-        <span style={{ fontSize: 12, fontWeight: 800, color: "#fff", background: C.accent, borderRadius: 999, padding: "3px 10px" }}>
+        <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", background: C.accent, borderRadius: 999, padding: "3px 10px" }}>
           {q.reports} report{q.reports === 1 ? "" : "s"}
         </span>
         <span style={{ fontSize: 13, fontWeight: 700, color: C.muted }}>
           {q.subject ?? "Unknown subject"}
           {q.chapter ? ` · Chapter ${q.chapter}` : ""}
         </span>
-        <span style={{ fontSize: 12, color: "#9a8d78" }}>last {new Date(q.lastReported).toLocaleDateString(undefined, { day: "numeric", month: "short" })}</span>
+        <span style={{ fontSize: 12, color: "#8A8A80" }}>last {new Date(q.lastReported).toLocaleDateString(undefined, { day: "numeric", month: "short" })}</span>
       </div>
 
       {editing && q.editable ? (
@@ -245,7 +245,7 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
               ))}
             </div>
           )}
-          {q.explanation && <div style={{ fontSize: 12.5, color: "#7a6f5d", marginBottom: 8 }}>Explanation: {q.explanation}</div>}
+          {q.explanation && <div style={{ fontSize: 12.5, color: "#8A8A80", marginBottom: 8 }}>Explanation: {q.explanation}</div>}
         </>
       )}
 
@@ -258,7 +258,7 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
               {new Date(d.at).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
               {d.note && <div style={{ color: C.ink }}>“{d.note}”</div>}
               {saw && typeof d.shown?.markedAnswer === "number" && (
-                <div style={{ color: "#9a8d78" }}>
+                <div style={{ color: "#8A8A80" }}>
                   They saw “{saw[d.shown.markedAnswer]}” marked correct
                   {typeof d.shown.picked === "number" ? ` and picked “${saw[d.shown.picked]}”` : " and left it blank"}.
                 </div>
@@ -272,14 +272,14 @@ function ReportCard({ q, onChanged }: { q: ReportedQuestion; onChanged: () => Pr
       {!editing && (
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {q.editable && (
-            <button onClick={() => setEditing(true)} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+            <button onClick={() => setEditing(true)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
               ✏️ Fix question
             </button>
           )}
           <button disabled={busy} onClick={() => mark("fixed")} style={{ borderRadius: 999, background: C.sageT, color: C.sageD, fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
             Mark fixed
           </button>
-          <button disabled={busy} onClick={() => mark("dismissed")} style={{ borderRadius: 999, background: C.sand, color: "#5d5648", fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
+          <button disabled={busy} onClick={() => mark("dismissed")} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
             Dismiss (question is fine)
           </button>
           <button disabled={busy} onClick={() => mark("open")} style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, padding: "8px 6px" }}>
@@ -311,7 +311,7 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
       );
   };
 
-  const field: React.CSSProperties = { borderRadius: 10, border: "1.5px solid #e0d0b4", background: "#fff", padding: "8px 12px", fontSize: 13.5, fontFamily: "inherit", width: "100%" };
+  const field: React.CSSProperties = { borderRadius: 10, border: "1px solid #D4D3CB", background: "#fff", padding: "8px 12px", fontSize: 13.5, fontFamily: "inherit", width: "100%" };
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 8, background: C.bg, borderRadius: 16, padding: "14px 14px", marginBottom: 6 }}>
@@ -326,7 +326,7 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
             <button
               onClick={() => setAnswer(letter)}
               aria-label={`Mark ${letter} correct`}
-              style={{ width: 32, height: 32, flex: "none", borderRadius: 999, fontWeight: 800, fontSize: 13, background: on ? C.sage : C.sand, color: on ? "#fff" : "#5d5648" }}
+              style={{ width: 32, height: 32, flex: "none", borderRadius: 999, fontWeight: 700, fontSize: 13, background: on ? C.sage : C.sand, color: on ? "#fff" : "#4A4A42" }}
             >
               {on ? "✓" : letter}
             </button>
@@ -336,12 +336,12 @@ function QuestionEditor({ q, onCancel, onSaved }: { q: ReportedQuestion; onCance
       })}
       <label style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>Explanation (optional, shown in reviews)</label>
       <textarea value={explanation} onChange={(e) => setExplanation(e.target.value)} rows={2} style={{ ...field, resize: "vertical" }} />
-      <div style={{ fontSize: 12, color: "#9a8d78" }}>
+      <div style={{ fontSize: 12, color: "#8A8A80" }}>
         Saving changes this question for every future test, and marks its reports fixed. Correct answer: <strong>{answer}</strong>.
       </div>
       {error && <div style={{ fontSize: 12.5, color: C.accentD, fontWeight: 700 }}>{error}</div>}
       <div style={{ display: "flex", gap: 8 }}>
-        <button onClick={save} disabled={saving} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 18px", fontSize: 13.5, opacity: saving ? 0.7 : 1 }}>
+        <button onClick={save} disabled={saving} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "9px 18px", fontSize: 13.5, opacity: saving ? 0.7 : 1 }}>
           {saving ? "Saving…" : "Save fix"}
         </button>
         <button onClick={onCancel} style={{ fontSize: 13, fontWeight: 700, color: C.muted, padding: "9px 6px" }}>

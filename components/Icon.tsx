@@ -4,7 +4,7 @@ export function StrokeIcon({
   d,
   size = 19,
   stroke = "currentColor",
-  width = 2.4,
+  width = 1.9,
   style,
 }: {
   d: string;

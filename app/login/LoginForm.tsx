@@ -2,7 +2,7 @@
 
 import { startTransition, useActionState, useState } from "react";
 import { login, signup, signInWithGoogle, type AuthState } from "./actions";
-import { C } from "@/lib/theme";
+import { C, DISPLAY, SHADOW } from "@/lib/theme";
 
 const EMPTY: AuthState = {};
 
@@ -33,13 +33,13 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
   const errorText = state.error ?? initialError;
 
   return (
-    <div style={{ width: "100%", maxWidth: 400, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: 30, boxShadow: "0 10px 30px rgba(90,62,30,.07)" }}>
+    <div style={{ width: "100%", maxWidth: 400, background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: 30, boxShadow: "0 10px 30px rgba(90,62,30,.07)" }}>
       <div style={{ display: "flex", background: C.sand, borderRadius: 999, padding: 3, marginBottom: 22 }}>
         <button onClick={() => switchTo("login")} style={tab(isLogin)}>Sign in</button>
         <button onClick={() => switchTo("signup")} style={tab(!isLogin)}>Create account</button>
       </div>
 
-      <div style={{ fontFamily: "Caprasimo", fontSize: 24, marginBottom: 4 }}>
+      <div style={{ fontFamily: DISPLAY, fontSize: 24, marginBottom: 4 }}>
         {isLogin ? "Welcome back" : "Start your board year"}
       </div>
       <div style={{ color: C.muted, fontSize: 14, marginBottom: 20 }}>
@@ -48,16 +48,16 @@ export function LoginForm({ initialError, next }: { initialError?: string; next?
 
       <form action={signInWithGoogle} style={{ marginBottom: 16 }}>
         <input type="hidden" name="next" value={next ?? "/"} />
-        <button type="submit" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderRadius: 999, background: "#fff", border: "1.5px solid #e0d0b4", padding: "12px 0", fontSize: 14.5, fontWeight: 700, color: C.ink }}>
+        <button type="submit" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderRadius: 999, background: "#fff", border: "1px solid #D4D3CB", padding: "12px 0", fontSize: 14.5, fontWeight: 700, color: C.ink }}>
           <GoogleG />
           Continue with Google
         </button>
       </form>
 
       <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "0 0 16px" }}>
-        <div style={{ flex: 1, height: 1, background: "#ece0c8" }} />
+        <div style={{ flex: 1, height: 1, background: "#EEEDEA" }} />
         <div style={{ fontSize: 12, color: C.muted, fontWeight: 600 }}>or</div>
-        <div style={{ flex: 1, height: 1, background: "#ece0c8" }} />
+        <div style={{ flex: 1, height: 1, background: "#EEEDEA" }} />
       </div>
 
       <form key={mode} action={isLogin ? loginAction : signupAction} onSubmit={onSubmit} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -130,16 +130,16 @@ function Field({
         spellCheck={false}
         required
         onChange={onValue ? (e) => onValue(e.target.value) : undefined}
-        style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "12px 16px", fontSize: 15, color: C.ink, outline: "none" }}
+        style={{ borderRadius: 12, border: "1px solid #D4D3CB", background: "#fff", padding: "12px 16px", fontSize: 15, color: C.ink, outline: "none" }}
       />
-      {hint && <span style={{ fontSize: 11.5, color: "#9a8d78", lineHeight: 1.4 }}>{hint}</span>}
+      {hint && <span style={{ fontSize: 11.5, color: "#8A8A80", lineHeight: 1.4 }}>{hint}</span>}
     </label>
   );
 }
 
 function Submit({ isLogin, pending }: { isLogin: boolean; pending: boolean }) {
   return (
-    <button type="submit" disabled={pending} style={{ marginTop: 6, borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 0", fontSize: 15, opacity: pending ? 0.7 : 1, boxShadow: "0 6px 16px rgba(198,113,57,.3)" }}>
+    <button type="submit" disabled={pending} style={{ marginTop: 6, borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "13px 0", fontSize: 15, opacity: pending ? 0.7 : 1 }}>
       {pending ? "Please wait…" : isLogin ? "Sign in" : "Create account"}
     </button>
   );
@@ -157,5 +157,5 @@ function GoogleG() {
 }
 
 function tab(on: boolean): React.CSSProperties {
-  return { flex: 1, borderRadius: 999, padding: "9px 0", fontSize: 13.5, fontWeight: 700, background: on ? C.accent : "transparent", color: on ? "#fff" : C.muted };
+  return { flex: 1, borderRadius: 999, padding: "9px 0", fontSize: 13.5, fontWeight: 700, background: on ? C.ink : "transparent", color: on ? "#fff" : C.muted };
 }

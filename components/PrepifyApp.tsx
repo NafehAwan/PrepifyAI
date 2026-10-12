@@ -8,7 +8,7 @@ import { AppShell } from "./AppShell";
 function Root() {
   const { s } = useApp();
   return (
-    <div style={{ minHeight: "100vh", background: "#f5ead8", fontSize: 15, lineHeight: 1.5 }}>
+    <div style={{ minHeight: "100vh", background: "#F9F8F4", fontSize: 15, lineHeight: 1.5 }}>
       {s.screen === "onboarding" ? <Onboarding /> : <AppShell />}
     </div>
   );
