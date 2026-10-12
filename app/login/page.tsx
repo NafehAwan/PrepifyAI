@@ -31,7 +31,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
           <div style={{ color: C.muted, fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
             Supabase isn&apos;t configured, so sign-in is disabled. Add your keys to <code>.env.local</code> (see <code>.env.local.example</code>) to enable accounts and saved progress.
           </div>
-          <Link href="/" style={{ display: "inline-block", borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "12px 26px", fontSize: 15 }}>Open the demo →</Link>
+          <Link href="/" style={{ display: "inline-block", borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "12px 26px", fontSize: 15 }}>Open the demo →</Link>
         </div>
       )}
     </div>

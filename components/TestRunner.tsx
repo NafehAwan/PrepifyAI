@@ -182,7 +182,7 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
           <div style={{ fontSize: 12.5, color: lowTime ? C.accentD : C.muted, fontWeight: 600, flex: 1, minWidth: 140 }}>
             {timeUp ? "Time's up — handing in your paper…" : lowTime ? "Less than 5 minutes left" : "left · hands in automatically at 0:00"}
           </div>
-          <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 700 }}>
+          <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600 }}>
             {answered}/{test.mcqs.length} answered
           </div>
         </div>
@@ -211,7 +211,7 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
                     disabled={timeUp || submitting}
                     style={{ display: "flex", alignItems: "center", gap: 10, textAlign: "left", borderRadius: 12, padding: "10px 12px", background: picked ? C.tint : C.bg, border: `1.5px solid ${picked ? C.accent : "transparent"}` }}
                   >
-                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 11.5 }}>
+                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 11.5 }}>
                       {"ABCD"[i]}
                     </div>
                     <div style={{ fontSize: 13.5, fontWeight: 500 }}>{opt}</div>
@@ -227,7 +227,7 @@ export function TestRunner({ readOnly }: { readOnly?: boolean }) {
         <button
           onClick={submit}
           disabled={submitting}
-          style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "13px 30px", fontSize: 15, opacity: submitting ? 0.7 : 1 }}
+          style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "13px 30px", fontSize: 15, opacity: submitting ? 0.7 : 1 }}
         >
           {submitting ? "Marking…" : isMock ? "Hand in paper" : "Submit test"}
         </button>
@@ -275,17 +275,17 @@ function Results({ test, picks, onBack, late }: { test: TestDetail; picks: (numb
             </div>
           </div>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            <button onClick={() => go(test.kind === "mock" ? "mockExam" : "newTest")} style={{ borderRadius: 999, background: "#fff", fontWeight: 700, padding: "10px 18px", fontSize: 13.5 }}>
+            <button onClick={() => go(test.kind === "mock" ? "mockExam" : "newTest")} style={{ borderRadius: 999, background: "#fff", fontWeight: 600, padding: "10px 18px", fontSize: 13.5 }}>
               {test.kind === "mock" ? "Another mock" : "Another test"}
             </button>
-            <button onClick={onBack} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "10px 18px", fontSize: 13.5 }}>
+            <button onClick={onBack} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "10px 18px", fontSize: 13.5 }}>
               Back
             </button>
           </div>
         </div>
 
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
-          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Answer review</div>
+          <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 16 }}>Answer review</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {test.mcqs.map((q, qi) => (
               <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={answers[qi] ?? null} first={qi === 0} source="test" />
@@ -318,7 +318,7 @@ export function ReviewRow({
         <div style={{ fontSize: 14, fontWeight: 600, flex: 1, lineHeight: 1.4, whiteSpace: "pre-line" }}>
           {index + 1}. {q.stem}
         </div>
-        <div style={{ fontSize: 11.5, fontWeight: 700, color: right ? C.sageD : C.accentD, background: right ? C.sageT : C.tint, borderRadius: 999, padding: "3px 10px", flex: "none" }}>
+        <div style={{ fontSize: 11.5, fontWeight: 600, color: right ? C.sageD : C.accentD, background: right ? C.sageT : C.tint, borderRadius: 999, padding: "3px 10px", flex: "none" }}>
           {right ? "Correct" : "Wrong"}
         </div>
       </div>
@@ -358,24 +358,24 @@ function ReportQuestion({ q, pick, source }: { q: DBMcq; pick: number | null; so
   };
 
   if (state === "sent") {
-    return <div style={{ fontSize: 12, fontWeight: 700, color: C.sageD, marginTop: 6 }}>✓ Reported — thanks! We&apos;ll check this question.</div>;
+    return <div style={{ fontSize: 12, fontWeight: 600, color: C.sageD, marginTop: 6 }}>✓ Reported — thanks! We&apos;ll check this question.</div>;
   }
   if (!open) {
     return (
-      <button onClick={() => setOpen(true)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, marginTop: 6, padding: "2px 0" }}>
+      <button onClick={() => setOpen(true)} style={{ fontSize: 12, fontWeight: 600, color: C.muted, marginTop: 6, padding: "2px 0" }}>
         ⚑ Report this question
       </button>
     );
   }
   return (
     <div style={{ marginTop: 8, background: C.bg, borderRadius: 14, padding: "12px 14px" }}>
-      <div style={{ fontSize: 12.5, fontWeight: 700, marginBottom: 8 }}>What&apos;s wrong with it?</div>
+      <div style={{ fontSize: 12.5, fontWeight: 600, marginBottom: 8 }}>What&apos;s wrong with it?</div>
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}>
         {REPORT_REASONS.map((r) => (
           <button
             key={r.id}
             onClick={() => setReason(r.id)}
-            style={{ borderRadius: 999, padding: "6px 12px", fontSize: 12.5, fontWeight: 700, background: reason === r.id ? C.ink : C.card, color: reason === r.id ? "#fff" : "#4A4A42", border: `1.5px solid ${reason === r.id ? C.ink : C.line}` }}
+            style={{ borderRadius: 999, padding: "6px 12px", fontSize: 12.5, fontWeight: 600, background: reason === r.id ? C.ink : C.card, color: reason === r.id ? "#fff" : "#4A4A42", border: `1.5px solid ${reason === r.id ? C.ink : C.line}` }}
           >
             {r.label}
           </button>
@@ -390,14 +390,14 @@ function ReportQuestion({ q, pick, source }: { q: DBMcq; pick: number | null; so
         style={{ width: "100%", borderRadius: 10, border: `1px solid ${C.lineStrong}`, background: "#fff", padding: "8px 12px", fontSize: 13, marginBottom: 8 }}
       />
       <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-        <button onClick={send} disabled={state === "sending"} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "7px 16px", fontSize: 12.5, opacity: state === "sending" ? 0.7 : 1 }}>
+        <button onClick={send} disabled={state === "sending"} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "7px 16px", fontSize: 12.5, opacity: state === "sending" ? 0.7 : 1 }}>
           {state === "sending" ? "Sending…" : "Send report"}
         </button>
-        <button onClick={() => setOpen(false)} style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, padding: "7px 6px" }}>
+        <button onClick={() => setOpen(false)} style={{ fontSize: 12.5, fontWeight: 600, color: C.muted, padding: "7px 6px" }}>
           Cancel
         </button>
-        {state === "error" && <span style={{ fontSize: 12, fontWeight: 700, color: C.accentD }}>Couldn&apos;t send — check your connection.</span>}
-        {state === "limit" && <span style={{ fontSize: 12, fontWeight: 700, color: C.accentD }}>You&apos;ve sent a lot of reports today — thanks! Try again tomorrow.</span>}
+        {state === "error" && <span style={{ fontSize: 12, fontWeight: 600, color: C.accentD }}>Couldn&apos;t send — check your connection.</span>}
+        {state === "limit" && <span style={{ fontSize: 12, fontWeight: 600, color: C.accentD }}>You&apos;ve sent a lot of reports today — thanks! Try again tomorrow.</span>}
       </div>
     </div>
   );

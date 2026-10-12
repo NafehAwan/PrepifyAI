@@ -63,7 +63,7 @@ export function Leaderboard() {
             {me.removed ? (
               "You're not shown on the public list."
             ) : me.hidden ? (
-              <>You&apos;re hidden from the public list. <button onClick={() => go("settings")} style={{ fontWeight: 700, color: C.accentD, fontSize: 12.5 }}>Change in Settings</button></>
+              <>You&apos;re hidden from the public list. <button onClick={() => go("settings")} style={{ fontWeight: 600, color: C.accentD, fontSize: 12.5 }}>Change in Settings</button></>
             ) : me.xp === 0 ? (
               "Finish a test or challenge to get on the board."
             ) : (
@@ -78,7 +78,7 @@ export function Leaderboard() {
         {state === "error" && (
           <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD }}>
             <span style={{ flex: 1 }}>Couldn&apos;t load the leaderboard. Check your connection.</span>
-            <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+            <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 }}>
               Try again
             </button>
           </div>
@@ -94,7 +94,7 @@ export function Leaderboard() {
               <thead>
                 <tr style={{ color: C.muted, textAlign: "left" }}>
                   {["#", "Student", "XP", "Streak", "Wins", "Papers"].map((h) => (
-                    <th key={h} style={{ padding: "6px 8px", fontWeight: 700, fontSize: 12 }}>{h}</th>
+                    <th key={h} style={{ padding: "6px 8px", fontWeight: 600, fontSize: 12 }}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -104,11 +104,11 @@ export function Leaderboard() {
                     <td style={{ padding: "10px 8px", fontFamily: DISPLAY, fontSize: 17, color: r.rank <= 3 ? C.accent : C.muted }}>
                       {r.rank === 1 ? "🥇" : r.rank === 2 ? "🥈" : r.rank === 3 ? "🥉" : r.rank}
                     </td>
-                    <td style={{ padding: "10px 8px", fontWeight: 700 }}>
+                    <td style={{ padding: "10px 8px", fontWeight: 600 }}>
                       {r.name}
                       {r.isMe ? " (you)" : ""}
                     </td>
-                    <td style={{ padding: "10px 8px", fontWeight: 700 }}>{r.xp}</td>
+                    <td style={{ padding: "10px 8px", fontWeight: 600 }}>{r.xp}</td>
                     <td style={{ padding: "10px 8px" }}>{r.streak > 0 ? `🔥 ${r.streak}` : "—"}</td>
                     <td style={{ padding: "10px 8px" }}>{r.wins}</td>
                     <td style={{ padding: "10px 8px", color: C.muted }}>{r.papers}</td>
@@ -117,8 +117,8 @@ export function Leaderboard() {
                 {me && !meInTop && !me.hidden && !me.removed && me.rank && (
                   <tr style={{ borderTop: `2px dashed ${C.line}`, background: C.tint }}>
                     <td style={{ padding: "10px 8px", fontFamily: DISPLAY, fontSize: 17, color: C.muted }}>{me.rank}</td>
-                    <td style={{ padding: "10px 8px", fontWeight: 700 }}>{me.name} (you)</td>
-                    <td style={{ padding: "10px 8px", fontWeight: 700 }}>{me.xp}</td>
+                    <td style={{ padding: "10px 8px", fontWeight: 600 }}>{me.name} (you)</td>
+                    <td style={{ padding: "10px 8px", fontWeight: 600 }}>{me.xp}</td>
                     <td style={{ padding: "10px 8px" }}>{me.streak > 0 ? `🔥 ${me.streak}` : "—"}</td>
                     <td style={{ padding: "10px 8px" }}>{me.wins}</td>
                     <td style={{ padding: "10px 8px", color: C.muted }}>{me.papers}</td>
@@ -131,7 +131,7 @@ export function Leaderboard() {
       </Card>
 
       <Card>
-        <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>How XP works</div>
+        <div style={{ fontWeight: 600, fontSize: 14, marginBottom: 6 }}>How XP works</div>
         <div style={{ fontSize: 13, color: "#4A4A42", lineHeight: 1.7 }}>
           Every correct answer earns XP: <strong>1</strong> on Easy, <strong>2</strong> on Medium or Mixed, <strong>3</strong> on Hard.
           Winning a challenge adds <strong>+10</strong>. Your <strong>streak</strong> counts the days in a row you&apos;ve finished at
@@ -149,7 +149,7 @@ function Card({ children }: { children: React.ReactNode }) {
 function Big({ label, value }: { label: string; value: string }) {
   return (
     <div style={{ minWidth: 96 }}>
-      <div style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>{label}</div>
+      <div style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>{label}</div>
       <div style={{ fontFamily: DISPLAY, fontSize: 24, color: C.ink }}>{value}</div>
     </div>
   );

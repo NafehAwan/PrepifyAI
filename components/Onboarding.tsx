@@ -82,7 +82,7 @@ export function Onboarding() {
                   const cur = n === s.ob;
                   return (
                     <div key={label} style={{ display: "flex", alignItems: "center", gap: 12, padding: "9px 12px", borderRadius: 14, background: cur ? C.card : "transparent" }}>
-                      <div style={{ width: 26, height: 26, flex: "none", borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, background: done ? C.sage : cur ? C.accent : C.sand, color: done || cur ? "#fff" : "#8A8A80" }}>
+                      <div style={{ width: 26, height: 26, flex: "none", borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 600, background: done ? C.sage : cur ? C.accent : C.sand, color: done || cur ? "#fff" : "#8A8A80" }}>
                         {n}
                       </div>
                       <div style={{ fontWeight: 600, fontSize: 14, color: cur ? C.ink : C.muted }}>{label}</div>
@@ -199,7 +199,7 @@ export function Onboarding() {
                   <H>Your AI study buddy is ready</H>
                   <Sub>Nothing to set up — Prepi is already connected. Ask it anything you&apos;re stuck on, any time, from the chat bubble in the corner.</Sub>
                   <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
-                    <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>What Prepi is good at</div>
+                    <div style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>What Prepi is good at</div>
                     <ul style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#1A8A50", lineHeight: 1.5 }}>
                       <li>Explaining a question you got wrong, in simple words.</li>
                       <li>Breaking down a formula or a definition step by step.</li>
@@ -223,15 +223,15 @@ export function Onboarding() {
                       autoComplete="off"
                       style={{ flex: 1, minWidth: 0, border: "none", outline: "none", background: "transparent", padding: "14px 16px", fontSize: 15, fontFamily: "monospace" }}
                     />
-                    <button onClick={() => setShowKey((v) => !v)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, padding: "6px 10px" }}>{showKey ? "Hide" : "Show"}</button>
+                    <button onClick={() => setShowKey((v) => !v)} style={{ fontSize: 12, fontWeight: 600, color: C.muted, padding: "6px 10px" }}>{showKey ? "Hide" : "Show"}</button>
                   </div>
                   {s.groqKey && !keyDraft && (
                     <div style={{ fontSize: 12.5, color: C.sageD, fontWeight: 600, marginBottom: 12 }}>✓ A key is already connected on this device.</div>
                   )}
                   <div style={{ background: C.sageT, borderRadius: 16, padding: "16px 18px" }}>
-                    <div style={{ fontWeight: 700, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>Get a free key in about a minute</div>
+                    <div style={{ fontWeight: 600, fontSize: 13.5, color: C.sageD, marginBottom: 8 }}>Get a free key in about a minute</div>
                     <ol style={{ margin: 0, paddingLeft: 18, display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#1A8A50", lineHeight: 1.5 }}>
-                      <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com/keys</a> and sign in (free — Google or GitHub).</li>
+                      <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 600, textDecoration: "underline" }}>console.groq.com/keys</a> and sign in (free — Google or GitHub).</li>
                       <li>Click <strong>Create API Key</strong>, name it <em>Prepify</em>.</li>
                       <li>Copy the <code style={{ background: "rgba(255,255,255,.6)", padding: "1px 5px", borderRadius: 5 }}>gsk_…</code> key and paste it above.</li>
                     </ol>
@@ -243,7 +243,7 @@ export function Onboarding() {
                 <>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
                     <div style={{ fontFamily: DISPLAY, fontSize: 30, lineHeight: 1.15 }}>Quick placement check</div>
-                    <div style={{ fontSize: 13, fontWeight: 700, color: C.accentD, background: C.tint, borderRadius: 999, padding: "6px 14px" }}>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: C.accentD, background: C.tint, borderRadius: 999, padding: "6px 14px" }}>
                       {Math.min(s.dq + 1, diag.length)} of {diag.length}
                     </div>
                   </div>
@@ -251,13 +251,13 @@ export function Onboarding() {
                   {dqOpen && q && (
                     <>
                       <div style={{ background: C.bg, borderRadius: 18, padding: "20px 22px", marginBottom: 18 }}>
-                        <div style={{ fontSize: 12, fontWeight: 700, color: C.muted, letterSpacing: ".06em", textTransform: "uppercase", marginBottom: 8 }}>{q.subject}</div>
+                        <div style={{ fontSize: 12, fontWeight: 600, color: C.muted, letterSpacing: ".06em", textTransform: "uppercase", marginBottom: 8 }}>{q.subject}</div>
                         <div style={{ fontSize: 19, fontWeight: 600, lineHeight: 1.4 }}>{q.stem}</div>
                       </div>
                       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                         {q.options.map((text, i) => (
                           <button key={text} onClick={advanceDq} style={{ display: "flex", alignItems: "center", gap: 14, textAlign: "left", borderRadius: 16, padding: "14px 18px", background: C.bg, border: "1.5px solid transparent" }}>
-                            <div style={{ width: 28, height: 28, flex: "none", borderRadius: 999, background: C.sand, color: "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 13 }}>{"ABCD"[i]}</div>
+                            <div style={{ width: 28, height: 28, flex: "none", borderRadius: 999, background: C.sand, color: "#4A4A42", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 600, fontSize: 13 }}>{"ABCD"[i]}</div>
                             <div style={{ fontWeight: 500 }}>{text}</div>
                           </button>
                         ))}
@@ -286,7 +286,7 @@ export function Onboarding() {
 
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 28, paddingTop: 20, borderTop: "0.5px solid #EEEDEA" }}>
                 <button onClick={back} style={{ fontWeight: 600, color: C.muted, padding: "10px 4px", fontSize: 14 }}>{backLabel}</button>
-                <button onClick={next} disabled={nextDisabled} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "13px 30px", fontSize: 15, opacity: nextDisabled ? 0.5 : 1 }}>{nextLabel}</button>
+                <button onClick={next} disabled={nextDisabled} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "13px 30px", fontSize: 15, opacity: nextDisabled ? 0.5 : 1 }}>{nextLabel}</button>
               </div>
             </div>
           </div>

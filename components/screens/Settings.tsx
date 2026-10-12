@@ -40,10 +40,10 @@ export function Settings() {
       <ConnectAI />
 
       <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Class &amp; subjects</div>
+        <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 18 }}>Class &amp; subjects</div>
         <div style={{ display: "flex", gap: 24, marginBottom: 20, flexWrap: "wrap" }}>
           <div>
-            <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Class</div>
+            <div style={{ fontSize: 12.5, fontWeight: 600, color: C.muted, marginBottom: 8 }}>Class</div>
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4 }}>
               {["9th"].map((name) => (
                 <button key={name} onClick={() => saveProfile({ cls: name })} style={pill(s.cls === name)}>{name}</button>
@@ -51,11 +51,11 @@ export function Settings() {
             </div>
           </div>
           <div>
-            <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Exam date</div>
+            <div style={{ fontSize: 12.5, fontWeight: 600, color: C.muted, marginBottom: 8 }}>Exam date</div>
             <input type="date" value={s.examDate} onChange={(e) => saveProfile({ examDate: e.target.value })} style={{ borderRadius: 999, border: "1px solid #D4D3CB", background: "#fff", padding: "10px 18px", fontSize: 14, fontWeight: 600 }} />
           </div>
         </div>
-        <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 9 }}>Enrolled subjects — tap to change</div>
+        <div style={{ fontSize: 12.5, fontWeight: 600, color: C.muted, marginBottom: 9 }}>Enrolled subjects — tap to change</div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {ALL_SUBJECTS.map((name) => {
             const on = s.subs.includes(name);
@@ -69,7 +69,7 @@ export function Settings() {
       </div>
 
       <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Study preferences</div>
+        <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 18 }}>Study preferences</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <Row title="Language" desc="Tutor explanations and feedback follow this. Textbook stays in the board's language.">
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
@@ -116,13 +116,13 @@ export function Settings() {
       {s.authed && (
         <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "22px 26px", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 200 }}>
-            <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 3 }}>Log out</div>
+            <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 3 }}>Log out</div>
             <div style={{ fontSize: 13, color: C.muted }}>
               Signed in as {s.username ? `@${s.username}` : s.userEmail}. Your tests and challenges stay saved to your account.
             </div>
           </div>
           <form action={signOut}>
-            <button type="submit" style={{ borderRadius: 999, background: C.danger, color: "#fff", fontWeight: 700, padding: "12px 26px", fontSize: 14.5 }}>
+            <button type="submit" style={{ borderRadius: 999, background: C.danger, color: "#fff", fontWeight: 600, padding: "12px 26px", fontSize: 14.5 }}>
               ⎋ Log out
             </button>
           </form>
@@ -161,8 +161,8 @@ function AiReady() {
   return (
     <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-        <div style={{ fontWeight: 700, fontSize: 16 }}>Ask Prepify</div>
-        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sageT, color: C.sageD }}>
+        <div style={{ fontWeight: 600, fontSize: 16 }}>Ask Prepify</div>
+        <span style={{ fontSize: 11.5, fontWeight: 600, borderRadius: 999, padding: "4px 11px", background: C.sageT, color: C.sageD }}>
           ✓ Ready
         </span>
       </div>
@@ -170,7 +170,7 @@ function AiReady() {
         The AI chatbot is set up for you — nothing to connect. Tap the chat bubble any time you&apos;re stuck on a question.
         Your tests don&apos;t use the AI at all: they come from the real question bank, so they always work.
       </div>
-      <button onClick={test} disabled={testing} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing ? 0.6 : 1 }}>
+      <button onClick={test} disabled={testing} style={{ borderRadius: 999, background: C.sand, fontWeight: 600, padding: "12px 20px", fontSize: 14, opacity: testing ? 0.6 : 1 }}>
         {testing ? "Checking…" : "Check it's working"}
       </button>
       {result && (
@@ -222,8 +222,8 @@ function BringYourOwnKey() {
   return (
     <div style={{ background: C.card, border: `0.5px solid ${C.line}`, borderRadius: 20, padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-        <div style={{ fontWeight: 700, fontSize: 16 }}>Connect your AI tutor</div>
-        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#8A8A80" }}>
+        <div style={{ fontWeight: 600, fontSize: 16 }}>Connect your AI tutor</div>
+        <span style={{ fontSize: 11.5, fontWeight: 600, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#8A8A80" }}>
           {connected ? "✓ Connected" : "Not connected"}
         </span>
       </div>
@@ -242,18 +242,18 @@ function BringYourOwnKey() {
             autoComplete="off"
             style={{ flex: 1, minWidth: 0, border: "none", outline: "none", background: "transparent", padding: "12px 14px", fontSize: 14, fontFamily: "monospace" }}
           />
-          <button onClick={() => setShow((v) => !v)} style={{ fontSize: 12, fontWeight: 700, color: C.muted, padding: "6px 10px" }}>
+          <button onClick={() => setShow((v) => !v)} style={{ fontSize: 12, fontWeight: 600, color: C.muted, padding: "6px 10px" }}>
             {show ? "Hide" : "Show"}
           </button>
         </div>
-        <button onClick={save} disabled={!draft.trim()} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "12px 22px", fontSize: 14, opacity: draft.trim() ? 1 : 0.5 }}>
+        <button onClick={save} disabled={!draft.trim()} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "12px 22px", fontSize: 14, opacity: draft.trim() ? 1 : 0.5 }}>
           {saved ? "Saved ✓" : "Save key"}
         </button>
-        <button onClick={test} disabled={testing || !effectiveKey} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing || !effectiveKey ? 0.6 : 1 }}>
+        <button onClick={test} disabled={testing || !effectiveKey} style={{ borderRadius: 999, background: C.sand, fontWeight: 600, padding: "12px 20px", fontSize: 14, opacity: testing || !effectiveKey ? 0.6 : 1 }}>
           {testing ? "Testing…" : "Test connection"}
         </button>
         {connected && (
-          <button onClick={() => { setGroqKey(""); setDraft(""); setResult(null); }} style={{ borderRadius: 999, background: "transparent", color: C.muted, fontWeight: 700, padding: "12px 14px", fontSize: 13.5 }}>
+          <button onClick={() => { setGroqKey(""); setDraft(""); setResult(null); }} style={{ borderRadius: 999, background: "transparent", color: C.muted, fontWeight: 600, padding: "12px 14px", fontSize: 13.5 }}>
             Remove
           </button>
         )}
@@ -266,18 +266,18 @@ function BringYourOwnKey() {
       )}
 
       <details style={{ borderTop: "0.5px solid #EEEDEA", paddingTop: 14 }}>
-        <summary style={{ cursor: "pointer", fontSize: 14, fontWeight: 700, color: C.ink, listStyle: "none" }}>
+        <summary style={{ cursor: "pointer", fontSize: 14, fontWeight: 600, color: C.ink, listStyle: "none" }}>
           How do I get a free Groq key? →
         </summary>
         <ol style={{ margin: "14px 0 4px", paddingLeft: 20, display: "flex", flexDirection: "column", gap: 10, fontSize: 13.5, color: "#4A4A42", lineHeight: 1.55 }}>
           <li>
             Go to{" "}
-            <a href="https://console.groq.com/login" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com</a>{" "}
+            <a href="https://console.groq.com/login" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 600, textDecoration: "underline" }}>console.groq.com</a>{" "}
             and sign in — it&apos;s free, and you can use Google or GitHub.
           </li>
           <li>
             Open{" "}
-            <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>API Keys</a>{" "}
+            <a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 600, textDecoration: "underline" }}>API Keys</a>{" "}
             from the left menu.
           </li>
           <li>Click <strong>Create API Key</strong>, name it <em>Prepify</em>, and press Create.</li>
@@ -357,10 +357,10 @@ function AccountCard() {
         <div style={{ flex: 1, minWidth: 180 }}>
           <div style={{ fontFamily: DISPLAY, fontSize: 22 }}>{s.userName}</div>
           {s.username && (
-            <div style={{ fontSize: 14, fontWeight: 700, color: C.accentD }}>
+            <div style={{ fontSize: 14, fontWeight: 600, color: C.accentD }}>
               @{s.username}
               {s.authed && !editing && (
-                <button onClick={() => { setEditing(true); setDraft(s.username ?? ""); setMsg(null); }} style={{ marginLeft: 10, fontSize: 12.5, fontWeight: 700, color: C.muted }}>
+                <button onClick={() => { setEditing(true); setDraft(s.username ?? ""); setMsg(null); }} style={{ marginLeft: 10, fontSize: 12.5, fontWeight: 600, color: C.muted }}>
                   Change
                 </button>
               )}
@@ -370,7 +370,7 @@ function AccountCard() {
         </div>
         {s.authed && (
           <form action={signOut}>
-            <button type="submit" style={{ borderRadius: 999, background: C.tint, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>
+            <button type="submit" style={{ borderRadius: 999, background: C.tint, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 600, padding: "11px 22px", fontSize: 14 }}>
               ⎋ Log out
             </button>
           </form>
@@ -379,7 +379,7 @@ function AccountCard() {
 
       {showForm && (
         <div style={{ marginTop: 18, paddingTop: 16, borderTop: `0.5px solid ${C.line}` }}>
-          <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 3 }}>{s.username ? "Change your username" : "Choose a username"}</div>
+          <div style={{ fontWeight: 600, fontSize: 14, marginBottom: 3 }}>{s.username ? "Change your username" : "Choose a username"}</div>
           <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 10 }}>
             Friends see it in challenges. If you signed up with a password, you can also sign in with it.
           </div>
@@ -399,11 +399,11 @@ function AccountCard() {
               spellCheck={false}
               style={{ flex: "1 1 200px", maxWidth: 280, borderRadius: 999, border: "1px solid #D4D3CB", background: "#fff", padding: "10px 16px", fontSize: 14, fontWeight: 600 }}
             />
-            <button type="submit" disabled={saving} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "10px 20px", fontSize: 14, opacity: saving ? 0.7 : 1 }}>
+            <button type="submit" disabled={saving} style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "10px 20px", fontSize: 14, opacity: saving ? 0.7 : 1 }}>
               {saving ? "Saving…" : "Save"}
             </button>
             {editing && (
-              <button type="button" onClick={() => { setEditing(false); setMsg(null); }} style={{ fontSize: 13, fontWeight: 700, color: C.muted, padding: "10px 8px" }}>
+              <button type="button" onClick={() => { setEditing(false); setMsg(null); }} style={{ fontSize: 13, fontWeight: 600, color: C.muted, padding: "10px 8px" }}>
                 Cancel
               </button>
             )}
@@ -411,7 +411,7 @@ function AccountCard() {
         </div>
       )}
       {msg && (
-        <div style={{ marginTop: 10, fontSize: 13, fontWeight: 700, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>
+        <div style={{ marginTop: 10, fontSize: 13, fontWeight: 600, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>
       )}
     </div>
   );

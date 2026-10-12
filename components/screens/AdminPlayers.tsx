@@ -72,7 +72,7 @@ export function AdminPlayers() {
         </div>
         <button
           onClick={() => setCreating((v) => !v)}
-          style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "10px 18px", fontSize: 13.5 }}
+          style={{ borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "10px 18px", fontSize: 13.5 }}
         >
           {creating ? "Close" : "+ Fake player"}
         </button>
@@ -94,7 +94,7 @@ export function AdminPlayers() {
       </div>
       {failed && (
         <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 600 }}>
-          Couldn&apos;t load players. <button onClick={() => void load()} style={{ fontWeight: 700, color: C.accent }}>Try again</button>
+          Couldn&apos;t load players. <button onClick={() => void load()} style={{ fontWeight: 600, color: C.accent }}>Try again</button>
         </div>
       )}
       {players === null ? (
@@ -117,7 +117,7 @@ function PlayerCard({ p, open, onToggle, onChanged }: { p: AdminPlayer; open: bo
     <div style={{ background: p.removed ? C.bg : C.card, border: `1.5px solid ${open ? C.accent : C.line}`, borderRadius: 20, padding: "14px 16px", opacity: p.removed && !open ? 0.75 : 1 }}>
       <button onClick={onToggle} style={{ width: "100%", textAlign: "left", display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
         <div style={{ flex: "1 1 220px", minWidth: 0 }}>
-          <div style={{ fontSize: 14.5, fontWeight: 700, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+          <div style={{ fontSize: 14.5, fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
             {p.name.slice(0, LEADERBOARD_NAME_CHARS)}
             {p.name.length > LEADERBOARD_NAME_CHARS && <span style={{ color: "#B0B0A4" }}>{p.name.slice(LEADERBOARD_NAME_CHARS)}</span>}
             {p.username && p.username !== p.name && <span style={{ fontWeight: 500, color: C.muted }}> · @{p.username}</span>}
@@ -242,19 +242,19 @@ function RealPlayerPanel({ p, onChanged }: { p: AdminPlayer; onChanged: () => Pr
       <Section title="Reset">
         {p.resetAt ? (
           <>
-            <button onClick={() => reset(false)} disabled={busy !== null} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
+            <button onClick={() => reset(false)} disabled={busy !== null} style={{ borderRadius: 999, background: C.sand, color: "#4A4A42", fontWeight: 600, padding: "8px 14px", fontSize: 13 }}>
               Undo score reset
             </button>
             <span style={{ fontSize: 12, color: "#8A8A80" }}>Scores before {fmtDateTime(p.resetAt)} don&apos;t count.</span>
           </>
         ) : (
-          <button onClick={() => reset(true)} disabled={busy !== null} style={{ borderRadius: 999, background: "#FBF0E7", color: C.accentD, fontWeight: 700, padding: "8px 14px", fontSize: 13 }}>
+          <button onClick={() => reset(true)} disabled={busy !== null} style={{ borderRadius: 999, background: "#FBF0E7", color: C.accentD, fontWeight: 600, padding: "8px 14px", fontSize: 13 }}>
             Reset scores to 0
           </button>
         )}
       </Section>
 
-      {msg && <div style={{ fontSize: 12.5, fontWeight: 700, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>}
+      {msg && <div style={{ fontSize: 12.5, fontWeight: 600, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>}
     </div>
   );
 }
@@ -281,7 +281,7 @@ function Info({ p }: { p: AdminPlayer }) {
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(210px,1fr))", gap: "6px 16px", background: C.card, borderRadius: 14, padding: "12px 14px" }}>
       {rows.map(([k, v]) => (
         <div key={k} style={{ fontSize: 12.5, lineHeight: 1.45, minWidth: 0 }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: C.muted }}>{k}</div>
+          <div style={{ fontSize: 11, fontWeight: 600, color: C.muted }}>{k}</div>
           <div style={{ wordBreak: "break-word" }}>{v}</div>
         </div>
       ))}
@@ -339,7 +339,7 @@ function FakeEditor({ p, onSaved }: { p?: AdminPlayer; onSaved: () => Promise<vo
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12, background: p ? C.bg : C.card, border: p ? "none" : `1.5px solid ${C.accent}`, borderRadius: 16, padding: "14px 14px", marginTop: p ? 12 : 0 }}>
-      {!p && <div style={{ fontWeight: 700, fontSize: 15 }}>New fake player</div>}
+      {!p && <div style={{ fontWeight: 600, fontSize: 15 }}>New fake player</div>}
       <Section title={`Name (the board shows the first ${LEADERBOARD_NAME_CHARS} characters)`}>
         <input value={name} onChange={(e) => setName(e.target.value)} maxLength={30} placeholder="e.g. Hamza Ali" aria-label="Fake player name" style={{ ...field, flex: "1 1 200px" }} />
         {p && (
@@ -363,7 +363,7 @@ function FakeEditor({ p, onSaved }: { p?: AdminPlayer; onSaved: () => Promise<vo
         <button onClick={save} disabled={busy} style={{ ...primary, opacity: busy ? 0.7 : 1 }}>
           {busy ? "Saving…" : p ? "Save" : "Make fake player"}
         </button>
-        {msg && <div style={{ fontSize: 12.5, fontWeight: 700, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>}
+        {msg && <div style={{ fontSize: 12.5, fontWeight: 600, color: msg.ok ? C.sageD : C.accentD }}>{msg.text}</div>}
       </div>
     </div>
   );
@@ -372,12 +372,12 @@ function FakeEditor({ p, onSaved }: { p?: AdminPlayer; onSaved: () => Promise<vo
 // ---- Small pieces ---------------------------------------------------------------------
 
 const field: React.CSSProperties = { borderRadius: 10, border: "1px solid #D4D3CB", background: "#fff", padding: "8px 12px", fontSize: 13.5, fontFamily: "inherit" };
-const primary: React.CSSProperties = { borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 700, padding: "8px 16px", fontSize: 13 };
+const primary: React.CSSProperties = { borderRadius: 14, background: C.accent, color: "#fff", boxShadow: SHADOW.cta, fontWeight: 600, padding: "8px 16px", fontSize: 13 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-      <div style={{ fontSize: 12, fontWeight: 700, color: C.muted }}>{title}</div>
+      <div style={{ fontSize: 12, fontWeight: 600, color: C.muted }}>{title}</div>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>{children}</div>
     </div>
   );
@@ -385,7 +385,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function Num({ label, value, onChange, hint, disabled }: { label: string; value: string; onChange: (v: string) => void; hint?: string; disabled?: boolean }) {
   return (
-    <label style={{ display: "flex", flexDirection: "column", gap: 3, fontSize: 11.5, fontWeight: 700, color: C.muted }}>
+    <label style={{ display: "flex", flexDirection: "column", gap: 3, fontSize: 11.5, fontWeight: 600, color: C.muted }}>
       {label}
       <input
         value={value}
@@ -402,7 +402,7 @@ function Num({ label, value, onChange, hint, disabled }: { label: string; value:
 
 function Tag({ children, tone }: { children: React.ReactNode; tone?: "accent" | "sage" }) {
   const style = tone === "accent" ? { background: C.tint, color: C.accentD } : tone === "sage" ? { background: C.sageT, color: C.sageD } : { background: C.sand, color: "#4A4A42" };
-  return <span style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "3px 9px", ...style }}>{children}</span>;
+  return <span style={{ fontSize: 11, fontWeight: 600, borderRadius: 999, padding: "3px 9px", ...style }}>{children}</span>;
 }
 
 // A whole number from 0 up, or null if the box isn't one.
