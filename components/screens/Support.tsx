@@ -60,16 +60,16 @@ export function Support() {
       ) : (
         <button
           onClick={() => setFormOpen(true)}
-          style={{ alignSelf: "flex-start", borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "13px 26px", fontSize: 15 }}
+          style={{ alignSelf: "flex-start", borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "13px 26px", fontSize: 17.5 }}
         >
           + New ticket
         </button>
       )}
 
       {failed && (
-        <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 16, padding: "12px 16px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 16, padding: "12px 16px" }}>
           <span style={{ flex: 1 }}>Couldn&apos;t load your tickets. Check your connection.</span>
-          <button onClick={() => void load()} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+          <button onClick={() => void load()} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "8px 16px", fontSize: 15 }}>
             Try again
           </button>
         </div>
@@ -78,8 +78,8 @@ export function Support() {
       {tickets === null ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading your tickets…</div>
       ) : tickets.length > 0 ? (
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "18px 20px" }}>
-          <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 12 }}>Your tickets</div>
+        <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "18px 20px" }}>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 12 }}>Your tickets</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {tickets.map((t) => (
               <TicketRow key={t.number} t={t} onOpen={() => open(t.number)} />
@@ -102,7 +102,7 @@ export function TicketRow({ t, onOpen, showStudent }: { t: TicketSummary; onOpen
         <div style={{ fontSize: 14, fontWeight: 700, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
           <span style={{ color: C.muted }}>#{t.number}</span> {t.title}
         </div>
-        <div style={{ fontSize: 12, color: "#9a8d78", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+        <div style={{ fontSize: 12, color: "#646A92", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
           {cat?.label ?? t.category}
           {showStudent && t.student ? ` · ${t.student}` : ""} · {t.messages} message{t.messages === 1 ? "" : "s"} ·{" "}
           {new Date(t.updatedAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
@@ -148,14 +148,14 @@ function NewTicketForm({ onCreated, onCancel }: { onCreated: (n: number) => void
   const hint = TICKET_CATEGORIES.find((c) => c.id === category)?.hint;
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "20px 22px", display: "flex", flexDirection: "column", gap: 12 }}>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "20px 22px", display: "flex", flexDirection: "column", gap: 12 }}>
       <div style={{ fontWeight: 700, fontSize: 15 }}>New ticket</div>
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
         {TICKET_CATEGORIES.map((c) => (
           <button
             key={c.id}
             onClick={() => setCategory(c.id)}
-            style={{ borderRadius: 999, padding: "8px 14px", fontSize: 13.5, fontWeight: 700, background: category === c.id ? C.accent : C.bg, color: category === c.id ? "#fff" : "#5d5648", border: `1.5px solid ${category === c.id ? C.accent : C.line}` }}
+            style={{ borderRadius: 999, padding: "8px 14px", fontSize: 13.5, fontWeight: 700, background: category === c.id ? C.accent : C.bg, color: category === c.id ? "#fff" : "#3E4370", border: `1.5px solid ${category === c.id ? C.accent : C.line}` }}
           >
             {c.label}
           </button>
@@ -168,7 +168,7 @@ function NewTicketForm({ onCreated, onCancel }: { onCreated: (n: number) => void
         maxLength={120}
         placeholder={category === "bug" ? "e.g. Chapters don't load on my phone" : category === "suggestion" ? "e.g. Add a dark mode" : "A short title"}
         aria-label="Title"
-        style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "11px 14px", fontSize: 14.5 }}
+        style={{ borderRadius: 12, border: "1.5px solid #DCE3F2", background: "#fff", padding: "11px 14px", fontSize: 14.5 }}
       />
       <textarea
         value={body}
@@ -177,14 +177,14 @@ function NewTicketForm({ onCreated, onCancel }: { onCreated: (n: number) => void
         rows={5}
         placeholder={category === "bug" ? "What happened, and what did you expect? Which subject or screen?" : "Tell us more…"}
         aria-label="Message"
-        style={{ borderRadius: 12, border: "1.5px solid #e0d0b4", background: "#fff", padding: "11px 14px", fontSize: 14, fontFamily: "inherit", resize: "vertical" }}
+        style={{ borderRadius: 12, border: "1.5px solid #DCE3F2", background: "#fff", padding: "11px 14px", fontSize: 14, fontFamily: "inherit", resize: "vertical" }}
       />
       {category === "bug" && (
-        <div style={{ fontSize: 12, color: "#9a8d78" }}>The page you&apos;re on and your device type are attached automatically, to help us find the bug.</div>
+        <div style={{ fontSize: 12, color: "#646A92" }}>The page you&apos;re on and your device type are attached automatically, to help us find the bug.</div>
       )}
-      {error && <div style={{ fontSize: 13, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 12, padding: "10px 14px" }}>{error}</div>}
+      {error && <div style={{ fontSize: 13, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 12, padding: "10px 14px" }}>{error}</div>}
       <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-        <button onClick={send} disabled={sending} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "12px 24px", fontSize: 14.5, opacity: sending ? 0.7 : 1 }}>
+        <button onClick={send} disabled={sending} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "12px 24px", fontSize: 16, opacity: sending ? 0.7 : 1 }}>
           {sending ? "Sending…" : "Send ticket"}
         </button>
         {onCancel && (
@@ -199,7 +199,7 @@ function NewTicketForm({ onCreated, onCancel }: { onCreated: (n: number) => void
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
+    <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
       {children}
     </div>
   );

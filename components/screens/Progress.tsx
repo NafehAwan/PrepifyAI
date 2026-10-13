@@ -45,13 +45,13 @@ export function Progress() {
 
   if (tests.length === 0) {
     return (
-      <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Nothing to show yet</div>
+      <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 6 }}>Nothing to show yet</div>
         <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.6, marginBottom: 16 }}>
           Take a test and this page fills up: every score, every subject average, and where you&apos;re
           losing marks.
         </div>
-        <button onClick={() => go("subjects")} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "12px 24px", fontSize: 14.5 }}>
+        <button onClick={() => go("subjects")} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "12px 24px", fontSize: 16 }}>
           Pick a subject →
         </button>
       </div>
@@ -60,8 +60,8 @@ export function Progress() {
 
   return (
     <div style={{ maxWidth: 900, display: "flex", flexDirection: "column", gap: 16 }}>
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-        <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 14 }}>By subject</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 14 }}>By subject</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {bySubject.map((x) => {
             const avg = x.avgPct ?? 0;
@@ -83,8 +83,8 @@ export function Progress() {
 
       <WeakChapters />
 
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-        <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Every test</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 3 }}>Every test</div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>Newest first. Tap one to read the answers again.</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {tests.map((t) => {
@@ -107,11 +107,11 @@ export function Progress() {
                   <div style={{ fontSize: 13.5, fontWeight: 600 }}>
                     {nameById.get(t.subjectId) ?? "Subject"} · {t.title}
                   </div>
-                  <div style={{ fontSize: 12, color: "#9a8d78", textTransform: "capitalize" }}>
+                  <div style={{ fontSize: 12, color: "#646A92", textTransform: "capitalize" }}>
                     {t.correctCount}/{t.questionCount} · {t.difficulty} · {t.remarks}
                   </div>
                 </div>
-                <div style={{ fontSize: 12, color: "#9a8d78", flex: "none" }}>
+                <div style={{ fontSize: 12, color: "#646A92", flex: "none" }}>
                   {new Date(t.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
                 </div>
               </button>

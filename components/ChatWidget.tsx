@@ -9,6 +9,7 @@ import { ChatSession, deleteChat, deriveTitle, loadChats, newChatId, saveChat } 
 import { Mascot } from "./Mascot";
 import { ChatMarkdown, plainLength } from "./ChatMarkdown";
 import { sfxTap } from "@/lib/sfx";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 // Floating "Ask Prepify" helper, available on every dashboard screen. A general
 // study buddy, so a student can ask about anything they got wrong in a test.
@@ -17,6 +18,9 @@ import { sfxTap } from "@/lib/sfx";
 export function ChatWidget() {
   const { s, go } = useApp();
   const [open, setOpen] = useState(false);
+  // On phones the launcher sits above the tab bar (or the test's Next bar).
+  const isMobile = useIsMobile();
+  const lift = isMobile ? 92 : 0;
   const [msgs, setMsgs] = useState<ChatMsg[]>([]);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
@@ -143,11 +147,11 @@ export function ChatWidget() {
       {/* launcher — Prepi the mascot waves you over */}
       <button
         onClick={() => { sfxTap(); setOpen((v) => !v); }}
-        aria-label="Ask Prepify"
+        aria-label="Ask Prepi"
         style={{
-          position: "fixed", right: 22, bottom: 22, zIndex: 60, width: 62, height: 62, borderRadius: 999,
-          background: open ? C.accent : C.card, border: `2px solid ${C.accent}`,
-          boxShadow: "0 10px 26px rgba(198,113,57,.4)",
+          position: "fixed", right: isMobile ? 14 : 22, bottom: (isMobile ? 14 : 22) + lift, zIndex: 60, width: isMobile ? 58 : 64, height: isMobile ? 58 : 64, borderRadius: 999,
+          background: open ? C.accent : C.card, border: `3px solid ${C.accent}`,
+          boxShadow: "0 4px 0 #4F31D6, 0 12px 24px -8px rgba(32,36,74,.35)",
           display: "flex", alignItems: "center", justifyContent: "center", animation: "pf-bounce-in .55s var(--ease-soft) both", overflow: "hidden",
         }}
       >
@@ -161,15 +165,15 @@ export function ChatWidget() {
       {open && (
         <div
           style={{
-            position: "fixed", right: 22, bottom: 92, zIndex: 60, width: "min(380px, calc(100vw - 44px))", height: "min(560px, calc(100vh - 130px))",
-            background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, boxShadow: "0 18px 48px rgba(90,62,30,.24)",
+            position: "fixed", right: isMobile ? 10 : 22, bottom: (isMobile ? 82 : 98) + lift, zIndex: 60, width: isMobile ? "calc(100vw - 20px)" : "min(390px, calc(100vw - 44px))", height: `min(560px, calc(100vh - ${(isMobile ? 150 : 140) + lift}px))`,
+            background: C.card, borderRadius: 24, boxShadow: "0 18px 48px -10px rgba(32,36,74,.4)",
             display: "flex", flexDirection: "column", overflow: "hidden", animation: "pf-pop .42s var(--ease-soft) both",
           }}
         >
           <div style={{ padding: "12px 14px", background: C.accent, color: "#fff", display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,.25)", display: "flex", alignItems: "center", justifyContent: "center", flex: "none", overflow: "hidden" }}><Mascot mood={busy ? "thinking" : "happy"} size={30} /></div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 700, fontSize: 14.5 }}>Ask Prepify</div>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 17, lineHeight: 1.1 }}>Ask Prepi</div>
               <div style={{ fontSize: 11.5, opacity: 0.9, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                 {showHistory ? "Your saved chats" : "Your study buddy — ask anything"}
               </div>
@@ -189,17 +193,17 @@ export function ChatWidget() {
                 Start a new chat
               </button>
               {chats.length === 0 ? (
-                <div style={{ fontSize: 13, color: "#8a8172", textAlign: "center", padding: "24px 12px", lineHeight: 1.5 }}>
+                <div style={{ fontSize: 13, color: "#646A92", textAlign: "center", padding: "24px 12px", lineHeight: 1.5 }}>
                   No saved chats yet. Ask a question and it&apos;ll be saved here.
                 </div>
               ) : (
                 chats.map((c) => (
                   <div key={c.id} style={{ display: "flex", alignItems: "center", gap: 8, background: c.id === chatId ? C.tint : C.bg, border: `1px solid ${c.id === chatId ? C.accent : C.line}`, borderRadius: 12, padding: "4px 4px 4px 12px" }}>
                     <button onClick={() => openChat(c)} style={{ flex: 1, minWidth: 0, textAlign: "left", background: "transparent" }}>
-                      <div style={{ fontSize: 13.5, fontWeight: 600, color: "#332f2b", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.title}</div>
-                      <div style={{ fontSize: 11, color: "#9a917f" }}>{relTime(c.updatedAt)}</div>
+                      <div style={{ fontSize: 13.5, fontWeight: 600, color: "#20244A", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.title}</div>
+                      <div style={{ fontSize: 11, color: "#646A92" }}>{relTime(c.updatedAt)}</div>
                     </button>
-                    <button onClick={() => removeChat(c.id)} aria-label="Delete chat" title="Delete chat" style={{ width: 30, height: 30, flex: "none", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", color: "#b0a793" }}>
+                    <button onClick={() => removeChat(c.id)} aria-label="Delete chat" title="Delete chat" style={{ width: 30, height: 30, flex: "none", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", color: "#8A90B2" }}>
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" /></svg>
                     </button>
                   </div>
@@ -212,7 +216,7 @@ export function ChatWidget() {
                 {msgs.length === 0 && (
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, padding: "6px 0 2px" }}>
                     <Mascot mood="book" size={78} />
-                    <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#332f2b", textAlign: "center" }}>
+                    <div style={{ maxWidth: "92%", background: C.bg, borderRadius: 16, padding: "12px 14px", fontSize: 14, lineHeight: 1.55, color: "#20244A", textAlign: "center" }}>
                       Salam! Stuck on something? Ask me and I&apos;ll explain it simply. {s.aiConfigured || s.groqKey ? "" : "First connect your free AI key in Settings."}
                     </div>
                   </div>
@@ -222,18 +226,18 @@ export function ChatWidget() {
                   const thinking = !me && text === "…";
                   const limit = i === typeIdx ? typeShown : undefined;
                   return (
-                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#332f2b", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: me ? "pre-wrap" : "normal", animation: "pf-in .4s var(--ease-out) both" }}>
+                    <div key={i} style={{ alignSelf: me ? "flex-end" : "flex-start", maxWidth: "90%", background: me ? C.accent : C.bg, color: me ? "#fff" : "#20244A", borderRadius: me ? "14px 14px 4px 14px" : "14px 14px 14px 4px", padding: "11px 14px", fontSize: 14, lineHeight: 1.55, whiteSpace: me ? "pre-wrap" : "normal", animation: "pf-in .4s var(--ease-out) both" }}>
                       {me ? text : thinking ? <TypingDots /> : <ChatMarkdown text={text} limit={limit} />}
                     </div>
                   );
                 })}
               </div>
 
-              <div style={{ padding: 12, borderTop: "1px solid #ece0c8" }}>
+              <div style={{ padding: 12, borderTop: "1px solid #E6EBF6" }}>
                 {msgs.length === 0 && (
                   <div style={{ display: "flex", gap: 6, marginBottom: 9, flexWrap: "wrap" }}>
                     {chips.map((c) => (
-                      <button key={c} onClick={() => send(c)} style={{ fontSize: 11.5, fontWeight: 600, color: "#5d5648", background: C.bg, border: `1px solid ${C.line}`, borderRadius: 999, padding: "6px 11px" }}>{c}</button>
+                      <button key={c} onClick={() => send(c)} style={{ fontSize: 11.5, fontWeight: 600, color: "#3E4370", background: C.bg, border: `1px solid ${C.line}`, borderRadius: 999, padding: "6px 11px" }}>{c}</button>
                     ))}
                   </div>
                 )}

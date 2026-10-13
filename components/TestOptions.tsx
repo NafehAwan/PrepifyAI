@@ -4,6 +4,7 @@
 // which chapters, how many questions, how hard.
 
 import { C } from "@/lib/theme";
+import { Glyph } from "./Icon";
 import type { SubjectChapter } from "@/lib/tests/build";
 import type { McqDifficulty } from "@/lib/ai/prompts";
 import type { ChaptersStatus } from "@/lib/useSubject";
@@ -19,8 +20,8 @@ export const LEVELS: Array<{ id: McqDifficulty; label: string; blurb: string }> 
 
 export function OptionCard({ title, hint, children }: { title: string; hint: string; children: React.ReactNode }) {
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "20px 22px" }}>
-      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>{title}</div>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "20px 22px" }}>
+      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 3 }}>{title}</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>{hint}</div>
       {children}
     </div>
@@ -49,10 +50,10 @@ export function ChapterPicker({
         {status === "loading" ? (
           <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600, padding: "10px 2px" }}>Loading chapters…</div>
         ) : (
-          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 14, padding: "12px 14px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 14, padding: "12px 14px" }}>
             <span style={{ flex: 1, minWidth: 180 }}>Couldn&apos;t load the chapters. Check your connection.</span>
             {onRetry && (
-              <button onClick={onRetry} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+              <button onClick={onRetry} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "8px 16px", fontSize: 15 }}>
                 Try again
               </button>
             )}
@@ -108,7 +109,7 @@ export function CountPicker({ count, onChange }: { count: number; onChange: (n: 
           <button
             key={n}
             onClick={() => onChange(n)}
-            style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: count === n ? C.accent : C.bg, color: count === n ? "#fff" : "#5d5648", border: `1.5px solid ${count === n ? C.accent : C.line}` }}
+            style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: count === n ? C.accent : C.bg, color: count === n ? "#fff" : "#3E4370", border: `1.5px solid ${count === n ? C.accent : C.line}` }}
           >
             {n}
           </button>
@@ -125,7 +126,7 @@ export function CountPicker({ count, onChange }: { count: number; onChange: (n: 
           aria-label="Number of questions"
           style={{ flex: 1, accentColor: C.accent }}
         />
-        <div style={{ fontFamily: "Caprasimo", fontSize: 26, minWidth: 44, textAlign: "right", color: C.accentD }}>{count}</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26, minWidth: 44, textAlign: "right", color: C.accentD }}>{count}</div>
       </div>
     </OptionCard>
   );
@@ -171,7 +172,7 @@ export function ChipRow<T extends string | number>({
         <button
           key={String(o)}
           onClick={() => onChange(o)}
-          style={{ borderRadius: 999, padding: "10px 18px", fontSize: 14, fontWeight: 700, background: value === o ? C.accent : C.bg, color: value === o ? "#fff" : "#5d5648", border: `1.5px solid ${value === o ? C.accent : C.line}` }}
+          style={{ borderRadius: 999, padding: "10px 18px", fontSize: 14, fontWeight: 700, background: value === o ? C.accent : C.bg, color: value === o ? "#fff" : "#3E4370", border: `1.5px solid ${value === o ? C.accent : C.line}` }}
         >
           {label(o)}
         </button>
@@ -182,8 +183,8 @@ export function ChipRow<T extends string | number>({
 
 export function Check({ on }: { on: boolean }) {
   return (
-    <div style={{ width: 20, height: 20, flex: "none", borderRadius: 6, border: `2px solid ${on ? C.accent : "#d8c8ab"}`, background: on ? C.accent : "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800 }}>
-      {on ? "✓" : ""}
+    <div style={{ width: 20, height: 20, flex: "none", borderRadius: 6, border: `2px solid ${on ? C.accent : "#D3DAEC"}`, background: on ? C.accent : "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800 }}>
+      {on ? <Glyph name="check" size={14} /> : null}
     </div>
   );
 }

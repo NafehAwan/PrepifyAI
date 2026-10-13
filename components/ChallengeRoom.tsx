@@ -15,6 +15,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
+import { Glyph } from "./Icon";
 import {
   challengeLink,
   challengeTitle,
@@ -179,10 +180,10 @@ export function ChallengeRoom() {
     const reason = state.status !== "lobby" ? JOIN_ERRORS[state.status] : state.players.length >= state.playerCount ? JOIN_ERRORS.full : null;
     return (
       <Frame title={`${state.hostName ?? "A friend"} challenged you!`} subtitle={subtitle} onBack={back}>
-        <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px", display: "flex", flexDirection: "column", gap: 14 }}>
+        <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px", display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <Mascot mood="thinking" size={72} />
-            <div style={{ fontSize: 14, lineHeight: 1.6, color: "#5d5648" }}>
+            <div style={{ fontSize: 14, lineHeight: 1.6, color: "#3E4370" }}>
               Same questions, same clock. {state.players.length}/{state.playerCount} players have joined — the
               challenge starts once everyone is in and ready.
             </div>
@@ -221,9 +222,9 @@ export function ChallengeRoom() {
     const left = Math.max(1, Math.ceil((startsAt - serverNow) / 1000));
     return (
       <Frame title={title} subtitle={subtitle} onBack={back}>
-        <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "40px 26px", textAlign: "center" }}>
+        <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "40px 26px", textAlign: "center" }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Everyone&apos;s ready — get set!</div>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 96, lineHeight: 1, color: C.accent }}>{left}</div>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 96, lineHeight: 1, color: C.accent }}>{left}</div>
           <div style={{ fontSize: 13, color: C.muted, marginTop: 10 }}>
             You&apos;ll have {Math.round(state.timeLimitSec / 60)} minutes. The chatbot is off until you finish.
           </div>
@@ -251,8 +252,8 @@ export function ChallengeRoom() {
           <div style={{ background: C.sageT, borderRadius: 24, padding: "24px 26px", display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap" }}>
             <Mascot mood="thinking" size={72} />
             <div style={{ flex: 1, minWidth: 220 }}>
-              <div style={{ fontFamily: "Caprasimo", fontSize: 22, marginBottom: 4 }}>Your paper is in</div>
-              <div style={{ fontSize: 14, color: "#5d5648" }}>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22, marginBottom: 4 }}>Your paper is in</div>
+              <div style={{ fontSize: 14, color: "#3E4370" }}>
                 {me?.correct ?? 0}/{state.questionCount} correct · {me?.scorePct ?? 0}%. Waiting for the others —{" "}
                 {done}/{state.playerCount} finished. Results appear when everyone is done or time runs out.
               </div>
@@ -316,8 +317,8 @@ function Lobby({
 
   return (
     <div style={{ maxWidth: 680, display: "flex", flexDirection: "column", gap: 16 }}>
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-        <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Invite your friends</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 3 }}>Invite your friends</div>
         <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
           Send them this link. They sign in, tap Join, then Ready. Code: <strong style={{ letterSpacing: 2, color: C.ink }}>{state.code}</strong>
         </div>
@@ -325,8 +326,8 @@ function Lobby({
           <div style={{ flex: "1 1 240px", minWidth: 0, background: C.bg, borderRadius: 12, padding: "11px 14px", fontSize: 13.5, fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
             {link}
           </div>
-          <button onClick={copy} style={secondaryBtn}>{copied ? "Copied ✓" : "Copy link"}</button>
-          <a href={`https://wa.me/?text=${encodeURIComponent(message)}`} target="_blank" rel="noreferrer" style={{ ...secondaryBtn, background: "#dcefd9", color: "#2f5d2a", textDecoration: "none" }}>
+          <button onClick={copy} style={secondaryBtn}>{copied ? "Copied!" : "Copy link"}</button>
+          <a href={`https://wa.me/?text=${encodeURIComponent(message)}`} target="_blank" rel="noreferrer" style={{ ...secondaryBtn, background: "#DDF7E6", color: "#137A3C", textDecoration: "none" }}>
             WhatsApp
           </a>
           {canShare && <button onClick={share} style={secondaryBtn}>Share…</button>}
@@ -355,7 +356,7 @@ function Lobby({
           friend is in, they can start with whoever is here. */}
       {state.isHost && !everyoneReady && (
         <div style={{ background: C.card, border: `1.5px dashed ${C.accent}`, borderRadius: 20, padding: "14px 16px", display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-          <div style={{ flex: 1, minWidth: 200, fontSize: 13, color: "#5d5648", lineHeight: 1.5 }}>
+          <div style={{ flex: 1, minWidth: 200, fontSize: 13, color: "#3E4370", lineHeight: 1.5 }}>
             <strong>Don&apos;t want to wait?</strong>{" "}
             {joined >= 2
               ? `Start now with the ${joined} player${joined === 1 ? "" : "s"} who ${joined === 1 ? "is" : "are"} here — empty seats are dropped.`
@@ -374,7 +375,7 @@ function Lobby({
             disabled={busy || joined < 2}
             style={{ borderRadius: 999, background: joined >= 2 ? C.accentD : C.sand, color: joined >= 2 ? "#fff" : C.muted, fontWeight: 700, padding: "11px 20px", fontSize: 14, opacity: busy ? 0.7 : 1, flex: "none" }}
           >
-            ⚡ Force start
+            <Glyph name="bolt" size={15} style={{ marginRight: 6 }} />Force start
           </button>
         </div>
       )}
@@ -388,7 +389,7 @@ function Lobby({
           disabled={busy}
           style={{ ...primaryBtn, background: me?.ready ? C.sage : C.accent, opacity: busy ? 0.7 : 1 }}
         >
-          {me?.ready ? "Ready ✓  (tap to undo)" : "I'm ready"}
+          {me?.ready ? "Ready! (tap to undo)" : "I'm ready"}
         </button>
         <button
           onClick={async () => {
@@ -411,7 +412,7 @@ function Lobby({
 function Seats({ state, show }: { state: ChallengeState; show: "ready" | "submitted" }) {
   const empty = Math.max(0, state.playerCount - state.players.length);
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "10px 12px" }}>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "10px 12px" }}>
       {state.players.map((p, i) => {
         const on = show === "ready" ? p.ready : p.submitted;
         return (
@@ -473,14 +474,14 @@ function Play({ state, remainingMs, onSubmitted }: { state: ChallengeState; rema
     <>
       <div style={{ position: "sticky", top: 62, zIndex: 10, background: C.bg, padding: "8px 0 12px", marginBottom: 6 }}>
         <div style={{ maxWidth: 900, display: "flex", alignItems: "center", gap: 14, background: low ? C.tint : C.card, border: `1.5px solid ${low ? C.accent : C.line}`, borderRadius: 18, padding: "10px 16px" }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 26, color: low ? C.accentD : C.ink, minWidth: 74 }}>{formatClock(remainingMs / 1000)}</div>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26, color: low ? C.accentD : C.ink, minWidth: 74 }}>{formatClock(remainingMs / 1000)}</div>
           <div style={{ flex: 1, fontSize: 13, color: C.muted, fontWeight: 600 }}>
             {answered}/{questions.length} answered · submits automatically at 0:00
           </div>
         </div>
       </div>
 
-      <div style={{ maxWidth: 900, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px", marginBottom: 16 }}>
+      <div style={{ maxWidth: 900, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px", marginBottom: 16 }}>
         {questions.map((q, qi) => (
           <div key={q.id ?? qi} style={{ marginBottom: 18 }}>
             <div style={{ fontSize: 14.5, fontWeight: 600, lineHeight: 1.45, marginBottom: 10 }}>
@@ -496,7 +497,7 @@ function Play({ state, remainingMs, onSubmitted }: { state: ChallengeState; rema
                     onClick={() => setPicks((p) => p.map((v, k) => (k === qi ? i : v)))}
                     style={{ display: "flex", alignItems: "center", gap: 10, textAlign: "left", borderRadius: 12, padding: "10px 12px", background: picked ? C.tint : C.bg, border: `1.5px solid ${picked ? C.accent : "transparent"}` }}
                   >
-                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#5d5648", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 11.5 }}>
+                    <div style={{ width: 22, height: 22, flex: "none", borderRadius: 999, background: picked ? C.accent : C.sand, color: picked ? "#fff" : "#3E4370", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 11.5 }}>
                       {"ABCD"[i]}
                     </div>
                     <div style={{ fontSize: 13.5, fontWeight: 500 }}>{opt}</div>
@@ -570,10 +571,10 @@ function Results({ state }: { state: ChallengeState }) {
       <div style={{ background: won ? C.sageT : C.tint, borderRadius: 24, padding: "26px 28px", display: "flex", alignItems: "center", gap: 22, flexWrap: "wrap" }}>
         <Mascot mood={won ? "celebrate" : "sad"} size={84} />
         <div style={{ flex: 1, minWidth: 220 }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 26, marginBottom: 4 }}>
-            {won ? (winners.length > 1 ? "It's a tie for first!" : "You won! 🏆") : `${winners.join(" & ")} won`}
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26, marginBottom: 4 }}>
+            {won ? (winners.length > 1 ? "It's a tie for first!" : "You won!") : `${winners.join(" & ")} won`}
           </div>
-          <div style={{ fontSize: 14, color: "#5d5648" }}>
+          <div style={{ fontSize: 14, color: "#3E4370" }}>
             {mine ? `You came ${ordinal(mine.rank)} of ${ranked.length} · ${mine.player.correct ?? 0}/${state.questionCount} correct · ${mine.player.scorePct ?? 0}% · ${mine.player.remarks ?? ""}` : ""}
           </div>
         </div>
@@ -582,8 +583,8 @@ function Results({ state }: { state: ChallengeState }) {
         </button>
       </div>
 
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "18px 20px", overflowX: "auto" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 10 }}>Leaderboard</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "18px 20px", overflowX: "auto" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 10 }}>Leaderboard</div>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13.5, minWidth: 440 }}>
           <thead>
             <tr style={{ color: C.muted, textAlign: "left" }}>
@@ -595,7 +596,7 @@ function Results({ state }: { state: ChallengeState }) {
           <tbody>
             {ranked.map(({ player: p, rank }, i) => (
               <tr key={i} style={{ borderTop: `1px solid ${C.line}`, background: p.isMe ? C.tint : "transparent" }}>
-                <td style={{ padding: "10px 8px", fontFamily: "Caprasimo", fontSize: 17, color: rank === 1 ? C.accent : C.muted }}>{rank === 1 ? "🏆" : rank}</td>
+                <td style={{ padding: "10px 8px", fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 17, color: rank === 1 ? C.accent : C.muted }}>{rank === 1 ? "🏆" : rank}</td>
                 <td style={{ padding: "10px 8px", fontWeight: 700 }}>{p.name}{p.isMe ? " (you)" : ""}</td>
                 <td style={{ padding: "10px 8px", fontWeight: 700 }}>{p.correct ?? 0}/{state.questionCount}</td>
                 <td style={{ padding: "10px 8px" }}>{p.scorePct ?? 0}%</td>
@@ -608,8 +609,8 @@ function Results({ state }: { state: ChallengeState }) {
       </div>
 
       {review.length > 0 && state.key && (
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 16 }}>Your answers</div>
+        <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 16 }}>Your answers</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {review.map((q, qi) => (
               <ReviewRow key={q.id ?? qi} q={q} index={qi} pick={typeof answers[qi] === "number" ? answers[qi] : null} first={qi === 0} source="challenge" />
@@ -629,7 +630,7 @@ function Frame({ title, subtitle, onBack, children }: { title: string; subtitle?
         <button onClick={onBack} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
           ← {s.selectedSubjectName ?? "Back"}
         </button>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 28, lineHeight: 1.15 }}>{title}</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 28, lineHeight: 1.15 }}>{title}</div>
         {subtitle && <div style={{ fontSize: 13.5, color: C.muted, marginTop: 2 }}>{subtitle}</div>}
       </div>
       {children}
@@ -639,7 +640,7 @@ function Frame({ title, subtitle, onBack, children }: { title: string; subtitle?
 
 function Panel({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
+    <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px", color: C.muted, fontSize: 14, lineHeight: 1.6 }}>
       {children}
     </div>
   );
@@ -647,7 +648,7 @@ function Panel({ children }: { children: React.ReactNode }) {
 
 function Note({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: "#fdf1e6", color: C.accentD }}>
+    <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: "#FFEBDD", color: C.accentD }}>
       {children}
     </div>
   );
@@ -657,7 +658,7 @@ function Stat({ label, value, strong }: { label: string; value: string; strong?:
   return (
     <div style={{ background: strong ? C.sageT : C.card, border: `1px solid ${C.line}`, borderRadius: 18, padding: "12px 18px", minWidth: 120 }}>
       <div style={{ fontSize: 12, color: C.muted, fontWeight: 700 }}>{label}</div>
-      <div style={{ fontFamily: "Caprasimo", fontSize: 26, color: strong ? C.sageD : C.ink }}>{value}</div>
+      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26, color: strong ? C.sageD : C.ink }}>{value}</div>
     </div>
   );
 }
@@ -682,7 +683,7 @@ const primaryBtn: React.CSSProperties = {
 const secondaryBtn: React.CSSProperties = {
   borderRadius: 999,
   background: C.sand,
-  color: "#5d5648",
+  color: "#3E4370",
   fontWeight: 700,
   padding: "10px 16px",
   fontSize: 13.5,
