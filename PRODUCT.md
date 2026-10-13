@@ -34,7 +34,7 @@ Built on real FBISE question banks (thousands of chapter-tagged MCQs, board-styl
 
 ## Brand Commitments
 - Name: Prepify (written "Prepify AI" in the app).
-- The owner chose a fresh start: the current logo, Prepi the owl mascot and the warm orange palette are not binding.
+- Chosen look (owner's pick from 14 picture directions): the "Level Map" world in DESIGN.md — subject maps of chapter stops, gold stars, and Prepi, now a purple blob with a gold antenna star (the owl is retired).
 - Rejected directions: the original warm brown/cream look with Caprasimo and Figtree, and a Niyyah-style redesign (off-white, Playfair Display serif headlines, one orange accent). The owner found the Niyyah version too plain and boring, too similar to the old look, wrong in its fonts (serif headlines), and not like Prepify.
 
 ## Evidence on Hand

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useApp } from "@/lib/store";
 import { C } from "@/lib/theme";
+import { Glyph } from "../Icon";
 import { listTests, type TestRow } from "@/lib/tests/store";
 import { currentUserId } from "@/lib/analytics";
 import { useSelectedSubject } from "@/lib/useSubject";
@@ -65,7 +66,7 @@ export function SubjectTests() {
         </button>
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 14, flexWrap: "wrap" }}>
           <div>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>{subjectName}</div>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>{subjectName}</div>
             <div style={{ color: C.muted, marginTop: 4, fontSize: 14 }}>
               {submitted.length === 0
                 ? "No tests yet — start your first one."
@@ -77,11 +78,11 @@ export function SubjectTests() {
               onClick={() => go("newChallenge")}
               style={{ borderRadius: 999, background: C.card, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "13px 22px", fontSize: 15 }}
             >
-              ⚔ Challenge friends
+              <Glyph name="swords" size={16} style={{ marginRight: 6 }} />Challenge friends
             </button>
             <button
               onClick={() => go("newTest")}
-              style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 28px", fontSize: 15, boxShadow: "0 10px 24px rgba(198,113,57,.25)" }}
+              style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "14px 28px", fontSize: 17.5 }}
             >
               + New test
             </button>
@@ -90,17 +91,17 @@ export function SubjectTests() {
       </div>
 
       {lookupFailed ? (
-        <div style={{ maxWidth: 560, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 16, padding: "14px 16px" }}>
+        <div style={{ maxWidth: 560, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 16, padding: "14px 16px" }}>
           <span style={{ flex: 1, minWidth: 200 }}>Couldn&apos;t load this subject. Check your connection.</span>
-          <button onClick={retryLookup} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+          <button onClick={retryLookup} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "8px 16px", fontSize: 15 }}>
             Try again
           </button>
         </div>
       ) : loading ? (
         <div style={{ color: C.muted, fontSize: 14 }}>Loading your tests…</div>
       ) : tests.length === 0 ? (
-        <div style={{ maxWidth: 560, background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-          <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 6 }}>Your first {subjectName} test</div>
+        <div style={{ maxWidth: 560, background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 6 }}>Your first {subjectName} test</div>
           <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.6 }}>
             Choose how many questions you want (1 to 30) and how hard they should be. Every test is
             different, and the harder levels are mostly scenario questions — the kind the board paper
@@ -117,7 +118,7 @@ export function SubjectTests() {
 
       {!loading && challenges.length > 0 && (
         <>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 22, margin: "30px 0 12px" }}>Challenges</div>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22, margin: "30px 0 12px" }}>Challenges</div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))", gap: 16 }}>
             {challenges.map((c) => (
               <ChallengeCardView key={c.code} challenge={c} onOpen={() => openChallenge(c)} />
@@ -141,10 +142,10 @@ function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
     <button
       onClick={onOpen}
       className="pf-lift"
-      style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: 20 }}
+      style={{ textAlign: "left", background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: 20 }}
     >
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 14 }}>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>{test.title}</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19 }}>{test.title}</div>
         <span style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "3px 9px", background: bg, color: fg, textTransform: "capitalize", flex: "none" }}>
           {test.difficulty}
         </span>
@@ -153,7 +154,7 @@ function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
       {done ? (
         <>
           <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
             <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600 }}>
               {test.correctCount}/{test.questionCount}
             </div>
@@ -166,7 +167,7 @@ function TestCard({ test, onOpen }: { test: TestRow; onOpen: () => void }) {
         </div>
       )}
 
-      <div style={{ fontSize: 12, color: "#9a8d78" }}>
+      <div style={{ fontSize: 12, color: "#646A92" }}>
         {test.scope ?? "Whole book"} · {test.questionCount} question{test.questionCount === 1 ? "" : "s"} ·{" "}
         {new Date(test.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
       </div>
@@ -193,19 +194,19 @@ function ChallengeCardView({ challenge: c, onOpen }: { challenge: ChallengeCard;
     <button
       onClick={onOpen}
       className="pf-lift"
-      style={{ textAlign: "left", background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: 20 }}
+      style={{ textAlign: "left", background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: 20 }}
     >
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, marginBottom: 14 }}>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 19 }}>{challengeTitle(c.seq)}</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19 }}>{challengeTitle(c.seq)}</div>
         <span style={{ fontSize: 11, fontWeight: 700, borderRadius: 999, padding: "3px 9px", background: bg, color: fg, flex: "none" }}>
-          {finished && c.rank ? (won ? "🏆 1st" : ordinal(c.rank)) : `${c.playerCount} players`}
+          {finished && c.rank ? (won ? "1st" : ordinal(c.rank)) : `${c.playerCount} players`}
         </span>
       </div>
 
       {finished ? (
         <>
           <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 6 }}>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 34, lineHeight: 1, color: fg }}>{pct}%</div>
             <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600 }}>
               {c.correct ?? 0}/{c.questionCount}
             </div>
@@ -218,7 +219,7 @@ function ChallengeCardView({ challenge: c, onOpen }: { challenge: ChallengeCard;
         <div style={{ fontSize: 13.5, color: C.accentD, fontWeight: 700, marginBottom: 10 }}>{status}</div>
       )}
 
-      <div style={{ fontSize: 12, color: "#9a8d78" }}>
+      <div style={{ fontSize: 12, color: "#646A92" }}>
         {c.scope} · {c.questionCount} questions · {c.difficulty} ·{" "}
         {new Date(c.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short" })}
       </div>

@@ -64,7 +64,7 @@ export function NewChallenge() {
         <button onClick={() => go("subjectTests")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
           ← {subjectName}
         </button>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>Challenge friends</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>Challenge friends</div>
         <div style={{ color: C.muted, marginTop: 4, fontSize: 14, maxWidth: 620 }}>
           Everyone gets the same {subjectName} questions and the same clock. You&apos;ll get a link to send — the
           challenge starts when every friend has joined and tapped Ready — or earlier if you tap Force start once a friend is in.
@@ -86,7 +86,7 @@ export function NewChallenge() {
         </OptionCard>
 
         {chapters.length > 0 && available < count && !error && (
-          <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: C.sand, color: "#6d6250" }}>
+          <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: C.sand, color: "#4A4F7A" }}>
             {available === 0
               ? "No questions are loaded for this choice yet."
               : `Only ${available} question${available === 1 ? "" : "s"} available here, so the challenge will have ${available}.`}
@@ -94,7 +94,7 @@ export function NewChallenge() {
         )}
 
         {error && (
-          <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#fdf1e6", color: C.accentD }}>
+          <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#FFEBDD", color: C.accentD }}>
             {error}
           </div>
         )}
@@ -103,7 +103,7 @@ export function NewChallenge() {
           <button
             onClick={create}
             disabled={creating}
-            style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: creating ? 0.7 : 1 }}
+            style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "14px 32px", fontSize: 17.5, opacity: creating ? 0.7 : 1 }}
           >
             {creating ? "Setting it up…" : "Create challenge →"}
           </button>

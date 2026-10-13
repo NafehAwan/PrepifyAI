@@ -86,17 +86,17 @@ export function NewTest() {
         <button onClick={() => go("subjectTests")} style={{ fontSize: 13, fontWeight: 600, color: C.muted, marginBottom: 4 }}>
           ← {subjectName}
         </button>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>New {subjectName} test</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>New {subjectName} test</div>
       </div>
 
       <div style={{ maxWidth: 680, display: "flex", flexDirection: "column", gap: 16 }}>
         {/* Auto-generated name, deliberately read-only. */}
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 22, padding: "18px 22px", display: "flex", alignItems: "center", gap: 14 }}>
+        <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "18px 22px", display: "flex", alignItems: "center", gap: 14 }}>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 12.5, color: C.muted, fontWeight: 600, marginBottom: 2 }}>Test name</div>
-            <div style={{ fontFamily: "Caprasimo", fontSize: 22 }}>{titleForSeq(nextSeq ?? 1)}</div>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22 }}>{titleForSeq(nextSeq ?? 1)}</div>
           </div>
-          <div style={{ fontSize: 12, color: "#9a8d78", maxWidth: 200, lineHeight: 1.45, textAlign: "right" }}>
+          <div style={{ fontSize: 12, color: "#646A92", maxWidth: 200, lineHeight: 1.45, textAlign: "right" }}>
             Named automatically so your results stay in order.
           </div>
         </div>
@@ -106,7 +106,7 @@ export function NewTest() {
         <DifficultyPicker difficulty={difficulty} onChange={setDifficulty} />
 
         {thin && !error && (
-          <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: C.sand, color: "#6d6250" }}>
+          <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "12px 16px", background: C.sand, color: "#4A4F7A" }}>
             {available === 0
               ? "No questions are loaded for this choice yet."
               : `Only ${available} question${available === 1 ? "" : "s"} available here, so the test will have ${available}. Add more chapters for a longer test.`}
@@ -114,7 +114,7 @@ export function NewTest() {
         )}
 
         {error && (
-          <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#fdf1e6", color: C.accentD }}>
+          <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#FFEBDD", color: C.accentD }}>
             {error}
           </div>
         )}
@@ -123,7 +123,7 @@ export function NewTest() {
           <button
             onClick={start}
             disabled={building}
-            style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
+            style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "14px 32px", fontSize: 17.5, opacity: building ? 0.7 : 1 }}
           >
             {building ? "Building your test…" : "Start test →"}
           </button>

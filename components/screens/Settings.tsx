@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useApp } from "@/lib/store";
 import { C, pill } from "@/lib/theme";
+import { Glyph } from "../Icon";
 import { persistEnrollments, persistProfile } from "@/lib/supabase/persist";
 import { groqAuthHeaders } from "@/lib/ai/key";
 import { initialsFromName } from "@/lib/mappings";
@@ -39,8 +40,8 @@ export function Settings() {
 
       <ConnectAI />
 
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Class &amp; subjects</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 18 }}>Class &amp; subjects</div>
         <div style={{ display: "flex", gap: 24, marginBottom: 20, flexWrap: "wrap" }}>
           <div>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Class</div>
@@ -52,7 +53,7 @@ export function Settings() {
           </div>
           <div>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 8 }}>Exam date</div>
-            <input type="date" value={s.examDate} onChange={(e) => saveProfile({ examDate: e.target.value })} style={{ borderRadius: 999, border: "1.5px solid #e0d0b4", background: "#fff", padding: "10px 18px", fontSize: 14, fontWeight: 600 }} />
+            <input type="date" value={s.examDate} onChange={(e) => saveProfile({ examDate: e.target.value })} style={{ borderRadius: 999, border: "1.5px solid #DCE3F2", background: "#fff", padding: "10px 18px", fontSize: 14, fontWeight: 600 }} />
           </div>
         </div>
         <div style={{ fontSize: 12.5, fontWeight: 700, color: C.muted, marginBottom: 9 }}>Enrolled subjects — tap to change</div>
@@ -60,16 +61,16 @@ export function Settings() {
           {ALL_SUBJECTS.map((name) => {
             const on = s.subs.includes(name);
             return (
-              <button key={name} onClick={() => toggleSubject(name)} style={{ borderRadius: 999, padding: "9px 15px", fontWeight: 600, fontSize: 13.5, background: on ? C.accent : "transparent", color: on ? "#fff" : "#5d5648", border: `1.5px solid ${on ? C.accent : "#dfcfb2"}` }}>
-                {on ? "✓ " : "+ "}{name}
+              <button key={name} onClick={() => toggleSubject(name)} style={{ borderRadius: 999, padding: "9px 15px", fontWeight: 600, fontSize: 13.5, background: on ? C.accent : "transparent", color: on ? "#fff" : "#3E4370", border: `1.5px solid ${on ? C.accent : "#D3DAEC"}` }}>
+                <Glyph name={on ? "check" : "plus"} size={15} style={{ marginRight: 6 }} />{name}
               </button>
             );
           })}
         </div>
       </div>
 
-      <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
-        <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 18 }}>Study preferences</div>
+      <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 18 }}>Study preferences</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           <Row title="Language" desc="Tutor explanations and feedback follow this. Textbook stays in the board's language.">
             <div style={{ display: "flex", background: C.bg, borderRadius: 999, padding: 4, flex: "none" }}>
@@ -114,16 +115,16 @@ export function Settings() {
       </div>
 
       {s.authed && (
-        <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 26px", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+        <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 26px", display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
           <div style={{ flex: 1, minWidth: 200 }}>
-            <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 3 }}>Log out</div>
+            <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 3 }}>Log out</div>
             <div style={{ fontSize: 13, color: C.muted }}>
               Signed in as {s.username ? `@${s.username}` : s.userEmail}. Your tests and challenges stay saved to your account.
             </div>
           </div>
           <form action={signOut}>
             <button type="submit" style={{ borderRadius: 999, background: C.danger, color: "#fff", fontWeight: 700, padding: "12px 26px", fontSize: 14.5 }}>
-              ⎋ Log out
+              <Glyph name="logout" size={16} style={{ marginRight: 6 }} />Log out
             </button>
           </form>
         </div>
@@ -159,11 +160,11 @@ function AiReady() {
   };
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
         <div style={{ fontWeight: 700, fontSize: 16 }}>Ask Prepify</div>
         <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: C.sageT, color: C.sageD }}>
-          ✓ Ready
+          <Glyph name="check" size={15} style={{ marginRight: 4 }} />Ready
         </span>
       </div>
       <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 16 }}>
@@ -174,8 +175,8 @@ function AiReady() {
         {testing ? "Checking…" : "Check it's working"}
       </button>
       {result && (
-        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginTop: 12, background: result.ok ? C.sageT : "#fdf1e6", color: result.ok ? C.sageD : C.accentD }}>
-          {result.ok ? "✓ " : "✕ "}{result.msg}
+        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginTop: 12, background: result.ok ? C.sageT : "#FFEBDD", color: result.ok ? C.sageD : C.accentD }}>
+          <Glyph name={result.ok ? "check" : "x"} size={14} style={{ marginRight: 4 }} />{result.msg}
         </div>
       )}
     </div>
@@ -220,11 +221,11 @@ function BringYourOwnKey() {
   };
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
         <div style={{ fontWeight: 700, fontSize: 16 }}>Connect your AI tutor</div>
-        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#8d8069" }}>
-          {connected ? "✓ Connected" : "Not connected"}
+        <span style={{ fontSize: 11.5, fontWeight: 700, borderRadius: 999, padding: "4px 11px", background: connected ? C.sageT : C.sand, color: connected ? C.sageD : "#646A92" }}>
+          {connected ? "Connected" : "Not connected"}
         </span>
       </div>
       <div style={{ fontSize: 13.5, color: C.muted, lineHeight: 1.55, marginBottom: 18 }}>
@@ -232,7 +233,7 @@ function BringYourOwnKey() {
       </div>
 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center", marginBottom: 12 }}>
-        <div style={{ display: "flex", alignItems: "center", flex: "1 1 320px", minWidth: 240, border: "1.5px solid #e0d0b4", borderRadius: 14, background: "#fff", paddingRight: 6 }}>
+        <div style={{ display: "flex", alignItems: "center", flex: "1 1 320px", minWidth: 240, border: "1.5px solid #DCE3F2", borderRadius: 14, background: "#fff", paddingRight: 6 }}>
           <input
             type={show ? "text" : "password"}
             value={draft}
@@ -246,8 +247,8 @@ function BringYourOwnKey() {
             {show ? "Hide" : "Show"}
           </button>
         </div>
-        <button onClick={save} disabled={!draft.trim()} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "12px 22px", fontSize: 14, opacity: draft.trim() ? 1 : 0.5 }}>
-          {saved ? "Saved ✓" : "Save key"}
+        <button onClick={save} disabled={!draft.trim()} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "12px 22px", fontSize: 16, opacity: draft.trim() ? 1 : 0.5 }}>
+          {saved ? "Saved!" : "Save key"}
         </button>
         <button onClick={test} disabled={testing || !effectiveKey} style={{ borderRadius: 999, background: C.sand, fontWeight: 700, padding: "12px 20px", fontSize: 14, opacity: testing || !effectiveKey ? 0.6 : 1 }}>
           {testing ? "Testing…" : "Test connection"}
@@ -260,16 +261,16 @@ function BringYourOwnKey() {
       </div>
 
       {result && (
-        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginBottom: 12, background: result.ok ? C.sageT : "#fdf1e6", color: result.ok ? C.sageD : C.accentD }}>
-          {result.ok ? "✓ " : "✕ "}{result.msg}
+        <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 14, padding: "11px 14px", marginBottom: 12, background: result.ok ? C.sageT : "#FFEBDD", color: result.ok ? C.sageD : C.accentD }}>
+          <Glyph name={result.ok ? "check" : "x"} size={14} style={{ marginRight: 4 }} />{result.msg}
         </div>
       )}
 
-      <details style={{ borderTop: "1px solid #ece0c8", paddingTop: 14 }}>
+      <details style={{ borderTop: "1px solid #E6EBF6", paddingTop: 14 }}>
         <summary style={{ cursor: "pointer", fontSize: 14, fontWeight: 700, color: C.ink, listStyle: "none" }}>
           How do I get a free Groq key? →
         </summary>
-        <ol style={{ margin: "14px 0 4px", paddingLeft: 20, display: "flex", flexDirection: "column", gap: 10, fontSize: 13.5, color: "#4a443c", lineHeight: 1.55 }}>
+        <ol style={{ margin: "14px 0 4px", paddingLeft: 20, display: "flex", flexDirection: "column", gap: 10, fontSize: 13.5, color: "#3E4370", lineHeight: 1.55 }}>
           <li>
             Go to{" "}
             <a href="https://console.groq.com/login" target="_blank" rel="noreferrer" style={{ color: C.accentD, fontWeight: 700, textDecoration: "underline" }}>console.groq.com</a>{" "}
@@ -297,7 +298,7 @@ function Row({ title, desc, children }: { title: string; desc: string; children:
     <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
       <div style={{ flex: 1 }}>
         <div style={{ fontSize: 14.5, fontWeight: 600 }}>{title}</div>
-        <div style={{ fontSize: 12.5, color: "#9a8d78" }}>{desc}</div>
+        <div style={{ fontSize: 12.5, color: "#646A92" }}>{desc}</div>
       </div>
       {children}
     </div>
@@ -305,12 +306,12 @@ function Row({ title, desc, children }: { title: string; desc: string; children:
 }
 
 function Divider() {
-  return <div style={{ height: 1, background: "#ece0c8" }} />;
+  return <div style={{ height: 1, background: "#E6EBF6" }} />;
 }
 
 function Toggle({ on, onClick }: { on: boolean; onClick: () => void }) {
   return (
-    <button onClick={onClick} style={{ width: 56, height: 32, borderRadius: 999, background: on ? C.sage : "#d8c8ab", position: "relative", flex: "none" }}>
+    <button onClick={onClick} style={{ width: 56, height: 32, borderRadius: 999, background: on ? C.sage : "#D3DAEC", position: "relative", flex: "none" }}>
       <div style={{ position: "absolute", top: 4, left: on ? 28 : 4, width: 24, height: 24, borderRadius: 999, background: "#fff", transition: "left .18s ease" }} />
     </button>
   );
@@ -351,11 +352,11 @@ function AccountCard() {
   const showForm = s.authed && (editing || !s.username);
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "24px 26px" }}>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "24px 26px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
-        <div style={{ width: 64, height: 64, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Caprasimo", fontSize: 26 }}>{initialsFromName(s.userName)}</div>
+        <div style={{ width: 64, height: 64, flex: "none", borderRadius: 999, background: C.sage, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26 }}>{initialsFromName(s.userName)}</div>
         <div style={{ flex: 1, minWidth: 180 }}>
-          <div style={{ fontFamily: "Caprasimo", fontSize: 22 }}>{s.userName}</div>
+          <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22 }}>{s.userName}</div>
           {s.username && (
             <div style={{ fontSize: 14, fontWeight: 700, color: C.accentD }}>
               @{s.username}
@@ -371,7 +372,7 @@ function AccountCard() {
         {s.authed && (
           <form action={signOut}>
             <button type="submit" style={{ borderRadius: 999, background: C.tint, color: C.accentD, border: `1.5px solid ${C.accent}`, fontWeight: 700, padding: "11px 22px", fontSize: 14 }}>
-              ⎋ Log out
+              <Glyph name="logout" size={16} style={{ marginRight: 6 }} />Log out
             </button>
           </form>
         )}
@@ -397,9 +398,9 @@ function AccountCard() {
               aria-label="Username"
               autoCapitalize="none"
               spellCheck={false}
-              style={{ flex: "1 1 200px", maxWidth: 280, borderRadius: 999, border: "1.5px solid #e0d0b4", background: "#fff", padding: "10px 16px", fontSize: 14, fontWeight: 600 }}
+              style={{ flex: "1 1 200px", maxWidth: 280, borderRadius: 999, border: "1.5px solid #DCE3F2", background: "#fff", padding: "10px 16px", fontSize: 14, fontWeight: 600 }}
             />
-            <button type="submit" disabled={saving} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "10px 20px", fontSize: 14, opacity: saving ? 0.7 : 1 }}>
+            <button type="submit" disabled={saving} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "10px 20px", fontSize: 16, opacity: saving ? 0.7 : 1 }}>
               {saving ? "Saving…" : "Save"}
             </button>
             {editing && (

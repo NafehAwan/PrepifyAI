@@ -119,7 +119,7 @@ export function MockExam() {
   return (
     <>
       <div style={{ marginBottom: 20 }}>
-        <div style={{ fontFamily: "Caprasimo", fontSize: 30, lineHeight: 1.1 }}>Mock Exam</div>
+        <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>Mock Exam</div>
         <div style={{ color: C.muted, marginTop: 4, fontSize: 14, maxWidth: 640, lineHeight: 1.5 }}>
           A timed paper you set up yourself — pick the chapters, how many MCQs and how long. The clock starts when you press
           start, and the paper hands itself in when time runs out.
@@ -132,9 +132,9 @@ export function MockExam() {
             {poolState === "loading" ? (
               <div style={{ fontSize: 13.5, color: C.muted, fontWeight: 600, padding: "10px 2px" }}>Loading chapters…</div>
             ) : (
-              <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 14, padding: "12px 14px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", fontSize: 13.5, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 14, padding: "12px 14px" }}>
                 <span style={{ flex: 1, minWidth: 180 }}>Couldn&apos;t load the chapters. Check your connection.</span>
-                <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "8px 16px", fontSize: 13 }}>
+                <button onClick={() => setAttempt((n) => n + 1)} style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "8px 16px", fontSize: 15 }}>
                   Try again
                 </button>
               </div>
@@ -194,7 +194,7 @@ export function MockExam() {
                   <button
                     key={n}
                     onClick={() => changeCount(n)}
-                    style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: effectiveCount === n ? C.accent : C.bg, color: effectiveCount === n ? "#fff" : "#5d5648", border: `1.5px solid ${effectiveCount === n ? C.accent : C.line}` }}
+                    style={{ borderRadius: 999, padding: "10px 20px", fontSize: 14.5, fontWeight: 700, background: effectiveCount === n ? C.accent : C.bg, color: effectiveCount === n ? "#fff" : "#3E4370", border: `1.5px solid ${effectiveCount === n ? C.accent : C.line}` }}
                   >
                     {n}
                   </button>
@@ -210,7 +210,7 @@ export function MockExam() {
                   aria-label="Number of MCQs"
                   style={{ flex: 1, accentColor: C.accent }}
                 />
-                <div style={{ fontFamily: "Caprasimo", fontSize: 26, minWidth: 44, textAlign: "right", color: C.accentD }}>{effectiveCount}</div>
+                <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 26, minWidth: 44, textAlign: "right", color: C.accentD }}>{effectiveCount}</div>
               </div>
             </OptionCard>
 
@@ -227,7 +227,7 @@ export function MockExam() {
             </OptionCard>
 
             {error && (
-              <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#fdf1e6", color: C.accentD }}>
+              <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.5, borderRadius: 16, padding: "13px 16px", background: "#FFEBDD", color: C.accentD }}>
                 {error}
               </div>
             )}
@@ -236,7 +236,7 @@ export function MockExam() {
               <button
                 onClick={start}
                 disabled={building}
-                style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "14px 32px", fontSize: 15, opacity: building ? 0.7 : 1 }}
+                style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "14px 32px", fontSize: 17.5, opacity: building ? 0.7 : 1 }}
               >
                 {building ? "Building your paper…" : "Start the clock →"}
               </button>
@@ -250,7 +250,7 @@ export function MockExam() {
         {mocks.length > 0 && (
           <div style={{ marginTop: 14 }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 10 }}>
-              <div style={{ fontFamily: "Caprasimo", fontSize: 21 }}>Your mocks</div>
+              <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 21 }}>Your mocks</div>
               <div style={{ fontSize: 13, color: C.muted }}>
                 {done.length} done{best !== null ? ` · best ${best}%` : ""}
               </div>
@@ -267,20 +267,20 @@ export function MockExam() {
                     style={{ textAlign: "left", background: C.card, border: `1px solid ${submitted ? C.line : C.accent}`, borderRadius: 18, padding: "14px 16px" }}
                   >
                     <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-                      <div style={{ fontFamily: "Caprasimo", fontSize: 18, flex: 1 }}>{m.title}</div>
-                      {submitted && <div style={{ fontFamily: "Caprasimo", fontSize: 20, color: pct >= 50 ? C.sageD : C.accentD }}>{pct}%</div>}
+                      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, flex: 1 }}>{m.title}</div>
+                      {submitted && <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 20, color: pct >= 50 ? C.sageD : C.accentD }}>{pct}%</div>}
                     </div>
                     <div style={{ fontSize: 12.5, color: C.muted, marginTop: 3 }}>
                       {m.scope ?? "Mock"} · {m.questionCount} MCQs{m.timeLimitMin ? ` · ${m.timeLimitMin} min` : ""}
                     </div>
-                    <div style={{ fontSize: 12.5, fontWeight: 700, marginTop: 6, color: submitted ? "#5d5648" : C.accentD }}>
+                    <div style={{ fontSize: 12.5, fontWeight: 700, marginTop: 6, color: submitted ? "#3E4370" : C.accentD }}>
                       {submitted
                         ? `${m.correctCount ?? 0}/${m.questionCount} · ${m.remarks ?? ""}`
                         : msLeft > 0
                           ? `In progress · ${Math.ceil(msLeft / 60000)} min left — resume`
                           : "Time's up — open to hand it in"}
                     </div>
-                    <div style={{ fontSize: 11.5, color: "#9a8d78", marginTop: 4 }}>
+                    <div style={{ fontSize: 11.5, color: "#646A92", marginTop: 4 }}>
                       {new Date(m.createdAt).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}
                     </div>
                   </button>

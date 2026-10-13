@@ -73,15 +73,15 @@ export function WeakChapters() {
   const judged = stats.filter((c) => c.attempted >= WEAK_MIN_ATTEMPTED);
 
   return (
-    <div style={{ background: C.card, border: `1px solid ${C.line}`, borderRadius: 24, padding: "22px 24px" }}>
-      <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 3 }}>Weak chapters</div>
+    <div style={{ background: C.card, borderRadius: 20, boxShadow: "0 4px 0 #D3DAEC", padding: "22px 24px" }}>
+      <div style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 19, marginBottom: 3 }}>Weak chapters</div>
       <div style={{ fontSize: 12.5, color: C.muted, marginBottom: 14 }}>
         From every test and challenge. A chapter shows here once you&apos;ve answered {WEAK_MIN_ATTEMPTED}+ of its questions and
         score under {WEAK_BELOW_PCT}% in it.
       </div>
 
       {groups.length === 0 ? (
-        <div style={{ fontSize: 13.5, color: "#5d5648", lineHeight: 1.6, background: C.sageT, borderRadius: 16, padding: "12px 14px" }}>
+        <div style={{ fontSize: 13.5, color: "#3E4370", lineHeight: 1.6, background: C.sageT, borderRadius: 16, padding: "12px 14px" }}>
           {judged.length === 0
             ? "Not enough answers yet to spot weak chapters — take a few more tests and they'll show up here."
             : "No weak chapters right now — every chapter you've practised is at 60% or more. Nice!"}
@@ -99,9 +99,9 @@ export function WeakChapters() {
                   <button
                     onClick={() => practise(subjectId, chapters, key)}
                     disabled={busy !== null}
-                    style={{ borderRadius: 999, background: C.accent, color: "#fff", fontWeight: 700, padding: "9px 16px", fontSize: 13, opacity: busy && busy !== key ? 0.5 : 1 }}
+                    style={{ borderRadius: 16, background: C.accent, color: "#fff", fontFamily: "var(--font-display)", fontWeight: 800, boxShadow: "0 4px 0 #4F31D6", padding: "9px 16px", fontSize: 15, opacity: busy && busy !== key ? 0.5 : 1 }}
                   >
-                    {busy === key ? "Building…" : `🎯 Practise my weak chapters${n > 1 ? ` (${n})` : ""}`}
+                    {busy === key ? "Building…" : `Practise my weak chapters${n > 1 ? ` (${n})` : ""}`}
                   </button>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
@@ -142,7 +142,7 @@ export function WeakChapters() {
       )}
 
       {error && (
-        <div style={{ marginTop: 12, fontSize: 13, fontWeight: 600, color: C.accentD, background: "#fdf1e6", borderRadius: 14, padding: "10px 14px" }}>{error}</div>
+        <div style={{ marginTop: 12, fontSize: 13, fontWeight: 600, color: C.accentD, background: "#FFEBDD", borderRadius: 14, padding: "10px 14px" }}>{error}</div>
       )}
     </div>
   );
