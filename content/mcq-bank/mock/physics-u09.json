@@ -1,0 +1,576 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 9,
+  "questions": [
+    {
+      "id": "4b62097389bb",
+      "stem": "Physics is the study of:",
+      "options": [
+        "matter, energy, space, time and their interactions",
+        "living organisms only",
+        "plants only",
+        "chemical reactions only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Physics studies matter, energy, space and time and how they interact.",
+      "mock": true,
+      "family": "4b62097389bb"
+    },
+    {
+      "id": "ecba98090835",
+      "stem": "Which of these is a field of physics?",
+      "options": [
+        "Optics",
+        "Botany",
+        "Zoology",
+        "Genetics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Optics, the study of light, is a branch of physics; the others are biology.",
+      "mock": true,
+      "family": "ecba98090835"
+    },
+    {
+      "id": "e78311715d4c",
+      "stem": "The study of heat, temperature and energy transfer is:",
+      "options": [
+        "thermal physics",
+        "astrophysics",
+        "geophysics",
+        "acoustics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Thermal physics deals with heat, temperature and energy transfer.",
+      "mock": true,
+      "family": "e78311715d4c"
+    },
+    {
+      "id": "258aa27cabe9",
+      "stem": "The study of electric and magnetic forces is:",
+      "options": [
+        "electromagnetism",
+        "optics",
+        "acoustics",
+        "geophysics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Electromagnetism studies electric and magnetic forces.",
+      "mock": true,
+      "family": "258aa27cabe9"
+    },
+    {
+      "id": "a06ab89fe21f",
+      "stem": "The study of microscopic particles is mainly:",
+      "options": [
+        "quantum mechanics",
+        "classical mechanics",
+        "nuclear physics",
+        "optics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Quantum mechanics describes the behaviour of very small particles.",
+      "mock": true,
+      "family": "a06ab89fe21f"
+    },
+    {
+      "id": "540c8ba48e11",
+      "stem": "The study of sound is:",
+      "options": [
+        "acoustics",
+        "optics",
+        "nuclear physics",
+        "cosmology"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Acoustics is the physics of sound.",
+      "mock": true,
+      "family": "540c8ba48e11"
+    },
+    {
+      "id": "a27a0264451b",
+      "stem": "The study of the motion of large (macroscopic) objects under forces is:",
+      "options": [
+        "classical mechanics",
+        "geomechanics",
+        "climate physics",
+        "optics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Classical mechanics describes everyday-sized objects moving under forces.",
+      "mock": true,
+      "family": "a27a0264451b"
+    },
+    {
+      "id": "79f9839043a6",
+      "stem": "The study of the motion of microscopic particles under forces is:",
+      "options": [
+        "classical mechanics",
+        "quantum mechanics",
+        "nuclear mechanics",
+        "optics"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Microscopic particles are described by quantum mechanics.",
+      "mock": true,
+      "family": "79f9839043a6"
+    },
+    {
+      "id": "812c7440c05d",
+      "stem": "The physics of the Earth is studied in:",
+      "options": [
+        "geophysics",
+        "astrophysics",
+        "biophysics",
+        "optics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Geophysics applies physics to the Earth.",
+      "mock": true,
+      "family": "812c7440c05d"
+    },
+    {
+      "id": "6070d33e0a36",
+      "stem": "The physics of weather and climate is studied in:",
+      "options": [
+        "climate physics",
+        "nuclear physics",
+        "optics",
+        "particle physics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Climate physics studies the physical processes behind climate.",
+      "mock": true,
+      "family": "6070d33e0a36"
+    },
+    {
+      "id": "1ceda65e1af1",
+      "stem": "A hypothesis is best described as:",
+      "options": [
+        "a testable proposed explanation",
+        "a final law",
+        "a unit of measurement",
+        "a proven fact"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A hypothesis is a proposed explanation that can be tested.",
+      "mock": true,
+      "family": "1ceda65e1af1"
+    },
+    {
+      "id": "293df9a58241",
+      "stem": "A scientific theory is:",
+      "options": [
+        "a comprehensive explanation supported by evidence",
+        "a random guess",
+        "a unit",
+        "a single observation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A theory is a well-tested explanation backed by a large body of evidence.",
+      "mock": true,
+      "family": "293df9a58241"
+    },
+    {
+      "id": "c941102ea117",
+      "stem": "A scientific law generally:",
+      "options": [
+        "describes a consistent relationship or phenomenon",
+        "explains every mechanism in detail",
+        "is a guess",
+        "cannot be tested"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A law describes what always happens under given conditions.",
+      "mock": true,
+      "family": "c941102ea117"
+    },
+    {
+      "id": "3c111972a41a",
+      "stem": "Which statement best distinguishes a theory from a law?",
+      "options": [
+        "A law describes what happens; a theory explains why or how",
+        "A theory is always less tested",
+        "A law is only a guess",
+        "They are always the same"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Laws describe; theories explain.",
+      "mock": true,
+      "family": "3c111972a41a"
+    },
+    {
+      "id": "106bbc9a6fdd",
+      "stem": "A valid theory should:",
+      "options": [
+        "agree with experimental evidence",
+        "avoid testing",
+        "make no predictions",
+        "be logically inconsistent"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A theory must agree with the evidence.",
+      "mock": true,
+      "family": "106bbc9a6fdd"
+    },
+    {
+      "id": "04441cc737f2",
+      "stem": "Falsifiability means a scientific statement:",
+      "options": [
+        "can, in principle, be disproven by evidence",
+        "is based only on opinion",
+        "is always true",
+        "makes no predictions"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A scientific statement must be open to being proven wrong by evidence.",
+      "mock": true,
+      "family": "04441cc737f2"
+    },
+    {
+      "id": "f489c36d5145",
+      "stem": "Scientists who specialize in physics are called:",
+      "options": [
+        "physicists",
+        "chemists",
+        "biologists",
+        "geologists"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A physicist is a scientist who works in physics.",
+      "mock": true,
+      "family": "f489c36d5145"
+    },
+    {
+      "id": "5effee4c588d",
+      "stem": "Physics is a branch of:",
+      "options": [
+        "the physical and natural sciences",
+        "mathematics only",
+        "biology only",
+        "engineering only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Physics is one of the physical (natural) sciences.",
+      "mock": true,
+      "family": "5effee4c588d"
+    },
+    {
+      "id": "dfb4050216e3",
+      "stem": "Which of these is a theory rather than a law?",
+      "options": [
+        "Theory of general relativity",
+        "Newton's first law",
+        "Pascal's law",
+        "Boyle's law"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "General relativity is a theory; the others are laws.",
+      "mock": true,
+      "family": "dfb4050216e3"
+    },
+    {
+      "id": "12d4d07691d8",
+      "stem": "Which of these is a law rather than a theory?",
+      "options": [
+        "Newton's laws of motion",
+        "Kinetic molecular theory",
+        "Bohr's atomic theory",
+        "Theory of general relativity"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Newton's laws of motion are laws; the others are theories.",
+      "mock": true,
+      "family": "12d4d07691d8"
+    },
+    {
+      "id": "c1cceebb8efb",
+      "stem": "A student thinks that increasing the temperature of a gas will increase its pressure when the volume is kept constant. She designs an experiment in which the volume stays the same while the temperature and pressure are measured. Why is her statement considered a hypothesis?",
+      "options": [
+        "It is an idea that can be tested experimentally",
+        "It has already become a scientific law",
+        "It cannot be tested",
+        "It is based only on mathematical calculation"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "It is a proposed explanation she can test by experiment, which is what a hypothesis is.",
+      "mock": true,
+      "family": "c1cceebb8efb"
+    },
+    {
+      "id": "8ec1c1c740f2",
+      "stem": "A group of engineers is asked to design a bridge that can safely carry heavy vehicles. They use knowledge of forces, materials, equilibrium and energy, but must also consider cost, safety, environmental conditions and construction methods. What is the main role of engineering in this situation?",
+      "options": [
+        "Discovering only new scientific laws",
+        "Applying scientific knowledge to design and solve problems",
+        "Memorizing physical constants",
+        "Studying only astronomical objects"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Engineering applies science to design solutions to practical problems.",
+      "mock": true,
+      "family": "8ec1c1c740f2"
+    },
+    {
+      "id": "95a2f7a595a2",
+      "stem": "A teacher demonstrates that whenever a certain set of physical conditions is kept, the same relationship between physical quantities is observed. The relationship has been tested many times and can be used to predict the behaviour of physical systems. This type of scientific relationship is best described as a:",
+      "options": [
+        "scientific law",
+        "hypothesis",
+        "personal opinion",
+        "scientific guess"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "A repeatedly confirmed relationship that predicts behaviour is a law.",
+      "mock": true,
+      "family": "95a2f7a595a2"
+    },
+    {
+      "id": "1a90956b3200",
+      "stem": "A team of scientists observes a natural phenomenon, collects measurable evidence, develops possible explanations, performs controlled experiments, analyses the results and changes its explanation when the evidence does not support the original idea. Which characteristic of science is most clearly shown?",
+      "options": [
+        "Science depends on evidence and systematic investigation",
+        "Science depends mainly on personal beliefs",
+        "Scientific explanations cannot change",
+        "Scientists avoid experimental testing"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Science follows evidence and changes its explanations to fit it.",
+      "mock": true,
+      "family": "1a90956b3200"
+    },
+    {
+      "id": "4d845eff48da",
+      "stem": "A student notices that a metal spoon becomes hot when placed in hot water. She proposes that metals transfer thermal energy more rapidly than some other materials, and then tests her idea with spoons made of different materials. Her proposed explanation is best described as a:",
+      "options": [
+        "law",
+        "theory",
+        "hypothesis",
+        "measurement"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "An untested proposed explanation is a hypothesis, not yet a theory.",
+      "mock": true,
+      "family": "4d845eff48da"
+    },
+    {
+      "id": "1903fb0ccc1e",
+      "stem": "A scientist investigating electrons inside an atom finds that their behaviour cannot always be explained by classical physics. She studies discrete energy levels and the probability of finding an electron in a particular state. Which branch of physics is most relevant?",
+      "options": [
+        "Quantum physics",
+        "Classical physics",
+        "Cosmology",
+        "Geophysics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Discrete energy levels and probabilities are the subject of quantum physics.",
+      "mock": true,
+      "family": "1903fb0ccc1e"
+    },
+    {
+      "id": "2606632537fc",
+      "stem": "A student notices that a magnifying glass makes small objects appear larger. He investigates how light bends when it passes through the glass and how the lens affects the image. Which field of physics is mainly concerned?",
+      "options": [
+        "Quantum physics",
+        "Optics",
+        "Cosmology",
+        "Particle physics"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "The bending of light by lenses is optics.",
+      "mock": true,
+      "family": "2606632537fc"
+    },
+    {
+      "id": "fd9eea4b3a59",
+      "stem": "A group of scientists investigates the origin, evolution, large-scale structure and possible future of the universe. They study evidence from galaxies, the expansion of the universe and the early stages of cosmic development. Which branch of science is most directly concerned?",
+      "options": [
+        "Cosmology",
+        "Optics",
+        "Thermal physics",
+        "Biophysics"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Cosmology studies the origin and evolution of the universe.",
+      "mock": true,
+      "family": "fd9eea4b3a59"
+    },
+    {
+      "id": "7f42d554ee0f",
+      "stem": "A student observes the Moon, planets, stars and other objects in the night sky with a telescope. Her project focuses on identifying celestial objects, studying their positions and understanding their movements. Which field is most closely related to her project?",
+      "options": [
+        "Astronomy",
+        "Thermal physics",
+        "Particle physics",
+        "Biophysics"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Observing and tracking celestial objects is astronomy.",
+      "mock": true,
+      "family": "7f42d554ee0f"
+    },
+    {
+      "id": "54debe023d29",
+      "stem": "At a science exhibition, students investigate why a moving bicycle eventually stops when the rider stops pedalling. They measure its speed at different times and observe the effects of friction and air resistance. Their teacher explains that physics tries to understand natural phenomena by finding relationships between physical quantities and using them to make predictions. What main objective of physics does this show?",
+      "options": [
+        "To memorize scientific facts",
+        "To classify living organisms",
+        "To manufacture expensive machines",
+        "To understand and explain natural phenomena and their properties"
+      ],
+      "answer": 3,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 9,
+      "source_file": "Unit 9 notebook pages (K.zip)",
+      "explanation": "Physics aims to understand and explain natural phenomena.",
+      "mock": true,
+      "family": "54debe023d29"
+    }
+  ]
+}

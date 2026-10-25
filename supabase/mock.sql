@@ -3,7 +3,8 @@
 --
 -- A mock is a timed paper the student sets up themselves: which chapters, how
 -- many MCQs (up to 60) and how long. It is drawn only from the mock pool —
--- questions flagged `mock` (the Chemistry set in content/mcq-bank/mock/). Those
+-- questions flagged `mock` (the Chemistry and Physics sets in
+-- content/mcq-bank/mock/). Those
 -- questions are ordinary bank questions too, so normal tests can ask them.
 --
 -- Mocks are rows in `tests` with kind = 'mock', so marking, the answer review,
@@ -49,8 +50,9 @@ as $$
 $$;
 
 -- Builds a mock: p_count questions (1-60) from the mock pool of the chosen
--- chapters (all pool chapters if none are given), one per family, preferring
--- questions the student didn't meet in their last three mocks. The clock
+-- chapters (all pool chapters if none are given), one per family, about a third
+-- of them scenario-based, preferring questions the student didn't meet in their
+-- last three mocks. The clock
 -- starts now: the deadline is p_minutes away. Like create_test, the student
 -- gets the questions without answers and the key goes to test_keys.
 create or replace function public.create_mock(
@@ -77,6 +79,7 @@ declare
   v_n          int;
   v_scope      text;
   v_deadline   timestamptz;
+  v_scenario   int;
   r            record;
 begin
   if v_uid is null then raise exception 'not signed in'; end if;
@@ -101,25 +104,36 @@ begin
            order by created_at desc limit 3) t,
          jsonb_array_elements(t.questions_json) e;
 
+  -- Board papers are about one third scenario-based MCQs (20 of 60), so each
+  -- kind gets its share first; if the chosen chapters run short of one kind,
+  -- the other tops the paper up.
+  v_scenario := round(p_count / 3.0)::int;
   for r in
     select * from (
       select * from (
-        select distinct on (fam) *
+        select one.*,
+               row_number() over (partition by one.is_scenario order by one.seen asc, random()) as rn
           from (
-            select q.id, q.stem_md, q.options_json, q.answer_key_md, q.explanation_md,
-                   coalesce(q.family, q.id::text) as fam,
-                   (q.id::text = any(v_recent_ids)) as seen
-              from questions q
-             where q.mock
-               and q.chapter_id = any(v_chapters)
-               and q.type = 'mcq'
-               and q.answer_key_md in ('A', 'B', 'C', 'D')
-               and jsonb_typeof(q.options_json) = 'array'
-               and jsonb_array_length(q.options_json) = 4
-          ) pool
-         order by fam, seen asc, random()
-      ) one
-      order by seen asc, random()
+            select distinct on (fam) *
+              from (
+                select q.id, q.stem_md, q.options_json, q.answer_key_md, q.explanation_md,
+                       coalesce(q.family, q.id::text) as fam,
+                       (q.id::text = any(v_recent_ids)) as seen,
+                       (q.category = 'scenario') as is_scenario
+                  from questions q
+                 where q.mock
+                   and q.chapter_id = any(v_chapters)
+                   and q.type = 'mcq'
+                   and q.answer_key_md in ('A', 'B', 'C', 'D')
+                   and jsonb_typeof(q.options_json) = 'array'
+                   and jsonb_array_length(q.options_json) = 4
+              ) pool
+             order by fam, seen asc, random()
+          ) one
+      ) ranked
+      order by (case when ranked.is_scenario then ranked.rn <= v_scenario
+                     else ranked.rn <= p_count - v_scenario end) desc,
+               ranked.seen asc, random()
       limit p_count
     ) picked
     order by random()
