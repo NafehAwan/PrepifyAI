@@ -17,7 +17,7 @@ const suggestedMinutes = (count: number) => TIME_PRESETS.find((m) => m >= count)
 // so only the chapters that have pool questions are offered. Below the set-up,
 // the student's past mocks.
 export function MockExam() {
-  const { patch, go } = useApp();
+  const { s, patch, go } = useApp();
 
   const [pool, setPool] = useState<MockChapter[]>([]);
   const [poolState, setPoolState] = useState<"loading" | "ready" | "error">("loading");
@@ -39,7 +39,9 @@ export function MockExam() {
       .then((p) => {
         if (!active) return;
         setPool(p);
-        setSubjectId((cur) => cur ?? p[0]?.subjectId ?? null);
+        // Open on the subject the student last picked, when it has mock questions.
+        const preferred = p.find((c) => c.subjectId === s.selectedSubjectId)?.subjectId;
+        setSubjectId((cur) => cur ?? preferred ?? p[0]?.subjectId ?? null);
         setPoolState("ready");
       })
       .catch(() => active && setPoolState("error"));

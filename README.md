@@ -15,7 +15,7 @@ TypeScript, Supabase (Postgres + Auth), Groq for the chatbot, hosted on Vercel.
 | Five subjects | `/subjects` | Physics, Chemistry, Maths, Computer Science, English |
 | New test | `/subjects/<subject>/new-test` | Whole book or chosen chapters, 1–30 questions, Easy / Medium / Hard / Mixed |
 | Take and review a test | `/tests/<id>` | Marked on the server; answers and explanations appear only after submitting |
-| Mock exam | `/mock-exam` | Timed Chemistry paper from the mock pool: chosen chapters, up to 60 MCQs, 15 min–2 hr; hands itself in at 0:00 |
+| Mock exam | `/mock-exam` | Timed Chemistry or Physics paper from the mock pool: chosen chapters, up to 60 MCQs (a third scenario-based), 15 min–2 hr; hands itself in at 0:00 |
 | Practise weak chapters | Subject page | Builds a test from the chapters the student scores lowest in |
 | Report a question | Test review | Flags a wrong or unclear question for the admin |
 | Friend challenges | `/subjects/<subject>/challenge`, `/challenges/<CODE>` | Invite link or code, lobby, same test on a shared clock, results |
@@ -53,6 +53,14 @@ answers come from the file's key; the other answers were worked out by AI and th
 against the older bank wherever the same question appears there (they all agreed). To add
 chapters to mock exams, put their questions in `mock/` and load them with
 `node scripts/load-mcq-bank.mjs --sql --only=mock`, which adds rows and deletes nothing.
+
+The Physics mock set covers chapters 1, 2, 3, 7, 8 and 9 (267 MCQs, 86 scenario-based).
+Chapters 1–3 are the bank's own questions from the Unit 1–3 files and the "Complicated" set,
+less seven off-syllabus ones; `scripts/physics-bank-fixes.sql` restores five stems the first
+parser cut short and re-sorts which questions count as scenario-based, so run it before the
+mock batches. Chapters 7 and 8 come from `Chapter_78.pdf` (keyed answers, with the scenario
+set's answers worked out) and chapter 9 from handwritten notebook pages; two of the notebook's
+ticks were wrong (a hypothesis being tested is not yet a law or a theory) and were corrected.
 
 So roughly half the bank still needs a human check before it can be trusted. List the
 AI-derived ones with `node scripts/check-bank.mjs --derived --sample=50`. The answer source
@@ -106,7 +114,8 @@ migrations against the project.
   questions without answers; `submit_test` marks them, saves the score and only then returns
   the answers. No AI is involved, so tests cost nothing to run.
 - **Mock exams** are rows in `tests` with `kind = 'mock'` (`supabase/mock.sql`): `create_mock`
-  draws up to 60 questions from the mock pool and stores a deadline; `submit_test` marks a mock
+  draws up to 60 questions from the mock pool, a third of them scenario-based when the chosen
+  chapters have enough (20 of 60, as in the board paper), and stores a deadline; `submit_test` marks a mock
   that arrives more than two minutes after its deadline as blank, so the clock can't be dodged
   by leaving the page. The runner saves picks on the device as they're made and hands the
   paper in at 0:00. Mocks count towards XP, streaks and progress like any test.
