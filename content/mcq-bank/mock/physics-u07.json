@@ -1,0 +1,595 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 7,
+  "questions": [
+    {
+      "id": "ee9f12f3f8f7",
+      "stem": "Density is defined as:",
+      "options": [
+        "mass/volume",
+        "volume/mass",
+        "mass × volume",
+        "weight × volume"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Density ρ = m / V.",
+      "mock": true,
+      "family": "ee9f12f3f8f7"
+    },
+    {
+      "id": "35c79d552e88",
+      "stem": "The SI unit of density is:",
+      "options": [
+        "kg/m²",
+        "kg/m³",
+        "N/m³",
+        "g"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Density is measured in kg/m³.",
+      "mock": true,
+      "family": "35c79d552e88"
+    },
+    {
+      "id": "5cc0d5211066",
+      "stem": "Temperature is related to the average:",
+      "options": [
+        "kinetic energy of particles",
+        "mass of an object",
+        "volume only",
+        "pressure only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Temperature indicates the average kinetic energy of the particles.",
+      "mock": true,
+      "family": "5cc0d5211066"
+    },
+    {
+      "id": "114fe0552594",
+      "stem": "An increase in temperature generally increases an object's:",
+      "options": [
+        "internal energy",
+        "mass",
+        "density always",
+        "weight always"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Raising the temperature increases internal energy.",
+      "mock": true,
+      "family": "114fe0552594"
+    },
+    {
+      "id": "be37f6c3c007",
+      "stem": "A temperature scale provides:",
+      "options": [
+        "reference points for temperature measurement",
+        "only mass values",
+        "force values",
+        "density only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Temperature scales use fixed reference points to assign temperature values.",
+      "mock": true,
+      "family": "be37f6c3c007"
+    },
+    {
+      "id": "27b5a66ec345",
+      "stem": "A thermometric property is a physical property that:",
+      "options": [
+        "changes with temperature",
+        "never changes",
+        "depends only on mass",
+        "is always magnetic"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A thermometric property changes predictably with temperature.",
+      "mock": true,
+      "family": "27b5a66ec345"
+    },
+    {
+      "id": "11090e72a550",
+      "stem": "A liquid-in-glass thermometer commonly uses a liquid that:",
+      "options": [
+        "expands when heated",
+        "contracts when heated",
+        "has no thermal expansion",
+        "changes mass greatly"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Its liquid expands and contracts with temperature.",
+      "mock": true,
+      "family": "11090e72a550"
+    },
+    {
+      "id": "955153648088",
+      "stem": "A thermocouple works using the effect produced when:",
+      "options": [
+        "two different metals form a junction and temperature changes",
+        "a magnet is heated",
+        "a liquid boils",
+        "pressure becomes zero"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A thermocouple uses two dissimilar metals and a temperature-dependent emf.",
+      "mock": true,
+      "family": "955153648088"
+    },
+    {
+      "id": "f471de081494",
+      "stem": "Sensitivity of a thermometer means:",
+      "options": [
+        "change in thermometric property per unit temperature change",
+        "maximum temperature only",
+        "minimum temperature only",
+        "size of bulb"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Sensitivity is how much the thermometric property changes for each degree.",
+      "mock": true,
+      "family": "f471de081494"
+    },
+    {
+      "id": "946265487927",
+      "stem": "Range of a thermometer is the:",
+      "options": [
+        "interval between its lower and upper limits",
+        "smallest division only",
+        "change in mass",
+        "accuracy only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Range is the interval between the lowest and highest temperatures it can measure.",
+      "mock": true,
+      "family": "946265487927"
+    },
+    {
+      "id": "caecd4ae0121",
+      "stem": "A linear thermometer has a thermometric property that changes:",
+      "options": [
+        "uniformly with temperature",
+        "randomly with temperature",
+        "only at one temperature",
+        "independently of temperature"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Linearity means a uniform relation between the property and temperature.",
+      "mock": true,
+      "family": "caecd4ae0121"
+    },
+    {
+      "id": "cf2cedd31acb",
+      "stem": "A high-sensitivity thermometer shows:",
+      "options": [
+        "a large change in reading for a small temperature change",
+        "no change in reading",
+        "only high temperatures",
+        "low range always"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "High sensitivity means a bigger response for a given temperature change.",
+      "mock": true,
+      "family": "cf2cedd31acb"
+    },
+    {
+      "id": "cd91fbb957e0",
+      "stem": "A thermometer with range −10 °C to 110 °C has a range of:",
+      "options": [
+        "100 °C",
+        "110 °C",
+        "120 °C",
+        "130 °C"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Range = 110 − (−10) = 120 °C.",
+      "mock": true,
+      "family": "cd91fbb957e0"
+    },
+    {
+      "id": "a843b27c844d",
+      "stem": "A substance has mass 200 kg and volume 0.5 m³. Its density is:",
+      "options": [
+        "100 kg/m³",
+        "200 kg/m³",
+        "400 kg/m³",
+        "800 kg/m³"
+      ],
+      "answer": 2,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "ρ = m / V = 200 / 0.5 = 400 kg/m³.",
+      "mock": true,
+      "family": "a843b27c844d"
+    },
+    {
+      "id": "643c808807d0",
+      "stem": "If a thermometer reading changes 6 units for a 3 °C rise, its sensitivity is:",
+      "options": [
+        "1 unit/°C",
+        "2 units/°C",
+        "3 units/°C",
+        "18 units/°C"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Sensitivity = 6 / 3 = 2 units per °C.",
+      "mock": true,
+      "family": "643c808807d0"
+    },
+    {
+      "id": "5136a5c4f7e2",
+      "stem": "Which property can be used as a thermometric property?",
+      "options": [
+        "A property that changes with temperature",
+        "Object colour only",
+        "Mass of a fixed object",
+        "Name of the material"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A thermometric property must vary with temperature.",
+      "mock": true,
+      "family": "5136a5c4f7e2"
+    },
+    {
+      "id": "f39ab3be0e74",
+      "stem": "The internal energy of a body is associated with:",
+      "options": [
+        "microscopic kinetic and potential energies",
+        "only its position",
+        "only its weight",
+        "only external work"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Internal energy is the total kinetic and potential energy of its particles.",
+      "mock": true,
+      "family": "f39ab3be0e74"
+    },
+    {
+      "id": "58b9e2cd327a",
+      "stem": "Temperature is not the same as:",
+      "options": [
+        "internal energy",
+        "a measure related to particle motion",
+        "a physical quantity",
+        "a thermodynamic state variable"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Temperature and internal energy are related but are not the same quantity.",
+      "mock": true,
+      "family": "58b9e2cd327a"
+    },
+    {
+      "id": "a5f73ff34c31",
+      "stem": "A thermometer should ideally have a thermometric property that is:",
+      "options": [
+        "measurably and predictably related to temperature",
+        "completely random",
+        "independent of temperature",
+        "always constant"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A predictable temperature-dependent property is required.",
+      "mock": true,
+      "family": "a5f73ff34c31"
+    },
+    {
+      "id": "79e6e84485cd",
+      "stem": "A density of 1000 kg/m³ corresponds to:",
+      "options": [
+        "1 kg/L",
+        "10 kg/L",
+        "0.1 kg/L",
+        "100 kg/L"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "1000 kg/m³ = 1000 kg per 1000 L = 1 kg/L.",
+      "mock": true,
+      "family": "79e6e84485cd"
+    },
+    {
+      "id": "f3c100dd763a",
+      "stem": "A thermistor is placed in a temperature-controlled chamber. As the temperature changes, its electrical resistance changes significantly. The teacher explains that thermistors are particularly useful when a relatively large resistance change is required for a small temperature change. What characteristic makes them useful?",
+      "options": [
+        "High temperature sensitivity",
+        "Zero resistance",
+        "Constant resistance at all temperatures",
+        "Lack of response to temperature"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A large change in resistance for a small temperature change is high sensitivity.",
+      "mock": true,
+      "family": "f3c100dd763a"
+    },
+    {
+      "id": "cf5862ae9eec",
+      "stem": "A thermometer is calibrated so that its liquid column is 2 cm at 0 °C and 12 cm at 100 °C. Assuming linearity, what temperature corresponds to a liquid-column length of 7 cm?",
+      "options": [
+        "25 °C",
+        "40 °C",
+        "50 °C",
+        "70 °C"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "T = (7 − 2) / (12 − 2) × 100 = 50 °C.",
+      "mock": true,
+      "family": "cf5862ae9eec"
+    },
+    {
+      "id": "aa93197fbe54",
+      "stem": "A thermometer reads 10 divisions at 0 °C and 110 divisions at 100 °C. If its reading is 60 divisions, what temperature should it indicate, assuming a linear scale?",
+      "options": [
+        "40 °C",
+        "50 °C",
+        "60 °C",
+        "70 °C"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "T = (60 − 10) / (110 − 10) × 100 = 50 °C.",
+      "mock": true,
+      "family": "aa93197fbe54"
+    },
+    {
+      "id": "74627469e462",
+      "stem": "A balloon is filled with air and tied. When the balloon is squeezed gently, its volume changes significantly, unlike a solid metal block that hardly changes its volume under ordinary conditions. Which explanation best accounts for the behaviour of the gas?",
+      "options": [
+        "Gas particles are widely separated.",
+        "Gas particles are fixed in position.",
+        "Gas particles have no kinetic energy.",
+        "Gas particles cannot move."
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The large spaces between gas particles let a gas be compressed.",
+      "mock": true,
+      "family": "74627469e462"
+    },
+    {
+      "id": "cbfb6a0a17f8",
+      "stem": "A rectangular metal block used in a school laboratory has a mass of 600 g. Its dimensions are measured as 10 cm × 5 cm × 3 cm. The students are asked to determine its density before identifying the material. What is the density?",
+      "options": [
+        "2 g/cm³",
+        "4 g/cm³",
+        "6 g/cm³",
+        "8 g/cm³"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "V = 10 × 5 × 3 = 150 cm³, so ρ = 600 / 150 = 4 g/cm³.",
+      "mock": true,
+      "family": "cbfb6a0a17f8"
+    },
+    {
+      "id": "fec650fddf8a",
+      "stem": "A student investigates why a small piece of iron sinks in water while a piece of wood of about the same size floats. The teacher explains that an object's behaviour in a liquid depends partly on how the object's density compares with the density of the liquid. Which statement is correct?",
+      "options": [
+        "Objects always float when their mass is large.",
+        "Objects float when their density is greater than that of the liquid.",
+        "Objects float when their density is less than that of the liquid.",
+        "Floating depends only on the object's volume."
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "An object less dense than the liquid floats; iron is denser than water, wood is less dense.",
+      "mock": true,
+      "family": "fec650fddf8a"
+    },
+    {
+      "id": "29a7b330a095",
+      "stem": "A student heats a liquid in a container and notices that its volume increases. The teacher explains that this can be used to measure temperature because the volume changes in a predictable way over a suitable temperature range. What is this phenomenon called?",
+      "options": [
+        "Thermal expansion",
+        "Reflection",
+        "Refraction",
+        "Evaporation only"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The increase in volume on heating is thermal expansion.",
+      "mock": true,
+      "family": "29a7b330a095"
+    },
+    {
+      "id": "733c9009a86d",
+      "stem": "A resistance thermometer changes its resistance from 50 Ω to 70 Ω when the temperature increases by 40 °C. Assuming a linear response, what is the average resistance change per degree Celsius?",
+      "options": [
+        "0.2 Ω/°C",
+        "0.5 Ω/°C",
+        "2 Ω/°C",
+        "20 Ω/°C"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "(70 − 50) / 40 = 0.5 Ω per °C.",
+      "mock": true,
+      "family": "733c9009a86d"
+    },
+    {
+      "id": "b1081a72a4c6",
+      "stem": "A thermistor has a resistance of 2000 Ω at 20 °C and 1000 Ω at 40 °C. A student is studying the relationship between temperature and resistance. What is the change in resistance over this temperature interval?",
+      "options": [
+        "500 Ω",
+        "1000 Ω",
+        "1500 Ω",
+        "3000 Ω"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "2000 − 1000 = 1000 Ω (it falls by 1000 Ω).",
+      "mock": true,
+      "family": "b1081a72a4c6"
+    },
+    {
+      "id": "3fe3959cd559",
+      "stem": "A thermometer is calibrated so that equal increases in temperature produce equal increases in the liquid column over its working range. The teacher calls this a desirable feature because temperature differences can then be read directly from the scale. What is this property called?",
+      "options": [
+        "Linearity",
+        "Density",
+        "Expansion",
+        "Resolution of mass"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Equal changes for equal temperature steps is linearity.",
+      "mock": true,
+      "family": "3fe3959cd559"
+    },
+    {
+      "id": "062f60184ae5",
+      "stem": "A resistance thermometer has a resistance of 100 Ω at 0 °C and 120 Ω at 100 °C, with an approximately linear response. What resistance would it have at 50 °C?",
+      "options": [
+        "105 Ω",
+        "110 Ω",
+        "115 Ω",
+        "120 Ω"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 7,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Halfway in temperature is halfway in resistance: 100 + 20 / 2 = 110 Ω.",
+      "mock": true,
+      "family": "062f60184ae5"
+    }
+  ]
+}

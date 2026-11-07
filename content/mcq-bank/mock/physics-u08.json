@@ -1,0 +1,576 @@
+{
+  "subject": "Physics",
+  "chapter_seq": 8,
+  "questions": [
+    {
+      "id": "8435b9419b75",
+      "stem": "A magnetic domain is:",
+      "options": [
+        "a group of atoms with parallel magnetic moments",
+        "a non-magnetic region",
+        "a current-carrying wire",
+        "a single electron"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A domain is a group of atoms whose magnetic moments are parallel.",
+      "mock": true,
+      "family": "8435b9419b75"
+    },
+    {
+      "id": "5c36c209c431",
+      "stem": "In an unmagnetized magnetic material, domains are generally:",
+      "options": [
+        "randomly oriented",
+        "all aligned",
+        "absent",
+        "stationary in one direction"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Randomly oriented domains cancel each other's effect.",
+      "mock": true,
+      "family": "5c36c209c431"
+    },
+    {
+      "id": "438aa3b2ccba",
+      "stem": "In a magnetized material, domains are more:",
+      "options": [
+        "aligned",
+        "random",
+        "absent",
+        "heated"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Aligned domains produce a net magnetic effect.",
+      "mock": true,
+      "family": "438aa3b2ccba"
+    },
+    {
+      "id": "da2467a95355",
+      "stem": "A bar magnet has:",
+      "options": [
+        "permanent magnetic properties",
+        "no poles",
+        "only one pole",
+        "no magnetic field"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A bar magnet is a permanent magnet with two poles.",
+      "mock": true,
+      "family": "da2467a95355"
+    },
+    {
+      "id": "ce46ee849076",
+      "stem": "A solenoid carrying current produces a magnetic field similar to that of:",
+      "options": [
+        "a bar magnet",
+        "a glass rod",
+        "a capacitor only",
+        "a resistor"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A current-carrying solenoid's field pattern is like a bar magnet's.",
+      "mock": true,
+      "family": "ce46ee849076"
+    },
+    {
+      "id": "634592ca4dac",
+      "stem": "The magnetic field inside a long solenoid is relatively:",
+      "options": [
+        "uniform",
+        "zero",
+        "random",
+        "circular only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Inside a long solenoid the field is nearly uniform.",
+      "mock": true,
+      "family": "634592ca4dac"
+    },
+    {
+      "id": "8628e1764fea",
+      "stem": "Induced magnetism is produced when a magnetic material is:",
+      "options": [
+        "placed in a magnetic field",
+        "cooled in vacuum only",
+        "cut into pieces",
+        "insulated"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A magnetic field aligns the domains of a nearby magnetic material.",
+      "mock": true,
+      "family": "8628e1764fea"
+    },
+    {
+      "id": "c0feaa4b38e8",
+      "stem": "Stroking a magnetic material repeatedly in one direction tends to:",
+      "options": [
+        "align its domains",
+        "destroy all domains",
+        "remove all atoms",
+        "increase temperature only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Stroking in one direction lines the domains up.",
+      "mock": true,
+      "family": "c0feaa4b38e8"
+    },
+    {
+      "id": "29fced40d89e",
+      "stem": "Hammering a magnetic bar in a magnetic field can:",
+      "options": [
+        "align domains",
+        "always demagnetize it",
+        "remove its mass",
+        "stop all magnetic effects"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Hammering in a field lets the domains settle in line with the field.",
+      "mock": true,
+      "family": "29fced40d89e"
+    },
+    {
+      "id": "4fc4f23fbb34",
+      "stem": "Heating a magnet generally tends to:",
+      "options": [
+        "disturb domain alignment",
+        "increase permanent magnetism always",
+        "create poles in every material",
+        "have no effect"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Heat disturbs domain alignment and can demagnetize a magnet.",
+      "mock": true,
+      "family": "4fc4f23fbb34"
+    },
+    {
+      "id": "090a120d7c44",
+      "stem": "Soft magnetic materials are materials that:",
+      "options": [
+        "magnetize and demagnetize easily",
+        "never magnetize",
+        "retain magnetism permanently only",
+        "are always non-magnetic"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Soft magnetic materials such as iron are easy to magnetize and demagnetize.",
+      "mock": true,
+      "family": "090a120d7c44"
+    },
+    {
+      "id": "bbcf6dcf9e60",
+      "stem": "Hard magnetic materials are suitable for:",
+      "options": [
+        "permanent magnets",
+        "temporary electromagnets only",
+        "magnetic shielding only",
+        "liquid barometers"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Hard magnetic materials such as steel keep their magnetism.",
+      "mock": true,
+      "family": "bbcf6dcf9e60"
+    },
+    {
+      "id": "154574eeaa3f",
+      "stem": "An electromagnet is a:",
+      "options": [
+        "temporary magnet produced by electric current",
+        "permanent magnet with no current",
+        "non-magnetic material",
+        "magnetic field line"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "An electromagnet is magnetized by a current and loses most of it when the current stops.",
+      "mock": true,
+      "family": "154574eeaa3f"
+    },
+    {
+      "id": "29f5300ea2d5",
+      "stem": "Magnetic shielding protects sensitive devices from:",
+      "options": [
+        "external magnetic fields",
+        "gravity",
+        "pressure",
+        "heat only"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Shielding reduces the effect of external magnetic fields.",
+      "mock": true,
+      "family": "29f5300ea2d5"
+    },
+    {
+      "id": "7291dde15929",
+      "stem": "Magnetic tape records information by:",
+      "options": [
+        "aligning magnetic domains according to signals",
+        "melting the tape",
+        "changing its mass",
+        "using only light"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The recording head's changing field aligns domains on the tape.",
+      "mock": true,
+      "family": "7291dde15929"
+    },
+    {
+      "id": "5f533669555b",
+      "stem": "A loudspeaker converts electrical signals into:",
+      "options": [
+        "sound",
+        "light",
+        "pressure only",
+        "gravitational energy"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A loudspeaker turns electrical signals into sound.",
+      "mock": true,
+      "family": "5f533669555b"
+    },
+    {
+      "id": "5e5e6178f408",
+      "stem": "Earth's magnetic field is useful because it:",
+      "options": [
+        "helps protect life from cosmic radiation",
+        "eliminates gravity",
+        "creates weather",
+        "stops all radiation"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Earth's magnetic field shields life from charged cosmic radiation.",
+      "mock": true,
+      "family": "5e5e6178f408"
+    },
+    {
+      "id": "5305a20fde94",
+      "stem": "The magnetic and geographic north-south orientations of Earth are:",
+      "options": [
+        "opposite in orientation",
+        "identical in all respects",
+        "unrelated to each other",
+        "both absent"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "medium",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Earth's magnetic south pole lies near its geographic North Pole.",
+      "mock": true,
+      "family": "5305a20fde94"
+    },
+    {
+      "id": "400640a01db9",
+      "stem": "Magnetic field lines are closer together where the magnetic field is:",
+      "options": [
+        "stronger",
+        "weaker",
+        "zero",
+        "constant everywhere"
+      ],
+      "answer": 0,
+      "answer_source": "file",
+      "difficulty": "easy",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Crowded field lines mean a stronger field.",
+      "mock": true,
+      "family": "400640a01db9"
+    },
+    {
+      "id": "4bb10374b222",
+      "stem": "A solenoid has 100 turns per metre and carries 1 A. Using B = μ₀nI, its field is approximately:",
+      "options": [
+        "1.26 × 10⁻⁵ T",
+        "1.26 × 10⁻⁴ T",
+        "1.26 × 10⁻³ T",
+        "1.26 × 10⁻² T"
+      ],
+      "answer": 1,
+      "answer_source": "file",
+      "difficulty": "hard",
+      "scenario": false,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "B = 4π × 10⁻⁷ × 100 × 1 ≈ 1.26 × 10⁻⁴ T.",
+      "mock": true,
+      "family": "4bb10374b222"
+    },
+    {
+      "id": "2a9db992f634",
+      "stem": "A geography student marks the geographic North Pole on a globe and compares it with the position of Earth's magnetic pole. The teacher explains that the two are not at exactly the same place. Which statement is correct?",
+      "options": [
+        "Geographic and magnetic poles are exactly the same",
+        "Magnetic and geographic poles are different locations",
+        "Earth has only geographic poles",
+        "Earth has no magnetic poles"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Earth's magnetic poles are some distance from its geographic poles.",
+      "mock": true,
+      "family": "2a9db992f634"
+    },
+    {
+      "id": "54adf7fe220c",
+      "stem": "A compass is moved from a position close to a strong magnet to a position much farther away. The needle shows a much smaller deflection at the second position. What does this observation suggest?",
+      "options": [
+        "Magnetic field strength decreases with distance",
+        "Magnetic field strength increases with distance",
+        "Magnetic fields exist only inside magnets",
+        "A compass cannot detect magnetic field"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "A smaller deflection farther away means a weaker field.",
+      "mock": true,
+      "family": "54adf7fe220c"
+    },
+    {
+      "id": "5e873cb8569c",
+      "stem": "A steel paper clip is brought close to a powerful bar magnet. Although the clip was not a magnet, it can attract another small iron object while it is near the magnet. What has occurred?",
+      "options": [
+        "Permanent heating",
+        "Induced magnetism",
+        "Gravitational induction",
+        "Electrical charging"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The magnet's field magnetizes the clip: induced magnetism.",
+      "mock": true,
+      "family": "5e873cb8569c"
+    },
+    {
+      "id": "9cf42fd28612",
+      "stem": "A ship's navigation officer uses a magnetic compass to find direction. The needle lines up roughly north-south because Earth behaves in many ways like a giant magnet. Which statement is most accurate?",
+      "options": [
+        "Earth's magnetic field influences the compass needle",
+        "Earth's gravitational field turns the compass",
+        "The compass works because of atmospheric pressure",
+        "The compass works because of Earth's rotation alone"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The needle is a small magnet that lines up with Earth's magnetic field.",
+      "mock": true,
+      "family": "9cf42fd28612"
+    },
+    {
+      "id": "aaaf04b6a841",
+      "stem": "In a laboratory investigation, iron filings are sprinkled on a sheet of paper placed over a bar magnet. After the paper is tapped gently, the filings arrange themselves in curved patterns around the magnet. These patterns are useful because they show:",
+      "options": [
+        "The mass of the magnet",
+        "The magnetic field pattern",
+        "The temperature of the magnet",
+        "The electric resistance of the magnet"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Iron filings line up along the magnetic field lines.",
+      "mock": true,
+      "family": "aaaf04b6a841"
+    },
+    {
+      "id": "c7c6edee2f34",
+      "stem": "A student examines two points around a bar magnet. At point P many magnetic field lines are crowded together, while at point Q they are widely spaced. Which statement is most reasonable?",
+      "options": [
+        "The field is stronger at Q",
+        "The field is stronger at P",
+        "The field has zero strength at P",
+        "Both fields must have identical strengths"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Crowded field lines at P mean a stronger field there.",
+      "mock": true,
+      "family": "c7c6edee2f34"
+    },
+    {
+      "id": "817a759954fe",
+      "stem": "A student compares two solenoids. Solenoid X has 200 turns and carries 3 A, while solenoid Y has 600 turns and carries 1 A. If the magnetic field strength is proportional to NI, which statement is correct?",
+      "options": [
+        "X has three times the field of Y",
+        "Y has three times the field of X",
+        "Both have the same field strength",
+        "X has half the field of Y"
+      ],
+      "answer": 2,
+      "answer_source": "derived",
+      "difficulty": "hard",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "NI = 200 × 3 = 600 for X and 600 × 1 = 600 for Y, so the fields are equal.",
+      "mock": true,
+      "family": "817a759954fe"
+    },
+    {
+      "id": "ba248e4e8d4c",
+      "stem": "A navigator travelling across different parts of Earth notices that a compass points along Earth's magnetic field rather than exactly towards the geographic North Pole. Which statement best explains this?",
+      "options": [
+        "Earth's magnetic poles and geographic poles do not exactly coincide",
+        "Earth has no magnetic field",
+        "The compass is controlled only by sunlight",
+        "Geographic poles are produced by magnets placed underground"
+      ],
+      "answer": 0,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "The compass follows the magnetic field, and the magnetic poles are offset from the geographic ones.",
+      "mock": true,
+      "family": "ba248e4e8d4c"
+    },
+    {
+      "id": "34901b7097aa",
+      "stem": "After experiments with bar magnets, solenoids, magnetic materials, compasses and electromagnets, a student concludes that magnetism is used in navigation, loudspeakers, magnetic recording and lifting heavy iron objects. Which statement best represents the overall importance of magnetism?",
+      "options": [
+        "Magnetism has applications only in laboratory experiments",
+        "Magnetism is useful in many technological, industrial and scientific applications",
+        "Magnetism is important only for permanent magnets",
+        "Magnetism has no practical applications outside physics laboratories"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "easy",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Those examples span technology, industry and science.",
+      "mock": true,
+      "family": "34901b7097aa"
+    },
+    {
+      "id": "0a9c8c433506",
+      "stem": "A student makes an electromagnet with 300 turns carrying 1.5 A. He then increases the number of turns to 600 while keeping the current at 1.5 A. If all else is unchanged and the field strength is proportional to the number of turns, what happens?",
+      "options": [
+        "Field strength becomes half",
+        "Field strength doubles",
+        "Field strength becomes one-fourth",
+        "Field strength remains the same"
+      ],
+      "answer": 1,
+      "answer_source": "derived",
+      "difficulty": "medium",
+      "scenario": true,
+      "chapter_seq": 8,
+      "source_file": "Chapter_78.pdf",
+      "explanation": "Twice the turns at the same current gives twice the field.",
+      "mock": true,
+      "family": "0a9c8c433506"
+    }
+  ]
+}

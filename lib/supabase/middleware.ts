@@ -17,6 +17,9 @@ export async function updateSession(request: NextRequest): Promise<NextResponse>
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
+  // The daily keep-alive is called by Vercel Cron, which is never signed in.
+  if (path === "/api/keepalive") return response;
+
   if (!isSupabaseConfigured()) return response;
 
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {

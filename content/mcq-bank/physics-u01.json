@@ -30,7 +30,7 @@
       "answer": 3,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -46,7 +46,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -62,7 +62,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -78,7 +78,7 @@
       "answer": 0,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -94,7 +94,7 @@
       "answer": 2,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -110,7 +110,7 @@
       "answer": 2,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -126,7 +126,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -158,7 +158,7 @@
       "answer": 0,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -174,7 +174,7 @@
       "answer": 3,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -190,7 +190,7 @@
       "answer": null,
       "answer_source": null,
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
       "rejected": "No clearly correct option: a vector is drawn as a directed line segment, and both Sketch and Graph describe that loosely."
@@ -207,7 +207,7 @@
       "answer": 2,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -223,7 +223,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -239,7 +239,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -271,7 +271,7 @@
       "answer": 0,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -287,7 +287,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -303,7 +303,7 @@
       "answer": 0,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx",
       "answer_confidence": "low"
@@ -320,7 +320,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -336,7 +336,7 @@
       "answer": 3,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -352,7 +352,7 @@
       "answer": 2,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -368,7 +368,7 @@
       "answer": 2,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -384,7 +384,7 @@
       "answer": 1,
       "answer_source": "derived",
       "difficulty": "hard",
-      "scenario": true,
+      "scenario": false,
       "chapter_seq": 1,
       "source_file": "Mcqs CH 1-6 phy-IX (Complicated).docx"
     },
@@ -422,7 +422,7 @@
     },
     {
       "id": "7e3593634563",
-      "stem": "This means it can measure:",
+      "stem": "A digital vernier caliper has a least count of 0.01 mm. This means it can measure:",
       "options": [
         "Only whole millimetres",
         "Up to 0.1 mm",
@@ -438,7 +438,7 @@
     },
     {
       "id": "b167de7020d3",
-      "stem": "The volume of the stone is:",
+      "stem": "A measuring cylinder contains 40 cm³ of water. After a stone is fully immersed, the reading becomes 55 cm³. The volume of the stone is:",
       "options": [
         "15 cm³",
         "40 cm³",
@@ -448,13 +448,13 @@
       "answer": 0,
       "answer_source": "file",
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 1,
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
     {
       "id": "694a91744839",
-      "stem": "To reduce random error, he should:",
+      "stem": "A student measures the time for one oscillation of a pendulum. To reduce random error, he should:",
       "options": [
         "Measure one oscillation only.",
         "Measure many oscillations and find the average.",
@@ -464,7 +464,7 @@
       "answer": 1,
       "answer_source": "file",
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 1,
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
@@ -480,7 +480,7 @@
       "answer": 1,
       "answer_source": "file",
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 1,
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
@@ -598,7 +598,7 @@
     },
     {
       "id": "212356466f6e",
-      "stem": "Its diameter in millimeters is:",
+      "stem": "A wire has a diameter of 2000 μm. Its diameter in millimetres is:",
       "options": [
         "0.2 mm",
         "2 mm",
@@ -694,7 +694,7 @@
     },
     {
       "id": "607d1dde7e6f",
-      "stem": "This quantity is most likely:",
+      "stem": "A quantity is measured in m/s. This quantity is most likely:",
       "options": [
         "Base quantity",
         "Derived quantity",
@@ -832,7 +832,7 @@
       "answer": 1,
       "answer_source": "file",
       "difficulty": "medium",
-      "scenario": false,
+      "scenario": true,
       "chapter_seq": 1,
       "source_file": "Phy-Unit 1 MCQS.docx"
     },
